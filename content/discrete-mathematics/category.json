@@ -1,0 +1,259 @@
+{
+  "title": "Discrete Mathematics and Numerical Analysis",
+  "order": 16,
+  "topics": [
+    {
+      "slug": "propositional-and-predicate-logic",
+      "title": "Propositional and Predicate Logic",
+      "order": 1,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "set-theory",
+      "title": "Set Theory",
+      "order": 2,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "set-operations",
+          "title": "Set Operations",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "algebra-of-sets",
+          "title": "Algebra of Sets",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mathematical-induction",
+      "title": "Mathematical Induction",
+      "order": 3,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "relations",
+      "title": "Relations",
+      "order": 4,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "basic-concepts-and-representation",
+          "title": "Basic Concepts and Representation",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "functions",
+      "title": "Functions",
+      "order": 5,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "classification-and-pictorial-representation",
+          "title": "Classification and Pictorial Representation",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "graph-theory-and-applications",
+      "title": "Graph Theory and Applications",
+      "order": 6,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "elementary-number-systems",
+      "title": "Elementary Number Systems",
+      "order": 7,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "principles-of-counting",
+      "title": "Principles of Counting",
+      "order": 8,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "recurrence-relations",
+      "title": "Recursion, Generating Functions and Recurrence Relations",
+      "order": 9,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "solving-linear-systems",
+      "title": "Solving Linear Systems",
+      "order": 10,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "gaussian-elimination",
+          "title": "Gaussian Elimination",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "gauss-jordan-elimination",
+          "title": "Gauss–Jordan Elimination",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "interpolation",
+      "title": "Interpolation",
+      "order": 11,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "newton-s-formula",
+          "title": "Newton's Formula",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "lagrange-s-formula",
+          "title": "Lagrange's Formula",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "numerical-differentiation-and-integration",
+      "title": "Numerical Differentiation and Integration",
+      "order": 12,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "trapezoidal-rule",
+          "title": "Trapezoidal Rule",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "simpson-s-1-3-and-3-8-rules",
+          "title": "Simpson's 1/3 and 3/8 Rules",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "romberg-integration",
+          "title": "Romberg Integration",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "solution-of-equations",
+      "title": "Solution of Equations",
+      "order": 13,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "newton-raphson-method",
+          "title": "Newton–Raphson Method",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "solution-of-ordinary-differential-equations",
+      "title": "Solution of Ordinary Differential Equations",
+      "order": 14,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "least-squares-approximation-of-functions",
+      "title": "Least Squares Approximation of Functions",
+      "order": 15,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    }
+  ]
+}

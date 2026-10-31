@@ -1,0 +1,173 @@
+{
+  "title": "Computer Fundamentals",
+  "order": 1,
+  "topics": [
+    {
+      "slug": "introduction-to-computers",
+      "title": "Introduction to Computers",
+      "order": 1,
+      "exams": [
+        "School"
+      ],
+      "subtopics": [
+        {
+          "id": "definition-of-computer",
+          "title": "Definition of Computer",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "characteristics-of-computer",
+          "title": "Characteristics of Computer",
+          "exams": [
+            "School"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "history-of-computers",
+      "title": "History of Computers",
+      "order": 2,
+      "exams": [
+        "School"
+      ],
+      "subtopics": [
+        {
+          "id": "from-the-abacus-to-the-first-commercial-computer",
+          "title": "From the Abacus to the First Commercial Computer",
+          "exams": [
+            "School"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "generations-of-computers",
+      "title": "Generations of Computers",
+      "order": 3,
+      "exams": [
+        "School"
+      ],
+      "subtopics": [
+        {
+          "id": "first-to-fifth-generation",
+          "title": "First to Fifth Generation",
+          "exams": [
+            "School"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "types-and-classification-of-computers",
+      "title": "Types and Classification of Computers",
+      "order": 4,
+      "exams": [
+        "School"
+      ],
+      "subtopics": [
+        {
+          "id": "types-analog-computer-digital-computer-hybrid-computer",
+          "title": "Types: Analog Computer, Digital Computer, Hybrid Computer",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "classification-microcomputer-mainframe-computer-supercomputer",
+          "title": "Classification: Microcomputer, Mainframe Computer, Supercomputer",
+          "exams": [
+            "School"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "organization-of-a-computer-system",
+      "title": "Organization of a Computer System",
+      "order": 5,
+      "exams": [
+        "School"
+      ],
+      "subtopics": [
+        {
+          "id": "input-unit",
+          "title": "Input Unit",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "memory-unit",
+          "title": "Memory Unit",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "arithmetic-logic-unit-alu",
+          "title": "Arithmetic Logic Unit (ALU)",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "output-unit",
+          "title": "Output Unit",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "control-unit",
+          "title": "Control Unit",
+          "exams": [
+            "School"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hardware-and-software",
+      "title": "Hardware and Software",
+      "order": 6,
+      "exams": [
+        "School"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "analog-and-digital-systems",
+      "title": "Analog and Digital Systems",
+      "order": 7,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "analog-and-digital-signals",
+          "title": "Analog and Digital Signals",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "differences-and-examples",
+          "title": "Differences and Examples",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "advantages-and-disadvantages-of-analog-and-digital-systems",
+          "title": "Advantages and Disadvantages of Analog and Digital Systems",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+/* The desktop topics sidebar is collapsed (set on <html> by components/topics/topics-preferences.tsx). */
+@custom-variant sidebar-closed (html[data-sidebar="closed"] &);
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  /* Latin text uses Geist; Bengali glyphs fall through to Noto Sans Bengali. */
+  --font-sans: var(--font-geist-sans), var(--font-bengali), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-heading: var(--font-geist-sans), var(--font-bengali), ui-sans-serif, system-ui, sans-serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* Light: deep teal brand colour on a light teal-white background; lilac / aqua / olive / yellow accents. */
+:root {
+  /* Brand palette (from the project owner's palette image) */
+  --brand-lilac: #cbadd1;
+  --brand-purple: #83749e;
+  --brand-aqua: #69c6ca;
+  --brand-teal: #0397a0;
+  --brand-deep-teal: #08595a;
+  --brand-sky: #57bdc8;
+  --brand-slate: #204d58;
+  --brand-olive: #7ca009;
+  --brand-yellow: #dbda65;
+  --brand-forest: #203400;
+
+  --background: #f7fbfa;
+  --foreground: #17292d;
+  --card: #ffffff;
+  --card-foreground: #17292d;
+  --popover: #ffffff;
+  --popover-foreground: #17292d;
+  --primary: var(--brand-deep-teal);
+  --primary-foreground: #ffffff;
+  --secondary: #eef5f4;
+  --secondary-foreground: var(--brand-slate);
+  --muted: #eef5f4;
+  --muted-foreground: #4b6166;
+  --accent: #e2f3f3;
+  --accent-foreground: var(--brand-deep-teal);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #d8e6e5;
+  --input: #d8e6e5;
+  --ring: var(--brand-teal);
+  --chart-1: var(--brand-teal);
+  --chart-2: var(--brand-olive);
+  --chart-3: var(--brand-purple);
+  --chart-4: var(--brand-sky);
+  --chart-5: var(--brand-yellow);
+  --radius: 0.625rem;
+  /* Sticky header height: h-14 (3.5rem) + 1px brand line. Used to offset sticky elements. */
+  --header-height: calc(3.5rem + 1px);
+  /* Topics sidebar: a lilac tint like the hero glow, fading down to a lighter tint. */
+  --sidebar: #ede3f0;
+  --sidebar-to: #f4f0f6;
+  --sidebar-foreground: #17292d;
+  --sidebar-primary: var(--brand-deep-teal);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e2f3f3;
+  --sidebar-accent-foreground: var(--brand-deep-teal);
+  --sidebar-border: #d8e6e5;
+  --sidebar-ring: var(--brand-teal);
+  /* Header and footer: palette gradient (deep teal → teal → slate) with light text.
+     The middle stop is a deeper teal so white text keeps at least 4.5:1 contrast. */
+  --chrome-from: var(--brand-deep-teal);
+  --chrome-via: #06787d;
+  --chrome-to: var(--brand-slate);
+  --chrome-fg: #ffffff;
+  --chrome-muted: #e8f5f4;
+  --chrome-accent: var(--brand-yellow);
+  /* Decorative layers */
+  --dot: rgb(131 116 158 / 0.28);
+  --glow-1: rgb(203 173 209 / 0.45);
+  --glow-2: rgb(105 198 202 / 0.35);
+  --spotlight: rgb(105 198 202 / 0.14);
+  --title-from: var(--brand-deep-teal);
+  --title-via: var(--brand-teal);
+  --title-to: var(--brand-purple);
+  --beam-1-from: var(--brand-lilac);
+  --beam-1-to: var(--brand-teal);
+  --beam-2-from: var(--brand-olive);
+  --beam-2-to: var(--brand-yellow);
+}
+
+/* Dark: the same palette on a very dark teal-slate background. Aqua is the brand colour here,
+   because deep teal is too dark to read on a dark background. */
+.dark {
+  --background: #0d1b1e;
+  --foreground: #e3efee;
+  --card: #132529;
+  --card-foreground: #e3efee;
+  --popover: #132529;
+  --popover-foreground: #e3efee;
+  --primary: var(--brand-aqua);
+  --primary-foreground: #08302f;
+  --secondary: #1a2f34;
+  --secondary-foreground: #e3efee;
+  --muted: #1a2f34;
+  --muted-foreground: #9db3b5;
+  --accent: #1d3a3d;
+  --accent-foreground: #e3efee;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: rgb(255 255 255 / 0.1);
+  --input: rgb(255 255 255 / 0.15);
+  --ring: var(--brand-teal);
+  --chart-1: var(--brand-aqua);
+  --chart-2: var(--brand-olive);
+  --chart-3: var(--brand-lilac);
+  --chart-4: var(--brand-sky);
+  --chart-5: var(--brand-yellow);
+  --sidebar: #1f2632;
+  --sidebar-to: #131f25;
+  --sidebar-foreground: #e3efee;
+  --sidebar-primary: var(--brand-aqua);
+  --sidebar-primary-foreground: #08302f;
+  --sidebar-accent: #1d3a3d;
+  --sidebar-accent-foreground: #e3efee;
+  --sidebar-border: rgb(255 255 255 / 0.1);
+  --sidebar-ring: var(--brand-teal);
+  /* Header and footer: dark teal gradient with light text. */
+  --chrome-from: #0a2a2c;
+  --chrome-via: #0b3b3e;
+  --chrome-to: #123a44;
+  --chrome-fg: #e3efee;
+  --chrome-muted: #b5d0d0;
+  --chrome-accent: var(--brand-aqua);
+  /* Decorative layers */
+  --dot: rgb(105 198 202 / 0.16);
+  --glow-1: rgb(131 116 158 / 0.28);
+  --glow-2: rgb(3 151 160 / 0.22);
+  --spotlight: rgb(105 198 202 / 0.1);
+  --title-from: #e3efee;
+  --title-via: var(--brand-aqua);
+  --title-to: var(--brand-lilac);
+  --beam-1-from: var(--brand-lilac);
+  --beam-1-to: var(--brand-aqua);
+  --beam-2-from: var(--brand-olive);
+  --beam-2-to: var(--brand-yellow);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  /* Dotted background pattern */
+  .bg-dots {
+    background-image: radial-gradient(var(--dot) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* Border beam: a short gradient that travels around an element's border.
+     Place inside a positioned, rounded container. */
+  .border-beam {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: var(--beam-width, 1.5px) solid transparent;
+    pointer-events: none;
+    mask-image: linear-gradient(transparent, transparent), linear-gradient(#000, #000);
+    mask-clip: padding-box, border-box;
+    mask-composite: intersect;
+  }
+
+  .border-beam::after {
+    content: "";
+    position: absolute;
+    aspect-ratio: 1;
+    width: var(--beam-size, 120px);
+    background: linear-gradient(to left, var(--beam-from), var(--beam-to), transparent);
+    offset-path: rect(0 auto auto 0 round var(--beam-size, 120px));
+    animation: border-beam var(--beam-duration, 8s) linear infinite;
+    animation-delay: var(--beam-delay, 0s);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .border-beam {
+      display: none;
+    }
+  }
+
+  /* Subtle shimmer that sweeps across text */
+  .shiny-text {
+    background-image: linear-gradient(
+      100deg,
+      var(--muted-foreground) 40%,
+      var(--foreground) 50%,
+      var(--muted-foreground) 60%
+    );
+    background-size: 250% 100%;
+    background-clip: text;
+    color: transparent;
+    animation: shiny-text 4s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .shiny-text {
+      animation: none;
+      background-position: 0 0;
+    }
+  }
+}
+
+@keyframes shiny-text {
+  from {
+    background-position: 125% 0;
+  }
+  to {
+    background-position: -125% 0;
+  }
+}
+
+@keyframes border-beam {
+  to {
+    offset-distance: 100%;
+  }
+}
+
+/* Topic notes: map the Typography plugin's colours to the theme palette,
+   so notes follow the light and dark themes without prose-invert. */
+.notes {
+  --tw-prose-body: var(--foreground);
+  --tw-prose-headings: var(--foreground);
+  --tw-prose-lead: var(--muted-foreground);
+  --tw-prose-links: var(--primary);
+  --tw-prose-bold: var(--foreground);
+  --tw-prose-counters: var(--muted-foreground);
+  --tw-prose-bullets: var(--brand-teal);
+  --tw-prose-hr: var(--border);
+  --tw-prose-quotes: var(--foreground);
+  --tw-prose-quote-borders: var(--brand-aqua);
+  --tw-prose-captions: var(--muted-foreground);
+  --tw-prose-kbd: var(--foreground);
+  --tw-prose-code: var(--foreground);
+  --tw-prose-pre-code: var(--foreground);
+  --tw-prose-pre-bg: var(--muted);
+  --tw-prose-th-borders: var(--border);
+  --tw-prose-td-borders: var(--border);
+}
+
+/* Inline code in notes: a subtle pill instead of the plugin's literal backticks. */
+.notes :not(pre) > code {
+  border-radius: 0.375rem;
+  background-color: var(--muted);
+  padding: 0.15em 0.4em;
+  font-weight: 500;
+}
+
+.notes :not(pre) > code::before,
+.notes :not(pre) > code::after {
+  content: none;
+}
+
+/* Block quotes in notes are used for key definitions and "Remember" notes, not quotations:
+   show them as a tinted callout without the plugin's italics and quotation marks. */
+.notes blockquote {
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: var(--accent);
+  padding: 0.25em 1em;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.notes blockquote p::before,
+.notes blockquote p::after {
+  content: none;
+}
+
+/* Diagrams in notes (SVGs in public/diagrams/ drawn on a white background):
+   keep them on a white card in both themes so the lines stay readable. */
+.notes img {
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px var(--border);
+}

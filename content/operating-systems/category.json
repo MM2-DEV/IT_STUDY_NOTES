@@ -1,0 +1,846 @@
+{
+  "title": "Operating Systems",
+  "order": 6,
+  "topics": [
+    {
+      "slug": "operating-system-fundamentals",
+      "title": "Operating System Fundamentals",
+      "order": 1,
+      "exams": [
+        "School",
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "overview-of-operating-system",
+          "title": "Overview of Operating System",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "goals-and-components-of-operating-system",
+          "title": "Goals and Components of Operating System",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "functions-functionalities-of-operating-system",
+          "title": "Functions / Functionalities of Operating System",
+          "exams": [
+            "School",
+            "School-2",
+            "College"
+          ]
+        },
+        {
+          "id": "characteristics-of-operating-system",
+          "title": "Characteristics of Operating System",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "evolution-of-operating-system",
+          "title": "Evolution of Operating System",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "types-of-operating-system",
+          "title": "Types of Operating System",
+          "exams": [
+            "School",
+            "School-2"
+          ]
+        },
+        {
+          "id": "dos",
+          "title": "DOS",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "windows",
+          "title": "Windows",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "hardware-concepts-related-to-os",
+          "title": "Hardware Concepts Related to OS",
+          "exams": [
+            "College"
+          ],
+          "children": [
+            "CPU States",
+            "I/O Channels",
+            "Memory Hierarchy",
+            "Microprogramming"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "process-management",
+      "title": "Process Management",
+      "order": 2,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "concept-of-a-process",
+          "title": "Concept of a Process",
+          "exams": [
+            "School-2",
+            "College"
+          ]
+        },
+        {
+          "id": "operations-on-processes",
+          "title": "Operations on Processes",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "process-states",
+          "title": "Process States",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "concurrent-processes",
+          "title": "Concurrent Processes",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "process-control-block-pcb",
+          "title": "Process Control Block (PCB)",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "process-context",
+          "title": "Process Context",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "unix-process-control-and-management",
+          "title": "UNIX Process Control and Management",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "signals",
+          "title": "Signals",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "process-hierarchies",
+          "title": "Process Hierarchies",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "forks-and-pipes",
+          "title": "Forks and Pipes",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "interrupts-and-os-organization",
+      "title": "Interrupts and OS Organization",
+      "order": 3,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "interrupt-processing",
+          "title": "Interrupt Processing",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "operating-system-organization",
+          "title": "Operating System Organization",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "os-kernel",
+          "title": "OS Kernel",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "flih-first-level-interrupt-handler",
+          "title": "FLIH (First-Level Interrupt Handler)",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "dispatcher",
+          "title": "Dispatcher",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cpu-scheduling",
+      "title": "CPU Scheduling",
+      "order": 4,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "job-and-processor-scheduling",
+          "title": "Job and Processor Scheduling",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "scheduling-algorithms",
+          "title": "Scheduling Algorithms",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "process-synchronization-and-concurrency",
+      "title": "Process Synchronization and Concurrency",
+      "order": 5,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "problems-of-concurrent-processes",
+          "title": "Problems of Concurrent Processes",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "critical-section-problem",
+          "title": "Critical Section Problem",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "solutions-to-the-critical-section-problem",
+          "title": "Solutions to the Critical Section Problem",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "mutual-exclusion",
+          "title": "Mutual Exclusion",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "synchronization",
+          "title": "Synchronization",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "deadlock-introduction",
+          "title": "Deadlock (Introduction)",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "process-co-operation",
+          "title": "Process Co-operation",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "producer-and-consumer-processes",
+          "title": "Producer and Consumer Processes",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "semaphores-and-synchronization-mechanisms",
+      "title": "Semaphores and Synchronization Mechanisms",
+      "order": 6,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "definition-of-semaphores",
+          "title": "Definition of Semaphores",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "semaphore-initialization",
+          "title": "Semaphore Initialization",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "wait-operation",
+          "title": "Wait Operation",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "signal-operation",
+          "title": "Signal Operation",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "use-of-semaphores-to-implement-mutex",
+          "title": "Use of Semaphores to Implement Mutex",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "process-synchronization-using-semaphores",
+          "title": "Process Synchronization Using Semaphores",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "implementation-of-semaphores",
+          "title": "Implementation of Semaphores",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "critical-regions",
+          "title": "Critical Regions",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "conditional-critical-regions",
+          "title": "Conditional Critical Regions",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "monitors",
+          "title": "Monitors",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "ada-tasks",
+          "title": "Ada Tasks",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ipc",
+      "title": "Interprocess Communication (IPC)",
+      "order": 7,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "ipc-techniques",
+          "title": "IPC Techniques",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "message-passing",
+          "title": "Message Passing",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "direct-communication",
+          "title": "Direct Communication",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "indirect-communication",
+          "title": "Indirect Communication",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "deadlock-management",
+      "title": "Deadlock Management",
+      "order": 8,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "deadlock-handling-methods",
+          "title": "Deadlock Handling Methods",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "deadlock-prevention",
+          "title": "Deadlock Prevention",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "deadlock-detection",
+          "title": "Deadlock Detection",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "deadlock-avoidance",
+          "title": "Deadlock Avoidance",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "banker-s-algorithm",
+          "title": "Banker's Algorithm",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "memory-management",
+      "title": "Memory Management",
+      "order": 9,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "memory-organization-and-management",
+          "title": "Memory Organization and Management",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "memory-management-techniques",
+          "title": "Memory Management Techniques",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "storage-allocation",
+          "title": "Storage Allocation",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "paging",
+          "title": "Paging",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "segmentation",
+          "title": "Segmentation",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "address-mapping",
+          "title": "Address Mapping",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "virtual-memory",
+      "title": "Virtual Memory",
+      "order": 10,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "virtual-memory-concepts",
+          "title": "Virtual Memory Concepts",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "virtual-storage-management",
+          "title": "Virtual Storage Management",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "page-replacement-strategies",
+          "title": "Page Replacement Strategies",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "secondary-storage-management",
+      "title": "Secondary Storage Management",
+      "order": 11,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "disk-scheduling-algorithms",
+          "title": "Disk Scheduling Algorithms",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "file-system",
+      "title": "File System",
+      "order": 12,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "file-management",
+          "title": "File Management",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "file-system-structure",
+          "title": "File System Structure",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "file-organization",
+          "title": "File Organization",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "blocking-and-buffering",
+          "title": "Blocking and Buffering",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "file-descriptors",
+          "title": "File Descriptors",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "file-and-directory-structures",
+          "title": "File and Directory Structures",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "directory-tree",
+          "title": "Directory Tree",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "blocks-and-fragments",
+          "title": "Blocks and Fragments",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "inodes",
+          "title": "Inodes",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "unix-file-structure",
+          "title": "UNIX File Structure",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "file-control-block-fcb",
+          "title": "File Control Block (FCB)",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "space-allocation",
+          "title": "Space Allocation",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "tree-structured-file-system",
+          "title": "Tree-Structured File System",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "protection-and-security",
+      "title": "Protection and Security",
+      "order": 13,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "classification-of-protection-and-security-issues",
+          "title": "Classification of Protection and Security Issues",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "protection-and-security-handling-techniques",
+          "title": "Protection and Security Handling Techniques",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "linux",
+      "title": "Linux",
+      "order": 14,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "introduction-and-history-of-linux",
+          "title": "Introduction and History of Linux",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "linux-distributions",
+          "title": "Linux Distributions",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "linux-architecture-kernel-shell-utilities",
+          "title": "Linux Architecture: Kernel, Shell, Utilities",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "linux-file-system-hierarchy",
+          "title": "Linux File System Hierarchy",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "basic-linux-commands",
+          "title": "Basic Linux Commands",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "file-permissions-and-ownership",
+          "title": "File Permissions and Ownership",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "users-and-groups",
+          "title": "Users and Groups",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "process-management-commands",
+          "title": "Process Management Commands",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "package-management",
+          "title": "Package Management",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "shell-scripting-basics",
+          "title": "Shell Scripting Basics",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "title": "Artificial Intelligence, Big Data and Cloud Computing",
+  "order": 10,
+  "topics": [
+    {
+      "slug": "overview-of-ai",
+      "title": "Overview of AI",
+      "order": 1,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "knowledge-representation",
+      "title": "Knowledge Representation",
+      "order": 2,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "general-concepts-of-knowledge",
+          "title": "General Concepts of Knowledge",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "knowledge-representation",
+          "title": "Knowledge Representation",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "knowledge-organization-and-manipulation",
+          "title": "Knowledge Organization and Manipulation",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "introduction-to-prolog",
+      "title": "Introduction to PROLOG",
+      "order": 3,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "intelligent-agents",
+      "title": "Intelligent Agents",
+      "order": 4,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "first-order-logic",
+      "title": "First-Order Logic",
+      "order": 5,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "search-strategies-and-game-playing",
+      "title": "Search Strategies and Game Playing",
+      "order": 6,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "search-strategies",
+          "title": "Search Strategies",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "matching-techniques",
+          "title": "Matching Techniques",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "game-planning",
+          "title": "Game Planning",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "natural-language-processing",
+      "title": "Natural Language Processing",
+      "order": 7,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "probabilistic-reasoning",
+      "title": "Probabilistic Reasoning",
+      "order": 8,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "expert-systems-and-computer-vision",
+      "title": "Expert Systems and Computer Vision",
+      "order": 9,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "knowledge-acquisition-and-learning",
+      "title": "Knowledge Acquisition and Learning",
+      "order": 10,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "learning-in-symbolic-and-non-symbolic-representation",
+          "title": "Learning in Symbolic and Non-Symbolic Representation",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "introduction-to-big-data",
+      "title": "Introduction to Big Data",
+      "order": 11,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "definition-of-big-data",
+          "title": "Definition of Big Data",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "characteristics-of-big-data-the-v-s",
+          "title": "Characteristics of Big Data (the \"V\"s)",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "sources-and-types-of-data-structured-semi-structured-unstructured",
+          "title": "Sources and Types of Data: Structured, Semi-Structured, Unstructured",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "big-data-technologies",
+      "title": "Big Data Technologies",
+      "order": 12,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "hadoop-and-hdfs",
+          "title": "Hadoop and HDFS",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "mapreduce",
+          "title": "MapReduce",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "apache-spark",
+          "title": "Apache Spark",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "nosql-databases",
+          "title": "NoSQL Databases",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-warehousing-and-analytics",
+      "title": "Data Warehousing and Analytics",
+      "order": 13,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "data-warehouse-concepts",
+          "title": "Data Warehouse Concepts",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "data-analytics",
+          "title": "Data Analytics",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "introduction-to-cloud-computing",
+      "title": "Introduction to Cloud Computing",
+      "order": 14,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "definition-and-essential-characteristics",
+          "title": "Definition and Essential Characteristics",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "advantages-and-disadvantages",
+          "title": "Advantages and Disadvantages",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cloud-service-models",
+      "title": "Cloud Service Models",
+      "order": 15,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "iaas-paas-saas",
+          "title": "IaaS, PaaS, SaaS",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cloud-deployment-models",
+      "title": "Cloud Deployment Models",
+      "order": 16,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "public-private-hybrid-and-community-clouds",
+          "title": "Public, Private, Hybrid and Community Clouds",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "virtualization",
+      "title": "Virtualization",
+      "order": 17,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "virtual-machines-and-hypervisors-type-1-and-type-2",
+          "title": "Virtual Machines and Hypervisors (Type 1 and Type 2)",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "containers",
+          "title": "Containers",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cloud-security",
+      "title": "Cloud Security and Related Computing Models",
+      "order": 18,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "cloud-security-issues",
+          "title": "Cloud Security Issues",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "edge-and-fog-computing",
+          "title": "Edge and Fog Computing",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    }
+  ]
+}

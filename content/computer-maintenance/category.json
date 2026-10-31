@@ -1,0 +1,113 @@
+{
+  "title": "Computer Maintenance and Troubleshooting",
+  "order": 13,
+  "topics": [
+    {
+      "slug": "types-of-maintenance",
+      "title": "Types of Maintenance",
+      "order": 1,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "preventive-maintenance",
+          "title": "Preventive Maintenance",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "corrective-maintenance",
+          "title": "Corrective Maintenance",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "system-unit-components",
+      "title": "System Unit Components",
+      "order": 2,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "system-unit",
+          "title": "System Unit",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "motherboard-slots-and-sockets",
+          "title": "Motherboard Slots and Sockets",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "bios",
+          "title": "BIOS",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "power-supply-output-voltages-and-signals",
+          "title": "Power Supply Output Voltages and Signals",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "memory-modules",
+          "title": "Memory Modules",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "expansion-cards",
+          "title": "Expansion Cards",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "installation-and-utility-software",
+      "title": "Installation and Utility Software",
+      "order": 3,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "operating-system-installation",
+          "title": "Operating System Installation",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "driver-installation",
+          "title": "Driver Installation",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "use-of-utility-software",
+          "title": "Use of Utility Software",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    }
+  ]
+}

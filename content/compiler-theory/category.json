@@ -1,0 +1,255 @@
+{
+  "title": "Compiler Design and Theory of Computation",
+  "order": 17,
+  "topics": [
+    {
+      "slug": "introduction-to-compilers",
+      "title": "Introduction to Compilers",
+      "order": 1,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "basic-issues",
+          "title": "Basic Issues",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "logical-analysis",
+          "title": "Logical Analysis",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "lexical-analysis",
+      "title": "Lexical Analysis",
+      "order": 2,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "syntax-analysis",
+      "title": "Syntax Analysis",
+      "order": 3,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "semantic-analysis-and-type-checking",
+      "title": "Semantic Analysis and Type Checking",
+      "order": 4,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "run-time-environments",
+      "title": "Run-Time Environments",
+      "order": 5,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "code-generation-and-code-optimization",
+      "title": "Code Generation and Code Optimization",
+      "order": 6,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "language-theory",
+      "title": "Language Theory",
+      "order": 7,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "finite-automata",
+      "title": "Finite Automata",
+      "order": 8,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "deterministic-finite-automata-dfa",
+          "title": "Deterministic Finite Automata (DFA)",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "nondeterministic-finite-automata-nfa",
+          "title": "Nondeterministic Finite Automata (NFA)",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "nfa-to-dfa-conversion",
+          "title": "NFA to DFA Conversion",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "dfa-minimization",
+          "title": "DFA Minimization",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "regular-expressions-and-regular-languages",
+      "title": "Regular Expressions and Regular Languages",
+      "order": 9,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "regular-expressions",
+          "title": "Regular Expressions",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "equivalence-of-regular-expressions-and-finite-automata",
+          "title": "Equivalence of Regular Expressions and Finite Automata",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "pumping-lemma-for-regular-languages",
+          "title": "Pumping Lemma for Regular Languages",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "context-free-grammars-and-pushdown-automata",
+      "title": "Context-Free Grammars and Pushdown Automata",
+      "order": 10,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "context-free-grammars-derivations-and-parse-trees",
+          "title": "Context-Free Grammars, Derivations and Parse Trees",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "ambiguity",
+          "title": "Ambiguity",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "chomsky-normal-form-and-greibach-normal-form",
+          "title": "Chomsky Normal Form and Greibach Normal Form",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "pushdown-automata",
+          "title": "Pushdown Automata",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "turing-machines-and-computability",
+      "title": "Turing Machines and Computability",
+      "order": 11,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "turing-machines",
+          "title": "Turing Machines",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "chomsky-hierarchy",
+          "title": "Chomsky Hierarchy",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "decidability-and-the-halting-problem",
+          "title": "Decidability and the Halting Problem",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "computational-complexity",
+      "title": "Computational Complexity",
+      "order": 12,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "classes-p-and-np",
+          "title": "Classes P and NP",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "np-complete-and-np-hard-problems",
+          "title": "NP-Complete and NP-Hard Problems",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    }
+  ]
+}

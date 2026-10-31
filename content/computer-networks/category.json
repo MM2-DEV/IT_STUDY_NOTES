@@ -1,0 +1,826 @@
+{
+  "title": "Computer Networks and Data Communication",
+  "order": 9,
+  "topics": [
+    {
+      "slug": "introduction-to-computer-networks",
+      "title": "Introduction to Computer Networks",
+      "order": 1,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "overview-of-the-internet",
+          "title": "Overview of the Internet",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "overview-of-networking-protocols",
+          "title": "Overview of Networking Protocols",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "network-edge-and-network-core",
+          "title": "Network Edge and Network Core",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "protocol-layers-and-service-models",
+          "title": "Protocol Layers and Service Models",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "types-of-networks-lan-man-wan",
+          "title": "Types of Networks: LAN, MAN, WAN",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "network-topologies",
+      "title": "Network Topologies",
+      "order": 2,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "star-switched-bus-and-ring-topologies",
+          "title": "Star, Switched, Bus and Ring Topologies",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "osi-and-tcp-ip",
+      "title": "OSI and TCP/IP Models",
+      "order": 3,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "osi-model",
+          "title": "OSI Model",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "functions-of-each-layer",
+          "title": "Functions of Each Layer",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "tcp-ip-protocol-suite",
+          "title": "TCP/IP Protocol Suite",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "network-devices-and-internetworking",
+      "title": "Network Devices and Internetworking",
+      "order": 4,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "network-devices-used-at-each-layer",
+          "title": "Network Devices Used at Each Layer",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "bridges-and-routers",
+          "title": "Bridges and Routers",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "network-interconnection",
+          "title": "Network Interconnection",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-transmission-basics",
+      "title": "Data Transmission Basics",
+      "order": 5,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "data-communication",
+          "title": "Data Communication",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "analog-and-digital-data",
+          "title": "Analog and Digital Data",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "data-rate-and-baud-rate",
+          "title": "Data Rate and Baud Rate",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "channel-capacity",
+          "title": "Channel Capacity",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "bandwidth-and-frequency-spectrum",
+          "title": "Bandwidth and Frequency Spectrum",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "baseband-and-broadband",
+          "title": "Baseband and Broadband",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "transmission-impairments",
+          "title": "Transmission Impairments",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "transmission-modes-and-media",
+      "title": "Transmission Modes and Media",
+      "order": 6,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "transmission-modes-and-transmission-systems",
+          "title": "Transmission Modes and Transmission Systems",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "synchronous-and-asynchronous-transmission",
+          "title": "Synchronous and Asynchronous Transmission",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "guided-media-stp-utp-coaxial-optical-fiber",
+          "title": "Guided Media: STP, UTP, Coaxial, Optical Fiber",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "unguided-wireless-media",
+          "title": "Unguided (Wireless) Media",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "satellite-communication",
+          "title": "Satellite Communication",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "null-modem-configuration",
+          "title": "Null Modem Configuration",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-encoding",
+      "title": "Data Encoding",
+      "order": 7,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "nrz-nrzi",
+          "title": "NRZ, NRZI",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "manchester-and-differential-manchester",
+          "title": "Manchester and Differential Manchester",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "modulation-techniques",
+      "title": "Modulation Techniques",
+      "order": 8,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "modulation-and-demodulation",
+          "title": "Modulation and Demodulation",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "digital-modulation-techniques",
+          "title": "Digital Modulation Techniques",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "am-fm-pm",
+          "title": "AM, FM, PM",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "delta-modulation-and-companding",
+          "title": "Delta Modulation and Companding",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "ask-psk-fsk-qpsk-qam",
+          "title": "ASK, PSK, FSK, QPSK, QAM",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "sampling-theorem",
+          "title": "Sampling Theorem",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "pcm-ppm-pam",
+          "title": "PCM, PPM, PAM",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-link-control",
+      "title": "Data Link Control",
+      "order": 9,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "error-control-and-flow-control",
+          "title": "Error Control and Flow Control",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "crc",
+          "title": "CRC",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "hdlc",
+          "title": "HDLC",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "multiplexing",
+      "title": "Multiplexing",
+      "order": 10,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "fdm-tdm-statistical-tdm",
+          "title": "FDM, TDM, Statistical TDM",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "switching-techniques",
+      "title": "Switching Techniques",
+      "order": 11,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "circuit-switching",
+          "title": "Circuit Switching",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "packet-switching",
+          "title": "Packet Switching",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ethernet-and-lan-standards",
+      "title": "Ethernet and LAN Standards",
+      "order": 12,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "application-layer",
+      "title": "Application Layer",
+      "order": 13,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "principles-of-network-applications",
+          "title": "Principles of Network Applications",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "web-and-http",
+          "title": "Web and HTTP",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "ftp",
+          "title": "FTP",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "e-mail",
+          "title": "E-mail",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "dns",
+          "title": "DNS",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "transport-layer",
+      "title": "Transport Layer",
+      "order": 14,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "transport-layer-services",
+          "title": "Transport Layer Services",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "multiplexing-and-demultiplexing",
+          "title": "Multiplexing and Demultiplexing",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "connectionless-transport-udp",
+          "title": "Connectionless Transport: UDP",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "principles-of-reliable-data-transfer",
+          "title": "Principles of Reliable Data Transfer",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "connection-oriented-transport-tcp",
+          "title": "Connection-Oriented Transport: TCP",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "principles-of-congestion-control",
+          "title": "Principles of Congestion Control",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "tcp-congestion-control",
+          "title": "TCP Congestion Control",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "network-layer-and-ip",
+      "title": "Network Layer and IP",
+      "order": 15,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "datagram-networks",
+          "title": "Datagram Networks",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "inside-a-router",
+          "title": "Inside a Router",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "internet-protocol-ip",
+          "title": "Internet Protocol (IP)",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "ip-addresses",
+          "title": "IP Addresses",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "ip-subnetting",
+          "title": "IP Subnetting",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "arp-and-icmp",
+          "title": "ARP and ICMP",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "ipv6",
+          "title": "IPv6",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "routing",
+      "title": "Routing",
+      "order": 16,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "link-state-and-distance-vector-routing-algorithms",
+          "title": "Link-State and Distance-Vector Routing Algorithms",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "rip-ospf-bgp",
+          "title": "RIP, OSPF, BGP",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "unicast-and-multicast-routing-protocols",
+          "title": "Unicast and Multicast Routing Protocols",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wireless-and-cellular-networks",
+      "title": "Wireless and Cellular Networks",
+      "order": 17,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "wireless-lan",
+          "title": "Wireless LAN",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "vsat",
+          "title": "VSAT",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "analog-and-digital-cellular-systems",
+          "title": "Analog and Digital Cellular Systems",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "atm",
+      "title": "ATM",
+      "order": 18,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "atm-switches",
+          "title": "ATM Switches",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "atm-protocol",
+          "title": "ATM Protocol",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "telecommunication",
+      "title": "Telecommunication",
+      "order": 19,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "elements-of-a-telecommunication-system",
+          "title": "Elements of a Telecommunication System",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "telephone-networks-pstn",
+          "title": "Telephone Networks (PSTN)",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "telephone-switching-systems",
+          "title": "Telephone Switching Systems",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "mobile-communication-generations-1g-5g",
+          "title": "Mobile Communication Generations (1G–5G)",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "gsm-architecture",
+          "title": "GSM Architecture",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "multiple-access-techniques-fdma-tdma-cdma",
+          "title": "Multiple Access Techniques: FDMA, TDMA, CDMA",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "spread-spectrum",
+          "title": "Spread Spectrum",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "optical-fiber-communication-systems",
+          "title": "Optical Fiber Communication Systems",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "satellite-communication-systems",
+          "title": "Satellite Communication Systems",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Cybersecurity",
+  "order": 14,
+  "topics": [
+    {
+      "slug": "network-security",
+      "title": "Network Security",
+      "order": 1,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "types-of-attack",
+          "title": "Types of Attack",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "encryption-techniques",
+          "title": "Encryption Techniques",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "digital-signatures",
+          "title": "Digital Signatures",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "web-security",
+      "title": "Web Security",
+      "order": 2,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "denial-of-service",
+          "title": "Denial of Service",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "buffer-overflow",
+          "title": "Buffer Overflow",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "cross-site-scripting",
+          "title": "Cross-Site Scripting",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "authentication-and-access-control",
+          "title": "Authentication and Access Control",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    }
+  ]
+}

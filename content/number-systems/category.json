@@ -1,0 +1,221 @@
+{
+  "title": "Number Systems and Data Representation",
+  "order": 2,
+  "topics": [
+    {
+      "slug": "number-systems-and-conversion",
+      "title": "Number Systems and Conversion",
+      "order": 1,
+      "exams": [
+        "School",
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "history-of-inventing-numbers",
+          "title": "History of Inventing Numbers",
+          "exams": [
+            "School",
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "non-positional-and-positional-number-systems",
+          "title": "Non-positional and Positional Number Systems",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "binary-octal-decimal-and-hexadecimal",
+          "title": "Binary, Octal, Decimal and Hexadecimal",
+          "exams": [
+            "School",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "conversion-between-number-systems",
+          "title": "Conversion Between Number Systems",
+          "exams": [
+            "School",
+            "School-2"
+          ],
+          "children": [
+            "Decimal ↔ Binary",
+            "Decimal ↔ Octal",
+            "Decimal ↔ Hexadecimal",
+            "Hexadecimal ↔ Octal",
+            "Any Base ↔ Any Base"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "binary-arithmetic",
+      "title": "Binary Arithmetic",
+      "order": 2,
+      "exams": [
+        "School",
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "binary-addition",
+          "title": "Binary Addition",
+          "exams": [
+            "School",
+            "School-2"
+          ]
+        },
+        {
+          "id": "binary-subtraction",
+          "title": "Binary Subtraction",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "subtraction-using-2-s-complement",
+          "title": "Subtraction Using 2's Complement",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "binary-multiplication",
+          "title": "Binary Multiplication",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "binary-division",
+          "title": "Binary Division",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "octal-and-hexadecimal-addition",
+          "title": "Octal and Hexadecimal Addition",
+          "exams": [
+            "School",
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-and-data-representation",
+      "title": "Data and Data Representation",
+      "order": 3,
+      "exams": [
+        "School",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "data-information-and-data-processing",
+          "title": "Data, Information and Data Processing",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "data-representation",
+          "title": "Data Representation",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "binary-codes",
+      "title": "Binary Codes",
+      "order": 4,
+      "exams": [
+        "School",
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "bcd-binary-coded-decimal",
+          "title": "BCD (Binary Coded Decimal)",
+          "exams": [
+            "School",
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "excess-3-code",
+          "title": "Excess-3 Code",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "ebcdic",
+          "title": "EBCDIC",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "ascii",
+          "title": "ASCII",
+          "exams": [
+            "School",
+            "School-2"
+          ]
+        },
+        {
+          "id": "unicode",
+          "title": "Unicode",
+          "exams": [
+            "School",
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "parity",
+      "title": "Parity",
+      "order": 5,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "parity-bit",
+          "title": "Parity Bit",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "parity-generator",
+          "title": "Parity Generator",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    }
+  ]
+}

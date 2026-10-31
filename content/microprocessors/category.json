@@ -1,0 +1,411 @@
+{
+  "title": "Microprocessors, Microcontrollers and Interfacing",
+  "order": 12,
+  "topics": [
+    {
+      "slug": "microprocessor-fundamentals",
+      "title": "Microprocessor Fundamentals",
+      "order": 1,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "microprocessors-and-microcomputers",
+          "title": "Microprocessors and Microcomputers",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "evolution-of-the-microprocessor",
+          "title": "Evolution of the Microprocessor",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "architecture-and-operation-of-a-general-purpose-microprocessor",
+          "title": "Architecture and Operation of a General-Purpose Microprocessor",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "cpu-alu-and-control-unit",
+          "title": "CPU, ALU and Control Unit",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "intel-8085-8086",
+      "title": "Intel 8085/8086 Architecture",
+      "order": 2,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "intel-8085-8086-architecture",
+          "title": "Intel 8085/8086 Architecture",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "register-structure",
+          "title": "Register Structure",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "segment-registers",
+          "title": "Segment Registers",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "programming-model",
+          "title": "Programming Model",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "addressing-modes-and-instruction-set",
+      "title": "Addressing Modes and Instruction Set",
+      "order": 3,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "addressing-modes",
+          "title": "Addressing Modes",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "common-instruction-types",
+          "title": "Common Instruction Types",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "instruction-set",
+          "title": "Instruction Set",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "assembly-language-programming",
+      "title": "Assembly Language Programming",
+      "order": 4,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "assembly-language-programming",
+          "title": "Assembly Language Programming",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "arithmetic-and-logical-programs",
+          "title": "Arithmetic and Logical Programs",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "input-output-programs",
+          "title": "Input/Output Programs",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "microprocessor-interrupts",
+      "title": "Microprocessor Interrupts",
+      "order": 5,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "classification-of-interrupts",
+          "title": "Classification of Interrupts",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "interrupt-handling",
+          "title": "Interrupt Handling",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "x86-memory-management",
+      "title": "Memory Management in the Intel 80x86 Family",
+      "order": 6,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "real-mode-memory-management",
+          "title": "Real-Mode Memory Management",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "segmentation-and-physical-address-translation",
+          "title": "Segmentation and Physical Address Translation",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "protected-mode-memory-management",
+          "title": "Protected-Mode Memory Management",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "segmentation-and-virtual-addressing",
+          "title": "Segmentation and Virtual Addressing",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "segment-selectors-descriptors-and-tables",
+          "title": "Segment Selectors, Descriptors and Tables",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "80386-and-80486-register-formats",
+          "title": "80386 and 80486 Register Formats",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "paged-memory-operation-and-tlb-structure",
+          "title": "Paged Memory Operation and TLB Structure",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "io-interfacing",
+      "title": "I/O Interfacing and Peripheral Chips",
+      "order": 7,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "i-o-port-organization-and-access",
+          "title": "I/O Port Organization and Access",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "interfacing-the-keyboard-printer-and-monitor",
+          "title": "Interfacing the Keyboard, Printer and Monitor",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "8255a-8253-8272-8259a-and-8237-chips",
+          "title": "8255A, 8253, 8272, 8259A and 8237 Chips",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "bus-interfaces",
+          "title": "Bus Interfaces",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "microcontrollers-and-plc",
+      "title": "Microcontrollers and PLC",
+      "order": 8,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "control-systems",
+          "title": "Control Systems",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "microcontroller-definition-applications-and-advantages",
+          "title": "Microcontroller: Definition, Applications and Advantages",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "microcontroller-architecture",
+          "title": "Microcontroller Architecture",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "applications-of-plc",
+          "title": "Applications of PLC",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "interfaces-and-peripheral-devices",
+      "title": "Interfaces and Peripheral Devices",
+      "order": 9,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "parallel-and-serial-interfaces",
+          "title": "Parallel and Serial Interfaces",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "keyboard-encoder-mouse-scanner",
+          "title": "Keyboard Encoder, Mouse, Scanner",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "lcd-display",
+          "title": "LCD Display",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "printers-dot-matrix-inkjet-laser",
+          "title": "Printers: Dot Matrix, Inkjet, Laser",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "uart-usart",
+          "title": "UART/USART",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "serial-parallel-and-usb-ports",
+          "title": "Serial, Parallel and USB Ports",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "omr-ocr-micr-barcode-reader",
+          "title": "OMR, OCR, MICR, Barcode Reader",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "light-pen-plotter-modem",
+          "title": "Light Pen, Plotter, Modem",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    }
+  ]
+}

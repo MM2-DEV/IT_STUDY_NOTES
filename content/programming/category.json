@@ -1,0 +1,601 @@
+{
+  "title": "Programming",
+  "order": 4,
+  "topics": [
+    {
+      "slug": "introduction-to-programming",
+      "title": "Introduction to Programming",
+      "order": 1,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "introduction-to-computer-programming",
+          "title": "Introduction to Computer Programming",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "steps-of-programming",
+          "title": "Steps of Programming",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "problem-solving-techniques",
+          "title": "Problem-Solving Techniques",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "algorithm-specification-and-development",
+          "title": "Algorithm Specification and Development",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "programming-style",
+          "title": "Programming Style",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "testing-and-debugging",
+          "title": "Testing and Debugging",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "algorithms-and-flowcharts",
+      "title": "Algorithms and Flowcharts",
+      "order": 2,
+      "exams": [
+        "School",
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "algorithm",
+          "title": "Algorithm",
+          "exams": [
+            "School",
+            "School-2"
+          ]
+        },
+        {
+          "id": "variables-and-operations",
+          "title": "Variables and Operations",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "flowchart",
+          "title": "Flowchart",
+          "exams": [
+            "School",
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "program-design-techniques",
+      "title": "Program Design Techniques",
+      "order": 3,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "structured-program-design",
+          "title": "Structured Program Design",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "modular-program-design",
+          "title": "Modular Program Design",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "programming-languages-and-paradigms",
+      "title": "Programming Languages and Paradigms",
+      "order": 4,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "types-of-programming-languages",
+          "title": "Types of Programming Languages",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "programming-paradigms",
+          "title": "Programming Paradigms",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "machine-language-programming",
+          "title": "Machine Language Programming",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "assembly-language-programming",
+          "title": "Assembly Language Programming",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "c-data-types-operators",
+      "title": "C: Data Types, Variables and Operators",
+      "order": 5,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "fundamentals-of-c-programming",
+          "title": "Fundamentals of C Programming",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "data-types",
+          "title": "Data Types",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "variables-and-expressions",
+          "title": "Variables and Expressions",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "operators",
+          "title": "Operators",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "statements",
+          "title": "Statements",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "c-control-statements",
+      "title": "C: Control Statements",
+      "order": 6,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "conditional-statements",
+          "title": "Conditional Statements",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "looping-statements",
+          "title": "Looping Statements",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "c-arrays-strings",
+      "title": "C: Arrays and Strings",
+      "order": 7,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "arrays",
+          "title": "Arrays",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "strings",
+          "title": "Strings",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "c-pointers",
+      "title": "C: Pointers",
+      "order": 8,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "c-functions",
+      "title": "C: Functions",
+      "order": 9,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "c-structures-unions",
+      "title": "C: Structures, Unions and Bit-fields",
+      "order": 10,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "structures",
+          "title": "Structures",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "unions",
+          "title": "Unions",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "bit-fields",
+          "title": "Bit-fields",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "c-preprocessor",
+      "title": "C: Preprocessor Directives",
+      "order": 11,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "c-console-file-io",
+      "title": "C: Console and File I/O",
+      "order": 12,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "console-i-o",
+          "title": "Console I/O",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "file-i-o",
+          "title": "File I/O",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "c-graphics",
+      "title": "C: Graphics",
+      "order": 13,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "oop-concepts",
+      "title": "Object-Oriented Programming Concepts",
+      "order": 14,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "classes-and-objects",
+          "title": "Classes and Objects",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "methods",
+          "title": "Methods",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "interfaces",
+          "title": "Interfaces",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "packages",
+          "title": "Packages",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "encapsulation",
+          "title": "Encapsulation",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "inheritance",
+          "title": "Inheritance",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "polymorphism",
+          "title": "Polymorphism",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cpp-and-java",
+      "title": "C++ and Java",
+      "order": 15,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "introductory-programming-with-cplusplus-java",
+          "title": "Introductory Programming with C++/Java",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "template-functions-and-classes",
+          "title": "Template Functions and Classes",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "multithreading",
+          "title": "Multithreading",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "exceptions",
+          "title": "Exceptions",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "python-programming",
+      "title": "Python Programming",
+      "order": 16,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "introduction-and-features-of-python",
+          "title": "Introduction and Features of Python",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "variables-data-types-and-operators",
+          "title": "Variables, Data Types and Operators",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "input-and-output",
+          "title": "Input and Output",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "control-flow-conditional-statements-and-loops",
+          "title": "Control Flow: Conditional Statements and Loops",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "functions-and-lambda-expressions",
+          "title": "Functions and Lambda Expressions",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "strings",
+          "title": "Strings",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "lists-tuples-sets-and-dictionaries",
+          "title": "Lists, Tuples, Sets and Dictionaries",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "modules-and-packages",
+          "title": "Modules and Packages",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "file-handling",
+          "title": "File Handling",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "exception-handling",
+          "title": "Exception Handling",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "object-oriented-programming-in-python",
+          "title": "Object-Oriented Programming in Python",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    }
+  ]
+}

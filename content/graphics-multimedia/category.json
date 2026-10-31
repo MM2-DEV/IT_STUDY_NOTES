@@ -1,0 +1,226 @@
+{
+  "title": "Computer Graphics and Multimedia",
+  "order": 15,
+  "topics": [
+    {
+      "slug": "computer-graphics",
+      "title": "Computer Graphics",
+      "order": 1,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "definition",
+          "title": "Definition",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "graphics-software-and-its-types",
+          "title": "Graphics Software and Its Types",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "applications-of-each-type",
+          "title": "Applications of Each Type",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "multimedia",
+      "title": "Multimedia",
+      "order": 2,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "multimedia-software-and-its-types",
+          "title": "Multimedia Software and Its Types",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "applications-of-multimedia",
+          "title": "Applications of Multimedia",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "use-of-voip",
+          "title": "Use of VoIP",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "graphics-hardware-and-display-devices",
+      "title": "Graphics Hardware and Display Devices",
+      "order": 3,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "raster-scan-and-random-scan-displays",
+          "title": "Raster-Scan and Random-Scan Displays",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "crt-lcd-and-led-displays",
+          "title": "CRT, LCD and LED Displays",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "resolution-aspect-ratio-and-frame-buffer",
+          "title": "Resolution, Aspect Ratio and Frame Buffer",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "output-primitives",
+      "title": "Output Primitives",
+      "order": 4,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "line-drawing-algorithms-dda-bresenham",
+          "title": "Line Drawing Algorithms: DDA, Bresenham",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "circle-drawing-algorithms",
+          "title": "Circle Drawing Algorithms",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "polygon-filling",
+          "title": "Polygon Filling",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "2d-transformations",
+      "title": "2D Transformations",
+      "order": 5,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "translation-rotation-scaling",
+          "title": "Translation, Rotation, Scaling",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "reflection-and-shearing",
+          "title": "Reflection and Shearing",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "homogeneous-coordinates-and-composite-transformations",
+          "title": "Homogeneous Coordinates and Composite Transformations",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "clipping",
+      "title": "Clipping",
+      "order": 6,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "line-clipping-cohen-sutherland",
+          "title": "Line Clipping: Cohen–Sutherland",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "polygon-clipping-sutherland-hodgman",
+          "title": "Polygon Clipping: Sutherland–Hodgman",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "3d-graphics-projections",
+      "title": "3D Graphics and Projections",
+      "order": 7,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "3d-transformations",
+          "title": "3D Transformations",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "parallel-and-perspective-projections",
+          "title": "Parallel and Perspective Projections",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "color-models",
+      "title": "Color Models",
+      "order": 8,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "rgb-cmy-cmyk-hsv",
+          "title": "RGB, CMY/CMYK, HSV",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    }
+  ]
+}

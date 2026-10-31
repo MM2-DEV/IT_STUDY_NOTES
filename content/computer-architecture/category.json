@@ -1,0 +1,319 @@
+{
+  "title": "Computer Architecture and Organization",
+  "order": 11,
+  "topics": [
+    {
+      "slug": "fundamentals-of-computer-design",
+      "title": "Fundamentals of Computer Design",
+      "order": 1,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "fundamentals-of-computer-design",
+          "title": "Fundamentals of Computer Design",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "processor-and-alu-design",
+          "title": "Processor and ALU Design",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "memory",
+      "title": "Memory",
+      "order": 2,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "memory-hierarchy",
+          "title": "Memory Hierarchy",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "types-of-memory",
+          "title": "Types of Memory",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "ram-structure-and-addressing-techniques",
+          "title": "RAM Structure and Addressing Techniques",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "characteristics-of-prom-eprom-and-eeprom",
+          "title": "Characteristics of PROM, EPROM and EEPROM",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "cache-memory",
+          "title": "Cache Memory",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "definition-of-virtual-memory",
+          "title": "Definition of Virtual Memory",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "memory-organization-and-memory-system",
+          "title": "Memory Organization and Memory System",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "secondary-storage-devices",
+      "title": "Secondary Storage Devices",
+      "order": 3,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "hard-disk",
+          "title": "Hard Disk",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "optical-disk",
+          "title": "Optical Disk",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "flash-memory",
+          "title": "Flash Memory",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "control-unit-design",
+      "title": "Control Unit Design",
+      "order": 4,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "control-unit-design-approaches",
+          "title": "Control Unit Design Approaches",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "hardwired-control",
+          "title": "Hardwired Control",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "micro-programmed-control",
+          "title": "Micro-programmed Control",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "instruction-set-architecture",
+      "title": "Instruction Set Architecture",
+      "order": 5,
+      "exams": [
+        "School-2"
+      ],
+      "subtopics": [
+        {
+          "id": "risc-and-cisc-processors",
+          "title": "RISC and CISC Processors",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "opcode-encoding-huffman",
+          "title": "Opcode Encoding (Huffman)",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "io-organization",
+      "title": "Input/Output Organization",
+      "order": 6,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "programmed-i-o",
+          "title": "Programmed I/O",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "interrupt-driven-i-o",
+          "title": "Interrupt-Driven I/O",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "dma-direct-memory-access",
+          "title": "DMA (Direct Memory Access)",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "i-o-subsystem-and-i-o-processor",
+          "title": "I/O Subsystem and I/O Processor",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "system-organization-and-bus",
+          "title": "System Organization and Bus",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "interrupts-and-exceptions",
+      "title": "Interrupts and Exceptions",
+      "order": 7,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "pipelining",
+      "title": "Pipelining",
+      "order": 8,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "pipelining-and-pipeline-processors",
+          "title": "Pipelining and Pipeline Processors",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "hazards",
+          "title": "Hazards",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "parallel-processing",
+      "title": "Parallel Processing",
+      "order": 9,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "parallel-processing-concepts",
+          "title": "Parallel Processing Concepts",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "multiprocessing-definition",
+          "title": "Multiprocessing (Definition)",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "systolic-arrays",
+          "title": "Systolic Arrays",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "fault-tolerant-computers",
+          "title": "Fault-Tolerant Computers",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    }
+  ]
+}

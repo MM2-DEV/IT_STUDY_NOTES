@@ -1,0 +1,755 @@
+{
+  "title": "Database Management Systems",
+  "order": 8,
+  "topics": [
+    {
+      "slug": "introduction-to-database-systems",
+      "title": "Introduction to Database Systems",
+      "order": 1,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "evolution-of-file-processing-systems",
+          "title": "Evolution of File Processing Systems",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "role-of-databases-in-organizations",
+          "title": "Role of Databases in Organizations",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "core-components-of-a-database-environment",
+          "title": "Core Components of a Database Environment",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "definition-of-dbms",
+          "title": "Definition of DBMS",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "types-of-dbms",
+          "title": "Types of DBMS",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "advantages-and-disadvantages-of-dbms",
+          "title": "Advantages and Disadvantages of DBMS",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-models-and-the-er-model",
+      "title": "Data Models and the ER Model",
+      "order": 2,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "data-models",
+          "title": "Data Models",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "entity-relationship-er-model",
+          "title": "Entity-Relationship (ER) Model",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "er-diagram-symbols-and-constructs",
+          "title": "ER Diagram Symbols and Constructs",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "the-relational-model",
+      "title": "The Relational Model",
+      "order": 3,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "relational-model",
+          "title": "Relational Model",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "integrity-constraints",
+          "title": "Integrity Constraints",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "transforming-an-er-diagram-into-a-relational-model",
+          "title": "Transforming an ER Diagram into a Relational Model",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "normalization",
+      "title": "Normalization",
+      "order": 4,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "concept-of-normalization",
+          "title": "Concept of Normalization",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "functional-dependencies",
+          "title": "Functional Dependencies",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "2nf-3nf-and-bcnf",
+          "title": "2NF, 3NF and BCNF",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sql",
+      "title": "SQL",
+      "order": 5,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "sql",
+          "title": "SQL",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "assertions-and-triggers",
+          "title": "Assertions and Triggers",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "applications-using-sql",
+          "title": "Applications Using SQL",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "file-organization",
+      "title": "File Organization",
+      "order": 6,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "concept-of-file-organization",
+          "title": "Concept of File Organization",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "classification-and-representation",
+          "title": "Classification and Representation",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indexing-and-hashing",
+      "title": "Indexing and Hashing",
+      "order": 7,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "basic-concepts-of-indexing",
+          "title": "Basic Concepts of Indexing",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "ordered-indices",
+          "title": "Ordered Indices",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "sparse-and-dense-indexing",
+          "title": "Sparse and Dense Indexing",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "bplus-tree-index-files",
+          "title": "B+-Tree Index Files",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "b-tree-index-files",
+          "title": "B-Tree Index Files",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "static-and-dynamic-hashing-hash-indexing",
+          "title": "Static and Dynamic Hashing / Hash Indexing",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "comparison-of-ordered-indexing-and-hashing",
+          "title": "Comparison of Ordered Indexing and Hashing",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "query-processing",
+      "title": "Query Processing",
+      "order": 8,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "concept-and-overview-of-query-processing",
+          "title": "Concept and Overview of Query Processing",
+          "exams": [
+            "School-2",
+            "College"
+          ]
+        },
+        {
+          "id": "notations",
+          "title": "Notations",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "measures-of-query-cost",
+          "title": "Measures of Query Cost",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "selection-operation-and-its-cost-estimation",
+          "title": "Selection Operation and Its Cost Estimation",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "sorting",
+          "title": "Sorting",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "join-operation-and-its-cost-estimation",
+          "title": "Join Operation and Its Cost Estimation",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "evaluation-of-expressions",
+          "title": "Evaluation of Expressions",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "query-optimization",
+      "title": "Query Optimization",
+      "order": 9,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "transformation-of-relational-expressions",
+          "title": "Transformation of Relational Expressions",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "catalog-and-statistical-information-for-cost-estimation",
+          "title": "Catalog and Statistical Information for Cost Estimation",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "cost-based-optimization",
+          "title": "Cost-Based Optimization",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "transactions",
+      "title": "Transactions",
+      "order": 10,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "transaction-concept",
+          "title": "Transaction Concept",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "transaction-state",
+          "title": "Transaction State",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "concurrent-executions",
+          "title": "Concurrent Executions",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "serializability",
+          "title": "Serializability",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "concurrency-control",
+      "title": "Concurrency Control",
+      "order": 11,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "lock-based-protocols",
+          "title": "Lock-Based Protocols",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "timestamp-based-protocols",
+          "title": "Timestamp-Based Protocols",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "deadlock-handling",
+          "title": "Deadlock Handling",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "recovery-system",
+      "title": "Recovery System",
+      "order": 12,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "failure-classification",
+          "title": "Failure Classification",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "storage-structure",
+          "title": "Storage Structure",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "recovery-and-atomicity",
+          "title": "Recovery and Atomicity",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "log-based-recovery",
+          "title": "Log-Based Recovery",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "recovery-with-concurrent-transactions",
+          "title": "Recovery with Concurrent Transactions",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "object-oriented-databases",
+      "title": "Object-Oriented Databases",
+      "order": 13,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "object-oriented-data-model",
+          "title": "Object-Oriented Data Model",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "implementing-object-persistence-using-relational-databases",
+          "title": "Implementing Object Persistence Using Relational Databases",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-analysis-and-mining",
+      "title": "Data Analysis and Mining",
+      "order": 14,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "data-mining",
+          "title": "Data Mining",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "decision-tree",
+          "title": "Decision Tree",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "bayes-theory",
+          "title": "Bayes Theory",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "randomized-trees",
+          "title": "Randomized Trees",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "database-system-architectures",
+      "title": "Database System Architectures",
+      "order": 15,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "centralized-and-client-server-systems",
+          "title": "Centralized and Client-Server Systems",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "server-system-architectures",
+          "title": "Server System Architectures",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "parallel-systems",
+          "title": "Parallel Systems",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "distributed-systems",
+          "title": "Distributed Systems",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "network-types",
+          "title": "Network Types",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "parallel-databases",
+      "title": "Parallel Databases",
+      "order": 16,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "i-o-parallelism",
+          "title": "I/O Parallelism",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "interquery-and-intraquery-parallelism",
+          "title": "Interquery and Intraquery Parallelism",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "intraoperation-and-interoperation-parallelism",
+          "title": "Intraoperation and Interoperation Parallelism",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "distributed-databases",
+      "title": "Distributed Databases",
+      "order": 17,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "heterogeneous-and-homogeneous-databases",
+          "title": "Heterogeneous and Homogeneous Databases",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "distributed-data-storage",
+          "title": "Distributed Data Storage",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "distributed-transactions",
+          "title": "Distributed Transactions",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "commit-protocols",
+          "title": "Commit Protocols",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "database-design-tuning-and-security",
+      "title": "Database Design, Tuning and Security",
+      "order": 18,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "database-design",
+          "title": "Database Design",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "database-tuning",
+          "title": "Database Tuning",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "security-and-authorization",
+          "title": "Security and Authorization",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "multidimensional-queries",
+          "title": "Multidimensional Queries",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    }
+  ]
+}

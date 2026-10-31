@@ -1,0 +1,931 @@
+{
+  "title": "Data Structures and Algorithms",
+  "order": 5,
+  "topics": [
+    {
+      "slug": "introduction-and-complexity",
+      "title": "Introduction and Complexity",
+      "order": 1,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "introduction-to-data-structures",
+          "title": "Introduction to Data Structures",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "complexity-of-algorithms",
+          "title": "Complexity of Algorithms",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "time-space-trade-off",
+          "title": "Time–Space Trade-off",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "asymptotic-notations",
+          "title": "Asymptotic Notations",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "arrays",
+      "title": "Arrays",
+      "order": 2,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "array-representation-and-operations",
+          "title": "Array Representation and Operations",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "sparse-and-dense-matrices",
+          "title": "Sparse and Dense Matrices",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "recursion",
+      "title": "Recursion",
+      "order": 3,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "concept-and-applications-of-recursion",
+          "title": "Concept and Applications of Recursion",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "factorial",
+          "title": "Factorial",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "tower-of-hanoi",
+          "title": "Tower of Hanoi",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "linked-lists",
+      "title": "Linked Lists",
+      "order": 4,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "abstract-data-types-and-list-adt",
+          "title": "Abstract Data Types and List ADT",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "representation-and-operations",
+          "title": "Representation and Operations",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "singly-linked-list",
+          "title": "Singly Linked List",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "two-way-doubly-linked-list",
+          "title": "Two-Way (Doubly) Linked List",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "circular-linked-list",
+          "title": "Circular Linked List",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "stacks-and-queues",
+      "title": "Stacks and Queues",
+      "order": 5,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "structure-and-operations-of-stacks-and-queues",
+          "title": "Structure and Operations of Stacks and Queues",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "implementation-strategies",
+          "title": "Implementation Strategies",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "applications-of-stack",
+          "title": "Applications of Stack",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "prefix-infix-postfix",
+      "title": "Prefix, Infix and Postfix Expressions",
+      "order": 6,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "prefix-infix-and-postfix-polish-notation",
+          "title": "Prefix, Infix and Postfix (Polish) Notation",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "transformation-and-evaluation-algorithms",
+          "title": "Transformation and Evaluation Algorithms",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "searching",
+      "title": "Searching",
+      "order": 7,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "linear-search",
+          "title": "Linear Search",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "binary-search",
+          "title": "Binary Search",
+          "exams": [
+            "School-2",
+            "College"
+          ]
+        },
+        {
+          "id": "searching-algorithms",
+          "title": "Searching Algorithms",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "sorting",
+      "title": "Sorting",
+      "order": 8,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "insertion-sort",
+          "title": "Insertion Sort",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "selection-sort",
+          "title": "Selection Sort",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "bubble-sort",
+          "title": "Bubble Sort",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "quick-sort",
+          "title": "Quick Sort",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "merge-sort",
+          "title": "Merge Sort",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "radix-sort",
+          "title": "Radix Sort",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hashing",
+      "title": "Hashing",
+      "order": 9,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "hash-indices-and-hash-functions",
+          "title": "Hash Indices and Hash Functions",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "static-and-dynamic-hashing",
+          "title": "Static and Dynamic Hashing",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "collisions-and-collision-resolution-techniques",
+          "title": "Collisions and Collision Resolution Techniques",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "basic-hashing-techniques",
+          "title": "Basic Hashing Techniques",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trees-and-binary-search-trees",
+      "title": "Trees and Binary Search Trees",
+      "order": 10,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "tree-concepts",
+          "title": "Tree Concepts",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "binary-trees",
+          "title": "Binary Trees",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "traversing-binary-trees",
+          "title": "Traversing Binary Trees",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "binary-search-trees-and-operations",
+          "title": "Binary Search Trees and Operations",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "heaps-and-heap-sort",
+      "title": "Heaps and Heap Sort",
+      "order": 11,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "binary-heaps",
+          "title": "Binary Heaps",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "heap-sort",
+          "title": "Heap Sort",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "avl-b-bplus-trees",
+      "title": "AVL, B and B+ Trees",
+      "order": 12,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "avl-tree",
+          "title": "AVL Tree",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "b-tree",
+          "title": "B Tree",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "bplus-tree",
+          "title": "B+ Tree",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "huffman-coding",
+      "title": "Huffman Coding",
+      "order": 13,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "huffman-encoding-technique-algorithm",
+          "title": "Huffman Encoding Technique / Algorithm",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "graphs-and-graph-traversal",
+      "title": "Graphs and Graph Traversal",
+      "order": 14,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "graph-terminologies",
+          "title": "Graph Terminologies",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "representing-graphs-and-graph-operations",
+          "title": "Representing Graphs and Graph Operations",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "breadth-first-search-bfs",
+          "title": "Breadth-First Search (BFS)",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "depth-first-search-dfs",
+          "title": "Depth-First Search (DFS)",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "graph-algorithms",
+          "title": "Graph Algorithms",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "minimum-spanning-trees",
+      "title": "Minimum Spanning Trees",
+      "order": 15,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "spanning-trees-and-minimum-spanning-trees",
+          "title": "Spanning Trees and Minimum Spanning Trees",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "kruskal-s-algorithm",
+          "title": "Kruskal's Algorithm",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "prim-s-algorithm",
+          "title": "Prim's Algorithm",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "shortest-path-algorithms",
+      "title": "Shortest Path Algorithms",
+      "order": 16,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "shortest-path-problems",
+          "title": "Shortest Path Problems",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "single-source-shortest-paths",
+          "title": "Single-Source Shortest Paths",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "all-pairs-shortest-paths",
+          "title": "All-Pairs Shortest Paths",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "topological-sorting",
+      "title": "Topological Sorting",
+      "order": 17,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "flow-networks",
+      "title": "Flow Networks",
+      "order": 18,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "flow-networks",
+          "title": "Flow Networks",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "max-flow-problem",
+          "title": "Max-Flow Problem",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "algorithm-design-and-analysis",
+      "title": "Algorithm Design and Analysis",
+      "order": 19,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "analyzing-and-designing-algorithms",
+          "title": "Analyzing and Designing Algorithms",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "correctness-of-algorithms",
+          "title": "Correctness of Algorithms",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "techniques-for-analysis-of-algorithms",
+          "title": "Techniques for Analysis of Algorithms",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "greedy-algorithms",
+      "title": "Greedy Algorithms",
+      "order": 20,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "introduction-to-greedy-algorithms",
+          "title": "Introduction to Greedy Algorithms",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "greedy-choice-property",
+          "title": "Greedy Choice Property",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "greedy-vs-dynamic-programming",
+          "title": "Greedy vs Dynamic Programming",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "fractional-knapsack-problem",
+          "title": "Fractional Knapsack Problem",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "activity-selection-problem",
+          "title": "Activity Selection Problem",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "task-scheduling-problem",
+          "title": "Task Scheduling Problem",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "coin-changing-problem",
+          "title": "Coin Changing Problem",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "divide-and-conquer",
+      "title": "Divide and Conquer",
+      "order": 21,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "divide-and-conquer-design-technique",
+          "title": "Divide and Conquer Design Technique",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "quick-sort-and-merge-sort",
+          "title": "Quick Sort and Merge Sort",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "proof-of-correctness-and-run-time-analysis",
+          "title": "Proof of Correctness and Run-Time Analysis",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "dynamic-programming",
+      "title": "Dynamic Programming",
+      "order": 22,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "introduction-to-dynamic-programming",
+          "title": "Introduction to Dynamic Programming",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "principle-of-optimality-and-optimal-substructure",
+          "title": "Principle of Optimality and Optimal Substructure",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "assembly-line-scheduling",
+          "title": "Assembly Line Scheduling",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "matrix-chain-multiplication",
+          "title": "Matrix Chain Multiplication",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "longest-common-subsequence-lcs",
+          "title": "Longest Common Subsequence (LCS)",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "viterbi-algorithm",
+          "title": "Viterbi Algorithm",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "bitonic-euclidean-traveling-salesperson-problem",
+          "title": "Bitonic Euclidean Traveling Salesperson Problem",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "backtracking-and-branch-and-bound",
+      "title": "Backtracking and Branch and Bound",
+      "order": 23,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "backtracking",
+          "title": "Backtracking",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "branch-and-bound",
+          "title": "Branch and Bound",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "string-matching",
+      "title": "String Matching",
+      "order": 24,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "computational-geometry",
+      "title": "Computational Geometry",
+      "order": 25,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "approximation-and-parallel-algorithms",
+      "title": "Approximation and Parallel Algorithms",
+      "order": 26,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "approximation-algorithms",
+          "title": "Approximation Algorithms",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "parallel-algorithms",
+          "title": "Parallel Algorithms",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    }
+  ]
+}

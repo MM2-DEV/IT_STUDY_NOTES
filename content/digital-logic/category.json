@@ -1,0 +1,449 @@
+{
+  "title": "Digital Logic and Boolean Algebra",
+  "order": 3,
+  "topics": [
+    {
+      "slug": "logic-gates",
+      "title": "Logic Gates",
+      "order": 1,
+      "exams": [
+        "School",
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "basic-gates-and-or-not",
+          "title": "Basic Gates: AND, OR, NOT",
+          "exams": [
+            "School",
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "nor-gate",
+          "title": "NOR Gate",
+          "exams": [
+            "School"
+          ]
+        },
+        {
+          "id": "universal-gates",
+          "title": "Universal Gates",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "special-gates-xor-xnor",
+          "title": "Special Gates: XOR, XNOR",
+          "exams": [
+            "School",
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "boolean-algebra",
+      "title": "Boolean Algebra",
+      "order": 2,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "boolean-algebra",
+          "title": "Boolean Algebra",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "de-morgan-s-theorem",
+          "title": "De Morgan's Theorem",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "logic-simplification",
+      "title": "Logic Simplification",
+      "order": 3,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "simplification-of-logic-circuits",
+          "title": "Simplification of Logic Circuits",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "circuit-and-expression-minimization",
+          "title": "Circuit and Expression Minimization",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "karnaugh-map",
+          "title": "Karnaugh Map",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "quine-mccluskey-method",
+          "title": "Quine–McCluskey Method",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "combinational-circuits",
+      "title": "Combinational Circuits",
+      "order": 4,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "circuit-design-using-logic-gates",
+          "title": "Circuit Design Using Logic Gates",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "half-adder-and-full-adder",
+          "title": "Half Adder and Full Adder",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "parallel-adder",
+          "title": "Parallel Adder",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "multiplexer-and-demultiplexer",
+          "title": "Multiplexer and Demultiplexer",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "encoder-and-decoder",
+          "title": "Encoder and Decoder",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "seven-segment-decoder-and-display",
+          "title": "Seven-Segment Decoder and Display",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "comparator",
+          "title": "Comparator",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "flip-flops",
+      "title": "Flip-Flops",
+      "order": 5,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "basic-flip-flops",
+          "title": "Basic Flip-Flops",
+          "exams": [
+            "School-2",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "j-k-flip-flop",
+          "title": "J-K Flip-Flop",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "d-and-t-flip-flops",
+          "title": "D and T Flip-Flops",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "registers",
+      "title": "Registers",
+      "order": 6,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "basic-registers",
+          "title": "Basic Registers",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "classification-of-registers",
+          "title": "Classification of Registers",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "operation-of-a-4-bit-shift-register",
+          "title": "Operation of a 4-bit Shift Register",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "buffer-register",
+          "title": "Buffer Register",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "universal-shift-register",
+          "title": "Universal Shift Register",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "counters",
+      "title": "Counters",
+      "order": 7,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "basic-counters",
+          "title": "Basic Counters",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "asynchronous-ripple-counter",
+          "title": "Asynchronous Ripple Counter",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "decade-counter",
+          "title": "Decade Counter",
+          "exams": [
+            "School-2"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "ad-da-conversion",
+      "title": "A/D and D/A Conversion",
+      "order": 8,
+      "exams": [
+        "School-2",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "need-and-applications",
+          "title": "Need and Applications",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "ladder-type-d-a-converter",
+          "title": "Ladder-Type D/A Converter",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "digital-ramp-a-d-converter",
+          "title": "Digital Ramp A/D Converter",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "resolution-accuracy-and-conversion-time",
+          "title": "Resolution, Accuracy and Conversion Time",
+          "exams": [
+            "School-2"
+          ]
+        },
+        {
+          "id": "adc-and-dac-circuits",
+          "title": "ADC and DAC Circuits",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pla-design",
+      "title": "PLA Design",
+      "order": 9,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "pulse-and-switching-circuits",
+      "title": "Pulse and Switching Circuits",
+      "order": 10,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "pulse-mode-and-fundamental-mode-logic",
+          "title": "Pulse Mode and Fundamental Mode Logic",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "pulse-and-switching-units",
+          "title": "Pulse and Switching Units",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "multivibrators",
+          "title": "Multivibrators",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "digital-logic-families",
+      "title": "Digital Logic Families",
+      "order": 11,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "dtl-ttl-cmos-and-mos-gates",
+          "title": "DTL, TTL, CMOS and MOS Gates",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "op-amp-applications",
+      "title": "Op-Amp Applications",
+      "order": 12,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "led-and-lcd-applications-of-op-amps",
+          "title": "LED and LCD Applications of Op-Amps",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "comparators",
+          "title": "Comparators",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    }
+  ]
+}

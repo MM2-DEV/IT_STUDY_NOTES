@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="110" viewBox="0 0 340 110" role="img" aria-label="NOT gate (inverter)">
+<title>NOT gate (inverter)</title>
+<rect width="340" height="110" fill="#ffffff"/>
+<path d="M110,35 L152,55 L110,75 Z" fill="#fff" stroke="#17292d" stroke-width="2" stroke-linejoin="round"/><circle cx="157" cy="55" r="5" fill="#fff" stroke="#17292d" stroke-width="2"/><line x1="40" y1="55" x2="110" y2="55" stroke="#17292d" stroke-width="2" stroke-linecap="round"/><text x="28" y="55" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="normal" font-style="italic" fill="#17292d" text-anchor="middle" dominant-baseline="middle">A</text><line x1="162" y1="55" x2="210" y2="55" stroke="#17292d" stroke-width="2" stroke-linecap="round"/><text x="218" y="55" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#08595a" text-anchor="start" dominant-baseline="middle">X = A′</text><text x="150" y="98" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" fill="#4b6166" text-anchor="middle" dominant-baseline="middle">NOT gate (inverter)</text>
+</svg>

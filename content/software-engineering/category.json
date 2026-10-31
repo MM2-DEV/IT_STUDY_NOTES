@@ -1,0 +1,758 @@
+{
+  "title": "Software Engineering, Web Technologies and E-Commerce",
+  "order": 7,
+  "topics": [
+    {
+      "slug": "introduction-to-software-engineering",
+      "title": "Introduction to Software Engineering",
+      "order": 1,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "introduction-and-software-process",
+          "title": "Introduction and Software Process",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "history-and-nature-of-software-engineering",
+          "title": "History and Nature of Software Engineering",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "relation-of-software-engineering-to-other-disciplines",
+          "title": "Relation of Software Engineering to Other Disciplines",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "programming-languages",
+          "title": "Programming Languages",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "software-qualities",
+      "title": "Software Qualities",
+      "order": 2,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "software-nature-and-qualities",
+          "title": "Software Nature and Qualities",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "product-qualities-and-project-qualities",
+          "title": "Product Qualities and Project Qualities",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "correctness-robustness-usability-maintainability-portability",
+          "title": "Correctness, Robustness, Usability, Maintainability, Portability",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "quality-measurements",
+          "title": "Quality Measurements",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "software-development-life-cycle",
+      "title": "Software Development Life Cycle",
+      "order": 3,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "requirement-design-development-testing-maintenance",
+          "title": "Requirement, Design, Development, Testing, Maintenance",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "software-development-models",
+      "title": "Software Development Models",
+      "order": 4,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "waterfall-model",
+          "title": "Waterfall Model",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "agile-model",
+          "title": "Agile Model",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "spiral-model",
+          "title": "Spiral Model",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "rdd",
+          "title": "RDD",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "v-model",
+          "title": "V Model",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "software-engineering-principles",
+      "title": "Software Engineering Principles",
+      "order": 5,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "modularity-abstraction-generality",
+          "title": "Modularity, Abstraction, Generality",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "object-oriented-component-oriented-structured",
+          "title": "Object-Oriented, Component-Oriented, Structured",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "requirements-engineering",
+      "title": "Requirements Engineering",
+      "order": 6,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "requirements-engineering-processes",
+          "title": "Requirements Engineering Processes",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "requirement-specification",
+          "title": "Requirement Specification",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "descriptive-specification",
+          "title": "Descriptive Specification",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "system-modeling-and-design",
+      "title": "System Modeling and Design",
+      "order": 7,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "system-models-context-behavioral-and-object-models",
+          "title": "System Models: Context, Behavioral and Object Models",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "basics-of-modeling-diagrams",
+          "title": "Basics of Modeling Diagrams",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "ui-design",
+          "title": "UI Design",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "object-oriented-design-techniques",
+          "title": "Object-Oriented Design Techniques",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "real-time-software-design",
+          "title": "Real-Time Software Design",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "system-design-with-reuse",
+          "title": "System Design with Reuse",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "critical-systems",
+      "title": "Critical Systems",
+      "order": 8,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "critical-system-design-and-dependability",
+          "title": "Critical System Design and Dependability",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "critical-system-specification-and-development",
+          "title": "Critical System Specification and Development",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "verification-validation-and-testing",
+      "title": "Verification, Validation and Testing",
+      "order": 9,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "verification-and-validation",
+          "title": "Verification and Validation",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "software-testing",
+          "title": "Software Testing",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "analysis-and-debugging",
+          "title": "Analysis and Debugging",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "software-maintenance",
+      "title": "Software Maintenance",
+      "order": 10,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "software-project-management",
+      "title": "Software Project Management",
+      "order": 11,
+      "exams": [
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "project-management-concepts",
+          "title": "Project Management Concepts",
+          "exams": [
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "project-metrics",
+          "title": "Project Metrics",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "estimation",
+          "title": "Estimation",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "risk-management",
+          "title": "Risk Management",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "software-cost-estimation-and-metrics",
+      "title": "Software Cost Estimation and Metrics",
+      "order": 12,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "cocomo-model",
+          "title": "COCOMO Model",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "halstead-formula",
+          "title": "Halstead Formula",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "graph-based-complexity-measures",
+          "title": "Graph-Based Complexity Measures",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "reliability-and-quality-assurance",
+      "title": "Reliability and Quality Assurance",
+      "order": 13,
+      "exams": [
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "software-reliability-and-availability",
+          "title": "Software Reliability and Availability",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "quality-assurance",
+          "title": "Quality Assurance",
+          "exams": [
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "system-analysis-and-design",
+      "title": "System Analysis and Design",
+      "order": 14,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "system-concepts-and-characteristics",
+          "title": "System Concepts and Characteristics",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "types-of-information-systems",
+          "title": "Types of Information Systems",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "role-of-the-system-analyst",
+          "title": "Role of the System Analyst",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "system-development-phases-in-system-analysis-and-design",
+          "title": "System Development Phases in System Analysis and Design",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "feasibility-study-technical-economic-operational",
+          "title": "Feasibility Study: Technical, Economic, Operational",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "fact-finding-techniques",
+          "title": "Fact-Finding Techniques",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "data-flow-diagram-dfd",
+          "title": "Data Flow Diagram (DFD)",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "data-dictionary",
+          "title": "Data Dictionary",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "decision-tables-and-decision-trees",
+          "title": "Decision Tables and Decision Trees",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "system-implementation-and-conversion-methods",
+          "title": "System Implementation and Conversion Methods",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "html-css-and-javascript",
+      "title": "HTML, CSS and JavaScript",
+      "order": 15,
+      "exams": [
+        "College"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "server-side-programming",
+      "title": "Server-Side Programming",
+      "order": 16,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "http-server",
+          "title": "HTTP Server",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "application-server",
+          "title": "Application Server",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "mvc-web-framework",
+          "title": "MVC Web Framework",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "web-services",
+      "title": "Web Services",
+      "order": 17,
+      "exams": [
+        "College"
+      ],
+      "subtopics": []
+    },
+    {
+      "slug": "database-access",
+      "title": "Database Access",
+      "order": 18,
+      "exams": [
+        "College"
+      ],
+      "subtopics": [
+        {
+          "id": "object-relational-mapping-orm",
+          "title": "Object-Relational Mapping (ORM)",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "lambda-expressions",
+          "title": "Lambda Expressions",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "language-integrated-query-linq",
+          "title": "Language Integrated Query (LINQ)",
+          "exams": [
+            "College"
+          ]
+        },
+        {
+          "id": "data-reader-and-writer",
+          "title": "Data Reader and Writer",
+          "exams": [
+            "College"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "introduction-to-e-commerce",
+      "title": "Introduction to E-Commerce",
+      "order": 19,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "definition-and-history",
+          "title": "Definition and History",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "e-commerce-vs-e-business",
+          "title": "E-Commerce vs E-Business",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "advantages-and-disadvantages",
+          "title": "Advantages and Disadvantages",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "e-commerce-business-models",
+      "title": "E-Commerce Business Models",
+      "order": 20,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "b2b-b2c-c2c-c2b",
+          "title": "B2B, B2C, C2C, C2B",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "b2g-and-g2c",
+          "title": "B2G and G2C",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "electronic-payment-systems",
+      "title": "Electronic Payment Systems",
+      "order": 21,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "credit-and-debit-cards",
+          "title": "Credit and Debit Cards",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "electronic-wallets-and-mobile-financial-services",
+          "title": "Electronic Wallets and Mobile Financial Services",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "payment-gateways",
+          "title": "Payment Gateways",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "electronic-funds-transfer-eft",
+          "title": "Electronic Funds Transfer (EFT)",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "e-commerce-security",
+      "title": "E-Commerce Security",
+      "order": 22,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "security-threats",
+          "title": "Security Threats",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "encryption-ssl-tls-and-digital-certificates",
+          "title": "Encryption, SSL/TLS and Digital Certificates",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "m-commerce-and-digital-marketing",
+      "title": "M-Commerce and Digital Marketing",
+      "order": 23,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": [
+        {
+          "id": "mobile-commerce",
+          "title": "Mobile Commerce",
+          "exams": [
+            "Others"
+          ]
+        },
+        {
+          "id": "online-advertising-and-digital-marketing",
+          "title": "Online Advertising and Digital Marketing",
+          "exams": [
+            "Others"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "legal-and-ethical-issues-in-e-commerce",
+      "title": "Legal and Ethical Issues in E-Commerce",
+      "order": 24,
+      "exams": [
+        "Others"
+      ],
+      "subtopics": []
+    }
+  ]
+}
