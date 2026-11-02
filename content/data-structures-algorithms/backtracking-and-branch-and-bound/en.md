@@ -7,7 +7,7 @@ updated: 2026-11-02
 
 ### Definition
 
-**Backtracking** is an algorithm design technique that builds a solution **step by step** (one component at a time) and, as soon as it finds that the current **partial solution cannot lead to a valid solution**, it **undoes (backtracks from) the last choice** and tries the next possibility. It is an improvement over brute force: instead of generating every complete candidate, it **abandons a whole group of candidates** as soon as a partial one fails.
+**Backtracking** is an algorithm design technique that builds a solution **step by step**, one component at a time. As soon as it finds that the current **partial solution cannot lead to a valid solution**, it **undoes (backtracks from) the last choice** and tries the next possibility. It is an improvement over brute force: instead of generating every complete candidate, it **abandons a whole group of candidates** as soon as a partial one fails.
 
 Backtracking is used mainly for **constraint satisfaction** problems: finding **one solution**, **all solutions**, or deciding whether a solution exists.
 

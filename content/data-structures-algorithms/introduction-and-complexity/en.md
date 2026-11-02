@@ -113,7 +113,7 @@ for (i = 1; i < n; i = i * 2)    /* i = 1, 2, 4, 8, ... < n     */
 
 i doubles each time, so the loop runs about log₂ n times: **O(log n)** (logarithmic).
 
-### Best, Worst and Average Case
+### Types of Time Complexity Cases: Best, Worst and Average
 
 For the same input size, an algorithm may take different times for different inputs:
 
@@ -152,7 +152,7 @@ For the same input size, an algorithm may take different times for different inp
 
 **Asymptotic analysis** describes how the running time (or space) of an algorithm **grows as the input size n becomes very large**. Only the **fastest-growing term** matters for large n, and **constant factors are ignored**. For example, 3n² + 5n + 2 grows like n², because for large n the n² term dominates.
 
-The three main **asymptotic notations** are:
+Asymptotic notations are of three main types:
 
 ### 1. Big-O Notation (O): Upper Bound
 

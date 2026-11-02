@@ -20,7 +20,9 @@ F(0) = 0, F(1) = 1, F(n) = F(n − 1) + F(n − 2).
 
 The plain recursive function computes the same values many times: F(5) calls F(3) twice and F(2) three times. Its running time grows **exponentially** (O(2ⁿ) is an upper bound). Storing each F(i) once reduces the time to **O(n)**.
 
-### Two Approaches
+### Approaches of Dynamic Programming
+
+Dynamic programming is applied in two ways:
 
 1. **Memoization (top-down):** keep the recursive solution, but **store** each result in a table (memo) the first time it is computed; before computing, **look it up**.
 2. **Tabulation (bottom-up):** fill a table **iteratively**, starting from the **smallest sub-problems** (base cases) and working up to the original problem; no recursion.

@@ -109,9 +109,16 @@ An **adder** is a combinational circuit that adds binary numbers. It follows the
 | 1 + 0 | 1 | 0 |
 | 1 + 1 | 0 | 1 |
 
-**How a computer adds:** when 5 and 6 are typed on the keyboard, an **encoder** converts them into binary (0101 and 0110), the **adder** circuit inside the processor adds them to get 1011, and a **decoder** converts the result back so that the monitor shows **11**. All the arithmetic of a computer is finally done by binary addition, so the adder is one of its most important circuits. Adders are of two kinds: the **half adder** and the **full adder**.
+**How a computer adds:** when 5 and 6 are typed on the keyboard, an **encoder** converts them into binary (0101 and 0110), the **adder** circuit inside the processor adds them to get 1011, and a **decoder** converts the result back so that the monitor shows **11**. All the arithmetic of a computer is finally done by binary addition, so the adder is one of its most important circuits.
 
-### Half Adder
+### Types of Adders
+
+Adders are of two types:
+
+1. **Half adder**
+2. **Full adder**
+
+#### 1. Half Adder
 
 **Definition:** a half adder is a combinational circuit that **adds two binary digits (bits)**. It has **two inputs** (A and B) and **two outputs**: the **Sum (S)** and the **Carry (C)**.
 
@@ -141,7 +148,7 @@ An **adder** is a combinational circuit that adds binary numbers. It follows the
 
 **Limitation:** a half adder **cannot add a carry coming from a previous (lower) bit position**, because it has only two inputs. So it can add only the least significant bits of two numbers. This limitation is removed by the full adder.
 
-### Full Adder
+#### 2. Full Adder
 
 **Definition:** a full adder is a combinational circuit that **adds three bits**: the two bits A and B, and the **carry input (Cin)** from the previous lower bit position. It has **three inputs** (A, B, Cin) and **two outputs**: **Sum (S)** and **Carry out (Cout)**.
 

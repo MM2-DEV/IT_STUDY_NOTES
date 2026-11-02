@@ -131,7 +131,14 @@ public class Hello {
 
 **Definition:** a **template** is a **blueprint for creating a generic function or class** that works with **any data type**. The data type is given as a **parameter** (a placeholder such as `T`), and the compiler creates a separate version of the function or class for each type actually used (**template instantiation**, done at **compile time**). Templates support **generic programming** in C++.
 
-### Function Template
+### Types of Templates
+
+Templates are of two types:
+
+1. **Function template**
+2. **Class template**
+
+#### 1. Function Template
 
 ```text
  template <typename T>
@@ -170,7 +177,7 @@ World
 
 Without a template, three separate overloaded functions (`int`, `double`, `string`) would be needed.
 
-### Class Template
+#### 2. Class Template
 
 ```cpp
 #include <iostream>

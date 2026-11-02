@@ -125,7 +125,7 @@ Before simplification the circuit needs two OR gates for the (B + C) terms, thre
 | 6 | 1 1 0 | m₆ = ABC′ | M₆ = A′ + B′ + C |
 | 7 | 1 1 1 | m₇ = ABC | M₇ = A′ + B′ + C′ |
 
-### SOP and POS Forms
+### Standard Forms of Boolean Expressions (SOP and POS)
 
 1. **Sum of Products (SOP):** product (AND) terms joined by OR. Example: AB + A′C.
 2. **Product of Sums (POS):** sum (OR) terms joined by AND. Example: (A + B)(A′ + C).

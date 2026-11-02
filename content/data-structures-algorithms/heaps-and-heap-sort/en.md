@@ -12,7 +12,7 @@ A **binary heap** (or simply a **heap**) is a **complete binary tree** that sati
 1. **Shape property:** it is a **complete binary tree**: all levels are full except possibly the last, which is filled **from the left**.
 2. **Heap (order) property:** every parent is ordered with respect to its children.
 
-There are two kinds of binary heap:
+**Types of binary heap:** there are two types of binary heap:
 
 1. **Max heap:** the key of every **parent is greater than or equal to** the keys of its children. The **largest** element is at the **root**.
 2. **Min heap:** the key of every **parent is less than or equal to** the keys of its children. The **smallest** element is at the **root**.

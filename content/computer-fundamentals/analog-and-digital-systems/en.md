@@ -5,12 +5,16 @@ updated: 2026-11-01
 
 ## Analog and Digital Signals {#analog-and-digital-signals}
 
-A **signal** is a quantity, usually an electrical voltage or current, that changes with time and carries information. Signals are of two types:
+A **signal** is a quantity, usually an electrical voltage or current, that changes with time and carries information.
+
+### Types of Signals
+
+Signals are of two types:
 
 1. **Analog signal**
 2. **Digital signal**
 
-### Analog Signal
+#### 1. Analog Signal
 
 **Definition:** An analog signal is a signal that has **continuous values** within a given range. It changes smoothly over time and can take **any value** (infinitely many values) between its minimum and maximum. It represents another quantity directly: for example, in analog audio the voltage varies in the same way as the pressure of the sound wave.
 
@@ -40,7 +44,7 @@ A **signal** is a quantity, usually an electrical voltage or current, that chang
 4. Speed
 5. The output of a microphone (a voltage that follows the sound)
 
-### Digital Signal
+#### 2. Digital Signal
 
 **Definition:** A digital signal is a signal that has a **finite set of discrete values**. In computers and most digital circuits it has only **two values**, **1 (high)** and **0 (low)**, so it is a **binary signal**, and each value carries one bit.
 

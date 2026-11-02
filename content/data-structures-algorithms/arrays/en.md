@@ -173,7 +173,14 @@ The array must have spare capacity for insertion (otherwise it **overflows**). I
 
 It has 30 elements, of which 26 are zero (sparsity = 26/30 ≈ 0.87).
 
-### 1. Array (Triplet) Representation
+### Representation of Sparse Matrices
+
+A sparse matrix is stored in one of two ways:
+
+1. **Array (triplet) representation**
+2. **Linked list representation**
+
+#### 1. Array (Triplet) Representation
 
 Each non-zero element is stored as a **triplet (row, column, value)**. The first row usually stores the **number of rows, the number of columns and the number of non-zero elements**.
 
@@ -187,7 +194,7 @@ Each non-zero element is stored as a **triplet (row, column, value)**. The first
 
 **Storage:** the full matrix needs 30 cells; the triplet form needs (4 + 1) × 3 = **15** cells. In general, a matrix with t non-zero elements needs 3(t + 1) cells, which saves memory when t is small compared with m × n.
 
-### 2. Linked List Representation
+#### 2. Linked List Representation
 
 Each non-zero element is a **node** with four fields: **row, column, value** and a **pointer to the next node**. Nodes are created only for non-zero elements, and the list can grow or shrink as elements become non-zero or zero.
 

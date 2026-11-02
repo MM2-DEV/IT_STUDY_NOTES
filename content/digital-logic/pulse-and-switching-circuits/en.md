@@ -21,9 +21,14 @@ updated: 2026-11-01
 
 **Example:** the SR latch made of two cross-coupled NOR gates (see [Basic Flip-Flops](/topics/digital-logic/flip-flops#basic-flip-flops)) is the simplest asynchronous sequential circuit. Its next state is Y = R′(S + y): with S = 1 and R = 0 it settles in the stable state y = 1, and with S = 0 and R = 0 it stays in whichever state it was in.
 
-Asynchronous sequential circuits are operated in one of two modes: **fundamental mode** or **pulse mode**.
+### Modes of Operation of Asynchronous Sequential Circuits
 
-### Fundamental Mode
+Asynchronous sequential circuits are operated in one of two modes:
+
+1. **Fundamental mode**
+2. **Pulse mode**
+
+#### 1. Fundamental Mode
 
 **Definition:** an asynchronous circuit operates in **fundamental mode** when its inputs are **levels** (0 or 1 held steady) and these two conditions are met:
 
@@ -32,7 +37,7 @@ Asynchronous sequential circuits are operated in one of two modes: **fundamental
 
 The memory elements are the **delays** in the feedback paths (or un-clocked latches). The behaviour is described by a flow table that shows, for each present state and input combination, the next state; stable states are marked (circled).
 
-### Pulse Mode
+#### 2. Pulse Mode
 
 **Definition:** an asynchronous circuit operates in **pulse mode** when its inputs are **pulses**, not levels, and there is **no clock**. The input pulses themselves supply the timing: they trigger the latches or flip-flops, doing the job that the clock does in a synchronous circuit. The restrictions are:
 
@@ -131,7 +136,14 @@ In both the ON and OFF states, the power lost in the transistor is very small (e
 
 **Definition:** a multivibrator is a **two-stage switching circuit** (usually two transistors, each controlling the other through feedback) whose output switches between **two states**, high and low. It generates **non-sinusoidal** waveforms such as **square and rectangular** waves. The two states may be **stable** (the circuit stays there until triggered) or **quasi-stable** (the circuit stays there only for a time set by its RC components, and then leaves it by itself).
 
-**Types of multivibrators:**
+### Types of Multivibrators
+
+Multivibrators are of three types:
+
+1. **Astable multivibrator**
+2. **Monostable multivibrator**
+3. **Bistable multivibrator**
+
 
 | Type | Stable states | Quasi-stable states | Trigger needed | Output | Other name |
 | --- | --- | --- | --- | --- | --- |
@@ -141,7 +153,7 @@ In both the ON and OFF states, the power lost in the transistor is very small (e
 
 ![Output waveforms of the astable, monostable and bistable multivibrators](/diagrams/digital-logic/multivibrator-waveforms.svg)
 
-### Astable Multivibrator
+#### 1. Astable Multivibrator
 
 **Construction:** two transistors, Q1 and Q2, with **capacitor coupling** both ways: the collector of each transistor is connected to the base of the other through a capacitor (C1, C2), and each base is biased through a resistor (R1, R2).
 
@@ -164,7 +176,7 @@ In both the ON and OFF states, the power lost in the transistor is very small (e
 
 **Applications:** square-wave and clock generators, timers, Morse code generators, flashing lights.
 
-### Monostable Multivibrator
+#### 2. Monostable Multivibrator
 
 **Construction:** two transistors, one coupled through a **capacitor** (giving the quasi-stable state) and the other through a **resistor** (giving the stable state). A trigger input is applied to one transistor.
 
@@ -187,7 +199,7 @@ In both the ON and OFF states, the power lost in the transistor is very small (e
 
 **Applications:** **time-delay** circuits, producing a pulse of fixed width from a short trigger, pulse stretching, timers.
 
-### Bistable Multivibrator
+#### 3. Bistable Multivibrator
 
 **Construction:** two transistors with **resistor (direct) coupling** both ways: the collector of each transistor is connected to the base of the other through a resistor (with small speed-up capacitors across these resistors to make switching faster).
 

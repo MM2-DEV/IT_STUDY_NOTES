@@ -7,7 +7,7 @@ updated: 2026-11-01
 
 ### Definition
 
-In a **weighted graph**, the **length (weight) of a path** is the **sum of the weights** of its edges. The **shortest path** from vertex u to vertex v is a path from u to v with the **minimum total weight**. (In an unweighted graph, it is the path with the fewest edges.)
+The **shortest path** from vertex u to vertex v in a **weighted graph** is the path from u to v with the **minimum total weight**, where the **length (weight) of a path** is the **sum of the weights** of its edges. (In an unweighted graph, it is the path with the fewest edges.)
 
 **Example uses:** finding the shortest or fastest route on a map (GPS), routing packets in computer networks (routing protocols), telephone networks, social networks (degrees of separation).
 

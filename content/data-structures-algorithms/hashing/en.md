@@ -48,9 +48,16 @@ The common hash functions (division, multiplication, mid-square and folding) are
 
 ## Static and Dynamic Hashing {#static-and-dynamic-hashing}
 
-In databases, hashing is used to decide **in which bucket a record is stored**. There are two kinds of hashing, depending on whether the number of buckets can change.
+In databases, hashing is used to decide **in which bucket a record is stored**.
 
-### Static Hashing
+### Types of Hashing
+
+There are two types of hashing, depending on whether the number of buckets can change:
+
+1. **Static hashing**
+2. **Dynamic hashing**
+
+#### 1. Static Hashing
 
 In **static hashing**, the **number of buckets is fixed** for the lifetime of the database, and the hash function always maps a given key to the **same bucket address**.
 
@@ -70,7 +77,7 @@ In **static hashing**, the **number of buckets is fixed** for the lifetime of th
 
 **Drawback:** as the database grows, buckets fill up and overflow chains grow, so performance falls; if the database shrinks, space is wasted.
 
-### Dynamic Hashing
+#### 2. Dynamic Hashing
 
 In **dynamic hashing**, **buckets are added and removed dynamically** as the data grows and shrinks. It solves the **bucket overflow** problem of static hashing. The best-known form is **extendible hashing**.
 
@@ -107,7 +114,7 @@ In **dynamic hashing**, **buckets are added and removed dynamically** as the dat
 
 A **collision** occurs when **two or more different keys produce the same hash value** and so compete for the same slot. For example, with h(k) = k mod 7, the keys 50, 85 and 92 all hash to slot 1. Collisions cannot be avoided completely when there are more possible keys than slots, so a hash table needs a **collision resolution technique**.
 
-The two main approaches are:
+Collision resolution techniques are of two types:
 
 1. **Separate chaining** (open hashing)
 2. **Open addressing** (closed hashing): linear probing, quadratic probing and double hashing

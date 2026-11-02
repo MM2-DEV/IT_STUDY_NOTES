@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Definition
 
-Many important optimization problems are **NP-hard** (for example, vertex cover, the travelling salesman problem, set cover). No polynomial-time algorithm is known that always finds their **optimal** solution. An **approximation algorithm** runs in **polynomial time** and finds a solution that is **guaranteed to be close to the optimal one**, though not necessarily optimal.
+An **approximation algorithm** is an algorithm that runs in **polynomial time** and finds a solution that is **guaranteed to be close to the optimal one**, though not necessarily optimal.
+
+Approximation algorithms are used for **NP-hard** optimization problems (for example, vertex cover, the travelling salesman problem and set cover), because no polynomial-time algorithm is known that always finds their **optimal** solution.
 
 ### Approximation Ratio
 
@@ -81,7 +83,7 @@ Greedy cover = **{1, 2, 3}, {4, 5}** — 2 sets, which is also optimal here (no 
 
 ### Definition
 
-A **sequential algorithm** executes **one step at a time** on a single processor. A **parallel algorithm** **divides a problem into sub-problems that are solved simultaneously** on **several processors**, and then combines their results to obtain the final output. The aim is to **reduce the running time**.
+A **parallel algorithm** is an algorithm that **divides a problem into sub-problems that are solved simultaneously** on **several processors**, and then combines their results to obtain the final output. Its aim is to **reduce the running time**. (A **sequential algorithm**, by contrast, executes **one step at a time** on a single processor.)
 
 ### Flynn's Classification of Computers
 

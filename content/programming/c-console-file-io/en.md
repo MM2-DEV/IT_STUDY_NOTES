@@ -17,7 +17,9 @@ C treats every device as a **file** (a stream of bytes). Three streams are opene
 | `stdout` | Standard output | Screen |
 | `stderr` | Standard error (error messages) | Screen |
 
-**Types of console I/O functions:**
+### Types of Console I/O Functions
+
+Console I/O functions are of two types:
 
 1. **Formatted I/O:** read or write data in a specified format: `printf()`, `scanf()`.
 2. **Unformatted I/O:** read or write characters or strings without format: `getchar()`, `putchar()`, `fgets()`, `puts()`.

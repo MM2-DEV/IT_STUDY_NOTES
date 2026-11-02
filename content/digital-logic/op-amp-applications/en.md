@@ -93,7 +93,7 @@ So an LCD **does not produce light**; it controls light passing through it (or r
 
 **Note:** this analog comparator is different from the digital [magnitude comparator](/topics/digital-logic/combinational-circuits#comparator), which compares two binary numbers using logic gates.
 
-### Non-Inverting and Inverting Comparators
+### Types of Comparators: Non-Inverting and Inverting
 
 ![Non-inverting op-amp comparator with the input at + and the reference at −](/diagrams/digital-logic/opamp-comparator.svg)
 

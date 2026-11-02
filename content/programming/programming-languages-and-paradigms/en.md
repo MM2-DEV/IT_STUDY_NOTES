@@ -94,23 +94,23 @@ A program written in any language other than machine language must be **translat
 
 ### 1. Imperative Paradigm
 
-**Definition:** the program is a **sequence of commands** that **change the program's state** (the values of variables) step by step, mainly through **assignment statements**. It tells the computer **how** to solve the problem. It follows the structure of the von Neumann computer. Examples: C, FORTRAN, BASIC.
+**Definition:** imperative programming is a paradigm in which the program is a **sequence of commands** that **change the program's state** (the values of variables) step by step, mainly through **assignment statements**. It tells the computer **how** to solve the problem. It follows the structure of the von Neumann computer. Examples: C, FORTRAN, BASIC.
 
 ### 2. Procedural Paradigm
 
-**Definition:** a kind of imperative programming in which the program is divided into **procedures (functions or subroutines)**, each doing one task; procedures are called when needed, which allows **code reuse**. Examples: C, Pascal, FORTRAN.
+**Definition:** procedural programming is a kind of imperative programming in which the program is divided into **procedures (functions or subroutines)**, each doing one task; procedures are called when needed, which allows **code reuse**. Examples: C, Pascal, FORTRAN.
 
 ### 3. Object-Oriented Paradigm (OOP)
 
-**Definition:** the program is organised as a collection of **objects**, each combining **data (attributes)** and the **functions (methods)** that work on it. Objects are created from **classes** and interact by calling each other's methods. Its main features are **encapsulation, inheritance and polymorphism** (see [Object-Oriented Programming Concepts](/topics/programming/oop-concepts)). Simula was the first object-oriented language. Examples: C++, Java, Python, C#, Smalltalk.
+**Definition:** object-oriented programming is a paradigm in which the program is organised as a collection of **objects**, each combining **data (attributes)** and the **functions (methods)** that work on it. Objects are created from **classes** and interact by calling each other's methods. Its main features are **encapsulation, inheritance and polymorphism** (see [Object-Oriented Programming Concepts](/topics/programming/oop-concepts)). Simula was the first object-oriented language. Examples: C++, Java, Python, C#, Smalltalk.
 
 ### 4. Parallel Processing Paradigm
 
-**Definition:** the instructions of a program are **divided among several processors** so that parts of the program run at the same time and the program finishes sooner (a divide-and-conquer approach). C and C++ support it through libraries.
+**Definition:** parallel processing is a paradigm in which the instructions of a program are **divided among several processors** so that parts of the program run at the same time and the program finishes sooner (a divide-and-conquer approach). C and C++ support it through libraries.
 
 ### 5. Declarative Paradigm
 
-**Definition:** the program describes **what** result is wanted, **not how** to compute it step by step; the language system decides the steps. It includes:
+**Definition:** declarative programming is a paradigm in which the program describes **what** result is wanted, **not how** to compute it step by step; the language system decides the steps. It includes:
 
 1. **Logic programming:** the program consists of **facts and rules**, and the system answers questions by **logical inference** from them. Example: **PROLOG**.
 2. **Functional programming:** computation is done by **evaluating mathematical functions**; it avoids changing variables (state), and functions can be passed to and returned from other functions. Examples: Haskell, Lisp, Erlang, Scala.

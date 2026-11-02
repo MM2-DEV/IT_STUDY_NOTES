@@ -197,7 +197,7 @@ The English mathematician **Augustus De Morgan** (1806–1871), who was born in 
 
 > **Note:** books number the two theorems differently. Here the first theorem is the one for the sum (NOR), and the second is the one for the product (NAND).
 
-### First Theorem
+### De Morgan's First Theorem
 
 **Statement:** the **complement of the sum** of two variables is equal to the **product of their complements**.
 
@@ -220,7 +220,7 @@ The English mathematician **Augustus De Morgan** (1806–1871), who was born in 
 
 The columns (A + B)′ and A′ · B′ are the same in every row, so (A + B)′ = A′ · B′.
 
-### Second Theorem
+### De Morgan's Second Theorem
 
 **Statement:** the **complement of the product** of two variables is equal to the **sum of their complements**.
 

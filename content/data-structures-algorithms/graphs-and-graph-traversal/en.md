@@ -74,11 +74,16 @@ Graphs model **relationships** between objects: cities joined by roads, computer
 
 ## Representing Graphs and Graph Operations {#representing-graphs-and-graph-operations}
 
-A graph is usually stored in one of two ways.
-
 ![An undirected graph with vertices 0 to 5 and its adjacency matrix and adjacency list](/diagrams/data-structures-algorithms/graph-representation.svg)
 
-### 1. Adjacency Matrix
+### Graph Representation Methods
+
+A graph is usually stored (represented) in one of two ways:
+
+1. **Adjacency matrix**
+2. **Adjacency list**
+
+#### 1. Adjacency Matrix
 
 A **V × V two-dimensional array** `adj`, where
 
@@ -94,7 +99,7 @@ adj[i][j] = 0   otherwise
 
 **Advantages:** checking whether an edge (i, j) exists takes **O(1)**; simple to implement. **Disadvantage:** needs **O(V²)** memory even if there are few edges.
 
-### 2. Adjacency List
+#### 2. Adjacency List
 
 An **array of lists**: entry i holds a (linked) list of the vertices adjacent to vertex i.
 

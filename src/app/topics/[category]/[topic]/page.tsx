@@ -73,15 +73,18 @@ export default async function TopicPage({ params }: PageProps<"/topics/[category
           <h1 className="mt-1 font-heading text-3xl font-semibold tracking-tight text-balance">
             {topic.title}
           </h1>
-          <ExamBadges exams={topic.exams} className="mt-3 flex flex-wrap gap-1.5" />
-          {notes && (
-            <>
-              <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{notes.description}</p>
-              <p className="mt-2 text-xs text-muted-foreground">
-                Last updated <time dateTime={notes.updated}>{notes.updated}</time>
-              </p>
-            </>
-          )}
+          {/* Topic summary: exam tags, description and update date in a soft dashed card. */}
+          <div className="mt-4 rounded-xl border border-dashed border-primary/40 bg-primary/5 p-4 sm:p-5">
+            <ExamBadges exams={topic.exams} className="flex flex-wrap gap-1.5" />
+            {notes && (
+              <>
+                <p className="mt-3 text-lg leading-relaxed text-muted-foreground">{notes.description}</p>
+                <p className="mt-2 text-xs text-muted-foreground">
+                  Last updated <time dateTime={notes.updated}>{notes.updated}</time>
+                </p>
+              </>
+            )}
+          </div>
         </header>
 
         {notes ? <TopicNotesView notes={notes} /> : <TopicOutline subtopics={topic.subtopics} />}

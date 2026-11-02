@@ -7,6 +7,8 @@ updated: 2026-11-01
 
 **Definition:** A **parity bit** (also called a **check bit**) is an **extra bit (0 or 1)** added to a group of binary data bits so that the **total number of 1s** becomes either even or odd. It is one of the simplest methods of **error detection** in digital systems and data communication.
 
+### Types of Parity
+
 There are two types of parity:
 
 1. **Even parity:** the parity bit is chosen so that the total number of 1s (data bits + parity bit) is **even**.
@@ -49,11 +51,18 @@ There are two types of parity:
 
 ## Parity Generator {#parity-generator}
 
-**Definition:** A **parity generator** is a **combinational logic circuit** that generates the parity bit for a given binary data at the **transmitter** (sending end). The circuit that checks the parity at the **receiver** is called a **parity checker**.
+**Definition:** A **parity generator** is a **combinational logic circuit** that generates the parity bit for the given binary data at the **transmitter** (sending end). The circuit that checks the parity at the **receiver** is called a **parity checker**.
 
 Parity generators are built with **XOR (Exclusive-OR) gates**, because the XOR of a group of bits is 1 when the number of 1s is odd, and 0 when it is even.
 
-### Even Parity Generator (3-bit)
+### Types of Parity Generator
+
+Parity generators are of two types:
+
+1. **Even parity generator**
+2. **Odd parity generator**
+
+#### 1. Even Parity Generator (3-bit)
 
 For the three data bits A, B and C, the even parity bit P makes the total number of 1s even.
 
@@ -85,7 +94,7 @@ For the three data bits A, B and C, the even parity bit P makes the total number
  C ────────┘
 ```
 
-### Odd Parity Generator (3-bit)
+#### 2. Odd Parity Generator (3-bit)
 
 For the three data bits A, B and C, the odd parity bit P makes the total number of 1s odd. P is the **complement** of the even parity bit.
 

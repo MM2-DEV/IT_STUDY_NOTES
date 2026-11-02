@@ -65,7 +65,7 @@ Output: `Maximum = 30`
  }
 ```
 
-### Actual and Formal Parameters
+### Types of Parameters: Actual and Formal
 
 | Basis | Actual parameters (arguments) | Formal parameters |
 | --- | --- | --- |
@@ -81,7 +81,9 @@ Output: `Maximum = 30`
 3. **No arguments, with a return value:** `int readNumber(void)` — returns a value, for example one read from the keyboard.
 4. **Arguments and a return value:** `int max(int a, int b)` — receives data and returns a result (the most useful form).
 
-### Call by Value and Call by Reference
+### Parameter-Passing Methods: Call by Value and Call by Reference
+
+Arguments are passed to a function in two ways:
 
 **1. Call by value:** a **copy of the value** of each actual argument is passed to the formal parameter. Changes made to the parameter inside the function **do not affect** the caller's variable. This is the **default** way of passing arguments in C.
 

@@ -630,7 +630,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.1 Operating System Fundamentals — `School` `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `operating-system-fundamentals` · **Status:** Not started
+**Slug:** `operating-system-fundamentals` · **Status:** English done
 
 - Overview of Operating System — `College` `PSC-IT` `AP`
 - Goals and Components of Operating System — `PSC-IT` `AP`
@@ -648,7 +648,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.2 Process Management — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `process-management` · **Status:** Not started
+**Slug:** `process-management` · **Status:** English done
 
 - Concept of a Process — `School-2` `College`
 - Operations on Processes — `College`
@@ -663,7 +663,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.3 Interrupts and OS Organization — `College`
 
-**Slug:** `interrupts-and-os-organization` · **Status:** Not started
+**Slug:** `interrupts-and-os-organization` · **Status:** English done
 
 - Interrupt Processing
 - Operating System Organization
@@ -673,14 +673,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.4 CPU Scheduling — `College` `PSC-IT` `AP`
 
-**Slug:** `cpu-scheduling` · **Status:** Not started
+**Slug:** `cpu-scheduling` · **Status:** English done
 
 - Job and Processor Scheduling — `College` `PSC-IT` `AP`
 - Scheduling Algorithms — `College` `PSC-IT` `AP`
 
 ### 6.5 Process Synchronization and Concurrency — `College` `PSC-IT` `AP`
 
-**Slug:** `process-synchronization-and-concurrency` · **Status:** Not started
+**Slug:** `process-synchronization-and-concurrency` · **Status:** English done
 
 - Problems of Concurrent Processes — `College`
 - Critical Section Problem — `College` `PSC-IT` `AP`
@@ -693,7 +693,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.6 Semaphores and Synchronization Mechanisms — `College` `PSC-IT` `AP`
 
-**Slug:** `semaphores-and-synchronization-mechanisms` · **Status:** Not started
+**Slug:** `semaphores-and-synchronization-mechanisms` · **Status:** English done
 
 - Definition of Semaphores — `College` `PSC-IT` `AP`
 - Semaphore Initialization — `College`
@@ -709,7 +709,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.7 Interprocess Communication (IPC) — `College` `PSC-IT` `AP`
 
-**Slug:** `ipc` · **Status:** Not started
+**Slug:** `ipc` · **Status:** English done
 
 - IPC Techniques — `College` `PSC-IT` `AP`
 - Message Passing — `College`
@@ -718,7 +718,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.8 Deadlock Management — `College` `PSC-IT` `AP`
 
-**Slug:** `deadlock-management` · **Status:** Not started
+**Slug:** `deadlock-management` · **Status:** English done
 
 - Deadlock Handling Methods — `PSC-IT` `AP`
 - Deadlock Prevention — `College`
@@ -728,7 +728,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.9 Memory Management — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `memory-management` · **Status:** Not started
+**Slug:** `memory-management` · **Status:** English done
 
 - Memory Organization and Management — `College`
 - Memory Management Techniques — `School-2` `PSC-IT` `AP`
@@ -739,7 +739,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.10 Virtual Memory — `College` `PSC-IT` `AP`
 
-**Slug:** `virtual-memory` · **Status:** Not started
+**Slug:** `virtual-memory` · **Status:** English done
 
 - Virtual Memory Concepts — `College`
 - Virtual Storage Management — `College`
@@ -747,13 +747,13 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.11 Secondary Storage Management — `PSC-IT` `AP`
 
-**Slug:** `secondary-storage-management` · **Status:** Not started
+**Slug:** `secondary-storage-management` · **Status:** English done
 
 - Disk Scheduling Algorithms
 
 ### 6.12 File System — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `file-system` · **Status:** Not started
+**Slug:** `file-system` · **Status:** English done
 
 - File Management — `School-2` `PSC-IT` `AP`
 - File System Structure — `PSC-IT` `AP`
@@ -771,14 +771,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.13 Protection and Security — `PSC-IT` `AP`
 
-**Slug:** `protection-and-security` · **Status:** Not started
+**Slug:** `protection-and-security` · **Status:** English done
 
 - Classification of Protection and Security Issues
 - Protection and Security Handling Techniques
 
 ### 6.14 Linux — `Others`
 
-**Slug:** `linux` · **Status:** Not started
+**Slug:** `linux` · **Status:** English done
 
 - Introduction and History of Linux
 - Linux Distributions

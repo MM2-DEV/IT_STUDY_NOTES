@@ -11,7 +11,14 @@ updated: 2026-11-01
 
 (The array as a data structure, with its operations, is covered in [Arrays](/topics/data-structures-algorithms/arrays).)
 
-### One-Dimensional Array
+### Types of Arrays
+
+According to the number of subscripts (dimensions), arrays are of two main types:
+
+1. **One-dimensional array:** one subscript (a list).
+2. **Two-dimensional (multidimensional) array:** two or more subscripts (a table or matrix).
+
+#### 1. One-Dimensional Array
 
 **Declaration:**
 
@@ -113,7 +120,7 @@ int main(void)
 
 Output: `6 5 4 3 2 1`
 
-### Two-Dimensional Array
+#### 2. Two-Dimensional Array
 
 A two-dimensional array is an **array of arrays**, arranged as a **table (matrix) of rows and columns**.
 

@@ -32,13 +32,15 @@ updated: 2026-11-01
 | `#pragma` | Gives special, compiler-specific instructions |
 | `#line` | Changes the line number and file name reported by the compiler |
 
-The directives fall into three main groups:
+### Types of Preprocessor Directives
+
+The directives fall into three main types:
 
 1. **File inclusion:** `#include`
 2. **Macro definition:** `#define`, `#undef`
 3. **Conditional compilation:** `#if`, `#ifdef`, `#ifndef`, `#elif`, `#else`, `#endif`
 
-### 1. File Inclusion (#include)
+#### 1. File Inclusion (#include)
 
 `#include` inserts the **entire contents of a file** at that point of the program.
 
@@ -50,7 +52,7 @@ The directives fall into three main groups:
 1. **`<file.h>`** is used for **standard library** header files.
 2. **`"file.h"`** is used for the programmer's **own** header files.
 
-### 2. Macro Definition (#define)
+#### 2. Macro Definition (#define)
 
 A **macro** is a **name that the preprocessor replaces with a piece of text** (its **replacement list**) everywhere it appears in the program. Replacement is done before compilation, and macro names are usually written in CAPITALS.
 
@@ -110,7 +112,7 @@ Output:
 #define MAX_SIZE 200
 ```
 
-### 3. Conditional Compilation
+#### 3. Conditional Compilation
 
 Conditional compilation directives tell the preprocessor to **include or skip parts of the code** depending on a condition. This is used to build different versions of a program (for example, a debug version), to write code for different platforms, and to avoid including a header file twice.
 

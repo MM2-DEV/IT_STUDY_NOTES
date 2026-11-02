@@ -5,7 +5,7 @@ updated: 2026-11-01
 
 **Logic family:** a logic family is a **group of digital integrated circuits built with the same circuit technology**, so that they share the same **logic levels, supply voltage** and general characteristics (speed, power consumption, noise immunity) and can be connected to one another. Logic gates of the same family work together without extra interface circuits.
 
-**Classification of logic families:**
+### Classification of Logic Families
 
 1. **Bipolar families:** use **bipolar junction transistors** (and diodes and resistors).
    1. **RTL:** Resistor-Transistor Logic

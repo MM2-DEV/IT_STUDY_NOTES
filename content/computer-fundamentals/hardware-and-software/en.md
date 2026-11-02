@@ -12,7 +12,7 @@ Neither can do any useful work without the other.
 
 ### Hardware
 
-**Definition:** Hardware is the **physical parts** of a computer: the components that we can **see and touch**.
+**Definition:** Hardware consists of the **physical parts** of a computer — the components that we can **see and touch**.
 
 **Types of hardware (by function):**
 
@@ -31,6 +31,8 @@ Neither can do any useful work without the other.
 ### Software
 
 **Definition:** Software is a **set of programs** that tells the hardware what to do. A **program** is a set of instructions written to perform a particular task. Software cannot be touched; it can only be seen and used.
+
+### Types of Software
 
 Software is of two main types:
 

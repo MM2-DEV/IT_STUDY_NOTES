@@ -37,7 +37,7 @@ What is measured:
 
 The cases analysed are the **worst case**, **best case** and **average case**, and the results are written with the **asymptotic notations** O, Ω and Θ (see [Introduction and Complexity](/topics/data-structures-algorithms/introduction-and-complexity#asymptotic-notations)). A fourth kind, **amortized analysis**, is described [below](#techniques-for-analysis-of-algorithms).
 
-### A Priori and A Posteriori Analysis
+### Types of Algorithm Analysis: A Priori and A Posteriori
 
 1. **A priori analysis** is a **theoretical** analysis done **before** running the algorithm. It counts the steps and expresses the result with asymptotic notation, so it does not depend on the hardware or compiler.
 2. **A posteriori analysis** is an **empirical** analysis done **after** implementing and running the program, by measuring the actual running time and memory on a particular machine.
@@ -56,7 +56,7 @@ The cases analysed are the **worst case**, **best case** and **average case**, a
 
 An algorithm is **correct** if, **for every valid input**, it **stops** and produces the **correct output** as given by the problem's specification. **Testing** can show that a program works on the inputs that were tried, but it cannot cover every possible input of a non-trivial program; a **proof of correctness** shows mathematically that the algorithm is right for **all** inputs.
 
-### Partial and Total Correctness
+### Types of Correctness: Partial and Total
 
 1. **Partial correctness:** **if** the algorithm returns an answer, the answer is correct. (It might never stop.)
 2. **Total correctness:** the algorithm is partially correct **and it always terminates**.

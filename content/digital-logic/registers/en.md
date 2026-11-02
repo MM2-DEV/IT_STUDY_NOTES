@@ -51,7 +51,7 @@ Registers are classified in several ways:
 3. **By the way data enters and leaves them:** SISO, SIPO, PISO and PIPO (below).
 4. **By the direction of shifting:** left, right, bidirectional and universal (below).
 
-### By Data Input and Output
+### Types of Shift Registers by Data Input and Output
 
 1. **Serial-In Serial-Out (SISO)**
 2. **Serial-In Parallel-Out (SIPO)**
@@ -97,7 +97,7 @@ All the bits are **loaded at the same time** and are **available at the outputs 
 | PISO | Parallel | Serial | 1 (then one per bit to shift out) | Parallel-to-serial conversion |
 | PIPO | Parallel | Parallel | 1 | Temporary storage |
 
-### By Direction of Shifting
+### Types of Shift Registers by Direction of Shifting
 
 1. **Shift-right register:** each bit moves one position to the **right** on each clock pulse. Shifting a binary number one place right **divides it by 2**.
 2. **Shift-left register:** each bit moves one position to the **left** on each clock pulse. Shifting a binary number one place left **multiplies it by 2**.

@@ -149,7 +149,9 @@ Later standards added more keywords, for example `inline` and `_Bool` (C99) and 
 
 **Definition:** a data type tells the compiler **what kind of value** a variable can hold, **how much memory** it needs and **which operations** can be performed on it.
 
-**Classification of data types in C:**
+### Types (Classification) of Data Types in C
+
+Data types in C are of four types:
 
 1. **Basic (primary) data types:** `char`, `int`, `float`, `double`
 2. **Void type:** `void` (no value)
@@ -259,6 +261,8 @@ In C, **any non-zero value is treated as true, and 0 as false**.
 
 ### Type Conversion
 
+Type conversion is of two types:
+
 1. **Implicit conversion (automatic, type promotion):** when an expression mixes types, the compiler converts the **smaller (lower) type to the larger (higher) type** before the operation. Order: `char`/`short` → `int` → `long` → `float` → `double` → `long double`.
 
 ```c
@@ -280,7 +284,7 @@ printf("%d\n", (int) 3.99);          /* 3: the fractional part is dropped */
 
 **Definition:** an operator is a **symbol that tells the compiler to perform a specific operation** on one or more **operands**. By the number of operands, operators are **unary** (one operand, for example `-x`, `++x`), **binary** (two operands, for example `a + b`) or **ternary** (three operands: `?:`).
 
-**Types of operators in C:**
+**Types of operators in C** (C operators are of eight types, explained below):
 
 1. Arithmetic operators
 2. Relational operators

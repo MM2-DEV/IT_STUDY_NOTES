@@ -129,7 +129,14 @@ So, 110101.101 − 010110.110 = **011110.111**.
 
 Computers do not have a separate circuit for subtraction. They subtract by **adding the complement** of the subtrahend, so the same adder circuit can do both addition and subtraction. To understand this, we first need the **1's complement** and the **2's complement**.
 
-### 1's Complement
+### Types of Complements of a Binary Number
+
+A binary number has two types of complements:
+
+1. **1's complement**
+2. **2's complement**
+
+#### 1. 1's Complement
 
 **Definition:** The 1's complement of a binary number is obtained by **changing every 0 to 1 and every 1 to 0** (inverting all the bits).
 
@@ -149,7 +156,7 @@ Computers do not have a separate circuit for subtraction. They subtract by **add
 
 Check with the formula for 0111 (n = 4): (2⁴ − 1) − 7 = 15 − 7 = 8 = 1000. ✓
 
-### 2's Complement
+#### 2. 2's Complement
 
 **Definition:** The 2's complement of a binary number is its **1's complement plus 1**.
 

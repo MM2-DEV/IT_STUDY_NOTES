@@ -22,10 +22,7 @@ Number systems developed slowly as people needed to count and calculate. The mai
 
 ## Non-positional and Positional Number Systems {#non-positional-and-positional-number-systems}
 
-A **number system** is a way of representing numbers using a set of symbols (digits). Number systems are of two types:
-
-1. **Non-positional number system**
-2. **Positional number system**
+A **number system** is a way of representing numbers using a set of symbols (digits).
 
 **Basic terms:**
 
@@ -33,7 +30,14 @@ A **number system** is a way of representing numbers using a set of symbols (dig
 2. **Base (radix):** the base or radix of a number system is the **total number of different symbols (digits)** used in it. For example, the decimal system uses ten digits (0 to 9), so its base is 10. A number in base *b* is written with the base as a subscript, for example (101)₂ or (25)₈.
 3. **Place value (positional value):** the value given to a position in a number. In a positional number system it is a power of the base.
 
-### Non-positional Number System
+### Types of Number Systems
+
+Number systems are of two types:
+
+1. **Non-positional number system**
+2. **Positional number system**
+
+#### 1. Non-positional Number System
 
 **Definition:** In a non-positional number system, the value of a symbol **does not depend on its position** in the number. Each symbol always has the same value, and the value of a number is found by adding (and sometimes subtracting) the values of its symbols.
 
@@ -62,7 +66,7 @@ Rules for finding the value:
 2. There is **no symbol for zero**.
 3. The value of a number is the sum (or difference) of the values of its symbols.
 
-### Positional Number System
+#### 2. Positional Number System
 
 **Definition:** In a positional (or **weighted**) number system, the value of a digit **depends on its position** in the number as well as on the digit itself. Each position has a **weight** (place value), which is a power of the base.
 
@@ -133,7 +137,15 @@ Computers use positional number systems.
 
 ## Binary, Octal, Decimal and Hexadecimal {#binary-octal-decimal-and-hexadecimal}
 
+### Types of Positional Number Systems Used in Computers
+
 The four positional number systems used in computing are:
+
+1. Binary number system (base 2)
+2. Octal number system (base 8)
+3. Decimal number system (base 10)
+4. Hexadecimal number system (base 16)
+
 
 | Number system | Base | Digits used | Example |
 | --- | --- | --- | --- |
@@ -142,7 +154,7 @@ The four positional number systems used in computing are:
 | Decimal | 10 | 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 | (1234)₁₀ |
 | Hexadecimal | 16 | 0–9 and A, B, C, D, E, F | (19FDE)₁₆ |
 
-### Binary Number System
+#### 1. Binary Number System
 
 1. Base: **2**. Digits: **0 and 1**.
 2. Each binary digit is called a **bit** (*bi*nary dig*it*).
@@ -163,7 +175,7 @@ The four positional number systems used in computing are:
           =    16    +    0     +    4     +    0     +    1      = (21)₁₀
 ```
 
-### Octal Number System
+#### 2. Octal Number System
 
 1. Base: **8**. Digits: **0 to 7**.
 2. Since 2³ = 8, each octal digit can be written as a group of **3 bits**, so octal is called a **3-bit code**.
@@ -182,7 +194,7 @@ The four positional number systems used in computing are:
           =   4096   +   1024   +   320    +    56    +    0      = (5496)₁₀
 ```
 
-### Decimal Number System
+#### 3. Decimal Number System
 
 1. Base: **10**. Digits: **0 to 9**.
 2. It is the number system we use in daily life.
@@ -194,7 +206,7 @@ The four positional number systems used in computing are:
  (1234)₁₀ = (1 × 10³) + (2 × 10²) + (3 × 10¹) + (4 × 10⁰) = 1000 + 200 + 30 + 4 = 1234
 ```
 
-### Hexadecimal Number System
+#### 4. Hexadecimal Number System
 
 1. Base: **16**. Digits: **0 to 9** and the letters **A to F**, where A = 10, B = 11, C = 12, D = 13, E = 14 and F = 15.
 2. Since 2⁴ = 16, each hexadecimal digit can be written as a group of **4 bits** (one nibble), so hexadecimal is called a **4-bit code**. Two hexadecimal digits represent exactly **one byte** (00 to FF).

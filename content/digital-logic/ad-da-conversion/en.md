@@ -60,9 +60,18 @@ A DAC gives an output voltage that is **proportional to the binary value** of it
  Analog output = (step size) × (decimal value of the binary input)
 ```
 
-The **step size** is the change in output caused by a change of 1 in the LSB. Two common resistor networks give these binary weights: the **binary weighted resistor DAC** and the **R-2R ladder DAC**. Both feed an **op-amp inverting adder** (summing amplifier), which adds the weighted currents and gives the output voltage.
+The **step size** is the change in output caused by a change of 1 in the LSB.
 
-### Binary Weighted Resistor DAC
+### Types of Resistor-Network (Ladder-Type) DAC
+
+Two common resistor networks give these binary weights, so there are two types of resistor-network DAC:
+
+1. **Binary weighted resistor DAC**
+2. **R-2R ladder DAC**
+
+Both feed an **op-amp inverting adder** (summing amplifier), which adds the weighted currents and gives the output voltage.
+
+#### 1. Binary Weighted Resistor DAC
 
 **Construction:** each bit has its own resistor, and the resistor values are **binary weighted**: R for the MSB, 2R for the next bit, 4R for the next, and so on (the resistor doubles for each less significant bit). Each bit input is switched to 0 V (bit 0) or to the reference voltage −VR (bit 1). The resistors meet at the inverting input of the op-amp, which has a feedback resistor Rf.
 
@@ -96,7 +105,7 @@ The step size is 1 V (VR/8), and the output is 1 V × the decimal value of the i
 1. It needs **many different resistor values**, and the spread between the smallest (MSB) and largest (LSB) resistor grows rapidly with the number of bits (an 8-bit DAC needs values from R to 128R).
 2. Each resistor must be very **precise**, and precise resistors over such a wide range are difficult to make, especially in an IC. So it is practical only for a small number of bits.
 
-### R-2R Ladder DAC
+#### 2. R-2R Ladder DAC
 
 **Definition:** the R-2R ladder DAC is a D/A converter whose resistor network is a **ladder made of only two resistor values, R and 2R**. It gives the same binary-weighted output as the weighted resistor DAC without needing a wide range of resistor values.
 
@@ -254,7 +263,9 @@ Because the input must not change during a conversion, a **sample-and-hold circu
 2. **Indirect type ADCs:** first convert the analog input into another quantity, such as time, and then into binary.
    1. **Dual-slope (integrating) ADC**
 
-### Successive Approximation ADC
+The working of the successive approximation, flash and dual-slope ADCs is explained below.
+
+#### 1. Successive Approximation ADC
 
 **Construction:** like the digital ramp ADC, but the counter is replaced by a **successive approximation register (SAR)**. The blocks are the clock, the SAR, a DAC, a comparator and the control logic.
 
@@ -280,7 +291,7 @@ The output is **1010** (10), found in only **4 clock pulses** (n pulses for n bi
 
 **Features:** fast, with a **fixed conversion time of n clock pulses** for every input; widely used (for example, the **ADC0809** is an 8-bit successive approximation ADC IC).
 
-### Flash (Parallel) ADC
+#### 2. Flash (Parallel) ADC
 
 **Construction (3-bit):**
 
@@ -297,7 +308,7 @@ The output is **1010** (10), found in only **4 clock pulses** (n pulses for n bi
 1. It is the **fastest** ADC, because all the comparisons are made **in parallel** in one step.
 2. An n-bit flash ADC needs **2ⁿ − 1 comparators** (3 bits: 7; 8 bits: 255), so it becomes large, costly and power-hungry for many bits.
 
-### Dual-Slope ADC
+#### 3. Dual-Slope ADC
 
 **Construction:** an **integrator**, a **comparator** (comparing the integrator output with 0 V), a **clock**, a **counter** and **control logic**.
 

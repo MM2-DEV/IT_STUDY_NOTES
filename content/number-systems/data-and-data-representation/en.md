@@ -7,7 +7,7 @@ updated: 2026-11-01
 
 ### Data
 
-**Definition:** Data is a representation of **facts, concepts or instructions** in a formalized manner, suitable for communication, interpretation or processing by human beings or by machines. Data are **raw, unorganized facts** that need to be processed to become meaningful.
+**Definition:** Data is a representation of **facts, concepts or instructions** in a formal way, so that people or machines can communicate, interpret or process it. Data are **raw, unorganized facts** that must be processed before they become meaningful.
 
 Data is represented with:
 
@@ -19,7 +19,7 @@ Data is represented with:
 
 ### Information
 
-**Definition:** Information is **organized or classified data** that has a **meaningful value** for the receiver. It is the **processed data** on which decisions and actions are based.
+**Definition:** Information is **organized or classified data** that is **meaningful** to the receiver. It is the **processed data** on which decisions and actions are based.
 
 **Examples:** a merit list or result sheet prepared from students' marks; a report card; a sales report.
 
@@ -42,7 +42,7 @@ Data is represented with:
 
 ### Data Processing
 
-**Definition:** Data processing is the **restructuring or re-ordering of data** by people or machines to increase its usefulness and add value for a particular purpose. In other words, it is the process of converting raw data into meaningful information.
+**Definition:** Data processing is the process of **converting raw data into meaningful information**. People or machines **restructure or re-order** the data to make it more useful for a particular purpose.
 
 ### Data Processing Cycle
 

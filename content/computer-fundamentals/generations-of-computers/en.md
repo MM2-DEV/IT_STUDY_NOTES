@@ -15,6 +15,8 @@ A **computer generation** is a stage in the development of computers that is mar
 4. More reliable
 5. More energy-efficient
 
+### Five Generations of Computers
+
 The development of computers is divided into **five generations**:
 
 | Generation | Main technology |
@@ -27,7 +29,7 @@ The development of computers is divided into **five generations**:
 
 > **Note on periods:** The years of each generation are approximate, and different books give slightly different years. The periods below follow TutorialsPoint (TpointTech gives the same periods, except that it starts the third generation in 1964); GeeksforGeeks gives them by decade (1940s–1950s, 1950s–1960s, 1960s–1970s, 1970s–present, present and future).
 
-### First Generation (1940–1956): Vacuum Tubes
+#### 1. First Generation (1940–1956): Vacuum Tubes
 
 **Technology:** The first-generation computers used **vacuum tubes** (also called thermionic valves) for their circuits.
 
@@ -51,7 +53,7 @@ The development of computers is divided into **five generations**:
 4. IBM 650
 5. IBM 701
 
-### Second Generation (1956–1963): Transistors
+#### 2. Second Generation (1956–1963): Transistors
 
 **Technology:** The second-generation computers used **transistors** in place of vacuum tubes.
 
@@ -73,7 +75,7 @@ The development of computers is divided into **five generations**:
 3. UNIVAC 1107
 4. CDC 3600
 
-### Third Generation (1963–1971): Integrated Circuits
+#### 3. Third Generation (1963–1971): Integrated Circuits
 
 **Technology:** The third-generation computers used **integrated circuits (ICs)**. An IC (also called a *chip*) places many transistors and other components on a single small piece of silicon. The first working IC was demonstrated by **Jack Kilby** (Texas Instruments) in **1958**, and **Robert Noyce** (Fairchild Semiconductor) made the first monolithic IC in **1959**.
 
@@ -94,7 +96,7 @@ The development of computers is divided into **five generations**:
 3. PDP-11
 4. UNIVAC 1108
 
-### Fourth Generation (1972–2010): Microprocessors
+#### 4. Fourth Generation (1972–2010): Microprocessors
 
 **Technology:** The fourth-generation computers used **microprocessors**. A microprocessor is a single chip that contains the complete central processing unit (CPU). It is made with **large-scale integration (LSI)** and **very-large-scale integration (VLSI)**. The first commercial microprocessor was the **Intel 4004**, released in **1971** (4-bit, 2,300 transistors).
 
@@ -115,7 +117,7 @@ The development of computers is divided into **five generations**:
 3. Apple Macintosh
 4. Altair 8800
 
-### Fifth Generation (2010–Present): Artificial Intelligence
+#### 5. Fifth Generation (2010–Present): Artificial Intelligence
 
 **Technology:** The fifth generation is based on **artificial intelligence (AI)**. It uses:
 
