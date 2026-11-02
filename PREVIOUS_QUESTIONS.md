@@ -1,0 +1,5681 @@
+# PREVIOUS_QUESTIONS.md
+
+# Previous Examination Questions
+
+This file is the single source of the website's **Previous Questions** section (`/previous-questions`). The website never reads it directly: after every change run `npm run questions:sync`, which writes `content/previous-questions.json`, then rebuild. The format is described in `CLAUDE.md`.
+
+- Questions were transcribed from the images and PDF in `references/previous_questions/`. Bengali questions are translated into English; the original Bengali text is kept in `references/previous_questions/transcripts/` for the Bengali version.
+- Answers are not included. MCQ and written questions are listed separately for each exam.
+- A question asked in more than one exam paper stays in each paper, so every paper is complete; "Also asked in" names the other exams. A repeat inside a topic-wise collection or the Others group is dropped, and its exam tags are added to the first listing.
+- Questions from topic-wise collections carry the exam tags printed in the source. Questions whose exam is not named are filed under **Others**.
+
+## 1. BCS Preliminary — `bcs-preliminary`
+
+### 1.1 41st BCS Preliminary — `41st-bcs-preliminary`
+
+- **Organization:** Bangladesh Public Service Commission (BPSC)
+- **Date:** 2021-03-19
+- **Source:** Alal's Computer Hour (computer and ICT part)
+
+#### MCQ
+
+- **1** A computer cannot boot if it does not have -
+  - A. Compiler
+  - B. Loader
+  - C. Operating system
+  - D. Bootstrap
+- **2** The computer language in which everything is written only in binary code is called -
+  - A. Machine language
+  - B. C
+  - C. Java
+  - D. Python
+- **3** API stands for -
+  - A. Advanced Processing Information
+  - B. Application Processing Information
+  - C. Application Programming Interface
+  - D. Application Processing Interface
+- **4** Which of the following is not anti-virus software?
+  - A. Oracle
+  - B. McAfee
+  - C. Norton
+  - D. Kaspersky
+  - Also asked in: 43rd BCS Preliminary
+- **5** The electronic logic gate whose output is logic 0 only when all inputs are logic 1 is called -
+  - A. AND gate
+  - B. OR gate
+  - C. NAND gate
+  - D. None of the above
+- **6** Which of the following is the 1's complement of 100?
+  - A. 111
+  - B. 101
+  - C. 011
+  - D. 001
+- **7** Which of the following is not correct?
+  - A. (A+B)′ = A′.B′
+  - B. (A+B)′ = A′+B′
+  - C. (A.B.C)′ = A′+B′+C′
+  - D. (A+B+C)′ = A′.B′.C′
+- **8** A system in which items are added at one end but removed from the other end is called -
+  - A. Array
+  - B. Linked list
+  - C. Stack
+  - D. Queue
+- **9** Up to what distance does Bluetooth work?
+  - A. 10-30 metres
+  - B. 10-50 metres
+  - C. 10-100 metres
+  - D. 10-300 metres
+- **10** Which of the following has the shortest communication distance?
+  - A. Wi-Fi
+  - B. Bluetooth
+  - C. Wi-Max
+  - D. Cellular network
+- **11** In which network topology is a hub used?
+  - A. Bus topology
+  - B. Ring topology
+  - C. Star topology
+  - D. Tree topology
+- **12** Which is a service model of cloud computing?
+  - A. Infrastructure-based
+  - B. Platform-based
+  - C. Software
+  - D. All of the above
+- **13** What does RFID stand for?
+  - A. Random Frequency Identification
+  - B. Random Frequency Information
+  - C. Radio Frequency Information
+  - D. Radio Frequency Identification
+- **14** Which Bangladeshi co-founded YouTube together with Steve Chen and Chad Hurley?
+  - A. Jawed Karim
+  - B. Fazlul Karim
+  - C. Jaodadul Karim
+  - D. Manjurul Karim
+- **15** Apache is a type of -
+  - A. Database Management System (DBMS)
+  - B. Web Server
+  - C. Web Browser
+  - D. Protocol
+- **16** Microsoft IIS is a -
+  - A. Email server
+  - B. Web server
+  - C. Database server
+  - D. File server
+
+### 1.2 43rd BCS Preliminary — `43rd-bcs-preliminary`
+
+- **Organization:** Bangladesh Public Service Commission (BPSC)
+- **Date:** 2021-10-29
+- **Source:** Alal's Computer Hour (computer and ICT part)
+
+#### MCQ
+
+- **1** Which of the following is not anti-virus software?
+  - A. Oracle
+  - B. McAfee
+  - C. Norton
+  - D. Kaspersky
+  - Also asked in: 41st BCS Preliminary
+- **2** Which of the following is an Open Source DBMS?
+  - A. MySQL
+  - B. Microsoft SQL Server
+  - C. Microsoft Access
+  - D. Oracle
+- **3** Which of the following memories has the lowest access time?
+  - A. Registers
+  - B. SSD
+  - C. RAM
+  - D. Cache memory
+- **4** What is the decimal equivalent of the binary number 101110?
+  - A. 46
+  - B. 16
+  - C. 28
+  - D. 54
+- **5** Which of the following is not a multi-tasking operating system?
+  - A. Windows
+  - B. Linux
+  - C. Windows NT
+  - D. DOS
+- **6** Which of the following is not an output device?
+  - A. monitor
+  - B. microphone
+  - C. printer
+  - D. speaker
+- **7** Which of the following Job Scheduling Policies is free from starvation?
+  - A. Priority Scheduling
+  - B. Shortest Job First
+  - C. Youngest Job First
+  - D. Round-robin
+- **8** What does RFID mean?
+  - A. Random Frequency Identification
+  - B. Random Frequency Information
+  - C. Radio Frequency Information
+  - D. Radio Frequency Identification
+- **9** Through which medium are light pulses used?
+  - A. Copper wire
+  - B. Co-axial cable
+  - C. Optical fiber
+  - D. Wireless media
+- **10** Which symbol must an e-mail address always contain?
+  - A. $
+  - B. #
+  - C. &
+  - D. @
+- **11** Which of the following technologies plays a supporting role in a Face Recognition System?
+  - A. Applied Artificial Intelligence (AI)
+  - B. Applied Internet of Things (IoT)
+  - C. Virtual Reality
+  - D. None of the above
+- **12** Which of the following is the IEEE standard of Bluetooth?
+  - A. IEEE 802.15
+  - B. IEEE 802.1
+  - C. IEEE 802.3
+  - D. IEEE 802.11
+- **13** The job of a DNS server is to convert ____ into ____ address.
+  - A. Email, DNS
+  - B. MAC Address, IP
+  - C. Domain name, IP
+  - D. Email, IP
+- **14** Which of the following devices is used to convert a digital signal into an analog signal?
+  - A. Router
+  - B. Switch
+  - C. Modem
+  - D. HUB
+- **15** Which of the following points to the web address of an organization?
+  - A. http
+  - B. www
+  - C. URL
+  - D. HTML
+- **16** Which of the following technologies follows the 'Pay as You Go' service model?
+  - A. Internet of Things (IoT)
+  - B. Cloud Computing
+  - C. Client-Server Systems
+  - D. Big Data Analytics
+- **17** In which mode does data transmission take place between the keyboard and the CPU?
+  - A. Duplex
+  - B. Half duplex
+  - C. Triplex
+  - D. Simplex
+- **18** In which year did the Right to Information Act come into force?
+  - A. 2002
+  - B. 2006
+  - C. 2009
+  - D. 2011
+- **19** When a cyber attack occurs in which a web server fails to complete customers' legitimate requests, what is it known as?
+  - A. Phishing
+  - B. Man-in-the-Middle
+  - C. Denial of Service
+  - D. None of the above
+  - Note: The question is incomplete in the source image.
+- **20** What information does each block of a Blockchain carry?
+  - A. A hash pointer to the previous block
+  - B. Timestamp
+  - C. List of transactions
+  - D. All of the above
+
+### 1.3 44th BCS Preliminary — `44th-bcs-preliminary`
+
+- **Organization:** Bangladesh Public Service Commission (BPSC)
+- **Date:** 2022-05-27
+- **Source:** Alal's Computer Hour (computer and ICT part)
+
+#### MCQ
+
+- **1** What is the full form of SCSI?
+  - A. Small Computer System Interface
+  - B. Small Computer Software Interface
+  - C. Small Computer Storage Interface
+  - D. Small Computer Standard Interface
+- **2** Which of the following devices works as both an input and an output device?
+  - A. Scanner
+  - B. Mouse
+  - C. Touch Screen
+  - D. Projector
+- **3** Which of the following Octal numbers is equivalent to the Decimal number 55?
+  - A. 55
+  - B. 77
+  - C. 67
+  - D. 87
+- **4** Which is Amazon's cloud platform?
+  - A. Azure
+  - B. AWS
+  - C. Cloudera
+  - D. All of the above
+- **5** Which cyber attack, when it occurs, prevents users from using their own Computer System and demands money to make the Computer System usable again?
+  - A. Phishing
+  - B. Denial of Service
+  - C. Ransomware
+  - D. Man-in-the-Middle
+- **6** Which of the following is not system software?
+  - A. Linux
+  - B. Android
+  - C. Mozilla Firefox
+  - D. Apple iOS
+- **7** Which of the following is not a Structured Query Language?
+  - A. Java
+  - B. MySQL
+  - C. Oracle
+  - D. All of the above
+- **8** In Internet communication, which translates a Hostname into an IP Address?
+  - A. FTP Server
+  - B. Firewall
+  - C. DNS Server
+  - D. Gateway
+- **9** What is a Piconet?
+  - A. WiFi Network
+  - B. Wide Area Network
+  - C. Bluetooth Network
+  - D. 5G Network
+- **10** Which of the following models is not used by Cloud Computing service providers?
+  - A. CaaS
+  - B. IaaS
+  - C. PaaS
+  - D. SaaS
+- **11** Which of the following Protocols ensures the security of data exchange on the Internet?
+  - A. FTP
+  - B. HTTPS
+  - C. TCP
+  - D. DNS
+- **12** Which TCP/IP protocol is used to transfer e-mail messages from one machine to another?
+  - A. FTP
+  - B. RPC
+  - C. SNMP
+  - D. SMTP
+- **13** A computer program that copies itself to other computers through the Internet on its own is called -
+  - A. Program Virus
+  - B. Worms
+  - C. Trojan Horse
+  - D. Boot Virus
+- **14** Which of the following organizations is involved in preparing the 4G Standard?
+  - A. ISO
+  - B. ITU
+  - C. 3GPP
+  - D. ETSI
+- **15** Which of the following is Open Source Software?
+  - A. Google Chrome
+  - B. Microsoft Windows
+  - C. Zoom
+  - D. Adobe Photoshop
+
+### 1.4 45th BCS Preliminary — `45th-bcs-preliminary`
+
+- **Organization:** Bangladesh Public Service Commission (BPSC)
+- **Date:** 2023-05-19
+- **Source:** Alal's Computer Hour (computer and ICT part)
+
+#### MCQ
+
+- **1** Which of the following is used to hold the output of the ALU?
+  - A. Register
+  - B. ROM
+  - C. Flags
+  - D. Output Unit
+- **2** What is the full form of DBMS?
+  - A. Data Backup Management System
+  - B. Database Management Service
+  - C. Database Management System
+  - D. Data of Binary Management System
+- **3** How many address lines are needed to address 2 kilobytes of memory?
+  - A. 10
+  - B. 11
+  - C. 12
+  - D. 14
+- **4** Convert the hexadecimal number (2FA)₁₆ to octal.
+  - A. (762)₈
+  - B. (228)₈
+  - C. (1372)₈
+  - D. (1482)₈
+- **5** What type of memory is generally used in an embedded system?
+  - A. RAM
+  - B. Hard disk
+  - C. Flash memory
+  - D. Optical disk drive
+- **6** Which of the following is an example of Spyware?
+  - A. Avast
+  - B. Key loggers
+  - C. Norton
+  - D. Kasperasky
+- **7** What is the most widely used protocol for exchanging information over the Internet?
+  - A. HTTP
+  - B. DNS
+  - C. FTP
+  - D. TCP/IP
+- **8** Which of the following is not a characteristic of cloud computing?
+  - A. On-demand self service
+  - B. Broad network access
+  - C. Limited customization
+  - D. Physical ownership of servers
+- **9** Where is the headquarters of Facebook?
+  - A. Seattle
+  - B. California
+  - C. Washington
+  - D. New York
+- **10** Which of the following is a universal digital logic gate?
+  - A. XOR
+  - B. NOR
+  - C. AND
+  - D. OR
+- **11** In a computer network, which device connects multiple devices of a LAN to a WAN?
+  - A. Router
+  - B. Web server
+  - C. Bridge
+  - D. Hub
+- **12** What is the practice of using the Internet to fraudulently obtain sensitive information such as passwords and credit card numbers called?
+  - A. Phishing
+  - B. Spamming
+  - C. Ransomware
+  - D. Sniffing
+- **13** Which is a function of the computer in the field of medicine?
+  - A. Storing data
+  - B. Image analysis
+  - C. Patient monitoring
+  - D. All of the above
+- **14** In which year was the Money Laundering Prevention Act introduced?
+  - A. In 2011
+  - B. In 2012
+  - C. In 2013
+  - D. In 2014
+- **15** Which wave is used in television?
+  - A. Radio wave
+  - B. Infrared ray
+  - C. Ultraviolet
+  - D. Visible ray
+- **16** What is the primary function of a firewall?
+  - A. Preventing all incoming traffic from entering the network
+  - B. Allowing all outgoing traffic to enter the network
+  - C. Monitoring and controlling incoming and outgoing network traffic
+  - D. Encrypting all network traffic
+- **17** In IPv4, which of the following is the IP Address of the Google DNS Server?
+  - A. 8-8-7-6
+  - B. 8-7-8-6
+  - C. 8-8-8-6
+  - D. 8-8-8-8
+- **18** What is the full form of GPU?
+  - A. Graph Processing Unit
+  - B. Graphic Processing Unit
+  - C. Graphics Processing Unit
+  - D. Geographical Processing Unit
+
+### 1.5 46th BCS Preliminary — `46th-bcs-preliminary`
+
+- **Organization:** Bangladesh Public Service Commission (BPSC)
+- **Date:** 2024-04-26
+- **Source:** Alal's Computer Hour (computer and ICT part)
+
+#### MCQ
+
+- **1** Which of the following statements about the Windows operating system is correct?
+  - A. It is a multi-tasking operating system
+  - B. It is an Open Source operating system
+  - C. Both (A) and (B) are true
+  - D. None is true
+- **2** Which of the following is the fastest as computer memory?
+  - A. RAM
+  - B. Hard Disk
+  - C. ROM
+  - D. Register
+- **3** Which of the following plays no role in the performance of a computer system?
+  - A. Size of RAM
+  - B. Size of ROM
+  - C. Size of Cache Memory
+  - D. Size of Register
+- **4** Which of the following is the correct binary form of the octal number (24)₈?
+  - A. (111 101)₂
+  - B. (010 100)₂
+  - C. (111 100)₂
+  - D. (101 010)₂
+- **5** An operating system helps a person interact with a computer through various symbols, icons or visual metaphors. Which of the following refers to this type of function?
+  - A. Command Line Interface
+  - B. Graphical User Interface
+  - C. Block User Interface
+  - D. Tap User Interface
+- **6** Which of the following statements about a compiler is correct?
+  - A. It takes more time to translate than an Interpreter
+  - B. It reads and translates the program line by line
+  - C. It translates the whole program at once
+  - D. It converts a machine program into a source program
+- **7** Which of the following networks covers the largest area?
+  - A. LAN
+  - B. WAN
+  - C. MAN
+  - D. PAN
+- **8** In the case of a Cellular Data Network, what does GPRS mean?
+  - A. Global Positioning Radio Service
+  - B. General Positioning Radio Service
+  - C. Global Packet Radio Service
+  - D. General Packet Radio Service
+- **9** Which of the following is not a search engine?
+  - A. Bing
+  - B. Google
+  - C. Yahoo
+  - D. Safari
+- **10** What is the full form of 'MbPS', used to express network transmission rate?
+  - A. Megabytes per second
+  - B. Megabits per second
+  - C. Milibits per second
+  - D. None of these
+- **11** Which of the following is used to protect a private network from outside attack?
+  - A. Antivirus
+  - B. Encryption
+  - C. Digital Signature
+  - D. Firewall
+- **12** What is the collection of hyper-linked documents on the Internet called?
+  - A. HTML
+  - B. Email
+  - C. www
+  - D. DWS
+- **13** Which technology, providing utility-based computing services according to customer demand, is an example of Distributed Computing?
+  - A. Remote Sensing
+  - B. Cloud Computing
+  - C. Remote Invocation
+  - D. Private Computing
+- **14** Which of the following is not a social media platform?
+  - A. Facebook
+  - B. Twitter
+  - C. Instagram
+  - D. Google
+- **15** Which technology is used in a Face Recognition system?
+  - A. Applied AI
+  - B. Applied IoT
+  - C. Virtual Reality
+  - D. None of these
+- **16** What kind of information technology is used in biology?
+  - A. Biometrics
+  - B. Bioinformatics
+  - C. Biochemistry
+  - D. None of these
+- **17** Which of the following is a component of 'Smart Bangladesh'?
+  - A. Smart Politics
+  - B. Smart Democracy
+  - C. Smart Society
+  - D. Smart Parliament
+- **18** 'Plagiarism' means -
+  - A. the act of using someones else's idea as one's own
+  - B. the act of planning everything beforehand
+  - C. the act of playing a musical instrument
+  - D. the art of dealing with forgery
+
+### 1.6 47th BCS Preliminary — `47th-bcs-preliminary`
+
+- **Organization:** Bangladesh Public Service Commission (BPSC)
+- **Date:** 2025-09-19
+- **Source:** Alal's Computer Hour (computer and ICT part)
+
+#### MCQ
+
+- **1** Who is considered the father of Quantum Computing?
+  - A. David Deutsch
+  - B. Richard Feynman
+  - C. Paul Benioff
+  - D. Alexei Kitaev
+- **2** Which of the following is the unit of Quantum Information?
+  - A. Bit
+  - B. Qubit
+  - C. Tensor
+  - D. Bite
+- **3** Which one of the following is correct with respect to speed? Here X > Y means X is faster than Y.
+  - A. L1 Cache > RAM > L2 Cache
+  - B. L1 Cache > L2 Cache > RAM
+  - C. RAM > L2 Cache > L1 Cache
+  - D. RAM > L1 Cache > L2 Cache
+- **4** Which type of Storage Device has the highest speed?
+  - A. HDD
+  - B. SSD
+  - C. SSHD
+  - D. Floppy Disk
+- **5** Which CPU architecture is most used in smartphones?
+  - A. X86
+  - B. X64
+  - C. Qualcomm
+  - D. RISC
+- **6** Which of the following is a common CPU architecture used in mobile phones?
+  - A. X86
+  - B. ARM
+  - C. Power PC
+  - D. SPARC
+- **7** Suppose the running time of Algorithm A is O(n²) and the running time of Algorithm B is O(n). Which of the following is most correct?
+  - A. Algorithm A is slower than Algorithm B
+  - B. Algorithm A is faster than Algorithm B
+  - C. Algorithm A is asymptotically slower than Algorithm B
+  - D. Algorithm B always runs faster than Algorithm A
+- **8** Which of the following is the fastest asymptotically?
+  - A. O(n²)
+  - B. O(log n)
+  - C. O(n log n)
+  - D. O(n!)
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **9** Android Operating System is primarily based on-
+  - A. Java
+  - B. C#
+  - C. Python
+  - D. Ruby
+- **10** What does SQL Stand for?
+  - A. Standard Query Language
+  - B. Simple Query Language
+  - C. Sequential Query Language
+  - D. Structured Query Language
+- **11** What kind of storage device can be affected by fragmentation?
+  - A. Optical
+  - B. Magnetic
+  - C. Solid-State
+  - D. Barcode
+- **12** Which rare earth element is the most commonly used in Hard Disk drives?
+  - A. Lanthanum
+  - B. Neodymium
+  - C. Cerium
+  - D. Europium
+- **13** Choose the correct answer of the binary subtraction: 10010₂ − 11011₂
+  - A. 00100₂
+  - B. 11111₂
+  - C. 01001₂
+  - D. 10111₂
+- **14** Which protocol is mainly used in secure online transactions in e-commerce?
+  - A. DHCP
+  - B. SMTP
+  - C. HTTPS
+  - D. ARP
+- **15** Which of the following is widely used to secure online payments?
+  - A. HTML
+  - B. CSS
+  - C. SSL
+  - D. PHP
+- **16** Which computer protocol is used to send an email?
+  - A. POP
+  - B. SMTP
+  - C. HTTPS
+  - D. DNS
+- **17** Which of the following represents a XOR-gate?
+  - A. X = A′B + AB′
+  - B. X = AB + A′B′
+  - C. X = AB
+  - D. X = A + B
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **18** In the Cellular Data Network, What does 'LTE' mean?
+  - A. Low Transmission Efficiency
+  - B. Linear Transport Emitter
+  - C. Long-Term Evolution
+  - D. Logic-Tech Electronics
+- **19** Which hardware component of a computer is most important for running an LLM?
+  - A. RAM
+  - B. Processor
+  - C. Graphics Card
+  - D. Storage Device
+- **20** Which of the following is primarily responsible for processing of graphics and images?
+  - A. CPU
+  - B. RAM
+  - C. GPU
+  - D. Hard Drive
+- **21** Which of the following can be found in the 1st generation computers?
+  - A. Transistor
+  - B. Vacuum Tube
+  - C. Micro-processor
+  - D. ICs
+- **22** If the clock speed of a computer's processor is 4.00 gigahertz, what is its clock cycle time?
+  - A. 2.5 nanoseconds (ns)
+  - B. 2.5 microseconds (ms)
+  - C. 4 (ms)
+  - D. 4 (ns)
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **23** Which of the following technologies is generally used in Precision Agriculture?
+  - A. Electro-ray imaging
+  - B. IoT sensors
+  - C. Wired network
+  - D. OLED display
+- **24** Virtual memory is used in an operating system -
+  - A. To store a lot more data
+  - B. To store data in the cloud
+  - C. To increase RAM by using secondary storage
+  - D. To add external memory
+- **25** Benchmarking of a computer system is done to measure what?
+  - A. The price of the system
+  - B. The performance of the system
+  - C. Only the amount of electric power consumed
+  - D. The storage capacity
+- **26** Which of the following devices is used to establish communication between different networks?
+  - A. Router
+  - B. Switch
+  - C. Bridge
+  - D. Hub
+- **27** Which of the following devices is mainly used in embedded systems?
+  - A. Router
+  - B. Supercomputer
+  - C. High-end server
+  - D. Microcontroller
+- **28** Which cloud computing model provides programmers with a platform for building applications?
+  - A. IaaS
+  - B. PaaS
+  - C. SaaS
+  - D. DaaS
+- **29** In a computer system, what will be the decimal value of the binary number 11001011₂?
+  - A. -52
+  - B. -53
+  - C. 203
+  - D. Any of the above can be
+- **30** What is the correct sequence when a computer starts up?
+  - A. POST → Kernel → Bootloader
+  - B. Kernel → POST → Bootloader
+  - C. Kernel → Bootloader → POST
+  - D. POST → Bootloader → Kernel
+
+### 1.7 50th BCS Preliminary — `50th-bcs-preliminary`
+
+- **Organization:** Bangladesh Public Service Commission (BPSC)
+- **Date:** 2026-01-30
+- **Source:** Alal's Computer Hour (computer and ICT part)
+
+#### MCQ
+
+- **1** Which of the following is required to use GPS on a smartphone?
+  - A. DHCP
+  - B. Accelerometer
+  - C. Gyroscope
+  - D. Satellite Signal
+- **2** Which algorithm does a mobile operator use to track location?
+  - A. Shortest Path
+  - B. Triangulation
+  - C. Nearest-neighbour
+  - D. Encryption
+- **3** What is the binary form of the number 0x1234?
+  - A. 001010011100
+  - B. 0010010010100
+  - C. 1110101111001011
+  - D. 0001001000110100
+- **4** What service does cloud computing provide?
+  - A. Only local storage
+  - B. Virtual computing resources
+  - C. Only virtual storage
+  - D. All of the above
+- **5** Which can work as an e-commerce platform?
+  - A. Facebook
+  - B. Amazon
+  - C. YouTube
+  - D. All of the above
+- **6** OCR is used to convert from ____ to ____.
+  - A. Audio to text
+  - B. Image to text
+  - C. Video to text
+  - D. Binary to decimal
+- **7** Which task do you think would be best for increasing the performance of a program on your personal computer (PC)?
+  - A. Designing an algorithm for the program that is asymptotically faster
+  - B. Upgrading the PC's configuration
+  - C. Attaching very fast I/O devices
+  - D. Both B and C
+- **8** Transmission Control Protocol (TCP) is a protocol of which layer of the OSI reference model?
+  - A. Application layer
+  - B. Network layer
+  - C. Transport layer
+  - D. Data link layer
+- **9** In a 4-bit binary system, what will be the decimal value of the 2's complement of zero?
+  - A. 1
+  - B. 0
+  - C. 2
+  - D. None of these
+- **10** GHz is the unit of what?
+  - A. Size of memory
+  - B. Speed of the processor
+  - C. Speed of data transfer
+  - D. Amount of data produced
+- **11** What does 'Pixel' mean?
+  - A. Pixie land
+  - B. Person length
+  - C. Pixure length
+  - D. Picture element
+- **12** In computer science, a Trojan Horse is a -
+  - A. Software for editing pictures
+  - B. Operating system
+  - C. Programming language
+  - D. Malware
+- **13** Which is not a combinational logic circuit?
+  - A. Register
+  - B. Decoder
+  - C. Multiplexer
+  - D. NAND gate
+- **14** In international security discussions, which of the following cyber threats is becoming increasingly significant?
+  - A. Phishing
+  - B. Spam e-mail
+  - C. Ransomware Attack
+  - D. Identity Theft
+- **15** Which feature does HTTPS add to HTTP?
+  - A. Security
+  - B. Standardization
+  - C. Software
+  - D. Sense
+- **16** A database is -
+  - A. Hardware for storing data
+  - B. Programs for storing data
+  - C. An organized form of data
+  - D. An Internet service for transferring data
+
+## 2. Bank and Financial Institutions — `bank-exams`
+
+### 2.1 Bangladesh Bank — Assistant Director (AD) (2021-11-12) — `bangladesh-bank-assistant-director-ad-2021-11-12`
+
+- **Organization:** Bangladesh Bank
+- **Post:** Assistant Director (AD)
+- **Date:** 2021-11-12
+
+#### MCQ
+
+- **1** Technology used to provide internet by transmitting data over wires of telephone network is?
+  - A. Transmitter
+  - B. DSL
+  - C. Diodes
+  - D. HHL
+- **2** '.INI' extension refers usually to what kind of file?
+  - A. Image file
+  - B. Word file
+  - C. System file
+  - D. Audio file
+- **3** What function key does F3 stand for in most computers?
+  - A. Refresh
+  - B. Help
+  - C. Find
+  - D. Save
+- **4** User developed instructions for Excel are called
+  - A. Arrays
+  - B. Macros
+  - C. Procedures
+  - D. Pivots
+- **5** Chips are made up of millions of tiny parts/switches known as
+  - A. etches
+  - B. electrons
+  - C. transistors
+  - D. charges
+- **6** The ASCII code of C is?
+  - A. 67
+  - B. 66
+  - C. 76
+  - D. 86
+- **7** Which kes can be used to display the save as box in MS Word?
+  - A. F12
+  - B. F5
+  - C. F9
+  - D. F6
+- **8** Which of the following is not an internet search engine?
+  - A. AOL
+  - B. Windows
+  - C. MSN
+  - D. Google
+- **9** Firmware is built in-
+  - A. RAM
+  - B. ROM
+  - C. Video Memory
+  - D. Cache Memory
+- **10** Which of the following is an extension of video file format in computers?
+  - A. mpg
+  - B. .jpg
+  - C. .exe
+  - D. .bmp
+  - Note: Part of this question is unclear in the source image; check the original paper.
+
+### 2.2 Probashi Kallyan Bank — Officer (General) (2021-11-12) — `probashi-kallyan-bank-officer-general-2021-11-12`
+
+- **Organization:** Probashi Kallyan Bank
+- **Post:** Officer (General)
+- **Date:** 2021-11-12
+
+#### MCQ
+
+- **1** The shortcut key for starting the slide show in MS-Powerpoint is -
+  - A. F5
+  - B. Ctrl+B
+  - C. Ctrl+N
+  - D. F8
+- **2** Find which is not a MS-Excel function-
+  - A. LEN
+  - B. TRIM
+  - C. MIN
+  - D. COUNTD
+- **3** _ is a software application which enables the transfer of files from one computer to another.
+  - A. DNS server
+  - B. TLD server
+  - C. FTP server
+  - D. DHCP server
+- **4** Find from the following which is a single integrated circuit-
+  - A. CPU
+  - B. RAM
+  - C. gate
+  - D. chip
+- **5** Select the odd one here-
+  - A. ORACLE
+  - B. JAVA
+  - C. SYBASE
+  - D. INFORMIX
+- **6** _ is used to create a web page.
+  - A. HTTPS
+  - B. WWW
+  - C. URL
+  - D. XML
+- **7** Which is not an online education platform?
+  - A. Coursera
+  - B. Skillshare
+  - C. Module
+  - D. Udemy
+- **8** Conversion of data into code is called?
+  - A. encryption
+  - B. firewall
+  - C. digital certificate
+  - D. password
+- **9** The term for a shop that is both online and on the high street is-
+  - A. click & brick
+  - B. brick & click
+  - C. brick & brick
+  - D. click & click
+- **10** Disadvantage of e-commerce is-
+  - A. controlling proxy and security
+  - B. after sales service
+  - C. maintaining standads and quality
+  - D. distrbution and delivery
+
+### 2.3 Security Printing Corporation Ltd. — Assistant Manager (2021-11-26) — `security-printing-corporation-ltd-assistant-manager-2021-11-26`
+
+- **Organization:** Security Printing Corporation Ltd.
+- **Post:** Assistant Manager
+- **Date:** 2021-11-26
+
+#### MCQ
+
+- **1** Which one of the following is not an application software?
+  - A. Microsoft Office suite
+  - B. Red Hat Linux
+  - C. Adobe Photoshop
+  - D. Google Chrome
+- **2** Which one of the following is equal to 2KB?
+  - A. 200
+  - B. 1024
+  - C. 2000
+  - D. 2048
+- **3** Which one of the following defines a set of instructions to complete a task?
+  - A. Text
+  - B. Program
+  - C. Information
+  - D. Data
+- **4** How many bits in IPv6?
+  - A. 32
+  - B. 64
+  - C. 128
+  - D. 156
+- **5** An OR gate can be imagined as -
+  - A. Switches connected in series
+  - B. MOS connected in series
+  - C. Switches connected in parallel
+  - D. Amplifier connected between two adder
+- **6** Default port for HTTP?
+  - A. 23
+  - B. 25
+  - C. 80
+  - D. 45
+- **7** URL stands for-
+  - A. Universal Resource Locator
+  - B. Uniform Resource Locator
+  - C. Unique Resource Locator
+  - D. None
+- **8** Which initial program is called at the starting of a computer?
+  - A. Computer Startup Loader
+  - B. Operating System Details
+  - C. Bootstrap Loader
+  - D. Hardware System Details
+- **9** Which one is the text based web browser-
+  - A. Chrome
+  - B. Lynx
+  - C. Safari
+  - D. Microsoft Edge
+- **10** In which generation, the microprocessor was introduced in the computer system?
+  - A. Second Generation
+  - B. Third Generation
+  - C. Fourth Generation
+  - D. Fifth Generation
+
+### 2.4 Bangladesh Bank — Assistant Director (AD) (2022-10-28) — `bangladesh-bank-assistant-director-ad-2022-10-28`
+
+- **Organization:** Bangladesh Bank
+- **Post:** Assistant Director (AD)
+- **Date:** 2022-10-28
+
+#### MCQ
+
+- **1** Phishing Attack is related to-
+  - A. False Website
+  - B. False E-mail
+  - C. Pirated Software
+  - D. Faulty Network
+- **2** Which one is Utility Software?
+  - A. MS Word
+  - B. Win-Zip
+  - C. Firefox
+  - D. Facebook
+  - Also asked in: Combined Bank — Officer (Cash) (2023-06-02)
+- **3** Which one is considered as the brain of a computer?
+  - A. Memory
+  - B. Processor
+  - C. Hard disk
+  - D. Internet
+- **4** Which communication media is necessary to access online banking from a plane or ship?
+  - A. WiFi
+  - B. Optical Fiber
+  - C. Satellite
+  - D. Radio Link
+- **5** Which one is the High-Level Programming language?
+  - A. MS PowerPoint
+  - B. MS Windows 10
+  - C. Python
+  - D. MySQL
+  - Also asked in: Combined Bank — Officer (Cash) (2023-06-02)
+- **6** Which device is mainly related to provide security of a network?
+  - A. Router
+  - B. Firewall
+  - C. Switch
+  - D. Operating System
+- **7** Which one is the Strongest Password?
+  - A. Amin1234
+  - B. $4Rr#345we#Jan21$
+  - C. $Amimur_Rahman$
+  - D. #Abdullah#BB#Dhaka#
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **8** One Tera Byte equal to how many bytes?
+  - A. 10^3 Bytes
+  - B. 10^6 Bytes
+  - C. 10^9 Bytes
+  - D. 10^12 Bytes
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **9** Bluetooth technology uses-
+  - A. Infrared
+  - B. Microwave
+  - C. Radio wave
+  - D. Laser Light
+- **10** Which of the following file name is valid?
+  - A. BB_AD_2022
+  - B. BB_AD*2022
+  - C. BB_AD?2022
+  - D. BB_AD/2022
+
+### 2.5 Bangladesh Bank — Officer (2022-12-02) — `bangladesh-bank-officer-2022-12-02`
+
+- **Organization:** Bangladesh Bank
+- **Post:** Officer
+- **Date:** 2022-12-02
+
+#### MCQ
+
+- **1** RAM belongs to which kind of memory?
+  - A. Auxiliary Memory
+  - B. Main Memory
+  - C. Cache Memory
+  - D. None of these
+- **2** The amount of time a message takes to traverse a system is called-
+  - A. Bandwidth
+  - B. Compiler
+  - C. Latency
+  - D. All of these
+- **3** Which one is the first program of Microsoft?
+  - A. Windows 98
+  - B. Windows 7
+  - C. Windows XP
+  - D. MS DOS
+- **4** Computer monitor is also known as-
+  - A. DVU
+  - B. UVD
+  - C. VDU
+  - D. CCTV
+- **5** Which one of the following stores more data than a DVD?
+  - A. CD Rom
+  - B. Floppy disk
+  - C. Red-Ray Disk
+  - D. Blu-Ray Disk
+- **6** A modem is connected in between a telephone line and a-
+  - A. communication adapter
+  - B. serial port
+  - C. computer
+  - D. network
+- **7** A channel for communicating across a boundary between two or more subsystem is known as
+  - A. Data path
+  - B. Walk through
+  - C. Act gram
+  - D. Interface
+- **8** The process of copying files to a CD-ROM is known as-
+  - A. Zipping
+  - B. Burning
+  - C. Digitizing
+  - D. Ripping
+  - Also asked in: Combined Bank — Officer (Cash) (2023-06-02)
+- **9** RTGS is a-
+  - A. Payment system
+  - B. Governance system
+  - C. Right-based group
+  - D. An anti-virus software
+- **10** Which technology is used by cryptocurrencies?
+  - A. Database
+  - B. Spreadsheet
+  - C. Blockchain
+  - D. Text file
+  - Also asked in: Bangladesh Bank — Officer (Cash) (2023-07-21)
+
+### 2.6 Combined 9 Banks & Financial Institutions — Senior Officer (2023-01-20) — `combined-9-banks-and-financial-institutions-senior-officer-2023-01-20`
+
+- **Organization:** Combined 9 Bank & Financial Institute
+- **Post:** Senior Officer
+- **Date:** 2023-01-20
+
+#### MCQ
+
+- **1** A Terabyte is equal to-
+  - A. 1024 Megabytes
+  - B. 1024 Kilobytes
+  - C. 1024 Gigabytes
+  - D. 1024 Bytes
+- **2** Which of the following is not the components of a microprocessor?
+  - A. ALU
+  - B. Register Array
+  - C. Control Unit
+  - D. Hard Disk
+- **3** An offline UPS will typically take... to transfer power.
+  - A. 15 milliseconds
+  - B. 8 milliseconds
+  - C. 4 milliseconds
+  - D. None of these
+- **4** A chatbot or chatterbot is-
+  - A. Hardware
+  - B. Firmware
+  - C. Humanware
+  - D. Software
+- **5** Microsoft Office is an example of a-
+  - A. Closed source software
+  - B. Open source software
+  - C. Horizontal market software
+  - D. Vertical market software
+- **6** RTGS is a-
+  - A. Payment System
+  - B. Governance System
+  - C. Right-based group
+  - D. An anti-virus software
+- **7** Which of the following format is usually used to store data?
+  - A. Decimal
+  - B. BCD
+  - C. Octal
+  - D. Hexadecimal
+- **8** Electronic trespassing or criminal hacking is known as-
+  - A. Cracking
+  - B. Jacking
+  - C. Spoofing
+  - D. Smarming
+- **9** Who is the founder of SpaceX-
+  - A. Eric Yuan
+  - B. Elon Musk
+  - C. Ray Tomlinson
+  - D. Larry Page
+- **10** Identify the language which is mainly used for Artificial Intelligence-
+  - A. JAVA
+  - B. J2EE
+  - C. C
+  - D. Prolog
+- **11** For keeping internet activity anonymous and private by users, which one is used?
+  - A. Dark Fiber
+  - B. Dark Net
+  - C. Dark Web
+  - D. None of these
+
+### 2.7 Combined 9 Banks & Financial Institutions — Officer (General) (2023-03-10) — `combined-9-banks-and-financial-institutions-officer-general-2023-03-10`
+
+- **Organization:** Combined 9 Banks & Financial Institution
+- **Post:** Officer (General)
+- **Date:** 2023-03-10
+
+#### MCQ
+
+- **1** A bit can be -
+  - A. 1 or 0
+  - B. 1
+  - C. 0
+  - D. None of these
+- **2** PROM stands for -
+  - A. Programmable Read Only Memory
+  - B. Programmable Only Memory
+  - C. Primary Read Only Memory
+  - D. None of these
+- **3** Identify the oldest phone hacking technique used by hackers to make free calls.
+  - A. Cracking
+  - B. Phishing
+  - C. Phreaking
+  - D. Spamming
+- **4** The main memory of a computer system is-
+  - A. Volatile
+  - B. Non-volatile
+  - C. Restricted
+  - D. Unrestricted
+- **5** Readymade styles that can be used for a word document are called-
+  - A. Presentations
+  - B. Letters
+  - C. Templates
+  - D. None of these
+- **6** The computer system which uses a drum plotter is known as?
+  - A. Mainframe Computer
+  - B. Mini Computer
+  - C. Both (a) and (b)
+  - D. None of these
+- **7** Bluetooth operations use-
+  - A. magnetic technology
+  - B. radio technology
+  - C. laser technology
+  - D. optical technology
+- **8** The command to reboot a computer is-
+  - A. Ctrl + Alt + Tab
+  - B. Ctrl + Alt + Del
+  - C. Ctrl + Alt + Shift
+  - D. Ctrl + Shift + Del
+  - Also asked in: Combined Bank — Officer (Cash) (2023-06-02)
+- **9** Which one of the following techniques, is used to hide information inside a picture?
+  - A. Bitmapping
+  - B. Image rendering
+  - C. Rootkits
+  - D. Steganography
+- **10** dbase III is-
+  - A. Hardware
+  - B. Application Software
+  - C. Firmware
+  - D. Operating System
+
+### 2.8 Combined Bank — Officer (Cash) (2023-06-02) — `combined-bank-officer-cash-2023-06-02`
+
+- **Organization:** Combined Bank
+- **Post:** Officer (Cash)
+- **Date:** 2023-06-02
+
+#### MCQ
+
+- **1** The process of copying files to a CD-ROM is known as-
+  - A. Zipping
+  - B. Burning
+  - C. Digitizing
+  - D. Ripping
+  - Also asked in: Bangladesh Bank — Officer (2022-12-02)
+- **2** RTGS is a-
+  - A. Payment System
+  - B. Governance System
+  - C. Right-based group
+  - D. An anti-virus software
+- **3** Which of the following is the Strongest Password?
+  - A. ABCD1234
+  - B. A1B2C3D4
+  - C. PasSwOrD
+  - D. SAxY59*&
+- **4** The command to reboot a computer is-
+  - A. Ctrl + Alt + Tab
+  - B. Ctrl + Alt + Del
+  - C. Ctrl + Alt + Shift
+  - D. Ctrl + Shift + Del
+  - Also asked in: Combined 9 Banks & Financial Institutions — Officer (General) (2023-03-10)
+- **5** If we want to connect a few computer in a small office, all the computers in one building, or all the computers in several buildings in close proximity, which type of network is required?
+  - A. PAN
+  - B. LAN
+  - C. MAN
+  - D. SAN
+- **6** Which one is Utility Software?
+  - A. MS Word
+  - B. Win-Zip
+  - C. Firefox
+  - D. Facebook
+  - Also asked in: Bangladesh Bank — Assistant Director (AD) (2022-10-28)
+- **7** Which one is the most popular Alternative Delivery Channels (ADC) in Bangladesh?
+  - A. MFS
+  - B. ATM
+  - C. POST
+  - D. Internet Banking
+- **8** Which one is the High-Level Programming language?
+  - A. MS PowerPoint
+  - B. MS Windows 10
+  - C. Python
+  - D. MySQL
+  - Also asked in: Bangladesh Bank — Assistant Director (AD) (2022-10-28)
+- **9** URL Stands for -
+  - A. Uniform Resource Locator
+  - B. Uniform Resource Location
+  - C. Undetected Resource Line
+  - D. Uniformity of Resource Locator
+- **10** A Gigabyte is equal to-
+  - A. 1024 Bytes
+  - B. 1024 Kilobytes
+  - C. 1024 Megabytes
+  - D. 1024 Terabytes
+
+### 2.9 Bangladesh Bank — Officer (Cash) (2023-07-21) — `bangladesh-bank-officer-cash-2023-07-21`
+
+- **Organization:** Bangladesh Bank
+- **Post:** Officer (Cash)
+- **Date:** 2023-07-21
+
+#### MCQ
+
+- **1** A computer cannot do anything without a -
+  - A. Memory
+  - B. Programme
+  - C. Chip
+  - D. Output Device
+- **2** Which of the following is not computer hardware?
+  - A. Monitor
+  - B. MS paint
+  - C. Keyboard
+  - D. RAM
+- **3** The command to reboot a computer is -
+  - A. Ctrl + Alt + Tab
+  - B. Ctrl + Shift + Del
+  - C. Ctrl + Alt + Del
+  - D. Ctrl + Alt + Shift
+- **4** Keys labelled F1 to F12 are -
+  - A. Input
+  - B. Output
+  - C. Help
+  - D. Functions
+- **5** Which technology is used by cryptocurrencies -
+  - A. Dalsbase
+  - B. Spreadsheet
+  - C. Blockchain
+  - D. Text File
+  - Also asked in: Bangladesh Bank — Officer (2022-12-02)
+- **6** Shortcut to save a file is -
+  - A. Ctrl + S
+  - B. Alt + S
+  - C. Ctrl + F1
+  - D. Ctrl + F2
+- **7** Which of the following as the strongest password?
+  - A. $KkY59*A
+  - B. BCD1234
+  - C. A1B2C3D4
+  - D. PasSwOrD
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **8** RTGS is a -
+  - A. Payment system
+  - B. Governance system
+  - C. Right-based group
+  - D. An Antivirus Software
+- **9** Which one of the following is an example of an Operating System?
+  - A. Microsoft Word
+  - B. Microsoft Excel
+  - C. Microsoft Access
+  - D. Microsoft Windows
+- **10** The smallest unit in a digital system is a -
+  - A. Bit
+  - B. Byte
+  - C. Character
+  - D. Kilobyte
+
+### 2.10 Bangladesh Bank — Assistant Director (AD) (2023-10-20) — `bangladesh-bank-assistant-director-ad-2023-10-20`
+
+- **Organization:** Bangladesh Bank
+- **Post:** Assistant Director (AD)
+- **Date:** 2023-10-20
+
+#### MCQ
+
+- **1** What kind of storage device can be affected by fragmentation?
+  - A. Optical
+  - B. Laser
+  - C. Solid-state
+  - D. Magnetic
+- **2** Which of the following is considered to measure the printing quality?
+  - A. ppm
+  - B. dpi
+  - C. cpi
+  - D. cps
+- **3** What is the name given to the sequence of steps which a computer follows?
+  - A. Instructions
+  - B. Algorithm
+  - C. Flowcharts
+  - D. Software
+- **4** Which of the following commands is given to invoke 'Task Manager'?
+  - A. Ctrl + Alt + Del
+  - B. Ctrl + Alt + F4
+  - C. Ctrl + Del + F12
+  - D. Alt + Del + F4
+- **5** Webcam is a type of __ device in a computer system.
+  - A. System
+  - B. Analogue
+  - C. Input
+  - D. Output
+- **6** What will be the result of the formula = Min (Average (B1, B2), Product (B3:B4)) where value of B1 = 20, B2 = 24, B3 = 15, B4 = 20?
+  - A. 20
+  - B. 22
+  - C. 300
+  - D. None of the above
+- **7** Which of the following is used in business intelligence?
+  - A. OLAP
+  - B. Data Mining
+  - C. Web mining
+  - D. All of these
+- **8** What is the meaning of 'BCC' in an email?
+  - A. Blind Carbon Copy
+  - B. Blind Close Copy
+  - C. Bearer Carbon Copy
+  - D. Blind Close Contact
+- **9** In MS-Word, which of the following shortcut keys are used for aligning text to center?
+  - A. Ctrl + M
+  - B. Ctrl + C
+  - C. Ctrl + E
+  - D. None of the above
+- **10** In MS-Excel, '#Name?' error occurs when –
+  - A. Function name is wrong
+  - B. Argument is wrong
+  - C. Cell reference is invalid
+  - D. All of the above
+
+### 2.11 Janata Bank PLC — Officer (Rural Credit) (2023-10-27) — `janata-bank-plc-officer-rural-credit-2023-10-27`
+
+- **Organization:** Janata Bank PLC
+- **Post:** Officer (Rural Credit)
+- **Date:** 2023-10-27
+
+#### MCQ
+
+- **1** A computer cannot boot unless there is-
+  - A. Compiler
+  - B. Loader
+  - C. Operating system
+  - D. Bootstrap
+- **2** Firewall is used to protect-
+  - A. Fire attacks
+  - B. Virus attacks
+  - C. Data-driven attacks
+  - D. Unauthorized access
+- **3** Which of the following is used both as input and output device?
+  - A. Touch screen
+  - B. Printer
+  - C. Microphone
+  - D. Mouse
+- **4** The present corporate name of Facebook is-
+  - A. Facebook
+  - B. Beta
+  - C. Meta
+  - D. Alpha
+- **5** Which is used to find and fix the error in the source code of any software?
+  - A. Encoding
+  - B. Debugging
+  - C. Decoding
+  - D. Correction
+- **6** Who was the co-founder of Microsoft Corporation with Bill Gates?
+  - A. Steve Jobs
+  - B. Paul Bernard
+  - C. Paul Allen
+  - D. John Bacus
+- **7** Which of the following is correct?
+  - A. 1 kilobyte = 1024 bytes
+  - B. 1 megabyte = 1024 bytes
+  - C. 1 kilobyte = 1000 bytes
+  - D. 1 megabyte = 1000 bytes
+- **8** Which of the following is not a programming language?
+  - A. Python
+  - B. Java
+  - C. HTML
+  - D. SQL
+- **9** What is the primary goal of Artificial Intelligence?
+  - A. To simulate human intelligence
+  - B. To replace human intelligence
+  - C. To enhance human intelligence
+  - D. To mimic animal intelligence
+- **10** Which Memory has the highest speed of access?
+  - A. RAM
+  - B. Cache
+  - C. Hard Disk
+  - D. CD
+  - Also asked in: Combined Bank — Officer (General) (2024-03-08)
+- **11** MICR refers to -
+  - A. Magnetic Information Character Recognition
+  - B. Magnetic Ink Character Recognition
+  - C. Magnetic Icon Character Recognition
+  - D. Magnetic Ink Code Recognition
+
+### 2.12 Combined Bank — Senior Officer (SO) (2023-11-10) — `combined-bank-senior-officer-so-2023-11-10`
+
+- **Organization:** Combined Banks
+- **Post:** Senior Officer (SO)
+- **Date:** 2023-11-10
+
+#### MCQ
+
+- **1** Which of the following computer language is written in Binary Codes only?
+  - A. Pascal
+  - B. Machine language
+  - C. C
+  - D. C+
+  - Also asked in: Janata Bank PLC — Rural Credit Officer (2024-06-28)
+- **2** Which of the following is the device used for converting maps, pictures and drawing into digital form for storage in computers?
+  - A. Image scanner
+  - B. Digitizer
+  - C. MICR
+  - D. Scanner
+- **3** What is the decimal equivalent of the binary number of 10111?
+  - A. 21
+  - B. 39
+  - C. 42
+  - D. 23
+- **4** ____ is not a form of data storage media.
+  - A. Magnetic tape
+  - B. Magnetic disc
+  - C. Optical disc
+  - D. A database
+- **5** A hard disk drive can be directly connected to a PC via a-
+  - A. SCSI interface
+  - B. Parallel interface
+  - C. WAN interface
+  - D. USB interface
+- **6** The computer command of "Ctrl+Alt+Delete" is applied to-
+  - A. Copy text
+  - B. Change a password
+  - C. Copy and paste text
+  - D. Shut down the computer
+- **7** RAM is also called as-
+  - A. Virtual memory
+  - B. Volatile Memory
+  - C. Non-volatile memory
+  - D. Cache memory
+- **8** Which is a type of computing that performs computation, storage and even applications as a service across a network?
+  - A. Parallel computing
+  - B. Cloud computing
+  - C. Distributed computing
+  - D. Virtual computing
+- **9** How many types of recipients are there in an e-mail system?
+  - A. One
+  - B. Two
+  - C. Three
+  - D. Four
+- **10** Find the odd one among the following-
+  - A. C++
+  - B. Linux
+  - C. Windows 10
+  - D. Macos
+
+### 2.13 Combined Bank — Officer (General) (2024-03-08) — `combined-bank-officer-general-2024-03-08`
+
+- **Organization:** Combined Bank
+- **Post:** Officer (General)
+- **Date:** 2024-03-08
+
+#### MCQ
+
+- **1** Bitcoins are created as a reward for a process known as-
+  - A. mining
+  - B. wallet
+  - C. bubble
+  - D. ledger
+- **2** Which Memory has the highest speed of access?
+  - A. RAM
+  - B. Cache
+  - C. Hard Disk
+  - D. CD
+  - Also asked in: Janata Bank PLC — Officer (Rural Credit) (2023-10-27)
+- **3** Who owns the Java programming language?
+  - A. Oracle Corporation
+  - B. Microsoft Corp.
+  - C. Sun Microsystems
+  - D. IBM
+- **4** Number of different characters in ASCII coding system is
+  - A. 128
+  - B. 2048
+  - C. 4096
+  - D. 8192
+- **5** Which key board command is used to underline a word or sentence in MsWord?
+  - A. Alt+U
+  - B. Ctrl+U
+  - C. Alt+L
+  - D. Ctrl+Alt+U
+- **6** ABACUS is-
+  - A. A hand operated calculating tool
+  - B. A database management system
+  - C. A programming language
+  - D. An antivirus software
+- **7** Which of the following is not an image/graphic file format?
+  - A. PNG
+  - B. GIF
+  - C. BMP
+  - D. GUI
+- **8** Cyber Security Act was enacted in Bangladesh in the year-
+  - A. 2018
+  - B. 2020
+  - C. 2022
+  - D. 2023
+- **9** Which of the following is a function of NPSB?
+  - A. Establishing interoperability among banks for transaction
+  - B. Establishing interoperability among mobile financial service providers
+  - C. Allowing instantaneous transfer of money
+  - D. Allowing interoperability among banks and mobile financial service providers
+- **10** Different banks of Bangladesh introduced Mobile Apps (Android version) for providing online financial services to its customers. Which of the following Mobile Apps have been launched by the scheduled banks?
+  - A. bKash, MTB Smart Banking, iPay and Paytouch
+  - B. UPAY, iPay, Nagad, FastPay and NexusPay
+  - C. NexusPay, CellFin, Citytouch, UPAY and SKYBANKING
+  - D. CellFin, iPay, Nagad, FastPay and Citytouch
+
+### 2.14 Combined 7 Banks — Officer Cash (2024-05-24) — `combined-7-banks-officer-cash-2024-05-24`
+
+- **Organization:** Combined 7 Banks
+- **Post:** Officer Cash
+- **Date:** 2024-05-24
+
+#### MCQ
+
+- **1** In MICR, 'C' stands for -
+  - A. Character
+  - B. Code
+  - C. Color
+  - D. Computer
+- **2** What is the meaning of OMR?
+  - A. Optical Mark Reader
+  - B. Optical Message Reader
+  - C. Optical Message Render
+  - D. Optical Mark Render
+- **3** ____ is the common language for AI.
+  - A. Lisp
+  - B. Java
+  - C. PHP
+  - D. Python
+- **4** In order to save a Word document as a web page you need to -
+  - A. Put the appropriate graphics and links on the document
+  - B. Save the document in simple text format
+  - C. Use your web browser as an editor and save as URL
+  - D. Save as HTML
+- **5** Which of the following is not a valid data type in MS-Excel?
+  - A. Number
+  - B. Label
+  - C. Character
+  - D. Date/Time
+- **6** In MS-Word, CTRL+E will result in -
+  - A. Table
+  - B. Centre alignment
+  - C. Exit from MS word
+  - D. Underlined text
+- **7** Word processing, spreadsheet, and photo-editing are examples of-
+  - A. Application Software
+  - B. System Software
+  - C. Web Development Software
+  - D. Platform Software
+- **8** Which of the following will translate images of text, drawings, and photos into digital form?
+  - A. Digitizer
+  - B. Modem
+  - C. Scanner
+  - D. Keyboard
+- **9** A pixel is -
+  - A. Computer program that draws picture
+  - B. Picture stored in the secondary memory
+  - C. The smallest resolvable part of a picture
+  - D. Virus
+- **10** Ctrl, Shift and Alt are called ____ keys.
+  - A. Alphanumeric
+  - B. Modifier
+  - C. Adjustment
+  - D. Function
+
+### 2.15 Janata Bank PLC — Rural Credit Officer (2024-06-28) — `janata-bank-plc-rural-credit-officer-2024-06-28`
+
+- **Organization:** Janata Bank PLC
+- **Post:** Rural Credit Officer
+- **Date:** 2024-06-28
+
+#### MCQ
+
+- **1** A computer network which is used within a building is called a-
+  - A. WAN
+  - B. MAN
+  - C. LAN
+  - D. SAN
+- **2** Which of these refers to the PowerPoint view used for displaying only the text (title and bullets)?
+  - A. Slide sorter show
+  - B. Slide view
+  - C. Outline view
+  - D. Notes page view
+- **3** Which of the following is a type of sound file?
+  - A. DAT files
+  - B. LOG files
+  - C. DRV Files
+  - D. WAV Files
+- **4** To insert chart in MS Excel, which shortcut key is used?
+  - A. Alt+F1
+  - B. F2
+  - C. F3
+  - D. F4
+- **5** URL stands for-
+  - A. Universal Resource Location
+  - B. Universal Resource Locator
+  - C. Unified Response Location
+  - D. Uniform Resource Locator
+- **6** Which of the following computer language is written in binary codes only?
+  - A. Pascal
+  - B. Machine Language
+  - C. C
+  - D. C+
+  - Also asked in: Combined Bank — Senior Officer (SO) (2023-11-10)
+- **7** Who among the following is considered as the inventor of the World Wide Web (WWW)?
+  - A. Edward Kasner
+  - B. Bill Gates
+  - C. Tim Berners Lee
+  - D. George C. Devol
+- **8** Which one of the following is not a web browser?
+  - A. Firefox
+  - B. Facebook
+  - C. Chrome
+  - D. Safari
+- **9** Process of finding and correcting errors is known as-
+  - A. Bugs
+  - B. Debugging
+  - C. Hacking
+  - D. Cracking
+- **10** A socially intelligent humanoid robot, Sophia, was developed by which of the following country?
+  - A. USA
+  - B. Hong-Kong
+  - C. Japan
+  - D. Germany
+
+### 2.16 Combined 9 Banks — Officer (General) (2025-07-04) — `combined-9-banks-officer-general-2025-07-04`
+
+- **Organization:** Combined 9 Banks
+- **Post:** Officer (General)
+- **Date:** 2025-07-04
+
+#### MCQ
+
+- **1** What does "IoT" mean?
+  - A. Internet of Tools
+  - B. Input over Technology
+  - C. Internet of Things
+  - D. Interconnected Optical Transmission
+- **2** What type of software is an operating system?
+  - A. Application Software
+  - B. System Software
+  - C. Utility Software
+  - D. Development Software
+- **3** What is Phishing?
+  - A. Fixing bugs in software
+  - B. Creating computer games
+  - C. An Internet scam to steal information
+  - D. A type of firewall
+- **4** What kind of device is a joystick?
+  - A. Input Device
+  - B. Output device
+  - C. Processing device
+  - D. Storage device
+- **5** What is the main function of a firewall in a computer network?
+  - A. Cooling the CPU
+  - B. Filtering incoming and outgoing traffic
+  - C. Increasing Internet speed
+  - D. Managing user passwords
+- **6** Which of the following statements about RAM is not correct?
+  - A. RAM is faster than SSD
+  - B. RAM is volatile
+  - C. RAM stores data permanently
+  - D. RAM improves multitasking
+- **7** What is the purpose of using "CAPTCHA"?
+  - A. Scanning for viruses
+  - B. Encrypting data
+  - C. Differentiating between humans and robots
+  - D. Sharing files
+- **8** Which of the following is not a characteristic of Solid state Drive (SSDs)?
+  - A. Non volatile storage
+  - B. Slower than HDD
+  - C. No moving parts
+  - D. More durable than HDD
+- **9** Which company developed the android operating system?
+  - A. Apple
+  - B. Microsoft
+  - C. Google
+  - D. IBM
+- **10** The technology company that conducted the first "Quantum Internet" test in early 2025 is—
+  - A. Google
+  - B. IBM
+  - C. Huawei
+  - D. Microsoft
+
+### 2.17 Combined 5 Banks — Officer Cash/ Officer Teller (2025-07-11) — `combined-5-banks-officer-cash-officer-teller-2025-07-11`
+
+- **Organization:** Combined 5 Banks
+- **Post:** Officer Cash/ Officer Teller
+- **Date:** 2025-07-11
+
+#### MCQ
+
+- **1** Which city is known as the "Big Apple"?
+  - A. Los Angeles
+  - B. New York
+  - C. Oklahoma
+  - D. San Francisco
+- **2** Which company owns ChatGPT?
+  - A. OpenAI
+  - B. NVIDIA
+  - C. Meta
+  - D. Palantir
+- **3** What is the address length of IPv6?
+  - A. 32-bit
+  - B. 64-bit
+  - C. 128-bit
+  - D. 256-bit
+- **4** Which of the following is not a data visualization tool?
+  - A. Power BI
+  - B. Tableau
+  - C. MySQL
+  - D. Looker
+- **5** Name of the word processing application in iWork suit is:
+  - A. Word
+  - B. Express
+  - C. Pages
+  - D. Docx
+- **6** Which data structure uses a Last In, First Out (LIFO) principle?
+  - A. Queue
+  - B. Stack
+  - C. Hash table
+  - D. Array
+- **7** Which one is the open-source operating system?
+  - A. Linux
+  - B. iOS
+  - C. Windows
+  - D. Google
+- **8** In a computer, which unit is responsible for fetching and executing instructions?
+  - A. ALU
+  - B. Motherboard
+  - C. Control Unit
+  - D. RAM
+- **9** A macro in software like Excel is used to:
+  - A. Zoom sheet
+  - B. Automate tasks
+  - C. Size font
+  - D. Encrypt files
+- **10** Which one is not an AI tool?
+  - A. Copilot
+  - B. ChatGPT
+  - C. Volt
+  - D. DeepSeek
+- **11** Which of the following is not an open-source software?
+  - A. LibreOffice
+  - B. Mozilla Firefox
+  - C. Microsoft Excel
+  - D. Ubuntu
+- **12** Which kind of memory has the highest access speed?
+  - A. HDD
+  - B. SSD
+  - C. RAM
+  - D. Cache
+
+### 2.18 Janata Bank PLC — Officer (Rural Credit – RC) (2025-07-18) — `janata-bank-plc-officer-rural-credit-rc-2025-07-18`
+
+- **Organization:** Janata Bank PLC
+- **Post:** Officer (Rural Credit – RC)
+- **Date:** 2025-07-18
+
+#### MCQ
+
+- **1** Which of the following is an operating system?
+  - A. Microsoft Word
+  - B. Google Chrome
+  - C. PowerPoint
+  - D. Linux
+- **2** Which one is used for encrypting data for secure communication over a network?
+  - A. VPN
+  - B. Firewall
+  - C. SSL
+  - D. Proxy
+- **3** Which of the following software is used for managing databases
+  - A. MS Excel
+  - B. Adobe Reader
+  - C. Oracle
+  - D. AutoCAD
+- **4** Which protocol is used to transfer web pages on the internet?
+  - A. FTP
+  - B. HTTP
+  - C. SMTP
+  - D. SNMP
+- **5** What is the primary goal of edge computing?
+  - A. Reduce cloud storage costs
+  - B. Improve internet bandwidth
+  - C. Bring computation closer to the data source
+  - D. Increase data center size
+- **6** What is the function of the BIOS in a computer?
+  - A. Connects to the internet
+  - B. Manages software updates
+  - C. Initializes hardware during booting
+  - D. Handles graphic rendering
+- **7** Which of the following is not a type of volatile memory?
+  - A. RAM
+  - B. Registers
+  - C. SSD
+  - D. Cache
+- **8** What is the full form of VPN?
+  - A. Virtual Private Network
+  - B. Visual Protected Node
+  - C. Verified Personal Network
+  - D. Virtual Protected Network
+- **9** Which computer technology helps analyze space tourism mission data for future improvements?
+  - A. Image compression
+  - B. Big Data analytics
+  - C. File sharing software
+  - D. Spreadsheet templates
+- **10** What is a 'deepfake'?
+  - A. A fake headline
+  - B. An AI-generated realistic image, audio, or video of a person
+  - C. A fake social media post
+  - D. A malfunction in deep-sea communication
+- **11** The term MFS in Bangladesh's financial context Stands for-
+  - A. Monetary Fund System
+  - B. Mobile Financial Services
+  - C. Mutual Finance Scheme
+  - D. Mobile Fund Structure
+
+### 2.19 Security Printing Corporation Ltd. — Officer (2025-10-11) — `security-printing-corporation-ltd-officer-2025-10-11`
+
+- **Organization:** Security Printing Corporation Ltd.
+- **Post:** Officer
+- **Date:** 2025-10-11
+
+#### MCQ
+
+- **1** Touchscreen is-
+  - A. an input device
+  - B. an output device
+  - C. both input and output device
+  - D. none of the above
+- **2** Which of the following technological initiatives is associated with Elon Musk?
+  - A. Blue Origin
+  - B. Neuralink
+  - C. Alibaba
+  - D. Infosys
+- **3** In cybersecurity, a Zero-Day vulnerability means –
+  - A. A virus that spreads within 24 hours
+  - B. A flaw unknown to the vendor, to be fixed before it can be exploited
+  - C. A malware that deletes files every day
+  - D. A hacking tool that lasts for one day
+- **4** Which of the following is an example of biometric authentication?
+  - A. Username and password
+  - B. Captcha verification
+  - C. Fingerprint scan
+  - D. PIN code
+- **5** In data storage, SSDs are faster than HDDs because-
+  - A. They use magnetic storage
+  - B. They have no moving parts
+  - C. They are cheaper
+  - D. They use optical disks
+- **6** Which company acquired GitHub in 2018?
+  - A. Apple
+  - B. Microsoft
+  - C. Amazon
+  - D. Google
+- **7** Which of the following is a generative AI model developed by Google?
+  - A. Gemini
+  - B. Copilot
+  - C. DALL-E
+  - D. LLAMA
+- **8** Which of the following is a type of malware that locks a victim's files and demands payment to unlock them?
+  - A. Spyware
+  - B. Trojan
+  - C. Ransomware
+  - D. Adware
+- **9** Which data structure stores data in a Last-In, First-Out (LIFO) order?
+  - A. Queue
+  - B. Linked List
+  - C. Tree
+  - D. Stack
+- **10** If a computer beeps repeatedly during the boot process but nothing appears on the screen, what is the likely source of the problem, as indicated by the POST process?
+  - A. A hard drive failure
+  - B. A problem with the network card
+  - C. A major hardware failure
+  - D. An issue with the user's startup application configuration
+
+### 2.20 Combined Bank — Senior Officer (SO) (2025-12-05) — `combined-bank-senior-officer-so-2025-12-05`
+
+- **Organization:** Combined Bank
+- **Post:** Senior Officer (SO)
+- **Date:** 2025-12-05
+
+#### MCQ
+
+- **1** Which of the following is a logical operator?
+  - A. +
+  - B. &&
+  - C. *
+  - D. =
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **2** What is the use of "CAPTCHA" in online banking applications?
+  - A. Encryption
+  - B. Authentication
+  - C. Blocking bots
+  - D. Improving speed
+- **3** Wi-Fi is based on—
+  - A. IEEE 208.11
+  - B. IEEE 802.11
+  - C. IEEE 802.15
+  - D. IEEE 208.15
+- **4** What is the time complexity of searching for an element in a balanced binary search tree?
+  - A. O(1)
+  - B. O(n log n)
+  - C. O(log n)
+  - D. O(n)
+- **5** Which is not an IT certification?
+  - A. CCNA
+  - B. ComTIA A+
+  - C. GISF
+  - D. DigiSec
+- **6** Which one is not a leading AI startup?
+  - A. OpenAI
+  - B. xAI
+  - C. Cohere
+  - D. nVidia
+- **7** Which of the following is not a guided media?
+  - A. Optical fiber
+  - B. Coaxial cable
+  - C. Radio waves
+  - D. Twisted pair
+- **8** Which type of DNS record maps a domain name to an IPv4 address?
+  - A. AAA Record
+  - B. CNAME Record
+  - C. MX Record
+  - D. A Record
+  - Also asked in: Combined Bank — Cash Officer (2026-01-31)
+- **9** A chatbot like ChatGPT is an example of:
+  - A. Symbolic AI
+  - B. Generative AI
+  - C. Embedded AI
+  - D. Reactive AI
+- **10** What was the name of the first computer virus?
+  - A. Creeper
+  - B. Conficker
+  - C. Stuxnet
+  - D. Tinba
+- **11** Which of the following is not one of the 'three Vs' used to characterize Big Data?
+  - A. Variety
+  - B. Visibility
+  - C. Volume
+  - D. Velocity
+- **12** What is the name of world's first artificial satellite?
+  - A. PROBA
+  - B. Sputnik 1
+  - C. Palapa A1
+  - D. Explorer 1
+- **13** What does QR stand for?
+  - A. Quick Response
+  - B. Qualified Restraint
+  - C. Quartz Repeat
+  - D. Quick Resonance
+
+### 2.21 Combined Bank — Cash Officer (2026-01-31) — `combined-bank-cash-officer-2026-01-31`
+
+- **Organization:** Combined Bank
+- **Post:** Cash Officer
+- **Date:** 2026-01-31
+
+#### MCQ
+
+- **1** Which storage mechanism uses charge leakage over time and must be periodically refreshed to retain data?
+  - A. SSD NAND Flash
+  - B. DRAM Cells
+  - C. Static RAM Cells
+  - D. EEPROM
+- **2** Which of the following cache types is fastest but most expensive and usually located inside the CPU?
+  - A. L3 Cache
+  - B. Main Memory
+  - C. L1 Cache
+  - D. Virtual Memory
+- **3** Which storage device type uses magnetic disks and rotational platters for data storage?
+  - A. SSD
+  - B. USB Flash
+  - C. HDD
+  - D. Optical Disk
+- **4** Which data type is used to store whole numbers?
+  - A. float
+  - B. int
+  - C. char
+  - D. string
+- **5** A step-by-step procedure or set of rules used to solve a specific problem is known as:
+  - A. Loop
+  - B. Variable
+  - C. Algorithm
+  - D. Constant
+- **6** In programming, what is the term for an error in the logic or syntax of a program that prevents it from running correctly?
+  - A. Bug
+  - B. Patch
+  - C. Malware
+  - D. Script
+- **7** Which protocol is used to receive emails from a server?
+  - A. FTP
+  - B. HTTP
+  - C. POP3
+  - D. SMTP
+- **8** Which of the following is a high-level programming language commonly used for general-purpose programming and data science?
+  - A. Python
+  - B. Assembly Language
+  - C. Machine Code
+  - D. Binary Code
+- **9** The process of searching through large datasets to identify patterns and relationships is called:
+  - A. Data Entry
+  - B. Data Mining
+  - C. Data Scrubbing
+  - D. Data Buffering
+- **10** Which type of DNS record maps a domain name to an IPv4 address?
+  - A. AAAA Record
+  - B. CNAME Record
+  - C. MX Record
+  - D. A Record
+  - Also asked in: Combined Bank — Senior Officer (SO) (2025-12-05)
+- **11** When was the SMW-5 cable connected to Bangladesh?
+  - A. 2015
+  - B. 2016
+  - C. 2017
+  - D. 2018
+- **12** Which is the first digital district of Bangladesh?
+  - A. Jashore
+  - B. Sylhet
+  - C. Dhaka
+  - D. Rajbari
+
+### 2.22 Combined Bank — Officer (General) (2026-01-31) — `combined-bank-officer-general-2026-01-31`
+
+- **Organization:** Combined Bank
+- **Post:** Officer (General)
+- **Date:** 2026-01-31
+
+#### MCQ
+
+- **1** Which of the following is an input device?
+  - A. Printer
+  - B. Light pen
+  - C. Monitor
+  - D. Plotter
+- **2** In case of failure of one device, which one topology has no major disruption?
+  - A. Bus
+  - B. Ring
+  - C. Tree
+  - D. Mesh
+- **3** Which of the following is a type of malware that design for surveillance?
+  - A. Trojan
+  - B. Virus
+  - C. Worm
+  - D. Spyware
+- **4** 1 Terabyte (TB)= ____ bytes.
+  - A. 1024²
+  - B. 1024³
+  - C. 1024⁴
+  - D. 1024⁵
+- **5** Which of the following is a key feature of the Fourth Industrial Revolution (4IR)?
+  - A. Use of analog technologies in manufacturing
+  - B. Integration of advanced technologies like AI, IoT, and robotics
+  - C. Centralized control of data and resources
+  - D. Focus on traditional manufacturing processes
+- **6** In the context of blockchain, what is a "block"?
+  - A. A single data entry in a database
+  - B. A group of transactions bundled together and added to the blockchain ledger
+  - C. A type of encryption key used in blockchain
+  - D. A software used for creating decentralized applications
+- **7** Which of the following is the best approach to securing sensitive data in transit over a network?
+  - A. Use of unencrypted email communication
+  - B. Using Virtual Private Networks (VPNs) and encryption protocols
+  - C. Relying on user passwords alone
+  - D. Disabling firewalls
+- **8** What does 'SSD' stand for?
+  - A. Static State Drive
+  - B. Solid State Drive
+  - C. Strong Steady Drive
+  - D. Static Steady Drive
+- **9** Which file extension is associated with a windows media audio developed by Microsoft Word?
+  - A. .wma
+  - B. .jpg
+  - C. .docx
+  - D. .html
+- **10** How many banks were recently merged to form the 'Sammilito Islami Bank PLC'?
+  - A. 3
+  - B. 4
+  - C. 5
+  - D. 6
+- **11** Which of the following is an example of a social engineering attack?
+  - A. Using encryption to protect data
+  - B. Phishing emails designed to steal login credentials
+  - C. Implementing access controls based on job roles
+  - D. Running antivirus scans on a system
+
+### 2.23 Combined Bank — Senior Officer (SO) (2026-05-15) — `combined-bank-senior-officer-so-2026-05-15`
+
+- **Organization:** Combined Bank
+- **Post:** Senior Officer (SO)
+- **Date:** 2026-05-15
+
+#### MCQ
+
+- **1** Which technology is commonly used for real-time Big Data processing?
+  - A. Hadoop MapReduce
+  - B. Apache Spark
+  - C. MySQL Database
+  - D. Oracle ERP
+- **2** A "Bit" is the smallest unit of data in a computer. How many bits make up a single Byte?
+  - A. 4
+  - B. 8
+  - C. 16
+  - D. 32
+- **3** Which protocol ensures reliable data transmission?
+  - A. UDP
+  - B. IP
+  - C. TCP
+  - D. ARP
+- **4** Which of these is a widely used high-level programming language known for its readability?
+  - A. Binary
+  - B. Assembly
+  - C. Python
+  - D. Machine Code
+- **5** The delay before data transfer begins is called:
+  - A. Bandwidth
+  - B. Latency
+  - C. Throughput
+  - D. Network Jitter
+- **6** Which communication mode allows bidirectional flow, but only one way at a time?
+  - A. Simplex
+  - B. Half-duplex
+  - C. Full-duplex
+  - D. Multiplex
+- **7** Which component is responsible for permanently storing the instructions a computer needs to start up (the firmware)?
+  - A. ROM
+  - B. Cache Memory
+  - C. RAM
+  - D. Motherboard
+- **8** The basic unit of information in computing that is represented by a single '0' or '1' is called a-
+  - A. Byte
+  - B. Nibble
+  - C. MS Word
+  - D. Bit
+- **9** In digital logic, which logic gate outputs a "1" (True) ONLY when both of its input values are "1" (True)?
+  - A. OR Gate
+  - B. XOR Gate
+  - C. AND Gate
+  - D. NAND Gate
+- **10** Which port is most commonly used for modern wired Ethernet connections?
+  - A. HDMI
+  - B. RJ45
+  - C. USB-C
+  - D. VGA
+
+### 2.24 Combined Bank — Officer (General) (2026-05-16) — `combined-bank-officer-general-2026-05-16`
+
+- **Organization:** Combined Bank
+- **Post:** Officer (General)
+- **Date:** 2026-05-16
+
+#### MCQ
+
+- **1** What does GPT stand for?
+  - A. General Pre-training Technique
+  - B. Generative Programming Tool
+  - C. Generative Pre-trained Transformer
+  - D. Generated Processed Texts
+- **2** Which protocol is primarily used to securely transfer files between a local computer and a remote server?
+  - A. SFTP
+  - B. HTTP
+  - C. SMTP
+  - D. ICMP
+- **3** Which number system has base 16?
+  - A. Binary
+  - B. Octal
+  - C. Hexadecimal
+  - D. Decimal
+- **4** What is open-source software?
+  - A. Requires less or no payment to use
+  - B. The source code is unknown
+  - C. Source code is publicly available
+  - D. Doesn't need an account to use
+- **5** Which type of memory is faster?
+  - A. Hard Disk
+  - B. RAM
+  - C. Cache memory
+  - D. DVD
+- **6** Which one of the following is not a display cable type?
+  - A. VGA
+  - B. HDMI
+  - C. DVI
+  - D. SATA
+- **7** In cloud computing, what does "SaaS" stand for?
+  - A. Storage as a Solution
+  - B. System as a Service
+  - C. Software as a Service
+  - D. Security as a System
+- **8** Which of these is a "Compiled" Language?
+  - A. PHP
+  - B. C++
+  - C. Ruby
+  - D. Javascript
+- **9** One of the key AI features in Gmail is:
+  - A. Voice email
+  - B. Ordering emails
+  - C. Offline use
+  - D. Email summarization
+- **10** Who is the owner of Grok?
+  - A. Bill Gates
+  - B. Mark Zuckerberg
+  - C. Elon Musk
+  - D. Sundar Pichai
+- **11** Which Bengali font is most widely used for official government documentation in Bangladesh?
+  - A. Nikosh
+  - B. SutonnyMJ
+  - C. SolaimanLipi
+  - D. Avro
+
+### 2.25 Combined Bank — Officer (Cash) (2026-07-03) — `combined-bank-officer-cash-2026-07-03`
+
+- **Organization:** Combined Bank
+- **Post:** Officer (Cash)
+- **Date:** 2026-07-03
+
+#### MCQ
+
+- **1** Which network element is used to uniquely identify a device connected to a network?
+  - A. Hostname
+  - B. IP address
+  - C. Subnet mask
+  - D. Gateway
+- **2** Which of the following is a key component of a computer's motherboard?
+  - A. Hard Drive
+  - B. RAM
+  - C. Monitor
+  - D. Keyboard
+- **3** What does the term "zero-day vulnerability" mean in cybersecurity?
+  - A. A known vulnerability with available patch
+  - B. A vulnerability unknown to the software vendor
+  - C. A vulnerability in old hardware
+  - D. Malware that activates after 24 hours
+- **4** Which foundational computer science field did John McCarthy officially coin the term for in 1955?
+  - A. Quantum Computing
+  - B. Cybernetics
+  - C. Artificial Intelligence
+  - D. Machine Learning
+- **5** What is the primary function of a CAPTCHA?
+  - A. Scanning for viruses
+  - B. Encrypting data
+  - C. Differentiating between humans and robots
+  - D. Sharing files
+- **6** In what year did researchers Stuart Haber and W. Scott Stornetta introduce the first cryptographically secured chain of blocks?
+  - A. 1981
+  - B. 1991
+  - C. 1999
+  - D. 2008
+- **7** What is the standard port number used for secure, encrypted communication over HTTPS?
+  - A. 23
+  - B. 80
+  - C. 443
+  - D. 8080
+- **8** Which network topology offers the highest redundancy but requires the most cabling infrastructure?
+  - A. Star topology
+  - B. Ring topology
+  - C. Mesh topology
+  - D. Bus topology
+- **9** Which term describes a security professional who ethically exploits vulnerabilities to help organizations secure their networks?
+  - A. Black Hat Cracker
+  - B. White Hat Hacker
+  - C. Script Kiddie
+  - D. Cyber Ransomware Cracker
+- **10** What is the core component of an operating system that manages system resources?
+  - A. Kernel
+  - B. File manager
+  - C. NOS
+  - D. Directory
+- **11** Anthropic is a company primarily related to:
+  - A. Space Exploration
+  - B. Artificial Intelligence
+  - C. Automobile Manufacturing
+  - D. Biotechnology
+
+### 2.26 Bangladesh Bank — Assistant Director (AD) (2026-07-17) — `bangladesh-bank-assistant-director-ad-2026-07-17`
+
+- **Organization:** Bangladesh Bank
+- **Post:** Assistant Director (AD)
+- **Date:** 2026-07-17
+
+#### MCQ
+
+- **1** A type of malicious software that infects computer systems, encrypts files, or locks users out of their devices is called –
+  - A. Ransomware
+  - B. Trojan horse
+  - C. XSS injection
+  - D. Denial of Service (DoS)
+- **2** Which protocol is used to send email from a client to a mail server?
+  - A. HTTP
+  - B. FTP
+  - C. SMTP
+  - D. TCP/IP
+- **3** Which of the following is a volatile memory that loses its contents when power is off?
+  - A. Flash drive
+  - B. RAM
+  - C. Hard disk
+  - D. ROM
+- **4** What type of cyberattack specifically uses deceptive emails, websites, or text messages to trick individuals into revealing sensitive information like passwords and credit card numbers?
+  - A. Man-in-the-middle
+  - B. Phishing
+  - C. Eavesdropping
+  - D. SQL injection
+- **5** What is the name of the firmware embedded on the motherboard that initializes hardware components during the booting process before loading the operating system?
+  - A. BIOS / UEFI
+  - B. CMOS Battery
+  - C. Kernel
+  - D. Chipset Driver
+- **6** Which of the following is a high-level programming language?
+  - A. Machine code
+  - B. C++
+  - C. Assembly language
+  - D. C
+- **7** Which device is used to connect multiple computers within the same wired local network to share data?
+  - A. Switch
+  - B. Router
+  - C. Modem
+  - D. Repeater
+- **8** The keyboard keys 'Shift', 'Ctrl', and 'Alt' are called –
+  - A. Function Key
+  - B. Numeric Key
+  - C. Decoder Key
+  - D. Modifier Key
+- **9** What type of file uses the '.ini' extension?
+  - A. Hypertext File
+  - B. Image File
+  - C. System File
+  - D. Video File
+- **10** Which of the following is a core banking software?
+  - A. QuickBook
+  - B. Unix
+  - C. SAP
+  - D. T24
+
+## 3. Assistant Programmer and IT Posts — `assistant-programmer`
+
+### 3.1 Combined Bank Assistant Programmer Recruitment Test 2026 (Written) — `combined-bank-assistant-programmer-recruitment-test-2026-written`
+
+- **Organization:** Combined Bank
+- **Post:** Assistant Programmer (Job ID 25106)
+- **Date:** 2026-10-31
+
+#### Written
+
+- **1** Explain the OSI reference model and the functions of its seven layers.
+  - Marks: 10
+- **2** What is deadlock in an operating system? Explain its necessary conditions and methods of handling deadlocks.
+  - Marks: 10
+- **3** Explain the ACID properties of database transactions.
+  - Marks: 10
+- **4** What is Natural Language Processing (NLP)? Discuss its major techniques and applications.
+  - Marks: 10
+- **5** What is Generative AI? Explain how Large Language Models (LLMs) work and discuss their applications and challenges.
+  - Marks: 10
+- **6** What are a compiler, an interpreter, and an assembler? Explain their functions and differences.
+  - Marks: 10
+- **7** What is the difference between HTTP and HTTPS? Explain the HTTP request-response cycle and common HTTP methods.
+  - Marks: 10
+- **8** A login page constructs SQL queries by directly concatenating user-supplied usernames and passwords into SQL statements. Identify and explain the potential security vulnerability, demonstrate with an example how it can be exploited to bypass authentication, and recommend measures to prevent the vulnerability and store passwords securely.
+  - Marks: 10
+- **9** A ride-sharing application supports cars, motorbikes, and CNG auto-rickshaws, each with a different fare calculation method. Design the system using appropriate object-oriented programming (OOP) principles and draw a UML class diagram illustrating your design.
+  - Marks: 10
+- **10** What is an agentic AI system, and how does it interact with external tools and data sources? Explain the roles of Model Context Protocol (MCP) and an agent harness in an agentic AI system. Identify two common risks associated with agentic AI systems and explain appropriate mitigation strategies for each.
+  - Marks: 10
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **11** Differentiate between full, incremental, and differential backups, and recommend a backup strategy for a bank that needs to minimize data loss and recovery time.
+  - Marks: 10
+- **12** What is Retrieval-Augmented Generation (RAG)? Briefly explain the main steps involved in designing a RAG pipeline. Explain the role of a vector database in RAG and how RAG improves the accuracy and relevance of LLM-generated responses.
+  - Marks: 10
+- **13** A web application has 120,000 users, of whom 20% are active during peak hours. Each active user generates 5 requests per minute. Each application server handles 800 requests per second, and each request generates 2 database queries. Each database server can process 1,000 queries per second. Calculate the minimum number of application and database servers required.
+  - Marks: 10
+- **14** Given the following sequence of integers, construct a Binary Search Tree (BST) by inserting the elements in the order given: 50, 30, 70, 20, 40, 60, 80, 35. Draw the resulting BST and determine its inorder, preorder, and postorder traversal sequences.
+  - Marks: 10
+- **15** A processor has a cache hit ratio of 90%, a cache access time of 5 ns, and a main-memory access time of 80 ns. Calculate the average memory access time, assuming a cache miss requires an additional main-memory access after the cache lookup.
+  - Marks: 10
+- **16** Pipe A can fill a tank in 10 hours and pipe B in 15 hours. Pipe C can empty the full tank in 12 hours. If all three are opened together, how long will it take to fill the tank?
+  - Marks: 5
+- **17** The product of two consecutive positive odd numbers is 143. Find the numbers.
+  - Marks: 5
+- **18** In a class, if 4 students sit on each bench, then 3 benches remain empty. But if 3 students sit on each bench, then 6 students have to stand. What is the total number of students in the class?
+  - Marks: 5
+- **19** The amount of money held by A, B, and C satisfy A:B = 3:4 and B:C = 5:6. If A gives Tk 5,000 to B, the ratio of their amount becomes 1:2. Find the total amount of money originally held by all three.
+  - Marks: 5
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **20** In a mixture of milk and water, their ratio is 5:2. If 12 liters of water are added to the mixture, the ratio becomes 5:3. What was the initial quantity of milk in the mixture?
+  - Marks: 5
+  - Note: This question appears only in another version of this question paper.
+- **21** Grammar Parts (a to j)
+  - Marks: 10
+  - Note: This question appears only in another version of this question paper.
+- **22** Focus: Job aspects in the age of ARTIFICIAL INTELLIGENCE
+  - Marks: 20
+  - Note: This question appears only in another version of this question paper.
+
+### 3.2 Different Ministry — Assistant Programmer and Assistant Maintenance Engineer (MCQ) — `different-ministry-assistant-programmer-and-assistant-maintenance-engineer-mcq`
+
+- **Organization:** Different Ministry
+- **Post:** Assistant Programmer & Assistant Maintenance Engineer
+- **Date:** 29.20.2026 (as printed)
+
+#### MCQ
+
+- **1** A Stack is called –
+  - A. Last In First Out
+  - B. First In Last Out
+  - C. Last In Last Out
+  - D. First In First Out
+- **2** Which server is used to assign IP addresses dynamically while connecting to the internet?
+  - A. DNS
+  - B. Proxy
+  - C. DHCP
+  - D. All of the above
+- **3** What is the value of 5%2 in C?
+  - A. 0
+  - B. 1
+  - C. 2
+  - D. 2.5
+- **4** Which one is an unsupervised learning model?
+  - A. SVM
+  - B. KNN
+  - C. Linear Regression
+  - D. K-means clustering
+- **5** What is the binary equivalent of decimal 10?
+  - A. 1000
+  - B. 1010
+  - C. 1100
+  - D. 1110
+- **6** Which one is an example of an open-source operating system?
+  - A. Windows 11
+  - B. Mozilla Firefox
+  - C. iOS
+  - D. Linux
+- **7** Which is a relational database management system (RDBMS)?
+  - A. MySQL
+  - B. Python
+  - C. Java
+  - D. Linux
+- **8** Which one is an example of non-functional properties of a software system?
+  - A. Coding
+  - B. Debug
+  - C. Security
+  - D. Prototype
+- **9** What type of memory is RAM?
+  - A. Permanent
+  - B. External
+  - C. Volatile
+  - D. Optical
+- **10** Which one is not a hyperparameter of linear regression?
+  - A. Learning rate
+  - B. Alpha
+  - C. Number of neighbors
+  - D. L1/L2 regularization
+- **11** Which searching algorithm requires sorted data?
+  - A. Linear
+  - B. Binary
+  - C. Sequential
+  - D. Hash
+- **12** If voltage across a 10Ω resistor is 20V, its current and power are:
+  - A. 1A, 1W
+  - B. 2A, 40W
+  - C. 0.5A, 10W
+  - D. 0.5A, 40W
+- **13** Which one is an example of a non-Turing machine type of language?
+  - A. Python
+  - B. Java
+  - C. SQL
+  - D. C++
+- **14** Which keyword is used to define a function in Python programming language?
+  - A. function
+  - B. define
+  - C. def
+  - D. func
+- **15** Which one is an example of a strong authentication process?
+  - A. AES
+  - B. RSA
+  - C. Blockchain
+  - D. 2FA
+- **16** Which one is an example of a deep-learning model?
+  - A. SVM
+  - B. Naive Bayes
+  - C. Linear Regression
+  - D. CNN
+- **17** Which data structure follows the FIFO principle?
+  - A. Stack
+  - B. Queue
+  - C. Tree
+  - D. Graph
+- **18** Which function is used by the for loop in Python?
+  - A. Tuple
+  - B. range
+  - C. Excuse
+  - D. control
+- **19** What is the use of BCNF?
+  - A. Database normalization
+  - B. Fine tuning of software quality
+  - C. Indexing mechanism
+  - D. Hashing
+- **20** Which one is an example of primary memory?
+  - A. HDD
+  - B. SSD
+  - C. RAM
+  - D. DVD
+- **21** Which shortcut key is used for creating a new folder in Windows OS?
+  - A. Ctrl+N
+  - B. Ctrl+Shift+N
+  - C. Alt+N
+  - D. Ctrl+Alt+N
+- **22** If a machine learning model shows 56% and 48% training and test accuracies respectively, it has:
+  - A. Low bias and low variance
+  - B. High bias and high variance
+  - C. Low bias and high variance
+  - D. High bias and low variance
+- **23** Which datatype stores whole numbers in C?
+  - A. float
+  - B. double
+  - C. char
+  - D. int
+- **24** Which one is a dummy classifier?
+  - A. Linear Regression
+  - B. KNN
+  - C. SVM
+  - D. Zero-R
+- **25** Which protocol is primarily used to browse websites?
+  - A. FTP
+  - B. HTTP
+  - C. SMTP
+  - D. POP3
+- **26** What is the time complexity of binary search?
+  - A. O(n)
+  - B. O(n²)
+  - C. O(log n)
+  - D. O(1)
+- **27** Which one is an example of an ensemble machine learning model?
+  - A. AdaBoost
+  - B. SVM
+  - C. Linear Regression
+  - D. Logistic Regression
+- **28** Which element stores electrical energy in an electric field?
+  - A. Inductor
+  - B. Capacitor
+  - C. Transformer
+  - D. Resistor
+- **29** In a 3-phase system, phase difference between two consecutive phases is:
+  - A. 60°
+  - B. 90°
+  - C. 120°
+  - D. 180°
+- **30** An electrical circuit consists of a resistor R Ohm, inductor L Henry and capacitor C Farad which are connected in series. A voltage with frequency f is applied. Which relation is true during resonance?
+  - A. f² = 1/(4π²LC)
+  - B. f² = 1/(2πLC)
+  - C. f = 1/√(LC)
+  - D. f = 1/(2π√(LC))
+- **31** The device used for AC to DC conversion is:
+  - A. Inverter
+  - B. Oscillator
+  - C. Rectifier
+  - D. Transformer
+- **32** Which operator is used for assignment in C/C++ programming language?
+  - A. =
+  - B. ==
+  - C. !=
+  - D. <=
+- **33** Which one is an example of a palindrome?
+  - A. Argentina
+  - B. Brazil
+  - C. 1234321
+  - D. 1024
+- **34** Which one is a valid variable name in C?
+  - A. 2value
+  - B. int
+  - C. total-marks
+  - D. First-name
+- **35** Which one of the following is the full form of URL?
+  - A. Uniform Resource Locator
+  - B. Uniform Resource Link
+  - C. Uniform Reference Link
+  - D. Uniform Record Locator
+- **36** Which one is a passive electronic component?
+  - A. Transistor
+  - B. Operational Amplifier
+  - C. Resistor
+  - D. SCR
+- **37** Which loop executes at least once?
+  - A. for
+  - B. do-while
+  - C. while
+  - D. All of the above
+- **38** Power factor of a purely resistive circuit is:
+  - A. 0
+  - B. 0.5
+  - C. 1
+  - D. -1
+- **39** Which one is the principle of inclusion/exclusion of two sets intersecting each other?
+  - A. |A ∪ B| = |A| + |B| − |A ∩ B|
+  - B. |A ∪ B| = |A| + |B| + |A ∩ B|
+  - C. |A ∩ B| = |A| + |B|
+  - D. |A ∩ B| = |A| − |B| + |A ∪ B|
+- **40** Which organization is the founder of ChatGPT?
+  - A. Google
+  - B. Microsoft
+  - C. OpenAI
+  - D. Meta
+
+## 4. NTRCA College (Lecturer) — `ntrca-college`
+
+### 4.1 Teacher Registration Examination 2011 (Lecturer) — `teacher-registration-examination-2011-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Date:** 2011
+- **Source:** Computer Science (Elective), subject code 430
+
+#### Written
+
+- **1(a)** Briefly discuss the organization of a computer with a diagram.
+  - Also asked in: 16th Teacher Registration Examination 2019 (Assistant Teacher); 10th Teacher Registration Examination (May) 2014 (Assistant Teacher)
+- **1(b)** Write the difference between ++i and i++ in the C programming language.
+- **1(c)** What are data abstraction and data encapsulation? Write briefly.
+- **1(a) Or** Solve using Euler's method: dy/dx = 1 + xy, where y(0) = 2. Find y(0.1), y(0.2), y(0.3).
+  - Or
+- **1(b) Or** What do you understand by a polynomial function?
+  - Or
+- **1(c) Or** If A = {1, 4, 7, 10}, B = {1, 2, 3, 4, 5} and C = {2, 4, 8}, find the values of (A ∩ B) − C and (A ∪ B) − (C − B).
+  - Or
+- **2(a)** Describe the structure and working method of a three-bit asynchronous ripple up counter.
+  - Marks: 6
+- **2(b)** Prove with the help of Boolean algebra: (x + y)(x′ + z) = (x + y)(x′ + z) [?]
+  - Marks: 4
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **2(c)** Write about the clocked S-R flip-flop with a diagram.
+- **2(a) Or** Briefly discuss the organization of an operating system.
+  - Or
+- **2(b) Or** What is backtracking? Write the characteristics of an ideal algorithm.
+  - Or
+- **2(c) Or** What is a deadlock? Briefly discuss the NTFS and FAT file systems.
+  - Or
+- **3(a)** Discuss the array, stack and queue data structures.
+  - Marks: 9
+- **3(b)** Write the methods of software testing.
+  - Marks: 2
+- **3(c)** What is the difference between function overloading and operation overloading?
+  - Marks: 4
+- **3(a) Or** Discuss the bus organization of a microcomputer with a diagram.
+  - Or
+  - Marks: 7
+- **3(b) Or** What do you understand by parallel processing? Mention the types of parallel processing according to Flynn.
+  - Or
+  - Marks: 4
+- **3(c) Or** Write a program to find the factorial of a number.
+  - Or
+  - Marks: 4
+- **4(a)** What is a DBMS? Discuss the organization of a DBMS with a diagram.
+  - Marks: 6
+- **4(b)** What do you understand by LCD, LED and CRT?
+  - Marks: 3
+- **4(c)** Write briefly about DDL, DML and SQL.
+  - Marks: 6
+- **4(a) Or** Write about raster display system architecture with a diagram.
+  - Or
+- **4(b) Or** What is indexing? From the user's point of view, into how many parts is a database divided? Write the parts.
+  - Or
+- **4(c) Or** Describe geometric transformation in 2D.
+  - Or
+- **5(a)** What is lexical analysis? Write briefly.
+  - Marks: 7
+  - Also asked in: 11th Teacher Registration Examination (December) 2014 (Lecturer)
+- **5(b)** What is network security?
+  - Marks: 3
+- **5(c)** Write the differences between a compilation error and a runtime error.
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination (December) 2014 (Lecturer)
+- **5(a) Or** Discuss the layers of the OSI model.
+  - Or
+  - Marks: 6
+- **5(b) Or** Write the differences between a compiler and an interpreter.
+  - Or
+  - Marks: 4
+  - Also asked in: 11th Teacher Registration Examination (December) 2014 (Lecturer)
+- **5(c) Or** Write briefly about fiber optic cable.
+  - Or
+  - Marks: 5
+- **6** Add (203.775)₁₀ and (107.25)₈ in binary and express the sum in hexadecimal.
+  - Marks: 5
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **6 Or** Write De Morgan's theorems and prove them.
+  - Or
+- **7** What is the difference between a structure and a union?
+  - Marks: 5
+- **7 Or** Simplify with the help of a K-map: F(A, B, C, D) [?]
+  - Or
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **8** How many types of instruction sets are there and what are they? Convert CAFE₁₆ to an octal number.
+  - Marks: 5
+- **8 Or** What is cryptography? Mention its role in network security.
+  - Or
+- **9 Or** Write the truth tables of the X-OR and X-NOR gates and implement them with basic gates.
+  - Or
+- **10** What is CASE? Mention its role in software management in software engineering.
+  - Marks: 5
+- **10 Or** Write about the organization of the control unit of a computer with a diagram.
+  - Or
+
+### 4.2 Teacher Registration Examination 2012 (Lecturer) — `teacher-registration-examination-2012-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Date:** 2012
+- **Source:** Computer Science (Elective), subject code 431
+
+#### Written
+
+- **1(a)** What is meant by a computer generation? Discuss the characteristics of computers of different generations.
+  - Marks: 7
+- **1(b)** Write about static variables, register variables, global variables and local variables.
+  - Marks: 8
+- **1(a) Or** Write a program in the C language to find the GCD (HCF) of two numbers.
+  - Or
+  - Marks: 4
+- **1(b) Or** What is a pointer? Discuss the necessity of pointers.
+  - Or
+  - Marks: 4
+- **1(c) Or** Draw a flowchart to find whether an input number is prime, and write a program in any language.
+  - Or
+  - Marks: 7
+- **2(a)** Describe the different types of database models with diagrams.
+  - Marks: 7
+- **2(b)** What is memory? Write the types of memory in detail with a chart.
+  - Marks: 6
+- **2(c)** Write the differences between EPROM and EEPROM.
+  - Marks: 2
+- **2(a) Or** Describe the Newton-Raphson method.
+  - Or
+  - Marks: 4
+- **2(b) Or** Describe the binomial theorem.
+  - Or
+  - Marks: 4
+- **2(c) Or** Prove that (S = {0, 1, 2, 3, ..., m − 1}, +ₘ) is a group.
+  - Or
+  - Marks: 5
+- **2(d) Or** Find the binary value of (3AD)₁₆.
+  - Or
+  - Marks: 2
+- **3(a)** Solve using the Runge-Kutta second-order method: dy/dx = (1 + x²)Y, Y(0) = 1, X = 0(0.2)0.6.
+  - Marks: 6
+- **3(b)** For any sets A and B, prove that A − (A ∩ B) = A − B.
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination (December) 2014 (Lecturer)
+- **3(c)** What will be the Cartesian product of A = {1, 2} and B = {a, b}?
+  - Marks: 4
+- **3(a) Or** What do you understand by humanware and firmware?
+  - Or
+  - Marks: 4
+- **3(b) Or** What is a computer network? Write the types of computer networks in detail with diagrams.
+  - Or
+  - Marks: 6
+- **3(c) Or** Describe the data transmission modes with diagrams and examples.
+  - Or
+  - Marks: 5
+- **4(a)** What is sorting? Write the algorithm of the bubble sort method. Arrange the following data in descending order of value using the bubble sort method: 46, 58, 16, 14, 90, 10, 62.
+  - Marks: 7
+- **4(b)** What are the Internet, an intranet and an extranet?
+  - Marks: 3
+- **4(c)** What is indexing? Write the advantages and disadvantages of indexing.
+  - Marks: 5
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer)
+- **4(a) Or** What is a symbol table? Describe the functions of a symbol table.
+  - Or
+  - Marks: 4
+  - Also asked in: Teacher Registration Examination 2013 (Lecturer)
+- **4(b) Or** Write the factors on which the maintenance cost in software engineering depends.
+  - Or
+  - Marks: 6
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer)
+- **4(c) Or** Describe recurrence relations with examples.
+  - Or
+  - Marks: 5
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer); 11th Teacher Registration Examination (December) 2014 (Lecturer)
+- **5(a)** Describe the characteristics of object-oriented programming.
+  - Marks: 6
+- **5(b)** What do you understand by a software process model? Describe the prototyping model.
+  - Marks: 6
+- **5(c)** What do you understand by a parse tree? Write its characteristics.
+  - Marks: 3
+- **5(a) Or** What is a universal gate? Prove the universality of the NAND gate and the NOR gate.
+  - Or
+  - Marks: 6
+- **5(b) Or** Write De Morgan's theorems. Prove De Morgan's theorems with the help of a truth table for three variables.
+  - Or
+  - Marks: 5
+- **5(c) Or** Simplify: (i) xy′(z + x′) (ii) A′BC + AB′C + ABC′ + ABC
+  - Or
+  - Marks: 4
+- **6** What do you understand by microscopic scheduling? Describe any two methods.
+  - Marks: 5
+- **6 Or** What do you understand by an addressing mode? Describe three addressing modes.
+  - Or
+- **7** What is job control language? Write briefly about the round robin method.
+  - Marks: 5
+- **7 Or** What is 2's complement? Subtract (69)₁₀ from (85)₁₀ using the 2's complement method.
+  - Or
+- **8** What is a friend function? Describe the characteristics of a friend function.
+  - Marks: 5
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer)
+- **8 Or** Simplify ((A + B)′ + (C + D)′)A and draw the logic circuit of the simplified expression.
+  - Or
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **9** What do you understand by normalization? Describe briefly.
+  - Marks: 5
+- **9 Or** What is a decoder? Draw the block diagram, truth table and logic circuit of a (3 × 8) decoder circuit.
+  - Or
+- **10** Describe the operation of the JK flip-flop with a diagram.
+  - Marks: 5
+- **10 Or** Simplify the following expression with the help of a Karnaugh map: F(A, B, C, D) = Σ(2, 4, 6, 7, 10, 12, 14, 15).
+  - Or
+
+### 4.3 Teacher Registration Examination 2013 (Lecturer) — `teacher-registration-examination-2013-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Date:** 2013
+- **Source:** Computer Science (Elective), subject code 430
+
+#### Written
+
+- **1(a)** Define a computer. Who is the father of the modern computer?
+- **1(b)** Describe the organization of a computer with a diagram.
+  - Also asked in: 16th Teacher Registration Examination 2019 (Assistant Teacher); 10th Teacher Registration Examination (May) 2014 (Assistant Teacher)
+- **1(c)** Write a program in the C language to find whether a year is a leap year.
+- **1(a) Or** Write the differences between the stack and queue data structures.
+  - Or
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer)
+- **1(b) Or** What is a recursive function? Describe the advantages of recursive functions.
+  - Or
+- **1(c) Or** What is an array? Describe the method of declaring an array in the C language.
+  - Or
+- **2(a)** Define: (i) entity; (ii) key field.
+- **2(b)** In object-oriented programming, write in detail about polymorphism, inheritance and encapsulation.
+- **2(c)** Discuss the tree and graph data structures.
+- **2(a) Or** Write about macroscopic scheduling.
+  - Or
+- **2(b) Or** Discuss time-sharing and real-time operating systems.
+  - Or
+- **2(c) Or** What is network topology? Write the structure and characteristics of bus and star networks.
+  - Or
+- **3(a)** If y = x(x² − 6), find d²y/dx².
+- **3(b)** Describe the structure and working method of the SR flip-flop.
+- **3(c)** If A, B and C are any three sets, prove that (A − B) ∩ (A − C) = A − (B ∪ C).
+- **3(a) Or** Why are binary numbers used inside a computer?
+  - Or
+- **3(b) Or** Using the Taylor series method, find the value of y(0.1), given y′ = x²y⁻¹, y(0) = 1.
+  - Or
+- **3(c) Or** Convert the decimal numbers from 0 to 15 into their equivalent binary numbers.
+  - Or
+- **4(a)** What is a linked list? Give an illustrated description of a linked list.
+- **4(b)** What is SQL? Write the structure and uses of SQL.
+- **4(c)** Arrange the following data in ascending order of value using the quick sort method: 32, 65, 53, 41, 19, 87, 75, 35, 50, 72.
+- **4(a) Or** What is optical fiber? Write its uses.
+  - Or
+- **4(b) Or** Describe Euler's formula for graphs.
+  - Or
+- **4(c) Or** Write the differences between RAM and ROM.
+  - Or
+  - Also asked in: 14th Teacher Registration Examination 2017 (Lecturer); 12th Teacher Registration Examination 2015 (Lecturer)
+- **5(a)** Analyse and write: (i) DML; (ii) EBCDIC.
+- **5(b)** What is the OSI model? Describe the different layers of the OSI model.
+- **5(c)** What is an adder? Show the implementation of a full adder with the help of half adders.
+- **5(a) Or** What is an algorithm? Write an algorithm and draw a flowchart to find the roots of the equation ax² + bx + c = 0.
+  - Or
+- **5(b) Or** What is a K-map? Simplify the following expression with the help of a K-map: F(A, B, C, D) = Σ(0, 1, 2, 3, 4, 6, 8, 9, 10, 11, 12, 14)
+  - Or
+- **6** How many basic logic gates are there and what are they? Describe.
+- **6 Or** Describe network security.
+  - Or
+- **7** Describe the structure and working method of an encoder.
+- **7 Or** What is a modem? Describe the modem.
+  - Or
+- **8** What is a loop? Write a program using a loop.
+- **8 Or** Discuss the different types of database models.
+  - Or
+- **9** Write the names of the main components of data communication and describe them.
+- **9 Or** What is a symbol table? Describe the functions of a symbol table.
+  - Or
+  - Also asked in: Teacher Registration Examination 2012 (Lecturer)
+- **10** Discuss the types of digital computers.
+- **10 Or** Discuss LIFO and FIFO.
+  - Or
+
+### 4.4 10th Teacher Registration Examination (May) 2014 (Lecturer) — `10th-teacher-registration-examination-may-2014-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Date:** 2014-05
+- **Source:** Computer Science (Elective), subject code 431
+
+#### Written
+
+- **1(a)** What is a computer generation? Write two characteristics of each generation.
+  - Marks: 5
+- **1(b)** Describe the different data types in the C++ programming language.
+  - Marks: 5
+- **1(c)** Describe software testing strategy briefly.
+  - Marks: 5
+- **1(a) Or** Define: (i) program; (ii) identifier; (iii) structured language.
+  - Or
+- **1(b) Or** Write an algorithm to find the largest of three numbers, draw a flowchart, and write a program in the 'C' language.
+  - Or
+  - Marks: 12
+- **2(a)** What do you understand by call-by-reference and call-by-value?
+  - Marks: 2
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **2(b)** Write the rules for declaring a union.
+  - Marks: 2
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **2(c)** Draw the logic circuit of A′BC + AB′C + ABC′ + ABC.
+  - Marks: 5
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **2(d)** Convert (10110.11)₂ to hexadecimal and (AB4C)₁₆ to binary.
+  - Marks: 6
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **2(a) Or** Define with examples: (i) disjoint set; (ii) universal set; (iii) intersection of sets.
+  - Or
+  - Marks: 3
+- **2(b) Or** Suppose A, B and C are three sets. Prove that (A − B) − C = (A − C) − (B − C).
+  - Or
+  - Marks: 6
+- **2(c) Or** If A = {1, 4, 10}, B = {1, 2, 3, 4, 5} and C = {2, 4, 6, 8}, find the values of A ∩ (B ∪ C) and A ∩ B ∪ C.
+  - Or
+  - Marks: 6
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **3(a)** Write the operations of data structures.
+  - Marks: 9
+- **3(b)** What do you understand by data normalization?
+  - Marks: 2
+- **3(c)** What is CASE? Describe briefly.
+  - Marks: 4
+  - Also asked in: 11th Teacher Registration Examination (December) 2014 (Lecturer)
+- **3(a) Or** What is a universal gate? Prove the universality of the NOR gate.
+  - Or
+  - Marks: 5
+- **3(b) Or** What is a decoder? Draw the truth table and circuit of a 3-to-8 line decoder.
+  - Or
+  - Marks: 6
+- **4(a)** What is a computer network? Describe the different network topologies with diagrams.
+  - Marks: 9
+- **4(b)** Describe DDL, DML and 4GL.
+  - Marks: 6
+- **4(a) Or** What is an instruction set? Write its types.
+  - Or
+  - Marks: 5
+- **4(b) Or** What is relational algebra? Write its basic operations.
+  - Or
+  - Marks: 5
+- **4(c) Or** Explain the divide and conquer algorithm.
+  - Or
+  - Marks: 5
+- **5(a)** What is a relational database management system? Describe the different types of database relationships.
+- **5(b)** Find the values: (i) lim (x→0) (e^x − e^(−x)) / x; (ii) lim (x→a) (√(x + a) − √(2a)) / (x − a)
+  - Marks: 6
+- **5(a) Or** Simplify with the help of a Karnaugh map: F(A, B, C, D) = Σ(2, 4, 6, 7, 10, 12, 14, 15).
+  - Or
+  - Marks: 5
+- **5(b) Or** What is a counter? Describe a 3-bit ripple counter.
+  - Or
+  - Marks: 5
+- **5(c) Or** Write the differences between RISC and CISC processors.
+  - Or
+  - Marks: 5
+- **6** Write the structure and the advantages and disadvantages of optical fiber cable.
+  - Marks: 5
+- **6 Or** What is meant by scan conversion? Write the side effects of scan conversion.
+  - Or
+- **7** What is an addressing mode? Describe any three addressing modes.
+  - Marks: 5
+- **7 Or** What is meant by a computer network? Describe the types of networks based on distance.
+  - Or
+- **8** Describe the J-K flip-flop with a diagram.
+  - Marks: 5
+- **8 Or** What is a deadlock? Write the conditions for a deadlock to occur.
+  - Or
+- **9** What is Unicode? Write about BCD and ASCII codes.
+  - Marks: 5
+- **9 Or** What do you understand by object-oriented programming? What are operator overloading, inheritance, polymorphism and encapsulation?
+  - Or
+- **10** Write and prove De Morgan's two theorems.
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **10 Or** Write the functions of the five main parts of a compiler.
+  - Or
+
+### 4.5 11th Teacher Registration Examination (December) 2014 (Lecturer) — `11th-teacher-registration-examination-december-2014-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Date:** 2014-12
+- **Source:** Computer Science (Elective), subject code 431
+
+#### Written
+
+- **1(a)** Describe the basic organization of a computer with a diagram.
+  - Marks: 6
+- **1(b)** Write the structure of a for loop with an example.
+  - Marks: 6
+- **1(c)** Write the difference between i++ and ++i in the C programming language.
+  - Marks: 3
+- **1(a) Or** For any sets A and B, prove that A − (A ∩ B) = A − B.
+  - Or
+  - Marks: 5
+  - Also asked in: Teacher Registration Examination 2012 (Lecturer)
+- **1(b) Or** Write a program in the C language to find the area of a triangle.
+  - Or
+  - Marks: 5
+- **1(c) Or** Simplify the following expression with the help of a K-map: F(A, B, C, D) = Σ(0, 2, 5, 7, 8, 10, 13, 15).
+  - Or
+  - Marks: 5
+- **2(a)** Describe the stack and queue data structures with examples.
+  - Marks: 6
+- **2(b)** Draw a flowchart for the series 1 + 2 + 3 + ... + N.
+  - Marks: 5
+- **2(c)** Write the necessity of pointers.
+  - Marks: 4
+- **2(a) Or** Describe the organization of bus and star topologies with diagrams.
+  - Or
+- **2(b) Or** Write about microscopic scheduling.
+  - Or
+- **2(c) Or** Draw the logic circuit of A′BC + AB′C + ABC′.
+  - Or
+- **3(a)** Explain: C++ is an object-oriented programming language.
+  - Marks: 5
+- **3(b)** Prove De Morgan's theorems by means of two truth tables.
+  - Marks: 5
+- **3(c)** What is CASE? Describe briefly.
+  - Marks: 5
+  - Also asked in: 10th Teacher Registration Examination (May) 2014 (Lecturer)
+- **3(a) Or** What is lexical analysis? Describe briefly.
+  - Or
+  - Also asked in: Teacher Registration Examination 2011 (Lecturer)
+- **3(b) Or** Write the differences between a compilation error and a runtime error.
+  - Or
+  - Also asked in: Teacher Registration Examination 2011 (Lecturer)
+- **3(c) Or** Describe the clocked S-R flip-flop with a diagram.
+  - Or
+- **4(a)** Write the steps (layers) of the OSI model and describe them briefly.
+  - Marks: 7
+- **4(b)** Write the differences between a compiler and an interpreter.
+  - Marks: 4
+  - Also asked in: Teacher Registration Examination 2011 (Lecturer)
+- **4(c)** Write the structural diagram and characteristics of fiber optic cable.
+  - Marks: 4
+- **4(a) Or** What is a symbol table? Write its functions.
+  - Or
+  - Marks: 5
+- **4(b) Or** Write the ways to reduce management cost in software engineering.
+  - Or
+  - Marks: 5
+- **4(c) Or** Express the sum of (101.110)₁₀ and (1010.110)₂ in binary.
+  - Or
+  - Marks: 5
+- **5(a)** What is meant by database normalization? Mention its necessity.
+  - Marks: 5
+- **5(b)** What is meant by the Internet, an extranet and an intranet? Write with examples.
+  - Marks: 6
+- **5(c)** Write the advantages and disadvantages of indexing.
+  - Marks: 4
+- **5(a) Or** Arrange the following data in ascending order using the bubble sort method: 46, 17, −1, 2, −3
+  - Or
+  - Marks: 5
+- **5(b) Or** Describe recurrence relations with examples.
+  - Or
+  - Marks: 5
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer); Teacher Registration Examination 2012 (Lecturer)
+- **5(c) Or** What is a Venn diagram? Describe the 'Willers method' [?].
+  - Or
+  - Marks: 5
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **6** If Y = tan{φ(n)}, find the value of dy/dx.
+  - Marks: 5
+- **6 Or** Using the Taylor series method, find the value of Y(0.1), where Y′ = x²y⁻¹, y(0) = 1.
+  - Or
+- **7** Write the algorithm of the binary search method.
+  - Marks: 5
+- **7 Or** Describe cryptography in the context of network security.
+  - Or
+- **8** Write the steps of an asynchronous counter for 3-bit binary data input.
+  - Marks: 5
+- **8 Or** Prove: NOR is a universal gate.
+  - Or
+- **9** Implement a full adder with the help of two half adders.
+  - Marks: 5
+- **9 Or** Write the differences between analog and digital computers.
+  - Or
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer); 17th Teacher Registration Examination 2023 (Assistant Teacher); 11th Teacher Registration Examination 2016 (Assistant Teacher); Teacher Registration Examination 2007 (Assistant Teacher)
+- **10** Describe the time-sharing operating system.
+  - Marks: 5
+- **10 Or** Write the differences between structure and union.
+  - Or
+
+### 4.6 12th Teacher Registration Examination 2015 (Lecturer) — `12th-teacher-registration-examination-2015-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Date:** 2015
+- **Source:** Computer Science (Elective), subject code 431
+
+#### Written
+
+- **1(a)** What is a flowchart? How many types of flowcharts are there and what are they? Mention the functions of the symbols used in drawing a program flowchart, with the symbols.
+  - Marks: 10
+- **1(b)** Draw an algorithm and a flowchart to determine whether a positive integer taken from the keyboard is prime.
+  - Marks: 5
+- **1(a) Or** Why is C++ called an improved version of C?
+  - Or
+  - Marks: 4
+- **1(b) Or** What is a CPU? Describe the organization of the ALU with a diagram.
+  - Or
+  - Marks: 6
+- **1(c) Or** What is a repeater? Show the positions of a repeater, switch, bridge and router with the help of a diagram.
+  - Or
+  - Marks: 5
+- **2(a)** What is meant by a program? Write the steps of program development.
+  - Marks: 6
+- **2(b)** What is an array? Why are arrays used? Describe the method of declaring an array.
+  - Marks: 5
+- **2(c)** Write the differences between the stack and queue data structures.
+  - Marks: 4
+  - Also asked in: Teacher Registration Examination 2013 (Lecturer)
+- **2(a) Or** What is a function? How many types of functions are there and what are they? Discuss.
+  - Or
+  - Marks: 3
+- **2(b) Or** Draw the logic circuits of the X-OR and X-NOR gates and write their truth tables.
+  - Or
+  - Marks: 5
+- **2(c) Or** Simplify the following Boolean functions and draw the logic circuits after simplification: (i) (A + B + C′)′ · (BC)′ (ii) (AC′)′ · (B′ + D)′
+  - Or
+  - Marks: 7
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **3(a)** Write a detailed description of the different layers of the OSI model.
+  - Marks: 10
+- **3(b)** What is a logic gate? Prove the universality of the NOR gate.
+  - Marks: 5
+- **3(a) Or** Briefly describe cache memory.
+  - Or
+  - Marks: 5
+- **3(b) Or** What is an IP address? Describe.
+  - Or
+  - Marks: 5
+- **3(c) Or** What is meant by the 2's complement method? Subtract (101)₁₀ from (111)₁₀ using the 2's complement method.
+  - Or
+  - Marks: 5
+- **4(a)** What is an encoder? Draw the truth table and circuit of an (8 × 3) line encoder.
+  - Marks: 7
+- **4(b)** If the universal set U = {a, b, c, d, e, f, g}, A = {a, b, c, d, e}, B = {a, c, e, g}, C = {b, c, f, g}, find: (i) B′ ∪ C (ii) (A − B)′ (iii) [?]
+  - Note: The question is incomplete in the source image.
+- **4(a) Or** What is meant by the Internet, an intranet and an extranet? Write.
+  - Or
+  - Marks: 5
+- **4(b) Or** What is a computer bus? Describe the different types of buses.
+  - Or
+  - Marks: 5
+- **4(c) Or** Write the factors on which the maintenance cost in software engineering depends.
+  - Or
+  - Marks: 5
+  - Also asked in: Teacher Registration Examination 2012 (Lecturer)
+- **5(a)** Describe recurrence relations with examples.
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination (December) 2014 (Lecturer); Teacher Registration Examination 2012 (Lecturer)
+- **5(b)** What is indexing? Describe the advantages and disadvantages of indexing.
+  - Marks: 6
+  - Also asked in: Teacher Registration Examination 2012 (Lecturer)
+- **5(c)** Find the value: lim (x→0) (e^x − e^(−x)) / x
+  - Marks: 4
+- **5(a) Or** What is meant by data encryption? Describe the Caesar code method of encryption.
+  - Or
+  - Marks: 5
+- **5(b) Or** Write the differences between RAM and ROM.
+  - Or
+  - Marks: 4
+  - Also asked in: 14th Teacher Registration Examination 2017 (Lecturer); Teacher Registration Examination 2013 (Lecturer)
+- **5(c) Or** Describe client-server databases and distributed databases.
+  - Or
+  - Marks: 6
+- **6** What is virtual memory? Describe the necessity of virtual memory in a computer.
+  - Marks: 5
+- **6 Or** What is a friend function? Write the characteristics of a friend function.
+  - Or
+  - Also asked in: Teacher Registration Examination 2012 (Lecturer)
+- **7** What is an adder? Implement a full adder using half adders.
+  - Marks: 5
+- **7 Or** What is a decision tree? Describe a decision tree with the help of an example.
+  - Or
+- **8** Write the differences between analog and digital computers.
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination (December) 2014 (Lecturer); 17th Teacher Registration Examination 2023 (Assistant Teacher); 11th Teacher Registration Examination 2016 (Assistant Teacher); Teacher Registration Examination 2007 (Assistant Teacher)
+- **8 Or** Give a brief description of the RS flip-flop.
+  - Or
+- **9** Describe the techniques of software testing.
+  - Marks: 5
+- **9 Or** Arrange the following data in descending order (largest to smallest) using the bubble sort method: 80, 90, 98, 3, 84, 42, 93
+  - Or
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **10** Describe the data transmission modes.
+  - Marks: 5
+- **10 Or** Write a program in the C language to find a specific number using the binary search method.
+  - Or
+
+### 4.7 13th Teacher Registration Examination 2016 (Lecturer) — `13th-teacher-registration-examination-2016-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Date:** 2016
+- **Source:** Computer Science (Elective), subject code 431, Set Ka
+
+#### Written
+
+- **1(a)** Draw a flowchart to determine whether an input number is prime, and write a program in the C language.
+  - Marks: 9
+- **1(b)** What is swapping? Write the differences between virtual memory and cache memory.
+  - Marks: 6
+- **1(a) Or** What is meant by data structure? Describe the array and linked list data structures in detail with examples.
+  - Or
+  - Marks: 9
+- **1(b) Or** Write briefly about the Divide & Conquer algorithm.
+  - Or
+  - Marks: 6
+- **2(a)** Write De Morgan's theorems for three variables and prove them with the help of a truth table.
+  - Marks: 7
+- **2(b)** Implement the X-OR gate and the X-NOR gate using only NAND gates.
+  - Marks: 8
+- **2(a) Or** What is meant by a database relationship? Describe the different types of database relationships.
+  - Or
+  - Marks: 10
+- **2(b) Or** What is data normalization? Write the role of data encryption in database security.
+  - Or
+  - Marks: 5
+- **3(a)** If A = {m, n}, B = {x, y}, C = {y, w}, find the values of the following: (i) A × (B ∪ C); (ii) (A × B) ∪ (A × C) and (A × B) ∩ (A × C); (iii) A × (B ∩ C).
+  - Marks: 12
+- **3(b)** What is meant by a union set and a disjoint [?] set?
+  - Marks: 3
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **3(a) Or** What is meant by deadlock [?]? Describe multitasking and real-time operating systems.
+  - Or
+  - Marks: 7
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **3(b) Or** What is meant by an object in object-oriented programming? Write the characteristics of inheritance and polymorphism with examples.
+  - Or
+  - Marks: 8
+- **4(a)** What is a Karnaugh map? Simplify the following expressions with the help of a Karnaugh map: (i) F(A, B, C, D) = Σ(0, 1, 2, 5, 7, 11, 15); (ii) AB′ + ABCD′ + AB′CD + A + BC′D
+  - Marks: 10
+- **4(b)** Prove: AB + A′C + BC = AB + A′C
+  - Marks: 5
+- **4(a) Or** What is a MAC address? Write the functions of the network layer.
+  - Or
+  - Marks: 6
+- **4(b) Or** Discuss briefly the data transmission system.
+  - Or
+  - Marks: 9
+- **5(a)** Write briefly about parallel and distributed processing.
+  - Marks: 10
+- **5(b)** Write the differences between the fetch cycle and the execute cycle.
+  - Marks: 5
+- **5(a) Or** Convert the number (AB.3D)₁₆ into the binary, decimal and octal number systems.
+  - Or
+  - Marks: 9
+- **5(b) Or** Subtract (149)₁₀ from (237)₁₀ using the 2's complement method.
+  - Or
+  - Marks: 3
+- **5(c) Or** Write the differences between primary memory and secondary (auxiliary) memory.
+  - Or
+  - Marks: 3
+- **6** What is an adder? Implement a full adder with the help of half adders.
+  - Marks: 5
+- **6 Or** What is a counter? Describe a three-bit up asynchronous ripple counter in detail with a diagram.
+  - Or
+  - Marks: 5
+- **7** What is an image? Describe vector images and raster images.
+  - Marks: 5
+- **7 Or** What is meant by database indexing? Write the differences between a compiler and an interpreter.
+  - Or
+- **8** What is meant by a recursive function? Write a program in the C language to find the GCD (HCF) of two numbers using a recursive function.
+  - Marks: 5
+- **8 Or** What is cryptography? Explain your opinion on ensuring database security in Bangladesh.
+  - Or
+- **9** What are increment and decrement? Write their uses.
+  - Marks: 5
+- **9 Or** What is CASE? Discuss the methods of software testing.
+  - Or
+  - Marks: 5
+- **10** What is meant by a global variable and a local variable? Write with examples.
+  - Marks: 5
+- **10 Or** What is meant by branching, jumping and looping? Write with examples.
+  - Or
+
+### 4.8 14th Teacher Registration Examination 2017 (Lecturer) — `14th-teacher-registration-examination-2017-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Date:** 2017
+- **Source:** Computer Science (Elective), subject code 431, Set Kha
+
+#### Written
+
+- **1(a)** Describe the organization of a microcomputer with a block diagram.
+  - Marks: 6
+- **1(b)** What is meant by CPU scheduling? Explain the round robin method with an example.
+  - Marks: 6
+- **1(c)** Mention the use of hybrid computers in three important fields.
+  - Marks: 3
+- **1(a) Or** Write an algorithm to find the factorial of an input number, draw a flowchart, and write a program in the C language.
+  - Or
+  - Marks: 10
+- **1(b) Or** Draw the flowchart of a do-while loop.
+  - Or
+  - Marks: 5
+- **2(a)** Describe the stack and queue data structures with examples. Write the differences between them.
+  - Marks: 7
+- **2(b)** Write the basic operations of a [?] (probably stack).
+  - Marks: 4
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **2(c)** Write the disadvantages of the linked list data structure.
+  - Marks: 4
+- **2 Or (b)** What is meant by a power set and an empty set? Write with examples.
+  - Marks: 5
+  - Note: The question is incomplete in the source image.
+- **2(a) Or** If A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] and B = [[2, 4, 6], [4, 6, 8], [6, 8, 4]], find A + B and AB.
+  - Or
+  - Marks: 10
+- **3(a)** Implement the output of an X-NOR gate with the help of NAND gates.
+  - Marks: 4
+- **3(b)** Simplify the function AB + BC(B + C) and draw the logic circuit of the simplified expression.
+  - Marks: 4
+- **3(c)** What is a minterm? Simplify the following expression with the help of a K-Map: F(A, B, C, D) = A′B′C′ + A′BD + ABC′ + AC.
+  - Marks: 6
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **3(a) Or** What is a counter? Describe the construction of a 3-bit ripple counter.
+  - Or
+  - Marks: 5
+- **3(b) Or** Describe the workflow of the instruction fetch cycle and the execution cycle.
+  - Or
+  - Marks: 6
+- **3(c) Or** Write the differences between RAM and ROM.
+  - Or
+  - Marks: 4
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer); Teacher Registration Examination 2013 (Lecturer)
+- **4(a)** What is a relational database management system? Describe the different types of relationships in a database.
+- **4(b)** Describe the functions of GRANT and REVOKE.
+  - Marks: 4
+- **4(c)** Write about DDL and DML.
+  - Marks: 4
+- **4(a) Or** What is parallel processing? Describe the pipeline processing method with an example.
+  - Or
+  - Marks: 5
+- **4(b) Or** What are indexing and hashing? Describe dense index and sparse index.
+  - Or
+  - Marks: 5
+- **4(c) Or** What is a flip-flop? Describe the construction of an S-R flip-flop with its truth table.
+  - Or
+  - Marks: 5
+- **5(a)** What is network topology? Describe the different types of network topology with diagrams.
+  - Marks: 7
+- **5(b)** What is meant by class and object? Write the rules for declaring a class and an object.
+- **5(c)** Explain the structure of a FOR loop.
+  - Marks: 3
+- **5(a) Or** Describe the steps of program development.
+  - Or
+  - Marks: 5
+- **5(b) Or** Write a program to find the sum of the series 1² + 2² + 3² + ... + N² (using a user-defined function).
+  - Or
+  - Marks: 5
+- **5(c) Or** What is data abstraction? Describe the levels of data abstraction.
+  - Or
+  - Marks: 5
+- **6** What is meant by a function prototype and an overloaded function?
+  - Marks: 5
+- **6 Or** Write the differences between e-commerce and e-business. Write about e-governance.
+  - Or
+  - Marks: 5
+- **7** What are code generation and code optimization? What are the main tasks of code generation?
+  - Marks: 5
+- **7 Or** What is a pointer? Write the necessity of using pointers in a program. Write the method of declaring a pointer.
+  - Or
+- **8** What is cryptography? Describe any one cryptographic algorithm.
+  - Marks: 5
+- **8 Or** Add (456)₈ and (2D)₁₆ in the binary system. Express the sum in decimal.
+  - Or
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **9** Explain the binary search algorithm with an example.
+  - Marks: 5
+- **9 Or** Describe structure and union. Write the method of declaring a structure and a union.
+  - Or
+  - Marks: 5
+- **10** Draw the logic circuit of a half adder and draw its truth table.
+  - Marks: 5
+- **10 Or** Explain the differences between EPON and GPON in optical fiber networks.
+  - Or
+
+### 4.9 15th Teacher Registration Examination (Lecturer) — `15th-teacher-registration-examination-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Source:** ICT Wizard, college level (English version)
+
+#### Written
+
+- **1(a)** What is the difference between Call by Value and Call by Reference?
+  - Marks: 2
+- **1(b)** Can I use the 'int' data type to store the value 32678? If not, why not?
+  - Marks: 2
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **1(c)** Difference between the two expressions ++ and +.
+  - Marks: 3
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **1(d)** Explain Parameter Passing with examples.
+  - Marks: 3
+- **1 Or (a)** Define Thread.
+  - Or
+  - Marks: 2
+- **1 Or (b)** Explain recursion with examples.
+  - Or
+  - Marks: 3
+- **1 Or (c)** What is a pointer? Write the differences between Malloc() and Calloc().
+  - Or
+  - Marks: 5
+  - Also asked in: 17th NTRCA(ICT) 2023
+- **2(a)** Why is object-oriented programming needed? Write the basic concepts of object-oriented programming.
+  - Marks: 5
+- **2(b)** Write the differences between class and object with examples.
+  - Marks: 3
+  - Also asked in: 17th Teacher Registration Examination (Lecturer); 17th NTRCA(CSE), (ICT) 2023
+- **2(c)** What is the difference between Overloading and overriding?
+  - Marks: 2
+- **2 Or (a)** Write a program using a Static variable and a Static method to explain the 'Static' keyword.
+  - Or
+  - Marks: 10
+- **3(a)** Describe the Waterfall model in detail. Mention the advantages and limitations of this model.
+  - Marks: 10
+- **3 Or (a)** Write the differences between Black-box and White-box testing.
+  - Or
+  - Marks: 4
+- **3 Or (b)** Draw a Use Case Diagram for a library management system.
+  - Or
+  - Marks: 6
+- **4(a)** What is a data structure? Explain linear and non-linear data structures with examples.
+  - Marks: 4
+- **4(b)** Write the differences between Array and Linked List with examples.
+  - Marks: 3
+- **4(c)** Write the Inorder, Preorder and Postorder Traversal of the Tree in the figure above. [Figure: binary tree with root 1; 1 has left child 2 and right child 3; 2 has left child 4 and right child 5.]
+  - Marks: 3
+- **4 Or (a)** Explain the BFS algorithm with examples.
+  - Or
+  - Marks: 5
+- **4 Or (b)** Starting from Node A, write the DFS Traversal of the following graph. [Figure: undirected graph with nodes A, B, C, D, E, F, G, H, I, J, K and edges A–B, B–E, E–F, F–K, A–D, D–C, C–G, G–H, H–I, I–J, E–G, A–J, H–J.]
+  - Or
+  - Marks: 5
+- **5(a)** Write an algorithm to solve the Tower of Hanoi problem.
+  - Marks: 5
+- **5(c)** Show that a tree with n vertices has exactly n-1 edges.
+  - Marks: 4
+- **5 Or** What is meant by Hashing? Write in detail any three methods of constructing a Hash function.
+  - Or
+  - Marks: 10
+- **6(a)** What is the difference between the form submission methods GET and POST? Explain with examples when each method should be used.
+  - Marks: 6
+- **6(b)** Write the differences between the "Padding" and "Margin" areas in the CSS Box Model.
+  - Marks: 4
+- **6 Or** Write an HTML page with the following elements: Hyperlink, Ordered list, Unordered list, Form (Text box, Check box option, Button).
+  - Or
+  - Marks: 10
+- **7(a)** What is a Process? Write the different states of a Process.
+  - Marks: 3
+- **7(b)** Write the differences between Internal and External fragmentation.
+  - Marks: 2
+- **7(c)** Explain Race condition in the context of Process Synchronization.
+  - Marks: 5
+- **7 Or (a)** What is a Process Control Block (PCB)? Write the information it keeps about a Process.
+  - Or
+  - Marks: 4
+- **7 Or (b)** What is CPU Scheduling? Write the reasons for which CPU Scheduling is needed.
+  - Or
+  - Marks: 4
+- **7 Or (c)** Explain what is meant by a Real Time System.
+  - Or
+  - Marks: 2
+- **8(a)** What is the job of a database administrator? Write the names of some database system applications.
+  - Marks: 3
+- **8(b)** Write the differences between Primary key and Super key.
+  - Marks: 3
+- **8(c)** Write about the ACID Properties of database transactions.
+  - Marks: 4
+  - Also asked in: 17th NTRCA(ICT) 2023
+- **8 Or (a)** Explain the statement "BCNF is stricter than 3NF" with examples.
+  - Or
+  - Marks: 5
+- **8 Or (b)** Explain the three-tier architecture of a database management system.
+  - Or
+  - Marks: 5
+- **9(a)** What are the advantages of DBMS over a conventional file-based system?
+  - Marks: 2
+  - Also asked in: 17th NTRCA(ICT) 2023
+- **9(b)** Write the differences between SQL, DDL, DML and DCL.
+  - Marks: 4
+- **9(c)** What is a view in a database system? What is it used for?
+  - Marks: 5
+- **9 Or (a)** Answer (a), (b) and (c) from the following tables: Restaurant (rid, name, rcity, phone, seat-capanity); Dishes (did, dname, dtype); Customer (cid. ename, ccity); Serves (rid, did). (a) Write an SQL Query to find the names of the restaurants that serve 'Burger'.
+  - Or
+- **9 Or (b)** Answer (a), (b) and (c) from the following tables: Restaurant (rid, name, rcity, phone, seat-capanity); Dishes (did, dname, dtype); Customer (cid. ename, ccity); Serves (rid, did). (b) Make a list of the dishes that a Customer named "Ziman" can eat while avoiding allergy-related problems.
+  - Or
+- **9 Or (c)** Answer (a), (b) and (c) from the following tables: Restaurant (rid, name, rcity, phone, seat-capanity); Dishes (did, dname, dtype); Customer (cid. ename, ccity); Serves (rid, did). (c) Make a list of the dishes that are available in all restaurants of Dhaka.
+  - Or
+- **10(a)** What is the difference between Bandwidth and Throughput?
+  - Marks: 2
+- **10(b)** In a network of n devices, how many cable links are required in mesh, bus and star topologies?
+  - Marks: 3
+- **10(c)** Write the differences between Simplex, half-duplex and duplex communication systems with examples.
+  - Marks: 5
+- **10 Or (a)** Write the differences between Low pass Channel and Band-pass Channel with examples.
+  - Or
+  - Marks: 4
+- **10 Or (b)** Describe the advantages of Fiber optic cable, twisted pair cable and Co-axial cable.
+  - Or
+  - Marks: 6
+
+### 4.10 16th Teacher Registration Examination (Lecturer) — `16th-teacher-registration-examination-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Source:** ICT Wizard, college level (English version)
+
+#### Written
+
+- **1(a)** Write code in the C programming language to take five numbers as input in an Array and find their average.
+  - Marks: 6
+- **1(b)** What is the difference between Structure and Union in the C programming language? Write with examples.
+  - Marks: 4
+- **1 Or (a)** What is a loop? Explain its structure with a flowchart.
+  - Or
+  - Marks: 5
+- **1 Or (b)** Write code in the C programming language to find the value of the variable x in the equation ax²+bx+c=0.
+  - Or
+  - Marks: 5
+- **2(a)** What is an Object? Explain with examples how an Object is created.
+  - Marks: 4
+- **2(b)** What is a Friend Function? Write its advantages and disadvantages.
+  - Marks: 6
+  - Also asked in: 18th Teacher Registration Examination 2024 (Lecturer)
+- **3(a)** Mention the different phases of the Software Development Life Cycle (SDLC) and describe them briefly.
+  - Marks: 5
+- **3(b)** Write about the Agile model in Software Development. What are the advantages of this model compared to other models?
+  - Marks: 5
+- **3 Or (a)** What is a Feasibility Test? Describe its necessity in software development.
+  - Or
+  - Marks: 4
+- **3 Or (b)** Give a brief description of the different phases of Feasibility Analysis.
+  - Or
+  - Marks: 6
+- **4(a)** Show step by step how Bubble Sort will work to arrange the following numbers in ascending order: 5, 8, 3, 6, 2.
+  - Marks: 6
+- **4(b)** How is Binary Search performed? Show with examples.
+  - Marks: 4
+- **4 Or (a)** Write the algorithm of the selection sort method.
+  - Or
+  - Marks: 4
+- **4 Or (b)** The marks obtained by 7 students in an examination are: 45, 72, 80, 65, 84, 52, 37. Write step by step the process of arranging the numbers in descending order using selection sort.
+  - Or
+  - Marks: 4
+- **5(a)** How does a Heap work? Show with examples.
+  - Marks: 4
+- **5(b)** What is a Greedy Algorithm? Describe two problems that can be solved with a Greedy Algorithm.
+  - Marks: 6
+- **5 Or (a)** What is linear search? Write its advantages and disadvantages.
+  - Or
+  - Marks: 4
+- **5 Or (b)** What is the Divide and Conquer technique? Describe two problems that can be solved with the Divide and Conquer technique.
+  - Or
+  - Marks: 6
+- **6(a)** What are a web portal and web hosting? Explain the necessity of web hosting.
+  - Marks: 5
+- **6(b)** What is meant by Cross Site Scripting (XSS)? Write the methods of protection against it.
+  - Marks: 5
+- **6 Or (a)** What is a website? Describe the linear sequence web structure and the tree web structure with diagrams.
+  - Or
+  - Marks: 5
+- **6 Or (b)** Write HTML code to create the following table. [Table: columns 'Customer Name', 'Product Name', 'Product Manufacturer'. 'Mr. Jhon' spans three rows under Customer Name; under Product Name the cells 'Computer', 'Printer' and 'Modem' sit side by side; under Product Manufacturer there are three rows: HP, HP, ASUS.]
+  - Or
+  - Marks: 5
+- **7(a)** What is a multiprogramming operating system? Describe with a diagram.
+  - Marks: 5
+- **7(b)** What is meant by Virtual Memory? Briefly describe how it works.
+  - Marks: 5
+- **7 Or (a)** What is Swapping in an operating system? Write where it is used.
+  - Or
+  - Marks: 3
+- **7 Or (b)** What is Distributed processing? Write its characteristics and advantages.
+  - Or
+  - Marks: 7
+- **8(a)** What is meant by an E-R Diagram in a Database? Explain with an example.
+  - Marks: 5
+- **8(b)** What is the Relational Database Model? Write its advantages and disadvantages compared to other models.
+  - Marks: 5
+- **8 Or (a)** What is meant by data encryption? Write the names of some widely used encryption methods.
+  - Or
+  - Marks: 4
+- **8 Or (b)** Describe Direct or Random Access file processing with a diagram.
+  - Or
+  - Marks: 6
+- **9(a)** What is meant by Data Mining and Data Warehousing? What is the relationship between them? What are their benefits?
+  - Marks: 6
+- **9(b)** Describe the usefulness of Indexing in a Database.
+  - Marks: 4
+- **9 Or (a)** Write the differences between sorting and indexing.
+  - Or
+  - Marks: 3
+- **9 Or (b)** Create a table named Student using SQL. The table will have four fields named std-id, std-name, std-address and GPA. Write an SQL Query to show all records of the students whose result is GPA-5 from the Student table.
+  - Or
+  - Marks: 7
+- **10(a)** What are the seven layers of the OSI Model? Briefly describe the first two.
+  - Marks: 5
+- **10(b)** Describe what the TCP/IP protocol does.
+  - Marks: 5
+- **10 Or (a)** What are a Hub and a Switch? Give arguments for which one is more advantageous to use.
+  - Or
+  - Marks: 4
+- **10 Or (b)** What is a Multiplexer? Describe the structure and working of a Multiplexer with a diagram.
+  - Or
+  - Marks: 6
+
+### 4.11 17th Teacher Registration Examination (Lecturer) — `17th-teacher-registration-examination-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Source:** ICT Wizard, college level (English version)
+
+#### Written
+
+- **1(a)** Write the differences between user defined functions and library functions in the C programming language.
+  - Marks: 4
+- **1(b)** Write a C program that creates an array, stores some data in it, and then prints the data in reverse order as the output.
+  - Marks: 6
+- **1 Or (a)** What is a Pointer? Write the advantages of using Pointers.
+  - Or
+  - Marks: 4
+  - Also asked in: 17th NTRCA(CSE) 2023
+- **1 Or (b)** Write a C program to display the first ten Fibonacci numbers.
+  - Or
+  - Marks: 6
+- **2(a)** Write the differences between a Local variable and a Global variable.
+  - Marks: 4
+  - Also asked in: 17th NTRCA(CSE) 2023
+- **2(b)** On which concepts is OOP based? Explain the concepts.
+  - Marks: 6
+  - Also asked in: 17th NTRCA(CSE) 2023
+- **2 Or (a)** Explain the differences between Class and Object with examples.
+  - Or
+  - Also asked in: 15th Teacher Registration Examination (Lecturer)
+- **2 Or (b)** What is Inheritance? Explain with examples.
+  - Or
+  - Also asked in: 17th NTRCA(CSE) 2023
+- **3(a)** What is Modularization? Write about its advantages.
+  - Marks: 4
+- **3(b)** Describe the Waterfall Model in Software Engineering.
+  - Marks: 6
+- **3 Or (a)** What is Software testing? Discuss its importance.
+  - Or
+  - Marks: 5
+- **3 Or (b)** Discuss what matters are involved in Software maintenance.
+  - Or
+  - Marks: 5
+- **4(c)** What is the B-tree data structure? Explain its applications.
+  - Marks: 6
+- **4(d)** Write the differences between BFS and DFS.
+  - Marks: 4
+- **4 Or (1)** What is a Linked List? Describe with examples.
+  - Or
+  - Marks: 5
+- **4 Or (2)** Binary Search tree: describe its operations.
+  - Or
+  - Marks: 5
+- **5(a)** What is a Decision Tree? Describe with examples.
+  - Marks: 6
+- **5(b)** Write the differences between Linear Search and Binary Search.
+  - Marks: 4
+- **5 Or (a)** What is the Heap data structure? Where is a Heap used?
+  - Or
+  - Marks: 4
+- **5 Or (b)** What is meant by the complexity of an algorithm? Write the complexity of some sorting algorithms.
+  - Or
+  - Marks: 6
+- **6(a)** What is an HTML Element? Describe with examples.
+  - Marks: 6
+- **6(b)** Write the differences between Static and Dynamic websites.
+  - Marks: 4
+- **6 Or (a)** Explain the structure of an HTML webpage with examples.
+  - Or
+  - Marks: 5
+- **6 Or (b)** Write HTML code to create the following list: [List to produce: 1. Fruits — (a) Mango, (b) Orange; 2. Vegetables — bulleted: Green capsicum, Yellow capsicum, Red capsicum.]
+  - Or
+  - Marks: 5
+- **7(a)** Write the differences between Paging and Segmentation.
+  - Marks: 4
+- **7(b)** Describe the types of Unix file system.
+  - Marks: 6
+- **7 Or (a)** Write the differences between Blocking and Buffering in OS.
+  - Or
+  - Marks: 4
+- **7 Or (b)** Describe the Memory hierarchy of an Operating System with a diagram.
+  - Or
+  - Marks: 6
+- **8(a)** Write the differences between DDL and DML.
+  - Marks: 4
+- **8(b)** Describe Centralized System and Client Server System with diagrams.
+  - Marks: 6
+- **8 Or (a)** Describe the methods of Indexing and Hashing.
+  - Or
+  - Marks: 6
+- **8 Or (b)** Explain Speedup and Scaleup with diagrams.
+  - Or
+  - Marks: 4
+- **9(a)** What is Data Fragmentation? Explain.
+  - Marks: 6
+- **9(b)** Explain One-to-one and One-to-many relations with examples.
+  - Marks: 4
+- **9 Or (a)** Explain Private key and Public key with examples.
+  - Or
+  - Marks: 5
+- **9 Or (b)** Write the differences between Plaintext and Cipher text.
+  - Or
+  - Marks: 5
+- **10(a)** Explain the structure and characteristics of fiber optic cable.
+  - Marks: 6
+- **10(b)** Write the differences between FDM and TDM.
+  - Marks: 4
+- **10 Or (a)** Which of Router and Gateway is more advantageous in data transmission? Give your opinion.
+  - Or
+  - Marks: 4
+- **10 Or (b)** What is Cloud Computing? Describe its characteristics and advantages.
+  - Or
+  - Marks: 6
+  - Also asked in: 17th NTRCA(CSE) 2023
+
+### 4.12 18th Teacher Registration Examination 2024 (Lecturer) — `18th-teacher-registration-examination-2024-lecturer`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Lecturer
+- **Source:** ICT Wizard, college level (English version)
+
+#### Written
+
+- **1(a)** Describe the different types of data types used in the C language.
+  - Marks: 6
+- **1(b)** Write a C program to find the Factorial of a positive integer.
+  - Marks: 4
+- **2(a)** What is a Friend Function? Describe its advantages and disadvantages.
+  - Marks: 5
+  - Also asked in: 16th Teacher Registration Examination (Lecturer)
+- **2(b)** What is Function Overloading? Explain with examples.
+  - Marks: 5
+- **3(a)** What is meant by Software Quality Assurance? Discuss its Attributes.
+  - Marks: 4
+- **3(b)** Explain the Spiral Model with a diagram.
+  - Marks: 6
+- **4(a)** What is a Linked List? Describe its types with diagrams.
+  - Marks: 6
+- **4(b)** Write the differences between Stack and Queue.
+  - Marks: 4
+- **5(a)** What is a Binary Tree? Describe the methods of Binary Tree Traversing.
+  - Marks: 7
+- **5(b)** Write the differences between the Greedy Method and Dynamic Algorithm.
+  - Marks: 3
+- **6(a)** What is CSS? Discuss the types of CSS with examples.
+  - Marks: 5
+- **6(b)** Write HTML code to create the following table. [Table: header row 'Std name' | 'Compulsory' (spanning three columns) | 'Optional'; rows: Hasan | Bangla | English | ICT | Math; Nafis | Bangla | English | ICT | Biology.]
+  - Marks: 5
+- **7(a)** What is Deadlock? Discuss the ways of Deadlock Handling.
+  - Marks: 5
+- **7(b)** What is a Process? Describe the role of the different Process States.
+  - Marks: 5
+- **8(a)** What is Swapping? Write the differences between Internal and External Fragmentation.
+  - Marks: 5
+- **8(b)** What is a Transaction? Describe the ACID Properties of Transaction Management.
+  - Marks: 5
+- **9(a)** What is Normalization? How many types are there and what are they? Explain.
+  - Marks: 5
+- **9(b)** Create an E-R diagram according to the following database: Worker (worker ID, Worker Name, Hour Rate, Skill Type); Assignment (Worker ID, Building ID, Start Date, Num Days); Building (Building ID, Address, Building Type).
+  - Marks: 5
+- **10(a)** What is an IP Address? Write four main differences between IPv4 and IPv6.
+  - Marks: 5
+- **10(b)** What is Congestion? How can Congestion be controlled in a Network? Discuss.
+  - Marks: 5
+
+## 5. NTRCA School (Assistant Teacher) — `ntrca-school`
+
+### 5.1 Teacher Registration Examination 2006 (Assistant Teacher) — `teacher-registration-examination-2006-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher
+- **Date:** 2006
+- **Source:** Computer Science, subject code 122, Set Ka (ক-সেট); time 3 hours, full marks 100
+
+#### Written
+
+- **1** Briefly write about the limitations of using computers. Mention one main characteristic of each generation of computers with examples. Write five differences between analog and digital computers.
+  - Marks: 15
+- **1 Or** Briefly discuss the classification of computers on the basis of size and shape. Briefly discuss the organization of a computer with a diagram.
+  - Or
+  - Marks: 15
+- **2** Briefly write about positional and non-positional number systems with examples. Convert (129.75)₁₀ into binary, octal and hexadecimal numbers.
+  - Marks: 15
+- **2 Or** What type of number is FF? What are the numbers immediately before and after it? Find its equivalent values in the other number systems. Mention the bases and basic symbols of the number systems other than decimal.
+  - Or
+  - Marks: 15
+- **3** Find the sum and product of 1011.01₂ and 111₂. Which number system is used in the internal work of a computer, and why? What is customized software? What is meant by integrated package software? Write with examples.
+  - Marks: 15
+- **3 Or** Find the difference and quotient of the two numbers 11101.01₂ and 101₂ (larger minus smaller, larger divided by smaller). Explain the validity of the statement "A computer can perform all tasks through addition". Write the differences between a computer and other electronic machines.
+  - Or
+  - Marks: 15
+- **4** What is a logic gate? Mention the symbols, equations and truth tables of the different types of logic gates. Implement the expression (A + B)C′ + A′C using logic gates.
+  - Marks: 15
+- **4 Or** What is a universal gate? Prove the universality of the NAND and NOR gates. What is a truth table? Mention the truth table of a three-input X-OR gate.
+  - Or
+  - Marks: 15
+- **5** Discuss the functions of an operating system. Write five differences between character-based and graphics-based operating systems.
+  - Marks: 15
+- **5 Or** Discuss multiprogramming and time-sharing operating systems. Write the differences between an algorithm and a flowchart.
+  - Or
+  - Marks: 15
+- **6** Draw a flowchart to find the smallest of three numbers.
+  - Marks: 5
+- **7** Write five differences between data and information.
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination 2015 (Assistant Teacher); Teacher Registration Examination 2011 (Assistant Teacher); 16th Teacher Registration Examination 2019 (Assistant Teacher); 11th Teacher Registration Examination 2017 (Assistant Teacher)
+- **7 Or** Write about BCD, EBCDIC and ASCII codes with examples.
+  - Or
+  - Marks: 5
+- **8** Write the characteristics of a good algorithm.
+  - Marks: 5
+- **8 Or** What is a variable? Write the types of variables with examples.
+  - Or
+  - Marks: 5
+- **9** What is the Internet? Discuss the good and bad effects of using the Internet.
+  - Marks: 5
+- **9 Or** Briefly write about e-mail and e-commerce.
+  - Or
+  - Marks: 5
+- **10** Discuss the role of the World Wide Web in education and business.
+  - Marks: 5
+- **10 Or** Explain the main reason for the high speed of a computer that executes a stored program.
+  - Or
+  - Marks: 5
+
+### 5.2 Teacher Registration Examination 2007 (Assistant Teacher) — `teacher-registration-examination-2007-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher
+- **Date:** 2007
+- **Source:** Computer (Optional), subject code 118, Set Ka (ক-সেট); time 3 hours, full marks 100
+
+#### Written
+
+- **1** What is a computer? Discuss five important characteristics of a computer that are absent in humans. What is an abacus? Write three differences between software and firmware. Express the decimal numbers from 0 to 16 in binary, octal and hexadecimal.
+  - Marks: 15
+- **1 Or** What is a computer generation? Write two characteristics of each generation with examples. What type of number is 5A? Write its equivalent binary, octal and decimal values.
+  - Or
+  - Marks: 15
+- **2** What is the base of a number system? Discuss the bases of different types of number systems. Find the sum of (ABC + DEF). What is BCD code? Express the number (129)₁₀ in BCD code.
+  - Marks: 15
+- **2 Or** Justify the statement "Software controls hardware". What is a CPU? Discuss the organization of the CPU with a diagram. Divide (101.01)₂ by (11.1)₂.
+  - Or
+  - Marks: 15
+- **3** What is computer memory? Write four differences among its types. Justify the statement "A computer is a program-controlled electronic machine". In terms of size, what type of computer is a laptop? What is meant by internal and external commands of DOS?
+  - Marks: 15
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **3 Or** Briefly discuss the main steps of data processing. Write four differences between multiprogramming and multiprocessing operating systems. Write the advantages and disadvantages of character-based and graphics-based operating systems.
+  - Or
+  - Marks: 15
+- **4** What is a truth table? Write the truth table of the NOR gate and implement it using basic gates. Draw the circuit of the expression (A + A′B′)′AB + C. What is a code? Write in detail about ASCII code.
+  - Marks: 15
+- **4 Or** Write the truth table of the expression Y = (AB = BC = CA). Prove (A + B + C′)′ · B′C = A′B′C with the help of a truth table. Draw a flowchart to find the smallest of three numbers.
+  - Or
+  - Marks: 15
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **5** Write an algorithm to find the sum of the odd numbers from 1 to 100. What is a flowchart? Mention four rules for drawing a flowchart. Draw a flowchart to find the area of a triangle.
+  - Marks: 15
+- **5 Or** What is a package program? What is an operating system? Discuss the control programs of an operating system. Write the differences between data and information.
+  - Or
+  - Marks: 15
+- **6** What is the Internet? Write the good and bad effects of the Internet.
+  - Marks: 5
+- **6 Or** Discuss the organization of the arithmetic/logic unit with a diagram.
+  - Or
+  - Marks: 5
+- **7** Write an algorithm to determine the factorial of a positive integer.
+  - Marks: 5
+- **7 Or** Convert the decimal number (37.25)₁₀ into a binary number.
+  - Or
+  - Marks: 5
+- **8** What is a bulletin board? Write about the Internet bulletin board.
+  - Marks: 5
+- **8 Or** Write five differences between analog and digital computers.
+  - Or
+  - Marks: 5
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer); 11th Teacher Registration Examination (December) 2014 (Lecturer); 17th Teacher Registration Examination 2023 (Assistant Teacher); 11th Teacher Registration Examination 2016 (Assistant Teacher)
+- **9** What is UNIVAC? Write the name of the first programmer. Write the disadvantages of mechanical computers.
+  - Marks: 5
+- **9 Or** Compare humans and computers in data processing.
+  - Or
+  - Marks: 5
+- **10** What are input and output devices? Write three differences between OMR and OCR.
+  - Marks: 5
+- **10 Or** What is a printer? Discuss the working principle of a laser printer.
+  - Or
+  - Marks: 5
+
+### 5.3 Teacher Registration Examination 2008 (Assistant Teacher) — `teacher-registration-examination-2008-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (School/Madrasa)
+- **Date:** 2008
+- **Source:** Computer (Optional), subject code 121, Set Ka (ক-সেট)
+
+#### Written
+
+- **1** What is a computer? Write the four main functions of a computer. Describe one main difference between mini and mainframe computers. What is software? Write the differences between software and hardware. What is the main reason for the high speed of a computer?
+  - Marks: 15
+- **1 Or** Describe the organization of a computer with a diagram. Into which classes can computers be divided according to the type of work and process? Discuss briefly. What is an operating system? Describe the functions of an operating system.
+  - Or
+  - Marks: 15
+- **2** What is a number system? How many types are there and what are they? Write the basic symbols with examples. Convert (73.125)₁₀ to a binary number. Write the differences between BCD code and binary numbers. Convert (925)₁₀ to BCD code.
+  - Marks: 15
+- **2 Or** Show the types of computer memory with a chart. Find the sum and difference of the two numbers (11101.01)₂ and (1101.11)₂. Describe the method of converting a binary number to a decimal number.
+  - Or
+  - Marks: 15
+- **3** What is a logic gate? How many basic logic gates are there and what are they? Write the truth tables, symbols and equations of the basic logic gates. Simplify the equation x·(BCC′)′·B′C and draw its circuit.
+  - Marks: 15
+- **3 Or** What is a truth table? Write the truth table of the NOR gate and implement it with basic gates. Simplify using Boolean algebra: (a) ((M + N′)(M′ + N))′; (b) (A′ + C)′ + (B + D′)′. What is a code? Write about code in detail.
+  - Or
+  - Marks: 15
+- **4** What is Boolean algebra? Write the rules of logical addition and logical multiplication in Boolean algebra. Prove with the help of Boolean theorems: ABC′ + AB′C + A′BC + ABC = AB + BC + CA. Write the use of the FOR–NEXT statement with an example.
+  - Marks: 15
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **4 Or** What is pseudocode? Draw a flowchart to find the product 1 × 2 × 3 × ...... N. What type of number is (FF.AB)? Convert it to the equivalent decimal, binary and octal numbers.
+  - Or
+  - Marks: 15
+- **5** How many types of printers are there and what are they? Discuss the working principles of the drum line printer and the dot matrix printer. Discuss magnetic core memory as primary memory. Note down some precautions for using floppy disks.
+  - Marks: 15
+- **5 Or** What are input and output devices? Describe the scanner and the mouse as input devices. What are www and E-mail? Describe the procedure for sending E-mail.
+  - Or
+  - Marks: 15
+- **6** Write the differences between OMR and OCR.
+  - Marks: 5
+- **6 Or** What is a variable? Discuss the importance of variables in programming with examples.
+  - Or
+  - Marks: 5
+- **7** What are an algorithm and a flowchart? Write the differences between an algorithm and a flowchart.
+  - Marks: 5
+- **7 Or** What is UNIVAC? Who is the father of the modern computer and why?
+  - Or
+  - Marks: 5
+- **8** What is MS-DOS? Write four differences between the MS-DOS and Windows operating systems.
+  - Marks: 5
+- **8 Or** Draw a flowchart to find the largest of three numbers.
+  - Or
+  - Marks: 5
+- **9** What do you understand by data and information? Why can a definite boundary not be drawn between data and information?
+  - Marks: 5
+- **9 Or (a)** Write the full forms: (i) IBM, (ii) CAD, (iii) OCR
+  - Or
+  - Marks: 3
+- **9 Or (b)** What is a protocol? Write the names of two protocols used on the Internet.
+  - Or
+  - Marks: 2
+- **10** Convert (11110.01)₂ into decimal, octal and hexadecimal numbers.
+  - Marks: 5
+- **10 Or** What are the basic differences between humans and computers?
+  - Or
+  - Marks: 5
+
+### 5.4 Teacher Registration Examination 2010 (Assistant Teacher) — `teacher-registration-examination-2010-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (School/Madrasa)
+- **Date:** 2010
+- **Source:** Computer (Optional), subject code 313, Set Ka (ক-সেট); time 3 hours, full marks 100
+
+#### Written
+
+- **1** What is a computer? Discuss the organization of a computer with a diagram. Briefly discuss the use of computers in business and commerce.
+  - Marks: 15
+- **1 Or** Briefly discuss the use of computers in education. Write the differences between hardware and software. Express the decimal number (75 − 35)₁₀ in binary.
+  - Or
+  - Marks: 15
+- **2** What is a number system? Express the decimal numbers from 0 to 15 in binary and octal. Add (6F − 5B)₁₆ and (57 − 25)₈ and express the sum in hexadecimal.
+  - Marks: 15
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **2 Or** What do you understand by the base of a number system? Write the basic digits and the bases of the binary, octal, decimal and hexadecimal number systems. What type of number is (BA − 2B)? Write its equivalent binary and octal values.
+  - Or
+  - Marks: 15
+- **3** What is an operating system? Write the organization of an operating system using a chart. What is a supervisor program? What is a mouse? Write the necessity of using a mouse.
+  - Marks: 15
+- **3 Or** Write the differences between character-based (text-based) and graphics-based operating systems. What is a basic gate? Draw the symbol of each type of basic gate and write its equation and truth table.
+  - Or
+  - Marks: 15
+- **4** Write the truth table of the NOR gate. Implement the NOR gate using basic gates. Write an algorithm to find the largest of three numbers. Write the necessity of using a monitor as an output unit.
+  - Marks: 15
+- **4 Or** Add (110.10)₂ and (100.01)₂, and subtract the smaller number from the larger one. Draw the logic circuit using the expression A + B + [?]BC. Write the differences between main memory and auxiliary memory.
+  - Or
+  - Marks: 15
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **5** Write the advantages and disadvantages of using the Internet. How many types of computers are there on the basis of construction (structure), and what are they? Discuss briefly. What is BCD code? How many types of BCD code are there and what are they?
+  - Marks: 15
+- **5 Or** Express the number (FF.AB)₁₆ in binary, octal and decimal. Draw the logic circuit using the expression ABC + ABC + ABC + ABC. Draw a flowchart to determine whether a number is even or odd.
+  - Or
+  - Marks: 15
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **6** Briefly discuss the bulletin board of the Internet.
+  - Marks: 5
+- **6 Or** Write three differences between BCD code and the binary number system.
+  - Or
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination 2015 (Assistant Teacher); Teacher Registration Examination 2012 (Assistant Teacher)
+
+### 5.5 Teacher Registration Examination 2011 (Assistant Teacher) — `teacher-registration-examination-2011-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (Computer)
+- **Date:** 2011
+- **Source:** Computer Education (Optional), subject code 313, Set Ka (ক-সেট)
+
+#### Written
+
+- **1** Write about analog and digital computers. Describe five important characteristics of a computer.
+  - Marks: 15
+- **1 Or** Describe the different types of number systems. Convert (23.625)₁₀ to binary and (10101.01)₂ to decimal.
+  - Or
+  - Marks: 15
+- **2** What do you understand by computer generations? Describe the characteristics of each generation with examples. Write the names of five fields where hybrid computers are used.
+  - Marks: 15
+- **2 Or** Why are binary numbers used in computers? What type of number is 2CD? Find its equivalent decimal and binary values.
+  - Or
+  - Marks: 15
+- **3** What is an operating system? Describe the functions of an operating system. Describe the advantages of the Windows operating system.
+  - Marks: 15
+- **3 Or** Write the truth table of the NOT gate. Build an OR gate and an AND gate using NOT gates. Find the sum of the two numbers (10101.101)₂ and (1011.01)₂.
+  - Or
+  - Marks: 15
+- **4** What is a logic gate? Describe the OR gate and the AND gate for three variables.
+  - Marks: 15
+- **4 Or** What is software? Discuss the types of software. Write the differences between BCD code and ASCII code.
+  - Or
+  - Marks: 15
+- **5** What are an algorithm and a flowchart? Write the symbols used in drawing flowcharts and their uses.
+  - Marks: 15
+- **5 Or** What is meant by computer memory? Write the differences between primary memory and secondary (auxiliary) memory. Write the characteristics of RAM and ROM.
+  - Or
+  - Marks: 15
+- **6** Write the full forms: ULU, WWW, ROM, UNIVAC, BCD.
+  - Marks: 5
+- **6 Or** Write short notes: (a) E-mail; (b) Robot.
+  - Or
+  - Marks: 5
+- **7** Draw a flowchart to find the sum of the numbers from 1 to 50.
+  - Marks: 5
+- **7 Or** Write the differences between a supercomputer and a personal computer.
+  - Or
+  - Marks: 5
+- **8** Write the differences between manual data processing and data processing with a computer.
+  - Marks: 5
+- **8 Or** Write the differences between data and information.
+  - Or
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination 2015 (Assistant Teacher); 16th Teacher Registration Examination 2019 (Assistant Teacher); 11th Teacher Registration Examination 2017 (Assistant Teacher); Teacher Registration Examination 2006 (Assistant Teacher)
+- **9** Draw the logic circuit of the following function: F = A′B + AB′ + AC.
+  - Marks: 5
+- **9 Or** Find the sum of the two numbers (2F.3C)₁₆ and (75.64)₈ in binary.
+  - Or
+  - Marks: 5
+  - Also asked in: 7th Teacher Registration Examination
+- **10** Describe the laser printer.
+  - Marks: 5
+- **10 Or** Write the names of five input devices. Write the advantages of MICR.
+  - Or
+  - Marks: 5
+
+### 5.6 Teacher Registration Examination 2012 (Assistant Teacher) — `teacher-registration-examination-2012-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (Computer)
+- **Date:** 2012
+- **Source:** Computer Education (Optional), subject code 313, Set Ka (ক-সেট)
+
+#### Written
+
+- **1** What is a computer? Discuss the types of digital computers.
+  - Marks: 15
+  - Also asked in: 11th Teacher Registration Examination 2017 (Assistant Teacher)
+- **1 Or** Discuss the organization of a computer with a diagram. Write five differences between primary memory and secondary (auxiliary) memory.
+  - Or
+  - Marks: 15
+- **2** Describe hardware and firmware. Write the differences between hardware and software.
+  - Marks: 15
+- **2 Or** Briefly discuss the multiprogramming operating system with a diagram. Write the differences between character-based (text-based) and graphics-based operating systems.
+  - Or
+  - Marks: 15
+- **3** Write the rules of binary addition and subtraction. Show the implementation of a NOR gate using basic gates. Draw the symbol of an XOR gate and write its truth table.
+  - Marks: 15
+- **3 Or** Briefly discuss ASCII code. Draw the logic circuit using the equation X = A′B + ABC + ABC. What type of number is ABC? What is its equivalent decimal value?
+  - Or
+  - Marks: 15
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **4** Write the advantages of algorithms. Write an algorithm and draw a flowchart to find the largest of three numbers.
+  - Marks: 15
+- **4 Or** Add (753.26)₈ and (265.65)₈ and express the result in hexadecimal. Draw a flowchart to determine whether a number is even or odd.
+  - Or
+  - Marks: 15
+- **5** What is the Internet? Write its advantages and disadvantages. What is OMR? Write the differences between OMR and OCR.
+  - Marks: 15
+- **5 Or** What is a data processing method? Discuss its steps. Describe a search engine.
+  - Or
+  - Marks: 15
+- **6** Subtract (2AB)₁₆ from (ABF)₁₆ and express the result in octal.
+  - Marks: 5
+  - Also asked in: P.P. 2012
+- **6 Or** Describe the working principle of the dot matrix printer.
+  - Or
+  - Marks: 5
+- **7** Draw the logic circuit using the function F = (A′B + C)(BC + B′).
+  - Marks: 5
+- **7 Or** Write briefly about GII.
+  - Or
+  - Marks: 5
+- **8** Write the differences between BCD code and the binary number system.
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination 2015 (Assistant Teacher); Teacher Registration Examination 2010 (Assistant Teacher)
+- **8 Or** Write the differences between impact and non-impact printers.
+  - Or
+  - Marks: 5
+- **9** Write the differences between an algorithm and a flowchart.
+  - Marks: 5
+- **9 Or** What is the base of a number system? Add (11101.101)₂ and (10011.011)₂.
+  - Or
+  - Marks: 5
+- **10** Express the decimal number (57.25)₁₀ in binary.
+  - Marks: 5
+- **10 Or** Briefly discuss the batch mode operating system with a diagram.
+  - Or
+  - Marks: 5
+
+### 5.7 Teacher Registration Examination 2013 (Assistant Teacher) — `teacher-registration-examination-2013-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (Computer)
+- **Date:** 2013
+- **Source:** Computer Education (Optional), subject code 313, Set Ka (ক-সেট)
+
+#### Written
+
+- **1** Write about supercomputers and microcomputers. Write some important characteristics of a computer.
+  - Marks: 15
+- **1 Or** What is a computer generation? Write the characteristics of second- and third-generation computers. Write the uses of analog computers.
+  - Or
+  - Marks: 15
+- **2** What are EPROM and RAM cache? Explain. Write about the FireWire port and the bus.
+  - Marks: 15
+- **2 Or** Write the characteristics of fifth-generation computers. Whose idea is the stored program concept? Discuss: "Execution of stored programs is the main reason for the high speed of computers." Write the full forms of EDVAC and ENIAC.
+  - Or
+  - Marks: 15
+- **3** Discuss the types of number systems. Present the equivalent binary and octal values of the decimal numbers 0–16 in a table.
+  - Marks: 15
+- **3 Or (a)** Find the sum of (1011.1010)₂ and (10101.001)₂.
+  - Or
+  - Also asked in: P.P. 2010
+- **3 Or (b)** Find the difference of (11010.110)₂ and (1010.101)₂.
+  - Or
+- **3 Or (c)** Find the product of (1010)₂ and (101)₂.
+  - Or
+- **4** Discuss the basic logic gates with truth tables. Draw the logic circuit of the equation Y = (A + (B + C)′)′.
+  - Marks: 15
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **4 Or** What is Boolean algebra? Write the rules of logical addition and multiplication. Write the differences between RAM and ROM.
+  - Or
+  - Marks: 15
+- **5** What is network topology? Describe bus and ring topologies. What are HIML and FTP? Explain.
+  - Marks: 15
+- **5 Or** What is software? Discuss the types of software. What is an operating system? Discuss the functions of an operating system.
+  - Or
+  - Marks: 15
+- **6** Draw the flowchart of the series 1 + 3 + 5 + ........... + 51.
+  - Marks: 5
+- **6 Or** Write about websites and web browsers.
+  - Or
+  - Marks: 5
+- **7** Write the full forms: www, UNIVAC, HIML, URL, CD.
+  - Marks: 5
+- **7 Or** Implement the basic gates with the help of the NOR gate.
+  - Or
+  - Marks: 5
+- **8** Write about the uses of scanners and printers.
+  - Marks: 5
+- **8 Or** Write the differences between information and data.
+  - Or
+  - Marks: 5
+- **9** What is a variable? Write the symbols used in flowcharts with their meanings.
+  - Marks: 5
+- **9 Or** What is e-mail? Explain an e-mail address.
+  - Or
+  - Marks: 5
+- **10** Name the gates related to the equation Y = A′B + AB′ and draw the truth table.
+  - Marks: 5
+- **10 Or** Express the number (A9BD.EF)₁₆ in binary.
+  - Or
+  - Marks: 5
+  - Also asked in: P.P. 2012
+
+### 5.8 10th Teacher Registration Examination (May) 2014 (Assistant Teacher) — `10th-teacher-registration-examination-may-2014-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (Computer)
+- **Date:** 2014-05
+- **Source:** Computer Education, subject code 313, Set Ka (ক-সেট)
+
+#### Written
+
+- **1** What is a computer? According to structure, how many types of computers are there and what are they? Discuss briefly.
+  - Marks: 15
+- **1 Or** Discuss the organization of a computer with a diagram.
+  - Or
+  - Marks: 15
+  - Also asked in: Teacher Registration Examination 2013 (Lecturer); Teacher Registration Examination 2011 (Lecturer); 16th Teacher Registration Examination 2019 (Assistant Teacher)
+- **2** What is computer memory? How many types are there and what are they? Write the characteristics of RAM and ROM.
+  - Marks: 15
+- **3(a)** What type of number is 5F? Find its equivalent binary, octal and decimal values.
+  - Marks: 10
+  - Also asked in: P.P. 2011; 10th Teacher Registration Examination
+- **3(b)** Add the numbers (101100.1)₂ and (11011.101)₂.
+  - Marks: 5
+  - Also asked in: P.P. 2014; 10th Teacher Registration Examination
+- **3 Or (a)** Add (6F.A)₁₆ and (7D.B)₁₆ and express the result in binary.
+  - Or
+  - Marks: 10
+- **3 Or (b)** Express the number (3015.86)₁₀ in hexadecimal.
+  - Or
+  - Marks: 5
+- **4** Express the number (45.35)₁₀ in binary, octal and hexadecimal.
+  - Marks: 15
+  - Also asked in: P.P. 2014; 10th Teacher Registration Examination
+- **4 Or (a)** Discuss the AND and NOR gates with truth tables.
+  - Or
+  - Marks: 10
+- **4 Or (b)** Draw the logic circuit of the equation (A′B + C)AB′.
+  - Or
+  - Marks: 5
+- **5** Briefly discuss the data processing method. What is BCD code? Convert the numbers 0–9 into BCD code.
+  - Marks: 15
+- **5 Or (a)** What is an operating system? Describe the functions of an operating system.
+  - Or
+  - Marks: 7
+- **5 Or (b)** Describe character-based and graphics-based operating systems with examples.
+  - Or
+  - Marks: 8
+- **6** What is a flowchart? Draw any three symbols used in program flowcharts.
+  - Marks: 5
+- **6 Or** Make a flowchart to find the largest of three numbers.
+  - Or
+  - Marks: 5
+- **7** What is DOS? Write the differences between graphics-based and character-based operating systems.
+  - Marks: 5
+- **7 Or** What is a time slice? Describe the multiprocessing operating system.
+  - Or
+  - Marks: 5
+- **8** Discuss the method of sending and receiving e-mail.
+  - Marks: 5
+- **8 Or** What is a code? Briefly discuss ASCII code.
+  - Or
+  - Marks: 5
+- **9** What is the Internet? Write the advantages and disadvantages of using the Internet.
+  - Marks: 5
+- **9 Or** What is WWW? Analyse the role of the browser in using the web.
+  - Or
+  - Marks: 5
+- **10** Describe the NOT gate with its symbol, equation and truth table.
+  - Marks: 5
+- **10 Or** Express the number (BCD)₁₆ as an octal number.
+  - Or
+  - Marks: 5
+  - Note: Part of this question is unclear in the source image; check the original paper.
+
+### 5.9 11th Teacher Registration Examination (December) 2014 (Assistant Teacher) — `11th-teacher-registration-examination-december-2014-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (Computer)
+- **Date:** 2014-12
+- **Source:** Computer Education, subject code 313, Set Kha (খ-সেট)
+
+#### Written
+
+- **1** What is an abacus? Write four main characteristics of a computer. Discuss the classification of digital computers.
+  - Marks: 15
+- **1 Or** What is a microprocessor? Describe the arithmetic and logic unit of a microcomputer with a diagram.
+  - Or
+  - Marks: 15
+- **2** What is meant by computer generation? Write four characteristics of each generation of computers with examples.
+  - Marks: 15
+- **2 Or** Describe the functions of the input and output units of a computer. Explain the working principles of dot matrix and laser printers.
+  - Or
+  - Marks: 15
+- **3** What is a number system? Describe the different types of number systems with examples. Write the differences between positional and non-positional number systems.
+  - Marks: 15
+- **3 Or (a)** Express the number (7D5.E6)₁₆ as a decimal number.
+  - Or
+  - Marks: 5
+  - Also asked in: P.P. 2014
+- **3 Or (b)** Add (157.46)₁₀ and (706.43)₈ and express the sum in hexadecimal.
+  - Or
+  - Marks: 10
+- **4** What do you understand by data processing? Describe the types of operating systems with examples.
+  - Marks: 15
+- **4 Or** What is a logic gate? Describe the OR gate and the AND gate for three variables. Draw the logic circuit of y = (ABC)′ + BC′ + AC.
+  - Or
+  - Marks: 15
+- **5(a)** Implement the basic gates using the NOR gate.
+  - Marks: 6
+- **5(b)** Simplify the following equation and draw the logic circuit of the result: y = AB′C + ABC′ + A′BC.
+  - Marks: 9
+- **5 Or** Write the differences between an algorithm and a flowchart. Draw a flowchart to find the smallest of three numbers.
+  - Or
+  - Marks: 15
+- **6** What is firmware? Write the differences between analog and digital computers.
+  - Marks: 5
+- **6 Or** Add and subtract (1101011.1011)₂ and (1010110.0101)₂.
+  - Or
+  - Marks: 5
+  - Also asked in: P.P. 2014
+- **7** What are data and information? Write the differences between data and information.
+  - Marks: 5
+- **7 Or** What is a variable? Write the rules for naming variables.
+  - Or
+  - Marks: 5
+- **8** What is a web browser? Write the names of some web browsers.
+  - Marks: 5
+  - Also asked in: 16th Teacher Registration Examination 2019 (Assistant Teacher)
+- **8 Or** What are the conditions of an algorithm? Write the algorithm needed to find the factorial value of a positive integer.
+  - Or
+  - Marks: 5
+- **9** What is cache memory? Write the differences between primary memory and secondary (auxiliary) memory.
+  - Marks: 5
+- **9 Or** What is a bit? Multiply (11011)₂ and (101)₂ and express the product as an octal number.
+  - Or
+  - Marks: 5
+- **10** What is a scanner? Write three differences between ASCII and EBCDIC codes.
+  - Marks: 5
+- **10 Or** Write the full forms: ENIAC, EPROM, WWW, HTTP, URL.
+  - Or
+  - Marks: 5
+
+### 5.10 11th Teacher Registration Examination 2015 (Assistant Teacher) — `11th-teacher-registration-examination-2015-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (Computer)
+- **Date:** 2015
+- **Source:** Computer Education, subject code 313, Set Kha (খ-সেট)
+
+#### Written
+
+- **1** What is a computer generation? How many generations are there and what are they? Write three characteristics of each generation of computers with examples.
+  - Marks: 15
+- **1 Or** What type of number is FF? What is the number that comes after FF? Find the equivalent binary, octal and decimal values of the number that comes after FF.
+  - Or
+  - Marks: 15
+- **2** Write the differences between analog and digital computers. Briefly discuss the types of digital computers.
+  - Marks: 15
+- **2 Or** Add the binary numbers (101.00)₂ and (10010.00)₂, and express the sum in octal, hexadecimal and decimal.
+  - Or
+  - Marks: 15
+- **3(a)** What is a number system? How many types of number systems are there and what are they? What do you understand by positional and non-positional systems?
+  - Marks: 9
+- **3(b)** Describe the methods of converting from the decimal number system to binary and from the binary number system to decimal.
+  - Marks: 6
+- **3 Or (a)** Express (6F3A)₁₆ in binary, octal and decimal.
+  - Or
+- **3 Or (b)** Express (705.75)₁₀ in binary and octal.
+  - Or
+- **4(a)** What is a variable in a program? How many types are there and what are they? What do you understand by operations in a program?
+  - Marks: 10
+- **4(b)** Write the differences between BCD code and the binary number system.
+  - Marks: 5
+  - Also asked in: Teacher Registration Examination 2012 (Assistant Teacher); Teacher Registration Examination 2010 (Assistant Teacher)
+- **4 Or (a)** Write the rules for drawing a flowchart. Write the differences between a flowchart and an algorithm.
+  - Or
+  - Marks: 10
+- **4 Or (b)** Draw a flowchart to find whether a number is even or odd.
+  - Or
+  - Marks: 5
+- **5(a)** What is an operating system? How many types are there and what are they? Write the characteristics of an operating system.
+  - Marks: 10
+- **5(b)** Write the differences between the DOS and WINDOWS operating systems.
+  - Marks: 5
+- **5 Or** What is a basic gate? How many types of basic gates are there and what are they? Draw the symbols, Boolean equations, truth tables and electrical circuits of the basic gates.
+  - Or
+  - Marks: 15
+- **6** Write the characteristics of a computer.
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination 2016 (Assistant Teacher)
+- **6 Or** What is Mark-1? Add the two numbers (1101101.101)₂ and (10110.11)₂, and subtract the second from the first.
+  - Or
+  - Marks: 5
+- **7** Describe the working of the arithmetic logic unit, including its structure.
+  - Marks: 5
+- **7 Or** Describe the working process of the control unit.
+  - Or
+  - Marks: 5
+- **8** Write the differences between data and information.
+  - Marks: 5
+  - Also asked in: Teacher Registration Examination 2011 (Assistant Teacher); 16th Teacher Registration Examination 2019 (Assistant Teacher); 11th Teacher Registration Examination 2017 (Assistant Teacher); Teacher Registration Examination 2006 (Assistant Teacher)
+- **8 Or** Who was Ada Augusta Byron? Write the differences between BCD and EBCDIC codes.
+  - Or
+  - Marks: 5
+- **9** Divide (11001)₂ by (101)₂ and express (203.25)₈ in hexadecimal.
+  - Marks: 5
+- **9 Or** What is a scanner? Write the differences between Optical Character Reader (OCR) and OMR.
+  - Or
+  - Marks: 5
+- **10** What is a web browser? Write about the different parts of an e-mail address.
+  - Marks: 5
+- **10 Or** What is a printer? How many types of printers are there and what are they? Write the differences between primary memory and secondary (auxiliary) memory.
+  - Or
+  - Marks: 5
+
+### 5.11 11th Teacher Registration Examination 2016 (Assistant Teacher) — `11th-teacher-registration-examination-2016-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (Computer)
+- **Date:** 2016
+- **Source:** Computer Education, subject code 313, Set Ka (ক-সেট)
+
+#### Written
+
+- **1(a)** What is BIOS? Describe the types of memory (primary and secondary).
+  - Marks: 10
+- **1(b)** Write the differences between RAM and Cache Memory.
+  - Marks: 5
+- **1 Or (a)** Discuss computer organization with a diagram.
+  - Or
+  - Marks: 7
+- **1 Or (b)** Write the main characteristics of a computer.
+  - Or
+  - Marks: 8
+  - Also asked in: 11th Teacher Registration Examination 2015 (Assistant Teacher)
+- **2** Write the working of the hybrid computer and describe the classification of digital computers.
+  - Marks: 15
+- **2 Or** What is MICR? Write its working and describe the classification of printers.
+  - Or
+  - Marks: 15
+- **3** Write the characteristics of number systems. Find the equivalent binary and hexadecimal values of the number (101.10)₁₀.
+  - Marks: 15
+- **3 Or** Write the differences between BCD and the binary number system, and express the sum of (567.75)₈ and (F9C.D3)₁₆ in hexadecimal.
+  - Or
+  - Marks: 15
+- **4(a)** Give the definition of an operating system according to ANSI and describe the types of operating systems.
+  - Marks: 10
+- **4(b)** Write the differences between batch processing and time-sharing operating systems.
+  - Marks: 5
+- **4 Or (a)** Prove that NAND is a universal gate.
+  - Or
+  - Marks: 5
+- **4 Or (b)** Draw the logic diagram of AB′ + A′B and implement it with NAND gates.
+  - Or
+  - Marks: 10
+- **5** Write about intranet, Internet and extranet, and write the differences between OMR and OCR.
+  - Marks: 15
+- **5 Or** What is meant by data processing? Write the differences between an algorithm and a flowchart, and make a flowchart to find the smallest of 3 numbers.
+  - Or
+  - Marks: 15
+- **6** Make a flowchart to find the sum of the series 1+3+5+..........+N.
+  - Marks: 5
+- **6 Or** Write the differences between a website and a web page.
+  - Or
+  - Marks: 5
+- **7** Mention, with diagrams, the symbols used in program flowcharts and their functions.
+  - Marks: 5
+- **7 Or** What is firmware? Describe the distributed operating system.
+  - Or
+  - Marks: 5
+- **8** Write the full forms: TCB/IP, ETP, httP, URL, Wi-MAX.
+  - Marks: 5
+- **8 Or** Write the full form of DOS. Write about GUI-based operating systems.
+  - Or
+  - Marks: 5
+- **9** What is e-mail? Write the differences between graphics-based and character-based operating systems.
+  - Marks: 5
+- **9 Or** Write the differences between analog and digital computers.
+  - Or
+  - Marks: 5
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer); 11th Teacher Registration Examination (December) 2014 (Lecturer); 17th Teacher Registration Examination 2023 (Assistant Teacher); Teacher Registration Examination 2007 (Assistant Teacher)
+- **10** Find the sum of (1101011.1011)₂ and (1010110.0101)₂ and express the result in the hexadecimal system.
+  - Marks: 5
+- **10 Or** Discuss BCD, EBDIC and ASCII codes.
+  - Or
+  - Marks: 5
+
+### 5.12 11th Teacher Registration Examination 2017 (Assistant Teacher) — `11th-teacher-registration-examination-2017-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (Computer)
+- **Date:** 2017
+- **Source:** Computer Education, subject code 313, Set Kha (খ-সেট)
+
+#### Written
+
+- **1(a)** What is a computer? Briefly discuss the types of digital computers.
+  - Marks: 10
+  - Also asked in: Teacher Registration Examination 2012 (Assistant Teacher)
+- **1(b)** What is firmware? Write the differences between hardware and software.
+  - Marks: 5
+- **1 Or (a)** What is a computer generation? Write four characteristics of each generation of computers.
+  - Or
+  - Marks: 10
+- **1 Or (b)** Show the classification of software with a chart. Write the names of two application software.
+  - Or
+  - Marks: 5
+- **2(a)** What is a printer? Discuss the working principles of dot matrix and laser printers.
+  - Marks: 10
+- **2(b)** What is DOS? Discuss the multiprocessing operating system.
+  - Marks: 5
+- **2 Or (a)** What type of number is FB? Express in binary the sum of the numbers before and after FF.
+  - Or
+  - Marks: 10
+- **2 Or (b)** Who is called the father of the modern computer and why? Discuss.
+  - Or
+  - Marks: 5
+- **3(a)** What is the base of a number system? Find the equivalent binary, octal and hexadecimal values of the number (654.47)₁₀.
+  - Marks: 10
+- **3(b)** Write the differences between BCD and the binary number system.
+  - Marks: 5
+  - Also asked in: 14th Teacher Registration Examination; 13th Teacher Registration Examination; 8th Teacher Registration Examination
+- **3 Or (a)** Find the binary sum of (675.23)₈ and (101101.1011)₂ and express the sum in the decimal and hexadecimal systems.
+  - Or
+  - Marks: 10
+- **3 Or (b)** Discuss positional and non-positional number systems.
+  - Or
+  - Marks: 5
+  - Also asked in: 14th Teacher Registration Examination
+- **4(a)** Explain the universality of NAND and NOR gates with logic circuits.
+  - Marks: 10
+- **4(b)** Draw the logic circuit of the expression Y = (ABC)′ + A′C + AB′C.
+  - Marks: 5
+- **4 Or (a)** Discuss the data processing method.
+  - Or
+- **4 Or (b)** Add (56B.7D)₁₆ and (489.65)₁₀ and express the sum as an octal number.
+  - Or
+  - Marks: 10
+- **5(a)** What is an operating system? Discuss the importance and functions of an operating system.
+  - Marks: 10
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **5(b)** Prove with the help of a truth table: (A + B + C)′ + A′·B′·C′
+  - Marks: 5
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **5 Or (a)** Briefly discuss MICR.
+  - Or
+  - Marks: 5
+- **5 Or (b)** Simplify the expression Y = A′BC + A′B′C + AB′C + ABC with the help of Boolean algebra and draw the logic circuit of the expression.
+  - Or
+  - Marks: 10
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **6** What is a flowchart? Draw four symbols used in program flowcharts and write their functions.
+  - Marks: 5
+- **6 Or** Write the differences between data and information.
+  - Or
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination 2015 (Assistant Teacher); Teacher Registration Examination 2011 (Assistant Teacher); 16th Teacher Registration Examination 2019 (Assistant Teacher); Teacher Registration Examination 2006 (Assistant Teacher)
+- **7** What is a time slice? Describe the batch processing operating system.
+  - Marks: 5
+- **7 Or** Draw a flowchart to find the GCD (HCF) of two positive integers.
+  - Or
+  - Marks: 5
+- **8** What is a scanner? Write the differences between OMR and OCR.
+  - Marks: 5
+- **8 Or** Write the facilities obtained through the Internet.
+  - Or
+  - Marks: 5
+- **9** Describe the organization of the control unit of the CPU.
+  - Marks: 5
+- **9 Or** Write an algorithm to find the sum of the series 2 + 4 + 6 + ---------- + N.
+  - Or
+  - Marks: 5
+- **10** What is www? Describe the role of the web browser in using the Internet.
+  - Marks: 5
+- **10 Or** Find the product of (101101) and (11010.11)₂.
+  - Or
+  - Marks: 5
+  - Also asked in: 14th Teacher Registration Examination
+
+### 5.13 15th Lecturer Registration Examination 2018 (Assistant Teacher) — `15th-lecturer-registration-examination-2018-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (ICT) / Demonstrator, Computer/ICT
+- **Date:** 2018
+- **Source:** Computer Education, subject code 313, X Set (X সেট)
+
+#### Written
+
+- **1(a)** What is a digital computer? Describe the classification of digital computers.
+  - Marks: 10
+- **1(b)** Write the differences in characteristics between humans and computers.
+  - Marks: 5
+- **1 Or (a)** What do you understand by computer generations? Write the characteristics of second- and fifth-generation computers with examples.
+  - Or
+- **1 Or (b)** Describe the arithmetic and logic unit (ALU) with a diagram.
+  - Or
+- **2(a)** What is an operating system? Describe the organization of an operating system.
+  - Marks: 10
+- **2(b)** Describe the multiprocessing operating system with a diagram.
+  - Marks: 5
+- **2 Or (a)** What do you understand by output? Discuss the classification of computers based on structure and working principle.
+  - Or
+  - Marks: 10
+- **2 Or (b)** Discuss the working principle of the laser printer.
+  - Or
+- **3(a)** Convert (5A.35)₁₆ and (201.15)₁₀ to binary, add them, and convert the sum to octal.
+  - Marks: 10
+- **3(b)** Subtract (1011)₂ from (10110)₂.
+  - Marks: 5
+  - Also asked in: 15th Teacher Registration Examination
+- **3 Or (a)** Discuss the different types of number systems.
+  - Or
+  - Marks: 10
+- **3 Or (b)** Convert the number (ABCDEF)₁₆ to a decimal number.
+  - Or
+  - Marks: 5
+- **4(a)** What is a logic gate? Discuss the names, truth tables and symbols of the basic logic gates.
+  - Marks: 10
+- **4(b)** What type of number is 57A? Find its equivalent octal number.
+  - Marks: 5
+- **4 Or (a)** Describe the steps of data processing with the help of a computer.
+  - Or
+  - Marks: 10
+- **4 Or (b)** Prove that A′BC + AB′C + ABC′ = AB + BC + AC.
+  - Or
+  - Marks: 5
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **5(a)** Simplify the following equation and draw the logic circuit of the simplified value: Y = (a(b + c)(c + d))′
+  - Marks: 10
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **5(b)** Prove using a truth table: (X + Y + Z)′ = X′·Y′·Z′
+  - Marks: 5
+- **5 Or (a)** What is CUP? Explain the functions of the control unit with a diagram.
+  - Or
+  - Marks: 10
+- **5 Or (b)** Describe the functions of the memory unit.
+  - Or
+  - Marks: 5
+
+### 5.14 16th Teacher Registration Examination 2019 (Assistant Teacher) — `16th-teacher-registration-examination-2019-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher
+- **Date:** 2019
+- **Source:** Computer Education, subject code 313, R Set (R সেট)
+
+#### Written
+
+- **1(a)** Discuss the organization of a computer with a diagram.
+  - Marks: 10
+  - Also asked in: Teacher Registration Examination 2013 (Lecturer); Teacher Registration Examination 2011 (Lecturer); 10th Teacher Registration Examination (May) 2014 (Assistant Teacher)
+- **1(b)** What is a hybrid computer? Write its characteristics.
+  - Marks: 5
+- **1 Or (a)** What is a computer generation? Write the characteristics of third- and fourth-generation computers.
+  - Or
+- **1 Or (b)** Write five important characteristics of a computer.
+  - Or
+- **2(a)** What is a microprocessor? Discuss the structure of a microprocessor.
+  - Marks: 10
+- **2(b)** Write the functions of the arithmetic and logic unit.
+  - Marks: 5
+- **2 Or (a)** What is secondary (auxiliary) memory? Discuss the structure of a hard disk with a diagram.
+  - Or
+  - Marks: 10
+- **4(a)** What is a number system? Discuss the different types of positional number systems.
+  - Marks: 10
+- **6 Or** Write the differences between character-based (text-based) and graphics-based operating systems.
+  - Or
+  - Marks: 5
+- **7** Write an algorithm to find the largest of three numbers.
+  - Marks: 5
+- **7 Or** Draw a flowchart to find the area of a circle.
+  - Or
+  - Marks: 5
+- **8** Write the differences between data and information.
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination 2015 (Assistant Teacher); Teacher Registration Examination 2011 (Assistant Teacher); 11th Teacher Registration Examination 2017 (Assistant Teacher); Teacher Registration Examination 2006 (Assistant Teacher)
+- **8 Or** What is a web browser? Write the names of some web browsers.
+  - Or
+  - Marks: 5
+  - Also asked in: 11th Teacher Registration Examination (December) 2014 (Assistant Teacher)
+- **9** Add the two numbers (AB)₁₆ and (75)₈ and express the result in octal.
+  - Marks: 5
+- **9 Or** Subtract (77)₈ from (CD)₁₆ and express the result in hexadecimal.
+  - Or
+  - Marks: 5
+- **10** Simplify the expression c + b(a + bc) and draw the logic circuit.
+  - Marks: 5
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **10 Or** What is a flowchart? Write the advantages of drawing a flowchart.
+  - Or
+  - Marks: 5
+
+### 5.15 17th Teacher Registration Examination 2023 (Assistant Teacher) — `17th-teacher-registration-examination-2023-assistant-teacher`
+
+- **Organization:** Non-Government Teachers' Registration and Certification Authority (NTRCA)
+- **Post:** Assistant Teacher (Information and Communication Technology)
+- **Date:** 2023
+- **Source:** Computer Education, subject code 313, Shapla-13 (শাপলা-১৩)
+
+#### Written
+
+- **1(a)** Discuss the classification of computers according to structure and working principle.
+  - Marks: 10
+- **1(b)** Write the characteristics of second-generation computers.
+  - Marks: 5
+- **1 Or (a)** Discuss supercomputers and mainframe computers.
+  - Or
+  - Marks: 10
+- **1 Or (b)** Write the differences between analog and digital computers.
+  - Or
+  - Marks: 5
+  - Also asked in: 12th Teacher Registration Examination 2015 (Lecturer); 11th Teacher Registration Examination (December) 2014 (Lecturer); 11th Teacher Registration Examination 2016 (Assistant Teacher); Teacher Registration Examination 2007 (Assistant Teacher)
+- **2(a)** What is a CPU? Describe the organization of the CPU.
+  - Marks: 10
+- **2(b)** How does a computer work? Explain.
+  - Marks: 5
+- **2 Or (a)** What is meant by computer memory? Discuss the classification of computer memory.
+  - Or
+  - Marks: 10
+- **2 Or (b)** Discuss the applications of the Internet in modern life.
+  - Or
+  - Marks: 5
+- **3(a)** What is system software? Discuss the different types of system software.
+  - Marks: 10
+- **3(b)** Write the important functions of a graphics-based operating system.
+  - Marks: 5
+- **3 Or (a)** What is a multiprocessing operating system? Discuss the working method of a multiprocessing operating system with a diagram.
+  - Or
+  - Marks: 10
+- **3 Or (b)** What is a translator program? Mention its functions.
+  - Or
+  - Marks: 5
+- **4(a)** What is meant by the base of a number system? Discuss positional and non-positional number systems with examples.
+  - Marks: 10
+- **4(b)** Express the number (53.62)₁₀ in octal.
+  - Marks: 5
+- **4 Or (a)** What is the 2's complement method? Using the 2's complement method, subtract (9)₁₀ from (−13)₁₀.
+  - Or
+  - Marks: 10
+- **4 Or (b)** Give a comparative discussion of the binary number system and BCD code.
+  - Or
+  - Marks: 5
+- **5(a)** Describe the basic logic gates with their truth tables.
+  - Marks: 10
+- **5(b)** What is a truth table? Write with an example.
+  - Marks: 5
+
+## 6. Topic-wise Collections (Tagged by Exam) — `collections`
+
+### 6.1 ICT Pinpoint — Number Systems and Digital Logic (Assistant Teacher, ICT) — `ict-pinpoint-number-systems-and-digital-logic-assistant-teacher-ict`
+
+- **Source:** ICT Pinpoint by Tahsim (NTRCA Assistant Teacher, ICT registration questions)
+- **Kind:** collection
+
+#### Written
+
+- **13(a)** Find the sum: (11101.101)₂ and (10011.011)₂
+  - Tags: P.P. 2012
+- **A-1** What is a number system?
+  - Tags: 16th Teacher Registration Examination; 12th Teacher Registration Examination; 11th Teacher Registration Examination; 6th Teacher Registration Examination; 4th (2008) Teacher Registration Examination
+- **A-2** Write the characteristics of number systems.
+  - Tags: 13th Teacher Registration Examination
+- **A-3** How many types of number systems are there and what are they?
+  - Tags: 12th Teacher Registration Examination; 4th (08) Teacher Registration Examination
+- **A-4** Describe the different types of number systems with examples.
+  - Tags: 15th Teacher Registration Examination; 11th Teacher Registration Examination; 7th Teacher Registration Examination
+- **A-5** Discuss the different types of positional number systems.
+  - Tags: 16th Teacher Registration Examination
+- **A-6** Discuss the types of number systems.
+  - Tags: 9th Teacher Registration Examination
+- **A-7** What is meant by positional and non-positional number systems?
+  - Tags: 12th Teacher Registration Examination
+- **A-8** Briefly discuss positional and non-positional systems with examples.
+  - Tags: 17th Teacher Registration Examination
+- **A-10** Write the differences between positional and non-positional number systems.
+  - Tags: 11th Teacher Registration Examination
+- **A-11** What is meant by the base of a number system?
+  - Tags: 17th Teacher Registration Examination; 6th Teacher Registration Examination
+- **A-12** Write the basic digits and bases of the binary, octal, decimal and hexadecimal number systems.
+  - Tags: 6th Teacher Registration Examination
+- **A-13** Why is the binary number system used in computers?
+  - Tags: 7th Teacher Registration Examination
+- **B-1** Add the two numbers (BF)₁₆ and (55)₈ and express the result in hexadecimal.
+  - Tags: 17th Teacher Registration Examination
+- **B-31** Find the sum and difference of the two numbers (11101.01)₂ and (1101.11)₂.
+  - Tags: P.P. 2005
+- **B-32** What type of number is FF.AB? Convert the number into its equivalent decimal, binary and octal numbers.
+  - Tags: P.P. 2005, 2012
+- **B-33** Convert (11110.01)₂ into decimal, octal and hexadecimal.
+  - Tags: P.P. 2010
+- **B-34** Add (6F.5B)₁₆ and (57.25)₈ and express the sum in hexadecimal.
+  - Tags: P.P. 2010
+- **B-35** What type of number is BA.2B? Write its equivalent binary and octal values.
+  - Tags: P.P. 2011
+- **B-36** Convert the number (23.625)₁₀ into binary and the number (10101.01)₂ into decimal.
+  - Tags: P.P. 2011
+- **B-37** What type of number is 2CD? Find its equivalent decimal and binary values.
+  - Tags: P.P. 2012
+- **B-38** What type of number is ABC? What is its equivalent decimal value?
+  - Tags: P.P. 2012
+- **B-40** Express the number (57.25)₁₀ in binary.
+  - Tags: P.P. 2012
+- **B-43** Express the number (3016.86)₁₀ in hexadecimal.
+  - Tags: P.P. 2014; 10th Teacher Registration Examination
+- **C-1** What is the 2's complement method? Using the 2's complement method, subtract (9)₁₀ from (-13)₁₀.
+  - Tags: 17th Teacher Registration Examination
+- **C-1 Or** What is the 2's complement method? Using the 2's complement method, subtract (+11)₁₀ from (-15)₁₀.
+  - Or
+  - Tags: 18th Teacher Registration Examination
+- **C-2** What is the 2's complement method? Using the 2's complement method, subtract (15)₁₀ from (25)₁₀.
+  - Tags: 16th Teacher Registration Examination
+- **C-5** Add the numbers (1101101.101)₂ and (10110.11)₂ and subtract [?].
+  - Tags: 12th Teacher Registration Examination
+  - Note: The question is incomplete in the source image.
+- **C-6** Find the sum and product of the numbers (1011.01)₂ and (111)₂.
+  - Tags: P.P. 2006
+- **C-7** Find the difference by subtracting the smaller of the two numbers (11101.01)₂ and (101)₂ from the larger.
+  - Tags: P.P. 2006
+- **C-8** Find the sum of (ABC + DEF).
+  - Tags: P.P. 2007
+- **C-9** Add (110.10)₂ and (100.01)₂, and subtract the smaller number from the larger number.
+  - Tags: P.P. 2010
+- **C-10** Find the sum of the numbers (10101.101)₂ and (1011.01)₂.
+  - Tags: 7th Teacher Registration Examination
+- **C-12** Add (753.26)₈ and (265.65)₈ and express the result in hexadecimal.
+  - Tags: P.P. 2012
+- **C-14** Find the difference: (1010.101)₂ subtracted from (11010.110)₂.
+  - Tags: P.P. 2010
+- **C-15** Find the product: (1010)₂ multiplied by (101)₂.
+  - Tags: 9th Teacher Registration Examination
+- **C-17** Add (6F.A)₁₆ and (7D.B)₁₆ in binary.
+  - Tags: P.P. 2014; 10th Teacher Registration Examination
+- **C-19** Multiply (11011)₂ and (101)₂ and express the product as an octal number.
+  - Tags: P.P. 2014
+- **C-20** Add (9D.AB6)₁₆ and (306.51)₁₀ and express the result in binary. In which number systems do you think (110101) could be a number?
+  - Tags: 18th Teacher Registration Examination
+- **D-1** What is a code?
+  - Tags: 17th Teacher Registration Examination; 15th Teacher Registration Examination; 10th Teacher Registration Examination
+- **D-2** What is binary coded decimal (BCD)?
+  - Tags: 16th Teacher Registration Examination; 13th Teacher Registration Examination; 10th Teacher Registration Examination; 6th Teacher Registration Examination
+- **D-3** How many types of BCD code are there and what are they?
+  - Tags: 6th Teacher Registration Examination
+- **D-4** Convert the numbers 0 to 9 into BCD code.
+  - Tags: 10th Teacher Registration Examination
+- **D-5** Write the differences between BCD code and binary numbers.
+  - Tags: 17th Teacher Registration Examination; 14th Teacher Registration Examination; 13th Teacher Registration Examination; 12th Teacher Registration Examination; 8th Teacher Registration Examination; 6th Teacher Registration Examination
+- **D-6** Express the number (239)₁₀ in BCD-8421 code.
+  - Tags: 6th Teacher Registration Examination
+- **D-7** Express the number (27)₁₀ in BCD code.
+  - Tags: 16th Teacher Registration Examination
+- **D-8** Discuss the ASCII code.
+  - Tags: 13th Teacher Registration Examination; 10th Teacher Registration Examination; 8th Teacher Registration Examination
+- **D-9** Write the characteristics of the ASCII code.
+  - Tags: 17th Teacher Registration Examination
+- **D-10** Write the differences between BCD code and ASCII code.
+  - Tags: 7th Teacher Registration Examination
+- **D-11** Write about the EBCDIC code.
+  - Tags: 15th Teacher Registration Examination; 13th Teacher Registration Examination
+- **D-12** Write the differences between ASCII code and EBCDIC code.
+  - Tags: 11th Teacher Registration Examination
+- **D-13** Write the differences between BCD and EBCDIC codes.
+  - Tags: 12th Teacher Registration Examination
+- **D-14** What is a code? Write the differences between BCD and binary codes. Explain the base-3 (ternary) number system.
+  - Tags: 18th Teacher Registration Examination
+- **E-1** What is a logic gate? Write its types.
+  - Tags: 15th Teacher Registration Examination
+- **E-2** What is a basic gate? Write about the different types of basic gates.
+  - Tags: Others
+  - Note: Part of this question is unclear in the source image; check the original paper.
+- **E-2 Or** What is a basic gate? Explain why the NAND and NOR gates are called universal gates.
+  - Or
+  - Tags: 18th Teacher Registration Examination
+
+### 6.2 SUPER ICT 150++ — Database and SQL — `super-ict-150-database-and-sql`
+
+- **Source:** SUPER ICT 150++ Questions Book (Bit to Exabyte)
+- **Kind:** collection
+
+#### Written
+
+- **DB-1** Discuss about different types of relations in DBMS.
+  - Tags: Combined Bank, AP 2024
+- **DB-3** What is Database?
+  - Tags: EGCB SAE(ICT) 2023; BKKB AP 2017
+- **DB-4** What is the degree of relation in DBMS?
+  - Tags: BCC AP 2023
+- **DB-5** What are the ACID properties of transaction to ensure data reliability and integrity?
+  - Tags: Milk Vita AM(CSE), BPSC AP 2023; BBL AM (ICT) 2019
+- **DB-7** Describe the advantages and disadvantages of DBMS-provided and application provided security.
+  - Tags: BPSC, AP 2022
+- **DB-8** What is distributed database?
+  - Tags: Combined 2 bank, ADA 2022
+- **DB-9** Write difference between relational database and NoSQL database.
+  - Tags: SBL Officer(IT) 2021
+- **DB-10** While converting E-R diagram into Tables, how is a Many-to-many relationship set between entities A and B is converted into database tables?
+  - Tags: BPSC SAE 2021
+- **DB-11** What is meant by DBMS? Describe the classification of DBMS.
+  - Tags: 40th BCS 2020
+- **DB-12** Explain the concept distributed DBMS. What are the features of DBMS?
+  - Tags: BB AME 2019
+- **DB-13** What is DBMS? Write the full meaning of DDL and DML.
+  - Tags: BKKB AP 2017
+- **DB-14** Product (pname,price,category,maker), Purchase (buyer,seller,stock), Company(cname,country), Person(per-name, address, phone). Here in Product table make is similar to cname, here buyer and seller in Purchase table is similar to per-name in Person table, Draw the ER diagram of from the above information.
+  - Tags: NWPGCL, AM(ICT) 2024
+- **DB-14(a)** Product (pname,price,category,maker), Purchase (buyer,seller,stock), Company(cname,country), Person(per-name, address, phone). Here in Product table make is similar to cname, here buyer and seller in Purchase table is similar to per-name in Person table, Draw the ER diagram of from the above information: a. Select person name who bought American category product
+  - Tags: NWPGCL, AM(ICT) 2024
+- **DB-14(b)** Product (pname,price,category,maker), Purchase (buyer,seller,stock), Company(cname,country), Person(per-name, address, phone). Here in Product table make is similar to cname, here buyer and seller in Purchase table is similar to per-name in Person table, Draw the ER diagram of from the above information: b. Find Sum of all product and Sum of All sales product according to country of origin.
+  - Tags: NWPGCL, AM(ICT) 2024
+- **DB-15(a)** Query's: Employee & department table given: a. Write the employee name who got same salary named Rahim but not same job of Rahim.
+  - Tags: BGDCL, AM(CSE)2024
+- **DB-15(b)** Query's: Employee & department table given: b. Write the employee's name who's average salary is more than company's average salary.
+  - Tags: BGDCL, AM(CSE)2024
+- **DB-16(i)** From an Employee table. Write SQL statement statement according to the following question: (i) Find out the employees who join the same date
+  - Tags: BRDB AP 2023
+- **DB-16(ii)** From an Employee table. Write SQL statement statement according to the following question: (ii) Find those employees whose salary greater than 8,000 and Less than 25,000.
+  - Tags: BRDB AP 2023
+- **DB-17(a)** Database Query: Employee (ID, First_name, Last_name, Joining_date, Salary); Employee_Info (Emp_ID, Designation). a. Create both tables
+  - Tags: MRA SCO 2023
+- **DB-17(b)** Database Query: Employee (ID, First_name, Last_name, Joining_date, Salary); Employee_Info (Emp_ID, Designation). b. Show department-wise min, max, average salary of employees
+  - Tags: MRA SCO 2023
+- **DB-17(c)** Database Query: Employee (ID, First_name, Last_name, Joining_date, Salary); Employee_Info (Emp_ID, Designation). c. Show details of employees joined before February 2023.
+  - Tags: MRA SCO 2023
+- **DB-18** Suppose that we have a relational database with the following table. Underlined one represent primary key: Movies (mid, title, year); People (pid, name); Genres (gid, genre); HasRole (pid, mid, role); Has Genre (gid, mid). Write a SQL query to return the number of movies that are romantic comedies.
+  - Tags: BB AP 2023
+- **DB-19** Write following EMPLOYEE database table write an SQL query to find employee who work is a department where the average salary is lower than the average salary all the department......
+  - Tags: Others
+- **DB-20** Consider the two schema employees (id, first_name, last_name, designation, joining_date, salary, dept_id) and department (dept_id, dept_name). Where detp_id is forgeign key. Find the first_name and department name whose salary is maximum.
+  - Tags: BIWTA AE(CSE) 2023
+- **DB-21** Consider the Schema employee(id, name, salary), equipment(id, name, price), hire(employee_id, equipment_id); Write the SQL query to show the name of employee who borrow the maximum equipment?
+  - Tags: BAPEX AGM(ICT) 2023
+- **DB-22** Consider the employee tables: Create a SQL view that shows the details of Employee information who have the salary equivalent to the maximum, minimum and average salary of employee.
+  - Tags: Milk Vita AM(CSE) 2023
+- **DB-23** Analyze the following code: SELECT department_name, AVG(salary) as average_salary FROM employees JOIN department d ON e.department_id = d.department_id WHERE salary > (SELECT AVG(salary) FROM employees ) GROUP BY department_name HAVING COUNT(*) > 2 ORDER BY average_salary desc
+  - Tags: Combined Bank Officer(IT), Rupali Bank ANE 2023
+- **DB-24** Write the SQL command to find Employee_id and Employee from the Employee table whose average salary is above 2000.
+  - Tags: BTCL, JAM 2022
+- **DB-25** SQL Query for finding Dept names for departments Find out the employees whose salaries are greater than the salaries of their managers.
+  - Tags: NESCO AM(ICT) 2021
+- **DB-26** Suppose, 'Employee' table (emp_id, emp_name, dept_id, salary) and 'Department' table (dept_id, dept_name, increment_dept). Create a tigger to increment the salary of the employee by 10% whose salary is above 30000.
+  - Tags: PGCB AE (CSE) 2021
+- **DB-27(i)** Below tables are given, Employee (employee_id, name, salary, department) Leave (employee_id, date, reason, no_leaves) Holiday (Date, description): (i) Write query to show all employee's leave count.
+  - Tags: RBL ANE 2021
+- **DB-27(ii)** Below tables are given, Employee (employee_id, name, salary, department) Leave (employee_id, date, reason, no_leaves) Holiday (Date, description): (ii) Write query to show employees who are in 'HR' department and have taken at least 5 leaves.
+  - Tags: RBL ANE 2021
+- **DB-28(a)** Find the Query for the Instructor table: a) Find the average salary of instructors in each department.
+  - Tags: NRCC AP 2021
+- **DB-28(b)** Find the Query for the Instructor table: b) Find the names and average salaries of all departments whose average salary is greater than 42000.
+  - Tags: NRCC AP 2021
+- **DB-28(c)** Find the Query for the Instructor table: c) Find names of instructors with salary greater than that of some (at least one) instructor in the CSE department.
+  - Tags: NRCC AP 2021
+- **DB-29** Write a SQL query to find those employees who report that manager whose first name is 'abc'. Return first name, last name, employee ID and salary.
+  - Tags: PGCL SAE (CSE) 2021
+- **DB-30** emp [e_id, e_name, dept_id, salary, DOB], dept [dept_id, city, dept_name]; write the SQL query to show the name of each department and the average salary of the employees of that department.
+  - Tags: NESCO JAM(ICT) 2021
+- **DB-31** Given Table: Project (Project_id, Project_name, Manager_name); Location (location_id, Location_name, project_id); Employee (Employee_id, Employee_Name, Location_id, Joning date, Salary). Write a query to show project_name, Location_name, Total_salary of each projects employee who joined before 'January 2021'
+  - Tags: APSCL AE (ICT 2021)
+- **DB-32** Database table by name Loan Records is given below: | Borrower | Bank_Manager | Loan_Amount | | Rahim | Shuvo | 1000.00 | | Shamim | Rasel | 500.00 | | Mamun | Shuvo | 7000.00 | What is the output of the following SQL query? SELECT count (*) FROM ( (SELECT Borrower, Bank_Manager, FROM Loan_Records) AS S NATURAL JOIN (SELECT Bank_Manager, Loan_Amount FROM Loan_Records) AS T);
+  - Tags: BAUST AP 2021
+- **DB-33(a)** Consider the following Schemas- Movies (title, year, length, genre, studioName, producerCert); starsIn (movieTitle, movieYear, starName, salary); MovieStar (name, address, gender, birthdate); MovieExec (name, address, producerCert, netWorth); Studio (name, address). Write SQL queries for the following: (a) Find the address of a studio named MGM
+  - Tags: BPSC AME 2021
+- **DB-33(b)** Consider the following Schemas- Movies (title, year, length, genre, studioName, producerCert); starsIn (movieTitle, movieYear, starName, salary); MovieStar (name, address, gender, birthdate); MovieExec (name, address, producerCert, netWorth); Studio (name, address). Write SQL queries for the following: (b) Find the number of movies that was not produced by "MGM"
+  - Tags: BPSC AME 2021
+- **DB-34(a)** Given a database schema and worker table with fully code: Now writes SQL Query from the following questions. Write a query to get distinct name
+  - Tags: DPDC 2020
+- **DB-34(b)** Given a database schema and worker table with fully code: Now writes SQL Query from the following questions. Write a query to get the first three letter of first_name column from worker table.
+  - Tags: DPDC 2020
+- **DB-35(i)** SQL Query: Commission greater than 10%
+  - Tags: NU AP 2020
+- **DB-35(ii)** SQL Query: Remove duplicate data from table:
+  - Tags: NU AP 2020
+- **DB-36** Database Query: Given two table COURSE (Course_ID, Course_name, Chief_ID) and INSTRUCTOR (Instructor_ID, Course_ID, Salary, Joining_date). Write down database query Average salary for different courses.
+  - Tags: NACTAR 2020
+- **DB-37** Design a database of student with the gpa of a university. Find the top 10% gpa holder from the different department of the university.
+  - Tags: 5 Bank AME 2019
+- **DB-38** Write a query to select top 10% row from grade table.
+  - Tags: CB AP 2018
+- **DB-39** What is the SQL command used to fetch first 3 characters name from employees?
+  - Tags: BCPSC AP 2018
+- **DB-40** Write an SQL query to insert a tuple in the table: Employee (ID, Name, Designation, and Salary).
+  - Tags: NESCO AM (ICT) 2018
+- **DB-41** Suppose you've two table (Employee, Department) in a Database and Employee table three cell (emp_name, dept_id, salary) also Department table two cell (dept_id, dept_name), now update the salary 10% increase value from Department table. Give the appropriate example.
+  - Tags: PBL SO 2018
+- **DB-42** Given two tables are employee (id, name, salary, dept_id) and department (dept_id, dept_name), write SQL to find MAX salary and average salary of specific department.
+  - Tags: DBBL PO 2017
+- **DB-43** What is the SQL query for showing only the duplicate lists in student (id, name, gpa) table?
+  - Tags: ABL Officer (ICT) 2017
+- **DB-44** Write the SQL command to create the following table. student_info (std_id, name, department, phone_number)
+  - Tags: BPSC AP 2021
+- **DB-44(a)** (Table: student_info (std_id, name, department, phone_number)) Write the SQL command to insert 2 records into the table.
+  - Tags: BPSC AP 2021
+- **DB-44(b)** (Table: student_info (std_id, name, department, phone_number)) Write the SQL command to get the list of names of the students of the CSE department from the table.
+  - Tags: BPSC AP 2021
+- **DB-45** What is a weak entity for data modeling using the entity relationship model? Find out any weak entity and it's identify relationship for the school database? Which of the following table? Student (student_id, student_name, admission_year); Teacher (teacher_id, teacher_name, teacher_joindate); Course (course_id, subject_name, credit)
+  - Tags: BCC AP 2021
+
+### 6.3 SUPER ICT 150++ — Cloud Computing — `super-ict-150-cloud-computing`
+
+- **Source:** SUPER ICT 150++ Questions Book (Bit to Exabyte)
+- **Kind:** collection
+
+#### Written
+
+- **CLD-2** What is Cloud Computing? Write its advantages and Disadvantages?
+  - Tags: NPCNL, JAM 2022
+- **CLD-3** Write the services of cloud computing.
+  - Tags: BPSC AP 2021
+- **CLD-4** Write the three basic function of cloud services?
+  - Tags: BOF AE(CSE) 2021
+- **CLD-5** Define cloud computing? What is the benefit of cloud computing?
+  - Tags: BLPU AP 2018
+- **CLD-6** Write ten sentences on "Big Data".
+  - Tags: MRA SCO 2023
+- **CLD-7** What is meant by big data? Write the characteristics of big data.
+  - Tags: BPSC AP 2021
+- **CLD-8** Your bank wants to transform your full data center into a cloud. Now sketch your strategy and plan to implement this procedure.
+  - Tags: Combined Bank, AME/AE(IT) 2024
+- **CLD-9** Your bank wants to secure an e-banking online system and wants to configure a web server in your data center. What kind of tools and technology do you use for this?
+  - Tags: Combined Bank, AME/AE(IT) 2024
+- **CLD-10** What are the challenges in optimizing energy efficiency of data centers? Explain!
+  - Tags: BB AP 2023
+- **CLD-11** Discuss server maintenance best practices, including routine tasks like cleaning, monitoring, and applying security patches. How do these practices contribute to server longevity and performance?
+  - Tags: Rupali Bank ANE 2023
+- **CLD-12** Define a virtual machine with a neat diagram, explain the working of VM. What are the benefits of a VM?
+  - Tags: BB AP 2023
+- **CLD-13** What do you mean by national data center?
+  - Tags: BPSC, AP 2022
+- **CLD-14** Explain the component of Data Center.
+  - Tags: ABL SO (IT) 2017
+- **CLD-15** To maintain a data center cooling system sometimes where you need a DC generator. Which type of generator do you prefer based on fuel type generator type, cost, energy, and budget?
+  - Tags: Combined Bank, AME/AE(IT) 2024
+
+### 6.4 SUPER ICT 150++ — Cyber Security, Big Data and Data Mining — `super-ict-150-cyber-security-big-data-and-data-mining`
+
+- **Source:** SUPER ICT 150++ Questions Book (Bit to Exabyte)
+- **Kind:** collection
+
+#### Written
+
+- **SEC-1** What is Cyber security?
+  - Tags: Combined Bank AME/AHE, SO(IT) 2023
+- **SEC-2** What is CIA Triad?
+  - Tags: Teletalk AM(IT), EGCB SAE (ICT) 2023
+- **SEC-3** What are the differences among Virus, Worms and Trojan horse?
+  - Tags: 45th BCS, CSE 2024
+- **SEC-4** Explain XSS and CSRF (how do you prevent these attacks).
+  - Tags: Titas Gas AE(CSE) 2024
+- **SEC-5** Let you procure a microfinance application and host it in your office's data center. What kind of cyber-security threats should you be aware of and what steps would you take to mitigate the threats?
+  - Tags: Combined Bank, SO(IT) 2024
+- **SEC-6** Write down the top 10 cyber-attack.
+  - Tags: Combined Bank AME/AHE, SO(IT), Officer(IT) 2023
+- **SEC-7** What is the function of spyware? Give examples.
+  - Tags: 45th BCS (General), ICT 2024
+- **SEC-8** Discuss about Ransom ware and DDoS attack.
+  - Tags: Combined Bank SO(IT) 2023
+- **SEC-9** Explain buffer overflow attack with an example.
+  - Tags: BTCL AME 2023
+- **SEC-10** Write the difference types of Web application attacks?
+  - Tags: MoL AME 2023
+- **SEC-11** What is SQL Injection? How to Prevent against SQL Injection Attacks?
+  - Tags: SGFL AE(IT) 2023; RAKUB Programmer, ME, SPCBL AME 2021, BTV AP 2019
+- **SEC-12** Describe a man-in the middle attack on the Diffie-Hellman key exchange protocol in which the adversary generates two public key pairs for the attack.
+  - Tags: BB AP 2023
+- **SEC-13** Write two differences between SQL Injection and cross site scripting (XSS).
+  - Tags: BCIC, AP 2022
+- **SEC-14** What is DDoS and SQL Injection attack?
+  - Tags: SBL Officer(IT) 2021
+- **SEC-15** Write the name of one virus and one ransomware.
+  - Tags: BTCL, JAM 2022
+- **SEC-16** What is meant by malware? Briefly describe it with examples.
+  - Tags: 40th BCS 2021
+- **SEC-17** If you downloaded the email, you will be able to face the problem. Which attack do you face?
+  - Tags: BCC AP 2023
+- **SEC-18** Difference among Black Hat hacker, Grey hat hacker and white hat hacker.
+  - Tags: Combined Bank Officer(IT) 2023
+- **SEC-19** Difference between active and passive attack.
+  - Tags: BEPZA Programmer 2023
+- **SEC-20** Difference between Conventional signatures & digital signatures?
+  - Tags: 45th BCS (General), ICT 2024
+- **SEC-21** Difference between Digital signature and Digital certificate.
+  - Tags: Combined Bank Officer(IT) 2023
+- **SEC-22** What is digital signature? Where is it used?
+  - Tags: BPSC AE 2022
+- **SEC-23** What is a digital signature? Describe its role in digital security?
+  - Tags: BPSC AP 2022
+- **SEC-24** Write down the purpose of Certification Authority (CA) in Digital Signature.
+  - Tags: BPSC SAE 2021
+- **SEC-25** Write down the difference between Authentication and Authorization.
+  - Tags: 40th BCS 2020
+- **SEC-26** What is public key encryption? Explain digital signature with example.
+  - Tags: ICT Ministry AP 2017
+- **SEC-27** Difference between symmetric and asymmetric key encryption.
+  - Tags: BEPZA Programmer 2023
+- **SEC-28** What is Symmetric and Asymmetric Encryption? Explain with example.
+  - Tags: NPCBL ET(Soft); WZPGCL AE(CSE) 2023, BPSC SAE 2021
+- **SEC-29** Distinguish between Symmetric Encryption and Asymmetric Encryption. Give some examples of encryption algorithm.
+  - Tags: Rupali Bank ANE 2023
+- **SEC-30** What is meant by Encryption and Decryption?
+  - Tags: Combined Bank AME/AHE 2023
+- **SEC-31** What is Cryptography? Difference between Symmetric and Asymmetric encryption with example. Draw and design public key encryption using Hash function. Draw a diagram for e-commerce online transactions.
+  - Tags: Combined Bank SO(IT) 2023
+- **SEC-32** What are the different types of ciphers in cryptography? What are the factors to be considered for cryptographic strength?
+  - Tags: Rupali Bank ANE 2023
+- **SEC-33** How do you define 2 factor authentication? Give example.
+  - Tags: BPSC AP 2023
+- **SEC-34** What is meant by authentication? Describe two-factor authentication.
+  - Tags: 45th BCS (General), ICT 2024
+- **SEC-35** Identify the type of algorithm? (i) MD5 (ii) AES (iii) RSA (iv) Diffie-Hellman
+  - Tags: BAPEX AGM(ICT) 2023
+- **SEC-36** Describe RSA Algorithm and how it works?
+  - Tags: Teletalk AM(IT) 2023
+- **SEC-37** Briefly describe the relationship among threat, zero days vulnerability and attack. Give examples.
+  - Tags: BPSC AME 2021
+
+### 6.5 SUPER ICT 150++ — Object-Oriented Programming — `super-ict-150-object-oriented-programming`
+
+- **Source:** SUPER ICT 150++ Questions Book (Bit to Exabyte)
+- **Kind:** collection
+
+#### Written
+
+- **PRG-1** What is Polymorphism? Discuss about different types of Polymorphism with example?
+  - Tags: Combined Bank, AP 2024
+- **PRG-2** Write the differences between structured programming and object-oriented programming.
+  - Tags: 45th BCS CSE 2024, Bank SO(AME) 2021
+- **PRG-3** Write down the advantages of OOP over traditional structured programming language.
+  - Tags: Combined Bank Officer(IT) 2023
+- **PRG-4** What is the diamond problem of multiple Inheritance in C++?
+  - Tags: BPSC AP 2023
+- **PRG-8** Write down the Principle of OOP. What is Polymorphism? Write the name of 3 OOP language.
+  - Tags: DESCO SAE 2023, 40th BCS 2021
+- **PRG-9** How many classes can be used in Hybrid Inheritance?
+  - Tags: BCC AP 2023
+- **PRG-10** What is virtual function with example?
+  - Tags: BITAC AP 2023
+- **PRG-11** Define Method Overloading and Method Overriding with examples.
+  - Tags: BPSC AP, 17th NTRCA(ICT) 2023, Bank SO(AME), RAKUB Programmer, BPSC AME 2021, NU AP 2020
+- **PRG-12** What is Polymorphism? Explain it in the light of the Java language.
+  - Tags: BTCL, JAM 2022
+- **PRG-13** What are the various Access Specification in C++? Explain their purpose with are example.
+  - Tags: BPSC, ADA 2022
+- **PRG-14** Explain any two features of Object Oriented Programming with examples.
+  - Tags: BPSC AP 2021
+- **PRG-15** What are Static binding and Dynamic binding in Object Oriented Programming? Explain.
+  - Tags: BPSC AP 2021
+- **PRG-16** Write the definition of Inheritance, Polymorphism with coding example.
+  - Tags: Combined Bank, AP 2021
+  - Also asked in: AP, CoB-2021
+- **PRG-17** What is the difference between Procedural Oriented and Object Oriented Programming Languages? Give 2 examples of each Language.
+  - Tags: BPSC AP 2021
+- **PRG-18** Inheritance is one of important issues for any object oriented programming language. The main advantage of Inheritance is the ability to reuse the code. Explain in brief different types of Inheritance.
+  - Tags: Combined Bank, Officer(IT) 2020
+- **PRG-19** Briefly Describe Abstraction, Encapsulation.
+  - Tags: BCC Programmer 2019
+- **PRG-20** What do you mean by Polymorphism and Inheritance in object oriented programming (OOP)? Give appropriate example.
+  - Tags: PBL SO 2018
+- **PRG-22** What is constructor function? Write the properties of it.
+  - Tags: WZPGCL AE(CSE) 2023
+- **PRG-24** What is the constructor invoked in OOP?
+  - Tags: BPSC, AP 2022
+- **PRG-25** Why are constructor and destructor functions used in object oriented programming? Give examples of each function in C++ or java language.
+  - Tags: BPSC SAE 2021
+- **PRG-26** What is main difference Destructor and constructor with example?
+  - Tags: PSB Programmer 2018
+- **PRG-27** Write the difference between throw and throws using Exception handling?
+  - Tags: PBL SO 2018
+- **PRG-28** What is Multithreading programming? Why Multithreading used in programming?
+  - Tags: Combined Bank, AP 2024
+- **PRG-29** Write down the difference between Multitasking and Multiprocessing.
+  - Tags: DESCO SAE 2023
+- **PRG-30** How does dynamic programming relate with divide and conquer approach?
+  - Tags: BPSC AP 2023
+- **PRG-31** Write down the difference between Divide and Conquer and Dynamic Programming.
+  - Tags: WZPGCL AE(CSE) 2023
+- **PRG-32** What syntax is used for calling static methods in class?
+  - Tags: BCC AP 2023
+- **PRG-33** What is the output of code snippet?
+  - Tags: BCIC, AP 2022
+  - Note: The question is incomplete in the source image.
+- **PRG-34** Both the algorithm the Divide and Conquer and Dynamic Programming solve a problem by breaking it into smaller problem instances and by solving them. What are the difference between their two techniques?
+  - Tags: BCC AP 2021
+- **PRG-35** In the context of object oriented programming, what is meant by function overloading? Give an example of function overloading.
+  - Tags: 40th BCS 2020
+- **PRG-36** What is the difference among String, String Buffer and String Builder?
+  - Tags: DBBL PO 2017
+- **PRG-37** Suppose you've a method name "totalAmount" and there three properties (transactionName, transactionType, amount). Write down the full code using JAVA where totalAmount method return total balance after debit or credited.
+  - Tags: PBL SO 2018
+- **PRG-38** Write a program using any programming language that reads five numbers from keyboard and display the smaller, larger and average of those numbers.
+  - Tags: BDB SO (IT) 2017
+- **PRG-39** Write a java program based on following conditions: There is one Circle class and one Cylinder Class. Circle class has an area function. Cylinder class has to calculate the circle area at the base and height of its own (Cylinder area = Circle area*height). Use inheritance to calculate Volumn of Cylinder.
+  - Tags: DBBL PO 2017
+- **PRG-40** Write down a method to find out how many times an object has been instantiated in Java?
+  - Tags: BUET M. Sc. May 2016
+- **PRG-41** Define types of processor for the following language: Python, C, C++, Java.
+  - Tags: BUET M. Sc. May 2016
+
+### 6.6 SUPER ICT 150++ — C Programming — `super-ict-150-c-programming`
+
+- **Source:** SUPER ICT 150++ Questions Book (Bit to Exabyte)
+- **Kind:** collection
+
+#### Written
+
+- **CPR-1** What is the difference of the following: getc (), getchar (), getch () and getche ()?
+  - Tags: 45th BCS, ICT 2024
+- **CPR-2** What is the difference between Null and Void?
+  - Tags: BCC AP 2023
+- **CPR-3** What is the difference between sizeof c+1 and sizeof (c+1)?
+  - Tags: BPSC AP 2023
+- **CPR-5** Write about the syntax of function.
+  - Tags: BARC Programmer 2023
+- **CPR-6** Distinguish between Compiler and Interpreter with example.
+  - Tags: BPSC ADA, AP 2022; 40th BCS, PGCB SAE (CSE) 2021; 40th BCS 2020; BCC Programmer 2019
+- **CPR-7** What is called a Formatted Input/output Statement? How can input be taken from the Key-Board? What is the meaning of %d?
+  - Tags: BPSC ANE 2020
+- **CPR-8** What are the main objectives of structured programming? Write two advantages of structured programming.
+  - Tags: SPARRSO 2020
+- **CPR-9** Difference between getch () and getche ().
+  - Tags: BBL AM (ICT) 2019
+- **CPR-10** Write down the role of a linker.
+  - Tags: BUET M.Sc. May-2016
+- **CPR-11** How can we initialize 1-D array? How can we pass the array to a function in C?
+  - Tags: 45th BCS, CSE 2024
+- **CPR-12** Write the format of the if.......else statement.
+  - Tags: BPSC ANE 2020
+- **CPR-13** What is looping? Why use looping? Give a proper example.
+  - Tags: BCPSC AP 2018
+- **CPR-14** What is the basic difference between looping and branching?
+  - Tags: BCPSC AP 2018
+- **CPR-15** Write a simple program in C to swap two integer values using 'Call by value'.
+  - Tags: BPSC AP 2023
+- **CPR-16** Differences between 'Call by Value' and 'Call by Reference'.
+  - Tags: BPSC AP, 17th NTRCA(ICT) 2023; BPSC ADA, AP 2022; PSB AP 2018
+- **CPR-17** Explain recursion with examples and explain Parameter Passing.
+  - Tags: 17th NTRCA(ICT) 2023
+- **CPR-18** Difference between Array and Structure data type.
+  - Tags: BPSC AP 2022; BPSC AE 2022; BPSC AP, BOF AE(CSE) 2021
+- **CPR-19** What do you mean by recursion? Calculate factorial function using recursion with C programming code.
+  - Tags: 45th BCS ICT 2024; Milk Vita AM(CSE) 2023; BPSC AP 2022; BPSC AP, ANE 2020
+- **CPR-20** Write a function to find the smallest element from an array.
+  - Tags: Combined Bank AP 2023
+  - Also asked in: AP, COB-2023
+- **CPR-21** What is the difference between array and pointer?
+  - Tags: BPSC AME 2021
+- **CPR-22** Difference between ++i and i++.
+  - Tags: 17th NTRCA(ICT) 2023; NU AP 2020
+- **CPR-23** What is file pointer in C?
+  - Tags: BBL AM (ICT) 2019
+- **CPR-24** The maximum subarray is the task of finding a contiguous subarray with the largest sum within a given one dimensional array of numbers. Suppose the array is: A: [-2, 1, -3, -1, 2, 1, -5, 4]
+  - Tags: BPDB AE(CSE) 2023
+- **CPR-25** Find the output of following program: int i, j, p, sum; sum = 0; for(i = -1, p = 0; i <= 10; i = i + 2) { p = i * i; if(i > 5) break; sum = sum + (i + p); printf("i=%d, p=%d, sum=%d\n", i, p, sum); } printf("\n Outsite Loop, i=%d, p=%d, sum=%d\n", i, p, sum); return 0;
+  - Tags: BGDCL AE (CSE) 2021
+- **CPR-26(i)** Find the output of following program: int main() { int n = 10; for(;;) printf("%d", n); return 0; }
+  - Tags: PSB AP 2018
+- **CPR-26(ii)** Find the output of following program: int main() { int i = 2, j = 2; while(i ? --i : j++) printf("%d", i); return 0; }
+  - Or
+  - Tags: PSB AP 2018
+- **CPR-27(i)** Find the output of following program: int main() { char str[120] = "Digital Bangladesh"; int n; n = strlen(str); str[4] = '\0'; printf("%s", str); return 0; }
+  - Tags: PSB Programmer 2018
+- **CPR-27(ii)** Find the output of following program: int main() { int i; for(i = 0; i < 5; i++) { if(i == 3) continue; printf("%d\n", i); } return 0; }
+  - Or
+  - Tags: PSB Programmer 2018
+- **CPR-28** After compilation and execution, what will be output in the following code:
+  - Tags: DPDC JAM (ICT) 2020
+- **CPR-29** What will be the outcome of the following conditional statement if the value of s is 10?
+  - Tags: Others
+- **CPR-30** What would happen to X in this expression: x+=15; (assuming the value of X is 5)
+  - Tags: Others
+- **CPR-31** Find the output from the following: take input and looks the output: #include <stdio.h> int reverseNumber(int num) { int reverse = 0; while (num != 0) { reverse = reverse * 10 + num % 10; num /= 10; } return reverse; } int main() { int input, output; printf("Enter a number: "); scanf("%d", &input); output = reverseNumber(input); printf("Input: %d\n", input); printf("Output: %d\n", output); return 0; }
+  - Tags: BGDCL, AM(CSE)2024
+- **CPR-32** Write a C program to print Fibonacci series without using recursion and using recursion.
+  - Tags: 17th NTRCA(CSE) 2023; BB AP 2016
+- **CPR-33** Write a C program to find nth Fibonacci number using Recursion.
+  - Tags: KGDCL AE(CSE) 2021
+- **CPR-34** Given two integers A and B as input write a program to compute the least common multiple of A and B.
+  - Tags: BB AP 2023
+- **CPR-35** Write a c program to reverse given number.
+  - Tags: Others
+- **CPR-36** Write a program to reverse string without using library function.
+  - Tags: BREB AP 2023; Combined 2 bank, ADA 2022
+- **CPR-37** Write a program in any language to find the sum of rows and columns of a m x n matrix, where m and n is taken input from the user. Give the output in the following format:
+  - Tags: Combined Bank, SO(IT) 2024
+- **CPR-38(a)** Write a program in any language that takes two matrices A and B as inputs ensure your code handles matrices of different dimensions- A) Find matrices C that is multiplication A and B.
+  - Tags: Combined Bank SO(IT) 2023
+- **CPR-38(b)** Write a program in any language that takes two matrices A and B as inputs ensure your code handles matrices of different dimensions- B) Find average in A and B.
+  - Tags: Combined Bank SO(IT) 2023
+- **CPR-38(c)** Write a program in any language that takes two matrices A and B as inputs ensure your code handles matrices of different dimensions- C) Max from matrices C
+  - Tags: Combined Bank SO(IT) 2023
+- **CPR-39** Write a C Program Find sum of the series: 1+2+4+7+11+..........+N
+  - Tags: Combined Bank, AP 2024
+- **CPR-40** Write a program from the following series: e^x = 1 + x/1! + x²/2! + x³/3! + ..........
+  - Tags: SB PCL, ADBA 2024
+- **CPR-41** Write a program in C++ to calculate the sum of the series: 1+(1+2)+(1+2+3)+....+(1+2+....+n).
+  - Tags: MM AP 2017
+- **CPR-42** Write a C program to find the length of a String without using function strlen().
+  - Tags: BPSC AME 2021
+
+### 6.7 SUPER ICT 150++ — Computer Fundamentals and Computer Architecture — `super-ict-150-computer-fundamentals-and-computer-architecture`
+
+- **Source:** SUPER ICT 150++ Questions Book (Bit to Exabyte)
+- **Kind:** collection
+
+#### Written
+
+- **CFA-1** What is Computer Generation? Describe the characteristics of different generations of computers?
+  - Tags: 18th NTRCA School 2024
+- **CFA-2** What is OCR? Write down the difference between OCR and OMR.
+  - Tags: NPCNL JAM 2022
+- **CFA-3** Name and define the components of a computer system. Mention two optical input devices.
+  - Tags: BPSC ADA 2022
+- **CFA-4** What do understand by the resolution of computer screen?
+  - Tags: BPSC AP 2022
+- **CFA-5** What are the components of a Micro-computer system?
+  - Tags: BPSC ADA 2022
+- **CFA-6** Explain Impact Printer Non-impact printer.
+  - Tags: Bank SO(AME) 2021
+- **CFA-7** Distinguish between OMR and MICR.
+  - Tags: BB AME 2016
+- **CFA-8** Suppose you are entering data into computer but facing some problem with your monitor. You need to buy a new monitor. What factor should you consider in case of monitor?
+  - Tags: BB AME 2016
+- **CFA-9** Write down the difference between Serial Port and Parallel Port.
+  - Tags: DESCO SAE 2023
+- **CFA-10** Differentiate among Core Intel i3, i5 and i7 processor.
+  - Tags: Combined Bank SO(IT) 2023
+- **CFA-11** Difference between SAS and SATA. Which one is best server?
+  - Tags: PBL HE 2023
+- **CFA-12** "Pentium processor has a superscalar architecture." Explain the meaning of statement.
+  - Tags: MM AP 2017
+- **CFA-13** What is the difference between System Software and Application Software?
+  - Tags: NPCNL JAM 2022, 45th BCS (General) ICT 2024, MM AP 2017, BB AME 2016
+- **CFA-14** What is the main role of the BIOS system of a computer?
+  - Tags: 45th BCS (General), ICT 2024
+- **CFA-15** Explain BIOS in Server. How does affect booting configuration in Hardware maintenance.
+  - Tags: RAKUB ANSE 2023
+- **CFA-16** Describe the booting process in windows system.
+  - Tags: PBL HE 2023
+- **CFA-17** What is BIOS?
+  - Tags: EGCB SAE(ICT) 2023
+- **CFA-18** What is platform independent software discuss with example?
+  - Tags: Combined Bank SO(IT) 2023
+- **CFA-19** What is meant by Software? Give a brief description of System Software and Application Software with examples.
+  - Tags: 40th BCS 2021
+- **CFA-20** What is the function of GPU?
+  - Tags: BPSC AP 2022
+- **CFA-21** What buses are there in a typical microcomputer? Show the connection of RAM, ROM and I/O with a microprocessor through buses.
+  - Tags: BPSC SAE 2021
+- **CFA-22** What is computer bus? What is the unit of measurement of speed of computer bus? Describe about various types of computer bus.
+  - Tags: BKKB AP 2017
+- **CFA-23** Write down the necessary components of a USB bus with block diagram.
+  - Tags: ICT Ministry AP 2017
+- **CFA-24** Using the IF function of MS-Excel, write the formula that finds the smallest of cells A1, B1 and C1 and places it in D1.
+  - Tags: PGCB SAE (CSE) 2021
+- **CFA-25** What is pipelining? How does pipeline implementation make faster instruction execution?
+  - Tags: 38th BCS
+- **CFA-26** How does an interrupt can be enabled? What are the steps that occur when an interrupt is processed?
+  - Tags: 38th BCS
+
+### 6.8 Assistant Programmer Exam Question Topics (2021–2026) — `assistant-programmer-exam-question-topics-2021-2026`
+
+- **Source:** ICT Wizard
+- **Kind:** collection
+
+#### Written
+
+- **1.1** Explain the concept of inheritance in Object-Oriented Programming. Name and describe three common types.
+  - Tags: AP, COB-2026
+- **1.10** Check whether a given sequence is a Mountain sequence or not.
+  - Tags: AP, CoB-2021
+- **1.2** What is Polymorphism? Discuss different types with examples.
+  - Tags: AP, COB-2024
+- **1.4** Write a C/C++ Program for Account, Savings, and Current Account hierarchy.
+  - Tags: AP, CoB-2021
+- **1.5** Program to print Prime numbers from 1 to n.
+  - Tags: AP, COB-2024
+- **1.6** Program to print Floyd's Triangle for n = 5.
+  - Tags: AP, COB-2024
+- **1.7** C++ program for series sum: 1 + 2 + 4 + 7 + 11 + ........ + N.
+  - Tags: AP, COB-2024
+- **1.8** Find LCM of two integers A and B using C/C++.
+  - Tags: AP, BB-2023
+- **2.1** Step-by-step Binary Search logic & why it fails on unsorted arrays.
+  - Tags: AP, COB-2026
+- **2.10** Hash table linear probing with h(k) = k mod 13.
+  - Tags: AP, BB-2023
+- **2.11** Max Heap construction and operations.
+  - Tags: AP, COB-2023
+- **2.2** Implement Queue (FIFO) using only two Stacks.
+  - Tags: AP, COB-2026
+- **2.3** Bubble Sort logic vs Merge Sort efficiency comparison.
+  - Tags: AP, COB-2026
+- **2.4** Flowchart to determine the largest of three numbers (A, B, C).
+  - Tags: AP, COB-2026
+- **2.5** Heuristic search (A*) vs Blind search (BFS) efficiency comparison.
+  - Tags: AP, COB-2026
+- **2.6** Stack vs Queue differences & application problems.
+  - Tags: AP, COB-2024
+- **2.7** Topological sorting for DAG with C/C++ program.
+  - Tags: AP, CoB-2021
+- **2.8** C/C++ program to check Balanced Parentheses in an expression.
+  - Tags: AP, CoB-2021
+- **2.9** Max non-overlapping jobs selection algorithm (Greedy approach).
+  - Tags: AP, CoB-2021
+- **3.1** IP addressing & routing using OSPF at the network layer.
+  - Tags: AP, COB-2026
+- **3.2** Checksum logic and data integrity verification during file transfer.
+  - Tags: AP, COB-2026
+- **3.3** Best OSI layer for end-to-end encryption based on cost & maintainability.
+  - Tags: AP, BB-2023
+- **3.4** Channel Capacity calculation using Shannon Capacity Formula (B=3000Hz, SNR=3162).
+  - Tags: AP, COB-2023
+- **4.1** Process vs Thread differences & advantages of multithreading.
+  - Tags: AP, COB-2026
+- **4.2** Producer-Consumer problem and synchronization mechanisms.
+  - Tags: AP, COB-2026
+- **4.3** Multithreading programming purpose & utility.
+  - Tags: AP, COB-2024
+- **4.4** Page Fault calculation using FIFO algorithm.
+  - Tags: AP, COB-2023
+- **4.5** What is Kernel? Objectives of Kernel.
+  - Tags: SPCBL, SAP-2022
+- **4.6** Short note on Virtual Memory & Cache Memory.
+  - Tags: SPCBL, SAP-2022
+- **5.1** Library database design: Relationship between Book & Borrower tables.
+  - Tags: AP, COB-2026
+- **5.2** Types of relationships in DBMS (1:1, 1:N, M:N).
+  - Tags: AP, COB-2024
+- **5.3** SQL query to count romantic comedy movies.
+  - Tags: AP, BB-2023
+- **5.4** SQL JOIN queries on multiple relational tables.
+  - Tags: AP, COB-2023 / 6BFI-2021
+- **6.1** Man-in-the-Middle (MitM) attack on Diffie-Hellman Key Exchange.
+  - Tags: AP, BB-2023
+- **6.2** CIA Triad vs Threats (Interception, Falsification, DoS, Masquerade).
+  - Tags: AP, BB-2023
+- **6.3** Risks of stolen TLS private keys.
+  - Tags: AP, COB-2023
+- **6.4** SQL Injection (SQLi) explanation & prevention techniques.
+  - Tags: SAP, SPCBL-2022
+- **6.5** Cross-Site Scripting (XSS) attack & prevention methods.
+  - Tags: SAP, SPCBL-2022
+- **7.1** Prove NAND Gate as a Universal Gate.
+  - Tags: AP, COB-2026
+- **7.2** CRC Error Detection calculation (Data=11100, Divisor=1001).
+  - Tags: AP, COB-2023
+- **7.3** SDLC phases explanation.
+  - Tags: AP, COB-2026
+- **7.4** Version Control: Git Commit vs Git Push.
+  - Tags: AP, COB-2026
+- **7.5** Supervised vs Unsupervised vs Reinforcement Learning.
+  - Tags: AP, COB-2026
+
+## 7. Others — `others`
+
+### 7.1 Unidentified Written Paper — Demonstrator (Computer/ICT) — `unidentified-written-paper-demonstrator-computer-ict`
+
+- **Post:** Demonstrator (Computer/ICT)
+- **Source:** Information and Communication Technology, subject code 325
+
+#### Written
+
+- **1** What is meant by computer generation? Write the characteristics of the different computer generations with examples.
+  - Marks: 10
+- **2** What is a computer? Describe the classification of computers based on size, shape and capability.
+  - Marks: 10
+- **3** What is meant by computer organization? Discuss computer organization with a diagram.
+  - Marks: 10
+- **4** What is a positional number system? Discuss, with examples, the rules for converting a decimal number into the binary, octal and hexadecimal number systems.
+  - Marks: 10
+- **5** Describe a simple data processing system with a diagram.
+  - Marks: 10
+- **6** Express XOR and XNOR gates using NAND gates.
+  - Marks: 10
+- **7** What is the necessity of 2's complement? Using the 2's complement method, subtract (65)₁₀ from (75)₁₀.
+  - Marks: 10
+- **8** Discuss the features of DOS. Write the procedure for starting a computer through Windows.
+  - Marks: 10
+- **9** Create an algorithm and a flowchart for converting a Fahrenheit temperature into a Celsius temperature.
+  - Marks: 10
+- **10** Discuss the advantages and disadvantages of e-mail. What is a web browser? Describe the process of browsing the World Wide Web.
+  - Marks: 10
+
+### 7.2 Unidentified Written Paper — Assistant Teacher (ICT) — `unidentified-written-paper-assistant-teacher-ict`
+
+- **Post:** Assistant Teacher (Information and Communication Technology)
+- **Source:** Information and Communication Technology (ICT), subject code 313
+
+#### Written
+
+- **1** What is meant by computer generation? Describe the characteristics of the different generations of computers.
+  - Marks: 10
+- **3** What is ALU? Describe its working method with a diagram.
+  - Marks: 10
+- **5** What is the 2's complement method? Using the 2's complement method, subtract (+11)₁₀ from (−15)₁₀.
+  - Marks: 10
+- **6** Draw a flowchart and write an algorithm to find the GCD (HCF) of two numbers.
+  - Marks: 10
+- **9** What is DOS? Explain the functions and types of operating systems.
+  - Marks: 10
+- **10** Find the simplified value of the expression X = A′BC + AB′C + ABC′ + ABC and implement it using NAND and NOR gates.
+  - Marks: 10
+
+### 7.3 Unidentified Written Paper — Teacher Registration (School), Computer, Set 1 — `unidentified-written-paper-teacher-registration-school-computer-set-1`
+
+- **Post:** Teacher Registration (School), Computer
+- **Source:** Computer
+
+#### Written
+
+- **5(a) Or** Show the implementation of NOT, OR and AND gates with the help of NOR gates.
+  - Or
+- **5(b) Or** If F = X′Y + XYZ′, prove that F.F′ = 0.
+  - Or
+- **6 Or** Write the symbols of a program flowchart with their meanings.
+  - Or
+  - Marks: 5
+- **7** Write an algorithm to find the GCD (HCF) of two numbers.
+  - Marks: 5
+- **7 Or** Draw a flowchart to find the area of a rectangle.
+  - Or
+  - Marks: 5
+- **8** What is a code? Write the characteristics of the ASCII code.
+  - Marks: 5
+- **8 Or** What is e-mail? Write about the structure of an e-mail address.
+  - Or
+  - Marks: 5
+- **9 Or** By what logic is 1 + 1 = 1 and 1 + 1 = 10? Explain.
+  - Or
+  - Marks: 5
+- **10** Simplify the expression ((A + C′)(B′ + D))′ and draw the logic circuit.
+  - Marks: 5
+- **10 Or** What is an algorithm? Write the characteristics of an algorithm.
+  - Or
+  - Marks: 5
+
+### 7.4 Unidentified Written Paper — Teacher Registration (School), Computer, Set 2 — `unidentified-written-paper-teacher-registration-school-computer-set-2`
+
+- **Post:** Teacher Registration (School), Computer
+- **Source:** Computer
+
+#### Written
+
+- **2(b)** Discuss hardware and software comparatively.
+  - Marks: 5
+- **3(a)** What is software? Discuss different types of application software.
+  - Marks: 10
+- **3(b)** Write the important functions of an operating system.
+  - Marks: 5
+- **3(a) Or** What is a time-sharing operating system? Discuss the working method of a time-sharing operating system with a diagram.
+  - Or
+  - Marks: 10
+- **3(b) Or** What is a utility program? Mention its functions.
+  - Or
+  - Marks: 5
+- **4(b)** Express the number (23.45)₁₀ in binary.
+  - Marks: 5
+- **4(b) Or** What is BCD code? Express the number (27)₁₀ in BCD code.
+  - Or
+  - Marks: 5
+- **5(a)** Write De Morgan's two theorems and prove them by means of a truth table for three variables.
+  - Marks: 10
+- **5(b)** Simplify the expression A′BC + AB′C + ABC with the help of Boolean algebra.
+  - Marks: 5
+- **5(a) Or** What is a universal gate? Prove the universality of the NAND gate.
+  - Or
+  - Marks: 10
+- **5(b) Or** Implement the X-OR gate using basic gates.
+  - Or
+  - Marks: 5
+
+### 7.5 Unidentified Written Paper — Teacher Registration (School), Computer, Set 3 — `unidentified-written-paper-teacher-registration-school-computer-set-3`
+
+- **Post:** Teacher Registration (School), Computer
+- **Source:** Computer
+
+#### Written
+
+- **6** Describe the distributed operating system.
+- **6 Or** What is a web browser? Describe its functions with examples.
+  - Or
+- **7** What do you understand by an algorithm? What are its conditions?
+- **7 Or** Write an algorithm to find the sum of the natural numbers from 1 to 100.
+  - Or
+- **8** What is a code? Write about the EBCDIC code.
+- **8 Or** Represent the expression Y = A + A′B + A′B′ by means of a truth table.
+  - Or
+- **9** Prove with the help of Boolean algebra: (x + y)(x + z) = x + yz
+- **9 Or** Write an algorithm to determine whether a number is even or odd.
+  - Or
+- **10** What is E-mail? Explain how information can be exchanged with the help of e-mail.
+
+### 7.6 Unidentified Written Paper — Teacher Registration (School), Computer, Set 4 — `unidentified-written-paper-teacher-registration-school-computer-set-4`
+
+- **Post:** Teacher Registration (School), Computer
+- **Source:** Computer
+
+#### Written
+
+- **7** Express the number (239)₁₀ in BCD 8421 code. What is a printer?
+  - Marks: 5
+- **7 Or** Write the differences between OMR and OCR. What is MICR?
+  - Or
+  - Marks: 5
+- **8** What is virtual memory? What kind of advantage does a computer get if the virtual memory is larger? Write briefly.
+  - Marks: 5
+- **8 Or** Briefly discuss the multiprocessing operating system with a diagram.
+  - Or
+  - Marks: 5
+- **9** Write the units of time measurement of a computer and their relation to the second. What is a PC?
+  - Marks: 5
+- **9 Or** Divide (1101)₂ by (101)₂. What is firmware?
+  - Or
+  - Marks: 5
+- **10** Write the differences between a microcomputer and a microprocessor. What are the advantages of drawing a flowchart?
+  - Marks: 5
+- **10 Or** Draw a flowchart to find the sum of the series 1 + 3 + 5 + ...... + 99. Briefly discuss the advantages of using a mouse as an input device.
+  - Or
+  - Marks: 5
+
+### 7.7 Unidentified MCQ List (Questions 311–378) — `unidentified-mcq-list-questions-311-378`
+
+
+#### MCQ
+
+- **316** An operating system plays a role in connecting a person with the computer through various symbols, icons or visual metaphors. Which of the following refers to this type of function?
+- **319** In a cellular data network, what is meant by GPRS?
+- **324** Which technology, an example of distributed computing, provides utility-based computing services according to customer demand?
+- **326** Which of the following technologies is used in face recognition systems?
+- **334** What type of memory is usually used in embedded systems?
+- **336** What is the most widely used protocol for exchanging data over the Internet?
+- **342** Which of the following is a function of computers in medicine?
+- **343** In which year was the Money Laundering Prevention Act enacted?
+- **349** Which of the following devices works as an input or output device?
+- **350** Which of the following octal numbers is equivalent to the decimal number 45?
+- **352** Which cyber attack, when it occurs, prevents the user from using his own computer system and demands money to make the computer system usable?
+- **355** In an Internet communication system, which translates a hostname into an IP address?
+- **360** A computer program that copies itself to other computers through the Internet is called-
+- **365** API means-
+- **376** Which Bangladeshi co-founded YouTube jointly with Steve Chen and Chad Hurley?

@@ -161,11 +161,50 @@ Free, structured tutorials on Computer Science and IT subjects, programming lang
 
 **Importance:** High for structured tutorials and for cross-checking definitions and explanations.
 
+### 2.5 Programiz
+
+- Main URL: https://programiz.com/
+
+**Primary purpose:**
+
+Beginner-friendly programming tutorials with clear explanations, tested example programs and their outputs.
+
+**Use this website for:**
+
+- Programming languages (C, C++, Java, Python and others).
+- Programming concepts (data types, operators, control statements, functions, arrays, pointers, structures, file handling, object-oriented programming).
+- Data Structures and Algorithms (with example programs).
+- Example programs and their outputs.
+- Cross-checking definitions, syntax and program behaviour.
+
+**Research instructions:**
+
+1. Navigate to the relevant language or DSA tutorial.
+2. Explore its table of contents and find the pages for the current topic and its subtopics.
+3. Follow relevant internal links (including its example-program pages).
+4. Review definitions, explanations, syntax, examples and outputs.
+5. Cross-check its facts with the other primary websites.
+6. Record useful individual article URLs in the topic's References section.
+
+**Importance:** High for programming and Data Structures and Algorithms topics, and for cross-checking explanations.
+
+### 2.6 Tutorial Index Pages (start here to find topic pages)
+
+Open the table of contents of the matching tutorial first; it lists the exact page for each topic and avoids missed pages and 404 errors.
+
+| Subject | IT Job QnS | TutorialsPoint | GeeksforGeeks | TpointTech | Programiz |
+| --- | --- | --- | --- | --- | --- |
+| Data structures | https://it.jobqns.com/data-structure/ | https://www.tutorialspoint.com/data_structures_algorithms/index.htm | https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/ | https://www.tpointtech.com/data-structure-tutorial | https://www.programiz.com/dsa |
+| Algorithms (DAA) | https://it.jobqns.com/design-and-analysis-of-algorithm/ | https://www.tutorialspoint.com/design_and_analysis_of_algorithms/index.htm | https://www.geeksforgeeks.org/dsa/dsa-tutorial-learn-data-structures-and-algorithms/ | https://www.tpointtech.com/daa-tutorial | https://www.programiz.com/dsa |
+| Operating systems | https://it.jobqns.com/operating-system/ | https://www.tutorialspoint.com/operating_system/index.htm | https://www.geeksforgeeks.org/operating-systems/operating-systems/ | https://www.tpointtech.com/os-tutorial | — (no OS tutorial) |
+
+The full list of IT Job QnS subject pages is on its home page, https://it.jobqns.com/ (for example `/operating-system/`, `/database-management-system/`, `/computer-network/`, `/software-engineering/`).
+
 ---
 
 ## 3. Internal Link Exploration Policy
 
-The four primary URLs are starting points for research, not the complete list of references.
+The five primary URLs are starting points for research, not the complete list of references.
 
 Claude must explore relevant internal links from these websites for every topic.
 
@@ -182,7 +221,7 @@ For each approved topic:
 
 ### Link exploration rules
 
-- Prioritize the four primary websites listed in this file.
+- Prioritize the five primary websites listed in this file.
 - Follow relevant internal links from these websites.
 - Do not restrict research to the exact homepage URLs.
 - Do not crawl entire websites without a topic-related reason.
@@ -205,7 +244,31 @@ Use each source according to its strengths.
 | TutorialsPoint               | Structured tutorials and conceptual explanations      |
 | GeeksforGeeks                | Technical details, algorithms, examples, and practice |
 | TpointTech                   | Structured tutorials and cross-checking explanations  |
+| Programiz                    | Programming and DSA tutorials, example programs        |
 | Additional reputable sources | Verification and missing information                  |
+
+### Source priority rule (from the project owner)
+
+The five primary websites (IT Job QnS, TutorialsPoint, GeeksforGeeks, TpointTech, Programiz) always have priority over every other source.
+
+1. **Check first, write after.** For every subtopic, definition and comparison ("difference between …") table, search all five primary websites for that exact item and read the matching pages. Prepare the answer only after this check is done.
+2. **Use their answers as the basis.** Include the points, classifications and comparison-table rows they give (in original wording). Never drop a point as "unsourced" without checking the primary websites.
+3. **When one primary website has an issue, cross-check the others first.** If a primary website has a factual error, a contradiction, or an unclear or incomplete answer, check the same item on **all the other primary websites**.
+4. **Other sources only when needed.** Visit any other website **only** if:
+   1. the primary websites do not cover the item, or
+   2. after cross-checking all the primary websites, there is still an issue or any confusion (they disagree, all are unclear, or the answer still looks wrong).
+
+   Then use authoritative sources (official documentation, standards, textbooks, established encyclopedias) to settle it, and cite them.
+5. **No issue, no extra sites.** If the primary websites answer an item correctly and agree, do not visit other sites for it.
+6. **Accuracy first.** The notes are used for examination preparation, so a wrong fact costs the reader marks. Never publish a point you are not sure of; resolve every doubt as above, and report any point that remains uncertain to the project owner.
+
+**How to check the five websites (mandatory for every topic):**
+
+1. **Search each website separately**, one search per website (for example, a web search limited to that one domain). Never rely on a single combined search ("site A OR site B"); it silently misses pages.
+2. **Do not give up after one failed attempt.** If a guessed URL returns 404, search that website for the correct page. If a page is cut off (long menus can fill the first part of a fetched page), read the rest of it.
+3. **Keep a checklist** for the topic: every subtopic and comparison table × the five websites, each cell recording the page that was read or "this website has no page on it". Write the notes only when every cell is filled.
+4. **Write the best answer:** combine the points, classifications, examples and table rows of all five websites into one complete, correct answer.
+5. **Report** to the project owner which websites had no page for an item, and every issue found on a website and how it was resolved.
 
 ### Source verification rules
 
@@ -244,6 +307,10 @@ Use the following format, grouped by source website:
 - [Article title](https://...) — accessed YYYY-MM-DD
 
 **TpointTech**
+
+- [Article title](https://...) — accessed YYYY-MM-DD
+
+**Programiz**
 
 - [Article title](https://...) — accessed YYYY-MM-DD
 
@@ -336,7 +403,10 @@ Both language versions must be technically consistent.
 
 Before considering research for a topic complete, verify:
 
-- [ ] Relevant primary websites were inspected.
+- [ ] **All five** primary websites were searched separately for **every** subtopic and comparison table, and the per-topic checklist (subtopic × website → page read / no page) is complete.
+- [ ] Failed fetches (404, cut-off pages) were retried until the right page was found or the website was confirmed to have no page.
+- [ ] Issues found on a website were cross-checked on the other primary websites, and then on the wider internet if still unresolved.
+- [ ] Mathematical parts (formulas, numerical examples) are included and every calculation was verified.
 - [ ] Relevant subject and topic pages were identified.
 - [ ] Relevant internal links were explored.
 - [ ] Important related articles were reviewed.
@@ -368,7 +438,7 @@ Do not mark a source as Verified merely because its URL exists.
 - Read `CLAUDE.md`, `TOPICS.md`, and this `REFERENCES.md` before researching any topic.
 - Treat `TOPICS.md` as the authoritative list of website topics.
 - Treat this file as the primary research source guide.
-- Use all four primary reference websites actively and intelligently.
+- Use all five primary reference websites actively and intelligently.
 - Explore relevant internal links to find detailed topic-specific resources.
 - Record the sources used in each topic's References section.
 - Report reference statuses (Verified, Inaccessible, Not Relevant) accurately to the project owner.
@@ -379,4 +449,4 @@ Do not mark a source as Verified merely because its URL exists.
 - If a reference is inaccessible, use other available sources and report the limitation.
 - Ask for clarification if the syllabus or source material is ambiguous.
 
-**Most important:** These four websites are general research sources for the entire website, not references for one specific subject. For every approved topic, discover and review the most relevant articles from these websites before creating comprehensive, original, exam-oriented notes.
+**Most important:** These five websites are general research sources for the entire website, not references for one specific subject. For every approved topic, discover and review the most relevant articles from these websites before creating comprehensive, original, exam-oriented notes.

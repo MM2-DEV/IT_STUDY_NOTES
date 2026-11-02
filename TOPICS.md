@@ -212,7 +212,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 3.4 Combinational Circuits — `School-2` `PSC-IT` `AP`
 
-**Slug:** `combinational-circuits` · **Status:** Not started
+**Slug:** `combinational-circuits` · **Status:** English done
 
 - Circuit Design Using Logic Gates — `PSC-IT` `AP`
 - Half Adder and Full Adder — `School-2` `PSC-IT` `AP`
@@ -224,7 +224,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 3.5 Flip-Flops — `School-2` `PSC-IT` `AP`
 
-**Slug:** `flip-flops` · **Status:** Not started
+**Slug:** `flip-flops` · **Status:** English done
 
 - Basic Flip-Flops — `School-2` `PSC-IT` `AP`
 - J-K Flip-Flop — `School-2`
@@ -232,7 +232,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 3.6 Registers — `School-2` `PSC-IT` `AP`
 
-**Slug:** `registers` · **Status:** Not started
+**Slug:** `registers` · **Status:** English done
 
 - Basic Registers — `PSC-IT` `AP`
 - Classification of Registers — `School-2`
@@ -242,7 +242,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 3.7 Counters — `School-2` `PSC-IT` `AP`
 
-**Slug:** `counters` · **Status:** Not started
+**Slug:** `counters` · **Status:** English done
 
 - Basic Counters — `PSC-IT` `AP`
 - Asynchronous Ripple Counter — `School-2`
@@ -250,7 +250,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 3.8 A/D and D/A Conversion — `School-2` `PSC-IT` `AP`
 
-**Slug:** `ad-da-conversion` · **Status:** Not started
+**Slug:** `ad-da-conversion` · **Status:** English done
 
 - Need and Applications — `School-2`
 - Ladder-Type D/A Converter — `School-2`
@@ -260,11 +260,11 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 3.9 PLA Design — `PSC-IT` `AP`
 
-**Slug:** `pla-design` · **Status:** Not started
+**Slug:** `pla-design` · **Status:** English done
 
 ### 3.10 Pulse and Switching Circuits — `PSC-IT` `AP`
 
-**Slug:** `pulse-and-switching-circuits` · **Status:** Not started
+**Slug:** `pulse-and-switching-circuits` · **Status:** English done
 
 - Pulse Mode and Fundamental Mode Logic
 - Pulse and Switching Units
@@ -272,13 +272,13 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 3.11 Digital Logic Families — `PSC-IT` `AP`
 
-**Slug:** `digital-logic-families` · **Status:** Not started
+**Slug:** `digital-logic-families` · **Status:** English done
 
 - DTL, TTL, CMOS and MOS Gates (see note N3)
 
 ### 3.12 Op-Amp Applications — `PSC-IT` `AP`
 
-**Slug:** `op-amp-applications` · **Status:** Not started
+**Slug:** `op-amp-applications` · **Status:** English done
 
 - LED and LCD Applications of Op-Amps
 - Comparators (see note N4)
@@ -289,7 +289,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 4.1 Introduction to Programming — `School-2` `PSC-IT` `AP`
 
-**Slug:** `introduction-to-programming` · **Status:** Not started
+**Slug:** `introduction-to-programming` · **Status:** English done
 
 - Introduction to Computer Programming — `PSC-IT` `AP`
 - Steps of Programming — `School-2`
@@ -300,7 +300,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 4.2 Algorithms and Flowcharts — `School` `School-2`
 
-**Slug:** `algorithms-and-flowcharts` · **Status:** Not started
+**Slug:** `algorithms-and-flowcharts` · **Status:** English done
 
 - Algorithm — `School` `School-2`
 - Variables and Operations — `School`
@@ -308,14 +308,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 4.3 Program Design Techniques — `PSC-IT` `AP`
 
-**Slug:** `program-design-techniques` · **Status:** Not started
+**Slug:** `program-design-techniques` · **Status:** English done
 
 - Structured Program Design
 - Modular Program Design
 
 ### 4.4 Programming Languages and Paradigms — `School-2` `PSC-IT` `AP`
 
-**Slug:** `programming-languages-and-paradigms` · **Status:** Not started
+**Slug:** `programming-languages-and-paradigms` · **Status:** English done
 
 - Types of Programming Languages — `School-2` `PSC-IT` `AP`
 - Programming Paradigms — `PSC-IT` `AP`
@@ -324,7 +324,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 4.5 C: Data Types, Variables and Operators — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `c-data-types-operators` · **Status:** Not started
+**Slug:** `c-data-types-operators` · **Status:** English done
 
 - Fundamentals of C Programming — `College`
 - Data Types — `School-2` `College` `PSC-IT` `AP`
@@ -334,29 +334,29 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 4.6 C: Control Statements — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `c-control-statements` · **Status:** Not started
+**Slug:** `c-control-statements` · **Status:** English done
 
 - Conditional Statements — `School-2` `College` `PSC-IT` `AP`
 - Looping Statements — `School-2` `College` `PSC-IT` `AP`
 
 ### 4.7 C: Arrays and Strings — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `c-arrays-strings` · **Status:** Not started
+**Slug:** `c-arrays-strings` · **Status:** English done
 
 - Arrays — `School-2` `College` `PSC-IT` `AP`
 - Strings — `College` `PSC-IT` `AP`
 
 ### 4.8 C: Pointers — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `c-pointers` · **Status:** Not started
+**Slug:** `c-pointers` · **Status:** English done
 
 ### 4.9 C: Functions — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `c-functions` · **Status:** Not started
+**Slug:** `c-functions` · **Status:** English done
 
 ### 4.10 C: Structures, Unions and Bit-fields — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `c-structures-unions` · **Status:** Not started
+**Slug:** `c-structures-unions` · **Status:** English done
 
 - Structures — `School-2` `College` `PSC-IT` `AP`
 - Unions — `College` `PSC-IT` `AP`
@@ -364,22 +364,22 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 4.11 C: Preprocessor Directives — `School-2` `PSC-IT` `AP`
 
-**Slug:** `c-preprocessor` · **Status:** Not started
+**Slug:** `c-preprocessor` · **Status:** English done
 
 ### 4.12 C: Console and File I/O — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `c-console-file-io` · **Status:** Not started
+**Slug:** `c-console-file-io` · **Status:** English done
 
 - Console I/O — `College`
 - File I/O — `School-2` `College` `PSC-IT` `AP`
 
 ### 4.13 C: Graphics — `School-2`
 
-**Slug:** `c-graphics` · **Status:** Not started
+**Slug:** `c-graphics` · **Status:** English done
 
 ### 4.14 Object-Oriented Programming Concepts — `College` `PSC-IT` `AP`
 
-**Slug:** `oop-concepts` · **Status:** Not started
+**Slug:** `oop-concepts` · **Status:** English done
 
 - Classes and Objects — `College` `PSC-IT` `AP`
 - Methods — `College`
@@ -391,7 +391,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 4.15 C++ and Java — `PSC-IT` `AP`
 
-**Slug:** `cpp-and-java` · **Status:** Not started
+**Slug:** `cpp-and-java` · **Status:** English done
 
 - Introductory Programming with C++/Java
 - Template Functions and Classes
@@ -400,7 +400,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 4.16 Python Programming — `Others`
 
-**Slug:** `python-programming` · **Status:** Not started
+**Slug:** `python-programming` · **Status:** English done
 
 - Introduction and Features of Python
 - Variables, Data Types and Operators
@@ -420,7 +420,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.1 Introduction and Complexity — `College` `PSC-IT` `AP`
 
-**Slug:** `introduction-and-complexity` · **Status:** Not started
+**Slug:** `introduction-and-complexity` · **Status:** English done
 
 - Introduction to Data Structures — `College`
 - Complexity of Algorithms — `College` `PSC-IT` `AP`
@@ -429,14 +429,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.2 Arrays — `School-2` `PSC-IT` `AP`
 
-**Slug:** `arrays` · **Status:** Not started
+**Slug:** `arrays` · **Status:** English done
 
 - Array Representation and Operations — `School-2` `PSC-IT` `AP`
 - Sparse and Dense Matrices — `PSC-IT` `AP`
 
 ### 5.3 Recursion — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `recursion` · **Status:** Not started
+**Slug:** `recursion` · **Status:** English done
 
 - Concept and Applications of Recursion — `School-2` `College` `PSC-IT` `AP`
 - Factorial — `College`
@@ -444,7 +444,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.4 Linked Lists — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `linked-lists` · **Status:** Not started
+**Slug:** `linked-lists` · **Status:** English done
 
 - Abstract Data Types and List ADT — `College`
 - Representation and Operations — `School-2` `PSC-IT` `AP`
@@ -454,7 +454,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.5 Stacks and Queues — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `stacks-and-queues` · **Status:** Not started
+**Slug:** `stacks-and-queues` · **Status:** English done
 
 - Structure and Operations of Stacks and Queues — `School-2` `College` `PSC-IT` `AP`
 - Implementation Strategies — `College`
@@ -462,14 +462,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.6 Prefix, Infix and Postfix Expressions — `College` `PSC-IT` `AP`
 
-**Slug:** `prefix-infix-postfix` · **Status:** Not started
+**Slug:** `prefix-infix-postfix` · **Status:** English done
 
 - Prefix, Infix and Postfix (Polish) Notation — `College` `PSC-IT` `AP`
 - Transformation and Evaluation Algorithms — `College`
 
 ### 5.7 Searching — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `searching` · **Status:** Not started
+**Slug:** `searching` · **Status:** English done
 
 - Linear Search — `College`
 - Binary Search — `School-2` `College`
@@ -477,7 +477,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.8 Sorting — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `sorting` · **Status:** Not started
+**Slug:** `sorting` · **Status:** English done
 
 - Insertion Sort — `School-2` `College` `PSC-IT` `AP`
 - Selection Sort — `College` `PSC-IT` `AP`
@@ -488,7 +488,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.9 Hashing — `College` `PSC-IT` `AP`
 
-**Slug:** `hashing` · **Status:** Not started
+**Slug:** `hashing` · **Status:** English done
 
 - Hash Indices and Hash Functions — `College`
 - Static and Dynamic Hashing — `College`
@@ -497,7 +497,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.10 Trees and Binary Search Trees — `College` `PSC-IT` `AP`
 
-**Slug:** `trees-and-binary-search-trees` · **Status:** Not started
+**Slug:** `trees-and-binary-search-trees` · **Status:** English done
 
 - Tree Concepts — `College`
 - Binary Trees — `College` `PSC-IT` `AP`
@@ -506,14 +506,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.11 Heaps and Heap Sort — `College` `PSC-IT` `AP`
 
-**Slug:** `heaps-and-heap-sort` · **Status:** Not started
+**Slug:** `heaps-and-heap-sort` · **Status:** English done
 
 - Binary Heaps — `College` `PSC-IT` `AP`
 - Heap Sort — `College` `PSC-IT` `AP`
 
 ### 5.12 AVL, B and B+ Trees — `College`
 
-**Slug:** `avl-b-bplus-trees` · **Status:** Not started
+**Slug:** `avl-b-bplus-trees` · **Status:** English done
 
 - AVL Tree
 - B Tree
@@ -521,13 +521,13 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.13 Huffman Coding — `College` `PSC-IT` `AP`
 
-**Slug:** `huffman-coding` · **Status:** Not started
+**Slug:** `huffman-coding` · **Status:** English done
 
 - Huffman Encoding Technique / Algorithm — `College` `PSC-IT` `AP`
 
 ### 5.14 Graphs and Graph Traversal — `College` `PSC-IT` `AP`
 
-**Slug:** `graphs-and-graph-traversal` · **Status:** Not started
+**Slug:** `graphs-and-graph-traversal` · **Status:** English done
 
 - Graph Terminologies — `College`
 - Representing Graphs and Graph Operations — `College` `PSC-IT` `AP`
@@ -537,7 +537,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.15 Minimum Spanning Trees — `College` `PSC-IT` `AP`
 
-**Slug:** `minimum-spanning-trees` · **Status:** Not started
+**Slug:** `minimum-spanning-trees` · **Status:** English done
 
 - Spanning Trees and Minimum Spanning Trees — `College` `PSC-IT` `AP`
 - Kruskal's Algorithm — `College`
@@ -545,7 +545,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.16 Shortest Path Algorithms — `College` `PSC-IT` `AP`
 
-**Slug:** `shortest-path-algorithms` · **Status:** Not started
+**Slug:** `shortest-path-algorithms` · **Status:** English done
 
 - Shortest Path Problems — `College` `PSC-IT` `AP`
 - Single-Source Shortest Paths — `College`
@@ -553,18 +553,18 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.17 Topological Sorting — `College` `PSC-IT` `AP`
 
-**Slug:** `topological-sorting` · **Status:** Not started
+**Slug:** `topological-sorting` · **Status:** English done
 
 ### 5.18 Flow Networks — `College` `PSC-IT` `AP`
 
-**Slug:** `flow-networks` · **Status:** Not started
+**Slug:** `flow-networks` · **Status:** English done
 
 - Flow Networks — `College`
 - Max-Flow Problem — `PSC-IT` `AP`
 
 ### 5.19 Algorithm Design and Analysis — `College` `PSC-IT` `AP`
 
-**Slug:** `algorithm-design-and-analysis` · **Status:** Not started
+**Slug:** `algorithm-design-and-analysis` · **Status:** English done
 
 - Analyzing and Designing Algorithms — `College` `PSC-IT` `AP`
 - Correctness of Algorithms — `College`
@@ -572,7 +572,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.20 Greedy Algorithms — `College` `PSC-IT` `AP`
 
-**Slug:** `greedy-algorithms` · **Status:** Not started
+**Slug:** `greedy-algorithms` · **Status:** English done
 
 - Introduction to Greedy Algorithms — `College` `PSC-IT` `AP`
 - Greedy Choice Property — `College`
@@ -584,7 +584,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.21 Divide and Conquer — `College` `PSC-IT` `AP`
 
-**Slug:** `divide-and-conquer` · **Status:** Not started
+**Slug:** `divide-and-conquer` · **Status:** English done
 
 - Divide and Conquer Design Technique — `College` `PSC-IT` `AP`
 - Quick Sort and Merge Sort — `College`
@@ -592,7 +592,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.22 Dynamic Programming — `College` `PSC-IT` `AP`
 
-**Slug:** `dynamic-programming` · **Status:** Not started
+**Slug:** `dynamic-programming` · **Status:** English done
 
 - Introduction to Dynamic Programming — `College` `PSC-IT` `AP`
 - Principle of Optimality and Optimal Substructure — `College`
@@ -604,22 +604,22 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.23 Backtracking and Branch and Bound — `College` `PSC-IT` `AP`
 
-**Slug:** `backtracking-and-branch-and-bound` · **Status:** Not started
+**Slug:** `backtracking-and-branch-and-bound` · **Status:** English done
 
 - Backtracking — `College`
 - Branch and Bound — `PSC-IT` `AP`
 
 ### 5.24 String Matching — `PSC-IT` `AP`
 
-**Slug:** `string-matching` · **Status:** Not started
+**Slug:** `string-matching` · **Status:** English done
 
 ### 5.25 Computational Geometry — `PSC-IT` `AP`
 
-**Slug:** `computational-geometry` · **Status:** Not started
+**Slug:** `computational-geometry` · **Status:** English done
 
 ### 5.26 Approximation and Parallel Algorithms — `PSC-IT` `AP`
 
-**Slug:** `approximation-and-parallel-algorithms` · **Status:** Not started
+**Slug:** `approximation-and-parallel-algorithms` · **Status:** English done
 
 - Approximation Algorithms
 - Parallel Algorithms

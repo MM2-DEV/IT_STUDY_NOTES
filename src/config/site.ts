@@ -35,10 +35,10 @@ export const siteSections: SiteSection[] = [
   {
     title: "Previous Questions",
     description:
-      "Written questions from previous government IT job examinations, with answers.",
+      "MCQ and written questions from previous BCS, bank, NTRCA and other government IT job examinations, listed by exam.",
     href: "/previous-questions",
     icon: History,
-    available: false,
+    available: true,
   },
   {
     title: "MCQs",
