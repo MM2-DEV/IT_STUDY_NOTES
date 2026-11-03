@@ -797,7 +797,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.1 Introduction to Software Engineering — `College` `PSC-IT` `AP`
 
-**Slug:** `introduction-to-software-engineering` · **Status:** Not started
+**Slug:** `introduction-to-software-engineering` · **Status:** English done
 
 - Introduction and Software Process — `PSC-IT` `AP`
 - History and Nature of Software Engineering — `College`
@@ -806,7 +806,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.2 Software Qualities — `College`
 
-**Slug:** `software-qualities` · **Status:** Not started
+**Slug:** `software-qualities` · **Status:** English done
 
 - Software Nature and Qualities
 - Product Qualities and Project Qualities
@@ -815,13 +815,13 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.3 Software Development Life Cycle — `College`
 
-**Slug:** `software-development-life-cycle` · **Status:** Not started
+**Slug:** `software-development-life-cycle` · **Status:** English done
 
 - Requirement, Design, Development, Testing, Maintenance
 
 ### 7.4 Software Development Models — `College`
 
-**Slug:** `software-development-models` · **Status:** Not started
+**Slug:** `software-development-models` · **Status:** English done
 
 - Waterfall Model
 - Agile Model
@@ -831,14 +831,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.5 Software Engineering Principles — `College`
 
-**Slug:** `software-engineering-principles` · **Status:** Not started
+**Slug:** `software-engineering-principles` · **Status:** English done
 
 - Modularity, Abstraction, Generality
 - Object-Oriented, Component-Oriented, Structured
 
 ### 7.6 Requirements Engineering — `College` `PSC-IT` `AP`
 
-**Slug:** `requirements-engineering` · **Status:** Not started
+**Slug:** `requirements-engineering` · **Status:** English done
 
 - Requirements Engineering Processes — `PSC-IT` `AP`
 - Requirement Specification — `College`
