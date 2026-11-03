@@ -414,6 +414,32 @@ Some subjects appear in more than one place because different syllabi cover them
 - Exception Handling
 - Object-Oriented Programming in Python
 
+### 4.17 Practice Programs — `School-2` `College` `PSC-IT` `AP`
+
+**Slug:** `practice-programs` · **Status:** English done
+
+- Sum of Two Numbers
+- Multiplication of Two Numbers
+- Sum and Average of Three Numbers
+- Leap Year
+- Prime Number
+- Odd or Even Number
+- GCD (HCF) of Two Numbers
+- LCM of Two Numbers
+- Reverse the Items of an Array
+- Fibonacci Series
+- Roots of a Quadratic Equation
+- Largest of Three Numbers
+- Smallest of Three Numbers
+- Area of a Triangle (Base and Height)
+- Area of a Triangle (Three Sides)
+- Area of a Rectangle
+- Sum of Numbers from 1 to 100
+- Sum of Numbers from 1 to n
+- Factorial of a Number
+- AND, OR and XOR of Two Numbers
+- Positive, Negative or Zero
+
 ---
 
 ## 5. Data Structures and Algorithms — `data-structures-algorithms`

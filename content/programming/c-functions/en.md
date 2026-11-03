@@ -1,6 +1,6 @@
 ---
 description: C functions - library and user-defined functions, prototype, definition and call, the four categories of functions, actual and formal parameters, call by value and call by reference, recursion, and the storage classes auto, register, static and extern.
-updated: 2026-11-01
+updated: 2026-11-04
 ---
 
 ### Function
@@ -23,6 +23,50 @@ updated: 2026-11-01
    3. `sqrt()`, `pow()`, `sin()`: `math.h`
    4. `malloc()`, `free()`, `abs()`: `stdlib.h`
 2. **User-defined functions:** functions written by the programmer for a particular task, such as `area()` or `swap()`.
+
+### Differences Between Library Function and User-Defined Function
+
+**Library function:** a library function (also called a built-in or predefined function) is a function that is **already written and supplied with the C compiler** in the standard library; its prototype is declared in a **header file**, which must be included before the function is used. Examples: `printf()`, `scanf()`, `sqrt()`, `strlen()`.
+
+**User-defined function:** a user-defined function is a function that the **programmer writes** for a particular task of the program, by declaring, defining and calling it. Examples: `sum()`, `square()`, `swap()`. (`main()` itself is a user-defined function.)
+
+```c
+#include <stdio.h>
+#include <math.h>              /* header of the library function sqrt() */
+
+int square(int n)              /* user-defined function */
+{
+    return n * n;
+}
+
+int main(void)
+{
+    printf("square(5) = %d\n", square(5));       /* user-defined */
+    printf("sqrt(25)  = %.1f\n", sqrt(25.0));    /* library */
+    return 0;
+}
+```
+
+Output (compile with `-lm` on Linux, to link the mathematics library):
+
+```text
+square(5) = 25
+sqrt(25)  = 5.0
+```
+
+| Basis | Library function | User-defined function |
+| --- | --- | --- |
+| Written by | The compiler developers (part of the C standard library) | The programmer |
+| Availability | Ready to use; no code has to be written | The programmer must write its definition before use |
+| Declaration (prototype) | In a header file (`stdio.h`, `math.h`, `string.h` …) | In the program itself |
+| Header file needed | Yes, the matching header must be included | No header needed (its prototype is in the program) |
+| Where stored | In library files, already compiled | In the program's own source file |
+| Name | Fixed; cannot be changed | Chosen by the programmer |
+| Code can be changed | No; its working is fixed | Yes; the programmer can modify it at any time |
+| Purpose | General, common tasks (input/output, mathematics, strings) | Tasks specific to the program |
+| Reliability | Well tested and optimized | Depends on the programmer |
+| Portability | Same behaviour on every standard C compiler | Depends on how it is written |
+| Examples | `printf()`, `scanf()`, `sqrt()`, `pow()`, `strlen()`, `strcpy()` | `sum()`, `square()`, `swap()`, `main()` |
 
 ### Parts of a User-Defined Function
 
@@ -131,6 +175,32 @@ After call by reference: x = 9, y = 5
 | Function call | `swap(x, y)` | `swap(&x, &y)` |
 | Function header | `void swap(int a, int b)` | `void swap(int *a, int *b)` |
 | When to use | To protect the original data | To modify the original data (or return several values) |
+| Actual and formal parameters | Stored at **different** memory locations | Refer to the **same** memory location |
+| Efficiency for large data | Slower: the whole value is copied | Faster: only the address is passed |
+| Dereferencing (`*`) | Not needed | Needed to reach the original value |
+| Simplicity | Simple | Slightly more complex (uses pointers) |
+
+**Call by reference in C and in C++:** strictly, **C supports only call by value**. "Call by reference" in C is obtained by passing the **address** (a pointer) **by value**; the function then uses `*` to reach the original variable. **C++** has true **reference parameters**, declared with `&` in the parameter list; the function then works on the original variable directly, without pointers:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+void swapRef(int &a, int &b)      // a and b are references (other names) for x and y
+{
+    int t = a; a = b; b = t;
+}
+
+int main()
+{
+    int x = 5, y = 9;
+    swapRef(x, y);                // no & needed in the call
+    cout << "x = " << x << ", y = " << y << endl;
+    return 0;
+}
+```
+
+Output: `x = 9, y = 5`
 
 **Passing arrays:** when an array is passed, the address of its first element is passed, so the function works on the original array (see [Passing an Array to a Function](/topics/programming/c-arrays-strings#arrays)).
 
@@ -304,14 +374,31 @@ static = 3, auto = 1
 **GeeksforGeeks**
 
 - [Difference between Recursion and Iteration](https://www.geeksforgeeks.org/dsa/difference-between-recursion-and-iteration/) — accessed 2026-11-01
-- [Pass by Value Vs Pass by Reference in C](https://www.geeksforgeeks.org/c/difference-between-call-by-value-and-call-by-reference/) — accessed 2026-11-01
+- [Pass by Value Vs Pass by Reference in C](https://www.geeksforgeeks.org/c/difference-between-call-by-value-and-call-by-reference/) — accessed 2026-11-04 (C supports only pass by value; pass by reference is obtained with pointers)
+- [Difference between user defined function and library function in C/C++](https://www.geeksforgeeks.org/cpp/difference-between-user-defined-function-and-library-function-in-c-c/) — accessed 2026-11-04 (its table says program execution "begins from the user-defined function"; execution begins at `main()`, which is a user-defined function)
 
 **TutorialsPoint**
 
-- [C – Functions](https://www.tutorialspoint.com/cprogramming/c_functions.htm) — accessed 2026-11-01
+- [C – Functions](https://www.tutorialspoint.com/cprogramming/c_functions.htm) — accessed 2026-11-04 (library and user-defined functions)
+- [C – Function Call by Reference](https://www.tutorialspoint.com/cprogramming/c_function_call_by_reference.htm) — accessed 2026-11-04
 - [C – Storage Classes](https://www.tutorialspoint.com/cprogramming/c_storage_classes.htm) — accessed 2026-11-01
 - [C – Recursion](https://www.tutorialspoint.com/cprogramming/c_recursion.htm) — accessed 2026-11-01
 - [C – Variables](https://www.tutorialspoint.com/cprogramming/c_variables.htm) — accessed 2026-11-01
+
+**TpointTech**
+
+- [User-defined vs Library Function in C](https://www.tpointtech.com/user-defined-vs-library-function-in-c) — accessed 2026-11-04 (its table says library functions are needed in every C program; a C program can be written without any library function)
+- [Call by Value and Call by Reference in C](https://www.tpointtech.com/call-by-value-and-call-by-reference-in-c) — accessed 2026-11-04
+
+**Programiz**
+
+- [C Standard Library Functions](https://www.programiz.com/c-programming/library-function) — accessed 2026-11-04 (advantages of library functions, header files)
+- [C User-defined Functions](https://www.programiz.com/c-programming/c-user-defined-functions) — accessed 2026-11-04
+- [C Pass Addresses and Pointers to Functions](https://www.programiz.com/c-programming/c-pointer-functions) — accessed 2026-11-04 (call by reference)
+
+**IT Job QnS**
+
+- IT Job QnS has no page on library and user-defined functions or on call by value and call by reference (checked 2026-11-04).
 
 **Additional sources**
 

@@ -1,30 +1,63 @@
 ---
-description: Types and generations of programming languages, low-level and high-level languages, language translators, programming paradigms (imperative, procedural, object-oriented, declarative, functional and logic), and machine and assembly language programming.
-updated: 2026-11-01
+description: Types of programming languages by level (machine, assembly and high-level), generations, middle-level languages, language translators, programming paradigms (imperative, procedural, object-oriented, declarative, functional and logic), and machine and assembly language programming.
+updated: 2026-11-04
 ---
 
 ## Types of Programming Languages {#types-of-programming-languages}
 
-**Programming language:** a formal language, with fixed rules of syntax and meaning, used to write instructions (programs) that a computer can carry out.
+**Programming language:** a programming language is a formal language, with fixed rules of syntax and meaning, used to write instructions (programs) that a computer can carry out.
 
-Programming languages are divided into two broad types:
+### Types of Programming Languages by Level
 
-1. **Low-level languages:** close to the hardware of the computer.
-   1. **Machine language**
-   2. **Assembly language**
-2. **High-level languages:** close to human language and independent of the hardware (for example C, Java, Python).
+The **level** of a language means how close it is to the computer's hardware (low) or to human language (high). By level, programming languages are of two main types, and low-level languages are further divided into two:
 
-### Machine Language
+1. **Low-level languages** — close to the hardware of the computer:
+   1. **Machine language** (first generation)
+   2. **Assembly language** (second generation)
+2. **High-level languages** — close to human language and independent of the hardware (for example C, Java, Python).
 
-**Definition:** machine language is the language of **binary codes (0s and 1s)** that the processor **understands and executes directly**. It is the only language a computer understands without translation. (See [Machine Language Programming](#machine-language-programming).)
+So, by level, a language is a **machine language**, an **assembly language** or a **high-level language**.
 
-### Assembly Language
+#### 1. Low-Level Language
 
-**Definition:** assembly language is a low-level language that uses **mnemonics** (short, easy-to-remember codes such as `MOV`, `ADD`, `SUB`) instead of binary codes. A program called an **assembler** translates it into machine language. (See [Assembly Language Programming](#assembly-language-programming).)
+A low-level language is a language that gives **little or no abstraction from the hardware**: its instructions correspond closely to the processor's own instructions, and they work directly with registers and memory addresses. Programs written in it are **machine-dependent**.
 
-### High-Level Language
+**Characteristics of low-level languages:**
 
-**Definition:** a high-level language uses **English-like words and mathematical notation**, and hides the details of the hardware, so the programmer can concentrate on solving the problem. A **compiler** or **interpreter** translates it into machine language.
+1. Close to the machine, far from human language.
+2. Machine-dependent: a program for one processor does not run on another (not portable).
+3. Gives direct control of the hardware (registers, memory, I/O ports).
+4. Programs are fast and use little memory.
+5. Difficult to write, read, debug and maintain; the programmer must know the processor's architecture.
+
+Low-level languages are of two types:
+
+**(a) Machine language:** machine language is the language of **binary codes (0s and 1s)** that the processor **understands and executes directly**. It is the only language a computer understands without translation, so no translator is needed. Machine code differs from one processor family to another (for example, Intel x86 and ARM). (See [Machine Language Programming](#machine-language-programming).)
+
+**(b) Assembly language:** assembly language is a low-level language that uses **mnemonics** (short, easy-to-remember codes such as `MOV`, `ADD`, `SUB`) instead of binary codes. Each assembly instruction normally corresponds to one machine instruction. A program called an **assembler** translates it into machine language. Every processor family has its own assembly language (for example, 8086 and ARM assembly). (See [Assembly Language Programming](#assembly-language-programming).)
+
+#### 2. High-Level Language
+
+A high-level language is a language that uses **English-like words and mathematical notation** and hides the details of the hardware, so that the programmer can concentrate on solving the problem. A **compiler** or **interpreter** translates it into machine language.
+
+**Characteristics of high-level languages:**
+
+1. Close to human language; easy to learn, read and write.
+2. Machine-independent (portable): the same program can run on different computers after translation by a compiler or interpreter for each computer.
+3. Does not need knowledge of the hardware.
+4. Provides features such as data types, control statements, functions, error handling and (in most languages) automatic memory management.
+
+**Advantages:**
+
+1. Easy to write, read, debug and maintain.
+2. Portable across different machines.
+3. Programs are developed faster and are shorter.
+
+**Disadvantages:**
+
+1. Must be translated by a compiler or interpreter.
+2. Programs usually run more slowly and use more memory than equivalent low-level programs.
+3. Gives less direct control of the hardware.
 
 **Examples:**
 
@@ -33,6 +66,27 @@ Programming languages are divided into two broad types:
 3. C, C++
 4. Java
 5. Python
+
+#### Middle-Level Language
+
+Some books add a **middle-level language** between the two levels: a high-level language that also provides low-level features. **C** (and C++) is called a middle-level language because it has high-level features (functions, loops, data types) and also low-level features (pointers, direct access to memory addresses, bit-level operators), so it is used for both application software and system software such as operating systems and device drivers. (Middle-level is a description of such languages, not a separate generation.)
+
+#### Machine Language vs Assembly Language vs High-Level Language
+
+| Basis | Machine language | Assembly language | High-level language |
+| --- | --- | --- | --- |
+| Level | Low-level | Low-level | High-level |
+| Generation | First (1GL) | Second (2GL) | Third (3GL) and later |
+| Form of instructions | Binary codes (0s and 1s) | Mnemonics (`MOV`, `ADD`) | English-like statements |
+| Translator | Not needed | Assembler | Compiler or interpreter |
+| Machine dependence | Machine-dependent | Machine-dependent | Machine-independent (portable) |
+| Ease of writing and reading | Very difficult | Easier than machine language | Easy |
+| Debugging and maintenance | Very difficult | Difficult | Easy |
+| Execution speed | Fastest | Fast | Slower |
+| Memory efficiency | Highest | High | Lower |
+| Hardware control | Direct | Direct | Limited |
+| Knowledge of hardware needed | Yes | Yes | No |
+| Examples | `10110000 01100001` | `MOV AL, 61H` | C, Java, Python |
 
 ### Generations of Programming Languages
 
@@ -148,6 +202,32 @@ A program written in any language other than machine language must be **translat
 | Real-world modelling | Weak | Strong (objects model real things) |
 | Examples | C, FORTRAN, Pascal, BASIC | C++, Java, Python, C# |
 
+### Differences Between Structured and Object-Oriented Programming
+
+**Structured programming** is a form of procedural programming in which a program is divided into **functions (modules)** and is built only from the three standard control structures — **sequence, selection and iteration** — without unrestricted `goto` jumps; the `main()` function calls the other functions as needed (see [Structured Program Design](/topics/programming/program-design-techniques#structured-program-design)). Examples: C, Pascal, ALGOL, Modula-2.
+
+**Object-oriented programming** organises a program as a collection of **objects**, which combine data and the functions (methods) that work on it, and is based on **encapsulation, abstraction, inheritance and polymorphism**. Examples: C++, Java, Python, C#.
+
+| Basis | Structured programming | Object-oriented programming |
+| --- | --- | --- |
+| Basic unit | Function (module) | Object (created from a class) |
+| Program is divided into | Small functions | Objects |
+| Main focus | Functions and processes (the algorithm) | Data, and the objects that hold it |
+| Emphasis | On code (procedures) | On data |
+| Design approach | Top-down | Bottom-up |
+| Data and functions | Kept separate; data is often global and moves freely between functions | Bound together in a class (encapsulation) |
+| Data security | Less secure (no data hiding) | More secure (data hiding with `private`) |
+| Access specifiers | None | `private`, `public`, `protected` |
+| Communication | `main()` calls other functions | Objects communicate by calling each other's methods (message passing) |
+| Execution | Mostly sequential, following the function calls | Methods are called dynamically as needed |
+| Code reuse | Through functions and libraries | Through classes, inheritance and objects |
+| Inheritance and polymorphism | Not supported | Supported |
+| Overloading | Not possible (in C) | Function and operator overloading |
+| Flexibility and abstraction | Less | More |
+| Modification and extension | Harder for large programs | Easier; new classes can be added |
+| Suitable for | Small and medium programs | Large, complex programs |
+| Examples | C, Pascal, ALGOL, Modula-2 | C++, Java, Python, C# |
+
 ## Machine Language Programming {#machine-language-programming}
 
 **Definition:** machine language programming is writing programs **directly in the binary codes** of the processor. Each instruction is a pattern of bits that the processor executes **without any translation**.
@@ -249,6 +329,27 @@ The instruction set and complete assembly programs for the 8085/8086 microproces
 - [Language Processors: Assembler, Compiler and Interpreter](https://www.geeksforgeeks.org/language-processors-assembler-compiler-and-interpreter/) — accessed 2026-11-01
 - [Difference between High Level and Low level languages](https://www.geeksforgeeks.org/computer-science-fundamentals/difference-between-high-level-and-low-level-languages/) — accessed 2026-11-01
 - [Introduction of Programming Paradigms](https://www.geeksforgeeks.org/system-design/introduction-of-programming-paradigms/) — accessed 2026-11-01
+- [Difference between assembly language and high level language](https://www.geeksforgeeks.org/computer-organization-architecture/difference-between-assembly-language-and-high-level-language/) — accessed 2026-11-04
+- [Difference between Structured Programming and Object Oriented Programming](https://www.geeksforgeeks.org/software-engineering/difference-between-structured-programming-and-object-oriented-programming/) — accessed 2026-11-04
+
+**TutorialsPoint**
+
+- [Computer Concepts – Programming Languages](https://www.tutorialspoint.com/computer_concepts/computer_concepts_programming_languages.htm) — accessed 2026-11-04 (it calls assembly language a "middle-level" language and lists Ada and Pascal as assembly languages; assembly is a low-level language, and Ada and Pascal are high-level languages, so these points are not used)
+- [Difference between Structured and Object Oriented Programming](https://www.tutorialspoint.com/article/difference-between-structured-and-object-oriented-programming) — accessed 2026-11-04
+
+**TpointTech**
+
+- [Classification of Programming Languages](https://www.tpointtech.com/classification-of-programming-languages) — accessed 2026-11-04 (its comparison table says low-level code runs more slowly and high-level code faster; this is reversed — low-level code runs faster)
+- [Features of C Language](https://www.tpointtech.com/features-of-c-language) — accessed 2026-11-04 (C as a mid-level language)
+- [Procedural Programming vs Object-Oriented Programming](https://www.tpointtech.com/procedural-programming-vs-object-oriented-programming) — accessed 2026-11-04
+
+**Programiz**
+
+- [C++ Programming guide](https://www.programiz.com/cpp-programming/guide) — accessed 2026-11-04 (C++ as a middle-level language); Programiz has no page on the classification of languages by level
+
+**IT Job QnS**
+
+- [Programming Question](https://it.jobqns.com/programming-question/) — accessed 2026-11-04 (high-level languages: C, C++, Java, Python; low-level languages: assembly language and machine code)
 
 **Additional sources**
 

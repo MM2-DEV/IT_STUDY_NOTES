@@ -596,6 +596,229 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "practice-programs",
+      "title": "Practice Programs",
+      "order": 17,
+      "exams": [
+        "School-2",
+        "College",
+        "PSC-IT",
+        "AP"
+      ],
+      "subtopics": [
+        {
+          "id": "sum-of-two-numbers",
+          "title": "Sum of Two Numbers",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "multiplication-of-two-numbers",
+          "title": "Multiplication of Two Numbers",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "sum-and-average-of-three-numbers",
+          "title": "Sum and Average of Three Numbers",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "leap-year",
+          "title": "Leap Year",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "prime-number",
+          "title": "Prime Number",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "odd-or-even-number",
+          "title": "Odd or Even Number",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "gcd-hcf-of-two-numbers",
+          "title": "GCD (HCF) of Two Numbers",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "lcm-of-two-numbers",
+          "title": "LCM of Two Numbers",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "reverse-the-items-of-an-array",
+          "title": "Reverse the Items of an Array",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "fibonacci-series",
+          "title": "Fibonacci Series",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "roots-of-a-quadratic-equation",
+          "title": "Roots of a Quadratic Equation",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "largest-of-three-numbers",
+          "title": "Largest of Three Numbers",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "smallest-of-three-numbers",
+          "title": "Smallest of Three Numbers",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "area-of-a-triangle-base-and-height",
+          "title": "Area of a Triangle (Base and Height)",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "area-of-a-triangle-three-sides",
+          "title": "Area of a Triangle (Three Sides)",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "area-of-a-rectangle",
+          "title": "Area of a Rectangle",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "sum-of-numbers-from-1-to-100",
+          "title": "Sum of Numbers from 1 to 100",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "sum-of-numbers-from-1-to-n",
+          "title": "Sum of Numbers from 1 to n",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "factorial-of-a-number",
+          "title": "Factorial of a Number",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "and-or-and-xor-of-two-numbers",
+          "title": "AND, OR and XOR of Two Numbers",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        },
+        {
+          "id": "positive-negative-or-zero",
+          "title": "Positive, Negative or Zero",
+          "exams": [
+            "School-2",
+            "College",
+            "PSC-IT",
+            "AP"
+          ]
+        }
+      ]
     }
   ]
 }

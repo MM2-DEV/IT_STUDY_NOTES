@@ -1,6 +1,6 @@
 ---
 description: C structures (definition, declaration, initialization, member access with . and ->, arrays of structures, nested structures, structures and functions, typedef), unions and their difference from structures, enumerations, and bit-fields.
-updated: 2026-11-01
+updated: 2026-11-04
 ---
 
 ## Structures {#structures}
@@ -256,8 +256,17 @@ d.str = C Programming
 | Values at a time | **All** members hold values together | Only **one** member holds a valid value |
 | Overlap of members | Members do not overlap | Members fully overlap (all start at the same address) |
 | Changing a member | Does not affect other members | Overwrites the other members |
-| Initialization | All members can be initialized | Only the first member (by default) |
+| Initialization | All members can be initialized together: `{1, 2.5, "A"}` | Only **one** member: the first by default (`{10}`), or any one with a designated initializer in C99 (`{.f = 2.5}`) |
+| Access to members | All members can be used at the same time | Only the most recently assigned member can be used reliably |
 | Use | Grouping related data of a record | Saving memory when only one member is used at a time |
+
+**Similarities between structure and union:**
+
+1. Both are **user-defined data types** that group members of different types under one name.
+2. Both are declared in the same way, with a tag name and a list of members in braces.
+3. Members can be of any type, including arrays, pointers, other structures or unions, and bit-fields.
+4. Members are accessed with the **dot (`.`) operator** for variables and the **arrow (`->`) operator** for pointers.
+5. Both can be assigned with `=`, passed to functions and returned from functions, and both work with `sizeof`.
 
 ## Bit-fields {#bit-fields}
 
@@ -323,13 +332,26 @@ The 5 + 4 + 12 = 21 bits fit into one 4-byte unit, whereas three ordinary `unsig
 
 **GeeksforGeeks**
 
-- [Difference Between Structure and Union in C](https://www.geeksforgeeks.org/c/structure-vs-union-in-c/) — accessed 2026-11-01
+- [Difference Between Structure and Union in C](https://www.geeksforgeeks.org/c/structure-vs-union-in-c/) — accessed 2026-11-04 (similarities)
 
 **TutorialsPoint**
 
 - [C – Structures](https://www.tutorialspoint.com/cprogramming/c_structures.htm) — accessed 2026-11-01
 - [C – Unions](https://www.tutorialspoint.com/cprogramming/c_unions.htm) — accessed 2026-11-01
 - [C – Bit Fields](https://www.tutorialspoint.com/cprogramming/c_bit_fields.htm) — accessed 2026-11-01
+- [Structures vs Unions](https://www.tutorialspoint.com/cprogramming/c_structures_vs_unions.htm) — accessed 2026-11-04 (it says only the first member of a union can be initialized; since C99 any one member can be initialized with a designated initializer)
+
+**TpointTech**
+
+- [Difference between Structure and Union](https://www.tpointtech.com/structure-vs-union) — accessed 2026-11-04
+
+**Programiz**
+
+- [C Unions](https://www.programiz.com/c-programming/c-unions) — accessed 2026-11-04 (size of a union compared with a structure; one member at a time)
+
+**IT Job QnS**
+
+- IT Job QnS has no page comparing structures and unions (checked 2026-11-04).
 
 **Additional sources**
 

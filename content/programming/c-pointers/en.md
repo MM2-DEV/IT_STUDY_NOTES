@@ -1,6 +1,6 @@
 ---
 description: C pointers - the address and indirection operators, declaration and initialization, pointer arithmetic, pointers and arrays, pointers and strings, pointer to pointer, pointers and functions, NULL, void, wild and dangling pointers, and dynamic memory allocation with malloc, calloc, realloc and free.
-updated: 2026-11-01
+updated: 2026-11-04
 ---
 
 ### Pointer
@@ -127,6 +127,59 @@ Output:
 ```
 
 **Difference:** a pointer is a variable and can be changed (`p++`), but an array name is a constant address and **cannot** be changed (`a++` is an error).
+
+### Differences Between Array and Pointer
+
+**Array:** an array is a collection of a **fixed number of elements of the same data type**, stored in **contiguous memory locations** and accessed by an index. Its memory is allocated when it is defined, and its size cannot change.
+
+**Pointer:** a pointer is a **variable that stores the memory address** of another variable. It holds one address at a time, and it can be changed to point to another location.
+
+Although an array name is converted to the address of its first element in most expressions (so `a[i]` and `p[i]` work the same way), an array is **not** a pointer:
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    int a[5] = {10, 20, 30, 40, 50};
+    int *p = a;
+
+    printf("sizeof(a) = %zu\n", sizeof(a));   /* whole array: 5 x 4 = 20 */
+    printf("sizeof(p) = %zu\n", sizeof(p));   /* only the pointer: 8 on 64-bit */
+    printf("a[2] = %d, p[2] = %d\n", a[2], p[2]);
+
+    p = &a[3];             /* a pointer can be made to point elsewhere */
+    printf("*p = %d\n", *p);
+    /* a = &a[3];             error: an array name cannot be assigned */
+    return 0;
+}
+```
+
+Output (on a 64-bit system):
+
+```text
+sizeof(a) = 20
+sizeof(p) = 8
+a[2] = 30, p[2] = 30
+*p = 40
+```
+
+| Basis | Array | Pointer |
+| --- | --- | --- |
+| Definition | A collection of elements of the same type in contiguous memory | A variable that stores the address of another variable |
+| Declaration | `data_type name[size];` — `int a[5];` | `data_type *name;` — `int *p;` |
+| What it stores | The values of its elements | An address |
+| Capacity | As many elements as its declared size | One address at a time |
+| Memory allocation | Fixed block, allocated when the array is defined | Memory for the pointer itself only; it can point to memory allocated at run time (`malloc`) |
+| Size | Fixed; cannot be changed after definition | The pointer's own size is fixed (4 or 8 bytes); the memory it points to can be resized (`realloc`) |
+| `sizeof` | Gives the size of the **whole array** (`5 × 4 = 20` bytes) | Gives the size of the **pointer only** (8 bytes on a 64-bit system) |
+| Assignment | Cannot be assigned or changed: `a = b;` and `a++` are errors | Can be assigned and changed: `p = &x;`, `p++` |
+| Name | The array name is a **constant address** (address of the first element) | The pointer is a **variable** whose value is an address |
+| `&` operator | `&a` is the address of the whole array (same value as `a`, different type) | `&p` is the address of the pointer variable itself |
+| Initialization | With a list of values: `int a[3] = {1, 2, 3};` | With an address: `int *p = &x;` or `int *p = a;` |
+| Element access | `a[i]`, which means `*(a + i)` | `*(p + i)`, or `p[i]` |
+| Passing to a function | Passed as a pointer to its first element | Passed as a pointer (its value is copied) |
+| Combination | An **array of pointers**: `int *arr[5];` | A **pointer to an array**: `int (*ptr)[5];` |
 
 ### Pointers and Strings
 
@@ -316,11 +369,25 @@ Output: `Sum = 150`
 
 - [C – Pointers](https://www.tutorialspoint.com/cprogramming/c_pointers.htm) — accessed 2026-11-01
 - [C – Memory Management](https://www.tutorialspoint.com/cprogramming/c_memory_management.htm) — accessed 2026-11-01
+- [Pointer vs Array in C](https://www.tutorialspoint.com/cprogramming/c_pointer_vs_array.htm) — accessed 2026-11-04 (its table says a pointer cannot be initialized when it is defined; it can, for example `int *p = &x;` — and says a pointer "can be resized"; the pointer itself has a fixed size, only the memory it points to can be resized)
 
 **GeeksforGeeks**
 
 - [Difference Between malloc() and calloc()](https://www.geeksforgeeks.org/c/difference-between-malloc-and-calloc-with-examples/) — accessed 2026-11-01
 - [Dangling, Void, Null and Wild Pointers in C](https://www.geeksforgeeks.org/c/dangling-void-null-wild-pointers/) — accessed 2026-11-01
+- [Difference between Arrays and Pointers](https://www.geeksforgeeks.org/c/difference-between-array-and-pointers/) — accessed 2026-11-04
+
+**TpointTech**
+
+- [Pointer vs Array in C](https://www.tpointtech.com/pointer-vs-array-in-c) — accessed 2026-11-04 (it calls arrays "static" and pointers "dynamic"; it is the memory a pointer points to that can be allocated dynamically, not the pointer itself)
+
+**Programiz**
+
+- [Relationship Between Arrays and Pointers](https://www.programiz.com/c-programming/c-pointers-arrays) — accessed 2026-11-04 (`x[i]` is equivalent to `*(x + i)`; arrays and pointers are not the same)
+
+**IT Job QnS**
+
+- IT Job QnS has no page comparing arrays and pointers (checked 2026-11-04).
 
 **Additional sources**
 

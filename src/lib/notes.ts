@@ -7,6 +7,8 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import { unified } from "unified";
 
+import { rehypeCodeTabs } from "@/lib/rehype-code-tabs";
+import { remarkDefinitionBoxes } from "@/lib/remark-definition-boxes";
 import { type NotesHeading, remarkHeadingIds } from "@/lib/remark-heading-ids";
 
 // Reads and renders a topic's notes: content/<category>/<topic>/<language>.md
@@ -75,7 +77,9 @@ export async function getTopicNotes(
       .use(remarkParse)
       .use(remarkGfm)
       .use(remarkHeadingIds, { headings, file })
+      .use(remarkDefinitionBoxes)
       .use(remarkRehype)
+      .use(rehypeCodeTabs)
       .use(rehypeStringify)
       .process(body)
   );
