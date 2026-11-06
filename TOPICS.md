@@ -872,7 +872,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.7 System Modeling and Design — `College` `PSC-IT` `AP`
 
-**Slug:** `system-modeling-and-design` · **Status:** Not started
+**Slug:** `system-modeling-and-design` · **Status:** English done
 
 - System Models: Context, Behavioral and Object Models — `PSC-IT` `AP`
 - Basics of Modeling Diagrams — `College`
@@ -883,14 +883,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.8 Critical Systems — `PSC-IT` `AP`
 
-**Slug:** `critical-systems` · **Status:** Not started
+**Slug:** `critical-systems` · **Status:** English done
 
 - Critical System Design and Dependability
 - Critical System Specification and Development
 
 ### 7.9 Verification, Validation and Testing — `College` `PSC-IT` `AP`
 
-**Slug:** `verification-validation-and-testing` · **Status:** Not started
+**Slug:** `verification-validation-and-testing` · **Status:** English done
 
 - Verification and Validation — `College` `PSC-IT` `AP`
 - Software Testing — `College` `PSC-IT` `AP`
@@ -898,11 +898,11 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.10 Software Maintenance — `PSC-IT` `AP`
 
-**Slug:** `software-maintenance` · **Status:** Not started
+**Slug:** `software-maintenance` · **Status:** English done
 
 ### 7.11 Software Project Management — `College` `PSC-IT` `AP`
 
-**Slug:** `software-project-management` · **Status:** Not started
+**Slug:** `software-project-management` · **Status:** English done
 
 - Project Management Concepts — `College` `PSC-IT` `AP`
 - Project Metrics — `College`
@@ -911,7 +911,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.12 Software Cost Estimation and Metrics — `PSC-IT` `AP`
 
-**Slug:** `software-cost-estimation-and-metrics` · **Status:** Not started
+**Slug:** `software-cost-estimation-and-metrics` · **Status:** English done
 
 - COCOMO Model
 - Halstead Formula
@@ -919,14 +919,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.13 Reliability and Quality Assurance — `PSC-IT` `AP`
 
-**Slug:** `reliability-and-quality-assurance` · **Status:** Not started
+**Slug:** `reliability-and-quality-assurance` · **Status:** English done
 
 - Software Reliability and Availability
 - Quality Assurance
 
 ### 7.14 System Analysis and Design — `Others`
 
-**Slug:** `system-analysis-and-design` · **Status:** Not started
+**Slug:** `system-analysis-and-design` · **Status:** English done
 
 - System Concepts and Characteristics
 - Types of Information Systems
@@ -941,11 +941,11 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.15 HTML, CSS and JavaScript — `College`
 
-**Slug:** `html-css-and-javascript` · **Status:** Not started
+**Slug:** `html-css-and-javascript` · **Status:** English done
 
 ### 7.16 Server-Side Programming — `College`
 
-**Slug:** `server-side-programming` · **Status:** Not started
+**Slug:** `server-side-programming` · **Status:** English done
 
 - HTTP Server
 - Application Server
@@ -953,11 +953,11 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.17 Web Services — `College`
 
-**Slug:** `web-services` · **Status:** Not started
+**Slug:** `web-services` · **Status:** English done
 
 ### 7.18 Database Access — `College`
 
-**Slug:** `database-access` · **Status:** Not started
+**Slug:** `database-access` · **Status:** English done
 
 - Object-Relational Mapping (ORM)
 - Lambda Expressions
@@ -966,7 +966,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.19 Introduction to E-Commerce — `Others`
 
-**Slug:** `introduction-to-e-commerce` · **Status:** Not started
+**Slug:** `introduction-to-e-commerce` · **Status:** English done
 
 - Definition and History
 - E-Commerce vs E-Business
@@ -974,14 +974,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.20 E-Commerce Business Models — `Others`
 
-**Slug:** `e-commerce-business-models` · **Status:** Not started
+**Slug:** `e-commerce-business-models` · **Status:** English done
 
 - B2B, B2C, C2C, C2B
 - B2G and G2C
 
 ### 7.21 Electronic Payment Systems — `Others`
 
-**Slug:** `electronic-payment-systems` · **Status:** Not started
+**Slug:** `electronic-payment-systems` · **Status:** English done
 
 - Credit and Debit Cards
 - Electronic Wallets and Mobile Financial Services
@@ -990,21 +990,21 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.22 E-Commerce Security — `Others`
 
-**Slug:** `e-commerce-security` · **Status:** Not started
+**Slug:** `e-commerce-security` · **Status:** English done
 
 - Security Threats
 - Encryption, SSL/TLS and Digital Certificates
 
 ### 7.23 M-Commerce and Digital Marketing — `Others`
 
-**Slug:** `m-commerce-and-digital-marketing` · **Status:** Not started
+**Slug:** `m-commerce-and-digital-marketing` · **Status:** English done
 
 - Mobile Commerce
 - Online Advertising and Digital Marketing
 
 ### 7.24 Legal and Ethical Issues in E-Commerce — `Others`
 
-**Slug:** `legal-and-ethical-issues-in-e-commerce` · **Status:** Not started
+**Slug:** `legal-and-ethical-issues-in-e-commerce` · **Status:** English done
 
 ---
 
@@ -1012,7 +1012,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.1 Introduction to Database Systems — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `introduction-to-database-systems` · **Status:** Not started
+**Slug:** `introduction-to-database-systems` · **Status:** English done
 
 - Evolution of File Processing Systems — `College`
 - Role of Databases in Organizations — `College`
@@ -1023,7 +1023,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.2 Data Models and the ER Model — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `data-models-and-the-er-model` · **Status:** Not started
+**Slug:** `data-models-and-the-er-model` · **Status:** English done
 
 - Data Models — `School-2` `PSC-IT` `AP`
 - Entity-Relationship (ER) Model — `School-2` `College` `PSC-IT` `AP`
@@ -1031,7 +1031,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.3 The Relational Model — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `the-relational-model` · **Status:** Not started
+**Slug:** `the-relational-model` · **Status:** English done
 
 - Relational Model — `School-2` `College` `PSC-IT` `AP`
 - Integrity Constraints — `PSC-IT` `AP`
@@ -1039,7 +1039,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.4 Normalization — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `normalization` · **Status:** Not started
+**Slug:** `normalization` · **Status:** English done
 
 - Concept of Normalization — `School-2` `College` `PSC-IT` `AP`
 - Functional Dependencies — `PSC-IT` `AP`
@@ -1047,7 +1047,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.5 SQL — `College` `PSC-IT` `AP`
 
-**Slug:** `sql` · **Status:** Not started
+**Slug:** `sql` · **Status:** English done
 
 - SQL — `College` `PSC-IT` `AP`
 - Assertions and Triggers — `PSC-IT` `AP`
@@ -1055,14 +1055,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.6 File Organization — `School-2` `PSC-IT` `AP`
 
-**Slug:** `file-organization` · **Status:** Not started
+**Slug:** `file-organization` · **Status:** English done
 
 - Concept of File Organization — `School-2` `PSC-IT` `AP`
 - Classification and Representation — `PSC-IT` `AP`
 
 ### 8.7 Indexing and Hashing — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `indexing-and-hashing` · **Status:** Not started
+**Slug:** `indexing-and-hashing` · **Status:** English done
 
 - Basic Concepts of Indexing — `School-2` `College` `PSC-IT` `AP`
 - Ordered Indices — `College`
@@ -1074,7 +1074,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.8 Query Processing — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `query-processing` · **Status:** Not started
+**Slug:** `query-processing` · **Status:** English done
 
 - Concept and Overview of Query Processing — `School-2` `College`
 - Notations — `PSC-IT` `AP`
@@ -1086,7 +1086,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.9 Query Optimization — `College`
 
-**Slug:** `query-optimization` · **Status:** Not started
+**Slug:** `query-optimization` · **Status:** English done
 
 - Transformation of Relational Expressions
 - Catalog and Statistical Information for Cost Estimation
@@ -1094,7 +1094,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.10 Transactions — `College` `PSC-IT` `AP`
 
-**Slug:** `transactions` · **Status:** Not started
+**Slug:** `transactions` · **Status:** English done
 
 - Transaction Concept — `College` `PSC-IT` `AP`
 - Transaction State — `College`
@@ -1103,7 +1103,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.11 Concurrency Control — `College` `PSC-IT` `AP`
 
-**Slug:** `concurrency-control` · **Status:** Not started
+**Slug:** `concurrency-control` · **Status:** English done
 
 - Lock-Based Protocols — `College` `PSC-IT` `AP`
 - Timestamp-Based Protocols — `College`
@@ -1111,7 +1111,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.12 Recovery System — `College`
 
-**Slug:** `recovery-system` · **Status:** Not started
+**Slug:** `recovery-system` · **Status:** English done
 
 - Failure Classification
 - Storage Structure
@@ -1121,14 +1121,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.13 Object-Oriented Databases — `College`
 
-**Slug:** `object-oriented-databases` · **Status:** Not started
+**Slug:** `object-oriented-databases` · **Status:** English done
 
 - Object-Oriented Data Model
 - Implementing Object Persistence Using Relational Databases
 
 ### 8.14 Data Analysis and Mining — `College`
 
-**Slug:** `data-analysis-and-mining` · **Status:** Not started
+**Slug:** `data-analysis-and-mining` · **Status:** English done
 
 - Data Mining
 - Decision Tree
@@ -1137,7 +1137,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.15 Database System Architectures — `College`
 
-**Slug:** `database-system-architectures` · **Status:** Not started
+**Slug:** `database-system-architectures` · **Status:** English done
 
 - Centralized and Client-Server Systems
 - Server System Architectures
@@ -1147,7 +1147,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.16 Parallel Databases — `College`
 
-**Slug:** `parallel-databases` · **Status:** Not started
+**Slug:** `parallel-databases` · **Status:** English done
 
 - I/O Parallelism
 - Interquery and Intraquery Parallelism
@@ -1155,7 +1155,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.17 Distributed Databases — `College`
 
-**Slug:** `distributed-databases` · **Status:** Not started
+**Slug:** `distributed-databases` · **Status:** English done
 
 - Heterogeneous and Homogeneous Databases
 - Distributed Data Storage
@@ -1164,7 +1164,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.18 Database Design, Tuning and Security — `College`
 
-**Slug:** `database-design-tuning-and-security` · **Status:** Not started
+**Slug:** `database-design-tuning-and-security` · **Status:** English done
 
 - Database Design
 - Database Tuning
@@ -1177,7 +1177,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.1 Introduction to Computer Networks — `School-2` `College` `PSC-IT` `AP`
 
-**Slug:** `introduction-to-computer-networks` · **Status:** Not started
+**Slug:** `introduction-to-computer-networks` · **Status:** English done
 
 - Overview of the Internet — `College`
 - Overview of Networking Protocols — `School-2` `College` `PSC-IT` `AP`
@@ -1187,13 +1187,13 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.2 Network Topologies — `School-2` `PSC-IT` `AP`
 
-**Slug:** `network-topologies` · **Status:** Not started
+**Slug:** `network-topologies` · **Status:** English done
 
 - Star, Switched, Bus and Ring Topologies — `School-2` `PSC-IT` `AP`
 
 ### 9.3 OSI and TCP/IP Models — `School-2` `PSC-IT` `AP`
 
-**Slug:** `osi-and-tcp-ip` · **Status:** Not started
+**Slug:** `osi-and-tcp-ip` · **Status:** English done
 
 - OSI Model — `School-2` `PSC-IT` `AP`
 - Functions of Each Layer — `School-2`
@@ -1201,7 +1201,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.4 Network Devices and Internetworking — `School-2` `PSC-IT` `AP`
 
-**Slug:** `network-devices-and-internetworking` · **Status:** Not started
+**Slug:** `network-devices-and-internetworking` · **Status:** English done
 
 - Network Devices Used at Each Layer — `School-2`
 - Bridges and Routers — `PSC-IT` `AP`
@@ -1209,7 +1209,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.5 Data Transmission Basics — `School-2` `PSC-IT` `AP`
 
-**Slug:** `data-transmission-basics` · **Status:** Not started
+**Slug:** `data-transmission-basics` · **Status:** English done
 
 - Data Communication — `School-2`
 - Analog and Digital Data — `PSC-IT` `AP`
@@ -1221,7 +1221,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.6 Transmission Modes and Media — `School-2` `PSC-IT` `AP`
 
-**Slug:** `transmission-modes-and-media` · **Status:** Not started
+**Slug:** `transmission-modes-and-media` · **Status:** English done
 
 - Transmission Modes and Transmission Systems — `School-2`
 - Synchronous and Asynchronous Transmission — `PSC-IT` `AP`
@@ -1232,14 +1232,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.7 Data Encoding — `PSC-IT` `AP`
 
-**Slug:** `data-encoding` · **Status:** Not started
+**Slug:** `data-encoding` · **Status:** English done
 
 - NRZ, NRZI
 - Manchester and Differential Manchester
 
 ### 9.8 Modulation Techniques — `School-2` `PSC-IT` `AP`
 
-**Slug:** `modulation-techniques` · **Status:** Not started
+**Slug:** `modulation-techniques` · **Status:** English done
 
 - Modulation and Demodulation — `School-2` `PSC-IT` `AP`
 - Digital Modulation Techniques — `School-2` `PSC-IT` `AP`
@@ -1251,7 +1251,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.9 Data Link Control — `PSC-IT` `AP`
 
-**Slug:** `data-link-control` · **Status:** Not started
+**Slug:** `data-link-control` · **Status:** English done
 
 - Error Control and Flow Control
 - CRC
@@ -1259,24 +1259,24 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.10 Multiplexing — `PSC-IT` `AP`
 
-**Slug:** `multiplexing` · **Status:** Not started
+**Slug:** `multiplexing` · **Status:** English done
 
 - FDM, TDM, Statistical TDM
 
 ### 9.11 Switching Techniques — `PSC-IT` `AP`
 
-**Slug:** `switching-techniques` · **Status:** Not started
+**Slug:** `switching-techniques` · **Status:** English done
 
 - Circuit Switching
 - Packet Switching
 
 ### 9.12 Ethernet and LAN Standards — `PSC-IT` `AP`
 
-**Slug:** `ethernet-and-lan-standards` · **Status:** Not started
+**Slug:** `ethernet-and-lan-standards` · **Status:** English done
 
 ### 9.13 Application Layer — `College` `PSC-IT` `AP`
 
-**Slug:** `application-layer` · **Status:** Not started
+**Slug:** `application-layer` · **Status:** English done
 
 - Principles of Network Applications — `College`
 - Web and HTTP — `College` `PSC-IT` `AP`
@@ -1286,7 +1286,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.14 Transport Layer — `College` `PSC-IT` `AP`
 
-**Slug:** `transport-layer` · **Status:** Not started
+**Slug:** `transport-layer` · **Status:** English done
 
 - Transport Layer Services — `College` `PSC-IT` `AP`
 - Multiplexing and Demultiplexing — `College`
@@ -1298,7 +1298,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.15 Network Layer and IP — `College` `PSC-IT` `AP`
 
-**Slug:** `network-layer-and-ip` · **Status:** Not started
+**Slug:** `network-layer-and-ip` · **Status:** English done
 
 - Datagram Networks — `College`
 - Inside a Router — `College`
@@ -1310,7 +1310,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.16 Routing — `College` `PSC-IT` `AP`
 
-**Slug:** `routing` · **Status:** Not started
+**Slug:** `routing` · **Status:** English done
 
 - Link-State and Distance-Vector Routing Algorithms — `College`
 - RIP, OSPF, BGP — `College`
@@ -1318,7 +1318,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.17 Wireless and Cellular Networks — `PSC-IT` `AP`
 
-**Slug:** `wireless-and-cellular-networks` · **Status:** Not started
+**Slug:** `wireless-and-cellular-networks` · **Status:** English done
 
 - Wireless LAN
 - VSAT
@@ -1326,14 +1326,14 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 9.18 ATM — `PSC-IT` `AP`
 
-**Slug:** `atm` · **Status:** Not started
+**Slug:** `atm` · **Status:** English done
 
 - ATM Switches
 - ATM Protocol
 
 ### 9.19 Telecommunication — `Others`
 
-**Slug:** `telecommunication` · **Status:** Not started
+**Slug:** `telecommunication` · **Status:** English done
 
 - Elements of a Telecommunication System
 - Telephone Networks (PSTN)
@@ -1353,7 +1353,7 @@ The AI topics (10.1–10.10) are tagged `PSC-IT` and `AP` based on note N1; the 
 
 ### 10.1 Overview of AI — `PSC-IT` `AP`
 
-**Slug:** `overview-of-ai` · **Status:** Not started
+**Slug:** `overview-of-ai` · **Status:** English done
 
 ### 10.2 Knowledge Representation — `PSC-IT` `AP`
 
