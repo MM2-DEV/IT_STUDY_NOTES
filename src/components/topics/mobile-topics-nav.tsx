@@ -13,25 +13,31 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import type { NavCategory } from "@/lib/topics";
+import type { NavCategory, SidebarSection } from "@/lib/topics";
 
 /** Sidebar in a slide-out panel for screens narrower than the desktop layout. */
-export function MobileTopicsNav({ categories }: { categories: NavCategory[] }) {
+export function MobileTopicsNav({
+  categories,
+  section,
+}: {
+  categories: NavCategory[];
+  section: SidebarSection;
+}) {
   const [open, setOpen] = useState(false);
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger render={<Button variant="outline" size="sm" />}>
         <PanelLeft data-icon="inline-start" aria-hidden="true" />
-        Browse topics
+        {section.examFilter ? "Browse topics" : `Browse ${section.title}`}
       </SheetTrigger>
       <SheetContent side="left" className="w-80 gap-0 p-0">
         <SheetHeader className="border-b">
-          <SheetTitle>Topics</SheetTitle>
+          <SheetTitle>{section.title}</SheetTitle>
           <SheetDescription>Categories, topics and subtopics</SheetDescription>
         </SheetHeader>
         <div className="flex-1 overflow-y-auto p-3">
-          <TopicsSidebar categories={categories} onNavigate={() => setOpen(false)} />
+          <TopicsSidebar categories={categories} section={section} onNavigate={() => setOpen(false)} />
         </div>
       </SheetContent>
     </Sheet>

@@ -132,7 +132,9 @@ It stores debit and credit cards, bank accounts or a money balance, and is used 
 
 ### Mobile Financial Services (MFS)
 
-Mobile financial services (MFS), also called **mobile banking** or **mobile money**, are financial services — such as **depositing and withdrawing cash, sending money and making payments** — provided through a **mobile phone account**, using a **USSD** code menu (on any phone) or a **smartphone app**, with a network of **agents** for cash-in and cash-out. They give banking services to people who have no bank account, especially in rural areas, so they support **financial inclusion**.
+Mobile financial services (MFS), also called **mobile banking** or **mobile money**, are financial services — such as **depositing and withdrawing cash, sending money and making payments** — provided through a **mobile phone account**, using a **USSD** code menu (on any phone) or a **smartphone app**, with a network of **agents** for cash-in and cash-out.
+
+They give banking services to people who have no bank account, especially in rural areas, so they support **financial inclusion**.
 
 In Bangladesh, MFS are licensed and supervised by **Bangladesh Bank** (the central bank) under its MFS Regulations (the Bangladesh Mobile Financial Services Regulations, 2018, later replaced by the 2022 regulations).
 
@@ -332,10 +334,6 @@ Other countries have similar systems — for example, **NEFT**, **RTGS** and **I
 **TpointTech**
 
 - [Payment Gateway Integration in Java](https://www.tpointtech.com/payment-gateway-integration-in-java) — accessed 2026-11-04 (on-site, hybrid and redirect gateways, 3-D Secure and PCI DSS, examples). TpointTech has no general page on cards, e-wallets or EFT; its `payment-gateway` and `e-wallet` pages return 404.
-
-**IT Job QnS**
-
-- IT Job QnS has no page on electronic payment systems; it only names bKash, Nagad and Rocket as payment options on its own registration page (checked 2026-11-04).
 
 **Programiz**
 

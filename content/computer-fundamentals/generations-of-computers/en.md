@@ -7,7 +7,9 @@ updated: 2026-11-01
 
 ### What is a Computer Generation?
 
-A **computer generation** is a stage in the development of computers that is marked by a major change in the basic technology (hardware) used to build them. Each new generation made computers, compared with the one before:
+A **computer generation** is a stage in the development of computers that is marked by a major change in the basic technology (hardware) used to build them.
+
+Each new generation made computers, compared with the one before:
 
 1. Smaller
 2. Faster
@@ -108,7 +110,7 @@ The development of computers is divided into **five generations**:
 4. Used **semiconductor memory** (RAM and ROM).
 5. Used the keyboard, pointing devices (mouse), optical scanning, monitor and printer for input and output.
 6. **Personal computers (microcomputers)** became available to the general public.
-7. **Computer networks** developed, and features such as multiprocessing, time-sharing and virtual memory were introduced.
+7. **Computer networks** developed, and features such as multiprocessing, time-sharing and virtual memory became common (they had first appeared in earlier generations).
 
 **Examples:**
 
@@ -169,10 +171,6 @@ The terms used for the third, fourth and fifth generations describe how many tra
 | Examples | ENIAC, UNIVAC I | IBM 1401, IBM 7090 | IBM System/360 | IBM PC, Apple II | Laptops, smartphones |
 
 ## References {#references}
-
-**IT Job QnS**
-
-- [NTRCA IT Job Solution](https://it.jobqns.com/ntrca-it-job-solution/) (15th NTRCA written question on computer generations) — accessed 2026-11-01
 
 **TutorialsPoint**
 

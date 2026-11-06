@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### Definition of Software
 
-Software is a collection of programs together with the documentation and operating procedures needed to use them. It is therefore more than program code: a software product is the complete package that is delivered to a user.
+Software is a collection of programs together with the documentation and operating procedures needed to use them.
+
+It is therefore more than program code: a software product is the complete package that is delivered to a user.
 
 Software has three components:
 
@@ -37,7 +39,9 @@ A program is a set of instructions written to perform a specific task on a compu
 
 ### Definition of Software Engineering
 
-Software engineering is the branch of engineering that develops software products by using well-defined scientific principles, methods and procedures. Its goal is to produce reliable, efficient and maintainable software within the planned time and budget.
+Software engineering is the branch of engineering that develops software products by using well-defined scientific principles, methods and procedures.
+
+Its goal is to produce reliable, efficient and maintainable software within the planned time and budget.
 
 Two standard definitions are frequently quoted:
 
@@ -80,7 +84,9 @@ The four layers, from the bottom up, are:
 
 ### Software Process
 
-A software process is a set of related activities and their results that together produce a software product. The activities are usually carried out by software engineers, and the result is a working, documented system.
+A software process is a set of related activities and their results that together produce a software product.
+
+The activities are usually carried out by software engineers, and the result is a working, documented system.
 
 #### Fundamental Activities of a Software Process
 
@@ -137,7 +143,9 @@ The individual models (waterfall, spiral, V-model, agile and others) are explain
 
 #### Software Paradigms
 
-Software paradigms are the methods and steps that are followed while developing software. They form three nested levels: programming is a part of software design, and software design is a part of software development.
+Software paradigms are the methods and steps that are followed while developing software.
+
+They form three nested levels: programming is a part of software design, and software design is a part of software development.
 
 1. **Software development paradigm** — requirement gathering, software design and programming.
 2. **Software design paradigm** — design, maintenance and programming.
@@ -174,7 +182,9 @@ Software development has passed through three stages:
 
 ### Software Crisis
 
-The software crisis is the set of problems that arose because it became very difficult to write useful and efficient programs in the required time. Demand for software and its complexity grew rapidly, but the same workforce, methods and tools were still being used, so projects failed to keep pace.
+The software crisis is the set of problems that arose because it became very difficult to write useful and efficient programs in the required time.
+
+Demand for software and its complexity grew rapidly, but the same workforce, methods and tools were still being used, so projects failed to keep pace.
 
 The symptoms of the software crisis were:
 
@@ -223,7 +233,9 @@ The nature of software has changed over time, and software now belongs to seven 
 
 #### Software Evolution
 
-Software evolution is the process of developing software and then updating it continually, by using software engineering principles, until it meets the required needs. It starts with requirement gathering and a prototype; user feedback then leads to repeated changes and new releases. Because technology and requirements keep changing, updating existing software is usually more practical than building it again.
+Software evolution is the process of developing software and then updating it continually, by using software engineering principles, until it meets the required needs.
+
+It starts with requirement gathering and a prototype; user feedback then leads to repeated changes and new releases. Because technology and requirements keep changing, updating existing software is usually more practical than building it again.
 
 Meir M. Lehman classified software into three types by how it evolves:
 
@@ -336,10 +348,6 @@ The programming language is chosen according to the requirements of the project,
 - [Software Processes](https://www.tpointtech.com/software-processes) — accessed 2026-11-03 (process activities, types of process models, general paradigms, components of software, software crisis)
 - [Characteristics of Software Engineering](https://www.tpointtech.com/characteristics-of-software-engineering) — accessed 2026-11-03
 - [Layered Technology in Software Engineering](https://www.tpointtech.com/layered-technology-in-software-engineering) — accessed 2026-11-03 (this page describes layered system architecture — presentation, application, domain and infrastructure layers — not Pressman's quality/process/methods/tools layers, so it is not used for that section)
-
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-03 (definition, program vs software, choice of language by project requirements)
 
 **Programiz**
 

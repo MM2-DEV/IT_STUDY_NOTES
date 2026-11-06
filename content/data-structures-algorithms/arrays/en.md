@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Array Representation and Operations {#array-representation-and-operations}
 
-**Definition:** an array is a **linear data structure** that stores a **fixed number of elements of the same type** in **contiguous (consecutive) memory locations**. Each element is identified by its **index (subscript)**. (For array syntax in C, see [C: Arrays and Strings](/topics/programming/c-arrays-strings#arrays).)
+**Definition:** an array is a **linear data structure** that stores a **fixed number of elements of the same type** in **contiguous (consecutive) memory locations**.
+
+Each element is identified by its **index (subscript)**. (For array syntax in C, see [C: Arrays and Strings](/topics/programming/c-arrays-strings#arrays).)
 
 **Terms:**
 
@@ -154,7 +156,9 @@ The array must have spare capacity for insertion (otherwise it **overflows**). I
 
 ## Sparse and Dense Matrices {#sparse-and-dense-matrices}
 
-**Sparse matrix:** a matrix in which **most of the elements are zero**. **Dense matrix:** a matrix in which **most of the elements are non-zero**.
+**Sparse matrix:** a matrix in which **most of the elements are zero**.
+
+**Dense matrix:** a matrix in which **most of the elements are non-zero**.
 
 **Sparsity** = (number of zero elements) / (total number of elements).
 
@@ -242,7 +246,3 @@ Some sparse matrices have zeros in a fixed pattern, so only the useful part need
 - [Array Data Structure](https://www.tpointtech.com/data-structure-array) — accessed 2026-11-02
 - [Multidimensional Array in Data Structure](https://www.tpointtech.com/multidimensional-array-in-data-structure) — accessed 2026-11-02
 - [Sparse Matrix](https://www.tpointtech.com/sparse-matrix) — accessed 2026-11-02
-
-**IT Job QnS**
-
-- [Data Structure](https://it.jobqns.com/data-structure/) — accessed 2026-11-02

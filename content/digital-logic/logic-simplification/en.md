@@ -102,7 +102,9 @@ Before simplification the circuit needs two OR gates for the (B + C) terms, thre
 
 ## Circuit and Expression Minimization {#circuit-and-expression-minimization}
 
-**Minimization** means finding the expression with the **fewest terms** and the **fewest literals** (variables or complemented variables) for a given function, so that the circuit needs the fewest gates and gate inputs. To minimize an expression systematically, it is first written in a **standard form**.
+**Minimization** means finding the expression with the **fewest terms** and the **fewest literals** (variables or complemented variables) for a given function, so that the circuit needs the fewest gates and gate inputs.
+
+To minimize an expression systematically, it is first written in a **standard form**.
 
 ### Minterms and Maxterms
 
@@ -172,7 +174,9 @@ So the canonical SOP with 4 terms of 3 literals reduces to **A′C + AB** (2 ter
 
 ## Karnaugh Map {#karnaugh-map}
 
-**Definition:** a **Karnaugh map (K-map)** is a **graphical method** of simplifying a Boolean expression. The truth table is drawn as a grid of cells, one cell for each minterm, arranged so that **adjacent cells differ in only one variable**. Adjacent 1s are then grouped, and each group gives one simple product term.
+**Definition:** a **Karnaugh map (K-map)** is a **graphical method** of simplifying a Boolean expression.
+
+The truth table is drawn as a grid of cells, one cell for each minterm, arranged so that **adjacent cells differ in only one variable**. Adjacent 1s are then grouped, and each group gives one simple product term.
 
 **History:** the K-map was introduced by **Maurice Karnaugh** in **1953**, as a refinement of the Veitch chart (Edward W. Veitch, 1952).
 
@@ -279,7 +283,9 @@ So, **F = (A′ + B′)(B′ + C′)(A + B + C)**.
 
 ### Don't-Care Conditions
 
-**Definition:** a **don't-care condition** is an input combination for which the output may be either 0 or 1, because the combination **never occurs** or its output **does not matter**. It is marked **X** (or d) in the K-map, and the don't-care minterms are listed with **d**. For example, in a BCD circuit, the inputs 1010 to 1111 never occur.
+**Definition:** a **don't-care condition** is an input combination for which the output may be either 0 or 1, because the combination **never occurs** or its output **does not matter**.
+
+It is marked **X** (or d) in the K-map, and the don't-care minterms are listed with **d**. For example, in a BCD circuit, the inputs 1010 to 1111 never occur.
 
 **Rule:** a don't-care cell may be treated as **1** (for SOP) or **0** (for POS) **only if it helps to make a group larger**; otherwise it is ignored. A group must not be made of don't-cares only.
 
@@ -309,7 +315,9 @@ So, **F = CD + A′D**. (Using the don't-cares 0 and 2 instead gives the equally
 
 ## Quine–McCluskey Method {#quine-mccluskey-method}
 
-**Definition:** the **Quine–McCluskey method** (also called the **tabulation method**) is a **systematic, tabular method** of minimizing a Boolean function. It finds all the **prime implicants** of the function and then selects the smallest set of them that covers all the minterms.
+**Definition:** the **Quine–McCluskey method** (also called the **tabulation method**) is a **systematic, tabular method** of minimizing a Boolean function.
+
+It finds all the **prime implicants** of the function and then selects the smallest set of them that covers all the minterms.
 
 **History:** the method was developed by **Willard V. Quine** in **1952** and extended by **Edward J. McCluskey** in **1956**.
 
@@ -419,10 +427,6 @@ The K-map gives the same answer:
 | Introduced by | Maurice Karnaugh (1953) | W. V. Quine (1952), E. J. McCluskey (1956) |
 
 ## References {#references}
-
-**IT Job QnS**
-
-- [Digital Logic Design](https://it.jobqns.com/digital-logic-design/) (K-map and simplification exam questions from Combined Bank and Sonali Bank) — accessed 2026-11-01
 
 **TutorialsPoint**
 

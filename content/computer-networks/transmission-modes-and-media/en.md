@@ -45,7 +45,9 @@ The whole capacity of the channel is used by the device that is sending at that 
 
 ### 3. Full-Duplex Mode
 
-**Full-duplex mode** is a transmission mode in which **both devices can send and receive at the same time**. It is also called duplex mode.
+**Full-duplex mode** is a transmission mode in which **both devices can send and receive at the same time**.
+
+It is also called duplex mode.
 
 The capacity of the link is shared between the two directions, either by two separate paths (for example, separate wire pairs) or by dividing the channel between the two directions. It gives the best performance. Examples:
 
@@ -461,10 +463,6 @@ There are four common wiring schemes:
 
 - [Transmission Modes](https://www.tpointtech.com/computer-network-transmission-modes) and [Types of Transmission](https://www.tpointtech.com/types-of-transmission) — accessed 2026-11-06 (simplex, half-duplex and full-duplex with examples). These pages give unsupported claims such as full-duplex using "double" bandwidth; they are not used.
 - [Transmission Media](https://www.tpointtech.com/transmission-media), [Guided Transmission Media](https://www.tpointtech.com/guided-transmission-media) and [Unguided Transmission Media](https://www.tpointtech.com/unguided-transmission-media) — accessed 2026-11-06 (guided and unguided media, STP and UTP, coaxial cable, fibre, radio, microwave, infrared, satellite). Issues found: it gives Cat 5 as 200 Mbps (Cat 5 is a 100 MHz cable used for 100 Mbps Ethernet), says optical fibre "uses electrical signals" (it carries light), and gives the radio-wave range as "3 kHz to 1 kHz". The values above follow TutorialsPoint, GeeksforGeeks and Forouzan.
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (item 82, transmission modes: simplex, half-duplex and full-duplex with examples; half-duplex hub and full-duplex switch; item 68 asks for the difference between Cat 5 and Cat 6 but gives no answer text). It has no item on satellite or the null modem.
 
 **Programiz**
 

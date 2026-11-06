@@ -116,6 +116,8 @@ This is the **most practical** prevention method. **Disadvantage:** resources mu
 
 ## Deadlock Detection {#deadlock-detection}
 
+**Deadlock detection** is the method of handling deadlocks in which the OS allows deadlocks to occur, examines the state of the system to find them, and then recovers from them.
+
 If the system uses neither prevention nor avoidance, it must provide:
 
 1. a **detection algorithm** that examines the state of the system to find out whether a deadlock has occurred, and
@@ -217,7 +219,9 @@ Take resources away from some processes and give them to others until the deadlo
 
 ## Deadlock Avoidance {#deadlock-avoidance}
 
-> **In deadlock avoidance, each process declares in advance the maximum number of resources of each type it may need. Before granting any request, the OS checks that granting it keeps the system in a safe state; otherwise the process must wait.**
+> **Deadlock avoidance is the method of handling deadlocks in which the OS grants a resource request only if the system remains in a safe state afterwards, using the maximum needs that the processes declare in advance.**
+
+In deadlock avoidance, each process declares in advance the maximum number of resources of each type it may need. Before granting any request, the OS checks that granting it keeps the system in a safe state; otherwise the process must wait.
 
 ### Safe State and Safe Sequence
 
@@ -284,7 +288,9 @@ The worst case is when every process holds maxᵢ − 1 instances and waits for 
 
 ### Introduction
 
-The **Banker's algorithm**, formalized by **Edsger W. Dijkstra**, is a **deadlock-avoidance** algorithm for systems with **several instances of each resource type**. It is named after a bank that never lends its cash in such a way that it can no longer satisfy the needs of all its customers. Each process must declare its **maximum need** in advance; a request is granted only if the system stays in a **safe state**.
+The **Banker's algorithm**, formalized by **Edsger W. Dijkstra**, is a **deadlock-avoidance** algorithm for systems with **several instances of each resource type**.
+
+It is named after a bank that never lends its cash in such a way that it can no longer satisfy the needs of all its customers. Each process must declare its **maximum need** in advance; a request is granted only if the system stays in a **safe state**.
 
 ### Data Structures
 
@@ -415,10 +421,6 @@ The new state is **safe** (sequence ⟨P1, P3, P4, P0, P2⟩), so the request is
 - [Resource Allocation Graph (RAG) in OS](https://www.tpointtech.com/os-resource-allocation-graph) — accessed 2026-11-03
 - [OS Deadlock Detection using RAG](https://www.tpointtech.com/os-deadlock-detection-using-rag) — accessed 2026-11-03
 - [Deadlock Detection and Recovery in OS](https://www.tpointtech.com/os-deadlock-detection-and-recovery) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (deadlock conditions, prevention, safe state, RAG, wait-for graph, Need = Max − Allocation, and recovery questions)
 
 **Programiz**
 

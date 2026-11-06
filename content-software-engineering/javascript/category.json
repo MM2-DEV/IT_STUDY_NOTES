@@ -1,0 +1,269 @@
+{
+  "title": "JavaScript",
+  "order": 4,
+  "topics": [
+    {
+      "slug": "javascript-basics",
+      "title": "JavaScript Basics",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "javascript-runtimes-browser-and-node-js",
+          "title": "JavaScript Runtimes: Browser and Node.js",
+          "exams": []
+        },
+        {
+          "id": "variables-var-let-and-const",
+          "title": "Variables: var, let and const",
+          "exams": []
+        },
+        {
+          "id": "data-types-and-type-conversion",
+          "title": "Data Types and Type Conversion",
+          "exams": []
+        },
+        {
+          "id": "primitive-vs-reference-values",
+          "title": "Primitive vs Reference Values",
+          "exams": []
+        },
+        {
+          "id": "operators-and-equality",
+          "title": "Operators and Equality",
+          "exams": []
+        },
+        {
+          "id": "conditions-and-switch-statements",
+          "title": "Conditions and Switch Statements",
+          "exams": []
+        },
+        {
+          "id": "loops",
+          "title": "Loops",
+          "exams": []
+        },
+        {
+          "id": "functions-parameters-and-return-values",
+          "title": "Functions, Parameters and Return Values",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "arrays-objects-and-modern-syntax",
+      "title": "Arrays, Objects and Modern Syntax",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "arrays-and-array-methods",
+          "title": "Arrays and Array Methods",
+          "exams": []
+        },
+        {
+          "id": "objects-and-object-methods",
+          "title": "Objects and Object Methods",
+          "exams": []
+        },
+        {
+          "id": "destructuring",
+          "title": "Destructuring",
+          "exams": []
+        },
+        {
+          "id": "spread-and-rest-syntax",
+          "title": "Spread and Rest Syntax",
+          "exams": []
+        },
+        {
+          "id": "template-literals",
+          "title": "Template Literals",
+          "exams": []
+        },
+        {
+          "id": "optional-chaining-and-nullish-coalescing",
+          "title": "Optional Chaining and Nullish Coalescing",
+          "exams": []
+        },
+        {
+          "id": "modules-import-and-export",
+          "title": "Modules: import and export",
+          "exams": []
+        },
+        {
+          "id": "json",
+          "title": "JSON",
+          "exams": []
+        },
+        {
+          "id": "regular-expressions",
+          "title": "Regular Expressions",
+          "exams": []
+        },
+        {
+          "id": "dates-and-times",
+          "title": "Dates and Times",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "scope-closures-and-objects",
+      "title": "Scope, Closures and Objects in Depth",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "execution-context-and-the-call-stack",
+          "title": "Execution Context and the Call Stack",
+          "exams": []
+        },
+        {
+          "id": "scope-and-lexical-scope",
+          "title": "Scope and Lexical Scope",
+          "exams": []
+        },
+        {
+          "id": "hoisting-and-the-temporal-dead-zone",
+          "title": "Hoisting and the Temporal Dead Zone",
+          "exams": []
+        },
+        {
+          "id": "closures",
+          "title": "Closures",
+          "exams": []
+        },
+        {
+          "id": "the-this-keyword",
+          "title": "The this Keyword",
+          "exams": []
+        },
+        {
+          "id": "prototypes-and-inheritance",
+          "title": "Prototypes and Inheritance",
+          "exams": []
+        },
+        {
+          "id": "classes-and-constructors",
+          "title": "Classes and Constructors",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "asynchronous-javascript",
+      "title": "Asynchronous JavaScript",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "synchronous-vs-asynchronous-execution",
+          "title": "Synchronous vs Asynchronous Execution",
+          "exams": []
+        },
+        {
+          "id": "the-event-loop-tasks-and-microtasks",
+          "title": "The Event Loop, Tasks and Microtasks",
+          "exams": []
+        },
+        {
+          "id": "callbacks",
+          "title": "Callbacks",
+          "exams": []
+        },
+        {
+          "id": "promises",
+          "title": "Promises",
+          "exams": []
+        },
+        {
+          "id": "async-and-await",
+          "title": "async and await",
+          "exams": []
+        },
+        {
+          "id": "error-handling-try-catch-and-finally",
+          "title": "Error Handling: try, catch and finally",
+          "exams": []
+        },
+        {
+          "id": "fetch-api",
+          "title": "Fetch API",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "dom-and-events",
+      "title": "DOM and Events",
+      "order": 5,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "dom-tree-and-dom-manipulation",
+          "title": "DOM Tree and DOM Manipulation",
+          "exams": []
+        },
+        {
+          "id": "event-handling",
+          "title": "Event Handling",
+          "exams": []
+        },
+        {
+          "id": "event-bubbling-capturing-and-delegation",
+          "title": "Event Bubbling, Capturing and Delegation",
+          "exams": []
+        },
+        {
+          "id": "form-handling-and-validation",
+          "title": "Form Handling and Validation",
+          "exams": []
+        },
+        {
+          "id": "browser-storage-localstorage-sessionstorage-and-cookies",
+          "title": "Browser Storage: localStorage, sessionStorage and Cookies",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "browser-and-web-apis",
+      "title": "Browser and Web APIs",
+      "order": 6,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "browser-rendering-basics",
+          "title": "Browser Rendering Basics",
+          "exams": []
+        },
+        {
+          "id": "dom-and-bom",
+          "title": "DOM and BOM",
+          "exams": []
+        },
+        {
+          "id": "file-api-and-file-uploads",
+          "title": "File API and File Uploads",
+          "exams": []
+        },
+        {
+          "id": "clipboard-api",
+          "title": "Clipboard API",
+          "exams": []
+        },
+        {
+          "id": "geolocation-api",
+          "title": "Geolocation API",
+          "exams": []
+        },
+        {
+          "id": "websockets-in-the-browser",
+          "title": "WebSockets in the Browser",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

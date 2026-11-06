@@ -158,7 +158,7 @@ RIP (Routing Information Protocol) is an **intra-AS (interior) routing protocol 
 1. **Metric:** **hop count** — the number of routers (subnets) on the path; each link has cost 1.
 2. **Maximum:** **15 hops**; a cost of **16 means unreachable** (infinity), so RIP is limited to small networks.
 3. **Updates:** each router sends its whole routing table to its neighbours every **30 seconds** in RIP **response (advertisement)** messages.
-4. **Timers:** a route not refreshed for **180 seconds** is marked invalid (the neighbour is assumed dead), and is removed after **240 seconds**.
+4. **Timers:** a route not refreshed for **180 seconds** is marked invalid (the neighbour is assumed dead), and is deleted after a further **120-second** garbage-collection period, that is, **300 seconds** after the last update (RFC 2453; Cisco routers use a 240-second flush timer).
 5. **Transport:** RIP messages are carried in **UDP, port 520**; RIP is implemented as an application-level process (routed) that updates the network layer's table.
 6. **Loop prevention:** split horizon, poisoned reverse, route poisoning and hold-down timers.
 
@@ -294,10 +294,6 @@ IGMP works only between a host and its **first-hop router**. The routers then us
 **TpointTech**
 
 - [Routing](https://www.tpointtech.com/computer-network-routing), [Routing Algorithm](https://www.tpointtech.com/computer-network-routing-algorithm), [Distance Vector Routing Algorithm](https://www.tpointtech.com/distance-vector-routing-algorithm), [Link State Routing Algorithm](https://www.tpointtech.com/link-state-routing-algorithm), [Count to Infinity Problem](https://www.tpointtech.com/count-to-infinity-problem-in-distance-vector-routing), [RIP Protocol](https://www.tpointtech.com/rip-protocol), [OSPF Protocol](https://www.tpointtech.com/ospf-protocol), [Border Gateway Protocol](https://www.tpointtech.com/border-gateway-protocol), [Routing Protocols](https://www.tpointtech.com/routing-protocols-in-computer-networks) and [Autonomous System](https://www.tpointtech.com/what-is-autonomous-system) — accessed 2026-11-06 (static and dynamic routing, the two-node loop, split horizon and poisoned reverse, RIP, OSPF, BGP and autonomous systems)
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (item 45, distance-vector vs link-state; item 84, packet delivery with OSPF; item 85, LSAs and the SPF algorithm; item 86, the BGP path-selection steps; item 87, static, dynamic, default and ad hoc routing, and Dijkstra's algorithm for shortest paths). Items 45, 85 and 86 give no answer text.
 
 **Programiz**
 

@@ -204,7 +204,9 @@ A GSM network has four subsystems:
 
 ### 1. Mobile Station (MS)
 
-The mobile station is the user's equipment. It has two parts:
+The mobile station is the user's equipment.
+
+It has two parts:
 
 1. **Mobile equipment (ME)** — the handset (radio transceiver, display, processors), identified by its **IMEI** (International Mobile Equipment Identity).
 2. **SIM (Subscriber Identity Module)** — a smart card that holds the subscriber's identity (**IMSI**, International Mobile Subscriber Identity), the secret authentication key **Ki** and other data. Moving the SIM to another handset moves the subscription with it (**personal mobility**).
@@ -510,10 +512,6 @@ Many earth stations share one transponder by **FDMA** (each station a frequency 
 **TpointTech**
 
 - [Telecommunication Networks](https://www.tpointtech.com/telecommunication-networks), [Public Switched Telephone Network](https://www.tpointtech.com/public-switched-telephone-network), [Cellular Network](https://www.tpointtech.com/cellular-network), [4G Mobile Communication Technology](https://www.tpointtech.com/4g-mobile-communication-technology), [CDMA vs GSM](https://www.tpointtech.com/cdma-vs-gsm), [Direct Sequence Spread Spectrum](https://www.tpointtech.com/direct-sequence-spread-spectrum), [What is Fiber Optics?](https://www.tpointtech.com/what-is-fiber-optics) and [Advantages and Disadvantages of Satellite Communication](https://www.tpointtech.com/advantages-and-disadvantages-of-satellite-communication) — accessed 2026-11-06 (elements of telecommunication networks, exchanges and subscriber lines, cells and handover, 4G, DSSS, fibre structure and total internal reflection, satellite advantages and disadvantages)
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (item 41, LTE network elements; the channelization protocols FDMA, TDMA and CDMA in its multiple access answer)
 
 **Programiz**
 

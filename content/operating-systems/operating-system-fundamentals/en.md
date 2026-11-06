@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### Definition
 
-> **An operating system (OS) is system software that acts as an interface (intermediary) between the user and the computer hardware. It manages all the hardware and software resources of the computer and provides common services to the programs that run on it.**
+> **An operating system (OS) is system software that acts as an interface (intermediary) between the user and the computer hardware.**
+
+It manages all the hardware and software resources of the computer and provides common services to the programs that run on it.
 
 The operating system can be described in three ways:
 
@@ -87,7 +89,9 @@ An operating system is made of components, each of which performs a definite tas
 
 #### 1. Process Management
 
-A **process** is a program in execution. It needs resources such as CPU time, memory, files and I/O devices. The process management component:
+A **process** is a program in execution.
+
+It needs resources such as CPU time, memory, files and I/O devices. The process management component:
 
 1. Creates and deletes (terminates) user and system processes.
 2. Suspends and resumes processes.
@@ -106,7 +110,9 @@ This component hides the details of specific hardware devices from the user and 
 
 #### 3. File Management
 
-A **file** is a collection of related information defined by its creator. Files usually hold programs (source and object form) and data, which may be numeric, alphabetic or alphanumeric. Files are organized into **directories** (folders). The file management component:
+A **file** is a collection of related information defined by its creator.
+
+Files usually hold programs (source and object form) and data, which may be numeric, alphabetic or alphanumeric. Files are organized into **directories** (folders). The file management component:
 
 1. Creates and deletes files.
 2. Creates and deletes directories.
@@ -126,7 +132,9 @@ Network management administers a network of connected computers so that they can
 
 #### 5. Main Memory Management
 
-**Main memory** is a large array of bytes (or words), each with its own address. It is fast and directly accessible by the CPU, but it is **volatile** (its contents are lost when power fails) and limited in size. A program must be in main memory to run. The main memory management component:
+**Main memory** is a large array of bytes (or words), each with its own address.
+
+It is fast and directly accessible by the CPU, but it is **volatile** (its contents are lost when power fails) and limited in size. A program must be in main memory to run. The main memory management component:
 
 1. Keeps track of which parts of memory are in use and by which process.
 2. Decides which processes to load when memory space becomes available.
@@ -249,7 +257,9 @@ Two or more programs reside in main memory at the same time and share a single p
 
 ### 4. Interactivity
 
-Interactivity is the ability of users to interact with the computer system. For this the OS:
+Interactivity is the ability of users to interact with the computer system.
+
+For this the OS:
 
 1. Provides a user interface to interact with the system.
 2. Manages input devices (such as the keyboard) and output devices (such as the monitor).
@@ -258,7 +268,9 @@ An interactive system must have a **short response time**, because the user wait
 
 ### 5. Real-Time System
 
-A real-time system is usually a **dedicated, embedded system**. The OS reads information from sensors and must respond within a guaranteed, fixed time period to work correctly.
+A **real-time system** is a system that must respond to inputs (events) within a **guaranteed, fixed time period** to work correctly.
+
+It is usually a **dedicated, embedded system**: the OS reads information from sensors and must respond in time.
 
 - **Advantages:** fast and timely response; suitable for time-critical tasks.
 - **Disadvantages:** very complex to design.
@@ -272,7 +284,9 @@ Several independent processors (CPUs) are used. The OS distributes the computati
 
 ### 7. Spooling
 
-**Spooling** stands for **Simultaneous Peripheral Operations On-Line**. Data of various I/O jobs is placed in a buffer — a special area in memory or on the hard disk — that the I/O devices can access. Spooling:
+**Spooling** (**Simultaneous Peripheral Operations On-Line**) is a technique in which the data of I/O jobs is placed in a buffer — a special area in memory or on the hard disk — from which the slow I/O devices take it, so that the CPU and the devices can work at the same time.
+
+Spooling:
 
 1. Handles I/O devices that have different data access rates.
 2. Keeps the data in the spool while the slower device catches up.
@@ -453,7 +467,9 @@ A mobile OS is designed for smartphones and tablets. It manages the device's har
 
 ### Definition
 
-**DOS (Disk Operating System)** is an operating system that manages data on disk storage devices. The best-known DOS is **MS-DOS (Microsoft Disk Operating System)**, a **16-bit, single-user, single-tasking, command-line** operating system for x86-based IBM PC-compatible personal computers.
+**DOS (Disk Operating System)** is an operating system that manages data on disk storage devices.
+
+The best-known DOS is **MS-DOS (Microsoft Disk Operating System)**, a **16-bit, single-user, single-tasking, command-line** operating system for x86-based IBM PC-compatible personal computers.
 
 ### History
 
@@ -461,7 +477,7 @@ A mobile OS is designed for smartphones and tablets. It manages the device's har
 2. **Microsoft** acquired 86-DOS and adapted it for IBM's new personal computer under the name **Microsoft Disk Operating System**.
 3. The first version was released in **August 1981** (IBM sold it as **PC DOS**).
 4. MS-DOS was the main operating system of IBM PC-compatible computers in the 1980s; it went through eight major versions.
-5. **MS-DOS 6.22** (April 1994) was the last stand-alone version. Windows 95 included MS-DOS 7.0, and the final release came with Windows Me in **2000**.
+5. **MS-DOS 6.22** (1994) was the last stand-alone version. Windows 95 included MS-DOS 7.0, and the final release came with Windows Me in **2000**.
 
 ### Features
 
@@ -540,7 +556,9 @@ Wildcards: `*` matches any number of characters and `?` matches one character (f
 
 ### Definition
 
-**Microsoft Windows** is a family of **graphical user interface (GUI)** operating systems developed by **Microsoft**. The user works with windows, icons, menus and a pointing device instead of typing commands. Windows is the most widely used desktop operating system.
+**Microsoft Windows** is a family of **graphical user interface (GUI)** operating systems developed by **Microsoft**.
+
+The user works with windows, icons, menus and a pointing device instead of typing commands. Windows is the most widely used desktop operating system.
 
 ### History
 
@@ -559,7 +577,7 @@ Wildcards: `*` matches any number of characters and `?` matches one character (f
 | Windows 3.1 | 6 Apr 1992 | TrueType fonts, multimedia support |
 | Windows NT 3.1 | July 1993 | First of the NT family |
 | Windows 95 | 24 Aug 1995 | Start menu, taskbar, Plug and Play, 32-bit preemptive multitasking |
-| Windows 98 | 25 Jun 1998 | FAT32, better USB support |
+| Windows 98 | 25 Jun 1998 | FAT32 in a full retail release (first shipped in Windows 95 OSR2, 1996), better USB support |
 | Windows 2000 | 17 Feb 2000 | NT-based business OS |
 | Windows Me | 14 Sep 2000 | Last MS-DOS-based Windows |
 | Windows XP | 25 Oct 2001 | Consumer Windows moves to the NT kernel |
@@ -634,7 +652,9 @@ A bit in the CPU, called the **mode bit**, shows the current mode:
 
 #### Privileged Instructions
 
-**Privileged instructions** are the instructions that can be executed **only in kernel mode**. Examples:
+**Privileged instructions** are the instructions that can be executed **only in kernel mode**.
+
+Examples:
 
 1. I/O instructions (I/O control and device management).
 2. Instructions for interrupt handling (enabling and disabling interrupts).
@@ -669,7 +689,9 @@ If a user program tries to execute a privileged instruction, the hardware does n
 
 ### I/O Channels
 
-An **I/O channel** (also called an **I/O processor**) is a special-purpose processor that controls input/output operations **on behalf of the CPU**. It is an extension of the DMA (Direct Memory Access) idea: the channel is connected directly to main memory, can execute its own I/O instructions, and has complete control over the I/O operation. The CPU only starts the operation, so the CPU's I/O work is greatly reduced.
+An **I/O channel** (also called an **I/O processor**) is a special-purpose processor that controls input/output operations **on behalf of the CPU**.
+
+It is an extension of the DMA (Direct Memory Access) idea: the channel is connected directly to main memory, can execute its own I/O instructions, and has complete control over the I/O operation. The CPU only starts the operation, so the CPU's I/O work is greatly reduced.
 
 #### How a Channel Works
 
@@ -700,7 +722,9 @@ An **I/O channel** (also called an **I/O processor**) is a special-purpose proce
 
 ### Memory Hierarchy
 
-The **memory hierarchy** is the arrangement of the different memories of a computer in levels according to their **speed (access time)**, **capacity (size)** and **cost per bit**. Fast memory is expensive, so it is small; large memory is cheap but slow. The hierarchy combines them to give speed close to the fastest memory at a cost close to the cheapest.
+The **memory hierarchy** is the arrangement of the different memories of a computer in levels according to their **speed (access time)**, **capacity (size)** and **cost per bit**.
+
+Fast memory is expensive, so it is small; large memory is cheap but slow. The hierarchy combines them to give speed close to the fastest memory at a cost close to the cheapest.
 
 #### Levels (from top to bottom)
 
@@ -727,9 +751,9 @@ Typical values:
 
 | Level | Typical size | Typical access time | Managed by |
 | --- | --- | --- | --- |
-| Registers | Less than 1 KB | About 2–5 ns | Compiler |
-| Cache | KB to a few MB | About 3–10 ns | Hardware |
-| Main memory | GB | About 80–400 ns | Operating system |
+| Registers | Less than 1 KB | About 0.25–0.5 ns | Compiler |
+| Cache | KB to a few MB | About 0.5–25 ns | Hardware |
+| Main memory | GB | About 80–250 ns | Operating system |
 | Secondary storage | TB | About 5 ms (disk) | OS / user |
 
 #### Locality of Reference
@@ -891,10 +915,6 @@ Example: for 256 control signals, horizontal format needs 256 bits, while a full
 - [Supervisor Mode in Operating System](https://www.tpointtech.com/supervisor-mode-in-operating-system) — accessed 2026-11-03
 - [Memory Hierarchy in Computer Architecture](https://www.tpointtech.com/memory-hierarchy) — accessed 2026-11-03
 - [Design of Control Unit](https://www.tpointtech.com/design-of-control-unit) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (definition of an OS, kernel, shell and the purpose of cache memory)
 
 **Programiz**
 

@@ -3,11 +3,15 @@ description: Logic gates, the basic AND, OR and NOT gates, the NOR gate, the uni
 updated: 2026-11-01
 ---
 
-**Logic gate:** a logic gate is an **electronic circuit** that performs a **Boolean (logical) operation**. It has **one or more inputs** and **only one output**, and every input and output is either **0 (low, false)** or **1 (high, true)**. Logic gates are the basic building blocks of all digital circuits; they are made with transistors, and a modern processor contains millions of them.
+**Logic gate:** a logic gate is an **electronic circuit** that performs a **Boolean (logical) operation**.
+
+It has **one or more inputs** and **only one output**, and every input and output is either **0 (low, false)** or **1 (high, true)**. Logic gates are the basic building blocks of all digital circuits; they are made with transistors, and a modern processor contains millions of them.
 
 **Logic levels:** in standard TTL circuits, which use a **5 V** supply, an input between **0 V and 0.8 V** is read as **0 (low)**, and an input between **2 V and 5 V** is read as **1 (high)**.
 
-**Truth table:** a table that shows the output of a gate (or circuit) for **every possible combination of inputs**. With *n* inputs there are **2ⁿ** rows: 2 inputs give 2² = 4 rows, and 3 inputs give 2³ = 8 rows.
+**Truth table:** a table that shows the output of a gate (or circuit) for **every possible combination of inputs**.
+
+With *n* inputs there are **2ⁿ** rows: 2 inputs give 2² = 4 rows, and 3 inputs give 2³ = 8 rows.
 
 **Classification of logic gates:**
 
@@ -36,7 +40,9 @@ updated: 2026-11-01
 
 ### AND Gate
 
-**Definition:** the AND gate is the logic gate that performs the **logical multiplication** (AND operation) of Boolean algebra. It has **two or more inputs** and **one output**. The output is **1 only when all the inputs are 1**; if **any input is 0**, the output is 0.
+**Definition:** the AND gate is the logic gate that performs the **logical multiplication** (AND operation) of Boolean algebra.
+
+It has **two or more inputs** and **one output**. The output is **1 only when all the inputs are 1**; if **any input is 0**, the output is 0.
 
 **Boolean expression:** X = A · B = AB (read "A AND B").
 
@@ -76,7 +82,9 @@ updated: 2026-11-01
 
 ### OR Gate
 
-**Definition:** the OR gate is the logic gate that performs the **logical addition** (OR operation) of Boolean algebra. It has **two or more inputs** and **one output**. The output is **1 if any one (or more) of the inputs is 1**; the output is 0 only when **all the inputs are 0**.
+**Definition:** the OR gate is the logic gate that performs the **logical addition** (OR operation) of Boolean algebra.
+
+It has **two or more inputs** and **one output**. The output is **1 if any one (or more) of the inputs is 1**; the output is 0 only when **all the inputs are 0**.
 
 **Boolean expression:** X = A + B (read "A OR B").
 
@@ -116,7 +124,9 @@ updated: 2026-11-01
 
 ### NOT Gate
 
-**Definition:** the NOT gate is the logic gate that performs the **complement (inversion)** operation of Boolean algebra. It has **only one input** and **one output**, and the output is the **opposite of the input**: input 1 gives output 0, and input 0 gives output 1. Because it inverts its input, it is also called an **inverter**.
+**Definition:** the NOT gate is the logic gate that performs the **complement (inversion)** operation of Boolean algebra.
+
+It has **only one input** and **one output**, and the output is the **opposite of the input**: input 1 gives output 0, and input 0 gives output 1. Because it inverts its input, it is also called an **inverter**.
 
 **Boolean expression:** X = Ā = A′ (read "NOT A" or "A bar").
 
@@ -150,7 +160,9 @@ updated: 2026-11-01
 
 ## NOR Gate {#nor-gate}
 
-**Definition:** the NOR (NOT-OR) gate is an **OR gate followed by a NOT gate**: the output of the OR gate is inverted. Its output is the **opposite of the OR gate**. The output is **1 only when all the inputs are 0**; if **any input is 1**, the output is 0.
+**Definition:** the NOR (NOT-OR) gate is an **OR gate followed by a NOT gate**: the output of the OR gate is inverted.
+
+Its output is the **opposite of the OR gate**. The output is **1 only when all the inputs are 0**; if **any input is 1**, the output is 0.
 
 **Boolean expression:** X = (A + B)′, written as A + B with a bar over the whole expression (read "A NOR B").
 
@@ -198,13 +210,17 @@ updated: 2026-11-01
 
 ## Universal Gates {#universal-gates}
 
-**Definition:** a **universal gate** is a gate with which **all the basic gates (AND, OR and NOT)**, and therefore any logic circuit, can be built. The **NAND gate** and the **NOR gate** are the two universal gates.
+**Definition:** a **universal gate** is a gate with which **all the basic gates (AND, OR and NOT)**, and therefore any logic circuit, can be built.
+
+The **NAND gate** and the **NOR gate** are the two universal gates.
 
 Any Boolean expression can be written using only NAND operations (or only NOR operations), so **any logic circuit can be built using only NAND gates, or only NOR gates**.
 
 ### NAND Gate
 
-**Definition:** the NAND (NOT-AND) gate is an **AND gate followed by a NOT gate**: the output of the AND gate is inverted. Its output is the **opposite of the AND gate**. The output is **0 only when all the inputs are 1**; if **any input is 0**, the output is 1.
+**Definition:** the NAND (NOT-AND) gate is an **AND gate followed by a NOT gate**: the output of the AND gate is inverted.
+
+Its output is the **opposite of the AND gate**. The output is **0 only when all the inputs are 1**; if **any input is 0**, the output is 1.
 
 **Boolean expression:** X = (A · B)′, written as AB with a bar over the whole expression (read "A NAND B").
 
@@ -306,7 +322,9 @@ The XOR and XNOR gates are called **special gates**. They are compound gates mad
 
 ### XOR Gate (Exclusive-OR)
 
-**Definition:** the XOR (Exclusive-OR) gate is a logic gate whose output is **1 when its two inputs are different**, and **0 when they are the same**. With more than two inputs, the output is **1 when an odd number of inputs are 1**.
+**Definition:** the XOR (Exclusive-OR) gate is a logic gate whose output is **1 when its two inputs are different**, and **0 when they are the same**.
+
+With more than two inputs, the output is **1 when an odd number of inputs are 1**.
 
 **Boolean expression:** X = A ⊕ B = A′B + AB′ (read "A XOR B"; ⊕ is the XOR operator).
 
@@ -351,7 +369,9 @@ The XOR and XNOR gates are called **special gates**. They are compound gates mad
 
 ### XNOR Gate (Exclusive-NOR)
 
-**Definition:** the XNOR (Exclusive-NOR) gate is an **XOR gate followed by a NOT gate**. Its output is the opposite of XOR: it is **1 when its two inputs are the same** (both 0 or both 1), and **0 when they are different**. Because it gives 1 for equal inputs, it is also called the **equivalence gate**.
+**Definition:** the XNOR (Exclusive-NOR) gate is an **XOR gate followed by a NOT gate**.
+
+Its output is the opposite of XOR: it is **1 when its two inputs are the same** (both 0 or both 1), and **0 when they are different**. Because it gives 1 for equal inputs, it is also called the **equivalence gate**.
 
 **Boolean expression:** X = (A ⊕ B)′ = A ⊙ B = A′B′ + AB.
 

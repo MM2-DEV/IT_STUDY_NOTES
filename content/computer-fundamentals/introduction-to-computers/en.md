@@ -38,11 +38,15 @@ Errors in computer output are almost always caused by **human mistakes**, such a
 
 ### 3. Diligence
 
-*Diligence* means working steadily without getting tired. Unlike a human being, a computer does not suffer from tiredness, boredom or loss of concentration. It can perform the same task millions of times, continuously for hours, with the same speed and accuracy on the last operation as on the first.
+*Diligence* means working steadily without getting tired.
+
+Unlike a human being, a computer does not suffer from tiredness, boredom or loss of concentration. It can perform the same task millions of times, continuously for hours, with the same speed and accuracy on the last operation as on the first.
 
 ### 4. Versatility
 
-*Versatility* means the ability to do many different kinds of work. Simply by running different programs, the same computer can be used to:
+*Versatility* means the ability to do many different kinds of work.
+
+Simply by running different programs, the same computer can be used to:
 
 1. Type a letter
 2. Prepare a budget
@@ -62,6 +66,8 @@ A computer can store a very large amount of data and recall any part of it quick
 3. Pictures
 4. Audio
 5. Video
+
+Storage in a computer is of two kinds:
 
 1. **Primary memory** (such as RAM) holds data and instructions that are being used right now.
 2. **Secondary storage** (such as a hard disk, SSD or pen drive) keeps data permanently, until it is deleted.

@@ -5,7 +5,9 @@ updated: 2026-11-02
 
 ## Linear Search {#linear-search}
 
-**Searching** is the process of finding whether a given element (the **key**) is present in a collection of data and, if it is, finding its position. A search is **successful** if the key is found and **unsuccessful** otherwise.
+**Searching** is the process of finding whether a given element (the **key**) is present in a collection of data and, if it is, finding its position.
+
+A search is **successful** if the key is found and **unsuccessful** otherwise.
 
 **Linear search** (also called **sequential search**) checks the elements **one by one from the beginning** until the key is found or the list ends. The data **does not need to be sorted**.
 
@@ -87,7 +89,9 @@ Output:
 
 ## Binary Search {#binary-search}
 
-**Binary search** (also called **half-interval search**) finds a key in a **sorted** array by repeatedly **dividing the search range in half**. It compares the key with the **middle element**:
+**Binary search** (also called **half-interval search**) is a searching algorithm that finds a key in a **sorted** array by repeatedly **dividing the search range in half**.
+
+It compares the key with the **middle element**:
 
 1. If they are equal, the search is successful.
 2. If the key is **smaller**, the search continues in the **left half**.
@@ -248,12 +252,14 @@ After each comparison, the search range is halved: n → n/2 → n/4 → … →
 
 ## Searching Algorithms {#searching-algorithms}
 
-**Searching algorithms** are methods used to **locate a specific item** in a collection of data. They are classified into two groups:
+**Searching algorithms** are methods used to **locate a specific item** in a collection of data.
+
+They are classified into two groups:
 
 1. **Sequential search:** the elements are checked **one by one**; the data need not be sorted (for example, linear search).
 2. **Interval search:** the data must be **sorted**; the algorithm repeatedly narrows down an **interval** that may contain the key (for example, binary, jump, interpolation, exponential and Fibonacci search).
 
-Besides linear and binary search, the main searching algorithms are:
+The main searching algorithms are:
 
 1. Linear search
 2. Sentinel linear search
@@ -278,7 +284,9 @@ Besides linear and binary search, the main searching algorithms are:
 
 ### Interpolation Search
 
-**Interpolation search** is an improvement of binary search for a **sorted** array whose values are **uniformly distributed**. Instead of always checking the middle, it **estimates the position** of the key from its value, as a person does when looking up a word in a dictionary:
+**Interpolation search** is an improvement of binary search, for a **sorted** array whose values are **uniformly distributed**, that **estimates the position** of the key from its value instead of always checking the middle.
+
+Instead of always checking the middle, it **estimates the position** of the key from its value, as a person does when looking up a word in a dictionary:
 
 ```text
 pos = low + ((key − A[low]) × (high − low)) / (A[high] − A[low])
@@ -367,7 +375,3 @@ Performance order on large sorted data: **binary search > jump search > linear s
 
 - [Linear Search](https://www.programiz.com/dsa/linear-search) — accessed 2026-11-01
 - [Binary Search](https://www.programiz.com/dsa/binary-search) — accessed 2026-11-01
-
-**IT Job QnS**
-
-- [Design and Analysis of Algorithm](https://it.jobqns.com/design-and-analysis-of-algorithm/) — accessed 2026-11-01

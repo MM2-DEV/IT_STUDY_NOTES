@@ -9,7 +9,11 @@ updated: 2026-11-06
 
 Modulation is the **process of changing a characteristic (amplitude, frequency or phase) of a high-frequency carrier signal according to the data or message signal**, so that the data can be transmitted.
 
-The **message (modulating) signal** is the information to be sent, such as voice or digital data. The **carrier** is a high-frequency sine wave that carries it. The result is the **modulated signal**.
+The **message (modulating) signal** is the information to be sent, such as voice or digital data.
+
+The **carrier** is a high-frequency sine wave that carries it.
+
+The result is the **modulated signal**.
 
 ### Definition of Demodulation
 
@@ -286,7 +290,9 @@ Two carriers of the same frequency, 90° out of phase (the in-phase and quadratu
 
 ### Sampling
 
-Sampling is the **process of measuring the amplitude of an analog signal at regular intervals of time**. Each measured value is a **sample**; the number of samples per second is the **sampling rate (f_s)**, and the time between samples is the **sampling interval (T_s = 1 / f_s)**.
+Sampling is the **process of measuring the amplitude of an analog signal at regular intervals of time**.
+
+Each measured value is a **sample**; the number of samples per second is the **sampling rate (f_s)**, and the time between samples is the **sampling interval (T_s = 1 / f_s)**.
 
 ### Sampling Theorem (Nyquist Theorem)
 
@@ -334,7 +340,9 @@ It is the result of sampling (natural or flat-top) and is the **first step of PC
 
 ### Pulse Width Modulation (PWM)
 
-**Pulse width modulation (PWM)** is a **pulse modulation technique in which the width (duration) of each pulse is made proportional to the sample value**, while the amplitude stays constant. It is also called pulse duration modulation (PDM).
+**Pulse width modulation (PWM)** is a **pulse modulation technique in which the width (duration) of each pulse is made proportional to the sample value**, while the amplitude stays constant.
+
+It is also called pulse duration modulation (PDM).
 
 > **Duty cycle = ON time ÷ (ON time + OFF time)**
 
@@ -429,10 +437,6 @@ Here:
 
 - [Modulation in Mobile Computing](https://www.tpointtech.com/modulation-in-mobile-computing) and [Quadrature Amplitude Modulation](https://www.tpointtech.com/quadrature-amplitude-modulation-qam) — accessed 2026-11-06 (analog and digital modulation, AM, FM and PM expressions, BPSK, QAM with in-phase and quadrature carriers). It describes analog modulation as "transmission into digital signals" and gives "the example of QAM in analog modulation is PM"; both are incorrect and not used.
 - [Sampling](https://www.tpointtech.com/sampling) — accessed 2026-11-06 (Nyquist rate 2W, Nyquist interval 1/2W, aliasing, anti-aliasing filter)
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (modem: modulation and demodulation between digital and analog signals). It has no item on the other subtopics.
 
 **Programiz**
 

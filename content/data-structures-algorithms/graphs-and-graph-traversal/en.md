@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Definition
 
-A **graph** is a **non-linear data structure** consisting of a set of **vertices (nodes)** and a set of **edges** that connect pairs of vertices. It is written as
+A **graph** is a **non-linear data structure** consisting of a set of **vertices (nodes)** and a set of **edges** that connect pairs of vertices.
+
+It is written as
 
 ```text
 G = (V, E)      V = set of vertices,  E = set of edges
@@ -40,7 +42,7 @@ Graphs model **relationships** between objects: cities joined by roads, computer
 3. A **complete** undirected graph with n vertices has **n(n − 1) / 2** edges (each vertex has degree n − 1); a complete **directed** graph has **n(n − 1)** edges. Example: n = 5 → 10 undirected edges, 20 directed edges.
 4. A tree with n vertices has **n − 1** edges.
 
-**Example:** the undirected graph in the figure below has 6 vertices and 7 edges; the degrees are 2, 3, 2, 2, 3, 2, whose sum is 14 = 2 × 7.
+**Example:** the undirected graph in the figure under [Representing Graphs](#representing-graphs-and-graph-operations) has 6 vertices and 7 edges; the degrees are 2, 3, 2, 2, 3, 2, whose sum is 14 = 2 × 7. In the directed graph below, the in-degrees add up to 5 and the out-degrees add up to 5, which is the number of edges.
 
 ![Directed graph A, B, C, D with five edges and the in-degree and out-degree of each vertex](/diagrams/data-structures-algorithms/directed-graph.svg)
 
@@ -133,7 +135,9 @@ An **array of lists**: entry i holds a (linked) list of the vertices adjacent to
 
 ### Concept
 
-**Breadth-first search** visits the graph **level by level**: it first visits the starting vertex, then **all its neighbours**, then the neighbours of those neighbours, and so on. It uses a **queue** (FIFO). Every vertex is **marked as visited** so that it is not processed twice (graphs, unlike trees, can have cycles).
+**Breadth-first search (BFS)** is a graph traversal algorithm that visits the graph **level by level**: it first visits the starting vertex, then **all its neighbours**, then the neighbours of those neighbours, and so on.
+
+It uses a **queue** (FIFO). Every vertex is **marked as visited** so that it is not processed twice (graphs, unlike trees, can have cycles).
 
 ### Algorithm
 
@@ -237,7 +241,9 @@ Output: `BFS: 0 1 2 3 4 5`
 
 ### Concept
 
-**Depth-first search** starts at a vertex and goes **as deep as possible** along one path, visiting an unvisited neighbour at each step. When it reaches a vertex with no unvisited neighbours, it **backtracks** to the previous vertex and tries another path. It uses a **stack** (LIFO) — either an explicit stack or the **recursion** stack.
+**Depth-first search (DFS)** is a graph traversal algorithm that starts at a vertex and goes **as deep as possible** along one path, visiting an unvisited neighbour at each step.
+
+When it reaches a vertex with no unvisited neighbours, it **backtracks** to the previous vertex and tries another path. It uses a **stack** (LIFO) — either an explicit stack or the **recursion** stack.
 
 ### Algorithm (Recursive)
 
@@ -345,7 +351,11 @@ The main groups of graph algorithms are:
 | **Connectivity** | Connected components (BFS/DFS), strongly connected components (Kosaraju's, Tarjan's), articulation points and bridges | — |
 | **Other problems** | Graph colouring, travelling salesman problem, Eulerian path and circuit, bipartite matching | — |
 
-**Spanning tree:** a subgraph that includes **all the vertices** of a connected undirected graph, has **no cycles**, and has exactly **n − 1 edges**. A **minimum spanning tree (MST)** is a spanning tree of a weighted graph with the **least total edge weight**. A complete graph with n vertices has **n^(n−2)** spanning trees (Cayley's formula).
+**Spanning tree:** a subgraph that includes **all the vertices** of a connected undirected graph, has **no cycles**, and has exactly **n − 1 edges**.
+
+A **minimum spanning tree (MST)** is a spanning tree of a weighted graph with the **least total edge weight**.
+
+A complete graph with n vertices has **n^(n−2)** spanning trees (Cayley's formula).
 
 ## References {#references}
 
@@ -375,10 +385,6 @@ The main groups of graph algorithms are:
 - [Breadth First Search](https://www.programiz.com/dsa/graph-bfs) — accessed 2026-11-01
 - [Depth First Search](https://www.programiz.com/dsa/graph-dfs) — accessed 2026-11-01
 
-**IT Job QnS**
-
-- [Data Structure](https://it.jobqns.com/data-structure/) — accessed 2026-11-01
-
 **Additional sources**
 
-- [Cayley's formula](https://en.wikipedia.org/wiki/Cayley%27s_formula) — Wikipedia (number of spanning trees of a complete graph; the IT Job QnS formula was garbled) — accessed 2026-11-01
+- [Cayley's formula](https://en.wikipedia.org/wiki/Cayley%27s_formula) — Wikipedia (number of spanning trees of a complete graph) — accessed 2026-11-01

@@ -30,7 +30,11 @@ Neither can do any useful work without the other.
 
 ### Software
 
-**Definition:** Software is a **set of programs** that tells the hardware what to do. A **program** is a set of instructions written to perform a particular task. Software cannot be touched; it can only be seen and used.
+**Definition:** Software is a **set of programs** that tells the hardware what to do.
+
+A **program** is a set of instructions written to perform a particular task.
+
+Software cannot be touched; it can only be seen and used.
 
 ### Types of Software
 
@@ -41,7 +45,9 @@ Software is of two main types:
 
 #### 1. System Software
 
-**Definition:** System software is the software that **operates and controls the computer hardware** and provides a platform for other software to run. It works as an **interface between the hardware and the user**. It is usually developed by the computer manufacturers.
+**Definition:** System software is the software that **operates and controls the computer hardware** and provides a platform for other software to run.
+
+It works as an **interface between the hardware and the user**. It is usually developed by the computer manufacturers.
 
 **Examples:**
 
@@ -52,7 +58,9 @@ Software is of two main types:
 
 #### 2. Application Software
 
-**Definition:** Application software is the software designed to perform a **specific task for the user**. It may be a single program or a group of programs that work together (a *software package*). It runs on top of the operating system.
+**Definition:** Application software is the software designed to perform a **specific task for the user**.
+
+It may be a single program or a group of programs that work together (a *software package*). It runs on top of the operating system.
 
 **Examples:**
 
@@ -110,10 +118,6 @@ Software is of two main types:
 | Examples | Keyboard, mouse, monitor, printer, CPU, RAM, hard disk | Windows, MS Word, Excel, Google Chrome, Photoshop, MySQL |
 
 ## References {#references}
-
-**IT Job QnS**
-
-- [NTRCA IT Job Solution](https://it.jobqns.com/ntrca-it-job-solution/) (15th NTRCA written question on the difference between hardware and software) — accessed 2026-11-01
 
 **TutorialsPoint**
 

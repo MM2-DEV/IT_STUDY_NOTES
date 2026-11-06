@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Definition
 
-A **tree** is a **non-linear, hierarchical data structure** made of **nodes** connected by **edges**. It has these properties:
+A **tree** is a **non-linear, hierarchical data structure** made of **nodes** connected by **edges**.
+
+It has these properties:
 
 1. There is one special node, the **root**, which has **no parent**.
 2. Every other node has **exactly one parent** and zero or more children.
@@ -68,7 +70,9 @@ Some books count levels from 1 (root at level 1) and height in nodes instead of 
 
 ### Definition
 
-A **binary tree** is a tree in which **each node has at most two children**, called the **left child** and the **right child**. Each subtree of a binary tree is also a binary tree. A binary tree can be **empty**.
+A **binary tree** is a tree in which **each node has at most two children**, called the **left child** and the **right child**.
+
+Each subtree of a binary tree is also a binary tree. A binary tree can be **empty**.
 
 A node of a binary tree is usually declared in C as:
 
@@ -132,7 +136,9 @@ Array representation is efficient for **complete** binary trees (such as heaps) 
 
 ## Traversing Binary Trees {#traversing-binary-trees}
 
-**Traversal** means **visiting every node of a tree exactly once** in a systematic order. Because a tree is not linear, there are several orders. The three **depth-first** traversals are named by **when the root is visited**:
+**Tree traversal** is the process of **visiting every node of a tree exactly once** in a systematic order.
+
+Because a tree is not linear, there are several orders. The three **depth-first** traversals are named by **when the root is visited**:
 
 | Traversal | Order | Memory aid |
 | --- | --- | --- |
@@ -434,7 +440,3 @@ After deleting 20, 30, 50 - preorder: 60 40 70 80
 - [Complete Binary Tree](https://www.programiz.com/dsa/complete-binary-tree) — accessed 2026-11-02
 - [Tree Traversal](https://www.programiz.com/dsa/tree-traversal) — accessed 2026-11-02
 - [Binary Search Tree](https://www.programiz.com/dsa/binary-search-tree) — accessed 2026-11-01
-
-**IT Job QnS**
-
-- [Data Structure](https://it.jobqns.com/data-structure/) — accessed 2026-11-01

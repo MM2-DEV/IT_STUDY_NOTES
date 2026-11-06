@@ -3,7 +3,9 @@ description: Combinational circuits, their design from logic gates, half and ful
 updated: 2026-11-01
 ---
 
-**Combinational circuit:** a combinational circuit is a digital logic circuit, built from logic gates, whose **output at any moment depends only on the inputs present at that moment**. It has **no memory element** and **no feedback path** from output to input, so past inputs have no effect on the present output. (Circuits whose output also depends on past inputs, because they contain memory elements such as flip-flops, are called *sequential circuits*; see [Flip-Flops](/topics/digital-logic/flip-flops).)
+**Combinational circuit:** a combinational circuit is a digital logic circuit, built from logic gates, whose **output at any moment depends only on the inputs present at that moment**.
+
+It has **no memory element** and **no feedback path** from output to input, so past inputs have no effect on the present output. (Circuits whose output also depends on past inputs, because they contain memory elements such as flip-flops, are called *sequential circuits*; see [Flip-Flops](/topics/digital-logic/flip-flops).)
 
 **Block diagram:** a combinational circuit has **n input variables**, a network of **logic gates**, and **m output variables**. For every combination of the n inputs, each output has one fixed value, so the circuit can be described completely by a **truth table** with 2ⁿ rows or by one **Boolean expression** for each output.
 
@@ -78,7 +80,7 @@ Without simplification, the expression A′BC + AB′C + ABC′ + ABC would need
 
 ### Analysis: From a Given Circuit to Its Truth Table
 
-**Analysis** is the reverse of design: a logic diagram is given and its function must be found.
+**Combinational circuit analysis** is the process of finding the function (Boolean expressions and truth table) of a given logic diagram; it is the reverse of design.
 
 1. Label the output of every gate.
 2. Write the Boolean expression of each gate output, working from the inputs towards the output.
@@ -100,7 +102,9 @@ Without simplification, the expression A′BC + AB′C + ABC′ + ABC would need
 
 ## Half Adder and Full Adder {#half-adder-and-full-adder}
 
-An **adder** is a combinational circuit that adds binary numbers. It follows the rules of binary addition (see [Binary Addition](/topics/number-systems/binary-arithmetic#binary-addition)):
+An **adder** is a combinational circuit that adds binary numbers.
+
+It follows the rules of binary addition (see [Binary Addition](/topics/number-systems/binary-arithmetic#binary-addition)):
 
 | Addition | Sum | Carry |
 | --- | --- | --- |
@@ -120,7 +124,9 @@ Adders are of two types:
 
 #### 1. Half Adder
 
-**Definition:** a half adder is a combinational circuit that **adds two binary digits (bits)**. It has **two inputs** (A and B) and **two outputs**: the **Sum (S)** and the **Carry (C)**.
+**Definition:** a half adder is a combinational circuit that **adds two binary digits (bits)**.
+
+It has **two inputs** (A and B) and **two outputs**: the **Sum (S)** and the **Carry (C)**.
 
 **Truth table:**
 
@@ -150,7 +156,9 @@ Adders are of two types:
 
 #### 2. Full Adder
 
-**Definition:** a full adder is a combinational circuit that **adds three bits**: the two bits A and B, and the **carry input (Cin)** from the previous lower bit position. It has **three inputs** (A, B, Cin) and **two outputs**: **Sum (S)** and **Carry out (Cout)**.
+**Definition:** a full adder is a combinational circuit that **adds three bits**: the two bits A and B, and the **carry input (Cin)** from the previous lower bit position.
+
+It has **three inputs** (A, B, Cin) and **two outputs**: **Sum (S)** and **Carry out (Cout)**.
 
 **Truth table:**
 
@@ -236,7 +244,9 @@ A full adder can be made from **two half adders and one OR gate**:
 
 ## Parallel Adder {#parallel-adder}
 
-**Definition:** a parallel adder is a combinational circuit that **adds two n-bit binary numbers**, with **all the bits applied at the same time** (in parallel), and gives the n-bit sum together with a final carry. An **n-bit parallel adder is built from n full adders** connected in cascade.
+**Definition:** a parallel adder is a combinational circuit that **adds two n-bit binary numbers**, with **all the bits applied at the same time** (in parallel), and gives the n-bit sum together with a final carry.
+
+An **n-bit parallel adder is built from n full adders** connected in cascade.
 
 ### Construction
 
@@ -299,7 +309,9 @@ A **serial adder** adds two numbers **one bit at a time**. The numbers are kept 
 
 ### Multiplexer (MUX)
 
-**Definition:** a multiplexer is a combinational circuit that **selects one of several data inputs and sends it to a single output**. Which input is selected is decided by the **select lines** (control inputs). Because it selects data, a multiplexer is also called a **data selector**. It works on the **many-to-one** principle, like a digitally controlled multi-position switch.
+**Definition:** a multiplexer is a combinational circuit that **selects one of several data inputs and sends it to a single output**.
+
+Which input is selected is decided by the **select lines** (control inputs). Because it selects data, a multiplexer is also called a **data selector**. It works on the **many-to-one** principle, like a digitally controlled multi-position switch.
 
 **Relation between inputs and select lines:** a multiplexer with **2ⁿ data inputs** has **n select lines** and **one output**. In other words, N inputs need **log₂N** select lines.
 
@@ -417,7 +429,9 @@ A multiplexer can produce **any** Boolean function, without other gates (or with
 
 ### Demultiplexer (DEMUX)
 
-**Definition:** a demultiplexer is a combinational circuit that **takes one data input and sends it to one of several outputs**. The output that receives the data is chosen by the **select lines**; all other outputs stay 0. Because it distributes data, a demultiplexer is also called a **data distributor**. It works on the **one-to-many** principle and does the **reverse of a multiplexer**.
+**Definition:** a demultiplexer is a combinational circuit that **takes one data input and sends it to one of several outputs**.
+
+The output that receives the data is chosen by the **select lines**; all other outputs stay 0. Because it distributes data, a demultiplexer is also called a **data distributor**. It works on the **one-to-many** principle and does the **reverse of a multiplexer**.
 
 **Relation:** a demultiplexer with **n select lines** has **one data input** and **2ⁿ outputs** (1 × 2, 1 × 4, 1 × 8, 1 × 16 and so on).
 
@@ -486,7 +500,9 @@ Data input D, two select lines S1 and S0, outputs Y0 to Y3.
 
 ### Encoder
 
-**Definition:** an encoder is a combinational circuit that **converts an active input signal into a binary code**. It has **2ⁿ input lines** (or fewer) and **n output lines**; when one input line is 1, the outputs give the binary code of that line. An ordinary encoder assumes that **only one input is 1 at a time**. Since each output is just the OR of some inputs, an encoder is made of **OR gates**. In simple words, an encoder **converts information from a form people use (such as a decimal digit or a key pressed) into a code the computer understands (binary)**:
+**Definition:** an encoder is a combinational circuit that **converts an active input signal into a binary code**.
+
+It has **2ⁿ input lines** (or fewer) and **n output lines**; when one input line is 1, the outputs give the binary code of that line. An ordinary encoder assumes that **only one input is 1 at a time**. Since each output is just the OR of some inputs, an encoder is made of **OR gates**. In simple words, an encoder **converts information from a form people use (such as a decimal digit or a key pressed) into a code the computer understands (binary)**:
 
 ```text
  Human language ──► Encoder ──► Machine (binary) code
@@ -494,7 +510,7 @@ Data input D, two select lines S1 and S0, outputs Y0 to Y3.
 
 **Characteristics of an encoder:**
 
-1. **All the inputs cannot be 0 at the same time** (one input must be active).
+1. An ordinary encoder **assumes that one input is always active** (all inputs 0 is not a valid input).
 2. **Only one input is 1 at a time**; all the other inputs are 0.
 
 **Number of outputs:** an encoder with 2ⁿ inputs has n outputs. For example, an encoder with **32 inputs** has **5 outputs** (32 = 2⁵), and one with 64 inputs has 6 outputs.
@@ -561,7 +577,9 @@ It needs four OR gates.
 
 #### Priority Encoder
 
-**Definition:** a priority encoder is an encoder that **gives each input a priority**. When **two or more inputs are 1 at the same time, it gives the code of the input with the highest priority** and ignores the others. It also has a **valid output (V)**, which is 1 when at least one input is 1 and 0 when no input is active. This removes both limitations of the ordinary encoder.
+**Definition:** a priority encoder is an encoder that **gives each input a priority** and, when two or more inputs are 1 at the same time, **outputs the code of the input with the highest priority**.
+
+It ignores the lower-priority inputs. It also has a **valid output (V)**, which is 1 when at least one input is 1 and 0 when no input is active. This removes both limitations of the ordinary encoder.
 
 **4-to-2 priority encoder** (I3 has the highest priority and I0 the lowest; X = don't care):
 
@@ -592,7 +610,9 @@ For example, if I1 and I2 are both 1, the output is 10 (the code of I2, the high
 
 ### Decoder
 
-**Definition:** a decoder is a combinational circuit that **converts an n-bit binary code into one of 2ⁿ output lines**. For each input combination, **exactly one output is 1** (active) and all the others are 0. It does the **reverse of an encoder**. A decoder with n inputs and 2ⁿ outputs is called an **n-to-2ⁿ line decoder** (2-to-4, 3-to-8, 4-to-16). Which output is 1 depends on the value of the inputs. In simple words, a decoder **converts the computer's (binary) code into a form people can understand**:
+**Definition:** a decoder is a combinational circuit that **converts an n-bit binary code into one of 2ⁿ output lines**.
+
+For each input combination, **exactly one output is 1** (active) and all the others are 0. It does the **reverse of an encoder**. A decoder with n inputs and 2ⁿ outputs is called an **n-to-2ⁿ line decoder** (2-to-4, 3-to-8, 4-to-16). Which output is 1 depends on the value of the inputs. In simple words, a decoder **converts the computer's (binary) code into a form people can understand**:
 
 ```text
  Machine (binary) code ──► Decoder ──► Human language
@@ -687,7 +707,9 @@ A decoder with an enable input can work as a **demultiplexer**: the **enable inp
 
 ### Seven-Segment Display
 
-**Definition:** a seven-segment display is a display device made of **seven LED bars (segments)**, arranged in the shape of the digit **8**, that can show the decimal digits **0 to 9** (and a few letters) by lighting different combinations of segments. The segments are named **a to g**; many displays also have an eighth LED for the **decimal point (dp)**.
+**Definition:** a seven-segment display is a display device made of **seven LED bars (segments)**, arranged in the shape of the digit **8**, that can show the decimal digits **0 to 9** (and a few letters) by lighting different combinations of segments.
+
+The segments are named **a to g**; many displays also have an eighth LED for the **decimal point (dp)**.
 
 **Arrangement of the segments:**
 
@@ -736,7 +758,9 @@ Each segment is driven through a current-limiting resistor.
 
 ### BCD to Seven-Segment Decoder
 
-**Definition:** a BCD to seven-segment decoder is a combinational circuit that **converts a 4-bit BCD code into the seven signals (a to g) needed to show that digit** on a seven-segment display. It has **four inputs** (A, B, C, D, with A as the most significant bit) and **seven outputs** (a to g).
+**Definition:** a BCD to seven-segment decoder is a combinational circuit that **converts a 4-bit BCD code into the seven signals (a to g) needed to show that digit** on a seven-segment display.
+
+It has **four inputs** (A, B, C, D, with A as the most significant bit) and **seven outputs** (a to g).
 
 ![BCD to seven-segment decoder with inputs A, B, C, D and outputs a to g driving a display](/diagrams/digital-logic/bcd-to-seven-segment.svg)
 
@@ -802,7 +826,9 @@ Each expression is then built with AND, OR and NOT gates. For a **common anode**
 
 ## Comparator {#comparator}
 
-**Definition:** a **magnitude comparator** (digital comparator) is a combinational circuit that **compares two binary numbers A and B** and tells whether **A > B, A = B or A < B**. It has three outputs, and exactly one of them is 1 for any pair of inputs:
+**Definition:** a **magnitude comparator** (digital comparator) is a combinational circuit that **compares two binary numbers A and B** and tells whether **A > B, A = B or A < B**.
+
+It has three outputs, and exactly one of them is 1 for any pair of inputs:
 
 1. **G** (greater): 1 when A > B
 2. **E** (equal): 1 when A = B
@@ -865,10 +891,6 @@ A = A3A2A1A0 and B = B3B2B1B0, with xᵢ = (Aᵢ ⊕ Bᵢ)′ for i = 0 to 3:
 4. Sorting circuits (finding the larger of two numbers)
 
 ## References {#references}
-
-**IT Job QnS**
-
-- [Digital Logic Design](https://it.jobqns.com/digital-logic-design/) — accessed 2026-11-01
 
 **TutorialsPoint**
 

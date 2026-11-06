@@ -1,0 +1,130 @@
+{
+  "title": "Linux, Networking and Servers",
+  "order": 21,
+  "topics": [
+    {
+      "slug": "linux-for-developers",
+      "title": "Linux for Developers",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "linux-file-system-structure",
+          "title": "Linux File System Structure",
+          "exams": []
+        },
+        {
+          "id": "file-and-directory-commands",
+          "title": "File and Directory Commands",
+          "exams": []
+        },
+        {
+          "id": "users-groups-and-permissions",
+          "title": "Users, Groups and Permissions",
+          "exams": []
+        },
+        {
+          "id": "processes-and-services",
+          "title": "Processes and Services",
+          "exams": []
+        },
+        {
+          "id": "package-management",
+          "title": "Package Management",
+          "exams": []
+        },
+        {
+          "id": "disk-memory-and-cpu-monitoring",
+          "title": "Disk, Memory and CPU Monitoring",
+          "exams": []
+        },
+        {
+          "id": "logs-and-log-rotation",
+          "title": "Logs and Log Rotation",
+          "exams": []
+        },
+        {
+          "id": "shell-scripting-basics",
+          "title": "Shell Scripting Basics",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "networking-for-developers",
+      "title": "Networking for Developers",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "ip-addresses-and-subnet-basics",
+          "title": "IP Addresses and Subnet Basics",
+          "exams": []
+        },
+        {
+          "id": "ports-and-sockets",
+          "title": "Ports and Sockets",
+          "exams": []
+        },
+        {
+          "id": "dns-lookup",
+          "title": "DNS Lookup",
+          "exams": []
+        },
+        {
+          "id": "networking-commands-ping-curl-dig-ss-and-traceroute",
+          "title": "Networking Commands: ping, curl, dig, ss and traceroute",
+          "exams": []
+        },
+        {
+          "id": "firewalls",
+          "title": "Firewalls",
+          "exams": []
+        },
+        {
+          "id": "ssh-and-key-based-authentication",
+          "title": "SSH and Key-Based Authentication",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "web-servers-and-reverse-proxies",
+      "title": "Web Servers, Reverse Proxies and Domains",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "nginx-fundamentals",
+          "title": "Nginx Fundamentals",
+          "exams": []
+        },
+        {
+          "id": "reverse-proxy-configuration",
+          "title": "Reverse Proxy Configuration",
+          "exams": []
+        },
+        {
+          "id": "application-servers-gunicorn-uvicorn-and-pm2",
+          "title": "Application Servers: Gunicorn, Uvicorn and PM2",
+          "exams": []
+        },
+        {
+          "id": "process-managers-and-systemd-services",
+          "title": "Process Managers and systemd Services",
+          "exams": []
+        },
+        {
+          "id": "domain-and-dns-configuration",
+          "title": "Domain and DNS Configuration",
+          "exams": []
+        },
+        {
+          "id": "tls-certificates-with-let-s-encrypt",
+          "title": "TLS Certificates with Let's Encrypt",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

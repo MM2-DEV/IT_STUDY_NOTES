@@ -171,7 +171,9 @@ The time complexity is **O(3ⁿ)** (for n = 10, 3¹⁰ = 59,049 subset combinati
 
 ### Left-Deep Join Trees
 
-A **left-deep join tree** is one in which the **right input of every join is a base relation**, not an intermediate result. Considering only left-deep trees reduces the number of orders to n! and the dynamic-programming cost to O(n × 2ⁿ), and it suits **pipelining** and **indexed nested-loop joins**, because each new relation can be joined with the result coming up the pipeline. System R considered only left-deep trees.
+A **left-deep join tree** is one in which the **right input of every join is a base relation**, not an intermediate result.
+
+Considering only left-deep trees reduces the number of orders to n! and the dynamic-programming cost to O(n × 2ⁿ), and it suits **pipelining** and **indexed nested-loop joins**, because each new relation can be joined with the result coming up the pipeline. System R considered only left-deep trees.
 
 ### Interesting Sort Orders
 
@@ -201,10 +203,6 @@ A plan that produces its result **sorted on an attribute that a later operation 
 
 - [Transforming Relational Expressions](https://www.tpointtech.com/dbms-transforming-relational-expressions) and [Advanced Query Optimization](https://www.tpointtech.com/dbms-advanced-query-optimization) — accessed 2026-11-06 (equivalence rules)
 - [Estimating Query Cost](https://www.tpointtech.com/estimating-query-cost) — accessed 2026-11-06. TpointTech's `query-optimization-in-dbms` page returns 404.
-
-**IT Job QnS**
-
-- IT Job QnS has no page on query optimization (checked 2026-11-06).
 
 **Programiz**
 

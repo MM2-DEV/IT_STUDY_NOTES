@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### Definition of the Waterfall Model
 
-The waterfall model is a linear, sequential software development model in which the phases are carried out one after another, like water flowing down a series of steps. Each phase must be completed, reviewed and signed off before the next phase starts, and the output of each phase is the input of the next.
+The waterfall model is a linear, sequential software development model in which the phases are carried out one after another, like water flowing down a series of steps.
+
+Each phase must be completed, reviewed and signed off before the next phase starts, and the output of each phase is the input of the next.
 
 It is also called the linear-sequential life cycle model or the classical waterfall model. It was the first SDLC model to be widely used. Winston W. Royce described this sequence of phases in his 1970 paper "Managing the Development of Large Software Systems"; in that paper he also pointed out the risks of a strict sequence and recommended feedback between phases, and the name "waterfall" was applied to the model later.
 
@@ -62,7 +64,9 @@ The waterfall model has six phases:
 
 ### Definition of the Agile Model
 
-The agile model is an iterative and incremental software development model that delivers working software quickly and adapts to changing requirements. The product is divided into small builds that are delivered in short iterations (also called sprints) of about one to four weeks, and each iteration ends with a working product that is shown to the customer for feedback.
+The agile model is an iterative and incremental software development model that delivers working software quickly and adapts to changing requirements.
+
+The product is divided into small builds that are delivered in short iterations (also called sprints) of about one to four weeks, and each iteration ends with a working product that is shown to the customer for feedback.
 
 In each iteration a cross-functional team carries out planning, requirements analysis, design, coding, unit testing and acceptance testing. Agile is an adaptive approach, while traditional models such as the waterfall model are predictive: detailed planning is done only for the near future, and the plan changes as the customer's needs become clearer.
 
@@ -116,7 +120,7 @@ Several methods follow the agile approach; they were grouped under the name "agi
 5. **Feature-Driven Development (FDD)** — the software is designed and built one feature at a time, in small steps that can be delivered separately.
 6. **Lean software development** — reduces waste and cost and speeds up delivery, following principles such as eliminating waste and deferring commitment.
 7. **Adaptive Software Development (ASD)**.
-8. **Rational Unified Process (RUP)** (1994) — an iterative process framework that is often listed with the agile methods.
+8. **Rational Unified Process (RUP)** (1998) — an iterative process framework that is often listed with the agile methods.
 
 #### Scrum
 
@@ -207,7 +211,9 @@ The main XP practices are:
 
 ### Definition of the Spiral Model
 
-The spiral model is a risk-driven software development model that combines the iterative nature of prototyping with the controlled, systematic aspects of the waterfall model. The development proceeds in a series of loops (spirals); in each loop the risks are analyzed and resolved before the next version of the product is built.
+The spiral model is a risk-driven software development model that combines the iterative nature of prototyping with the controlled, systematic aspects of the waterfall model.
+
+The development proceeds in a series of loops (spirals); in each loop the risks are analyzed and resolved before the next version of the product is built.
 
 The spiral model was proposed by Barry Boehm in 1986 ("A Spiral Model of Software Development and Enhancement"). It is called a meta-model because it can include the other models: one loop can follow the waterfall model, and prototyping is used to reduce risk.
 
@@ -262,7 +268,9 @@ The syllabus prints this item as "RDD". It is taken here as **RAD (Rapid Applica
 
 ### Definition of the RAD Model
 
-The RAD (Rapid Application Development) model is an iterative and incremental software development model that delivers software quickly by using rapid prototyping and continuous user feedback instead of extensive upfront planning. A prototype is a working model that is functionally equivalent to a part of the final product.
+The RAD (Rapid Application Development) model is an iterative and incremental software development model that delivers software quickly by using rapid prototyping and continuous user feedback instead of extensive upfront planning.
+
+A prototype is a working model that is functionally equivalent to a part of the final product.
 
 In the RAD model, the system is divided into modules that are developed in parallel by small teams and then integrated. Each module is developed within a fixed period of time (a time box), usually about 60 to 90 days. Reusable components and automated tools (such as code generators) are used to speed up development.
 
@@ -319,7 +327,9 @@ The RAD model is described in two common forms.
 
 ### Definition of the V-Model
 
-The V-model (verification and validation model) is a sequential software development model in which each development phase has a corresponding testing phase. It is an extension of the waterfall model, and its phases are drawn in the shape of the letter V: the development (verification) phases go down the left side, coding is at the bottom, and the testing (validation) phases go up the right side.
+The V-model (verification and validation model) is a sequential software development model in which each development phase has a corresponding testing phase.
+
+It is an extension of the waterfall model, and its phases are drawn in the shape of the letter V: the development (verification) phases go down the left side, coding is at the bottom, and the testing (validation) phases go up the right side.
 
 In the V-model, testing is planned in parallel with development: the test plan for each testing phase is written during the matching development phase. The model was developed from the waterfall model in the 1980s and is widely used in fields where errors are costly, such as medical devices, defence, aerospace and automotive systems.
 
@@ -416,15 +426,11 @@ Validation consists of dynamic testing, in which the code is executed. There are
 
 **TpointTech**
 
-- [Waterfall Model](https://www.tpointtech.com/software-engineering-waterfall-model) — accessed 2026-11-03 (the page says the model has five phases and later calls them six stages, and says in one section that the model is unsuitable for large, complex projects and in another that it is frequently applied to big projects; the phases used here follow TutorialsPoint and IT Job QnS)
+- [Waterfall Model](https://www.tpointtech.com/software-engineering-waterfall-model) — accessed 2026-11-03 (the page says the model has five phases and later calls them six stages, and says in one section that the model is unsuitable for large, complex projects and in another that it is frequently applied to big projects; the phases used here follow TutorialsPoint)
 - [Agile Model](https://www.tpointtech.com/software-engineering-agile-model) — accessed 2026-11-03 (agile methods)
 - [Spiral Model](https://www.tpointtech.com/software-engineering-spiral-model) — accessed 2026-11-03
 - [Rapid Application Development Model](https://www.tpointtech.com/software-engineering-rapid-application-development-model) — accessed 2026-11-03 (James Martin's four phases, time-boxing)
 - [V-Model](https://www.tpointtech.com/software-engineering-v-model) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-03 (waterfall, spiral, V, RAD and agile models; Scrum artifacts and events; XP values and practices)
 
 **Programiz**
 

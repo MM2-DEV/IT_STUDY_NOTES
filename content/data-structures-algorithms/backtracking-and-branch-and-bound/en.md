@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Definition
 
-**Backtracking** is an algorithm design technique that builds a solution **step by step**, one component at a time. As soon as it finds that the current **partial solution cannot lead to a valid solution**, it **undoes (backtracks from) the last choice** and tries the next possibility. It is an improvement over brute force: instead of generating every complete candidate, it **abandons a whole group of candidates** as soon as a partial one fails.
+**Backtracking** is an algorithm design technique that builds a solution **step by step**, one component at a time, and **undoes (backtracks from) the last choice** as soon as the current **partial solution cannot lead to a valid solution**.
+
+After backtracking, it tries the next possibility. It is an improvement over brute force: instead of generating every complete candidate, it **abandons a whole group of candidates** as soon as a partial one fails.
 
 Backtracking is used mainly for **constraint satisfaction** problems: finding **one solution**, **all solutions**, or deciding whether a solution exists.
 
@@ -55,7 +57,7 @@ BACKTRACK(x)                      x = current partial solution
 
 **Backtracking method:** place the queens **one row at a time**. In the current row, try each column; place the queen in the first **safe** column and move to the next row. If no column in a row is safe, **backtrack** to the previous row and move its queen to the next safe column.
 
-**4-queens:** starting with the queen of row 1 in column 1 leads to dead ends: rows 1–3 can be filled (columns 1, 3 and then none; or 1, 4, 2 and then none for row 4), so the algorithm backtracks to row 1 and moves its queen to column 2. Then row 2 → column 4, row 3 → column 1, row 4 → column 3 gives the first solution.
+**4-queens:** with the queen of row 1 in column 1, every branch dead-ends: columns (1, 3) leave no safe column in row 3, and columns (1, 4, 2) leave no safe column in row 4, so the algorithm backtracks to row 1 and moves its queen to column 2. Then row 2 → column 4, row 3 → column 1, row 4 → column 3 gives the first solution.
 
 The 4-queens problem has exactly **two solutions** (the column of the queen in rows 1 to 4):
 
@@ -160,7 +162,9 @@ The worst-case time is exponential (about O(N!)), but pruning makes it far faste
 
 ### Definition
 
-**Branch and bound (B&B)** is an algorithm design technique for **optimization problems** (finding the minimum or maximum). Like backtracking, it searches a **state space tree** of partial solutions, but it uses **bounds** to avoid exploring branches that **cannot lead to a better solution than the best one found so far**.
+**Branch and bound (B&B)** is an algorithm design technique for **optimization problems** (finding the minimum or maximum) that searches a **state space tree** of partial solutions and uses **bounds** to skip branches that **cannot lead to a better solution than the best one found so far**.
+
+Like backtracking, it searches a **state space tree** of partial solutions, but it uses **bounds** to avoid exploring branches that **cannot lead to a better solution than the best one found so far**.
 
 ### How It Works
 

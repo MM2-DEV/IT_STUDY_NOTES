@@ -167,7 +167,9 @@ The executable is then **loaded** into memory by the loader and **executed**. Wi
 
 ### Tokens
 
-A **token** is the **smallest individual unit** of a C program that the compiler recognises. There are six types of tokens:
+A **token** is the **smallest individual unit** of a C program that the compiler recognises.
+
+There are six types of tokens:
 
 1. **Keywords:** reserved words with a fixed meaning, for example `int`, `if`, `while`. They are all written in **lowercase** and cannot be used as names.
 2. **Identifiers:** names given by the programmer to variables, functions, arrays and so on, for example `total`, `area`.
@@ -202,7 +204,9 @@ Later standards added more keywords, for example `inline` and `_Bool` (C99) and 
 
 ### Definition of Data Type
 
-A data type is a classification that tells the compiler what kind of value a variable can hold. It also decides how much memory the variable occupies, the range of values it can store and the operations that can be performed on it.
+A data type is a classification that tells the compiler what kind of value a variable can hold.
+
+It also decides how much memory the variable occupies, the range of values it can store and the operations that can be performed on it.
 
 For example, `int age;` tells the compiler that `age` holds a whole number, that it needs (usually) 4 bytes, and that arithmetic operations such as `+` and `%` can be applied to it.
 
@@ -219,7 +223,9 @@ Some books classify the types slightly differently: for example, they place stru
 
 ### 1. Basic Data Types
 
-The basic data types are the built-in types from which all other types are made. C has four basic data types — `char`, `int`, `float` and `double` — and C99 added the Boolean type `_Bool`.
+The basic data types are the built-in types from which all other types are made.
+
+C has four basic data types — `char`, `int`, `float` and `double` — and C99 added the Boolean type `_Bool`.
 
 #### char (Character)
 
@@ -254,7 +260,7 @@ The `float` type stores real numbers — numbers with a fractional part — in s
 The `double` type stores real numbers in double precision, so it has a larger range and more accuracy than `float`.
 
 1. It occupies 8 bytes and is accurate to about 15 significant decimal digits.
-2. Its positive range is about 2.3 × 10⁻³⁰⁸ to 1.7 × 10³⁰⁸.
+2. Its positive range is about 2.2 × 10⁻³⁰⁸ to 1.7 × 10³⁰⁸.
 3. Its format specifier is `%lf` in `scanf`; in `printf`, both `%f` and `%lf` print a `double`.
 4. It is the default type of floating constants: `double pi = 3.14159265358979;`.
 
@@ -271,12 +277,14 @@ Converting any non-zero value to `_Bool` gives 1, and converting zero gives 0.
 | `char` | A single character | 1 byte | −128 to 127 (or 0 to 255) | `%c` | `char grade = 'A';` |
 | `int` | Whole numbers | 4 bytes (2 on 16-bit compilers) | −2,147,483,648 to 2,147,483,647 | `%d`, `%i` | `int age = 25;` |
 | `float` | Real numbers, single precision (about 6 digits) | 4 bytes | 1.2E−38 to 3.4E+38 | `%f` | `float price = 99.50f;` |
-| `double` | Real numbers, double precision (about 15 digits) | 8 bytes | 2.3E−308 to 1.7E+308 | `%lf` (input), `%f` or `%lf` (output) | `double pi = 3.14159265;` |
+| `double` | Real numbers, double precision (about 15 digits) | 8 bytes | 2.2E−308 to 1.7E+308 | `%lf` (input), `%f` or `%lf` (output) | `double pi = 3.14159265;` |
 | `_Bool` (`bool`) | True or false (1 or 0) | 1 byte | 0 to 1 | `%d` | `bool ok = true;` |
 
 ### 2. Void Type
 
-The `void` type means "no value" or "no type". A variable of type `void` cannot be declared. It has three uses:
+The `void` type means "no value" or "no type".
+
+A variable of type `void` cannot be declared. It has three uses:
 
 1. **Function that returns no value** — `void display(int n);`
 2. **Function that takes no arguments** — `int rand(void);`
@@ -284,7 +292,9 @@ The `void` type means "no value" or "no type". A variable of type `void` cannot 
 
 ### 3. Derived Data Types
 
-Derived data types are types that are built from the basic data types. There are three derived types:
+Derived data types are types that are built from the basic data types.
+
+There are three derived types:
 
 1. **Array** — a collection of a fixed number of elements of the same type, stored in consecutive memory locations and accessed by an index starting from 0: `int marks[5];`.
 2. **Pointer** — a variable that stores the memory address of another variable: `int *p = &age;`.
@@ -294,7 +304,9 @@ These types are explained in [Arrays and Strings](/topics/programming/c-arrays-s
 
 ### 4. User-Defined Data Types
 
-User-defined data types are types that the programmer creates from existing types. There are four user-defined types:
+User-defined data types are types that the programmer creates from existing types.
+
+There are four user-defined types:
 
 1. **Structure (`struct`)** — groups variables (members) of different types under one name; each member has its own memory, so the size of a structure is at least the sum of the sizes of its members.
 
@@ -412,8 +424,8 @@ The table gives the sizes for a typical 64-bit system (GCC on Linux); the size c
 | `long long int` (C99) | `long long`, `signed long long`, `signed long long int` | 8 bytes | −9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | `%lld` |
 | `unsigned long long int` (C99) | `unsigned long long` | 8 bytes | 0 to 18,446,744,073,709,551,615 | `%llu` |
 | `float` | — | 4 bytes | 1.2E−38 to 3.4E+38 (about 6 digits) | `%f` |
-| `double` | — | 8 bytes | 2.3E−308 to 1.7E+308 (about 15 digits) | `%lf` (input), `%f` (output) |
-| `long double` | — | 16 bytes (10 or 12 on other compilers) | 3.4E−4932 to 1.1E+4932 (about 18 digits) | `%Lf` |
+| `double` | — | 8 bytes | 2.2E−308 to 1.7E+308 (about 15 digits) | `%lf` (input), `%f` (output) |
+| `long double` | — | 16 bytes (10 or 12 on other compilers) | 3.4E−4932 to 1.2E+4932 (about 18 digits) | `%Lf` |
 | `_Bool` (C99) | `bool` (with `<stdbool.h>`) | 1 byte | 0 to 1 | `%d` |
 
 The ranges of the floating-point types are for positive values; the same ranges apply to negative values.
@@ -431,7 +443,7 @@ The actual sizes are chosen by the compiler according to the data model of the s
 
 | Data model | Used by | `short` | `int` | `long` | `long long` | Pointer |
 | --- | --- | --- | --- | --- | --- | --- |
-| LP32 | 16-bit Windows (Win16) | 16 bits | 16 bits | 32 bits | 64 bits | 32 bits |
+| LP32 | 16-bit Windows (Win16) | 16 bits | 16 bits | 32 bits | — | 32 bits |
 | ILP32 | 32-bit Windows and Unix-like systems | 16 bits | 32 bits | 32 bits | 64 bits | 32 bits |
 | LLP64 | 64-bit Windows | 16 bits | 32 bits | 32 bits | 64 bits | 64 bits |
 | LP64 | 64-bit Linux, macOS and other Unix-like systems | 16 bits | 32 bits | 64 bits | 64 bits | 64 bits |
@@ -519,7 +531,9 @@ long double : 16 bytes
 
 ### Variables
 
-**Definition:** a variable is a **named memory location** whose value **can change** during program execution. Every variable in C must be **declared with a data type before it is used**.
+**Definition:** a variable is a **named memory location** whose value **can change** during program execution.
+
+Every variable in C must be **declared with a data type before it is used**.
 
 ```c
 int count;                 /* declaration: reserves memory for an int */
@@ -566,9 +580,13 @@ Good practice is to use **meaningful names**, such as `total_marks` or `studentC
 
 Variables are classified by their **scope** (the part of the program in which they can be used) into local and global variables.
 
-**Local variable:** a local variable is a variable declared **inside a function or a block**. It can be used only inside that function or block, it is created when the block starts and destroyed when the block ends, and it is not initialized automatically (it holds a garbage value until a value is assigned). Function parameters are also local to their function.
+**Local variable:** a local variable is a variable declared **inside a function or a block**.
 
-**Global variable:** a global variable is a variable declared **outside all functions**, usually at the top of the program. It can be used by every function in the file (and in other files through `extern`), it exists for the whole run of the program, and it is automatically initialized to **0**.
+It can be used only inside that function or block, it is created when the block starts and destroyed when the block ends, and it is not initialized automatically (it holds a garbage value until a value is assigned). Function parameters are also local to their function.
+
+**Global variable:** a global variable is a variable declared **outside all functions**, usually at the top of the program.
+
+It can be used by every function in the file (and in other files through `extern`), it exists for the whole run of the program, and it is automatically initialized to **0**.
 
 If a local variable has the **same name** as a global variable, the local variable **hides** the global one inside its block.
 
@@ -650,7 +668,9 @@ const int MAX = 100;        /* constant variable: its value cannot be changed */
 
 ### Expressions
 
-**Definition:** an expression is a **combination of operands (variables, constants) and operators** that produces a **single value**. Examples: `a + b`, `x * (y - 2)`, `marks >= 33`.
+**Definition:** an expression is a **combination of operands (variables, constants) and operators** that produces a **single value**.
+
+Examples: `a + b`, `x * (y - 2)`, `marks >= 33`.
 
 1. **Arithmetic expression:** gives a number, for example `a * b + c`.
 2. **Relational expression:** gives 1 (true) or 0 (false), for example `a > b`.
@@ -681,7 +701,9 @@ printf("%d\n", (int) 3.99);          /* 3: the fractional part is dropped */
 
 ## Operators {#operators}
 
-**Definition:** an operator is a **symbol that tells the compiler to perform a specific operation** on one or more **operands**. By the number of operands, operators are **unary** (one operand, for example `-x`, `++x`), **binary** (two operands, for example `a + b`) or **ternary** (three operands: `?:`).
+**Definition:** an operator is a **symbol that tells the compiler to perform a specific operation** on one or more **operands**.
+
+By the number of operands, operators are **unary** (one operand, for example `-x`, `++x`), **binary** (two operands, for example `a + b`) or **ternary** (three operands: `?:`).
 
 **Types of operators in C** (C operators are of eight types, explained below):
 
@@ -830,7 +852,9 @@ int max = (a > b) ? a : b;                         /* larger of a and b */
 
 ## Statements {#statements}
 
-**Definition:** a statement is a **complete instruction** that the program carries out. In C, a simple statement **ends with a semicolon (`;`)**.
+**Definition:** a statement is a **complete instruction** that the program carries out.
+
+In C, a simple statement **ends with a semicolon (`;`)**.
 
 **Kinds of statements in C:**
 
@@ -892,10 +916,6 @@ The selection, iteration and jump statements are explained in [C: Control Statem
 - [C Data Types](https://www.programiz.com/c-programming/c-data-types) — accessed 2026-11-04 (sizes and format specifiers of all the types with modifiers, including `long long int` and `long double`; it gives the range of `short` as −32,767 to +32,767, which is the minimum range the standard guarantees — a 16-bit `short` on real systems holds −32,768 to 32,767)
 - [C Variables, Constants and Literals](https://www.programiz.com/c-programming/c-variables-constants) — accessed 2026-11-04 (naming rules)
 - [C Storage Class](https://www.programiz.com/c-programming/c-storage-class) — accessed 2026-11-04 (local and global variables)
-
-**IT Job QnS**
-
-- [Programming Question](https://it.jobqns.com/programming-question/) — accessed 2026-11-04 (a `sizeof` question: an unsuffixed floating constant such as 6.5 is a `double`); the site has no separate page on C data types, variable naming rules, local and global variables or structured programming in C
 
 **Additional sources**
 

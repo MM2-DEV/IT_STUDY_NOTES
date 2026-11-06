@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Algorithm {#algorithm}
 
-**Definition:** an algorithm is a **finite, ordered set of clear, step-by-step instructions for solving a problem**. It starts with **Start**, ends with **Stop**, and is usually written in plain language before a program is coded. The same algorithm can be coded in any programming language.
+**Definition:** an algorithm is a **finite, ordered set of clear, step-by-step instructions for solving a problem**.
+
+It starts with **Start**, ends with **Stop**, and is usually written in plain language before a program is coded. The same algorithm can be coded in any programming language.
 
 **Characteristics of an algorithm** (see also [Algorithm Specification and Development](/topics/programming/introduction-to-programming#algorithm-specification-and-development)):
 
@@ -134,7 +136,9 @@ For n = 7: none of 2, 3, 4, 5, 6 divides 7, so the output is "Prime". For n = 9:
 
 ### Variable
 
-**Definition:** a variable is a **name given to a memory location** that stores a value. The value of a variable **can change** while the algorithm or program runs. For example, in `sum ← sum + i`, the value of `sum` changes on every repetition.
+**Definition:** a variable is a **name given to a memory location** that stores a value.
+
+The value of a variable **can change** while the algorithm or program runs. For example, in `sum ← sum + i`, the value of `sum` changes on every repetition.
 
 **Rules for naming variables** (common to most languages):
 
@@ -154,7 +158,9 @@ For n = 7: none of 2, 3, 4, 5, 6 divides 7, so the output is "Prime". For n = 9:
 
 ### Constant
 
-**Definition:** a constant is a value that **does not change** during the execution of an algorithm or program, for example 3.14159 (π), 100 or "Pass". A constant can be written directly (a **literal**) or given a name (a **named constant**, such as PI).
+**Definition:** a constant is a value that **does not change** during the execution of an algorithm or program, for example 3.14159 (π), 100 or "Pass".
+
+A constant can be written directly (a **literal**) or given a name (a **named constant**, such as PI).
 
 ### Assignment Operation
 
@@ -167,7 +173,9 @@ For n = 7: none of 2, 3, 4, 5, 6 divides 7, so the output is "Prime". For n = 9:
 
 ### Operations
 
-**Operator:** a symbol that performs an operation on values (called **operands**). In `2 + 3`, `+` is the operator and 2 and 3 are the operands.
+**Operator:** a symbol that performs an operation on values (called **operands**).
+
+In `2 + 3`, `+` is the operator and 2 and 3 are the operands.
 
 **1. Arithmetic operations** (with A = 10, B = 20):
 
@@ -229,7 +237,9 @@ The output is a = 8, b = 5: the values have been swapped. (Without `temp`, writi
 
 ## Flowchart {#flowchart}
 
-**Definition:** a flowchart is a **diagram (pictorial representation) of an algorithm or process**. It uses **standard symbols** for the different kinds of steps and **arrows (flow lines)** to show the order in which the steps are carried out.
+**Definition:** a flowchart is a **diagram (pictorial representation) of an algorithm or process**.
+
+It uses **standard symbols** for the different kinds of steps and **arrows (flow lines)** to show the order in which the steps are carried out.
 
 ### Flowchart Symbols
 

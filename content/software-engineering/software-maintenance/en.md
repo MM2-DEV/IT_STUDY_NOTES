@@ -5,7 +5,9 @@ updated: 2026-11-04
 
 ### Definition of Software Maintenance
 
-Software maintenance is the process of **modifying a software product after it has been delivered** to the users, to correct faults, to adapt it to a changed environment, to improve its performance or other qualities, or to add new features. It is the last and usually the longest phase of the software development life cycle, and it continues for as long as the software is in use.
+Software maintenance is the process of **modifying a software product after it has been delivered** to the users, to correct faults, to adapt it to a changed environment, to improve its performance or other qualities, or to add new features.
+
+It is the last and usually the longest phase of the software development life cycle, and it continues for as long as the software is in use.
 
 Maintenance keeps the software useful as the needs of its users and its environment change; the reasons why software must keep changing are summarized by Lehman's laws of software evolution (see [History and Nature of Software Engineering](/topics/software-engineering/introduction-to-software-engineering#history-and-nature-of-software-engineering)).
 
@@ -31,7 +33,7 @@ Software maintenance is of four types:
 3. **Perfective maintenance** — modifications made to **add new features**, meet new user requirements, or **improve the performance**, reliability or other qualities of the software, so that it remains useful for a long time.
 4. **Preventive maintenance** — modifications made to **prevent future problems**: faults that are not serious now but may become serious later are corrected, and the code and documents are improved (restructuring, refactoring, updating documentation) to make future maintenance easier.
 
-Corrective maintenance is **reactive** (it fixes problems that have already occurred), while preventive maintenance is **proactive**. Perfective maintenance usually takes the largest share of the maintenance effort; one estimate gives perfective maintenance about 25–30%, corrective maintenance 20–25%, adaptive maintenance 15–20% and preventive maintenance 10–15% of the maintenance effort, with the figures varying between organizations.
+Corrective maintenance is **reactive** (it fixes problems that have already occurred), while preventive maintenance is **proactive**. Perfective maintenance usually takes the largest share of the maintenance effort: in the widely cited surveys of Lientz and Swanson it was more than half, while corrective maintenance (fixing errors) was only about a fifth. The exact figures vary between studies and organizations.
 
 ### Software Maintenance Activities (Process)
 
@@ -128,7 +130,9 @@ The effort grows **exponentially** when the complexity is high and the team is u
 
 ### Software Re-engineering
 
-Software re-engineering is the process of **modifying existing (legacy) software to improve its structure and maintainability, without changing its functionality**. The software is redesigned and its programs are rewritten, often in a newer language or for a newer platform. For example, UNIX was first written in assembly language and later re-engineered in C, which made it easier to maintain and to port.
+Software re-engineering is the process of **modifying existing (legacy) software to improve its structure and maintainability, without changing its functionality**.
+
+The software is redesigned and its programs are rewritten, often in a newer language or for a newer platform. For example, UNIX was first written in assembly language and later re-engineered in C, which made it easier to maintain and to port.
 
 ![Re-engineering: reverse engineering from the existing software to its specification, restructuring of the program and data, and forward engineering to the re-engineered software](/diagrams/software-engineering/reengineering.svg)
 
@@ -140,9 +144,13 @@ The re-engineering process has five steps:
 4. **Data restructuring** — restructure the data as required.
 5. **Forward engineering** — build the re-engineered software from the recovered specification.
 
-**Reverse engineering:** reverse engineering is the process of **analysing an existing system** (its code and design) to **recover its specification and design**. It works like the SDLC in reverse, moving from the low-level code up to higher levels of abstraction.
+**Reverse engineering:** reverse engineering is the process of **analysing an existing system** (its code and design) to **recover its specification and design**.
 
-**Program restructuring:** program restructuring is the process of reorganizing and rebuilding existing code (or data), in the same language or by translating it into another, **without changing its functionality**, to improve its reliability and maintainability and to reduce its dependence on obsolete hardware. Components that fail often are good candidates for restructuring.
+It works like the SDLC in reverse, moving from the low-level code up to higher levels of abstraction.
+
+**Program restructuring:** program restructuring is the process of reorganizing and rebuilding existing code (or data), in the same language or by translating it into another, **without changing its functionality**, to improve its reliability and maintainability and to reduce its dependence on obsolete hardware.
+
+Components that fail often are good candidates for restructuring.
 
 **Forward engineering:** forward engineering is the process of **building new software from the specification** obtained by reverse engineering, following the normal software engineering process.
 
@@ -174,10 +182,6 @@ The re-engineering process has five steps:
 
 - [Software Maintenance in Software Engineering](https://www.tpointtech.com/software-engineering-software-maintenance) — accessed 2026-11-04 (definition, need, the four types, difficulties of maintenance; it describes preventive maintenance as keeping the system from becoming obsolete through reverse engineering and re-engineering, and describes perfective maintenance as "restricting" the software — most likely a misprint for "restructuring"). Its separate page on maintenance cost factors (training.tpointtech.com) could not be opened (the address did not resolve, checked 2026-11-04).
 
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-04 (corrective, perfective and adaptive maintenance; maintenance as the last SDLC stage)
-
 **Programiz**
 
 - Programiz has no software engineering tutorial; no page was found for this topic (checked 2026-11-04).
@@ -186,3 +190,4 @@ The re-engineering process has five steps:
 
 - K. K. Aggarwal and Yogesh Singh, *Software Engineering*, New Age International — software maintenance models (quick-fix, iterative enhancement, reuse-oriented, Boehm's and Taute's models) and maintenance cost estimation
 - Barry W. Boehm, *Software Engineering Economics*, Prentice Hall, 1981 — annual change traffic and the COCOMO maintenance effort model
+- S. R. Schach et al., "Determining the Distribution of Maintenance Categories: Survey versus Measurement", *Empirical Software Engineering* 8, 2003 ([DOI 10.1023/A:1025368318006](https://doi.org/10.1023/A:1025368318006)) — reports the Lientz–Swanson survey distribution, in which perfective maintenance is more than half of the effort; used because a percentage split given earlier in these notes (upper limits adding up to only 90%) could not be confirmed

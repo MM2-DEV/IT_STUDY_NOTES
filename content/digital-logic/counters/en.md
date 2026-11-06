@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Basic Counters {#basic-counters}
 
-**Definition:** a counter is a **sequential circuit that counts the clock pulses** applied to it. It is a group of **flip-flops** connected so that, with every clock pulse, the stored binary number moves to the next value of a fixed sequence (for example 0, 1, 2, 3, …). Counting is the most widely used application of flip-flops (see [Flip-Flops](/topics/digital-logic/flip-flops)). The output of a counter shows the **number of pulses received, in binary**.
+**Definition:** a counter is a **sequential circuit that counts the clock pulses** applied to it.
+
+It is a group of **flip-flops** connected so that, with every clock pulse, the stored binary number moves to the next value of a fixed sequence (for example 0, 1, 2, 3, …). Counting is the most widely used application of flip-flops (see [Flip-Flops](/topics/digital-logic/flip-flops)). The output of a counter shows the **number of pulses received, in binary**.
 
 **Why counters are needed:** many devices must do things in a sequence or for a set time. For example, a **microwave oven** cooks for the time that has been set and then switches itself off when the time is up (the count reaches 0); a counter at the door of a hall can count the people entering and leaving and show how many seats are still empty. With a counter and a decoder, operations can be controlled one after another automatically, for example switching motors, heaters and switches on and off.
 
@@ -25,7 +27,9 @@ updated: 2026-11-01
 
 ### Modulus (MOD Number)
 
-**Definition:** the **modulus (MOD number)** of a counter is the **number of different states** it goes through before returning to its starting state. A MOD-N counter counts from 0 to N − 1 and then returns to 0.
+**Definition:** the **modulus (MOD number)** of a counter is the **number of different states** it goes through before returning to its starting state.
+
+A MOD-N counter counts from 0 to N − 1 and then returns to 0.
 
 1. A counter with **n flip-flops** can have at most **2ⁿ states**, so its maximum MOD number is 2ⁿ.
 2. The **largest number** it can count to is **2ⁿ − 1**.
@@ -83,7 +87,7 @@ All three flip-flops receive the clock at the same time, so there is **no cumula
 | Speed | Slower | Faster |
 | Extra logic gates | Not needed for simple up counting | Needed between the flip-flops |
 | Design | Simple | More complex |
-| Decoding errors (glitches) | Possible during the ripple | None |
+| Decoding errors (glitches) | Possible during the ripple | Much less likely (outputs change almost together) |
 | Other name | Ripple counter, serial counter | Parallel counter |
 | Count sequence | Fixed sequence (up or down) | Can be designed for any sequence |
 | Examples | Ripple up counter, ripple down counter | Ring counter, Johnson counter, synchronous MOD-10 counter |
@@ -100,7 +104,9 @@ All three flip-flops receive the clock at the same time, so there is **no cumula
 
 ## Asynchronous Ripple Counter {#asynchronous-ripple-counter}
 
-**Definition:** an asynchronous counter is a counter in which **only the first flip-flop is clocked by the external clock**, and **every other flip-flop is clocked by the output of the flip-flop before it**. A change at the first flip-flop passes on (**ripples**) through the chain like a wave, so it is also called a **ripple counter** (or serial counter).
+**Definition:** an asynchronous counter is a counter in which **only the first flip-flop is clocked by the external clock**, and **every other flip-flop is clocked by the output of the flip-flop before it**.
+
+A change at the first flip-flop passes on (**ripples**) through the chain like a wave, so it is also called a **ripple counter** (or serial counter).
 
 ### Construction of a 3-bit Ripple Up Counter
 
@@ -162,7 +168,9 @@ Each flip-flop takes a short time (its **propagation delay**) to change after it
 
 ## Decade Counter {#decade-counter}
 
-**Definition:** a decade counter is a **MOD-10 counter**: it has **10 states** and returns to its starting state after the tenth clock pulse. A decade counter that counts in **BCD**, from **0000 (0) to 1001 (9)**, is called a **BCD counter** (see [BCD](/topics/number-systems/binary-codes#bcd-binary-coded-decimal)).
+**Definition:** a decade counter is a **MOD-10 counter**: it has **10 states** and returns to its starting state after the tenth clock pulse.
+
+A decade counter that counts in **BCD**, from **0000 (0) to 1001 (9)**, is called a **BCD counter** (see [BCD](/topics/number-systems/binary-codes#bcd-binary-coded-decimal)).
 
 **Number of flip-flops:** 10 states need **4 flip-flops** (2⁴ = 16 ≥ 10). A 4-bit counter would normally count 0 to 15, so the **six states 1010 to 1111 must be skipped**.
 
@@ -196,7 +204,9 @@ So the counter goes 0, 1, 2, …, 9, 0, 1, … The state 1010 exists only for th
 
 ### Decade Counter IC
 
-The **74LS90** is a decade counter IC. It contains a **divide-by-two** counter and a **divide-by-five** counter (four flip-flops in all). Connecting the output **QA** to the clock input **CKB** gives a BCD decade counter (0 to 9). It also has gated **reset-to-zero** inputs and **set-to-nine** inputs.
+The **74LS90** is a decade counter IC.
+
+It contains a **divide-by-two** counter and a **divide-by-five** counter (four flip-flops in all). Connecting the output **QA** to the clock input **CKB** gives a BCD decade counter (0 to 9). It also has gated **reset-to-zero** inputs and **set-to-nine** inputs.
 
 **Applications of decade counters:**
 

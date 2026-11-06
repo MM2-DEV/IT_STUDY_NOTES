@@ -197,7 +197,7 @@ HAVING COUNT(*) >= 2;
 ```text tab=Output
 dept_id  students  avg_cgpa
 1        2         3.83
-2        2         3.17
+2        2         3.18
 ```
 
 | Basis | WHERE | HAVING |
@@ -505,7 +505,9 @@ printf("%s\n", name);
 
 ### Cursor
 
-A cursor is a **pointer to the result set of a query** that lets a program **process the rows one at a time**. It is used when a query returns many rows. The steps are:
+A cursor is a **pointer to the result set of a query** that lets a program **process the rows one at a time**.
+
+It is used when a query returns many rows. The steps are:
 
 1. **DECLARE** the cursor for a SELECT statement.
 2. **OPEN** the cursor (the query is executed).
@@ -617,11 +619,6 @@ The `?` placeholders send the values separately from the SQL text; this prevents
 **Programiz**
 
 - [SQL tutorial](https://www.programiz.com/sql), [SQL JOIN](https://www.programiz.com/sql/join), [GROUP BY](https://www.programiz.com/sql/group-by), [Views](https://www.programiz.com/sql/views) and [Stored Procedures](https://www.programiz.com/sql/stored-procedures) — accessed 2026-11-06
-
-**IT Job QnS**
-
-- [Structured Query Language (MCQ)](https://it.jobqns.com/structured-query-language/) — accessed 2026-11-06 (exam MCQs on DDL, DISTINCT, HAVING, views, ON DELETE CASCADE, aggregate functions and subqueries)
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (ODBC and JDBC in two-tier architecture)
 
 **Additional sources**
 

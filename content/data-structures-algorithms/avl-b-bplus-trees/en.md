@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Definition
 
-An **AVL tree** is a **self-balancing binary search tree** in which, for **every node**, the heights of the left and right subtrees differ by **at most 1**. It is named after its inventors, **Georgy Adelson-Velsky and Evgenii Landis**, who published it in **1962**. It was the **first self-balancing binary search tree**.
+An **AVL tree** is a **self-balancing binary search tree** in which, for **every node**, the heights of the left and right subtrees differ by **at most 1**.
+
+It is named after its inventors, **Georgy Adelson-Velsky and Evgenii Landis**, who published it in **1962**. It was the **first self-balancing binary search tree**.
 
 An ordinary BST can become **skewed** (for example, when keys are inserted in sorted order), and its operations then take O(n). An AVL tree **rebalances itself by rotations** after every insertion and deletion, so its height always stays **O(log n)** (at most about 1.44 log₂ n).
 
@@ -124,7 +126,7 @@ The space is O(n); each node also stores its height (or balance factor).
 **Disadvantages:**
 
 1. More complex to implement than a plain BST.
-2. Insertions and deletions may need many rotations, so it is slower than a red-black tree when there are many updates.
+2. A deletion may need rotations at several levels (an insertion needs at most one single or double rotation), so it can be slower than a red-black tree when there are many updates.
 3. Extra memory in each node for the height or balance factor.
 
 **Applications:** look-up-intensive applications such as **database indexing** and in-memory dictionaries and sets, where searches are much more frequent than updates.
@@ -133,7 +135,9 @@ The space is O(n); each node also stores its height (or balance factor).
 
 ### Definition
 
-A **B-tree** is a **self-balancing multiway (m-way) search tree** in which a node can hold **more than one key** and have **more than two children**. It was invented by **Rudolf Bayer and Edward McCreight** in **1970** at Boeing Research Labs. B-trees are designed for data stored on **disk (secondary storage)**: each node is the size of a disk block, so the tree is **very short and wide**, and only a few disk accesses are needed to find a key.
+A **B-tree** is a **self-balancing multiway (m-way) search tree** in which a node can hold **more than one key** and have **more than two children**.
+
+It was invented by **Rudolf Bayer and Edward McCreight** in **1970** at Boeing Research Labs. B-trees are designed for data stored on **disk (secondary storage)**: each node is the size of a disk block, so the tree is **very short and wide**, and only a few disk accesses are needed to find a key.
 
 ### Properties of a B-Tree of Order m
 

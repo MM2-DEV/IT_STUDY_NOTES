@@ -5,7 +5,9 @@ updated: 2026-11-02
 
 ### The String-Matching Problem
 
-**String matching (pattern searching)** is the problem of finding **all occurrences of a pattern P** (length **m**) in a **text T** (length **n**, with m ≤ n). The pattern **occurs with shift s** if T[s … s + m − 1] = P[0 … m − 1]. The task is to find all such **valid shifts**.
+**String matching (pattern searching)** is the problem of finding **all occurrences of a pattern P** (length **m**) in a **text T** (length **n**, with m ≤ n).
+
+The pattern **occurs with shift s** if T[s … s + m − 1] = P[0 … m − 1]. The task is to find all such **valid shifts**.
 
 **Example:** T = "aabaacaadaabaaba", P = "aaba" → valid shifts **0, 9 and 12**.
 

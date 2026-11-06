@@ -19,7 +19,9 @@ Because any Boolean function can be written in **sum-of-products (SOP)** form, a
 
 ### Programmable Logic Array (PLA)
 
-**Definition:** a programmable logic array (PLA) is a PLD in which **both the AND array and the OR array are programmable**. The AND array produces only the product terms that are needed (not all minterms), and the OR array adds any chosen product terms to form each output. A PLA is used to build **custom combinational circuits**.
+**Definition:** a programmable logic array (PLA) is a PLD in which **both the AND array and the OR array are programmable**.
+
+The AND array produces only the product terms that are needed (not all minterms), and the OR array adds any chosen product terms to form each output. A PLA is used to build **custom combinational circuits**.
 
 **Structure:**
 
@@ -147,7 +149,7 @@ The programming table specifies all the connections of a PLA. It has one row for
 1. Implementing **custom combinational logic** (several Boolean functions in one chip)
 2. **Control units** of processors (controlling a datapath)
 3. **Code converters** and **decoders**
-4. Counters and bus interface logic
+4. Next-state logic of counters and other sequential circuits (with external flip-flops), and bus interface logic
 
 ## References {#references}
 

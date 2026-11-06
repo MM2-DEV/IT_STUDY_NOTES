@@ -55,7 +55,7 @@ E-commerce is classified into types (business models) such as **B2B, B2C, C2C, C
 3. **1982 — Minitel:** France Télécom launched **Minitel** across France, which people used for online ordering.
 4. **1984 — CompuServe Electronic Mall:** CompuServe opened the **Electronic Mall** in the USA and Canada, one of the first comprehensive e-commerce services.
 5. **1991 — World Wide Web:** the Web (invented by **Tim Berners-Lee**) became publicly available, making online shops possible for everyone.
-6. **1994 — Secure transactions:** **Netscape** released its web browser with **SSL** encryption, making online payment secure. On **11 August 1994**, **NetMarket** made the first secure online retail sale — a CD of Sting's *Ten Summoner's Tales* — paid by credit card.
+6. **1994–1995 — Secure transactions:** On **11 August 1994**, **NetMarket** made the first secure (encrypted) online retail sale — a CD of Sting's *Ten Summoner's Tales* — paid by credit card. **Netscape** developed **SSL** in 1994 and released its first public version (SSL 2.0) with its browser in 1995, making online payment secure.
 7. **1995 — Amazon and eBay:** **Jeff Bezos** launched **Amazon.com** (first as an online bookstore), and **Pierre Omidyar** founded **eBay** (as AuctionWeb), the first popular online auction site for person-to-person sales. In the same year, the US National Science Foundation lifted its ban on commercial use of the Internet.
 8. **1998–1999 — Online payment and marketplaces:** **PayPal** started online payment between individuals, and **Alibaba** was founded in China (1999).
 9. **2000s onwards — Growth of m-commerce:** with smartphones, mobile apps and mobile payments, e-commerce moved to mobile devices (m-commerce), and social media became a major channel for selling and advertising.
@@ -154,10 +154,6 @@ So **e-commerce is a part (subset) of e-business**: e-commerce covers only the c
 **TpointTech**
 
 - [Characteristics of Electronic Commerce](https://www.tpointtech.com/characteristics-of-electronic-commerce) — accessed 2026-11-04 (definition, characteristics, e-commerce as a subset of e-business, advantages and disadvantages). This page says that the first online sale (1994) was a "Spider CD"; the item was Sting's CD *Ten Summoner's Tales*, sold through NetMarket on 11 August 1994 (checked in the encyclopedia sources below). Its `e-commerce-definition` and `advantages-and-disadvantages-of-ecommerce` pages return 404.
-
-**IT Job QnS**
-
-- [Previous Bank IT Question Analysis](https://it.jobqns.com/previous-bank-it-question-analysis-post-wise/) — accessed 2026-11-04 (lists the question "Draw a diagram for e-commerce online transactions"; no notes on e-commerce)
 
 **Programiz**
 

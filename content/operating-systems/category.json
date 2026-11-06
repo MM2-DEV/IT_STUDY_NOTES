@@ -100,7 +100,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -108,7 +109,8 @@
           "title": "Concept of a Process",
           "exams": [
             "School-2",
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -177,6 +179,13 @@
           "exams": [
             "College"
           ]
+        },
+        {
+          "id": "threads-process-vs-thread",
+          "title": "Threads: Process vs Thread",
+          "exams": [
+            "Bank"
+          ]
         }
       ]
     },
@@ -185,14 +194,16 @@
       "title": "Interrupts and OS Organization",
       "order": 3,
       "exams": [
-        "College"
+        "College",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "interrupt-processing",
           "title": "Interrupt Processing",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -206,7 +217,8 @@
           "id": "os-kernel",
           "title": "OS Kernel",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -222,6 +234,13 @@
           "exams": [
             "College"
           ]
+        },
+        {
+          "id": "interrupts-and-traps",
+          "title": "Interrupts and Traps",
+          "exams": [
+            "Bank"
+          ]
         }
       ]
     },
@@ -232,7 +251,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -241,7 +261,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -250,7 +271,15 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
+          ]
+        },
+        {
+          "id": "starvation-and-aging",
+          "title": "Starvation and Aging",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -262,7 +291,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -307,7 +337,8 @@
           "id": "deadlock-introduction",
           "title": "Deadlock (Introduction)",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -321,7 +352,8 @@
           "id": "producer-and-consumer-processes",
           "title": "Producer and Consumer Processes",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         }
       ]
@@ -333,7 +365,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -377,7 +410,8 @@
           "id": "process-synchronization-using-semaphores",
           "title": "Process Synchronization Using Semaphores",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -413,6 +447,13 @@
           "title": "Ada Tasks",
           "exams": [
             "College"
+          ]
+        },
+        {
+          "id": "readers-writers-and-dining-philosophers-problems",
+          "title": "Readers–Writers and Dining Philosophers Problems",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -466,7 +507,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -474,35 +516,40 @@
           "title": "Deadlock Handling Methods",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
           "id": "deadlock-prevention",
           "title": "Deadlock Prevention",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "deadlock-detection",
           "title": "Deadlock Detection",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "deadlock-avoidance",
           "title": "Deadlock Avoidance",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "banker-s-algorithm",
           "title": "Banker's Algorithm",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         }
       ]
@@ -515,14 +562,16 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "memory-organization-and-management",
           "title": "Memory Organization and Management",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -538,7 +587,8 @@
           "id": "storage-allocation",
           "title": "Storage Allocation",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -547,7 +597,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -557,7 +608,8 @@
             "School-2",
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -565,6 +617,20 @@
           "title": "Address Mapping",
           "exams": [
             "College"
+          ]
+        },
+        {
+          "id": "swapping",
+          "title": "Swapping",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "fragmentation",
+          "title": "Fragmentation",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -576,21 +642,24 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "virtual-memory-concepts",
           "title": "Virtual Memory Concepts",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "virtual-storage-management",
           "title": "Virtual Storage Management",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -599,7 +668,15 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
+          ]
+        },
+        {
+          "id": "page-fault-handling",
+          "title": "Page Fault Handling",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -631,7 +708,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -657,7 +735,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -692,7 +771,8 @@
           "id": "blocks-and-fragments",
           "title": "Blocks and Fragments",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -732,6 +812,20 @@
             "PSC-IT",
             "AP"
           ]
+        },
+        {
+          "id": "file-access-methods",
+          "title": "File Access Methods",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "file-systems-fat32-ntfs-and-ext4",
+          "title": "File Systems: FAT32, NTFS and ext4",
+          "exams": [
+            "Bank"
+          ]
         }
       ]
     },
@@ -741,7 +835,8 @@
       "order": 13,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -757,7 +852,8 @@
           "title": "Protection and Security Handling Techniques",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]
@@ -767,7 +863,8 @@
       "title": "Linux",
       "order": 14,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -802,14 +899,16 @@
           "id": "basic-linux-commands",
           "title": "Basic Linux Commands",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
           "id": "file-permissions-and-ownership",
           "title": "File Permissions and Ownership",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
@@ -823,7 +922,8 @@
           "id": "process-management-commands",
           "title": "Process Management Commands",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {

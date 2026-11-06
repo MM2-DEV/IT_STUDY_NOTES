@@ -39,7 +39,9 @@ Number systems are of two types:
 
 #### 1. Non-positional Number System
 
-**Definition:** In a non-positional number system, the value of a symbol **does not depend on its position** in the number. Each symbol always has the same value, and the value of a number is found by adding (and sometimes subtracting) the values of its symbols.
+**Definition:** In a non-positional number system, the value of a symbol **does not depend on its position** in the number.
+
+Each symbol always has the same value, and the value of a number is found by adding (and sometimes subtracting) the values of its symbols.
 
 **Example 1: the Egyptian hieroglyphic number system** is a non-positional number system. It had a separate symbol for each power of 10, and a number was written by **repeating** each symbol as many times as needed:
 
@@ -68,7 +70,9 @@ Rules for finding the value:
 
 #### 2. Positional Number System
 
-**Definition:** In a positional (or **weighted**) number system, the value of a digit **depends on its position** in the number as well as on the digit itself. Each position has a **weight** (place value), which is a power of the base.
+**Definition:** In a positional (or **weighted**) number system, the value of a digit **depends on its position** in the number as well as on the digit itself.
+
+Each position has a **weight** (place value), which is a power of the base.
 
 To find the value of a number in a positional number system, three things are needed:
 
@@ -113,7 +117,7 @@ The same digit can have different values in different positions. In 228, the fir
 1. Each position has a weight equal to a power of the base: b⁰, b¹, b², … to the left of the radix point, and b⁻¹, b⁻², … to the right of it.
 2. The base is an integer equal to 2 or more.
 3. The largest digit in any position is **one less than the base** (for example, 9 in decimal and 1 in binary).
-4. It has a symbol for **zero**.
+4. Modern positional systems (binary, octal, decimal and hexadecimal) have a symbol for **zero**, which is needed to mark an empty position.
 5. The value of a number is the weighted sum of its digits.
 
 **Examples:**
@@ -131,7 +135,7 @@ Computers use positional number systems.
 | --- | --- | --- |
 | Value of a symbol | Does not depend on its position | Depends on its position (weight) |
 | Weight of positions | No weights | Each position has a weight (a power of the base) |
-| Zero | No symbol for zero | Has a symbol for zero |
+| Zero | No symbol for zero | Modern positional systems have a symbol for zero |
 | How value is found | Adding (or subtracting) symbol values | Sum of each digit × its weight |
 | Example | Roman numerals | Binary, octal, decimal, hexadecimal |
 
@@ -145,7 +149,6 @@ The four positional number systems used in computing are:
 2. Octal number system (base 8)
 3. Decimal number system (base 10)
 4. Hexadecimal number system (base 16)
-
 
 | Number system | Base | Digits used | Example |
 | --- | --- | --- | --- |
@@ -184,7 +187,7 @@ The four positional number systems used in computing are:
 **Uses of octal:**
 
 1. To write long binary numbers in a short form.
-2. In early computers whose word sizes were multiples of 3 bits (12, 24 and 36 bits), such as the PDP-8, ICL 1900 and IBM mainframes.
+2. In early computers whose word sizes were multiples of 3 bits (12, 24 and 36 bits), such as the PDP-8, the ICL 1900 and early IBM 36-bit computers such as the IBM 7090.
 3. For **file permissions** in UNIX and Linux (for example, `chmod 755`).
 
 **Example:**
@@ -504,11 +507,6 @@ So, (8E)₁₆ = **(167)₉**.
 ```
 
 ## References {#references}
-
-
-**IT Job QnS**
-
-- [Digital Logic Design](https://it.jobqns.com/digital-logic-design/) (exam questions: (10010.101)₂ to decimal and (543)₁₀ to hexadecimal; (12345)₁₀ to octal, Bangladesh Bank Assistant Programmer 2019) — accessed 2026-11-01
 
 **TutorialsPoint**
 

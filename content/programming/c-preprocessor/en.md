@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ### The C Preprocessor
 
-**Definition:** the **C preprocessor** is a program that **processes the source code before it is compiled**. It works as a **text-substitution tool**: it inserts header files, replaces macros and selects which parts of the code are compiled. Its instructions are called **preprocessor directives**.
+**Definition:** the **C preprocessor** is a program that **processes the source code before it is compiled**.
+
+It works as a **text-substitution tool**: it inserts header files, replaces macros and selects which parts of the code are compiled. Its instructions are called **preprocessor directives**.
 
 **Position in compilation:** preprocessing is the **first stage** of building a C program (preprocessing → compilation → assembly → linking; see [Compilation and Execution of a C Program](/topics/programming/c-data-types-operators#fundamentals-of-c-programming)). The output of the preprocessor (with GCC, seen with `gcc -E file.c`) is pure C code without directives, which is then given to the compiler.
 
@@ -54,7 +56,9 @@ The directives fall into three main types:
 
 #### 2. Macro Definition (#define)
 
-A **macro** is a **name that the preprocessor replaces with a piece of text** (its **replacement list**) everywhere it appears in the program. Replacement is done before compilation, and macro names are usually written in CAPITALS.
+A **macro** is a **name that the preprocessor replaces with a piece of text** (its **replacement list**) everywhere it appears in the program.
+
+Replacement is done before compilation, and macro names are usually written in CAPITALS.
 
 **a) Object-like macro (symbolic constant):**
 

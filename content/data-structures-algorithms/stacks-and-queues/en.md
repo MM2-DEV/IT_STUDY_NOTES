@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Stack
 
-**Definition:** a stack is a **linear data structure** in which **insertion and deletion are done at only one end**, called the **top**. The element inserted **last is removed first**, so a stack follows the **LIFO (Last In, First Out)** principle (also called FILO, first in last out). A stack is an **abstract data type**; it can be implemented with an **array** or a **linked list**.
+**Definition:** a stack is a **linear data structure** in which **insertion and deletion are done at only one end**, called the **top**.
+
+The element inserted **last is removed first**, so a stack follows the **LIFO (Last In, First Out)** principle (also called FILO, first in last out). A stack is an **abstract data type**; it can be implemented with an **array** or a **linked list**.
 
 **Real-life examples:** a pile of plates (a plate is put on and taken from the top), a stack of books, the browser's **back** button, and **undo** in an editor.
 
@@ -50,7 +52,9 @@ The stack finally contains 10, 20, 40 (top = 40). All stack operations take **O(
 
 ### Queue
 
-**Definition:** a queue is a **linear data structure** in which **insertion is done at one end**, called the **rear (tail)**, and **deletion at the other end**, called the **front (head)**. The element inserted **first is removed first**, so a queue follows the **FIFO (First In, First Out)** principle.
+**Definition:** a queue is a **linear data structure** in which **insertion is done at one end**, called the **rear (tail)**, and **deletion at the other end**, called the **front (head)**.
+
+The element inserted **first is removed first**, so a queue follows the **FIFO (First In, First Out)** principle.
 
 **Real-life examples:** people standing in a line at a ticket counter or bus stop, print jobs waiting for a printer, and processes waiting for the CPU.
 
@@ -79,8 +83,8 @@ The stack finally contains 10, 20, 40 (top = 40). All stack operations take **O(
 **Example:** enqueue 10, 20, 30; dequeue; enqueue 40:
 
 ```text
- front                 rear          front           rear
-   ↓                    ↓              ↓               ↓
+front       rear                     front       rear
+  ↓           ↓                        ↓           ↓
  [10]  [20]  [30]                [ ]  [20]  [30]  [40]
                                  (10 has been removed)
 ```
@@ -461,7 +465,3 @@ Output: `KCATS`
 - [Circular Queue Data Structure](https://www.programiz.com/dsa/circular-queue) — accessed 2026-11-01
 - [Deque Data Structure](https://www.programiz.com/dsa/deque) — accessed 2026-11-01
 - [Priority Queue](https://www.programiz.com/dsa/priority-queue) — accessed 2026-11-01
-
-**IT Job QnS**
-
-- [Data Structure](https://it.jobqns.com/data-structure/) — accessed 2026-11-01

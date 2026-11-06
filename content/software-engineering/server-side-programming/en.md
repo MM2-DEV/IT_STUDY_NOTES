@@ -211,10 +211,6 @@ In Java web applications, MVC is also called **Model 2 architecture**: a **servl
 - [Web Server vs Application Server](https://www.tpointtech.com/server-web-vs-application) — accessed 2026-11-04 (web and EJB containers, enterprise services, examples)
 - [Model 1 and Model 2 (MVC) Architecture](https://www.tpointtech.com/model-1-and-model-2-mvc-architecture) — accessed 2026-11-04
 
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-04 (MVC: model, view and controller, advantages and disadvantages)
-
 **Programiz**
 
 - Programiz has no page on web servers, application servers or MVC frameworks (checked 2026-11-04).

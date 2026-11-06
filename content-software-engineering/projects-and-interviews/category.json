@@ -1,0 +1,155 @@
+{
+  "title": "Portfolio Projects and Interview Preparation",
+  "order": 25,
+  "topics": [
+    {
+      "slug": "portfolio-projects",
+      "title": "Portfolio Projects",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "responsive-portfolio-website",
+          "title": "Responsive Portfolio Website",
+          "exams": []
+        },
+        {
+          "id": "task-management-application",
+          "title": "Task Management Application",
+          "exams": []
+        },
+        {
+          "id": "rest-api-with-authentication",
+          "title": "REST API with Authentication",
+          "exams": []
+        },
+        {
+          "id": "admin-dashboard",
+          "title": "Admin Dashboard",
+          "exams": []
+        },
+        {
+          "id": "full-stack-application",
+          "title": "Full-Stack Application",
+          "exams": []
+        },
+        {
+          "id": "ai-powered-application",
+          "title": "AI-Powered Application",
+          "exams": []
+        },
+        {
+          "id": "production-deployment",
+          "title": "Production Deployment",
+          "exams": []
+        },
+        {
+          "id": "what-every-portfolio-project-should-include",
+          "title": "What Every Portfolio Project Should Include",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "coding-interview-problem-solving",
+      "title": "Coding Interview Problem Solving",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "how-to-approach-a-coding-problem",
+          "title": "How to Approach a Coding Problem",
+          "exams": []
+        },
+        {
+          "id": "complexity-analysis-in-interviews",
+          "title": "Complexity Analysis in Interviews",
+          "exams": []
+        },
+        {
+          "id": "arrays-strings-and-hash-maps",
+          "title": "Arrays, Strings and Hash Maps",
+          "exams": []
+        },
+        {
+          "id": "two-pointers-and-sliding-window",
+          "title": "Two Pointers and Sliding Window",
+          "exams": []
+        },
+        {
+          "id": "stacks-and-queues",
+          "title": "Stacks and Queues",
+          "exams": []
+        },
+        {
+          "id": "binary-search",
+          "title": "Binary Search",
+          "exams": []
+        },
+        {
+          "id": "linked-lists",
+          "title": "Linked Lists",
+          "exams": []
+        },
+        {
+          "id": "trees-and-graphs-bfs-and-dfs",
+          "title": "Trees and Graphs: BFS and DFS",
+          "exams": []
+        },
+        {
+          "id": "recursion-and-backtracking",
+          "title": "Recursion and Backtracking",
+          "exams": []
+        },
+        {
+          "id": "dynamic-programming",
+          "title": "Dynamic Programming",
+          "exams": []
+        },
+        {
+          "id": "heaps-and-priority-queues",
+          "title": "Heaps and Priority Queues",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "technical-interview-process",
+      "title": "The Technical Interview Process",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "resume-github-and-portfolio",
+          "title": "Resume, GitHub and Portfolio",
+          "exams": []
+        },
+        {
+          "id": "take-home-assignments",
+          "title": "Take-Home Assignments",
+          "exams": []
+        },
+        {
+          "id": "live-coding-interviews",
+          "title": "Live Coding Interviews",
+          "exams": []
+        },
+        {
+          "id": "frontend-and-backend-technical-rounds",
+          "title": "Frontend and Backend Technical Rounds",
+          "exams": []
+        },
+        {
+          "id": "behavioral-interviews-and-the-star-method",
+          "title": "Behavioral Interviews and the STAR Method",
+          "exams": []
+        },
+        {
+          "id": "questions-to-ask-the-interviewer",
+          "title": "Questions to Ask the Interviewer",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

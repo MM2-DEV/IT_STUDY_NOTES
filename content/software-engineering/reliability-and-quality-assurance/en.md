@@ -7,13 +7,17 @@ updated: 2026-11-04
 
 ### Definition of Software Reliability
 
-Software reliability is the **probability of failure-free operation** of a software system for a specified period of time in a specified environment. It describes how well the software continues to deliver its services correctly as it is used, and it is one of the main attributes of software quality and dependability (see [Critical Systems](/topics/software-engineering/critical-systems#critical-system-design-and-dependability)).
+Software reliability is the **probability of failure-free operation** of a software system for a specified period of time in a specified environment.
+
+It describes how well the software continues to deliver its services correctly as it is used, and it is one of the main attributes of software quality and dependability (see [Critical Systems](/topics/software-engineering/critical-systems#critical-system-design-and-dependability)).
 
 Reliability depends on the **operational profile** — how the software is actually used: a fault in a part of the program that users never execute does not reduce the reliability they observe, while a fault in a frequently used part reduces it greatly.
 
 ### Definition of Availability
 
-Availability is the **probability that a system is up and able to deliver its services** at a given point in time (or the fraction of time it is available for use). It depends both on how often the system fails and on **how quickly it is repaired** after a failure, so it includes planned and unplanned downtime.
+Availability is the **probability that a system is up and able to deliver its services** at a given point in time (or the fraction of time it is available for use).
+
+It depends both on how often the system fails and on **how quickly it is repaired** after a failure, so it includes planned and unplanned downtime.
 
 ### Factors Affecting Software Reliability
 
@@ -38,7 +42,7 @@ Availability is the **probability that a system is up and able to deliver its se
 
 Software reliability is measured with six metrics:
 
-**1. MTTF (Mean Time To Failure)** — the average time between two successive failures (the time the system runs before it fails), measured in operating time, excluding the time for repairs.
+**1. MTTF (Mean Time To Failure)** — the average operating time from the start (or the end of a repair) until the next failure, that is, the time the system runs before it fails; it is measured in operating time, excluding the time for repairs.
 
 > **MTTF = [(t₂ − t₁) + (t₃ − t₂) + … + (tₙ − tₙ₋₁)] ÷ (n − 1)**
 
@@ -76,7 +80,7 @@ where t₁, t₂, …, tₙ are the times at which the n failures occurred.
 
 **Example 1:** with MTTF = 16.5 hours and MTTR = 1.5 hours, availability = 16.5 ÷ 18 = **0.917 (91.7%)**.
 
-**Example 2:** a system has an MTBF of 25 days (600 hours) and an MTTR of 6 hours. Availability = 600 ÷ (600 + 6) = 600 ÷ 606 = **0.990 (99%)**.
+**Example 2:** a system has an MTTF of 25 days (600 hours) and an MTTR of 6 hours. Availability = 600 ÷ (600 + 6) = 600 ÷ 606 = **0.990 (99%)**.
 
 **Example 3:** an availability of 0.999 (99.9%) allows 0.001 × 365 × 24 = **8.76 hours** of downtime per year.
 
@@ -131,7 +135,9 @@ Reliability is improved by four kinds of techniques:
 
 ### Definition of Software Quality Assurance
 
-Software quality assurance (SQA) is a **planned and systematic set of activities** that gives adequate confidence that a software product, and the **process** used to produce it, conform to the established technical requirements and standards (IEEE). SQA is **process-oriented** and **preventive**: it aims to prevent defects by defining and improving the development process, rather than only finding defects in the finished product.
+Software quality assurance (SQA) is a **planned and systematic set of activities** that gives adequate confidence that a software product, and the **process** used to produce it, conform to the established technical requirements and standards (IEEE).
+
+SQA is **process-oriented** and **preventive**: it aims to prevent defects by defining and improving the development process, rather than only finding defects in the finished product.
 
 Software quality and its factors are explained in [Software Qualities](/topics/software-engineering/software-qualities).
 
@@ -184,7 +190,9 @@ Quality management has evolved in four stages: product **inspection**, **quality
 
 #### ISO 9000
 
-ISO 9000 is a series of international standards for **quality management systems**, published by the International Organization for Standardization (ISO) from 1987. It specifies the guidelines that an organization's **quality system** must follow — its organization, responsibilities, procedures and documentation — rather than the quality of the product itself. **ISO 9001** is the standard against which organizations are certified; it applies to organizations that design, develop, produce and service products, including software organizations. (Older versions also had ISO 9002, for production without design, and ISO 9003, for final inspection and testing only; they were merged into ISO 9001 in 2000.)
+ISO 9000 is a series of international standards for **quality management systems**, published by the International Organization for Standardization (ISO) from 1987.
+
+It specifies the guidelines that an organization's **quality system** must follow — its organization, responsibilities, procedures and documentation — rather than the quality of the product itself. **ISO 9001** is the standard against which organizations are certified; it applies to organizations that design, develop, produce and service products, including software organizations. (Older versions also had ISO 9002, for production without design, and ISO 9003, for final inspection and testing only; they were merged into ISO 9001 in 2000.)
 
 The steps of ISO 9001 certification are:
 
@@ -197,7 +205,9 @@ The steps of ISO 9001 certification are:
 
 #### Capability Maturity Model (CMM)
 
-The Capability Maturity Model (CMM) is a framework, developed by the **Software Engineering Institute (SEI) at Carnegie Mellon University** in 1987 (published in 1991), for assessing and improving the **maturity of an organization's software process**. It defines five maturity levels; an organization improves step by step from one level to the next.
+The Capability Maturity Model (CMM) is a framework, developed by the **Software Engineering Institute (SEI) at Carnegie Mellon University** in 1987 (published in 1991), for assessing and improving the **maturity of an organization's software process**.
+
+It defines five maturity levels; an organization improves step by step from one level to the next.
 
 ![The five CMM maturity levels: Initial, Repeatable, Defined, Managed and Optimizing](/diagrams/software-engineering/cmm-levels.svg)
 
@@ -228,7 +238,9 @@ The five maturity levels of CMM are:
 
 #### Six Sigma
 
-Six Sigma is a **data-driven, statistical** method for improving quality by reducing the variation and defects in a process. A process that operates at six sigma (six standard deviations between the mean and the nearest specification limit) produces no more than **3.4 defects per million opportunities**, that is, it is (1 − 3.4 ÷ 1,000,000) × 100 = **99.99966%** defect-free.
+Six Sigma is a **data-driven, statistical** method for improving quality by reducing the variation and defects in a process.
+
+A process that operates at six sigma (six standard deviations between the mean and the nearest specification limit) produces no more than **3.4 defects per million opportunities** (allowing for the conventional 1.5σ long-term shift of the process mean), that is, it is (1 − 3.4 ÷ 1,000,000) × 100 = **99.99966%** defect-free.
 
 Six Sigma uses two methods:
 
@@ -258,10 +270,6 @@ Six Sigma uses two methods:
 - [Software Reliability Models](https://www.tpointtech.com/software-engineering-software-reliability-models) — accessed 2026-11-04 (prediction and estimation models; Jelinski–Moranda, basic execution time, Goel–Okumoto and Musa–Okumoto models)
 - [ISO 9000 Certification](https://www.tpointtech.com/software-engineering-iso-9000-certification) — accessed 2026-11-04 (ISO 9001, 9002 and 9003, certification steps; it expands ISO as "International Standards Organization" — the official name is the International Organization for Standardization — and presents ISO 9002 and 9003 as current, although they were merged into ISO 9001 in 2000)
 - [Software Quality Assurance](https://www.tpointtech.com/software-quality-assurance) — accessed 2026-11-04
-
-**IT Job QnS**
-
-- IT Job QnS has no page on software reliability metrics or quality assurance standards (checked 2026-11-04).
 
 **Programiz**
 

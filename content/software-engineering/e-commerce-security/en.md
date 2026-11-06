@@ -129,7 +129,7 @@ It is computed on a **hash (message digest)** of the message, and the receiver c
 
 ### SSL and TLS
 
-SSL (**Secure Sockets Layer**) is a security protocol, developed by **Netscape** in **1995**, that creates an **encrypted and authenticated connection** between a web browser (client) and a web server, so that data sent between them cannot be read or changed by others. TLS (**Transport Layer Security**) is its successor, standardized by the **IETF** in **1999**; all SSL versions are now deprecated, and current websites use TLS, although the name "SSL" is still commonly used (for example, "SSL certificate").
+SSL (**Secure Sockets Layer**) is a security protocol, developed by **Netscape** in **1994** (first public version, SSL 2.0, released in **1995**), that creates an **encrypted and authenticated connection** between a web browser (client) and a web server, so that data sent between them cannot be read or changed by others. TLS (**Transport Layer Security**) is its successor, standardized by the **IETF** in **1999**; all SSL versions are now deprecated, and current websites use TLS, although the name "SSL" is still commonly used (for example, "SSL certificate").
 
 SSL/TLS provides three services:
 
@@ -171,7 +171,9 @@ SSL/TLS provides three services:
 
 #### HTTPS
 
-HTTPS (**HTTP Secure**) is **HTTP running over SSL/TLS**: web pages and form data are sent encrypted. A website that uses it has an address starting with `https://` and shows a padlock in the browser. All e-commerce and banking sites must use HTTPS for logins and payments.
+HTTPS (**HTTP Secure**) is **HTTP running over SSL/TLS**: web pages and form data are sent encrypted.
+
+A website that uses it has an address starting with `https://` and shows a padlock in the browser. All e-commerce and banking sites must use HTTPS for logins and payments.
 
 | Basis | HTTP | HTTPS |
 | --- | --- | --- |
@@ -247,10 +249,6 @@ It uses digital certificates for the cardholder, the merchant and the payment ga
 - [Security Threats to E-Commerce](https://www.tpointtech.com/security-threat-to-e-commerce) — accessed 2026-11-05 (payment fraud, e-cash threats, card fraud, phishing, vishing)
 - [SSL vs TLS](https://www.tpointtech.com/ssl-vs-tls) — accessed 2026-11-05 (versions and differences). This page says in one place that TLS was released in 1990; TLS 1.0 was published in 1999, as the page itself states elsewhere and as GeeksforGeeks confirms.
 - [HTTP vs HTTPS](https://www.tpointtech.com/http-vs-https) — accessed 2026-11-05 (ports 80 and 443). This page calls HTTPS a transport-layer protocol; HTTPS is HTTP (an application-layer protocol) running over TLS.
-
-**IT Job QnS**
-
-- [Previous Bank IT Question Analysis](https://it.jobqns.com/previous-bank-it-question-analysis-post-wise/) and [Bangladesh Bank, AME/AE (IT), 2026](https://it.jobqns.com/bangladesh-bank-ame-ae-2026/) — accessed 2026-11-05 (HTTPS uses TLS to encrypt communication; response to a stolen TLS private key: revoke the certificate and issue a new key pair)
 
 **Programiz**
 

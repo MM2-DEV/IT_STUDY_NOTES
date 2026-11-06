@@ -157,7 +157,9 @@ Here:
 3. d_prop = (2,000 × 10³) ÷ (2 × 10⁸) = **10 ms**.
 4. Total delay = 1.2 + 10 = **11.2 ms**.
 
-**Throughput** is the **rate (bits per second) at which data is actually delivered** from sender to receiver. For a path of several links, the throughput is the rate of the slowest link — the **bottleneck link**: throughput = **min(R₁, R₂, …, Rₙ)**. **Example:** a server link of 2 Mbps and a client link of 1 Mbps give a throughput of 1 Mbps, so a 4 MB file (32 Mbit) takes 32 ÷ 1 = **32 seconds**.
+**Throughput** is the **rate (bits per second) at which data is actually delivered** from sender to receiver.
+
+For a path of several links, the throughput is the rate of the slowest link — the **bottleneck link**: throughput = **min(R₁, R₂, …, Rₙ)**. **Example:** a server link of 2 Mbps and a client link of 1 Mbps give a throughput of 1 Mbps, so a 4 MB file (32 Mbit) takes 32 ÷ 1 = **32 seconds**.
 
 ## Protocol Layers and Service Models {#protocol-layers-and-service-models}
 
@@ -233,10 +235,6 @@ A **CAN (Campus Area Network)** connects the LANs of a university or company cam
 **TpointTech**
 
 - [Computer Network Introduction](https://www.tpointtech.com/computer-network-introduction), [Types of Computer Network](https://www.tpointtech.com/types-of-computer-network), [Protocol in Computer Network](https://www.tpointtech.com/protocol-in-computer-network) and [History of the Internet](https://www.tpointtech.com/history-of-the-internet) — accessed 2026-11-06 (components, advantages, network ranges, protocol elements, standards organizations). Its types page calls WAN "very slow", which is an overstatement; WANs are slower than LANs.
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (NIC, resource sharing, PAN, LAN, MAN and WAN, protocols by OSI layer)
 
 **Programiz**
 

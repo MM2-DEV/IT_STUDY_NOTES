@@ -7,7 +7,9 @@ updated: 2026-11-04
 
 ### Definition of Critical System
 
-A critical system is a system whose failure can cause **significant economic loss, physical damage, or a threat to human life**. Because the cost of its failure is very high, the most important property of a critical system is its **dependability**: users must be able to trust it.
+A critical system is a system whose failure can cause **significant economic loss, physical damage, or a threat to human life**.
+
+Because the cost of its failure is very high, the most important property of a critical system is its **dependability**: users must be able to trust it.
 
 ### Types of Critical Systems
 
@@ -29,7 +31,9 @@ For these reasons, critical systems are usually developed with **well-tried tech
 
 ### Dependability
 
-Dependability is the **trustworthiness** of a computer system: the degree of confidence a user has that the system will operate as expected and will not "fail" in normal use. It is not measured as a single number but is described by several related properties.
+Dependability is the **trustworthiness** of a computer system: the degree of confidence a user has that the system will operate as expected and will not "fail" in normal use.
+
+It is not measured as a single number but is described by several related properties.
 
 #### Attributes (Dimensions) of Dependability
 
@@ -49,7 +53,9 @@ Other properties related to dependability are:
 
 #### Availability and Reliability
 
-Availability and reliability are related but different. A system can be **available but unreliable** (it is running but often gives wrong results), or **reliable but not very available** (it rarely fails, but takes a long time to repair). Availability depends on how often the system fails **and** on how quickly it is repaired:
+The two attributes are related but different.
+
+A system can be **available but unreliable** (it is running but often gives wrong results), or **reliable but not very available** (it rarely fails, but takes a long time to repair). Availability depends on how often the system fails **and** on how quickly it is repaired:
 
 > **Availability = MTTF ÷ (MTTF + MTTR)**
 
@@ -81,7 +87,9 @@ Completely fault-free software is not practical to produce, so critical systems 
 
 ### Fault Tolerance
 
-Fault tolerance is the ability of a system to **continue operating correctly even when faults occur** in its hardware or software. A fault-tolerant system can detect faults and recover from them without failing.
+Fault tolerance is the ability of a system to **continue operating correctly even when faults occur** in its hardware or software.
+
+A fault-tolerant system can detect faults and recover from them without failing.
 
 Fault tolerance involves four activities:
 
@@ -100,7 +108,9 @@ Software fault tolerance is based on **redundancy** (extra components) and **div
 
 This is the software version of **triple modular redundancy (TMR)** used in hardware, where three identical components are used and a voter takes the majority output.
 
-**2. Recovery blocks:** a recovery block is a fault-tolerance technique in which the system state is saved, a **primary algorithm** is executed, and its result is checked by an **acceptance test**. If the result passes the test, it is used; if it fails, the system **restores the saved state** and executes an **alternate algorithm** (a different implementation of the same function), and so on. If all the alternates fail, an exception is raised. The alternates are run **one after another** (sequentially).
+**2. Recovery blocks:** a recovery block is a fault-tolerance technique in which the system state is saved, a **primary algorithm** is executed, and its result is checked by an **acceptance test**.
+
+If the result passes the test, it is used; if it fails, the system **restores the saved state** and executes an **alternate algorithm** (a different implementation of the same function), and so on. If all the alternates fail, an exception is raised. The alternates are run **one after another** (sequentially).
 
 ![Recovery block: save state, run the primary algorithm, check with an acceptance test, and on failure restore state and try the next alternate](/diagrams/software-engineering/recovery-block.svg)
 
@@ -291,10 +301,6 @@ Defensive programming — assuming that there may be undetected faults or incons
 - [Software Fault Tolerance](https://www.tpointtech.com/software-engineering-software-fault-tolerance) — accessed 2026-11-04 (recovery blocks with an adjudicator, N-version software, their comparison; it spells the originator of recovery blocks "Randel" — Brian Randell)
 - [Software Reliability Metrics](https://www.tpointtech.com/software-engineering-software-reliability-metrics) — accessed 2026-11-04 (POFOD for safety-critical systems)
 - TpointTech has no page on critical-system types, hazard analysis or fault tree analysis (checked 2026-11-04).
-
-**IT Job QnS**
-
-- IT Job QnS has no page on critical systems (checked 2026-11-04).
 
 **Programiz**
 

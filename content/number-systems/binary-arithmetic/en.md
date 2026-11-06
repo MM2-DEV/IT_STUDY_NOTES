@@ -5,6 +5,8 @@ updated: 2026-11-01
 
 ## Binary Addition {#binary-addition}
 
+**Binary addition** is the addition of binary numbers, done column by column from the right (the least significant bit), with a carry of 1 to the next column whenever a column sum is 2 or more.
+
 **Rules of binary addition:**
 
 | A | B | Sum | Carry | Result |
@@ -66,6 +68,8 @@ Line up the binary points and add in the same way:
 So, 11.10 + 101.01 = **1000.11**.
 
 ## Binary Subtraction {#binary-subtraction}
+
+**Binary subtraction** is the subtraction of binary numbers, done column by column from the right, with a borrow from the next column when 1 is subtracted from 0.
 
 **Rules of binary subtraction:**
 
@@ -489,7 +493,6 @@ Signed numbers in 2's complement are simply **added in binary**, including the s
  ------  ------        ------  ------
    (+7)    0111          (−3)    1101
 
-
    (+5)    0101          (−5)    1011
  + (−2)  + 1110        + (−2)  + 1110
  ------  ------        ------  ------
@@ -572,7 +575,9 @@ The sum, −145, is outside the 8-bit range (−128 to +127), so a 16-bit regist
 
 ### Overflow
 
-**Definition:** **Overflow** occurs when the result of an addition is **too large (or too small) to fit** in the available number of bits. For example, with 4 bits the 2's complement range is −8 to +7, so +7 + 2 = +9 cannot be represented. To avoid overflow, use a register with more bits (for example, 16 bits instead of 8).
+**Definition:** **Overflow** occurs when the result of an addition is **too large (or too small) to fit** in the available number of bits.
+
+For example, with 4 bits the 2's complement range is −8 to +7, so +7 + 2 = +9 cannot be represented. To avoid overflow, use a register with more bits (for example, 16 bits instead of 8).
 
 **How to detect overflow:**
 
@@ -607,6 +612,8 @@ The sum, −145, is outside the 8-bit range (−128 to +127), so a 16-bit regist
 | Use in computers | Rarely used today | Used by almost all computers |
 
 ## Binary Multiplication {#binary-multiplication}
+
+**Binary multiplication** is the multiplication of binary numbers by forming a partial product for each bit of the multiplier (the multiplicand itself for a 1, all 0s for a 0), shifting each partial product one place further left than the one before, and adding them.
 
 **Rules of binary multiplication:**
 
@@ -653,6 +660,8 @@ So, 1101 × 11 = **100111**.
 So, 11011 × 110 = **10100010**.
 
 ## Binary Division {#binary-division}
+
+**Binary division** is the division of binary numbers by repeated comparison, subtraction and shifting, in the same way as long division in decimal.
 
 **Rules of binary division:**
 

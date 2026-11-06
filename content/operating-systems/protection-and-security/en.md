@@ -7,9 +7,13 @@ updated: 2026-11-03
 
 ### Meaning of Protection and Security
 
-> **Protection is the mechanism that controls how programs, processes and users access the resources of a computer system. It deals with internal threats.**
+> **Protection is the mechanism that controls how programs, processes and users access the resources of a computer system.**
+
+It deals with internal threats.
 >
-> **Security is the defence of a computer system and its information against outside threats, such as unauthorized access, malicious modification or destruction, and accidental damage. It deals with external threats.**
+> **Security is the defence of a computer system and its information against outside threats, such as unauthorized access, malicious modification or destruction, and accidental damage.**
+
+It deals with external threats.
 
 Protection is a **component of security**: it provides the means to enforce policies, while security also needs authentication and defence against outside attacks.
 
@@ -136,7 +140,7 @@ An **OTP** is valid for only **one** login session and cannot be reused, so a ca
 
 A computer system is a collection of **objects** (hardware objects such as the CPU, memory, printers and disks; software objects such as files, programs and semaphores). Each object can be accessed only through well-defined operations.
 
-> **A protection domain is a set of (object, access rights) pairs. It specifies which operations a process running in that domain may perform on which objects.**
+> **A protection domain is a set of (object, access rights) pairs that specifies which operations a process running in that domain may perform on which objects.**
 
 1. A process executes within a protection domain.
 2. The association between a process and a domain can be **static** (fixed for the process's lifetime) or **dynamic** (the process can **switch** domains).
@@ -144,7 +148,9 @@ A computer system is a collection of **objects** (hardware objects such as the C
 
 ### 4. Access Matrix
 
-> **The access matrix is a general model of protection. Its rows represent domains, its columns represent objects, and each entry access(i, j) lists the operations that a process in domain Dᵢ may perform on object Oⱼ.**
+> **The access matrix is a general model of protection in which the rows represent domains, the columns represent objects, and each entry lists the operations that a process in that domain may perform on that object.**
+
+Its rows represent domains, its columns represent objects, and each entry access(i, j) lists the operations that a process in domain Dᵢ may perform on object Oⱼ.
 
 **Example:**
 
@@ -194,7 +200,9 @@ The access matrix is usually **large and sparse** (most entries are empty), so i
 
 ### 7. Firewalls
 
-A **firewall** is a computer, appliance or software that sits between a trusted network (or computer) and an untrusted one, **monitors all incoming and outgoing traffic**, and allows or blocks it according to security rules (for example, by address, port or protocol). A network can be divided into security domains, such as a **DMZ** (demilitarized zone) for public servers.
+A **firewall** is a computer, appliance or software that sits between a trusted network (or computer) and an untrusted one, **monitors all incoming and outgoing traffic**, and allows or blocks it according to security rules (for example, by address, port or protocol).
+
+A network can be divided into security domains, such as a **DMZ** (demilitarized zone) for public servers.
 
 ### 8. Intrusion Detection and Prevention
 
@@ -255,10 +263,6 @@ The U.S. Department of Defense **Trusted Computer System Evaluation Criteria (TC
 - [Operating System Security](https://www.tpointtech.com/operating-system-security) — accessed 2026-11-03
 - [Difference between Security and Protection in Operating System](https://www.tpointtech.com/security-vs-protection-in-operating-system) — accessed 2026-11-03
 - [Implementation of Access matrix in the operating system](https://www.tpointtech.com/implementation-of-access-matrix-in-the-operating-system) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- The IT Job QnS Operating System page has no protection or security questions in its fetched text (checked 2026-11-03).
 
 **Programiz**
 

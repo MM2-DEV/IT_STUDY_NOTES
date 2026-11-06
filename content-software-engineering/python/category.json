@@ -1,0 +1,135 @@
+{
+  "title": "Python",
+  "order": 9,
+  "topics": [
+    {
+      "slug": "python-foundations",
+      "title": "Python Foundations",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "python-syntax-and-indentation",
+          "title": "Python Syntax and Indentation",
+          "exams": []
+        },
+        {
+          "id": "variables-and-built-in-data-types",
+          "title": "Variables and Built-in Data Types",
+          "exams": []
+        },
+        {
+          "id": "conditions-and-loops",
+          "title": "Conditions and Loops",
+          "exams": []
+        },
+        {
+          "id": "functions-and-arguments",
+          "title": "Functions and Arguments",
+          "exams": []
+        },
+        {
+          "id": "lists-tuples-sets-and-dictionaries",
+          "title": "Lists, Tuples, Sets and Dictionaries",
+          "exams": []
+        },
+        {
+          "id": "comprehensions",
+          "title": "Comprehensions",
+          "exams": []
+        },
+        {
+          "id": "strings-and-string-formatting",
+          "title": "Strings and String Formatting",
+          "exams": []
+        },
+        {
+          "id": "exceptions",
+          "title": "Exceptions",
+          "exams": []
+        },
+        {
+          "id": "file-handling",
+          "title": "File Handling",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "python-in-depth",
+      "title": "Python in Depth",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "object-oriented-programming-in-python",
+          "title": "Object-Oriented Programming in Python",
+          "exams": []
+        },
+        {
+          "id": "iterators-and-generators",
+          "title": "Iterators and Generators",
+          "exams": []
+        },
+        {
+          "id": "decorators",
+          "title": "Decorators",
+          "exams": []
+        },
+        {
+          "id": "context-managers",
+          "title": "Context Managers",
+          "exams": []
+        },
+        {
+          "id": "type-hints",
+          "title": "Type Hints",
+          "exams": []
+        },
+        {
+          "id": "asynchronous-python-with-asyncio",
+          "title": "Asynchronous Python with asyncio",
+          "exams": []
+        },
+        {
+          "id": "mutable-default-arguments-and-other-common-pitfalls",
+          "title": "Mutable Default Arguments and Other Common Pitfalls",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "python-projects-and-tooling",
+      "title": "Python Projects and Tooling",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "modules-and-packages",
+          "title": "Modules and Packages",
+          "exams": []
+        },
+        {
+          "id": "virtual-environments",
+          "title": "Virtual Environments",
+          "exams": []
+        },
+        {
+          "id": "package-management-pip-pyproject-toml-and-uv",
+          "title": "Package Management: pip, pyproject.toml and uv",
+          "exams": []
+        },
+        {
+          "id": "python-project-structure",
+          "title": "Python Project Structure",
+          "exams": []
+        },
+        {
+          "id": "linting-and-formatting",
+          "title": "Linting and Formatting",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

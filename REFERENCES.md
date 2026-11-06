@@ -48,7 +48,7 @@ Bangladesh government IT job examination preparation.
 5. Review available answers and explanations.
 6. Identify frequently repeated concepts and question patterns.
 7. Use the questions to understand the expected examination depth.
-8. Record useful question-page URLs in the topic's References section.
+8. Do **not** list IT Job QnS pages in the topic's References section (project owner's rule): it is always used as a reference, but it is never shown in the published References. Report its useful question pages and any issues found on it to the project owner instead.
 
 **Access limitations:**
 
@@ -293,10 +293,6 @@ Use the following format, grouped by source website:
 
 ```markdown
 ## References {#references}
-
-**IT Job QnS**
-
-- [Page title](https://...) — accessed YYYY-MM-DD
 
 **TutorialsPoint**
 

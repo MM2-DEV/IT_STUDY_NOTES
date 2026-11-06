@@ -354,7 +354,9 @@ Sumi, Rahim, Nila
 
 ## Data Reader and Writer {#data-reader-and-writer}
 
-In .NET, programs read data from and write data to a database through **ADO.NET** (ActiveX Data Objects for .NET), the data-access technology of the .NET Framework. Its main classes for SQL Server are in the `System.Data.SqlClient` namespace (`Microsoft.Data.SqlClient` in newer .NET).
+**ADO.NET** (ActiveX Data Objects for .NET) is the data-access technology of the .NET Framework, through which programs read data from and write data to a database.
+
+Its main classes for SQL Server are in the `System.Data.SqlClient` namespace (`Microsoft.Data.SqlClient` in newer .NET).
 
 ### Components of ADO.NET
 
@@ -502,10 +504,6 @@ Values are passed with **parameters** (`@name`, `@cgpa`) instead of being joined
 - [Java Lambda Expressions](https://www.programiz.com/java-programming/lambda-expression), [Python Lambda Function](https://www.programiz.com/python-programming/anonymous-function) and [C++ Lambda](https://www.programiz.com/cpp-programming/lambda-expression) — accessed 2026-11-04 (lambda syntax in other languages)
 - [SQL Injection](https://www.programiz.com/sql/injection) — accessed 2026-11-04 (ORMs and parameterized queries against SQL injection)
 - Programiz has no page on LINQ or on ADO.NET readers and writers (checked 2026-11-04).
-
-**IT Job QnS**
-
-- IT Job QnS has no page on ORM, lambda expressions, LINQ or ADO.NET (checked 2026-11-04).
 
 **Additional sources** (for `ExecuteNonQuery()`, `DataAdapter.Update()` and deferred execution, which the reference websites do not cover fully)
 

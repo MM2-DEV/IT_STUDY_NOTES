@@ -14,7 +14,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { ALL_EXAMS, useExamFilter } from "@/lib/exam-filter";
-import type { NavCategory } from "@/lib/topics";
+import type { NavCategory, SidebarSection } from "@/lib/topics";
 
 // A short bar drawn over the list's left border to mark the current topic or subtopic.
 const CURRENT_MARK =
@@ -68,17 +68,22 @@ function useCurrentSection(ids: string[]): string | null {
  * Category → topic → subtopic navigation.
  * The current category and topic are open by default; anything the reader
  * opens or closes stays that way while they move between topics.
- * The exam filter hides topics and subtopics that the chosen exam does not cover.
- * Everything is rendered and tagged with data-exams; the hiding is done by CSS
- * (topics-preferences.tsx), so the pre-rendered page is filtered before it is painted.
+ * The exam filter (sections with exam tags only) hides topics and subtopics that the chosen
+ * exam does not cover. Everything is rendered and tagged with data-exams; the hiding is done by
+ * CSS (topics-preferences.tsx), so the pre-rendered page is filtered before it is painted.
+ * Sections without exam tags render no data-exams, so a remembered filter never hides them.
  */
 export function TopicsSidebar({
   categories,
+  section,
   onNavigate,
 }: {
   categories: NavCategory[];
+  section: SidebarSection;
   onNavigate?: () => void;
 }) {
+  const { basePath, examFilter } = section;
+  const examsAttribute = (exams: string[]) => (examFilter ? exams.join(" ") : undefined);
   const pathname = usePathname();
   const [, , activeCategory, activeTopic] = pathname.split("/");
   const [toggled, setToggled] = useState<Record<string, boolean>>({});
@@ -94,32 +99,36 @@ export function TopicsSidebar({
   const currentSection = useCurrentSection(openTopic?.subtopics.map((subtopic) => subtopic.id) ?? []);
 
   return (
-    <nav aria-label="Topics" className="space-y-1 text-sm">
-      <div className="mb-4">
-        <ExamFilter value={exam} onChange={setExam} />
-      </div>
+    <nav aria-label={section.title} className="space-y-1 text-sm">
+      {examFilter && (
+        <div className="mb-4">
+          <ExamFilter value={exam} onChange={setExam} />
+        </div>
+      )}
 
       <Link
-        href="/topics"
+        href={basePath}
         onClick={onNavigate}
         className={cn(
           "mb-3 flex items-center rounded-md px-2 py-1.5 font-heading font-semibold outline-none hover:bg-accent focus-visible:ring-3 focus-visible:ring-ring/50",
-          pathname === "/topics" && "bg-accent text-accent-foreground"
+          pathname === basePath && "bg-accent text-accent-foreground"
         )}
       >
-        All topics
+        {examFilter ? "All topics" : section.title}
       </Link>
 
       {/* Every exam tag has topics, so a filtered list is never empty. */}
-      <p data-exam-note className="px-2 pb-1 text-xs text-muted-foreground">
-        Showing only topics and subtopics listed for this examination.
-      </p>
+      {examFilter && (
+        <p data-exam-note className="px-2 pb-1 text-xs text-muted-foreground">
+          Showing only topics and subtopics listed for this examination.
+        </p>
+      )}
 
       {categories.map((category) => {
         const categoryActive = category.slug === activeCategory;
         const categoryTags = [...new Set(category.topics.flatMap((topic) => topic.exams))];
         return (
-          <div key={category.slug} data-exams={categoryTags.join(" ")}>
+          <div key={category.slug} data-exams={examsAttribute(categoryTags)}>
             <Collapsible
               open={isOpen(category.slug, categoryActive)}
               onOpenChange={(open) => setOpen(category.slug, open)}
@@ -136,13 +145,15 @@ export function TopicsSidebar({
                 />
                 <span className="flex-1">{category.title}</span>
                 <span className="text-xs tabular-nums text-muted-foreground">
-                  {[ALL_EXAMS, ...categoryTags].map((tag) => (
-                    <span key={tag} data-for-exam={tag}>
-                      {tag === ALL_EXAMS
-                        ? category.topics.length
-                        : category.topics.filter((topic) => topic.exams.includes(tag)).length}
-                    </span>
-                  ))}
+                  {examFilter
+                    ? [ALL_EXAMS, ...categoryTags].map((tag) => (
+                        <span key={tag} data-for-exam={tag}>
+                          {tag === ALL_EXAMS
+                            ? category.topics.length
+                            : category.topics.filter((topic) => topic.exams.includes(tag)).length}
+                        </span>
+                      ))
+                    : category.topics.length}
                 </span>
                 <ChevronRight
                   className="size-4 shrink-0 text-muted-foreground transition-transform group-data-panel-open/trigger:rotate-90"
@@ -155,9 +166,9 @@ export function TopicsSidebar({
                   {category.topics.map((topic) => {
                     const topicKey = `${category.slug}/${topic.slug}`;
                     const topicActive = categoryActive && topic.slug === activeTopic;
-                    const href = `/topics/${topicKey}`;
+                    const href = `${basePath}/${topicKey}`;
                     return (
-                      <li key={topic.slug} data-exams={topic.exams.join(" ")}>
+                      <li key={topic.slug} data-exams={examsAttribute(topic.exams)}>
                         <Collapsible
                           open={isOpen(topicKey, topicActive)}
                           onOpenChange={(open) => setOpen(topicKey, open)}
@@ -179,7 +190,12 @@ export function TopicsSidebar({
                                   : "text-muted-foreground hover:text-foreground"
                               )}
                             >
-                              {topic.title}
+                              <span className="flex gap-1.5">
+                                <span className="shrink-0 pt-px text-xs font-medium tabular-nums text-muted-foreground">
+                                  {category.order}.{topic.order}
+                                </span>
+                                <span>{topic.title}</span>
+                              </span>
                             </Link>
                             {topic.subtopics.length > 0 && (
                               <CollapsibleTrigger
@@ -197,10 +213,10 @@ export function TopicsSidebar({
                           {topic.subtopics.length > 0 && (
                             <CollapsibleContent>
                               <ul className="my-1 ml-3 space-y-0.5 border-l border-border pl-2">
-                                {topic.subtopics.map((subtopic) => {
+                                {topic.subtopics.map((subtopic, index) => {
                                   const sectionActive = topicActive && subtopic.id === currentSection;
                                   return (
-                                    <li key={subtopic.id} data-exams={subtopic.exams.join(" ")}>
+                                    <li key={subtopic.id} data-exams={examsAttribute(subtopic.exams)}>
                                       <Link
                                         href={`${href}#${subtopic.id}`}
                                         onClick={onNavigate}
@@ -212,7 +228,12 @@ export function TopicsSidebar({
                                             : "text-muted-foreground hover:text-foreground"
                                         )}
                                       >
-                                        {subtopic.title}
+                                        <span className="flex gap-1.5">
+                                          <span className="shrink-0 tabular-nums text-muted-foreground">
+                                            {index + 1}.
+                                          </span>
+                                          <span>{subtopic.title}</span>
+                                        </span>
                                       </Link>
                                     </li>
                                   );

@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ### Graphics Programming in C
 
-**Graphics programming** means writing programs that **draw pictures** (points, lines, shapes, text and animations) on the screen. Standard C has no graphics functions; graphics in C is traditionally done with the **`graphics.h`** library, the **Borland Graphics Interface (BGI)** supplied with the **Turbo C/C++** compiler.
+**Graphics programming** means writing programs that **draw pictures** (points, lines, shapes, text and animations) on the screen.
+
+Standard C has no graphics functions; graphics in C is traditionally done with the **`graphics.h`** library, the **Borland Graphics Interface (BGI)** supplied with the **Turbo C/C++** compiler.
 
 **Important:** `graphics.h` is **not part of standard C** and is **not supported by the GCC compiler** by default. It is used with Turbo C, or on modern systems through compatible libraries (for example, *WinBGIm* on Windows or *libgraph*, an implementation of the Turbo C graphics API using SDL, on Linux).
 

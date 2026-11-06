@@ -1,0 +1,102 @@
+{
+  "title": "FastAPI",
+  "order": 11,
+  "topics": [
+    {
+      "slug": "fastapi-fundamentals",
+      "title": "FastAPI Fundamentals",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "path-operations-and-routing",
+          "title": "Path Operations and Routing",
+          "exams": []
+        },
+        {
+          "id": "path-and-query-parameters",
+          "title": "Path and Query Parameters",
+          "exams": []
+        },
+        {
+          "id": "request-bodies-with-pydantic-models",
+          "title": "Request Bodies with Pydantic Models",
+          "exams": []
+        },
+        {
+          "id": "response-models-and-status-codes",
+          "title": "Response Models and Status Codes",
+          "exams": []
+        },
+        {
+          "id": "validation-and-error-handling",
+          "title": "Validation and Error Handling",
+          "exams": []
+        },
+        {
+          "id": "dependency-injection",
+          "title": "Dependency Injection",
+          "exams": []
+        },
+        {
+          "id": "async-endpoints",
+          "title": "Async Endpoints",
+          "exams": []
+        },
+        {
+          "id": "automatic-api-documentation",
+          "title": "Automatic API Documentation",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "fastapi-applications",
+      "title": "FastAPI Applications",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "project-structure-and-apirouter",
+          "title": "Project Structure and APIRouter",
+          "exams": []
+        },
+        {
+          "id": "databases-with-sqlalchemy",
+          "title": "Databases with SQLAlchemy",
+          "exams": []
+        },
+        {
+          "id": "migrations-with-alembic",
+          "title": "Migrations with Alembic",
+          "exams": []
+        },
+        {
+          "id": "authentication-with-oauth2-and-jwt",
+          "title": "Authentication with OAuth2 and JWT",
+          "exams": []
+        },
+        {
+          "id": "middleware-and-cors",
+          "title": "Middleware and CORS",
+          "exams": []
+        },
+        {
+          "id": "background-tasks",
+          "title": "Background Tasks",
+          "exams": []
+        },
+        {
+          "id": "settings-management",
+          "title": "Settings Management",
+          "exams": []
+        },
+        {
+          "id": "running-with-uvicorn-in-production",
+          "title": "Running with Uvicorn in Production",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

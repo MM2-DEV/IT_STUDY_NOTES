@@ -5,7 +5,9 @@ updated: 2026-11-03
 
 ## Definition of Semaphores {#definition-of-semaphores}
 
-> **A semaphore is an integer variable used to control access to shared resources and to synchronize cooperating processes. After it is given an initial value, it can be changed only by two atomic operations: `wait()` and `signal()`.**
+> **A semaphore is an integer variable used to control access to shared resources and to synchronize cooperating processes.**
+
+After it is given an initial value, it can be changed only by two atomic operations: `wait()` and `signal()`.
 
 The semaphore was introduced by the Dutch computer scientist **Edsger W. Dijkstra** (in 1962–63, while building the THE multiprogramming system). The two operations were originally called **P** and **V**, from Dutch words: V is usually explained as *verhogen* ("to increase") and P as *proberen* ("to test") — Dijkstra himself later said P stood for *prolaag* ("try to decrease"):
 
@@ -18,12 +20,12 @@ The semaphore was introduced by the Dutch computer scientist **Edsger W. Dijkstr
 
 ### Types of Semaphores
 
-1. **Binary semaphore:** its value is only **0 or 1**. It is used for mutual exclusion (a single resource, such as one printer). A binary semaphore used for mutual exclusion is similar to a **mutex lock**.
+1. **Binary semaphore:** its value is only **0 or 1** (in the blocking implementation below, a semaphore used as a mutex can also go negative; its magnitude is then the number of waiting processes). It is used for mutual exclusion (a single resource, such as one printer). A binary semaphore used for mutual exclusion is similar to a **mutex lock**.
 2. **Counting semaphore:** its value can range over an unrestricted domain (0 to N). It controls access to a resource that has **N identical instances** (for example, 5 printers or 3 database connections). Its value is the number of free instances.
 
 | Basis | Binary semaphore | Counting semaphore |
 | --- | --- | --- |
-| Values | 0 and 1 | 0 to N (and negative in the blocking implementation) |
+| Values | 0 and 1 (and negative in the blocking implementation) | 0 to N (and negative in the blocking implementation) |
 | Use | Mutual exclusion; one resource | Resources with several instances |
 | Processes allowed in at once | One | Up to N |
 | Initial value (usual) | 1 | N (number of instances) |
@@ -83,7 +85,7 @@ Final value = 7 − 20 + 15 = **2**.
 
 The `wait()` operation can be defined in two ways: with **busy waiting** or with **blocking**.
 
-The `wait()` operation (P, down) is used **before** entering the critical section or using a resource.
+The **`wait()` operation** (P, down) is the atomic semaphore operation, performed **before** entering the critical section or using a resource, that decrements the semaphore and makes the process wait if the resource is not available.
 
 ### Busy-Waiting Definition
 
@@ -116,7 +118,7 @@ The value is decremented first; if it becomes negative, the process is placed in
 
 The `signal()` operation is also defined in two ways, matching the two definitions of `wait()`.
 
-The `signal()` operation (V, up) is used **after** leaving the critical section or releasing a resource.
+The **`signal()` operation** (V, up) is the atomic semaphore operation, performed **after** leaving the critical section or releasing a resource, that increments the semaphore and, if processes are waiting, lets one of them continue.
 
 ### Busy-Waiting Definition
 
@@ -266,7 +268,9 @@ Busy waiting is not removed completely, but it is limited to the very short crit
 
 ## Critical Regions {#critical-regions}
 
-Semaphores are easy to misuse. A **critical region** is a higher-level, **language** construct, proposed by **Per Brinch Hansen** and **C. A. R. Hoare** (1972), that lets the **compiler** enforce mutual exclusion.
+A **critical region** is a higher-level **language** construct that lets the **compiler** enforce mutual exclusion on a shared variable.
+
+It was proposed by **Per Brinch Hansen** and **C. A. R. Hoare** (1972), because semaphores are easy to misuse.
 
 1. A shared variable is declared with the keyword `shared`:
 
@@ -294,7 +298,7 @@ Semaphores are easy to misuse. A **critical region** is a higher-level, **langua
 
 ## Conditional Critical Regions {#conditional-critical-regions}
 
-A **conditional critical region** adds a **condition (guard)** to a critical region:
+A **conditional critical region** is a critical region with an added **condition (guard)** B, so that a process enters the region only when B is true:
 
 ```text
 region v when B do S;
@@ -341,7 +345,9 @@ The producer waits while the buffer is full (`count < n` is false), and the cons
 
 ### Definition
 
-> **A monitor is a high-level synchronization construct (an abstract data type) that groups shared data with the procedures that operate on it. Only one process at a time can be active inside a monitor.**
+> **A monitor is a high-level synchronization construct (an abstract data type) that groups shared data with the procedures that operate on it.**
+
+Only one process at a time can be active inside a monitor.
 
 The monitor concept was developed in the early 1970s by **Per Brinch Hansen** and **C. A. R. Hoare**, as a combination of abstract data types and critical regions. Monitors were first implemented in Brinch Hansen's **Concurrent Pascal**. Processes outside the monitor cannot access its variables directly; they can only call its procedures. **Mutual exclusion is automatic** — the programmer does not write `wait()` and `signal()` for it.
 
@@ -421,7 +427,9 @@ In Java, every object can act as a monitor: `synchronized` methods give mutual e
 
 ## Ada Tasks {#ada-tasks}
 
-**Ada** is a programming language designed (led by **Jean Ichbiah**) for the **United States Department of Defense** for embedded and real-time systems; the first standard was **Ada 83**. Concurrency is part of the language itself: a concurrent unit in Ada is called a **task**.
+**Ada** is a programming language designed (led by **Jean Ichbiah**) for the **United States Department of Defense** for embedded and real-time systems; the first standard was **Ada 83**.
+
+Concurrency is part of the language itself: a concurrent unit in Ada is called a **task**.
 
 ### Tasks
 
@@ -508,10 +516,6 @@ Ada 95 added **protected objects**, which work like monitors: they encapsulate d
 - [Difference between Semaphore and Monitor](https://www.tpointtech.com/semaphore-vs-monitor) — accessed 2026-11-03
 - [Sleep and Wake in Process Synchronization](https://www.tpointtech.com/os-sleep-and-wake) — accessed 2026-11-03
 - TpointTech has no page on critical regions, conditional critical regions or Ada tasks (checked 2026-11-03).
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (semaphore values, counting semaphores and monitors)
 
 **Programiz**
 

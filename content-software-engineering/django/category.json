@@ -1,0 +1,231 @@
+{
+  "title": "Django and Django REST Framework",
+  "order": 10,
+  "topics": [
+    {
+      "slug": "django-fundamentals",
+      "title": "Django Fundamentals",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "django-project-vs-app",
+          "title": "Django Project vs App",
+          "exams": []
+        },
+        {
+          "id": "manage-py-and-settings",
+          "title": "manage.py and Settings",
+          "exams": []
+        },
+        {
+          "id": "url-routing",
+          "title": "URL Routing",
+          "exams": []
+        },
+        {
+          "id": "views-and-request-and-response-objects",
+          "title": "Views and Request and Response Objects",
+          "exams": []
+        },
+        {
+          "id": "templates-and-template-inheritance",
+          "title": "Templates and Template Inheritance",
+          "exams": []
+        },
+        {
+          "id": "static-and-media-files",
+          "title": "Static and Media Files",
+          "exams": []
+        },
+        {
+          "id": "class-based-views",
+          "title": "Class-Based Views",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "django-models-and-orm",
+      "title": "Django Models and ORM",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "models-and-fields",
+          "title": "Models and Fields",
+          "exams": []
+        },
+        {
+          "id": "relationships",
+          "title": "Relationships",
+          "exams": []
+        },
+        {
+          "id": "migrations",
+          "title": "Migrations",
+          "exams": []
+        },
+        {
+          "id": "querysets-and-lookups",
+          "title": "QuerySets and Lookups",
+          "exams": []
+        },
+        {
+          "id": "select-related-and-prefetch-related",
+          "title": "select_related and prefetch_related",
+          "exams": []
+        },
+        {
+          "id": "aggregation-and-annotation",
+          "title": "Aggregation and Annotation",
+          "exams": []
+        },
+        {
+          "id": "django-admin",
+          "title": "Django Admin",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "django-forms-auth-middleware",
+      "title": "Forms, Authentication and Middleware",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "forms-and-modelforms",
+          "title": "Forms and ModelForms",
+          "exams": []
+        },
+        {
+          "id": "validation",
+          "title": "Validation",
+          "exams": []
+        },
+        {
+          "id": "authentication-and-authorization",
+          "title": "Authentication and Authorization",
+          "exams": []
+        },
+        {
+          "id": "groups-and-permissions",
+          "title": "Groups and Permissions",
+          "exams": []
+        },
+        {
+          "id": "sessions-and-messages",
+          "title": "Sessions and Messages",
+          "exams": []
+        },
+        {
+          "id": "middleware",
+          "title": "Middleware",
+          "exams": []
+        },
+        {
+          "id": "signals",
+          "title": "Signals",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "django-rest-framework",
+      "title": "Django REST Framework",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "serializers-and-modelserializers",
+          "title": "Serializers and ModelSerializers",
+          "exams": []
+        },
+        {
+          "id": "api-views-and-generic-views",
+          "title": "API Views and Generic Views",
+          "exams": []
+        },
+        {
+          "id": "viewsets-and-routers",
+          "title": "ViewSets and Routers",
+          "exams": []
+        },
+        {
+          "id": "authentication-session-token-and-jwt",
+          "title": "Authentication: Session, Token and JWT",
+          "exams": []
+        },
+        {
+          "id": "permissions",
+          "title": "Permissions",
+          "exams": []
+        },
+        {
+          "id": "throttling",
+          "title": "Throttling",
+          "exams": []
+        },
+        {
+          "id": "filtering-searching-ordering-and-pagination",
+          "title": "Filtering, Searching, Ordering and Pagination",
+          "exams": []
+        },
+        {
+          "id": "nested-serializers-and-relationships",
+          "title": "Nested Serializers and Relationships",
+          "exams": []
+        },
+        {
+          "id": "exception-handling",
+          "title": "Exception Handling",
+          "exams": []
+        },
+        {
+          "id": "openapi-documentation",
+          "title": "OpenAPI Documentation",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "django-in-production",
+      "title": "Django in Production",
+      "order": 5,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "settings-for-development-and-production",
+          "title": "Settings for Development and Production",
+          "exams": []
+        },
+        {
+          "id": "caching",
+          "title": "Caching",
+          "exams": []
+        },
+        {
+          "id": "file-uploads-and-storage",
+          "title": "File Uploads and Storage",
+          "exams": []
+        },
+        {
+          "id": "background-tasks-with-celery",
+          "title": "Background Tasks with Celery",
+          "exams": []
+        },
+        {
+          "id": "wsgi-and-asgi",
+          "title": "WSGI and ASGI",
+          "exams": []
+        },
+        {
+          "id": "deployment-checklist",
+          "title": "Deployment Checklist",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

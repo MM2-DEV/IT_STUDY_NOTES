@@ -13,7 +13,9 @@ A process is the basic unit of work in a system. When an executable program is l
 
 ### Program vs Process
 
-A **program** is a set of instructions stored on disk (a **passive** entity). A **process** is that program while it is running (an **active** entity). One program can create many processes; for example, opening the same browser program three times creates three processes.
+A **program** is a set of instructions stored on disk (a **passive** entity).
+
+A **process** is that program while it is running (an **active** entity). One program can create many processes; for example, opening the same browser program three times creates three processes.
 
 | Basis | Program | Process |
 | --- | --- | --- |
@@ -99,7 +101,9 @@ When a child terminates, its exit status is returned to the parent (which collec
 
 ## Process States {#process-states}
 
-As a process executes, it changes its **state**. The state of a process is its current activity.
+The **process state** is the current activity of a process.
+
+As a process executes, it changes its state.
 
 Process states are described by three **process state models**:
 
@@ -153,7 +157,9 @@ A Suspended Blocked process becomes Suspended Ready when its event occurs. A sus
 
 ### Definition
 
-Processes are **concurrent** when their execution overlaps in time — they are all active at the same time. On a single CPU they run **interleaved** (the CPU switches between them through context switching); on multiple CPUs they can run **in parallel**. The OS must manage and coordinate them.
+Processes are **concurrent** when their execution overlaps in time — they are all active at the same time.
+
+On a single CPU they run **interleaved** (the CPU switches between them through context switching); on multiple CPUs they can run **in parallel**. The OS must manage and coordinate them.
 
 ### Reasons for Concurrent Execution
 
@@ -196,7 +202,7 @@ These problems are solved by process synchronization (see [Process Synchronizati
 
 ### Definition
 
-> **A Process Control Block (PCB) is a data structure that the operating system keeps for every process. It contains all the information the OS needs to manage that process.**
+> **A Process Control Block (PCB) is a data structure that the operating system keeps for every process, containing all the information the OS needs to manage that process.**
 
 The PCB is also called the **Task Control Block** or **process descriptor**. It is created when the process is created and deleted when the process terminates. Each process is identified by its **process ID (PID)**.
 
@@ -227,7 +233,9 @@ The PCBs of all processes are kept in a **process table** in the OS kernel. The 
 
 ### Definition
 
-The **context** of a process is all the information needed to describe the process's current execution — everything that must be saved when the process stops running and restored when it runs again. It is kept in the process's PCB.
+The **context** of a process is all the information needed to describe the process's current execution — everything that must be saved when the process stops running and restored when it runs again.
+
+It is kept in the process's PCB.
 
 The context includes:
 
@@ -394,7 +402,9 @@ Without the handler, the default action of SIGINT would terminate the program.
 
 ## Process Hierarchies {#process-hierarchies}
 
-When a process creates a child, and the child creates its own children, the processes form a **hierarchy** — a **process tree**. Each process (except the first) has exactly one parent, and a parent can have many children.
+A **process hierarchy (process tree)** is the tree of parent and child processes formed when processes create child processes, which in turn create their own children.
+
+Each process (except the first) has exactly one parent, and a parent can have many children.
 
 ### Process Hierarchy in UNIX
 
@@ -601,10 +611,6 @@ Child read: Hello, child
 - [Concurrency in Operating System](https://www.tpointtech.com/concurrency-in-operating-system) — accessed 2026-11-03
 - [Linux Signals](https://www.tpointtech.com/linux-signals) — accessed 2026-11-03 (it says SIGQUIT is sent by Ctrl+D; it is sent by Ctrl+\\, and Ctrl+D means end of input)
 - [C Program to Demonstrate fork() and pipe()](https://www.tpointtech.com/c-program-to-demonstrate-fork-and-pipe) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (process, PCB, process-state transitions, `wait()` and cooperating processes)
 
 **Programiz**
 

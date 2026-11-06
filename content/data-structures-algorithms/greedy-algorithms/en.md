@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Definition
 
-A **greedy algorithm** solves an **optimization problem** (a problem of finding the maximum or minimum of something) by building the solution **step by step**, and at each step making the choice that **looks best at that moment** (the **locally optimal** choice), hoping that these choices lead to the **globally optimal** solution. A greedy algorithm **never reconsiders** a choice once it has been made (no backtracking).
+A **greedy algorithm** solves an **optimization problem** (a problem of finding the maximum or minimum of something) by building the solution **step by step**, and at each step making the choice that **looks best at that moment** (the **locally optimal** choice), hoping that these choices lead to the **globally optimal** solution.
+
+A greedy algorithm **never reconsiders** a choice once it has been made (no backtracking).
 
 ### Components of a Greedy Algorithm
 
@@ -51,6 +53,8 @@ A **greedy algorithm** solves an **optimization problem** (a problem of finding 
 
 ## Greedy-Choice Property {#greedy-choice-property}
 
+**The greedy-choice property** is the property of a problem that a **globally optimal solution can be reached by making locally optimal (greedy) choices**.
+
 A greedy algorithm gives the optimal answer only when the problem has these two properties:
 
 1. **Greedy-choice property:** a **globally optimal solution can be reached by making locally optimal (greedy) choices**. The choice made at each step depends only on the choices made so far, not on the solutions of future sub-problems. In other words, there is always an optimal solution that **contains the greedy choice**.
@@ -90,6 +94,8 @@ Both methods need **optimal substructure**, but they make their choices differen
 ## Fractional Knapsack Problem {#fractional-knapsack-problem}
 
 ### Problem
+
+**The fractional knapsack problem** is the problem of filling a knapsack of limited weight capacity with items, which may be broken into fractions, so that the total value is maximum.
 
 There are n items, each with a **value vᵢ** and a **weight wᵢ**, and a knapsack (bag) that can carry a maximum weight **W**. Items **can be broken into fractions**. Find the **maximum total value** that can be put into the knapsack.
 
@@ -150,6 +156,8 @@ Output: `Maximum value = 240.00`
 ## Activity Selection Problem {#activity-selection-problem}
 
 ### Problem
+
+**The activity selection problem** is the problem of selecting the maximum number of non-overlapping activities that can be performed by a single resource that does only one activity at a time.
 
 There are n activities, each with a **start time** sᵢ and a **finish time** fᵢ, and one resource (for example, a person or a room) that can do **only one activity at a time**. Select the **maximum number of activities** that do not overlap.
 
@@ -218,6 +226,8 @@ Total = 4
 ## Task Scheduling Problem {#task-scheduling-problem}
 
 ### Problem (Job Sequencing with Deadlines)
+
+**The task scheduling problem (job sequencing with deadlines)** is the problem of ordering unit-time tasks, each with a deadline and a profit, on one processor so that the total profit of the tasks finished by their deadlines is maximum.
 
 There are n **tasks (jobs)**. Each task takes **one unit of time**, has a **deadline** dᵢ and a **profit** pᵢ that is earned only if the task is **finished by its deadline**. Only one task can run at a time. Find a schedule that gives the **maximum total profit**.
 
@@ -323,7 +333,7 @@ In the textbook form of the **task-scheduling problem**, there are n **unit-time
 
 ### Problem
 
-Given coin **denominations** (with an unlimited supply of each) and an **amount**, make the amount using the **minimum number of coins**.
+**The coin changing problem** is the problem of making a given amount from given coin denominations, each available in unlimited supply, using the **minimum number of coins**.
 
 ### Greedy Algorithm
 

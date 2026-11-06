@@ -5,7 +5,9 @@ updated: 2026-11-02
 
 ## Insertion Sort {#insertion-sort}
 
-**Sorting** means arranging data in a particular order, usually **ascending** (increasing) or **descending** (decreasing), numerically or alphabetically. Sorted data makes searching faster (for example, binary search needs sorted data).
+**Sorting** means arranging data in a particular order, usually **ascending** (increasing) or **descending** (decreasing), numerically or alphabetically.
+
+Sorted data makes searching faster (for example, binary search needs sorted data).
 
 **Terms used to describe sorting algorithms:**
 
@@ -18,7 +20,9 @@ updated: 2026-11-02
 
 ### Concept
 
-**Insertion sort** builds the sorted array **one element at a time**, the way a person **sorts playing cards in the hand**. The array is divided into a **sorted part** (on the left) and an **unsorted part**. Each element (the **key**) is taken from the unsorted part and **inserted into its correct position** in the sorted part by shifting the larger elements one place to the right.
+**Insertion sort** is a sorting algorithm that builds the sorted array **one element at a time**, the way a person **sorts playing cards in the hand**.
+
+The array is divided into a **sorted part** (on the left) and an **unsorted part**. Each element (the **key**) is taken from the unsorted part and **inserted into its correct position** in the sorted part by shifting the larger elements one place to the right.
 
 ### Algorithm
 
@@ -93,7 +97,9 @@ Output: `1 2 5 10 23`
 
 ### Concept
 
-**Selection sort** repeatedly **selects the smallest element** from the unsorted part and **swaps** it with the first element of the unsorted part. After pass i, the first i elements are in their final positions.
+**Selection sort** is a sorting algorithm that repeatedly **selects the smallest element** from the unsorted part and **swaps** it with the first element of the unsorted part.
+
+After pass i, the first i elements are in their final positions.
 
 ### Algorithm
 
@@ -154,7 +160,9 @@ Output: `11 12 22 25 64`
 
 ### Concept
 
-**Bubble sort** repeatedly **compares adjacent elements** and **swaps** them if they are in the wrong order. In each pass, the **largest remaining element "bubbles up" to the end** of the array, like an air bubble rising in water. After pass i, the last i elements are in their final positions.
+**Bubble sort** is a sorting algorithm that repeatedly **compares adjacent elements** and **swaps** them if they are in the wrong order.
+
+In each pass, the **largest remaining element "bubbles up" to the end** of the array, like an air bubble rising in water. After pass i, the last i elements are in their final positions.
 
 ### Algorithm
 
@@ -233,7 +241,11 @@ Output: `1 2 4 5 8`
 
 ### Concept
 
-**Quick sort** is a **divide and conquer** algorithm developed by **Tony Hoare** (1959). It:
+**Quick sort** is a **divide and conquer** sorting algorithm that **partitions** the array around a **pivot** element (smaller elements before it, larger after it) and then sorts the two parts recursively.
+
+It was developed by **Tony Hoare** (1959).
+
+It:
 
 1. **Chooses a pivot** element.
 2. **Partitions** the array so that all elements **smaller than the pivot** come before it and all **larger** elements come after it. The pivot is then in its **final position**.
@@ -335,7 +347,11 @@ Output: `10 30 40 50 70 80 90`
 
 ### Concept
 
-**Merge sort** is a **divide and conquer** algorithm invented by **John von Neumann** (1945). It:
+**Merge sort** is a **divide and conquer** sorting algorithm that divides the array into two halves, sorts each half recursively and then **merges** the two sorted halves.
+
+It was invented by **John von Neumann** (1945).
+
+It:
 
 1. **Divides** the array into **two halves**.
 2. **Recursively sorts** each half (a single element is already sorted).
@@ -429,7 +445,9 @@ Output: `3 9 10 27 38 43 82`
 
 ### Concept
 
-**Radix sort** is a **non-comparison** sorting algorithm for integers (or fixed-length strings). It sorts the numbers **digit by digit**, starting from the **least significant digit (LSD)** — the units place — and moving to the most significant digit. In each pass the numbers are distributed into **10 buckets (0–9)** by the current digit, using a **stable** sort (usually **counting sort**), so the order from the previous pass is kept for equal digits.
+**Radix sort** is a **non-comparison** sorting algorithm for integers (or fixed-length strings) that sorts the numbers **digit by digit**, from the least significant digit to the most significant.
+
+It sorts the numbers **digit by digit**, starting from the **least significant digit (LSD)** — the units place — and moving to the most significant digit. In each pass the numbers are distributed into **10 buckets (0–9)** by the current digit, using a **stable** sort (usually **counting sort**), so the order from the previous pass is kept for equal digits.
 
 The **number of passes** equals the **number of digits in the largest number**.
 
@@ -548,10 +566,6 @@ Heap sort is explained in [Heaps and Heap Sort](/topics/data-structures-algorith
 - [Merge Sort](https://www.programiz.com/dsa/merge-sort) — accessed 2026-11-02
 - [Quicksort Algorithm](https://www.programiz.com/dsa/quick-sort) — accessed 2026-11-01
 - [Radix Sort Algorithm](https://www.programiz.com/dsa/radix-sort) — accessed 2026-11-01
-
-**IT Job QnS**
-
-- [Design and Analysis of Algorithm](https://it.jobqns.com/design-and-analysis-of-algorithm/) — accessed 2026-11-01
 
 **Additional sources**
 

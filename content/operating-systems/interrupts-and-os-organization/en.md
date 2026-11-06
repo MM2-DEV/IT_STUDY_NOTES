@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### Definition
 
-> **An interrupt is a signal from hardware or software that tells the processor that an event needs immediate attention. The processor suspends the current program, runs a routine that services the event, and then resumes the interrupted program.**
+> **An interrupt is a signal from hardware or software that tells the processor that an event needs immediate attention.**
+
+The processor suspends the current program, runs a routine that services the event, and then resumes the interrupted program.
 
 The routine that services an interrupt is called the **Interrupt Service Routine (ISR)** or **interrupt handler**. Hardware devices raise interrupts on an **Interrupt Request line (IRQ)**.
 
@@ -39,11 +41,13 @@ Interrupts can also be classified by how the ISR is found:
 7. The **saved state is restored**.
 8. Control returns to the interrupted program (or the scheduler may choose another process to run — see [Dispatcher](#dispatcher)).
 
-![Flowchart of the seven steps of interrupt processing](/diagrams/operating-systems/interrupt-processing.svg)
+![Flowchart of interrupt processing, with steps 3 and 4 (save the state, switch to kernel mode) in one box](/diagrams/operating-systems/interrupt-processing.svg)
 
 ### Interrupt Vector Table
 
-The **interrupt vector table** is a table of pointers (addresses) to the interrupt service routines. The **interrupt vector** (the IRQ number for a hardware interrupt, or the argument of the interrupt instruction for a software interrupt) is used as an index into this table. The OS sets up the table at boot time.
+The **interrupt vector table** is a table of pointers (addresses) to the interrupt service routines.
+
+The **interrupt vector** (the IRQ number for a hardware interrupt, or the argument of the interrupt instruction for a software interrupt) is used as an index into this table. The OS sets up the table at boot time.
 
 ### Handling Multiple Interrupts (Priority)
 
@@ -55,7 +59,9 @@ When several devices request service at the same time:
 
 ### Interrupt Latency
 
-**Interrupt latency** is the delay between the moment an interrupt is generated and the moment its ISR starts executing. It depends on the number of enabled interrupts, the time needed to save the registers, and the time spent in other ISRs.
+**Interrupt latency** is the delay between the moment an interrupt is generated and the moment its ISR starts executing.
+
+It depends on the number of enabled interrupts, the time needed to save the registers, and the time spent in other ISRs.
 
 ### Interrupt vs Polling
 
@@ -73,7 +79,9 @@ When several devices request service at the same time:
 
 ## Operating System Organization {#operating-system-organization}
 
-The **organization** or **structure** of an operating system is the way its components are arranged and connected to one another and to the hardware. The main structures are:
+The **structure (organization) of an operating system** is the way its components are arranged and connected to one another and to the hardware.
+
+The main structures are:
 
 1. Simple structure
 2. Monolithic structure
@@ -163,7 +171,9 @@ The hardware (CPU, memory, disks, network) is abstracted so that **several virtu
 
 ### Definition
 
-> **The kernel is the core part of the operating system. It is loaded first when the computer starts and stays in main memory until the system shuts down. It manages the CPU, memory and devices and acts as the bridge between application software and the hardware.**
+> **The kernel is the core part of the operating system that manages the CPU, memory and devices and acts as the bridge between application software and the hardware.**
+
+It is loaded first when the computer starts and stays in main memory until the system shuts down.
 
 Applications cannot use the hardware directly; they send requests to the kernel through **system calls**, and the kernel carries them out in **kernel mode**.
 
@@ -200,11 +210,13 @@ Applications cannot use the hardware directly; they send requests to the kernel 
 
 ### Definition
 
-> **The First-Level Interrupt Handler (FLIH) is the part of the operating system that receives control first when an interrupt occurs. It saves the state of the interrupted program, finds the source of the interrupt, and passes control to the routine that services that interrupt.**
+> **The First-Level Interrupt Handler (FLIH) is the part of the operating system that receives control first when an interrupt occurs.**
+
+It saves the state of the interrupted program, finds the source of the interrupt, and passes control to the routine that services that interrupt.
 
 In modern operating systems, interrupt handling is split into two levels:
 
-1. **First-Level Interrupt Handler (FLIH)** — also called the **hard** or **fast** interrupt handler (the **upper half** in Linux).
+1. **First-Level Interrupt Handler (FLIH)** — also called the **hard** or **fast** interrupt handler (the **top half** in Linux).
 2. **Second-Level Interrupt Handler (SLIH)** — also called the **soft** or **slow** interrupt handler (the **bottom half** in Linux; **Deferred Procedure Calls** in Windows).
 
 ### Functions of the FLIH
@@ -227,7 +239,7 @@ The SLIH completes the long interrupt-processing work. It runs more like a norma
 
 | Basis | FLIH | SLIH |
 | --- | --- | --- |
-| Other names | Hard / fast interrupt handler; upper half | Soft / slow interrupt handler; bottom half |
+| Other names | Hard / fast interrupt handler; top half | Soft / slow interrupt handler; bottom half |
 | Runs | Immediately when the interrupt occurs | Later, when scheduled |
 | Interrupts | Masked (equal and lower priority) | Enabled |
 | Work | Short, urgent, device-specific | Long, deferred processing |
@@ -298,10 +310,6 @@ Suppose P1, P2, P3 and P4 arrive in the ready queue in that order and the system
 - [Operating System Structure](https://www.tpointtech.com/operating-system-structure) — accessed 2026-11-03
 - [What is a Kernel in Operating System](https://www.tpointtech.com/kernel-in-operating-system) — accessed 2026-11-03
 - [Difference between Scheduler and Dispatcher](https://www.tpointtech.com/scheduler-vs-dispatcher) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (interrupts, the dispatcher, dispatch latency, microkernel vs monolithic kernel)
 
 **Programiz**
 

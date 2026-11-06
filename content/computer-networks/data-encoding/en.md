@@ -180,10 +180,6 @@ Use: **IEEE 802.5 Token Ring** LANs.
 
 - [Digital Transmission](https://www.tpointtech.com/computer-network-digital-transmission) — accessed 2026-11-06 (unipolar, polar NRZ-L and NRZ-I, RZ, biphase Manchester and differential Manchester, bipolar AMI, B8ZS, HDB3). It gives NRZ-L as 0 = positive and 1 = negative, the opposite mapping to GeeksforGeeks; both are in use, as noted above. A sentence describing differential Manchester is labelled "Manchester Encoding".
 
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — checked 2026-11-06; it has no item on line coding.
-
 **Programiz**
 
 - Programiz has no page on line coding (checked 2026-11-06).

@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Abstract Data Types and List ADT {#abstract-data-types-and-list-adt}
 
-**Abstract data type (ADT):** an ADT is a **conceptual model of a data type** that specifies **what operations can be performed and how they behave**, **without saying how they are implemented**. It separates the **logical behaviour** (the interface) from the **physical implementation**.
+**Abstract data type (ADT):** an ADT is a **conceptual model of a data type** that specifies **what operations can be performed and how they behave**, **without saying how they are implemented**.
+
+It separates the **logical behaviour** (the interface) from the **physical implementation**.
 
 **Examples of ADTs:**
 
@@ -25,7 +27,9 @@ updated: 2026-11-01
 
 ### List ADT
 
-A **list** is an **ordered collection of elements** in which each element has a position (first, second, …). Typical operations of the **List ADT**:
+A **list** is an **ordered collection of elements** in which each element has a position (first, second, …).
+
+Typical operations of the **List ADT**:
 
 | Operation | Meaning |
 | --- | --- |
@@ -44,7 +48,9 @@ The List ADT is implemented in two main ways:
 
 ## Representation and Operations {#representation-and-operations}
 
-**Definition:** a linked list is a **linear, dynamic data structure** in which the elements, called **nodes**, are **not stored in contiguous memory**; each node contains the **data** and a **pointer (link) to the next node**. The order of the elements is given by the links, not by their positions in memory.
+**Definition:** a linked list is a **linear, dynamic data structure** in which the elements, called **nodes**, are **not stored in contiguous memory**; each node contains the **data** and a **pointer (link) to the next node**.
+
+The order of the elements is given by the links, not by their positions in memory.
 
 **Parts of a linked list:**
 
@@ -97,7 +103,9 @@ struct node
 
 ## Singly Linked List {#singly-linked-list}
 
-**Definition:** a singly linked list is a linked list in which **each node has one link field**, pointing to the **next node**; the last node's link is NULL. It can be traversed **in one direction only** (from head to tail).
+**Definition:** a singly linked list is a linked list in which **each node has one link field**, pointing to the **next node**; the last node's link is NULL.
+
+It can be traversed **in one direction only** (from head to tail).
 
 ![Singly linked list of four nodes with data and next fields, the last pointing to NULL](/diagrams/data-structures-algorithms/singly-linked-list.svg)
 
@@ -250,7 +258,9 @@ Output:
 
 ## Two-Way (Doubly) Linked List {#two-way-doubly-linked-list}
 
-**Definition:** a doubly (two-way) linked list is a linked list in which **each node has two link fields**: **prev**, pointing to the **previous node**, and **next**, pointing to the **next node**. The first node's prev and the last node's next are NULL. It can be traversed **in both directions** (forward and backward).
+**Definition:** a doubly (two-way) linked list is a linked list in which **each node has two link fields**: **prev**, pointing to the **previous node**, and **next**, pointing to the **next node**.
+
+The first node's prev and the last node's next are NULL. It can be traversed **in both directions** (forward and backward).
 
 ```c
 struct dnode
@@ -337,7 +347,9 @@ Backward: 40 30 10
 
 ## Circular Linked List {#circular-linked-list}
 
-**Definition:** a circular linked list is a linked list in which the **last node points back to the first node** instead of to NULL, so the nodes form a **circle**. There is **no NULL at the end**, and traversal can start from any node and return to it.
+**Definition:** a circular linked list is a linked list in which the **last node points back to the first node** instead of to NULL, so the nodes form a **circle**.
+
+There is **no NULL at the end**, and traversal can start from any node and return to it.
 
 ![Circular linked list: the last node points back to the first node](/diagrams/data-structures-algorithms/circular-linked-list.svg)
 
@@ -466,7 +478,3 @@ After 40 comes 10
 
 - [Linked List Data Structure](https://www.programiz.com/dsa/linked-list) — accessed 2026-11-02
 - [Types of Linked List](https://www.programiz.com/dsa/linked-list-types) — accessed 2026-11-02
-
-**IT Job QnS**
-
-- [Data Structure](https://it.jobqns.com/data-structure/) — accessed 2026-11-01

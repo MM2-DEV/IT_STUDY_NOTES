@@ -203,10 +203,6 @@ The TCP/IP model has four layers (some books split the lowest into two, giving f
 
 - [OSI Model](https://www.tpointtech.com/osi-model) and [TCP/IP Model](https://www.tpointtech.com/computer-network-tcp-ip-model) — accessed 2026-11-06 (layers and protocols)
 
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (OSI model by ISO, protocols of each OSI layer, four-layer TCP/IP model)
-
 **Programiz**
 
 - Programiz has no page on the OSI or TCP/IP model (checked 2026-11-06).

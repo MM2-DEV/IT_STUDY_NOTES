@@ -5,13 +5,17 @@ updated: 2026-11-01
 
 ## Basic Registers {#basic-registers}
 
-**Definition:** a register is a **group of flip-flops** used to **store a binary word** (several bits) temporarily. Each flip-flop stores one bit, so an **n-bit register has n flip-flops** and stores an n-bit word. For example, a 4-bit register has 4 flip-flops and an 8-bit register has 8 flip-flops.
+**Definition:** a register is a **group of flip-flops** used to **store a binary word** (several bits) temporarily.
+
+Each flip-flop stores one bit, so an **n-bit register has n flip-flops** and stores an n-bit word. For example, a 4-bit register has 4 flip-flops and an 8-bit register has 8 flip-flops.
 
 **Registers in the CPU:** registers are the **fastest storage (memory) devices** of a computer. They are inside the processor (CPU), and **all data is held temporarily in registers before it is processed**. Putting new data into a register is called **loading** it. The number and size of the registers vary from processor to processor.
 
 **Construction:** registers are usually made of **D flip-flops** (see [D and T Flip-Flops](/topics/digital-logic/flip-flops#d-and-t-flip-flops)) that share a **common clock**, so that all the bits change together at the active clock edge. Extra gates are added to control when data is loaded, shifted or cleared.
 
-**Shift register:** a register in which the stored bits can be **moved (shifted) from one flip-flop to the next**, left or right, on each clock pulse is called a **shift register**. The flip-flops are connected in a chain: the output Q of one flip-flop is connected to the input D of the next.
+**Shift register:** a register in which the stored bits can be **moved (shifted) from one flip-flop to the next**, left or right, on each clock pulse is called a **shift register**.
+
+The flip-flops are connected in a chain: the output Q of one flip-flop is connected to the input D of the next.
 
 **Basic operations of a register:**
 
@@ -29,7 +33,7 @@ updated: 2026-11-01
 **Applications of registers:**
 
 1. **Temporary storage** of data (buffering)
-2. As **cache memory**
+2. As **very fast storage inside the CPU** (faster than cache memory)
 3. As **buffers in printers and keyboards**
 4. In **calculators and digital watches**
 5. **Serial-to-parallel** and **parallel-to-serial** data conversion
@@ -121,9 +125,8 @@ Besides general-purpose registers, a processor has special registers, for exampl
 
 1. **Program counter (PC):** holds the **address of the next instruction** to be executed (also called the instruction pointer).
 2. **Memory address register (MAR):** holds the **address** of the memory location to be read or written.
-3. **Memory buffer register (MBR):** holds the **data** being read from or written to memory.
-4. **Memory data register (MDR):** holds a copy of the instruction or data fetched from main memory.
-5. **Accumulator (AC):** holds the results of arithmetic and logic operations in the ALU.
+3. **Memory buffer register (MBR)**, also called the **memory data register (MDR):** holds the **data or instruction** being read from or written to memory.
+4. **Accumulator (AC):** holds the results of arithmetic and logic operations in the ALU.
 6. **Current instruction register (CIR / IR):** holds the instruction fetched from memory while the control unit decodes and executes it.
 7. **Stack control register:** manages the **stack**, a part of memory used in **last in, first out (LIFO)** order.
 8. **Flag (status) register:** shows the **current status** of the processor (for example, whether a result was zero or negative).
@@ -172,7 +175,9 @@ The serial output gives 1 (after pulse 4), 1, 0, 1: the word 1011, LSB first. So
 
 ## Buffer Register {#buffer-register}
 
-**Definition:** a buffer register is the **simplest register**: a group of **D flip-flops with a common clock** that **stores a binary word temporarily**. The data is applied to the D inputs in parallel, and **at the active clock edge all the bits are stored together**; the stored word is available at the Q outputs in parallel. So a buffer register is a **parallel-in parallel-out (PIPO)** register with no shifting.
+**Definition:** a buffer register is the **simplest register**: a group of **D flip-flops with a common clock** that **stores a binary word temporarily**.
+
+The data is applied to the D inputs in parallel, and **at the active clock edge all the bits are stored together**; the stored word is available at the Q outputs in parallel. So a buffer register is a **parallel-in parallel-out (PIPO)** register with no shifting.
 
 ![4-bit buffer register (PIPO): four D flip-flops with a common clock](/diagrams/digital-logic/register-pipo.svg)
 
@@ -196,7 +201,9 @@ In a basic buffer register, a new word is loaded at **every** clock edge, so the
 
 ## Universal Shift Register {#universal-shift-register}
 
-**Definition:** a universal shift register is a register that can perform **all the register operations**: **shift right**, **shift left**, **parallel load** and **hold (no change)**. So it supports serial and parallel input and serial and parallel output.
+**Definition:** a universal shift register is a register that can perform **all the register operations**: **shift right**, **shift left**, **parallel load** and **hold (no change)**.
+
+So it supports serial and parallel input and serial and parallel output.
 
 **Construction:** an n-bit universal shift register is made of **n D flip-flops** and **n 4 × 1 multiplexers**. The output of each multiplexer drives the D input of one flip-flop, and **all the multiplexers share the same two select lines S1 and S0**. The four inputs of each multiplexer are:
 

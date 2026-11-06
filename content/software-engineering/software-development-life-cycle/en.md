@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### Definition of SDLC
 
-The software development life cycle (SDLC) is a structured, step-by-step process for planning, designing, developing, testing, deploying and maintaining software. It divides the work into phases, each with its own activities and deliverables, and the output of each phase becomes the input of the next phase.
+The software development life cycle (SDLC) is a structured, step-by-step process for planning, designing, developing, testing, deploying and maintaining software.
+
+It divides the work into phases, each with its own activities and deliverables, and the output of each phase becomes the input of the next phase.
 
 The SDLC is also called the software development process. A particular way of arranging its phases (one after another, in iterations, in increments and so on) is called an SDLC model or software process model, such as the waterfall, spiral, V-model or agile model; these are explained in [Software Development Models](/topics/software-engineering/software-development-models).
 
@@ -36,7 +38,9 @@ Between testing and maintenance, the tested software is deployed (installed) at 
 
 #### 1. Requirement Phase
 
-The requirement phase is the phase in which the needs of the customer are collected, analyzed and documented. It answers the question "What should the software do?" and is the most important phase, because every later phase depends on it.
+The requirement phase is the phase in which the needs of the customer are collected, analyzed and documented.
+
+It answers the question "What should the software do?" and is the most important phase, because every later phase depends on it.
 
 The requirement phase has four main activities:
 
@@ -49,7 +53,9 @@ The requirement phase has four main activities:
 
 #### 2. Design Phase
 
-The design phase is the phase in which the requirements in the SRS are transformed into a technical blueprint of the system. It answers the question "How will the software do it?"
+The design phase is the phase in which the requirements in the SRS are transformed into a technical blueprint of the system.
+
+It answers the question "How will the software do it?"
 
 The design is prepared at two levels:
 
@@ -62,7 +68,9 @@ The design is described with tools such as data flow diagrams, flowcharts, decis
 
 #### 3. Development (Coding) Phase
 
-The development phase is the phase in which programmers write the source code according to the design. The work is divided into small units (modules); for example, front-end developers build the user interface and back-end developers build the server-side operations. It is usually the longest phase of the SDLC.
+The development phase is the phase in which programmers write the source code according to the design.
+
+The work is divided into small units (modules); for example, front-end developers build the user interface and back-end developers build the server-side operations. It is usually the longest phase before the software is delivered (after delivery, maintenance usually lasts longer).
 
 The main activities are:
 
@@ -75,7 +83,9 @@ The main activities are:
 
 #### 4. Testing Phase
 
-The testing phase is the phase in which the software is checked to make sure that it meets the requirements and is free of defects. Testers execute the software with planned test cases, report the defects to the developers, and retest the software after the defects are fixed.
+The testing phase is the phase in which the software is checked to make sure that it meets the requirements and is free of defects.
+
+Testers execute the software with planned test cases, report the defects to the developers, and retest the software after the defects are fixed.
 
 Testing is done at four levels:
 
@@ -90,13 +100,17 @@ Testing is explained in detail in [Verification, Validation and Testing](/topics
 
 #### Deployment (Implementation)
 
-Deployment is the step in which the tested software is released and installed for the users. It includes setting up the production environment, installing and configuring the software, integrating it with existing databases and other programs, converting old data, training the users and checking the installation with a quick (smoke) test. The software may be released all at once or in stages, and it may first be given to a limited group for beta testing.
+Deployment is the step in which the tested software is released and installed for the users.
+
+It includes setting up the production environment, installing and configuring the software, integrating it with existing databases and other programs, converting old data, training the users and checking the installation with a quick (smoke) test. The software may be released all at once or in stages, and it may first be given to a limited group for beta testing.
 
 **Output:** the live (operational) software and user documentation.
 
 #### 5. Maintenance Phase
 
-The maintenance phase is the phase in which the software is kept working correctly and usefully after it has been delivered. It lasts for the whole operational life of the software, so it is usually the longest and most expensive part of the life cycle. Problems that were not found during testing appear during real use, and the user's environment and needs keep changing.
+The maintenance phase is the phase in which the software is kept working correctly and usefully after it has been delivered.
+
+It lasts for the whole operational life of the software, so it is usually the longest and most expensive part of the life cycle. Problems that were not found during testing appear during real use, and the user's environment and needs keep changing.
 
 Maintenance is of three main types:
 
@@ -147,10 +161,6 @@ The five main phases are often divided into more detailed activities. One common
 **TpointTech**
 
 - [Software Development Life Cycle](https://www.tpointtech.com/software-development-life-cycle) — accessed 2026-11-03 (requirement, design, build, testing, deployment and maintenance phases)
-
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-03 (SDLC stages with outputs and roles; corrective, perfective and adaptive maintenance)
 
 **Programiz**
 

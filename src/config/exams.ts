@@ -5,6 +5,7 @@ export const examTags = {
   College: "NTRCA College (Lecturer)",
   "PSC-IT": "PSC IT",
   AP: "Assistant Programmer",
+  Bank: "Bank IT (AD/AP/SO ICT)",
   Others: "Other subjects",
 } as const;
 

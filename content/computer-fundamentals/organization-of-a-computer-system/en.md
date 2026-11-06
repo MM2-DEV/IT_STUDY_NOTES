@@ -114,7 +114,9 @@ The ALU has two sections:
 
 ## Control Unit {#control-unit}
 
-**Definition:** The Control Unit (CU) is the part of the CPU that **directs and coordinates** the operations of all the other units of the computer. It works like the manager of the computer.
+**Definition:** The Control Unit (CU) is the part of the CPU that **directs and coordinates** the operations of all the other units of the computer.
+
+It works like the manager of the computer.
 
 **Functions of the control unit:**
 
@@ -128,10 +130,6 @@ The ALU has two sections:
 > **Remember:** The control unit **does not process or store data** itself. It only directs the other units. Processing is done by the ALU, and storage by the memory unit.
 
 ## References {#references}
-
-**IT Job QnS**
-
-- [NTRCA IT Job Solution](https://it.jobqns.com/ntrca-it-job-solution/) (15th NTRCA written question on the internal blocks of a computer) — accessed 2026-11-01
 
 **TutorialsPoint**
 

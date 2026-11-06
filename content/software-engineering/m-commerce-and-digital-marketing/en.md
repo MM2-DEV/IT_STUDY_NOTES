@@ -223,10 +223,6 @@ An online shop runs a banner ad at a **CPM rate of Tk 200**. The ad gets **50,00
 - [Digital Marketing](https://www.tpointtech.com/digital-marketing) — accessed 2026-11-06 (SEO on-page and off-page, SMO, SEM, e-mail and affiliate marketing). Some of its details are out of date (the 140-character Twitter limit was raised to 280 in 2017, Google+ closed in 2019, and Google does not use the meta keywords tag for ranking), so they are not used.
 - [E-commerce](https://www.tpointtech.com/e-commerce) — accessed 2026-11-06 (no m-commerce content)
 
-**IT Job QnS**
-
-- IT Job QnS has no page on m-commerce or digital marketing (checked 2026-11-06).
-
 **Programiz**
 
 - Programiz has no page on m-commerce or digital marketing (checked 2026-11-06).

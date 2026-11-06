@@ -5,9 +5,13 @@ updated: 2026-11-02
 
 ## Introduction to Data Structures {#introduction-to-data-structures}
 
-**Data structure:** a data structure is a **way of organising and storing data in a computer's memory so that it can be accessed and used efficiently**. It defines both the **arrangement of the data** and the **operations** that can be performed on it.
+**Data structure:** a data structure is a **way of organising and storing data in a computer's memory so that it can be accessed and used efficiently**.
 
-**Data structure and algorithm:** an **algorithm** is a finite sequence of steps for solving a problem (see [Algorithms and Flowcharts](/topics/programming/algorithms-and-flowcharts#algorithm)). Algorithms work on data, and the choice of data structure decides how efficient the algorithm can be; hence the well-known phrase *"Algorithms + Data Structures = Programs"* (the title of Niklaus Wirth's 1976 book).
+It defines both the **arrangement of the data** and the **operations** that can be performed on it.
+
+**Data structure and algorithm:** an **algorithm** is a finite sequence of steps for solving a problem (see [Algorithms and Flowcharts](/topics/programming/algorithms-and-flowcharts#algorithm)).
+
+Algorithms work on data, and the choice of data structure decides how efficient the algorithm can be; hence the well-known phrase *"Algorithms + Data Structures = Programs"* (the title of Niklaus Wirth's 1976 book).
 
 **Why data structures are needed:**
 
@@ -81,7 +85,9 @@ updated: 2026-11-02
 
 ## Complexity of Algorithms {#complexity-of-algorithms}
 
-**Complexity of an algorithm** is a measure of the **resources it needs** as a function of the **input size n**:
+**Complexity of an algorithm** is a measure of the **resources it needs** as a function of the **input size n**.
+
+It has two parts:
 
 1. **Time complexity:** the amount of **time (number of basic operations)** the algorithm takes to run, as a function of n.
 2. **Space complexity:** the amount of **memory** the algorithm needs to run, as a function of n. It includes a **fixed part** (code, simple variables, constants) and a **variable part** that depends on the input (dynamically allocated memory, recursion stack). The extra memory beyond the input itself is called **auxiliary space**.
@@ -134,7 +140,9 @@ For the same input size, an algorithm may take different times for different inp
 
 ## Time-Space Trade-off {#time-space-trade-off}
 
-**Definition:** the **time-space trade-off** (space-time trade-off) is the situation in which an algorithm can **use less time by using more memory**, or **use less memory by taking more time**. It is usually not possible to minimise both at once, so the programmer chooses according to which resource is more valuable for the problem.
+**Definition:** the **time-space trade-off** (space-time trade-off) is the situation in which an algorithm can **use less time by using more memory**, or **use less memory by taking more time**.
+
+It is usually not possible to minimise both at once, so the programmer chooses according to which resource is more valuable for the problem.
 
 **Examples:**
 
@@ -264,10 +272,6 @@ The table shows why an O(n log n) sorting algorithm is far better than an O(n²)
 
 - [Data Structure and Types](https://www.programiz.com/dsa/data-structure-types) — accessed 2026-11-02
 - [Asymptotic Notations](https://www.programiz.com/dsa/asymptotic-notations) — accessed 2026-11-02
-
-**IT Job QnS**
-
-- [Data Structure](https://it.jobqns.com/data-structure/) — accessed 2026-11-02
 
 **Additional sources**
 

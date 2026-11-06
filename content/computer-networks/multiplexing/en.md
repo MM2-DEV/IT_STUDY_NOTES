@@ -157,10 +157,6 @@ Statistical TDM (also called **asynchronous TDM** or **intelligent TDM**) is a *
 
 - [Multiplexing in Computer Network](https://www.tpointtech.com/multiplexing-in-computer-network) — accessed 2026-11-06 (MUX and DEMUX, FDM, WDM with a prism, synchronous and asynchronous TDM, T-1). It lists "FDM is used only when low-speed channels are required" as a disadvantage, which is not a general limitation of FDM, and it is not used.
 
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — checked 2026-11-06; it has no item on multiplexing.
-
 **Programiz**
 
 - Programiz has no page on multiplexing (checked 2026-11-06).

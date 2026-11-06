@@ -1,0 +1,206 @@
+{
+  "title": "Databases",
+  "order": 15,
+  "topics": [
+    {
+      "slug": "relational-data-modeling",
+      "title": "Relational Data Modeling",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "tables-rows-columns-and-constraints",
+          "title": "Tables, Rows, Columns and Constraints",
+          "exams": []
+        },
+        {
+          "id": "primary-and-foreign-keys",
+          "title": "Primary and Foreign Keys",
+          "exams": []
+        },
+        {
+          "id": "relationships-one-to-one-one-to-many-and-many-to-many",
+          "title": "Relationships: One-to-One, One-to-Many and Many-to-Many",
+          "exams": []
+        },
+        {
+          "id": "er-diagrams",
+          "title": "ER Diagrams",
+          "exams": []
+        },
+        {
+          "id": "normalization-in-practice",
+          "title": "Normalization in Practice",
+          "exams": []
+        },
+        {
+          "id": "designing-a-schema-for-an-application",
+          "title": "Designing a Schema for an Application",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "sql-hands-on",
+      "title": "SQL Hands-On",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "select-insert-update-and-delete",
+          "title": "SELECT, INSERT, UPDATE and DELETE",
+          "exams": []
+        },
+        {
+          "id": "where-order-by-and-limit",
+          "title": "WHERE, ORDER BY and LIMIT",
+          "exams": []
+        },
+        {
+          "id": "aggregate-functions-group-by-and-having",
+          "title": "Aggregate Functions, GROUP BY and HAVING",
+          "exams": []
+        },
+        {
+          "id": "joins",
+          "title": "JOINs",
+          "exams": []
+        },
+        {
+          "id": "subqueries-and-ctes",
+          "title": "Subqueries and CTEs",
+          "exams": []
+        },
+        {
+          "id": "window-functions",
+          "title": "Window Functions",
+          "exams": []
+        },
+        {
+          "id": "views",
+          "title": "Views",
+          "exams": []
+        },
+        {
+          "id": "stored-procedures-and-functions",
+          "title": "Stored Procedures and Functions",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "indexes-transactions-and-performance",
+      "title": "Indexes, Transactions and Performance",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "indexes",
+          "title": "Indexes",
+          "exams": []
+        },
+        {
+          "id": "query-plans-with-explain",
+          "title": "Query Plans with EXPLAIN",
+          "exams": []
+        },
+        {
+          "id": "transactions-and-acid",
+          "title": "Transactions and ACID",
+          "exams": []
+        },
+        {
+          "id": "isolation-levels-and-locking",
+          "title": "Isolation Levels and Locking",
+          "exams": []
+        },
+        {
+          "id": "nplus1-query-problem",
+          "title": "N+1 Query Problem",
+          "exams": []
+        },
+        {
+          "id": "connection-pooling",
+          "title": "Connection Pooling",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "database-technologies-and-orms",
+      "title": "Database Technologies and ORMs",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "postgresql-mysql-and-sqlite",
+          "title": "PostgreSQL, MySQL and SQLite",
+          "exams": []
+        },
+        {
+          "id": "choosing-a-database-for-an-application",
+          "title": "Choosing a Database for an Application",
+          "exams": []
+        },
+        {
+          "id": "orm-concepts",
+          "title": "ORM Concepts",
+          "exams": []
+        },
+        {
+          "id": "sqlalchemy-prisma-and-other-orms",
+          "title": "SQLAlchemy, Prisma and Other ORMs",
+          "exams": []
+        },
+        {
+          "id": "database-migrations",
+          "title": "Database Migrations",
+          "exams": []
+        },
+        {
+          "id": "backups-and-restore",
+          "title": "Backups and Restore",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "nosql-and-caching",
+      "title": "NoSQL and Caching",
+      "order": 5,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "relational-vs-nosql-databases",
+          "title": "Relational vs NoSQL Databases",
+          "exams": []
+        },
+        {
+          "id": "document-databases-and-mongodb",
+          "title": "Document Databases and MongoDB",
+          "exams": []
+        },
+        {
+          "id": "redis-fundamentals",
+          "title": "Redis Fundamentals",
+          "exams": []
+        },
+        {
+          "id": "caching-patterns-cache-aside-write-through-and-write-behind",
+          "title": "Caching Patterns: Cache-Aside, Write-Through and Write-Behind",
+          "exams": []
+        },
+        {
+          "id": "cache-invalidation-and-expiry",
+          "title": "Cache Invalidation and Expiry",
+          "exams": []
+        },
+        {
+          "id": "when-not-to-cache",
+          "title": "When Not to Cache",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

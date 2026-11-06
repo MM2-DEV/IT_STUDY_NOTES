@@ -116,7 +116,7 @@ public class Hello {
 | Operator overloading | No | Yes | No |
 | Templates / generics | No | Templates | Generics |
 | Exception handling | No | Yes | Yes |
-| Built-in multithreading | No | Standard library `std::thread` (since C++11) | Yes (`Thread` class) |
+| Built-in multithreading | No (C11 added an optional `<threads.h>`; POSIX threads are commonly used) | Standard library `std::thread` (since C++11) | Yes (`Thread` class) |
 | Input/output | `printf`, `scanf` | `cin`, `cout` | `System.in`, `System.out` |
 | Structures and unions | Yes | Yes | No |
 | `goto` | Yes | Yes | No (reserved word, not used) |
@@ -129,7 +129,9 @@ public class Hello {
 
 ## Template Functions and Classes {#template-functions-and-classes}
 
-**Definition:** a **template** is a **blueprint for creating a generic function or class** that works with **any data type**. The data type is given as a **parameter** (a placeholder such as `T`), and the compiler creates a separate version of the function or class for each type actually used (**template instantiation**, done at **compile time**). Templates support **generic programming** in C++.
+**Definition:** a **template** is a **blueprint for creating a generic function or class** that works with **any data type**.
+
+The data type is given as a **parameter** (a placeholder such as `T`), and the compiler creates a separate version of the function or class for each type actually used (**template instantiation**, done at **compile time**). Templates support **generic programming** in C++.
 
 ### Types of Templates
 
@@ -237,7 +239,9 @@ The type is written in angle brackets when an object is created: `Box<int>`, `St
 
 ## Multithreading {#multithreading}
 
-**Thread:** a thread is the **smallest unit of execution** within a program (a "lightweight process"). A process can have **several threads** that share its memory and resources but run independently.
+**Thread:** a thread is the **smallest unit of execution** within a program (a "lightweight process").
+
+A process can have **several threads** that share its memory and resources but run independently.
 
 **Multithreading:** running **two or more threads of the same program concurrently**, each doing a different task. On a computer with several processor cores, the threads can run truly in parallel; on one core, the operating system switches between them quickly.
 
@@ -292,17 +296,20 @@ The lines printed by A and B **interleave in an unpredictable order**, because t
 
 1. **New:** the thread object is created but `start()` has not been called.
 2. **Runnable:** `start()` has been called; the thread is running or ready to run.
-3. **Waiting:** waiting indefinitely for another thread to signal it (for example, through `join()` or `wait()`).
-4. **Timed waiting:** waiting for a fixed time (for example, `sleep(ms)`).
-5. **Terminated (dead):** `run()` has finished.
+3. **Blocked:** waiting to acquire a monitor lock (to enter a `synchronized` block or method).
+4. **Waiting:** waiting indefinitely for another thread to signal it (for example, through `join()` or `wait()`).
+5. **Timed waiting:** waiting for a fixed time (for example, `sleep(ms)`).
+6. **Terminated (dead):** `run()` has finished.
 
 ```text
  New ──start()──► Runnable ──run() ends──► Terminated
                    ▲    │
           notify / │    │ wait(), join(), sleep()
           time up  │    ▼
-                  Waiting / Timed waiting
+          Blocked / Waiting / Timed waiting
 ```
+
+A thread in the **Blocked** state returns to Runnable when it gets the lock it was waiting for.
 
 ### Multithreading in C++
 
@@ -339,9 +346,13 @@ Output: `Sum 1..100 = 5050`
 
 ## Exceptions {#exceptions}
 
-**Exception:** an **exception** is an **abnormal condition (a run-time error)** that occurs while a program is running and disturbs its normal flow, for example **division by zero**, an **array index out of range**, a missing file or lack of memory. If it is not handled, the program **terminates abnormally**.
+**Exception:** an **exception** is an **abnormal condition (a run-time error)** that occurs while a program is running and disturbs its normal flow, for example **division by zero**, an **array index out of range**, a missing file or lack of memory.
 
-**Exception handling** is a mechanism to **detect and handle** such errors so that the program can **continue or end gracefully** with a proper message. It separates the error-handling code from the normal code.
+If it is not handled, the program **terminates abnormally**.
+
+**Exception handling** is a mechanism to **detect and handle** such errors so that the program can **continue or end gracefully** with a proper message.
+
+It separates the error-handling code from the normal code.
 
 ### Exception Handling in C++
 

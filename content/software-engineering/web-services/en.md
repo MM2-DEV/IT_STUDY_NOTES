@@ -116,7 +116,7 @@ RESTful services are **stateless** (each request carries all the information nee
 | Operations | Operations defined in WSDL | Standard HTTP methods (GET, POST, PUT, DELETE) on URIs |
 | State | Can support stateful operations | Stateless |
 | Message size and speed | Heavy (large XML messages); slower | Lightweight; faster; uses less bandwidth |
-| Caching | Responses cannot be cached | Responses can be cached |
+| Caching | Responses are generally not cached (SOAP normally uses HTTP POST) | Responses can be cached |
 | Security | WS-Security (built-in standards) plus HTTPS | Uses the transport's security: HTTPS, OAuth, tokens (JWT), API keys |
 | Ease of use | More complex, more code | Simpler and more flexible |
 | Common use | Enterprise systems needing strict standards and reliability | Web, mobile, cloud and microservices |
@@ -158,10 +158,6 @@ For SOAP services, **WS-Security** adds authentication, encryption and digital s
 - [What is Web Service](https://www.tpointtech.com/what-is-web-service) — accessed 2026-11-04 (definition, types, features)
 - [Architecture of Web Services](https://www.tpointtech.com/restful-web-services-architecture-of-web-services) — accessed 2026-11-04 (roles, publish/find/bind, protocol stack)
 - [Introduction of SOAP and REST Web Services](https://www.tpointtech.com/soap-and-rest-web-services) — accessed 2026-11-04 (SOAP and REST, comparison). This page contradicts itself: it says that the SOAP specification has no security features and that SOAP does not support error handling, although its own comparison table says that SOAP defines its own security and it describes the SOAP Fault element. SOAP reports errors with the Fault element and is secured with WS-Security, as given above (cross-checked with GeeksforGeeks and TutorialsPoint). It also calls SOAP both "lightweight" and "heavyweight"; the other sites agree that SOAP is the heavier of the two.
-
-**IT Job QnS**
-
-- [Bangladesh Bank, AME/AE (IT), 2026](https://it.jobqns.com/bangladesh-bank-ame-ae-2026/) — accessed 2026-11-04 (SOAP uses XML and strict standards for enterprise use; REST can exchange data in several formats, mostly JSON). IT Job QnS has no separate web-services page.
 
 **Programiz**
 

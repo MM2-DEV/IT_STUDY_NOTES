@@ -29,7 +29,9 @@ It decides how records are **placed into disk blocks** and **linked to each othe
 
 ### Blocking Factor
 
-The blocking factor (bfr) is the **number of records that fit in one block**. For fixed-length records that do not span blocks:
+The blocking factor (bfr) is the **number of records that fit in one block**.
+
+For fixed-length records that do not span blocks:
 
 > **bfr = ⌊ B ÷ R ⌋**
 
@@ -63,7 +65,9 @@ In a fixed-length record, **every record has the same size**, and each field has
 
 #### Variable-Length Records
 
-Variable-length records are needed when records have **variable-length fields** (such as VARCHAR), **optional fields**, **repeating fields**, or when **records of different types** are stored in one file. Their fields can be separated by:
+Variable-length records are needed when records have **variable-length fields** (such as VARCHAR), **optional fields**, **repeating fields**, or when **records of different types** are stored in one file.
+
+Their fields can be separated by:
 
 1. **Separator characters** — for example, `Rahim|101|45000|Computer Science|`.
 2. **Length prefixes** — each field is preceded by its length.
@@ -268,10 +272,6 @@ In cluster file organization, **records of two or more related tables are stored
 
 - [File Organization](https://www.tpointtech.com/dbms-file-organization), [Sequential](https://www.tpointtech.com/dbms-sequential-file-organization), [Heap](https://www.tpointtech.com/dbms-heap-file-organization), [Hash](https://www.tpointtech.com/dbms-hash-file-organization), [ISAM](https://www.tpointtech.com/dbms-indexed-sequential-access-method), [B+ File Organization](https://www.tpointtech.com/dbms-b-plus-file-organization) and [Cluster](https://www.tpointtech.com/dbms-cluster-file-organization) — accessed 2026-11-06. The ISAM page begins "we will discuss … hash file organization" (a copy error); the cluster page's example output is not actually grouped (Bid 2 appears in rows 3 and 6).
 - [File Organization Storage](https://www.tpointtech.com/file-organization-storage) and [Data Dictionary Storage](https://www.tpointtech.com/data-dictionary-storage) — accessed 2026-11-06 (block size, fixed-length record problems, slotted page, system catalog)
-
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (lists "File organization: definition of various file organization, classification and representation" in its syllabus; it has no notes on the topic)
 
 **Programiz**
 

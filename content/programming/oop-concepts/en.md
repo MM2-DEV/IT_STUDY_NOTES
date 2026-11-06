@@ -3,7 +3,9 @@ description: Object-oriented programming concepts in C++, Java and Python - clas
 updated: 2026-11-04
 ---
 
-**Object-oriented programming (OOP):** object-oriented programming is a programming paradigm that organises a program around **objects**, each of which combines **data (attributes)** and the **functions that work on that data (methods)**. Objects are created from **classes**. OOP models real-world things (a student, a bank account, a car) directly, which makes large programs easier to design, reuse and maintain. (Compare with procedural and structured programming in [Programming Paradigms](/topics/programming/programming-languages-and-paradigms#programming-paradigms).)
+**Object-oriented programming (OOP):** object-oriented programming is a programming paradigm that organises a program around **objects**, each of which combines **data (attributes)** and the **functions that work on that data (methods)**.
+
+Objects are created from **classes**. OOP models real-world things (a student, a bank account, a car) directly, which makes large programs easier to design, reuse and maintain. (Compare with procedural and structured programming in [Programming Paradigms](/topics/programming/programming-languages-and-paradigms#programming-paradigms).)
 
 **Main concepts of OOP:**
 
@@ -15,7 +17,9 @@ updated: 2026-11-04
 
 Encapsulation, abstraction, inheritance and polymorphism are often called the **four pillars of OOP**.
 
-**Abstraction:** abstraction is the process of showing only the **essential features** of an object and **hiding the implementation details**. For example, a person uses an ATM by inserting a card and choosing options without knowing how it works inside. In C++ abstraction is achieved with **abstract classes** (pure virtual functions), in Java with **abstract classes and interfaces**, and in Python with **abstract base classes** of the `abc` module (see [Interfaces](#interfaces)).
+**Abstraction:** abstraction is the process of showing only the **essential features** of an object and **hiding the implementation details**.
+
+For example, a person uses an ATM by inserting a card and choosing options without knowing how it works inside. In C++ abstraction is achieved with **abstract classes** (pure virtual functions), in Java with **abstract classes and interfaces**, and in Python with **abstract base classes** of the `abc` module (see [Interfaces](#interfaces)).
 
 **Advantages of OOP:**
 
@@ -48,9 +52,13 @@ Every concept below is shown in **C++, Java and Python**. The three languages su
 
 ## Classes and Objects {#classes-and-objects}
 
-**Class:** a class is a **user-defined blueprint (template)** that defines the **attributes (data members, fields)** and **behaviour (methods, member functions)** common to all objects of one kind. A class is only a description; it **does not occupy memory** for data until objects are created.
+**Class:** a class is a **user-defined blueprint (template)** that defines the **attributes (data members, fields)** and **behaviour (methods, member functions)** common to all objects of one kind.
 
-**Object:** an object is an **instance of a class**: a real entity created from the class, with its **own copy of the attributes** (its **state**), that can use the class's methods (its **behaviour**). Every object also has an **identity** that distinguishes it from other objects.
+A class is only a description; it **does not occupy memory** for data until objects are created.
+
+**Object:** an object is an **instance of a class**: a real entity created from the class, with its **own copy of the attributes** (its **state**), that can use the class's methods (its **behaviour**).
+
+Every object also has an **identity** that distinguishes it from other objects.
 
 **Example:** `Student` is a class; Rahim and Karim are two objects of the class `Student`, each with its own roll number and name.
 
@@ -131,7 +139,6 @@ class Student:
     def display(self):                # method
         print(self.roll, self.name)
 
-
 s1 = Student(1, "Rahim")              # create objects by calling the class
 s2 = Student(2, "Karim")
 s1.display()
@@ -162,7 +169,9 @@ Output (the same in all three languages):
 
 ## Methods {#methods}
 
-**Definition:** a method is a **function defined inside a class** that describes the **behaviour** of its objects. It is a group of statements that performs one operation, and it is called through an object (or through the class, for static methods). In C++ a method is usually called a **member function**.
+**Definition:** a method is a **function defined inside a class** that describes the **behaviour** of its objects.
+
+It is a group of statements that performs one operation, and it is called through an object (or through the class, for static methods). In C++ a method is usually called a **member function**.
 
 **Parts of a method:**
 
@@ -197,7 +206,9 @@ Output (the same in all three languages):
 2. **Parameterized constructor:** takes parameters, so that each object gets its own initial values.
 3. **Copy constructor** (C++): creates a new object as a copy of an existing object of the same class: `Rectangle(const Rectangle &r)`.
 
-**Destructor:** a destructor is a special method that is **called automatically when an object is destroyed**, to release resources. In C++ it has the class name preceded by a tilde (`~Rectangle()`), takes no parameters and cannot be overloaded. Java has no destructors (the **garbage collector** frees unused objects automatically). Python has `__del__()`, which runs when the object's last reference is removed.
+**Destructor:** a destructor is a special method that is **called automatically when an object is destroyed**, to release resources.
+
+In C++ it has the class name preceded by a tilde (`~Rectangle()`), takes no parameters and cannot be overloaded. Java has no destructors (the **garbage collector** frees unused objects automatically). Python has `__del__()`, which runs when the object's last reference is removed.
 
 #### Methods, Constructors and Destructor in C++
 
@@ -294,7 +305,9 @@ Output:
 Objects: 2
 ```
 
-**The `this` keyword** refers to the **current object**; it distinguishes fields from parameters with the same name, and `this(...)` calls another constructor of the same class. C++ also has `this` (a pointer, used as `this->length`).
+**The `this` keyword** refers to the **current object**; it distinguishes fields from parameters with the same name, and `this(...)` calls another constructor of the same class.
+
+C++ also has `this` (a pointer, used as `this->length`).
 
 #### Methods, Constructor and Destructor in Python
 
@@ -320,7 +333,6 @@ class Rectangle:
 
     def __del__(self):                         # destructor
         print("Destroying", self.length, "x", self.width)
-
 
 r1 = Rectangle()                               # 1 x 1
 r2 = Rectangle(5, 3)                           # 5 x 3
@@ -357,9 +369,13 @@ Destroying 5 x 3
 
 ## Interfaces {#interfaces}
 
-**Definition:** an interface is a **set of method declarations without bodies** that specifies **what** a class must do, **not how**. A class that implements an interface must provide the bodies of all its methods. Interfaces are used to achieve **abstraction**, and in Java also **multiple inheritance**. Java has an `interface` keyword; C++ and Python achieve the same with **abstract classes**.
+**Definition:** an interface is a **set of method declarations without bodies** that specifies **what** a class must do, **not how**.
 
-**Abstract class:** an abstract class is a class that **cannot be instantiated** (no objects can be created from it) and is meant to be inherited. It contains at least one **abstract method** — a method declared without a body, which every concrete subclass must define.
+A class that implements an interface must provide the bodies of all its methods. Interfaces are used to achieve **abstraction**, and in Java also **multiple inheritance**. Java has an `interface` keyword; C++ and Python achieve the same with **abstract classes**.
+
+**Abstract class:** an abstract class is a class that **cannot be instantiated** (no objects can be created from it) and is meant to be inherited.
+
+It contains at least one **abstract method** — a method declared without a body, which every concrete subclass must define.
 
 1. **C++:** a class with at least one **pure virtual function** (`virtual double area() = 0;`) is abstract. A class whose functions are all pure virtual acts as an interface.
 2. **Java:** declared with **`interface`**; a class uses it with **`implements`**. Java also has `abstract class`.
@@ -438,12 +454,10 @@ public class Main {
 ```python
 from abc import ABC, abstractmethod
 
-
 class Shape(ABC):                          # abstract base class used as an interface
     @abstractmethod
     def area(self):                        # abstract method: no body
         pass
-
 
 class Circle(Shape):
     def __init__(self, r):
@@ -452,14 +466,12 @@ class Circle(Shape):
     def area(self):
         return 3.14159 * self.r * self.r
 
-
 class Square(Shape):
     def __init__(self, side):
         self.side = side
 
     def area(self):
         return self.side * self.side
-
 
 # Shape()                                  # TypeError: cannot instantiate an abstract class
 for s in (Circle(1), Square(4)):
@@ -494,7 +506,7 @@ The table compares them as they are in Java.
 | Fields | Any kind of variables | Only constants (`public static final`) |
 | Constructors | Can have constructors | Cannot have constructors |
 | Inheritance | A class **extends** only one abstract class | A class can **implement** many interfaces |
-| Access of members | Any access modifier | Methods are public |
+| Access of members | Any access modifier | Abstract methods are public (Java 9 and later also allow private helper methods) |
 | Use | Common base with some shared code (closely related classes) | A contract (set of methods) for unrelated classes |
 | State | Can keep state in instance variables | Cannot keep state (only constants) |
 | Final methods | Allowed | Not allowed |
@@ -503,7 +515,9 @@ The table compares them as they are in Java.
 
 ## Packages {#packages}
 
-**Definition:** a package is a **group of related classes, interfaces and sub-packages** under one name. It works like a **folder**: it organises the code and gives it a separate **namespace**, so classes with the same name in different packages do not conflict. Java uses **packages**, C++ uses **namespaces**, and Python uses **modules and packages**.
+**Definition:** a package is a **group of related classes, interfaces and sub-packages** under one name.
+
+It works like a **folder**: it organises the code and gives it a separate **namespace**, so classes with the same name in different packages do not conflict. Java uses **packages**, C++ uses **namespaces**, and Python uses **modules and packages**.
 
 ### Packages in Java
 
@@ -579,7 +593,9 @@ Output:
 
 ### Modules and Packages in Python
 
-A **module** is a single `.py` file; a **package** is a folder of modules (traditionally containing an `__init__.py` file). They are used with **`import`**.
+A **module** is a single `.py` file; a **package** is a folder of modules (traditionally containing an `__init__.py` file).
+
+They are used with **`import`**.
 
 ```python
 # File: shapes/circle.py   (the folder shapes/ is a package)
@@ -605,7 +621,9 @@ print(circle.area(2))             # 12.56636
 
 ## Encapsulation {#encapsulation}
 
-**Definition:** encapsulation is the **wrapping (binding) of data and the methods that operate on that data into a single unit (a class)**, and **restricting direct access to the data** from outside. The data is made **private** and accessed only through **public methods**, usually **getters** (to read) and **setters** (to change). Hiding the data in this way is called **data hiding**.
+**Definition:** encapsulation is the **wrapping (binding) of data and the methods that operate on that data into a single unit (a class)**, and **restricting direct access to the data** from outside.
+
+The data is made **private** and accessed only through **public methods**, usually **getters** (to read) and **setters** (to change). Hiding the data in this way is called **data hiding**.
 
 ### Encapsulation in C++
 
@@ -701,7 +719,6 @@ class BankAccount:
             return True
         return False                           # invalid withdrawal is rejected
 
-
 acc = BankAccount()
 acc.deposit(5000)
 acc.withdraw(7000)                             # rejected: more than the balance
@@ -752,7 +769,9 @@ Access specifiers control which parts of a program can use the members of a clas
 
 ### Friend Function {#friend-function}
 
-**Definition:** a friend function is a **non-member function** that is given permission to access the **private and protected members** of a class. The class grants this permission by declaring the function inside its body with the keyword **`friend`**. Friend functions exist only in **C++**; Java and Python have no friend functions.
+**Definition:** a friend function is a **non-member function** that is given permission to access the **private and protected members** of a class.
+
+The class grants this permission by declaring the function inside its body with the keyword **`friend`**. Friend functions exist only in **C++**; Java and Python have no friend functions.
 
 **Syntax:**
 
@@ -890,7 +909,9 @@ Output: `Horsepower = 150`
 
 ## Inheritance {#inheritance}
 
-**Definition:** inheritance is the mechanism by which **one class (the subclass, child or derived class) acquires the attributes and methods of another class (the superclass, parent or base class)**. The subclass can **add** new members and **override** inherited methods. Inheritance represents an **"IS-A" relationship**: a `Dog` *is an* `Animal`.
+**Definition:** inheritance is the mechanism by which **one class (the subclass, child or derived class) acquires the attributes and methods of another class (the superclass, parent or base class)**.
+
+The subclass can **add** new members and **override** inherited methods. Inheritance represents an **"IS-A" relationship**: a `Dog` *is an* `Animal`.
 
 **Syntax in the three languages:**
 
@@ -983,7 +1004,6 @@ class Animal:                                  # base (parent) class
     def eat(self):
         print(self.name, "eats food")
 
-
 class Dog(Animal):                             # derived (child) class
     def __init__(self, name):
         super().__init__(name)                 # calls the parent constructor
@@ -991,20 +1011,16 @@ class Dog(Animal):                             # derived (child) class
     def bark(self):
         print(self.name, "barks")
 
-
 class Camera:
     def photo(self):
         print("Taking a photo")
-
 
 class Phone:
     def call(self):
         print("Making a call")
 
-
 class SmartPhone(Camera, Phone):               # multiple inheritance
     pass
-
 
 d = Dog("Tommy")
 d.eat()                                        # inherited
@@ -1194,11 +1210,9 @@ class Complex:
     def __str__(self):
         return f"{self.re} + {self.im}i"
 
-
 # Python has no overloading by parameter list; default arguments give the same effect
 def add(a, b, c=0):
     return a + b + c
-
 
 print(add(2, 3), add(2, 3, 4), add(2.5, 1.5))
 print(Complex(2, 3) + Complex(1, 4))
@@ -1260,7 +1274,9 @@ Drawing a square
 
 Without the keyword `virtual`, the call `s->draw()` would be decided at compile time from the pointer's type, and both calls would print `Drawing a shape`.
 
-**Virtual function:** a virtual function is a member function declared with **`virtual`** in the base class, which is meant to be **redefined in derived classes**; a call through a base-class pointer or reference runs the version of the **actual object**. A **pure virtual function** (`virtual void draw() = 0;`) has no body and makes the class abstract.
+**Virtual function:** a virtual function is a member function declared with **`virtual`** in the base class, which is meant to be **redefined in derived classes**; a call through a base-class pointer or reference runs the version of the **actual object**.
+
+A **pure virtual function** (`virtual void draw() = 0;`) has no body and makes the class abstract.
 
 **Java (method overriding):** in Java every non-static, non-final, non-private method can be overridden, so overriding gives run-time polymorphism automatically.
 
@@ -1298,16 +1314,13 @@ class Shape:
     def draw(self):
         print("Drawing a shape")
 
-
 class Circle(Shape):
     def draw(self):                            # overrides Shape.draw()
         print("Drawing a circle")
 
-
 class Square(Shape):
     def draw(self):
         print("Drawing a square")
-
 
 for s in (Shape(), Circle(), Square()):
     s.draw()                                   # the object's own draw() is called
@@ -1398,10 +1411,6 @@ Drawing a square
 - [C++ friend Function and friend Classes](https://www.programiz.com/cpp-programming/friend-function-class) — accessed 2026-11-04
 - [C++ Polymorphism](https://www.programiz.com/cpp-programming/polymorphism) — accessed 2026-11-04 (it lists function overriding as run-time polymorphism even in its example called through a derived-class object, which the compiler resolves; overriding is decided at run time only for a `virtual` function called through a base-class pointer or reference)
 - [C++ Access Modifiers](https://www.programiz.com/cpp-programming/access-modifiers) — accessed 2026-11-04
-
-**IT Job QnS**
-
-- [Previous Bank Assistant Programmer Questions](https://it.jobqns.com/previous2021-2026-bank-assistant-programmer-qns/) — accessed 2026-11-04 (definition of polymorphism with a C++ function-overloading example; run-time polymorphism through overriding); the site has no pages on friend functions or on class versus object
 
 **Additional sources**
 

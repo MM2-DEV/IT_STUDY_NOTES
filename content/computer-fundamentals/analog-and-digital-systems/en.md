@@ -16,7 +16,9 @@ Signals are of two types:
 
 #### 1. Analog Signal
 
-**Definition:** An analog signal is a signal that has **continuous values** within a given range. It changes smoothly over time and can take **any value** (infinitely many values) between its minimum and maximum. It represents another quantity directly: for example, in analog audio the voltage varies in the same way as the pressure of the sound wave.
+**Definition:** An analog signal is a signal that has **continuous values** within a given range.
+
+It changes smoothly over time and can take **any value** (infinitely many values) between its minimum and maximum. It represents another quantity directly: for example, in analog audio the voltage varies in the same way as the pressure of the sound wave.
 
 ```text
  Voltage
@@ -46,7 +48,9 @@ Signals are of two types:
 
 #### 2. Digital Signal
 
-**Definition:** A digital signal is a signal that has a **finite set of discrete values**. In computers and most digital circuits it has only **two values**, **1 (high)** and **0 (low)**, so it is a **binary signal**, and each value carries one bit.
+**Definition:** A digital signal is a signal that has a **finite set of discrete values**.
+
+In computers and most digital circuits it has only **two values**, **1 (high)** and **0 (low)**, so it is a **binary signal**, and each value carries one bit.
 
 ```text
  Voltage
@@ -80,7 +84,9 @@ Signals are of two types:
 
 ## Differences and Examples {#differences-and-examples}
 
-An **analog system** is a system that works with analog (continuous) signals. A **digital system** is a system that works with digital (discrete, binary) signals.
+An **analog system** is a system that works with analog (continuous) signals.
+
+A **digital system** is a system that works with digital (discrete, binary) signals.
 
 ### Differences Between Analog and Digital Signals and Systems
 

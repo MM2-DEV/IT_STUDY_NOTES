@@ -64,7 +64,9 @@ Data mining tasks are of two kinds:
 
 ### Data Warehouse vs Data Mining
 
-A **data warehouse** is a **subject-oriented, integrated, time-variant and non-volatile collection of data** that supports management decision making; it stores historical data from many sources. **Data mining** analyses such data to find patterns.
+A **data warehouse** is a **subject-oriented, integrated, time-variant and non-volatile collection of data** that supports management decision making; it stores historical data from many sources.
+
+**Data mining** analyses such data to find patterns.
 
 | Basis | Data warehouse | Data mining |
 | --- | --- | --- |
@@ -322,10 +324,6 @@ This makes training **faster** and further reduces variance, at the cost of slig
 - [Data Mining](https://www.tpointtech.com/data-mining) and [KDD Process](https://www.tpointtech.com/kdd-process-in-data-mining) — accessed 2026-11-06 (advantages, disadvantages, applications)
 - [Decision Tree Induction](https://www.tpointtech.com/decision-tree-induction) and [Bayesian Classifiers](https://www.tpointtech.com/data-mining-bayesian-classifiers) — accessed 2026-11-06. Its factory expected-value example gives the "not expand" value as $3M; (0.6 × 4 + 0.4 × 2) − 0 = $3.2M (the decision does not change).
 - [Data Mining vs OLAP](https://www.tpointtech.com/data-mining-vs-olap) and [Data Mining vs Data Warehousing](https://www.tpointtech.com/data-mining-cluster-vs-data-warehousing) — accessed 2026-11-06 (comparison tables)
-
-**IT Job QnS**
-
-- IT Job QnS has no page on data mining (checked 2026-11-06).
 
 **Programiz**
 

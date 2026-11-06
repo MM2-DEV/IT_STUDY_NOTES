@@ -1,0 +1,287 @@
+{
+  "title": "AI-Assisted and Agentic Software Development",
+  "order": 23,
+  "topics": [
+    {
+      "slug": "llm-fundamentals",
+      "title": "LLM Fundamentals for Developers",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "how-large-language-models-work",
+          "title": "How Large Language Models Work",
+          "exams": []
+        },
+        {
+          "id": "tokens-and-context-windows",
+          "title": "Tokens and Context Windows",
+          "exams": []
+        },
+        {
+          "id": "sampling-parameters-temperature-and-others",
+          "title": "Sampling Parameters: Temperature and Others",
+          "exams": []
+        },
+        {
+          "id": "capabilities-and-limitations-hallucination-and-knowledge-cutoff",
+          "title": "Capabilities and Limitations: Hallucination and Knowledge Cutoff",
+          "exams": []
+        },
+        {
+          "id": "choosing-a-model-capability-latency-and-cost",
+          "title": "Choosing a Model: Capability, Latency and Cost",
+          "exams": []
+        },
+        {
+          "id": "embeddings",
+          "title": "Embeddings",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "ai-coding-assistants",
+      "title": "AI Coding Assistants",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "types-of-ai-coding-tools-completion-chat-and-agents",
+          "title": "Types of AI Coding Tools: Completion, Chat and Agents",
+          "exams": []
+        },
+        {
+          "id": "claude-code-github-copilot-and-cursor",
+          "title": "Claude Code, GitHub Copilot and Cursor",
+          "exams": []
+        },
+        {
+          "id": "prompting-for-code",
+          "title": "Prompting for Code",
+          "exams": []
+        },
+        {
+          "id": "giving-project-context-instruction-files-such-as-claude-md-and-agents-md",
+          "title": "Giving Project Context: Instruction Files such as CLAUDE.md and AGENTS.md",
+          "exams": []
+        },
+        {
+          "id": "reviewing-and-verifying-ai-generated-code",
+          "title": "Reviewing and Verifying AI-Generated Code",
+          "exams": []
+        },
+        {
+          "id": "privacy-security-and-licensing-concerns",
+          "title": "Privacy, Security and Licensing Concerns",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "agentic-development-workflows",
+      "title": "Agentic Development Workflows",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "what-makes-a-coding-agent-agentic",
+          "title": "What Makes a Coding Agent Agentic",
+          "exams": []
+        },
+        {
+          "id": "explore-plan-implement-and-verify",
+          "title": "Explore, Plan, Implement and Verify",
+          "exams": []
+        },
+        {
+          "id": "breaking-work-into-agent-sized-tasks",
+          "title": "Breaking Work into Agent-Sized Tasks",
+          "exams": []
+        },
+        {
+          "id": "tests-and-type-checks-as-guardrails",
+          "title": "Tests and Type Checks as Guardrails",
+          "exams": []
+        },
+        {
+          "id": "git-workflows-with-agents",
+          "title": "Git Workflows with Agents",
+          "exams": []
+        },
+        {
+          "id": "subagents-and-parallel-agents",
+          "title": "Subagents and Parallel Agents",
+          "exams": []
+        },
+        {
+          "id": "permissions-sandboxing-and-hooks",
+          "title": "Permissions, Sandboxing and Hooks",
+          "exams": []
+        },
+        {
+          "id": "when-not-to-use-an-agent",
+          "title": "When Not to Use an Agent",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "building-llm-features",
+      "title": "Building LLM-Powered Features",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "calling-an-llm-api",
+          "title": "Calling an LLM API",
+          "exams": []
+        },
+        {
+          "id": "system-prompts-and-prompt-engineering",
+          "title": "System Prompts and Prompt Engineering",
+          "exams": []
+        },
+        {
+          "id": "streaming-responses",
+          "title": "Streaming Responses",
+          "exams": []
+        },
+        {
+          "id": "structured-output-with-json-schemas",
+          "title": "Structured Output with JSON Schemas",
+          "exams": []
+        },
+        {
+          "id": "tool-use-and-function-calling",
+          "title": "Tool Use and Function Calling",
+          "exams": []
+        },
+        {
+          "id": "prompt-caching-cost-and-latency",
+          "title": "Prompt Caching, Cost and Latency",
+          "exams": []
+        },
+        {
+          "id": "error-handling-and-rate-limits",
+          "title": "Error Handling and Rate Limits",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "title": "Retrieval-Augmented Generation (RAG)",
+      "order": 5,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "why-rag",
+          "title": "Why RAG",
+          "exams": []
+        },
+        {
+          "id": "chunking-documents",
+          "title": "Chunking Documents",
+          "exams": []
+        },
+        {
+          "id": "vector-databases-and-pgvector",
+          "title": "Vector Databases and pgvector",
+          "exams": []
+        },
+        {
+          "id": "retrieval-hybrid-search-and-reranking",
+          "title": "Retrieval, Hybrid Search and Reranking",
+          "exams": []
+        },
+        {
+          "id": "building-a-rag-pipeline",
+          "title": "Building a RAG Pipeline",
+          "exams": []
+        },
+        {
+          "id": "evaluating-rag-quality",
+          "title": "Evaluating RAG Quality",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "building-ai-agents",
+      "title": "Building AI Agents",
+      "order": 6,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "the-agent-loop",
+          "title": "The Agent Loop",
+          "exams": []
+        },
+        {
+          "id": "designing-tools-for-agents",
+          "title": "Designing Tools for Agents",
+          "exams": []
+        },
+        {
+          "id": "model-context-protocol-mcp",
+          "title": "Model Context Protocol (MCP)",
+          "exams": []
+        },
+        {
+          "id": "memory-and-state",
+          "title": "Memory and State",
+          "exams": []
+        },
+        {
+          "id": "multi-agent-orchestration",
+          "title": "Multi-Agent Orchestration",
+          "exams": []
+        },
+        {
+          "id": "human-in-the-loop-and-guardrails",
+          "title": "Human-in-the-Loop and Guardrails",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "evaluating-and-securing-ai",
+      "title": "Evaluating and Securing AI Features",
+      "order": 7,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "evaluations-evals",
+          "title": "Evaluations (Evals)",
+          "exams": []
+        },
+        {
+          "id": "prompt-injection",
+          "title": "Prompt Injection",
+          "exams": []
+        },
+        {
+          "id": "data-leakage-and-sensitive-information",
+          "title": "Data Leakage and Sensitive Information",
+          "exams": []
+        },
+        {
+          "id": "validating-model-output",
+          "title": "Validating Model Output",
+          "exams": []
+        },
+        {
+          "id": "observability-for-llm-applications",
+          "title": "Observability for LLM Applications",
+          "exams": []
+        },
+        {
+          "id": "responsible-ai-practices",
+          "title": "Responsible AI Practices",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

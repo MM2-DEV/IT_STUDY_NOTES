@@ -8,10 +8,12 @@
     "start": "next start",
     "lint": "eslint",
     "topics:sync": "node scripts/sync-topics.mjs",
+    "se:sync": "node scripts/sync-topics.mjs SOFTWARE_ENGINEERING.md content-software-engineering",
     "questions:sync": "node scripts/sync-previous-questions.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
+    "@xyflow/react": "^12.12.1",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.5.1",
     "lucide-react": "^1.66.0",

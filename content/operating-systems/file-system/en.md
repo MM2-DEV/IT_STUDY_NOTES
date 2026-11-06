@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### File
 
-> **A file is a named collection of related information stored on secondary storage, such as a disk, tape or optical disk. It is the smallest unit of storage that a user works with: data can be saved on secondary storage only inside a file.**
+> **A file is a named collection of related information stored on secondary storage, such as a disk, tape or optical disk.**
+
+It is the smallest unit of storage that a user works with: data can be saved on secondary storage only inside a file.
 
 A file may contain programs (source or object) or data (numeric, alphabetic, alphanumeric or binary). Its meaning is defined by its creator.
 
@@ -108,7 +110,9 @@ Layering reduces duplication of code (the I/O control and basic file system can 
 
 ## File Organization {#file-organization}
 
-**File organization** is the logical arrangement of the records of a file, which determines how the records can be accessed. The main organizations are:
+**File organization** is the logical arrangement of the records of a file, which determines how the records can be accessed.
+
+The main organizations are:
 
 1. **Pile (heap):** records are stored in order of arrival, with no structure; finding a record needs an exhaustive search.
 2. **Sequential file:** records have a fixed format and are stored in order of a **key** field. Efficient for processing all records in order (batch processing), but finding or inserting a single record is slow.
@@ -196,7 +200,9 @@ Buffering is of three types:
 
 ### Definition
 
-> **A file descriptor is a small non-negative integer that a process uses to identify an open file. It is returned by the `open()` system call and passed to `read()`, `write()` and `close()`.**
+> **A file descriptor is a small non-negative integer that a process uses to identify an open file.**
+
+It is returned by the `open()` system call and passed to `read()`, `write()` and `close()`.
 
 ### Standard File Descriptors
 
@@ -238,7 +244,9 @@ Text files are characters organized into lines; source files are sequences of pr
 
 ### Directory
 
-> **A directory is a special file that lists the files stored under it. For each file, it keeps the file's name and either its attributes or a pointer to its FCB (inode).**
+> **A directory is a special file that lists the files stored under it.**
+
+For each file, it keeps the file's name and either its attributes or a pointer to its FCB (inode).
 
 **Operations on a directory:** search for a file, create a file, delete a file, list a directory, rename a file, and traverse the file system.
 
@@ -320,9 +328,11 @@ In Windows, each drive has its own tree (for example, `C:\Users\Ali\Documents`),
 
 ### Block
 
-> **A block is the unit in which disk space is allocated and data is transferred between the disk and memory. It is made up of one or more disk sectors (a sector is usually 512 bytes).**
+> **A block is the unit in which disk space is allocated and data is transferred between the disk and memory.**
 
-The **block size** is a trade-off:
+It is made up of one or more disk sectors (a sector is usually 512 bytes).
+
+Choosing the **block size** is a trade-off:
 
 1. **Large blocks** → fewer blocks per file, fewer disk accesses, faster sequential transfer, smaller allocation tables — but **more internal fragmentation** (on average half a block is wasted at the end of every file).
 2. **Small blocks** → less wasted space — but more blocks per file, more seeks and larger allocation tables.
@@ -347,7 +357,9 @@ The **BSD UNIX Fast File System (FFS)** solved this trade-off with **blocks and 
 
 ### Definition
 
-> **An inode (index node) is the File Control Block used by UNIX-like file systems. It stores all the information about a file except its name and its data.**
+> **An inode (index node) is the File Control Block used by UNIX-like file systems.**
+
+It stores all the information about a file except its name and its data.
 
 Each file has exactly one inode, identified by its **inode number**. The **directory** maps file **names** to inode numbers; the inode then gives everything else.
 
@@ -433,7 +445,9 @@ The first character of `ls -l` shows the file type: `-` regular file, `d` direct
 
 ### Definition
 
-> **A File Control Block (FCB) is a data structure that holds all the information about a file, including its attributes and the location of its data on the disk. Each file has one FCB.**
+> **A File Control Block (FCB) is a data structure that holds all the information about a file, including its attributes and the location of its data on the disk.**
+
+Each file has one FCB.
 
 In UNIX the FCB is the **inode**; in NTFS the information is stored in the **Master File Table (MFT)**; in FAT the directory entry holds most of it.
 
@@ -454,7 +468,9 @@ In UNIX the FCB is the **inode**; in NTFS the information is stored in the **Mas
 
 ## Space Allocation {#space-allocation}
 
-**Space (file) allocation** is the method of allocating disk blocks to files so that disk space is used effectively and files can be accessed quickly. There are three main methods: **contiguous**, **linked** and **indexed**.
+**Space (file) allocation** is the method of allocating disk blocks to files so that disk space is used effectively and files can be accessed quickly.
+
+There are three main methods: **contiguous**, **linked** and **indexed**.
 
 ### 1. Contiguous Allocation
 
@@ -536,7 +552,9 @@ The file system keeps a **free-space list** of all free disk blocks.
 
 ### Definition
 
-> **A tree-structured file system arranges directories as a tree with a single root directory. Each directory can contain files and further subdirectories, so every file has a unique path from the root.**
+> **A tree-structured file system arranges directories as a tree with a single root directory.**
+
+Each directory can contain files and further subdirectories, so every file has a unique path from the root.
 
 It is the most common directory structure (MS-DOS, Windows, UNIX and Linux all use it, extended with links).
 
@@ -587,10 +605,6 @@ It is the most common directory structure (MS-DOS, Windows, UNIX and Linux all u
 - [File System Structure in Operating System](https://www.tpointtech.com/os-file-system-structure) — accessed 2026-11-03
 - [OS On Disk Data Structures](https://www.tpointtech.com/os-on-disk-data-structures) — accessed 2026-11-03
 - TpointTech has no page on blocks and fragments (checked 2026-11-03).
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (file-system fragmentation)
 
 **Programiz**
 

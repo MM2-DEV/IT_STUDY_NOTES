@@ -129,7 +129,8 @@
       "exams": [
         "School-2",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -138,7 +139,8 @@
           "exams": [
             "School-2",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -175,7 +177,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -192,7 +195,8 @@
             "School-2",
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -292,7 +296,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": []
     },
@@ -304,7 +309,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": []
     },
@@ -405,7 +411,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -414,7 +421,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -428,7 +436,8 @@
           "id": "interfaces",
           "title": "Interfaces",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -444,7 +453,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -453,7 +463,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -462,7 +473,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]
@@ -473,7 +485,8 @@
       "order": 15,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -481,7 +494,8 @@
           "title": "Introductory Programming with C++/Java",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -505,7 +519,22 @@
           "title": "Exceptions",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
+          ]
+        },
+        {
+          "id": "java-platform-independence-jdk-jre-and-jvm",
+          "title": "Java Platform Independence: JDK, JRE and JVM",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "garbage-collection-in-java",
+          "title": "Garbage Collection in Java",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -605,7 +634,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -655,7 +685,8 @@
             "School-2",
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -725,7 +756,8 @@
             "School-2",
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -795,7 +827,8 @@
             "School-2",
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {

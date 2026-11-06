@@ -5,7 +5,9 @@ updated: 2026-11-04
 
 ## Structures {#structures}
 
-**Definition:** a structure is a **user-defined data type** that **groups variables of different data types** under **one name**. Each variable inside a structure is called a **member** (or field). It is declared with the keyword **`struct`**.
+**Definition:** a structure is a **user-defined data type** that **groups variables of different data types** under **one name**.
+
+Each variable inside a structure is called a **member** (or field). It is declared with the keyword **`struct`**.
 
 **Why structures are needed:** an array can hold only values of **one** type. A student's record has a roll number (int), a name (string) and marks (float); a structure keeps these related values of different types together as one unit.
 
@@ -178,7 +180,9 @@ uint count = 10;
 
 ### Enumeration (enum)
 
-An **enumeration** is a user-defined type consisting of **named integer constants**. By default, the first name has the value 0 and each next name is one more.
+An **enumeration** is a user-defined type consisting of **named integer constants**.
+
+By default, the first name has the value 0 and each next name is one more.
 
 ```c
 enum day { SUN, MON, TUE, WED };       /* SUN = 0, MON = 1, TUE = 2, WED = 3 */
@@ -188,7 +192,9 @@ enum day today = TUE;                  /* today has the value 2 */
 
 ## Unions {#unions}
 
-**Definition:** a union is a **user-defined data type**, declared with the keyword **`union`**, whose members **share the same memory location**. Its syntax is the same as that of a structure, but **only one member can hold a valid value at any time**.
+**Definition:** a union is a **user-defined data type**, declared with the keyword **`union`**, whose members **share the same memory location**.
+
+Its syntax is the same as that of a structure, but **only one member can hold a valid value at any time**.
 
 ```c
 union data
@@ -270,7 +276,9 @@ d.str = C Programming
 
 ## Bit-fields {#bit-fields}
 
-**Definition:** a bit-field is a **member of a structure (or union) whose size is given in bits**, instead of the full size of its type. Bit-fields let several small values be **packed into one word** to save memory.
+**Definition:** a bit-field is a **member of a structure (or union) whose size is given in bits**, instead of the full size of its type.
+
+Bit-fields let several small values be **packed into one word** to save memory.
 
 ```text
  struct tag
@@ -348,10 +356,6 @@ The 5 + 4 + 12 = 21 bits fit into one 4-byte unit, whereas three ordinary `unsig
 **Programiz**
 
 - [C Unions](https://www.programiz.com/c-programming/c-unions) — accessed 2026-11-04 (size of a union compared with a structure; one member at a time)
-
-**IT Job QnS**
-
-- IT Job QnS has no page comparing structures and unions (checked 2026-11-04).
 
 **Additional sources**
 

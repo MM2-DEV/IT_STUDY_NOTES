@@ -1,22 +1,27 @@
 #!/usr/bin/env node
-// Generates content/<category>/category.json from TOPICS.md.
+// Generates <content folder>/<category>/category.json from a topic list.
 //
-// TOPICS.md is the planning document; the website never reads it. This script
-// copies its structure (categories, topics, subtopics, exam tags) into the
-// content folder, which is what the website reads. It only writes
+// The topic lists are planning documents; the website never reads them. This
+// script copies their structure (categories, topics, subtopics, exam tags) into
+// a content folder, which is what the website reads. It only writes
 // category.json files and never touches topic notes (en.md / bn.md).
 //
-// Usage: npm run topics:sync
+// Usage:
+//   npm run topics:sync   TOPICS.md               → content/
+//   npm run se:sync       SOFTWARE_ENGINEERING.md → content-software-engineering/
+// (node scripts/sync-topics.mjs [source.md] [content folder])
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
-const topicsFile = path.join(root, "TOPICS.md");
-const contentDir = path.join(root, "content");
+const [sourceName = "TOPICS.md", contentName = "content"] = process.argv.slice(2);
+const topicsFile = path.join(root, sourceName);
+const contentDir = path.join(root, contentName);
 
 const CATEGORY = /^## (\d+)\. (.+?) — `([a-z0-9-]+)`$/;
-const TOPIC = /^### (\d+)\.(\d+) (.+?) — (`.+`)$/;
+// Exam tags after the topic title are optional (SOFTWARE_ENGINEERING.md has none).
+const TOPIC = /^### (\d+)\.(\d+) (.+?)(?: — (`.+`))?$/;
 const SLUG = /^\*\*Slug:\*\* `([a-z0-9-]+)`/;
 const ITEM = /^( *)- (.+)$/;
 
@@ -70,7 +75,7 @@ function parse(markdown) {
         slug: null,
         title: topicMatch[3],
         order: Number(topicMatch[2]),
-        exams: parseTags(topicMatch[4]),
+        exams: parseTags(topicMatch[4] ?? ""),
         subtopics: [],
         usedIds: new Set(),
       };
@@ -152,5 +157,5 @@ for (const category of categories) {
 }
 
 console.log(
-  `Synced ${categories.length} categories, ${topicCount} topics and ${subtopicCount} subtopics from TOPICS.md.`
+  `Synced ${categories.length} categories, ${topicCount} topics and ${subtopicCount} subtopics from ${sourceName} into ${contentName}/.`
 );

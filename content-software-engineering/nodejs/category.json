@@ -1,0 +1,135 @@
+{
+  "title": "Node.js and NestJS",
+  "order": 12,
+  "topics": [
+    {
+      "slug": "nodejs-fundamentals",
+      "title": "Node.js Fundamentals",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "node-js-runtime-and-the-event-loop",
+          "title": "Node.js Runtime and the Event Loop",
+          "exams": []
+        },
+        {
+          "id": "commonjs-and-es-modules",
+          "title": "CommonJS and ES Modules",
+          "exams": []
+        },
+        {
+          "id": "the-file-system-module",
+          "title": "The File System Module",
+          "exams": []
+        },
+        {
+          "id": "streams-and-buffers",
+          "title": "Streams and Buffers",
+          "exams": []
+        },
+        {
+          "id": "the-http-module",
+          "title": "The HTTP Module",
+          "exams": []
+        },
+        {
+          "id": "express-js-basics",
+          "title": "Express.js Basics",
+          "exams": []
+        },
+        {
+          "id": "error-handling-in-node-js",
+          "title": "Error Handling in Node.js",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "nestjs-fundamentals",
+      "title": "NestJS Fundamentals",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "nestjs-architecture",
+          "title": "NestJS Architecture",
+          "exams": []
+        },
+        {
+          "id": "modules",
+          "title": "Modules",
+          "exams": []
+        },
+        {
+          "id": "controllers",
+          "title": "Controllers",
+          "exams": []
+        },
+        {
+          "id": "providers-and-dependency-injection",
+          "title": "Providers and Dependency Injection",
+          "exams": []
+        },
+        {
+          "id": "pipes-and-validation-with-dtos",
+          "title": "Pipes and Validation with DTOs",
+          "exams": []
+        },
+        {
+          "id": "guards",
+          "title": "Guards",
+          "exams": []
+        },
+        {
+          "id": "interceptors",
+          "title": "Interceptors",
+          "exams": []
+        },
+        {
+          "id": "exception-filters",
+          "title": "Exception Filters",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "nestjs-applications",
+      "title": "NestJS Applications",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "configuration-module",
+          "title": "Configuration Module",
+          "exams": []
+        },
+        {
+          "id": "databases-with-prisma-or-typeorm",
+          "title": "Databases with Prisma or TypeORM",
+          "exams": []
+        },
+        {
+          "id": "authentication-with-jwt-and-passport",
+          "title": "Authentication with JWT and Passport",
+          "exams": []
+        },
+        {
+          "id": "role-based-authorization",
+          "title": "Role-Based Authorization",
+          "exams": []
+        },
+        {
+          "id": "openapi-documentation-with-swagger",
+          "title": "OpenAPI Documentation with Swagger",
+          "exams": []
+        },
+        {
+          "id": "testing-nestjs-applications",
+          "title": "Testing NestJS Applications",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

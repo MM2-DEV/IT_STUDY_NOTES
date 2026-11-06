@@ -7,10 +7,13 @@ updated: 2026-11-01
 
 **Analog and digital signals:** most quantities in the real world, such as temperature, pressure, sound and light, are **analog**: they vary **continuously** and can take any value. Computers and other digital systems work only with **digital** signals: binary numbers made of 0s and 1s (see [Analog and Digital Systems](/topics/computer-fundamentals/analog-and-digital-systems)).
 
-**Definitions:**
+An **analog-to-digital converter (ADC, A/D converter)** is a circuit that **converts an analog voltage into an equivalent binary number**.
 
-1. **Analog-to-digital converter (ADC, A/D converter):** a circuit that **converts an analog voltage into an equivalent binary number**. It has one analog input and n digital outputs.
-2. **Digital-to-analog converter (DAC, D/A converter):** a circuit that **converts a binary number into an equivalent analog voltage (or current)**. It has n digital inputs and one analog output.
+It has one analog input and n digital outputs.
+
+A **digital-to-analog converter (DAC, D/A converter)** is a circuit that **converts a binary number into an equivalent analog voltage (or current)**.
+
+It has n digital inputs and one analog output.
 
 ### Need for A/D and D/A Conversion
 
@@ -107,7 +110,9 @@ The step size is 1 V (VR/8), and the output is 1 V × the decimal value of the i
 
 #### 2. R-2R Ladder DAC
 
-**Definition:** the R-2R ladder DAC is a D/A converter whose resistor network is a **ladder made of only two resistor values, R and 2R**. It gives the same binary-weighted output as the weighted resistor DAC without needing a wide range of resistor values.
+**Definition:** the R-2R ladder DAC is a D/A converter whose resistor network is a **ladder made of only two resistor values, R and 2R**.
+
+It gives the same binary-weighted output as the weighted resistor DAC without needing a wide range of resistor values.
 
 **Construction (4-bit):**
 
@@ -141,7 +146,9 @@ For these reasons, the R-2R ladder DAC is **preferred** over the binary weighted
 
 ## Digital Ramp A/D Converter {#digital-ramp-a-d-converter}
 
-**Definition:** the digital ramp ADC (also called the **counter type ADC**) is an A/D converter in which a **counter counts upwards** from zero, a **DAC** converts the count into a voltage, and a **comparator** stops the counter when this voltage reaches the analog input. The final count is the digital output. Because the DAC output rises in equal steps like a staircase, it is called a "digital ramp" (or staircase ramp) ADC.
+**Definition:** the digital ramp ADC (also called the **counter type ADC**) is an A/D converter in which a **counter counts upwards** from zero, a **DAC** converts the count into a voltage, and a **comparator** stops the counter when this voltage reaches the analog input.
+
+The final count is the digital output. Because the DAC output rises in equal steps like a staircase, it is called a "digital ramp" (or staircase ramp) ADC.
 
 ### Block Diagram
 
@@ -195,7 +202,9 @@ These are the main specifications used to describe and compare A/D and D/A conve
 
 ### Resolution
 
-**Definition:** resolution is the **smallest change in the analog quantity that the converter can distinguish** (for an ADC) or **produce** (for a DAC). It is stated in three ways:
+**Definition:** resolution is the **smallest change in the analog quantity that the converter can distinguish** (for an ADC) or **produce** (for a DAC).
+
+It is stated in three ways:
 
 1. **In bits (n):** the number of bits of the converter. An n-bit converter has **2ⁿ** different digital codes (levels). An 8-bit converter has 2⁸ = 256 levels, and a 16-bit converter has 65,536.
 2. **As a voltage (step size, or 1 LSB):** the analog value of one step:
@@ -234,7 +243,9 @@ Accuracy is usually stated as a **percentage of full scale** or in **LSBs** (for
 
 ### Conversion Time
 
-**Definition:** the conversion time of an ADC is the **time from the start of a conversion until the valid digital output is available**. The shorter the conversion time, the more samples can be taken each second.
+**Definition:** the conversion time of an ADC is the **time from the start of a conversion until the valid digital output is available**.
+
+The shorter the conversion time, the more samples can be taken each second.
 
 | ADC type | Conversion time (n bits) |
 | --- | --- |

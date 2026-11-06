@@ -1,0 +1,138 @@
+{
+  "title": "Backend Fundamentals",
+  "order": 8,
+  "topics": [
+    {
+      "slug": "backend-architecture",
+      "title": "Backend Architecture and Request Lifecycle",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "backend-responsibilities",
+          "title": "Backend Responsibilities",
+          "exams": []
+        },
+        {
+          "id": "runtimes-and-frameworks",
+          "title": "Runtimes and Frameworks",
+          "exams": []
+        },
+        {
+          "id": "request-lifecycle",
+          "title": "Request Lifecycle",
+          "exams": []
+        },
+        {
+          "id": "routing-controllers-and-handlers",
+          "title": "Routing, Controllers and Handlers",
+          "exams": []
+        },
+        {
+          "id": "middleware",
+          "title": "Middleware",
+          "exams": []
+        },
+        {
+          "id": "business-logic-and-service-layers",
+          "title": "Business Logic and Service Layers",
+          "exams": []
+        },
+        {
+          "id": "data-access-layer-and-repositories",
+          "title": "Data Access Layer and Repositories",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "configuration-validation-logging-errors",
+      "title": "Configuration, Validation, Logging and Errors",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "configuration-management",
+          "title": "Configuration Management",
+          "exams": []
+        },
+        {
+          "id": "environment-variables-and-secrets",
+          "title": "Environment Variables and Secrets",
+          "exams": []
+        },
+        {
+          "id": "input-validation",
+          "title": "Input Validation",
+          "exams": []
+        },
+        {
+          "id": "error-handling",
+          "title": "Error Handling",
+          "exams": []
+        },
+        {
+          "id": "logging",
+          "title": "Logging",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "common-backend-features",
+      "title": "Common Backend Features",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "pagination-sorting-filtering-and-searching",
+          "title": "Pagination, Sorting, Filtering and Searching",
+          "exams": []
+        },
+        {
+          "id": "file-uploads-and-object-storage",
+          "title": "File Uploads and Object Storage",
+          "exams": []
+        },
+        {
+          "id": "sending-email",
+          "title": "Sending Email",
+          "exams": []
+        },
+        {
+          "id": "background-jobs-and-task-queues",
+          "title": "Background Jobs and Task Queues",
+          "exams": []
+        },
+        {
+          "id": "scheduled-jobs",
+          "title": "Scheduled Jobs",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "choosing-a-backend-stack",
+      "title": "Choosing a Backend Language and Framework",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "python-javascript-node-js-and-go-compared",
+          "title": "Python, JavaScript (Node.js) and Go Compared",
+          "exams": []
+        },
+        {
+          "id": "django-fastapi-and-nestjs-compared",
+          "title": "Django, FastAPI and NestJS Compared",
+          "exams": []
+        },
+        {
+          "id": "choosing-a-stack-based-on-project-requirements",
+          "title": "Choosing a Stack Based on Project Requirements",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

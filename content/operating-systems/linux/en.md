@@ -136,7 +136,9 @@ The shell prompt is usually `$` for a normal user and `#` for the superuser (roo
 
 ## Linux File System Hierarchy {#linux-file-system-hierarchy}
 
-Linux follows the **Filesystem Hierarchy Standard (FHS)**, maintained by the Linux Foundation. All files are in **one tree** starting at the **root directory `/`**; other disks are mounted inside this tree (there are no drive letters like `C:`).
+The **Filesystem Hierarchy Standard (FHS)** is the standard, maintained by the Linux Foundation, that defines the directory structure and directory contents of Linux and other UNIX-like systems.
+
+All files are in **one tree** starting at the **root directory `/`**; other disks are mounted inside this tree (there are no drive letters like `C:`).
 
 ![Linux file system hierarchy from the root directory](/diagrams/operating-systems/linux-fhs.svg)
 
@@ -324,7 +326,7 @@ New files start from **666** (rw-rw-rw-) and new directories from **777** (rwxrw
 
 1. **SUID (set-user-ID, 4):** a program runs with the permissions of the **file's owner** (for example, `/usr/bin/passwd` runs as root). Shown as `s` in the owner's execute position.
 2. **SGID (set-group-ID, 2):** runs with the file's group; on a directory, new files inherit the directory's group.
-3. **Sticky bit (1):** on a directory (such as `/tmp`), only the owner of a file can delete or rename it. Shown as `t` in the others' execute position.
+3. **Sticky bit (1):** on a directory (such as `/tmp`), only the file's owner, the directory's owner or root can delete or rename a file in it. Shown as `t` in the others' execute position.
 
 Example: `chmod 4755 prog` sets SUID; `chmod 1777 /tmp` sets the sticky bit.
 
@@ -372,7 +374,9 @@ In `usermod -aG`, `-G` sets the supplementary groups and `-a` (append) keeps the
 
 ## Process Management Commands {#process-management-commands}
 
-A **process** is a running instance of a program; each has a unique **PID** (process ID) and a **PPID** (parent's PID). The first user-space process is **init / systemd** (PID 1). (See also [Process Management](/topics/operating-systems/process-management).)
+A **process** is a running instance of a program; each has a unique **PID** (process ID) and a **PPID** (parent's PID).
+
+The first user-space process is **init / systemd** (PID 1). (See also [Process Management](/topics/operating-systems/process-management).)
 
 ### Foreground and Background Processes
 
@@ -441,7 +445,9 @@ Notes:
 
 ### Definition
 
-> **A shell script is a text file containing a sequence of shell commands that the shell runs like a program. It is used to automate repetitive tasks such as backups, installations and monitoring.**
+> **A shell script is a text file containing a sequence of shell commands that the shell runs like a program.**
+
+It is used to automate repetitive tasks such as backups, installations and monitoring.
 
 ### Creating and Running a Script
 
@@ -583,10 +589,6 @@ greet "World"      # prints: Hello, World
 - [Linux User Management](https://www.tpointtech.com/linux-user-management) — accessed 2026-11-03 (it calls `/etc/passwd` a directory; it is a file)
 - [Linux Local Groups](https://www.tpointtech.com/linux-groups) — accessed 2026-11-03
 - [Basic Linux Commands](https://www.tpointtech.com/basic-linux-commands) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Basic Linux Command](https://it.jobqns.com/linux-command/) — accessed 2026-11-03 (`mkdir` with `chmod 400`, `cp -r`, `chown`/`chgrp`, `chmod 750` and `chmod 755`, `head -10 … | wc -mw`, `ls -al`)
 
 **Programiz**
 

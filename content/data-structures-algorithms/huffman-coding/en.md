@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Introduction
 
-**Huffman coding** is a **lossless data compression** technique. It assigns **variable-length binary codes** to the characters of the input: **frequently occurring characters get short codes** and **rare characters get long codes**, so the total number of bits needed is reduced. It was developed by **David A. Huffman** while he was a student at MIT, and published in **1952** ("A Method for the Construction of Minimum-Redundancy Codes").
+**Huffman coding** is a **lossless data compression** technique that assigns **variable-length binary codes** to the characters of the input, giving **short codes to frequent characters** and **long codes to rare characters**.
+
+In this way the total number of bits needed is reduced. It was developed by **David A. Huffman** while he was a student at MIT, and published in **1952** ("A Method for the Construction of Minimum-Redundancy Codes").
 
 Huffman coding is a **greedy algorithm**: at every step it combines the two **least frequent** items.
 

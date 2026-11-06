@@ -342,10 +342,6 @@ The choice between an ordered index (B+ tree) and hashing depends on the kind of
 - [Indexing in DBMS](https://www.tpointtech.com/indexing-in-dbms) and [B+ Tree](https://www.tpointtech.com/dbms-b-plus-tree) — accessed 2026-11-06 (index structure, ordered indices, B+ tree search and insertion)
 - [Hashing](https://www.tpointtech.com/dbms-hashing), [Static Hashing](https://www.tpointtech.com/dbms-static-hashing) and [Dynamic Hashing](https://www.tpointtech.com/dbms-dynamic-hashing) — accessed 2026-11-06 (the mod-5 example). The dynamic-hashing example assigns keys to buckets with wrong bit patterns (for example, 2 = 010 is put in the "00" bucket, and key 9 is written as 10001, which is 17); it is not used.
 
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (its syllabus lists "sparse and dense indexing, B+ tree indexing, hash indexing"; it has no notes on these)
-
 **Programiz**
 
 - [B+ Tree](https://www.programiz.com/dsa/b-plus-tree) and [SQL CREATE INDEX](https://www.programiz.com/sql/create-index) — accessed 2026-11-06 (B+ tree properties and search; index creation and dropping)

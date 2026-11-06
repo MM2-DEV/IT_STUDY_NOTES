@@ -10,7 +10,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -27,7 +28,8 @@
             "School-2",
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -51,6 +53,13 @@
             "School-2",
             "PSC-IT",
             "AP"
+          ]
+        },
+        {
+          "id": "network-delays-throughput-goodput-and-bandwidth-delay-product",
+          "title": "Network Delays, Throughput, Goodput and Bandwidth-Delay Product",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -83,7 +92,8 @@
       "exams": [
         "School-2",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -92,14 +102,16 @@
           "exams": [
             "School-2",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
           "id": "functions-of-each-layer",
           "title": "Functions of Each Layer",
           "exams": [
-            "School-2"
+            "School-2",
+            "Bank"
           ]
         },
         {
@@ -120,14 +132,16 @@
       "exams": [
         "School-2",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "network-devices-used-at-each-layer",
           "title": "Network Devices Used at Each Layer",
           "exams": [
-            "School-2"
+            "School-2",
+            "Bank"
           ]
         },
         {
@@ -135,7 +149,8 @@
           "title": "Bridges and Routers",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -144,6 +159,13 @@
           "exams": [
             "PSC-IT",
             "AP"
+          ]
+        },
+        {
+          "id": "vlans-and-trunking",
+          "title": "VLANs and Trunking",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -155,7 +177,8 @@
       "exams": [
         "School-2",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -179,7 +202,8 @@
           "exams": [
             "School-2",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -188,7 +212,8 @@
           "exams": [
             "School-2",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -197,7 +222,8 @@
           "exams": [
             "School-2",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -224,7 +250,8 @@
       "exams": [
         "School-2",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -239,7 +266,8 @@
           "title": "Synchronous and Asynchronous Transmission",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -380,7 +408,8 @@
       "order": 9,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -388,7 +417,8 @@
           "title": "Error Control and Flow Control",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -396,7 +426,8 @@
           "title": "CRC",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -404,7 +435,8 @@
           "title": "HDLC",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]
@@ -415,7 +447,8 @@
       "order": 10,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -423,7 +456,8 @@
           "title": "FDM, TDM, Statistical TDM",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]
@@ -434,7 +468,8 @@
       "order": 11,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -442,7 +477,8 @@
           "title": "Circuit Switching",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -450,7 +486,8 @@
           "title": "Packet Switching",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]
@@ -461,7 +498,8 @@
       "order": 12,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": []
     },
@@ -472,14 +510,16 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "principles-of-network-applications",
           "title": "Principles of Network Applications",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -488,7 +528,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -513,7 +554,22 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
+          ]
+        },
+        {
+          "id": "important-protocols-and-port-numbers",
+          "title": "Important Protocols and Port Numbers",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "proxy-server-and-reverse-proxy",
+          "title": "Proxy Server and Reverse Proxy",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -525,7 +581,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -534,7 +591,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -550,7 +608,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -566,7 +625,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -575,14 +635,16 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
           "id": "tcp-congestion-control",
           "title": "TCP Congestion Control",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         }
       ]
@@ -594,7 +656,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -625,14 +688,16 @@
           "title": "IP Addresses",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
           "id": "ip-subnetting",
           "title": "IP Subnetting",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -650,6 +715,20 @@
             "PSC-IT",
             "AP"
           ]
+        },
+        {
+          "id": "nat-and-pat",
+          "title": "NAT and PAT",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "quality-of-service-qos",
+          "title": "Quality of Service (QoS)",
+          "exams": [
+            "Bank"
+          ]
         }
       ]
     },
@@ -660,21 +739,24 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "link-state-and-distance-vector-routing-algorithms",
           "title": "Link-State and Distance-Vector Routing Algorithms",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "rip-ospf-bgp",
           "title": "RIP, OSPF, BGP",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -682,7 +764,8 @@
           "title": "Unicast and Multicast Routing Protocols",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]

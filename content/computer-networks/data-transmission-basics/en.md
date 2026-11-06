@@ -63,7 +63,9 @@ A sine wave is described by three parameters:
 2. **Frequency (f)** — the number of cycles (periods) per second, measured in **hertz (Hz)**.
 3. **Phase** — the position of the waveform relative to time 0, measured in **degrees or radians** (for example, 0°, 90°, 180°).
 
-The **period (T)** is the time, in seconds, needed to complete one cycle. Period and frequency are inverses of each other:
+The **period (T)** is the time, in seconds, needed to complete one cycle.
+
+Period and frequency are inverses of each other:
 
 > **f = 1 / T** and **T = 1 / f**
 
@@ -140,7 +142,7 @@ Here:
 3. **r** — the number of bits carried by one signal element.
 4. **L** — the number of signal levels (different signal elements).
 
-Therefore bit rate = baud rate only when each signal element carries **one bit** (two levels). With more levels, the bit rate is **higher** than the baud rate.
+Therefore bit rate = baud rate only when each signal element carries **one bit** (two levels). With more levels, the bit rate is **higher** than the baud rate. In encodings that use more than one signal element per bit, such as Manchester (r = ½), the bit rate is **lower** than the baud rate: 10 Mbps Ethernet needs 20 Mbaud (see [Data Encoding](/topics/computer-networks/data-encoding)).
 
 ![Bit rate and baud rate with a four-level signal](/diagrams/computer-networks/bit-rate-baud-rate.svg)
 
@@ -159,7 +161,7 @@ Therefore bit rate = baud rate only when each signal element carries **one bit**
 | Formula | Bit rate = baud rate × bits per element | Baud rate = bit rate ÷ bits per element |
 | Concerned with | Computer efficiency (amount of data) | Data transmission (signal changes on the line) |
 | Determines | How fast data is delivered | The bandwidth the signal needs |
-| Value | Equal to or greater than baud rate (with more than two levels) | Equal to or less than bit rate (with more than two levels) |
+| Value | Greater than the baud rate when each signal element carries more than one bit; equal when it carries one bit; smaller in encodings such as Manchester | Smaller than the bit rate when each signal element carries more than one bit; equal when it carries one bit; greater in encodings such as Manchester (baud = 2 × bit rate) |
 
 ## Channel Capacity {#channel-capacity}
 
@@ -408,10 +410,6 @@ A **high SNR** means the signal is little affected by noise (good quality); a **
 
 - [Difference between Baseband and Broadband Transmission](https://www.tpointtech.com/baseband-vs-broadband-transmission) — accessed 2026-11-06 (baseband vs broadband: signal type, TDM vs FDM, encoding, distance, cost, examples). It calls broadband transmission unidirectional; two-way broadband systems (such as DSL and cable Internet) use separate frequency channels for each direction, as written above.
 - [Digital Transmission](https://www.tpointtech.com/computer-network-digital-transmission) — accessed 2026-11-06 (no formulas for bit rate, baud rate or channel capacity)
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — checked 2026-11-06; it has no item on these subtopics (it mentions analog and digital signals only in its answer on the modem).
 
 **Programiz**
 

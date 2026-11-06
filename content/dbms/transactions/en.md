@@ -193,10 +193,6 @@ SQL allows a transaction to choose a weaker level of isolation for more concurre
 
 - [Transaction Processing Concept](https://www.tpointtech.com/dbms-transaction-processing-concept), [States of Transaction](https://www.tpointtech.com/dbms-states-of-transaction), [Schedule](https://www.tpointtech.com/dbms-schedule), [Testing of Serializability](https://www.tpointtech.com/dbms-testing-of-serializability), [Conflict Serializable Schedule](https://www.tpointtech.com/dbms-conflict-serializable-schedule) and [View Serializability](https://www.tpointtech.com/dbms-view-serializability) — accessed 2026-11-06. The testing page says that an edge Ti → Tj means "all instructions of Ti are executed before the first instruction of Tj"; it only means that one conflicting operation of Ti comes before one of Tj.
 
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (definition of a transaction and the ACID properties with examples: Tk transfer, stock update, seat booking, payment)
-
 **Programiz**
 
 - Programiz has no page on transactions (checked 2026-11-06).

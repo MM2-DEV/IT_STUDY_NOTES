@@ -7,13 +7,19 @@ updated: 2026-11-04
 
 ### Definition of Verification and Validation
 
-Verification and validation (V&V) are the checking and analysis processes that ensure that software conforms to its specification and meets the needs of its users. They are carried out at every stage of the software process, from requirements reviews to final testing.
+Verification and validation (V&V) are the checking and analysis processes that ensure that software conforms to its specification and meets the needs of its users.
 
-**Verification** is the process of checking that the software (and each work product: requirements, design and code) **conforms to its specification** and to the standards. It answers the question (Barry Boehm):
+They are carried out at every stage of the software process, from requirements reviews to final testing.
+
+**Verification** is the process of checking that the software (and each work product: requirements, design and code) **conforms to its specification** and to the standards.
+
+It answers the question (Barry Boehm):
 
 > **"Are we building the product right?"**
 
-**Validation** is the process of checking that the finished software **meets the real needs and expectations of the customer** in its intended environment. It answers the question:
+**Validation** is the process of checking that the finished software **meets the real needs and expectations of the customer** in its intended environment.
+
+It answers the question:
 
 > **"Are we building the right product?"**
 
@@ -66,7 +72,9 @@ Quality assurance is explained in [Reliability and Quality Assurance](/topics/so
 
 ### Definition of Software Testing
 
-Software testing is the process of **executing a program with test data** to find errors, and to check whether the software meets its specified requirements. Its aim is to find defects — bugs, missing requirements and differences between expected and actual results — before the software is delivered.
+Software testing is the process of **executing a program with test data** to find errors, and to check whether the software meets its specified requirements.
+
+Its aim is to find defects — bugs, missing requirements and differences between expected and actual results — before the software is delivered.
 
 ### Objectives of Software Testing
 
@@ -238,7 +246,9 @@ Testing is also classified into functional and non-functional testing:
 
 ### Software Analysis (Static Analysis)
 
-Software analysis is the verification of software by **examining** the program and its documents, **without executing** it, to find errors and prove properties. It complements testing: testing executes the program for a few inputs, while analysis reasons about all possible executions.
+Software analysis is the verification of software by **examining** the program and its documents, **without executing** it, to find errors and prove properties.
+
+It complements testing: testing executes the program for a few inputs, while analysis reasons about all possible executions.
 
 Analysis techniques are of two kinds:
 
@@ -259,11 +269,15 @@ Analysis techniques are of two kinds:
 
 #### Walkthrough
 
-A walkthrough is an **informal review** in which the **author** leads a small group of colleagues through a work product (such as code or a design), explaining it step by step, while the others ask questions and point out possible defects. Its purpose is to find errors and share knowledge; it has no checklist and little or no preparation.
+A walkthrough is an **informal review** in which the **author** leads a small group of colleagues through a work product (such as code or a design), explaining it step by step, while the others ask questions and point out possible defects.
+
+Its purpose is to find errors and share knowledge; it has no checklist and little or no preparation.
 
 #### Inspection
 
-An inspection (Fagan inspection) is a **formal, rigorous group review** that uses a **checklist** of common errors to find defects as close as possible to where they were introduced. It has defined roles and stages:
+An inspection (Fagan inspection) is a **formal, rigorous group review** that uses a **checklist** of common errors to find defects as close as possible to where they were introduced.
+
+It has defined roles and stages:
 
 The roles in an inspection are:
 
@@ -317,7 +331,9 @@ Automated static analysers are tools that scan the source code without running i
 
 #### Definition of Debugging
 
-Debugging is the process of **locating, analyzing and removing the cause of an error (bug)** that has been revealed, usually by testing. Testing shows that a failure exists; debugging finds **why** it occurs and **fixes** it.
+Debugging is the process of **locating, analyzing and removing the cause of an error (bug)** that has been revealed, usually by testing.
+
+Testing shows that a failure exists; debugging finds **why** it occurs and **fixes** it.
 
 #### Steps of Debugging
 
@@ -382,10 +398,6 @@ The main debugging approaches are:
 - [Software Testing Tutorial](https://www.tpointtech.com/software-testing-tutorial) — accessed 2026-11-04 (types of testing, black-box and white-box techniques; it misspells "equivalence partitioning" and lists "visual box testing", which is not a testing method)
 - [Debugging](https://www.tpointtech.com/debugging) — accessed 2026-11-04 (debugging steps, backward and forward analysis, tools)
 - [Testing vs Debugging](https://www.tpointtech.com/testing-vs-debugging) — accessed 2026-11-04 (debugging approaches by induction, deduction and brute force; it says debugging "cannot be automated" and is "not a part of SDLC", which are overstatements — debugging is part of development and is helped by automated tools)
-
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-04 (definition and benefits of testing; error, defect, bug, fault and failure; manual and automation testing; white-, black- and grey-box testing; functional and non-functional testing; alpha, beta, ad-hoc and compatibility testing. Its verification vs validation table says verification checks performance, load and security and validation checks market needs and pricing; these are not the standard meanings, so the definitions of GeeksforGeeks and TutorialsPoint are used here)
 
 **Programiz**
 

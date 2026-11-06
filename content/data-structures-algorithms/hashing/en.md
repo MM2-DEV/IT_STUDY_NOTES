@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Hashing
 
-**Hashing** is a technique that **maps a key directly to a location (index)** in a table by using a **hash function**. Because the location is computed from the key, an element can be inserted, searched or deleted in **O(1) time on average**, without comparing the key with many other keys (as linear or binary search must).
+**Hashing** is a technique that **maps a key directly to a location (index)** in a table by using a **hash function**.
+
+Because the location is computed from the key, an element can be inserted, searched or deleted in **O(1) time on average**, without comparing the key with many other keys (as linear or binary search must).
 
 **Terms:**
 
@@ -59,7 +61,7 @@ There are two types of hashing, depending on whether the number of buckets can c
 
 #### 1. Static Hashing
 
-In **static hashing**, the **number of buckets is fixed** for the lifetime of the database, and the hash function always maps a given key to the **same bucket address**.
+**Static hashing** is a hashing technique in which the **number of buckets is fixed** for the lifetime of the database, and the hash function always maps a given key to the **same bucket address**.
 
 **Example:** with h(key) = key mod 5 there are five buckets, 0 to 4. The record with EMP_ID 103 goes to bucket 103 mod 5 = **3**; EMP_IDs 101, 102, 103, 104 and 105 go to buckets 1, 2, 3, 4 and 0.
 
@@ -79,7 +81,9 @@ In **static hashing**, the **number of buckets is fixed** for the lifetime of th
 
 #### 2. Dynamic Hashing
 
-In **dynamic hashing**, **buckets are added and removed dynamically** as the data grows and shrinks. It solves the **bucket overflow** problem of static hashing. The best-known form is **extendible hashing**.
+**Dynamic hashing** is a hashing technique in which **buckets are added and removed dynamically** as the data grows and shrinks.
+
+It solves the **bucket overflow** problem of static hashing. The best-known form is **extendible hashing**.
 
 **Extendible hashing:**
 
@@ -112,7 +116,9 @@ In **dynamic hashing**, **buckets are added and removed dynamically** as the dat
 
 ### Collision
 
-A **collision** occurs when **two or more different keys produce the same hash value** and so compete for the same slot. For example, with h(k) = k mod 7, the keys 50, 85 and 92 all hash to slot 1. Collisions cannot be avoided completely when there are more possible keys than slots, so a hash table needs a **collision resolution technique**.
+**A collision** is the situation in which **two or more different keys produce the same hash value** and so compete for the same slot.
+
+For example, with h(k) = k mod 7, the keys 50, 85 and 92 all hash to slot 1. Collisions cannot be avoided completely when there are more possible keys than slots, so a hash table needs a **collision resolution technique**.
 
 Collision resolution techniques are of two types:
 

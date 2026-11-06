@@ -19,7 +19,9 @@ Three of these principles — modularity, abstraction and generality — are exp
 
 ### Modularity
 
-Modularity is the principle of dividing a complex system into smaller, separately named and addressable parts called modules, which are developed separately and then integrated to form the complete system. The process of dividing a system into modules is called modularization.
+Modularity is the principle of dividing a complex system into smaller, separately named and addressable parts called modules, which are developed separately and then integrated to form the complete system.
+
+The process of dividing a system into modules is called modularization.
 
 A module is a well-defined part of a system that performs a specific task, such as a function, a procedure, a class or a package. Modularity is an application of the principle of separation of concerns: each module deals with one concern, so each part can be understood, built and changed on its own. It is the property that makes a large program intellectually manageable.
 
@@ -93,7 +95,9 @@ Coupling is of six types, from the best (lowest) to the worst (highest):
 
 ### Abstraction
 
-Abstraction is the principle of identifying the important aspects of a problem and ignoring its unimportant details. It lets the designer think about a component in terms of what it does, without considering how it is implemented.
+Abstraction is the principle of identifying the important aspects of a problem and ignoring its unimportant details.
+
+It lets the designer think about a component in terms of what it does, without considering how it is implemented.
 
 1. The choice of what to keep and what to ignore depends on the purpose; the same system can be described by different abstractions for different people. For example, a car driver needs the steering wheel, pedals and gears, while a mechanic needs the engine and the brakes.
 2. Models, specifications and designs are all abstractions of the final system.
@@ -116,7 +120,9 @@ Software design proceeds through three levels of abstraction, from the most abst
 
 ### Generality
 
-Generality is the principle that, when a problem must be solved, the designer should look for the more general problem that lies behind it, because a solution to the general problem is likely to be reusable. A general solution may also be simpler than a special one, or it may already be available as an existing component or package.
+Generality is the principle that, when a problem must be solved, the designer should look for the more general problem that lies behind it, because a solution to the general problem is likely to be reusable.
+
+A general solution may also be simpler than a special one, or it may already be available as an existing component or package.
 
 1. **Example:** instead of writing a program that merges two particular files sorted by customer number, the designer can write a general merge routine that merges any two sorted files on any key. The general routine can be reused in other programs.
 2. **Benefits:** generality increases reusability, and a general module can be used in many applications; this is why general-purpose software such as database systems, spreadsheets and libraries are widely used.
@@ -141,11 +147,15 @@ These are three approaches (paradigms) to software design and development:
 
 ### Structured Design
 
-Structured design is a design approach in which the problem is broken down into smaller, well-organized parts (modules) by the principle of divide and conquer, and each part is solved separately until the whole problem is solved. The modules are arranged in a hierarchy and communicate with each other; a good structured design has high cohesion and low coupling.
+Structured design is a design approach in which the problem is broken down into smaller, well-organized parts (modules) by the principle of divide and conquer, and each part is solved separately until the whole problem is solved.
+
+The modules are arranged in a hierarchy and communicate with each other; a good structured design has high cohesion and low coupling.
 
 #### Function-Oriented Design
 
-Function-oriented design is the form of structured design in which the system is viewed as a set of functions, each of which performs a significant task. The top-level function (the whole system) is broken down into smaller and smaller functions (top-down decomposition).
+Function-oriented design is the form of structured design in which the system is viewed as a set of functions, each of which performs a significant task.
+
+The top-level function (the whole system) is broken down into smaller and smaller functions (top-down decomposition).
 
 1. The functions share data by passing parameters or through global data.
 2. The details of each function are hidden behind its interface (functional abstraction).
@@ -174,7 +184,9 @@ In practice, a combination of both strategies is used.
 
 ### Object-Oriented Design
 
-Object-oriented design (OOD) is a design approach in which the system is viewed as a collection of objects that interact with each other. Each object contains its own data (attributes) and the operations (methods) that act on that data, so the state of the system is distributed among the objects instead of being stored in global data.
+Object-oriented design (OOD) is a design approach in which the system is viewed as a collection of objects that interact with each other.
+
+Each object contains its own data (attributes) and the operations (methods) that act on that data, so the state of the system is distributed among the objects instead of being stored in global data.
 
 #### Concepts of Object-Oriented Design
 
@@ -284,10 +296,6 @@ A software component is a self-contained, independently deployable unit of softw
 - [Function Oriented Design](https://www.tpointtech.com/software-engineering-function-oriented-design) — accessed 2026-11-03 (design notations)
 - [Object Oriented Design](https://www.tpointtech.com/software-engineering-object-oriented-design) — accessed 2026-11-03
 - [Component-Based Software Engineering](https://www.tpointtech.com/component-based-software-engineering) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-03 (key design principles; types of coupling and cohesion. Its cohesion list leaves out logical cohesion, and its coupling list has twelve items, several of which — such as "data-content", "semantic" and "functional" coupling — are not part of the standard classification; the standard six types of coupling and seven types of cohesion given by TutorialsPoint and GeeksforGeeks are used here)
 
 **Programiz**
 

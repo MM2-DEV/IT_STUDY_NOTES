@@ -33,6 +33,7 @@ The main legal issues in e-commerce are:
    - **Patent** — protects inventions, including some technical processes.
    - **Trade secrets** — confidential business information.
    - **Domain names and cybersquatting** — registering a domain name that is the same as, or similar to, another party's trademark in bad faith, to sell it at a high price or to mislead customers.
+
    A website must protect its own intellectual property and must not violate the rights of others, especially when users upload content.
 5. **Privacy and data protection** — the collection, storage, use and sharing of customers' personal data (names, addresses, card details, browsing history) must be lawful, and customers must be told how their data is used (a **privacy policy**). Laws such as the EU's GDPR impose heavy fines for misuse.
 6. **Consumer protection** — buyers must be protected from **fake products, misleading advertisements, wrong descriptions, non-delivery, late delivery and refusal of refunds**; sellers must give correct information about the product, price and seller, and must handle complaints.
@@ -96,10 +97,6 @@ Other ethical issues in e-commerce are:
 
 - [What is Cyber Law](https://www.tpointtech.com/what-is-cyber-law) — accessed 2026-11-06 (definition, copyright, data protection, trade secrets, CFAA 1986). Its advice to use "WPA or WEP" for wireless security is outdated (WEP is insecure; WPA2 or WPA3 should be used), and it is not used here.
 - [What is Credit Card Fraud](https://www.tpointtech.com/what-is-credit-card-fraud) — accessed 2026-11-06 (card-not-present fraud in e-commerce)
-
-**IT Job QnS**
-
-- IT Job QnS has no page on legal and ethical issues in e-commerce (checked 2026-11-06).
 
 **Programiz**
 

@@ -148,7 +148,8 @@
       "order": 10,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -156,7 +157,8 @@
           "title": "Learning in Symbolic and Non-Symbolic Representation",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]
@@ -197,7 +199,8 @@
       "title": "Big Data Technologies",
       "order": 12,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -225,7 +228,8 @@
           "id": "nosql-databases",
           "title": "NoSQL Databases",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         }
       ]
@@ -235,14 +239,16 @@
       "title": "Data Warehousing and Analytics",
       "order": 13,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "data-warehouse-concepts",
           "title": "Data Warehouse Concepts",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
@@ -250,6 +256,13 @@
           "title": "Data Analytics",
           "exams": [
             "Others"
+          ]
+        },
+        {
+          "id": "data-lake-vs-data-warehouse",
+          "title": "Data Lake vs Data Warehouse",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -283,14 +296,16 @@
       "title": "Cloud Service Models",
       "order": 15,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "iaas-paas-saas",
           "title": "IaaS, PaaS, SaaS",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         }
       ]
@@ -300,14 +315,16 @@
       "title": "Cloud Deployment Models",
       "order": 16,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "public-private-hybrid-and-community-clouds",
           "title": "Public, Private, Hybrid and Community Clouds",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         }
       ]
@@ -317,21 +334,24 @@
       "title": "Virtualization",
       "order": 17,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "virtual-machines-and-hypervisors-type-1-and-type-2",
           "title": "Virtual Machines and Hypervisors (Type 1 and Type 2)",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
           "id": "containers",
           "title": "Containers",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         }
       ]
@@ -341,21 +361,166 @@
       "title": "Cloud Security and Related Computing Models",
       "order": 18,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "cloud-security-issues",
           "title": "Cloud Security Issues",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
           "id": "edge-and-fog-computing",
           "title": "Edge and Fog Computing",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cloud-infrastructure-and-operations",
+      "title": "Cloud Infrastructure and Operations",
+      "order": 19,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "cloud-service-providers-aws-microsoft-azure-and-google-cloud",
+          "title": "Cloud Service Providers: AWS, Microsoft Azure and Google Cloud",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "content-delivery-network-cdn",
+          "title": "Content Delivery Network (CDN)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "role-of-apis-in-cloud-computing",
+          "title": "Role of APIs in Cloud Computing",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "docker-and-kubernetes",
+          "title": "Docker and Kubernetes",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "load-balancing-and-auto-scaling",
+          "title": "Load Balancing and Auto Scaling",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "cloud-bursting",
+          "title": "Cloud Bursting",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "data-privacy-and-data-sovereignty",
+          "title": "Data Privacy and Data Sovereignty",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "green-cloud-computing",
+          "title": "Green Cloud Computing",
+          "exams": [
+            "Bank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "machine-learning-fundamentals",
+      "title": "Machine Learning Fundamentals",
+      "order": 20,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "classification-vs-regression",
+          "title": "Classification vs Regression",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "supervised-vs-unsupervised-learning",
+          "title": "Supervised vs Unsupervised Learning",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "overfitting-and-underfitting",
+          "title": "Overfitting and Underfitting",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "gradient-descent",
+          "title": "Gradient Descent",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "linear-regression",
+          "title": "Linear Regression",
+          "exams": [
+            "Bank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "generative-ai-and-llms",
+      "title": "Generative AI and Large Language Models",
+      "order": 21,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "generative-ai",
+          "title": "Generative AI",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "large-language-models-llms-and-transformers",
+          "title": "Large Language Models (LLMs) and Transformers",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "prompt-engineering",
+          "title": "Prompt Engineering",
+          "exams": [
+            "Bank"
           ]
         }
       ]

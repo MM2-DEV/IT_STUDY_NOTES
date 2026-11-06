@@ -1,0 +1,229 @@
+{
+  "title": "CSS",
+  "order": 3,
+  "topics": [
+    {
+      "slug": "css-basics-and-the-cascade",
+      "title": "CSS Basics and the Cascade",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "ways-to-add-css-inline-internal-and-external",
+          "title": "Ways to Add CSS: Inline, Internal and External",
+          "exams": []
+        },
+        {
+          "id": "selectors-and-combinators",
+          "title": "Selectors and Combinators",
+          "exams": []
+        },
+        {
+          "id": "specificity-and-the-cascade",
+          "title": "Specificity and the Cascade",
+          "exams": []
+        },
+        {
+          "id": "inheritance",
+          "title": "Inheritance",
+          "exams": []
+        },
+        {
+          "id": "colors-backgrounds-and-gradients",
+          "title": "Colors, Backgrounds and Gradients",
+          "exams": []
+        },
+        {
+          "id": "units-px-em-rem-vw-and-vh",
+          "title": "Units: px, %, em, rem, vw and vh",
+          "exams": []
+        },
+        {
+          "id": "typography-and-web-fonts",
+          "title": "Typography and Web Fonts",
+          "exams": []
+        },
+        {
+          "id": "pseudo-classes-and-pseudo-elements",
+          "title": "Pseudo-Classes and Pseudo-Elements",
+          "exams": []
+        },
+        {
+          "id": "css-variables-custom-properties",
+          "title": "CSS Variables (Custom Properties)",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "box-model-and-positioning",
+      "title": "Box Model and Positioning",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "box-model",
+          "title": "Box Model",
+          "exams": []
+        },
+        {
+          "id": "width-height-margin-padding-and-border",
+          "title": "Width, Height, Margin, Padding and Border",
+          "exams": []
+        },
+        {
+          "id": "display-property-and-normal-flow",
+          "title": "Display Property and Normal Flow",
+          "exams": []
+        },
+        {
+          "id": "positioning-static-relative-absolute-fixed-and-sticky",
+          "title": "Positioning: Static, Relative, Absolute, Fixed and Sticky",
+          "exams": []
+        },
+        {
+          "id": "overflow-stacking-context-and-z-index",
+          "title": "Overflow, Stacking Context and z-index",
+          "exams": []
+        },
+        {
+          "id": "borders-shadows-and-outlines",
+          "title": "Borders, Shadows and Outlines",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "flexbox-and-grid",
+      "title": "Flexbox and Grid",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "flexbox",
+          "title": "Flexbox",
+          "exams": []
+        },
+        {
+          "id": "css-grid",
+          "title": "CSS Grid",
+          "exams": []
+        },
+        {
+          "id": "flexbox-vs-grid",
+          "title": "Flexbox vs Grid",
+          "exams": []
+        },
+        {
+          "id": "common-layout-patterns",
+          "title": "Common Layout Patterns",
+          "exams": []
+        },
+        {
+          "id": "css-functions-calc-min-max-and-clamp",
+          "title": "CSS Functions: calc(), min(), max() and clamp()",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "responsive-design",
+      "title": "Responsive Design",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "responsive-design-principles",
+          "title": "Responsive Design Principles",
+          "exams": []
+        },
+        {
+          "id": "media-queries",
+          "title": "Media Queries",
+          "exams": []
+        },
+        {
+          "id": "mobile-first-design",
+          "title": "Mobile-First Design",
+          "exams": []
+        },
+        {
+          "id": "responsive-images",
+          "title": "Responsive Images",
+          "exams": []
+        },
+        {
+          "id": "container-queries",
+          "title": "Container Queries",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "transitions-and-animations",
+      "title": "Transitions and Animations",
+      "order": 5,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "transitions",
+          "title": "Transitions",
+          "exams": []
+        },
+        {
+          "id": "transforms",
+          "title": "Transforms",
+          "exams": []
+        },
+        {
+          "id": "keyframe-animations",
+          "title": "Keyframe Animations",
+          "exams": []
+        },
+        {
+          "id": "reduced-motion-and-animation-performance",
+          "title": "Reduced Motion and Animation Performance",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "css-architecture-and-tailwind",
+      "title": "CSS Architecture and Tailwind CSS",
+      "order": 6,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "css-architecture-and-reusable-styles",
+          "title": "CSS Architecture and Reusable Styles",
+          "exams": []
+        },
+        {
+          "id": "bem-naming-convention",
+          "title": "BEM Naming Convention",
+          "exams": []
+        },
+        {
+          "id": "css-modules",
+          "title": "CSS Modules",
+          "exams": []
+        },
+        {
+          "id": "sass-and-scss-fundamentals",
+          "title": "Sass and SCSS Fundamentals",
+          "exams": []
+        },
+        {
+          "id": "utility-first-css-and-tailwind-css",
+          "title": "Utility-First CSS and Tailwind CSS",
+          "exams": []
+        },
+        {
+          "id": "cross-browser-compatibility",
+          "title": "Cross-Browser Compatibility",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

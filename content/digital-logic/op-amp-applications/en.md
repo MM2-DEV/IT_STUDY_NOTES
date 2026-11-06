@@ -3,7 +3,9 @@ description: The operational amplifier, op-amp circuits that drive LED and LCD d
 updated: 2026-11-01
 ---
 
-**Operational amplifier (op-amp):** an op-amp is a **direct-coupled, very high-gain amplifier** made as an integrated circuit. It works with both AC and DC signals and is used for linear operations (amplifying, adding, integrating) and non-linear operations (comparing, switching). The **IC 741** is the best-known general-purpose op-amp.
+**Operational amplifier (op-amp):** an op-amp is a **direct-coupled, very high-gain amplifier** made as an integrated circuit.
+
+It works with both AC and DC signals and is used for linear operations (amplifying, adding, integrating) and non-linear operations (comparing, switching). The **IC 741** is the best-known general-purpose op-amp.
 
 **Terminals:** an op-amp is drawn as a triangle with two inputs and one output:
 
@@ -29,7 +31,9 @@ Op-amps (mostly working as comparators; see [Comparators](#comparators)) are use
 
 ### LED (Light-Emitting Diode)
 
-**Definition:** an LED is a semiconductor diode that **emits light when a forward current flows** through it. It is driven through a **current-limiting resistor** so that the current stays safe. LEDs are used as indicator lamps, in [seven-segment displays](/topics/digital-logic/combinational-circuits#seven-segment-decoder-and-display) and in bar-graph displays.
+**Definition:** an LED is a semiconductor diode that **emits light when a forward current flows** through it.
+
+It is driven through a **current-limiting resistor** so that the current stays safe. LEDs are used as indicator lamps, in [seven-segment displays](/topics/digital-logic/combinational-circuits#seven-segment-decoder-and-display) and in bar-graph displays.
 
 ### Op-Amp Driving an LED (Threshold Indicator)
 
@@ -89,7 +93,9 @@ So an LCD **does not produce light**; it controls light passing through it (or r
 
 ## Comparators {#comparators}
 
-**Definition:** a comparator is a circuit that **compares two input voltages** and gives an output that shows **which one is greater**. An op-amp used **in open loop** (without negative feedback) is a comparator: one input receives the signal Vi and the other a **reference voltage Vref**, and the output saturates at **+Vsat** or **−Vsat**. A comparator is a **non-linear** application of the op-amp.
+**Definition:** a comparator is a circuit that **compares two input voltages** and gives an output that shows **which one is greater**.
+
+An op-amp used **in open loop** (without negative feedback) is a comparator: one input receives the signal Vi and the other a **reference voltage Vref**, and the output saturates at **+Vsat** or **−Vsat**. A comparator is a **non-linear** application of the op-amp.
 
 **Note:** this analog comparator is different from the digital [magnitude comparator](/topics/digital-logic/combinational-circuits#comparator), which compares two binary numbers using logic gates.
 
@@ -106,7 +112,9 @@ So an LCD **does not produce light**; it controls light passing through it (or r
 
 ### Zero-Crossing Detector
 
-**Definition:** a comparator with **Vref = 0 V** is called a **zero-crossing detector**. Its output **changes state every time the input crosses zero volts**.
+**Definition:** a comparator with **Vref = 0 V** is called a **zero-crossing detector**.
+
+Its output **changes state every time the input crosses zero volts**.
 
 1. **Non-inverting zero-crossing detector:** output +Vsat during the positive half-cycles of the input and −Vsat during the negative half-cycles.
 2. **Inverting zero-crossing detector:** the opposite (−Vsat during positive half-cycles, +Vsat during negative half-cycles).
@@ -119,7 +127,9 @@ So an LCD **does not produce light**; it controls light passing through it (or r
 
 **Problem with a simple comparator:** if a **noisy** input stays close to the reference level, the noise makes it cross the reference many times, and the output switches back and forth (false triggering).
 
-**Definition:** a **Schmitt trigger** is a **comparator with positive feedback**, which gives it **two threshold voltages**: an **upper threshold voltage VUT** and a **lower threshold voltage VLT**. The output changes state only when the input rises above VUT or falls below VLT; between the two thresholds, the output does not change. This property is called **hysteresis**.
+**Definition:** a **Schmitt trigger** is a **comparator with positive feedback**, which gives it **two threshold voltages**: an **upper threshold voltage VUT** and a **lower threshold voltage VLT**.
+
+The output changes state only when the input rises above VUT or falls below VLT; between the two thresholds, the output does not change. This property is called **hysteresis**.
 
 **Inverting Schmitt trigger:** the input goes to the − input, and a voltage divider (R2 from the output to the + input, and R1 from the + input to ground) feeds a fraction of the output back to the + input:
 

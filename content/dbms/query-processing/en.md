@@ -123,7 +123,9 @@ Sorting is needed for queries with **ORDER BY**, and it is used inside other ope
 
 ### External Sort-Merge Algorithm
 
-External sort-merge sorts a relation that does not fit into the M available memory blocks in two stages:
+**External sort-merge** is the sorting algorithm used for a relation that does not fit into the M available memory blocks.
+
+It works in two stages:
 
 1. **Create sorted runs:** read **M blocks** of the relation at a time into memory, **sort them in memory** and write them back as a sorted file called a **run**. This produces **⌈bᵣ ÷ M⌉ runs**.
 2. **Merge the runs:** use **M − 1 blocks as input buffers** (one for each run) and **1 block as an output buffer**; repeatedly output the smallest first record among the buffers, reading the next block of a run when its buffer becomes empty. If there are more than M − 1 runs, several **merge passes** are needed; each pass merges groups of M − 1 runs and reduces the number of runs by a factor of M − 1.
@@ -216,7 +218,7 @@ A query usually contains several operations. The results of one operation are pa
 
 ### Materialization
 
-In materialized evaluation, **each operation is evaluated separately**, starting from the lowest level of the query tree, and **its result is stored (materialized) in a temporary relation** on disk, which is then **read as input by the next operation**.
+**Materialized evaluation (materialization)** is the method of evaluating a query expression in which **each operation is evaluated separately**, starting from the lowest level of the query tree, and **its result is stored (materialized) in a temporary relation** on disk, which is then **read as input by the next operation**.
 
 1. It is always applicable and easy to implement.
 2. **Cost** = the cost of all the operations **plus** the cost of **writing and reading the temporary relations**: writing a result of nᵣ tuples with blocking factor fᵣ takes ⌈nᵣ ÷ fᵣ⌉ block writes.
@@ -224,7 +226,9 @@ In materialized evaluation, **each operation is evaluated separately**, starting
 
 ### Pipelining
 
-In pipelined evaluation, **several operations are evaluated at the same time**, and **the result tuples of one operation are passed directly to the next operation** as they are produced, **without storing temporary relations** on disk. For example, in π name (σ cgpa>3.5 (Student)), each tuple selected by σ is passed immediately to π.
+**Pipelined evaluation (pipelining)** is the method of evaluating a query expression in which **several operations are evaluated at the same time**, and **the result tuples of one operation are passed directly to the next operation** as they are produced, **without storing temporary relations** on disk.
+
+For example, in π name (σ cgpa>3.5 (Student)), each tuple selected by σ is passed immediately to π.
 
 1. **Advantages:** removes the cost of writing and reading temporary relations; the first results reach the user quickly.
 2. **Limitation:** not possible for **blocking operations** — those that need **all their input before producing output**, such as sorting, aggregation and the build phase of hash join.
@@ -265,10 +269,6 @@ In pipelined evaluation, **several operations are evaluated at the same time**, 
 - [Selection Operation in Query Processing](https://www.tpointtech.com/selection-operation-in-query-processing) — accessed 2026-11-06 (file scan, linear search and index-based costs)
 - [External Sort-Merge](https://www.tpointtech.com/external-sort-merge-algorithm), [Nested-Loop Join](https://www.tpointtech.com/nested-loop-join-algorithm), [Merge Join](https://www.tpointtech.com/merge-join-algorithm) and [Hash Join](https://www.tpointtech.com/hash-join-algorithm) — accessed 2026-11-06
 - [Evaluation of Expressions](https://www.tpointtech.com/evaluation-of-expressions), [Materialization](https://www.tpointtech.com/materialization-in-query-processing), [Pipelining](https://www.tpointtech.com/pipelining-in-query-processing) and [Implementation of Pipelining](https://www.tpointtech.com/implementation-of-pipelining) — accessed 2026-11-06 (demand-driven and producer-driven pipelining, iterators)
-
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (its syllabus lists "Query processing: various notations, cost estimation of selection operation and join operation"; it has no notes on the topic)
 
 **Programiz**
 

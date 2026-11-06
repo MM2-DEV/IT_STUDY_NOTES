@@ -1,0 +1,115 @@
+{
+  "title": "Professional Practices",
+  "order": 24,
+  "topics": [
+    {
+      "slug": "working-in-a-team",
+      "title": "Working in a Software Team",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "software-development-lifecycle-in-practice",
+          "title": "Software Development Lifecycle in Practice",
+          "exams": []
+        },
+        {
+          "id": "requirement-gathering-and-clarification",
+          "title": "Requirement Gathering and Clarification",
+          "exams": []
+        },
+        {
+          "id": "breaking-work-into-tasks",
+          "title": "Breaking Work into Tasks",
+          "exams": []
+        },
+        {
+          "id": "estimation-and-prioritization",
+          "title": "Estimation and Prioritization",
+          "exams": []
+        },
+        {
+          "id": "agile-and-scrum",
+          "title": "Agile and Scrum",
+          "exams": []
+        },
+        {
+          "id": "issue-trackers-such-as-jira",
+          "title": "Issue Trackers such as Jira",
+          "exams": []
+        },
+        {
+          "id": "pair-programming",
+          "title": "Pair Programming",
+          "exams": []
+        },
+        {
+          "id": "communication-in-engineering-teams",
+          "title": "Communication in Engineering Teams",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "code-review-and-documentation",
+      "title": "Code Review and Documentation",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "code-review-practices",
+          "title": "Code Review Practices",
+          "exams": []
+        },
+        {
+          "id": "giving-and-receiving-feedback",
+          "title": "Giving and Receiving Feedback",
+          "exams": []
+        },
+        {
+          "id": "technical-documentation",
+          "title": "Technical Documentation",
+          "exams": []
+        },
+        {
+          "id": "architecture-decision-records",
+          "title": "Architecture Decision Records",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "releases-and-maintenance",
+      "title": "Releases and Maintenance",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "release-management",
+          "title": "Release Management",
+          "exams": []
+        },
+        {
+          "id": "semantic-versioning",
+          "title": "Semantic Versioning",
+          "exams": []
+        },
+        {
+          "id": "changelogs",
+          "title": "Changelogs",
+          "exams": []
+        },
+        {
+          "id": "technical-debt-management",
+          "title": "Technical Debt Management",
+          "exams": []
+        },
+        {
+          "id": "working-with-legacy-systems",
+          "title": "Working with Legacy Systems",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

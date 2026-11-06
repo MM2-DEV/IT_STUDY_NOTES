@@ -7,9 +7,11 @@ updated: 2026-11-01
 
 ### Asynchronous Sequential Circuits
 
-**Synchronous sequential circuits** (for example, clocked counters and registers) change state only at the clock pulses, so they operate in **pulse mode** with the clock as the timing signal (see [Flip-Flops](/topics/digital-logic/flip-flops)).
+**Synchronous sequential circuits** (for example, clocked counters and registers) change state only at the clock pulses (see [Flip-Flops](/topics/digital-logic/flip-flops)). Asynchronous circuits have no clock and operate in **fundamental mode** or **pulse mode**.
 
-**Definition:** an **asynchronous sequential circuit** is a sequential circuit that has **no clock**. Its state changes **as soon as its inputs change**. It is a combinational circuit with **feedback**: some outputs (the next-state variables **Y**) are fed back as inputs (the present-state variables **y**). The memory of the circuit is the **delay (Δ)** of the feedback path, or un-clocked latches.
+**Definition:** an **asynchronous sequential circuit** is a sequential circuit that has **no clock**.
+
+Its state changes **as soon as its inputs change**. It is a combinational circuit with **feedback**: some outputs (the next-state variables **Y**) are fed back as inputs (the present-state variables **y**). The memory of the circuit is the **delay (Δ)** of the feedback path, or un-clocked latches.
 
 ![Model of an asynchronous sequential circuit: a combinational circuit whose next-state outputs are fed back through a delay](/diagrams/digital-logic/async-sequential-model.svg)
 
@@ -39,7 +41,9 @@ The memory elements are the **delays** in the feedback paths (or un-clocked latc
 
 #### 2. Pulse Mode
 
-**Definition:** an asynchronous circuit operates in **pulse mode** when its inputs are **pulses**, not levels, and there is **no clock**. The input pulses themselves supply the timing: they trigger the latches or flip-flops, doing the job that the clock does in a synchronous circuit. The restrictions are:
+**Definition:** an asynchronous circuit operates in **pulse mode** when its inputs are **pulses**, not levels, and there is **no clock**.
+
+The input pulses themselves supply the timing: they trigger the latches or flip-flops, doing the job that the clock does in a synchronous circuit. The restrictions are:
 
 1. **Only one input line has a pulse at a time** (pulses never occur on two inputs together).
 2. Each input pulse must be **long enough** to trigger the storage element, but must **end before the circuit settles** into its new state, so that one pulse causes only one change.
@@ -76,7 +80,9 @@ The storage elements are usually **latches or flip-flops** (for example, SR or T
 
 ### Pulse
 
-**Definition:** a **pulse** is a **unidirectional, non-sinusoidal** signal formed by a sudden change from a base value to a new value, which returns to the base value after a fixed time. A series of repeated pulses is a **pulse train**; its high and low levels represent ON (1) and OFF (0), so pulses are the signals of digital circuits.
+**Definition:** a **pulse** is a **unidirectional, non-sinusoidal** signal formed by a sudden change from a base value to a new value, which returns to the base value after a fixed time.
+
+A series of repeated pulses is a **pulse train**; its high and low levels represent ON (1) and OFF (0), so pulses are the signals of digital circuits.
 
 **Signal direction:**
 
@@ -101,7 +107,9 @@ The storage elements are usually **latches or flip-flops** (for example, SR or T
 
 ### Switches
 
-**Definition:** a **switch** is a device that **makes or breaks** an electrical circuit (connects or disconnects it). A switch has two states, ON (closed) and OFF (open), so it is the basic unit of digital (two-state) circuits. A good switch is **fast** and switches **without sparking**.
+**Definition:** a **switch** is a device that **makes or breaks** an electrical circuit (connects or disconnects it).
+
+A switch has two states, ON (closed) and OFF (open), so it is the basic unit of digital (two-state) circuits. A good switch is **fast** and switches **without sparking**.
 
 **Types of switches:**
 
@@ -134,7 +142,9 @@ In both the ON and OFF states, the power lost in the transistor is very small (e
 
 ## Multivibrators {#multivibrators}
 
-**Definition:** a multivibrator is a **two-stage switching circuit** (usually two transistors, each controlling the other through feedback) whose output switches between **two states**, high and low. It generates **non-sinusoidal** waveforms such as **square and rectangular** waves. The two states may be **stable** (the circuit stays there until triggered) or **quasi-stable** (the circuit stays there only for a time set by its RC components, and then leaves it by itself).
+**Definition:** a multivibrator is a **two-stage switching circuit** (usually two transistors, each controlling the other through feedback) whose output switches between **two states**, high and low.
+
+It generates **non-sinusoidal** waveforms such as **square and rectangular** waves. The two states may be **stable** (the circuit stays there until triggered) or **quasi-stable** (the circuit stays there only for a time set by its RC components, and then leaves it by itself).
 
 ### Types of Multivibrators
 
@@ -143,7 +153,6 @@ Multivibrators are of three types:
 1. **Astable multivibrator**
 2. **Monostable multivibrator**
 3. **Bistable multivibrator**
-
 
 | Type | Stable states | Quasi-stable states | Trigger needed | Output | Other name |
 | --- | --- | --- | --- | --- | --- |
@@ -211,7 +220,9 @@ Multivibrators are of three types:
 
 **Applications:** **memory elements** (storing binary information), **counters**, frequency division and registers.
 
-**Schmitt trigger:** an emitter-coupled form of the bistable circuit that switches its output **high when the input rises above an upper trigger point (UTP)** and **low when the input falls below a lower trigger point (LTP)**. Between the two points the output does not change (this is called **hysteresis**). It is used to **square up slow or noisy signals** and as a voltage-level detector.
+**Schmitt trigger:** an emitter-coupled form of the bistable circuit that switches its output **high when the input rises above an upper trigger point (UTP)** and **low when the input falls below a lower trigger point (LTP)**.
+
+Between the two points the output does not change (this is called **hysteresis**). It is used to **square up slow or noisy signals** and as a voltage-level detector.
 
 ### Differences Between the Three Multivibrators
 

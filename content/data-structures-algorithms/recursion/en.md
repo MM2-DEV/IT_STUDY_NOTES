@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Concept and Applications of Recursion {#concept-and-applications-of-recursion}
 
-**Definition:** recursion is a technique in which a **function calls itself**, either **directly** or **indirectly** (through another function), to solve a problem. A function that does this is a **recursive function**. Each call solves a **smaller instance of the same problem**, until the problem becomes simple enough to solve directly. (For writing recursive functions in C, see [C: Functions](/topics/programming/c-functions).)
+**Definition:** recursion is a technique in which a **function calls itself**, either **directly** or **indirectly** (through another function), to solve a problem.
+
+A function that does this is a **recursive function**. Each call solves a **smaller instance of the same problem**, until the problem becomes simple enough to solve directly. (For writing recursive functions in C, see [C: Functions](/topics/programming/c-functions).)
 
 ### Properties of a Recursive Function
 
@@ -199,6 +201,8 @@ The calls go down to the base case, then the results are multiplied on the way b
 3. **Limit:** factorials grow very fast; 13! = 6,227,020,800 already exceeds the range of a 32-bit `int`, so `long` (or larger) types are needed.
 
 ## Tower of Hanoi {#tower-of-hanoi}
+
+**The Tower of Hanoi** is a mathematical puzzle in which a stack of n discs of different sizes must be moved from one peg to another, using a third peg, by moving one disc at a time and never placing a larger disc on a smaller one.
 
 **The problem:** there are **three pegs (towers)**, say **A (source)**, **B (auxiliary)** and **C (destination)**, and **n discs** of different sizes stacked on peg A, the **largest at the bottom** and the smallest at the top. The task is to **move all the discs from A to C**, using B, following three rules:
 

@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### Definition of Software Quality
 
-Software quality is the degree to which a software product meets its specified requirements and the expectations of its users. In the traditional sense, a quality product is "fit for purpose": it does exactly what the users want it to do, which for software means that it satisfies the requirements written in the Software Requirements Specification (SRS).
+Software quality is the degree to which a software product meets its specified requirements and the expectations of its users.
+
+In the traditional sense, a quality product is "fit for purpose": it does exactly what the users want it to do, which for software means that it satisfies the requirements written in the Software Requirements Specification (SRS).
 
 Fitness for purpose alone is an incomplete definition. A program can be functionally correct and still be a poor-quality product if, for example, its user interface is hard to use or its code is difficult to maintain. Software quality therefore covers several qualities (attributes), such as correctness, reliability, usability, efficiency, maintainability and portability.
 
@@ -132,13 +134,17 @@ Software qualities are classified into product qualities and process qualities. 
 
 ### Product Qualities
 
-Product qualities are the qualities of the software product itself. They describe what the delivered software is like: for example, correctness, reliability, robustness, performance, usability, maintainability, reusability and portability.
+Product qualities are the qualities of the software product itself.
+
+They describe what the delivered software is like: for example, correctness, reliability, robustness, performance, usability, maintainability, reusability and portability.
 
 The product is more than the code delivered to the customer. It includes every artifact produced during development, such as the requirements specification, the design documents, the source code, the test data and the user manuals. These artifacts are used by different people, so a product has different qualities for different users: for example, end users care about usability and reliability, while maintainers care about understandability and maintainability.
 
 ### Process (Project) Qualities
 
-Process qualities are the qualities of the process (project) used to develop the software. They describe how the software is produced. The three main process qualities are:
+Process qualities are the qualities of the process (project) used to develop the software.
+
+They describe how the software is produced. The three main process qualities are:
 
 1. **Productivity** — the efficiency of the process: how much useful output (software) is produced for a given amount of effort. Productivity is often measured as size per unit of effort, for example lines of code or function points per person-month, although such measures must be used with care.
 2. **Timeliness** — the ability to deliver the product on time. A product that is delivered late may have lost its value, for example because a competitor has already released a similar product. Incremental delivery of the product helps achieve timeliness.
@@ -166,7 +172,9 @@ Product and process qualities are closely related, because the quality of a prod
 
 ### Correctness
 
-Correctness is the quality of software that behaves according to its specification. A program is functionally correct if it provides exactly the functions stated in its functional requirements specification (the SRS).
+Correctness is the quality of software that behaves according to its specification.
+
+A program is functionally correct if it provides exactly the functions stated in its functional requirements specification (the SRS).
 
 1. Correctness is an absolute (yes-or-no) quality: any deviation from the specification, however small, makes the software incorrect.
 2. Correctness is defined only with respect to a specification. If the specification is wrong or incomplete, a "correct" program can still fail to satisfy the user.
@@ -174,7 +182,9 @@ Correctness is the quality of software that behaves according to its specificati
 
 ### Robustness
 
-Robustness is the quality of software that behaves reasonably even in circumstances that its requirements specification did not anticipate. A robust program does not crash or produce disastrous results when it receives incorrect input data or when a hardware or other failure occurs; instead, it detects the problem, rejects or filters out the bad data, reports the error and continues working or stops safely.
+Robustness is the quality of software that behaves reasonably even in circumstances that its requirements specification did not anticipate.
+
+A robust program does not crash or produce disastrous results when it receives incorrect input data or when a hardware or other failure occurs; instead, it detects the problem, rejects or filters out the bad data, reports the error and continues working or stops safely.
 
 1. **Example:** a program that asks for a person's age should reject a negative number or a letter with an error message, instead of crashing or storing the invalid value.
 2. **Robustness vs correctness:** correctness concerns behaviour in the situations described by the specification; robustness concerns behaviour outside them. If a requirement (such as "reject invalid input") is written into the specification, it becomes a matter of correctness.
@@ -182,7 +192,9 @@ Robustness is the quality of software that behaves reasonably even in circumstan
 
 ### Usability
 
-Usability (user-friendliness) is the quality of software that its users find easy to learn and use. A usable product lets users of different skill levels, from novices to experts, invoke its functions easily.
+Usability (user-friendliness) is the quality of software that its users find easy to learn and use.
+
+A usable product lets users of different skill levels, from novices to experts, invoke its functions easily.
 
 1. Usability is subjective: what is friendly for an expert (for example, a command-line interface) may be difficult for a novice, who may prefer a graphical interface.
 2. The user interface strongly affects usability, but usability also depends on consistent behaviour, helpful error messages, documentation and predictable performance.
@@ -190,7 +202,9 @@ Usability (user-friendliness) is the quality of software that its users find eas
 
 ### Maintainability
 
-Maintainability is the quality of software that can be modified easily after it has been released. Maintenance includes fixing errors, adding new features and changing existing functions, and it often accounts for more than half of the total cost of software.
+Maintainability is the quality of software that can be modified easily after it has been released.
+
+Maintenance includes fixing errors, adding new features and changing existing functions, and it often accounts for more than half of the total cost of software.
 
 Maintainability has two parts:
 
@@ -207,7 +221,9 @@ Maintainability is improved by modular design, low coupling, clear documentation
 
 ### Portability
 
-Portability is the quality of software that can run in different environments with little or no modification. An environment includes the hardware platform, the operating system and other software with which the program works.
+Portability is the quality of software that can run in different environments with little or no modification.
+
+An environment includes the hardware platform, the operating system and other software with which the program works.
 
 1. **Example:** a Java program compiled to bytecode can run on any computer that has a Java Virtual Machine, whereas a C program must be recompiled for each platform.
 2. Portability is achieved by isolating environment-dependent parts (such as hardware access and operating-system calls) in a few modules, and by using standard languages and libraries.
@@ -398,10 +414,6 @@ An integrity value close to 1 means that the system is well protected against th
 - [Software Quality](https://www.tpointtech.com/software-engineering-software-quality) — accessed 2026-11-03 (fitness for purpose, quality factors, evolution from product assurance to process assurance)
 - [Software Quality Assurance](https://www.tpointtech.com/software-quality-assurance) — accessed 2026-11-03 (quality of design and quality of conformance, measurable quality characteristics)
 - [Characteristics of Software Engineering](https://www.tpointtech.com/characteristics-of-software-engineering) — accessed 2026-11-03 (usability, maintainability, portability)
-
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-03 (lists functionality, reliability, usability, efficiency, maintainability and portability as the qualities that testing checks; the page has no separate section on software qualities or quality measurement)
 
 **Programiz**
 

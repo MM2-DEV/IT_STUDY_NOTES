@@ -129,7 +129,9 @@ Head movement = 12 + 2 + 31 + 24 + 2 + 59 + 16 + **199** + 14 + 23 = **382 cylin
 
 (Shortcut: (199 − 53) + 199 + 37 = 146 + 199 + 37 = 382.)
 
-![C-SCAN head movement chart moving towards 199 with a return to 0](/diagrams/operating-systems/disk-cscan.svg) If the return seek is not counted (some books treat it as a fast jump), the movement is 382 − 199 = **183 cylinders** — always state which convention is used.
+![C-SCAN head movement chart moving towards 199 with a return to 0](/diagrams/operating-systems/disk-cscan.svg)
+
+If the return seek is not counted (some books treat it as a fast jump), the movement is 382 − 199 = **183 cylinders** — always state which convention is used.
 
 - **Advantages:** more uniform waiting time than SCAN; fair to the requests at both ends.
 - **Disadvantages:** extra movement to the end and back; more head movement than SCAN.
@@ -219,10 +221,6 @@ Average seek length for SSTF = 236 ÷ 8 = **29.5 cylinders**; for FCFS = 640 ÷ 
 
 - [Disk Scheduling in Operating Systems](https://www.tpointtech.com/os-disk-scheduling) — accessed 2026-11-03
 - [Numerical on Disk Scheduling Algorithms](https://www.tpointtech.com/os-numerical-on-disk-scheduling-algorithms) — accessed 2026-11-03 (its totals — FCFS 640, SSTF 236, SCAN 236, LOOK 208, C-SCAN 382, C-LOOK 322 — agree with these notes, but its printed request queue lists 64 and 38 where its working uses 67 and starts at 98)
-
-**IT Job QnS**
-
-- The IT Job QnS Operating System page has no disk-scheduling questions in its fetched text (checked 2026-11-03).
 
 **Programiz**
 

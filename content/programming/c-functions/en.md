@@ -5,7 +5,9 @@ updated: 2026-11-04
 
 ### Function
 
-**Definition:** a function is a **self-contained, named block of statements that performs a specific task**. It can receive values (**arguments**), process them and **return a result**. Every C program has at least one function, **`main()`**, where execution begins.
+**Definition:** a function is a **self-contained, named block of statements that performs a specific task**.
+
+It can receive values (**arguments**), process them and **return a result**. Every C program has at least one function, **`main()`**, where execution begins.
 
 **Advantages of functions:**
 
@@ -26,9 +28,13 @@ updated: 2026-11-04
 
 ### Differences Between Library Function and User-Defined Function
 
-**Library function:** a library function (also called a built-in or predefined function) is a function that is **already written and supplied with the C compiler** in the standard library; its prototype is declared in a **header file**, which must be included before the function is used. Examples: `printf()`, `scanf()`, `sqrt()`, `strlen()`.
+**Library function:** a library function (also called a built-in or predefined function) is a function that is **already written and supplied with the C compiler** in the standard library; its prototype is declared in a **header file**, which must be included before the function is used.
 
-**User-defined function:** a user-defined function is a function that the **programmer writes** for a particular task of the program, by declaring, defining and calling it. Examples: `sum()`, `square()`, `swap()`. (`main()` itself is a user-defined function.)
+Examples: `printf()`, `scanf()`, `sqrt()`, `strlen()`.
+
+**User-defined function:** a user-defined function is a function that the **programmer writes** for a particular task of the program, by declaring, defining and calling it.
+
+Examples: `sum()`, `square()`, `swap()`. (`main()` itself is a user-defined function.)
 
 ```c
 #include <stdio.h>
@@ -206,7 +212,9 @@ Output: `x = 9, y = 5`
 
 ### Recursion
 
-**Definition:** recursion is a technique in which a **function calls itself**, directly or indirectly. A recursive function solves a problem by reducing it to a **smaller version of the same problem**.
+**Definition:** recursion is a technique in which a **function calls itself**, directly or indirectly.
+
+A recursive function solves a problem by reducing it to a **smaller version of the same problem**.
 
 Every recursive function must have:
 
@@ -395,10 +403,6 @@ static = 3, auto = 1
 - [C Standard Library Functions](https://www.programiz.com/c-programming/library-function) — accessed 2026-11-04 (advantages of library functions, header files)
 - [C User-defined Functions](https://www.programiz.com/c-programming/c-user-defined-functions) — accessed 2026-11-04
 - [C Pass Addresses and Pointers to Functions](https://www.programiz.com/c-programming/c-pointer-functions) — accessed 2026-11-04 (call by reference)
-
-**IT Job QnS**
-
-- IT Job QnS has no page on library and user-defined functions or on call by value and call by reference (checked 2026-11-04).
 
 **Additional sources**
 

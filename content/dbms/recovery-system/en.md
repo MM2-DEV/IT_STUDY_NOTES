@@ -73,7 +73,9 @@ Shadow paging keeps **two page tables** during a transaction:
 
 ### Log
 
-The log is a **sequence of log records**, kept on **stable storage**, that records **all update activities** in the database. The main log records are:
+The log is a **sequence of log records**, kept on **stable storage**, that records **all update activities** in the database.
+
+The main log records are:
 
 1. **<Ti start>** — transaction Ti has started.
 2. **<Ti, X, V₁, V₂>** — Ti has written data item X; **V₁** is the **old value** (before the write) and **V₂** the **new value**.
@@ -169,7 +171,7 @@ Many books state the procedure with two lists, built by reading the log **backwa
 1. **Redo-list** — transactions with **<Ti start>** and **<Ti commit>** (or only <Ti commit>, if they were in the checkpoint list): their updates are **redone**.
 2. **Undo-list** — transactions with **<Ti start>** (or in the checkpoint list) but **no <Ti commit> or <Ti abort>**: their updates are **undone**.
 
-**Example log** (with T2 active at the checkpoint):
+**Example log** (with T1 and T2 active at the checkpoint):
 
 ```text
 <T1 start>
@@ -206,10 +208,6 @@ Final values: A = 60, B = 70, C = 90.
 - [Failure Classification](https://www.tpointtech.com/dbms-failure-classification) — accessed 2026-11-06. It labels the second cause of transaction failure "syntax error" but describes a system error (the DBMS aborting a transaction because of deadlock or unavailable resources).
 - [Log-Based Recovery](https://www.tpointtech.com/dbms-log-based-recovery) — accessed 2026-11-06 (write-ahead logging; the A, B, C example used above)
 - [Recovery with Concurrent Transaction](https://www.tpointtech.com/dbms-recovery-concurrent-transaction) and [Checkpoint](https://www.tpointtech.com/dbms-checkpoint) — accessed 2026-11-06. Its example log has a checkpoint without the list of active transactions, so T2's uncommitted write before the checkpoint would not be found by scanning only from the checkpoint; the checkpoint must record the active list, as in the example above.
-
-**IT Job QnS**
-
-- IT Job QnS has no page on recovery (checked 2026-11-06).
 
 **Programiz**
 

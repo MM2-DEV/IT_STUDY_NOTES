@@ -1,0 +1,130 @@
+{
+  "title": "Web Fundamentals",
+  "order": 1,
+  "topics": [
+    {
+      "slug": "how-the-web-works",
+      "title": "How the Web Works",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "client-server-architecture",
+          "title": "Client-Server Architecture",
+          "exams": []
+        },
+        {
+          "id": "ip-addresses-ports-domains-and-dns",
+          "title": "IP Addresses, Ports, Domains and DNS",
+          "exams": []
+        },
+        {
+          "id": "what-happens-when-you-type-a-url",
+          "title": "What Happens When You Type a URL",
+          "exams": []
+        },
+        {
+          "id": "what-a-web-server-does",
+          "title": "What a Web Server Does",
+          "exams": []
+        },
+        {
+          "id": "static-vs-dynamic-websites",
+          "title": "Static vs Dynamic Websites",
+          "exams": []
+        },
+        {
+          "id": "frontend-vs-backend",
+          "title": "Frontend vs Backend",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "http-and-https",
+      "title": "HTTP and HTTPS",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "http-and-https",
+          "title": "HTTP and HTTPS",
+          "exams": []
+        },
+        {
+          "id": "request-and-response-lifecycle",
+          "title": "Request and Response Lifecycle",
+          "exams": []
+        },
+        {
+          "id": "http-methods",
+          "title": "HTTP Methods",
+          "exams": []
+        },
+        {
+          "id": "http-status-codes",
+          "title": "HTTP Status Codes",
+          "exams": []
+        },
+        {
+          "id": "headers-query-parameters-path-parameters-and-request-bodies",
+          "title": "Headers, Query Parameters, Path Parameters and Request Bodies",
+          "exams": []
+        },
+        {
+          "id": "cookies-and-sessions",
+          "title": "Cookies and Sessions",
+          "exams": []
+        },
+        {
+          "id": "http-caching-headers",
+          "title": "HTTP Caching Headers",
+          "exams": []
+        },
+        {
+          "id": "http-1-1-http-2-and-http-3",
+          "title": "HTTP/1.1, HTTP/2 and HTTP/3",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "command-line-basics",
+      "title": "Command Line Basics",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "terminal-and-shell",
+          "title": "Terminal and Shell",
+          "exams": []
+        },
+        {
+          "id": "navigating-the-file-system",
+          "title": "Navigating the File System",
+          "exams": []
+        },
+        {
+          "id": "working-with-files-and-directories",
+          "title": "Working with Files and Directories",
+          "exams": []
+        },
+        {
+          "id": "pipes-and-redirection",
+          "title": "Pipes and Redirection",
+          "exams": []
+        },
+        {
+          "id": "environment-variables-and-path",
+          "title": "Environment Variables and PATH",
+          "exams": []
+        },
+        {
+          "id": "running-programs-and-scripts",
+          "title": "Running Programs and Scripts",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

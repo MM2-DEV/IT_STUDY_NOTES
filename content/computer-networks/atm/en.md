@@ -202,10 +202,6 @@ AAL5 adds an **8-byte trailer** (with a length field and a 32-bit CRC) to each p
 
 - [Asynchronous Transfer Mode (ATM) in Computer Network](https://www.tpointtech.com/asynchronous-transfer-mode-in-computer-network) — accessed 2026-11-06 (cell format, virtual paths, switching, applications such as ATM WANs and frame relay backbones). It says ATM carries traffic "with end-to-end encryption"; ATM provides end-to-end **quality of service**, not encryption.
 
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — checked 2026-11-06; ATM is mentioned only in the syllabus and in passing (transparent fragmentation); it has no item on ATM switches or the ATM protocol.
-
 **Programiz**
 
 - Programiz has no page on ATM (checked 2026-11-06).

@@ -7,7 +7,9 @@ updated: 2026-11-01
 
 ### Definition
 
-The **shortest path** from vertex u to vertex v in a **weighted graph** is the path from u to v with the **minimum total weight**, where the **length (weight) of a path** is the **sum of the weights** of its edges. (In an unweighted graph, it is the path with the fewest edges.)
+The **shortest path** from vertex u to vertex v in a **weighted graph** is the path from u to v with the **minimum total weight**, where the **length (weight) of a path** is the **sum of the weights** of its edges.
+
+(In an unweighted graph, it is the path with the fewest edges.)
 
 **Example uses:** finding the shortest or fastest route on a map (GPS), routing packets in computer networks (routing protocols), telephone networks, social networks (degrees of separation).
 
@@ -41,7 +43,9 @@ The algorithms differ in **the order in which they relax the edges**.
 
 ### 1. Dijkstra's Algorithm
 
-**Dijkstra's algorithm** finds the shortest paths from one source to all other vertices in a graph with **non-negative edge weights**. It was conceived by **Edsger W. Dijkstra** in **1956** and published in **1959**. It is a **greedy algorithm**: at each step it permanently selects the unvisited vertex with the **smallest known distance**.
+**Dijkstra's algorithm** is a greedy algorithm that finds the shortest paths from one source vertex to all other vertices in a graph with **non-negative edge weights**.
+
+It was conceived by **Edsger W. Dijkstra** in **1956** and published in **1959**. It is a **greedy algorithm**: at each step it permanently selects the unvisited vertex with the **smallest known distance**.
 
 **Algorithm:**
 
@@ -122,7 +126,9 @@ E: 7
 
 ### 2. Bellman–Ford Algorithm
 
-The **Bellman–Ford algorithm** also solves the single-source problem, but it **works with negative edge weights** and can **detect negative cycles**. It is slower than Dijkstra's algorithm.
+The **Bellman–Ford algorithm** is a single-source shortest-path algorithm that **works with negative edge weights** and can **detect negative cycles**.
+
+It is slower than Dijkstra's algorithm.
 
 **Algorithm:**
 
@@ -184,7 +190,7 @@ Output:
 4: 7
 ```
 
-**Complexity:** **O(V × E)** time (V − 1 passes over E edges); O(V) space. (The best case is O(E), when the distances stop changing after one pass and the loop stops early.)
+**Complexity:** **O(V × E)** time (V − 1 passes over E edges); O(V) space. (With the common optimisation of stopping when a pass changes nothing, the best case becomes O(E); the version above always makes V − 1 passes.)
 
 **Applications:** routing protocols based on distance vectors (such as RIP), graphs with negative weights (for example, cash flows or energy gains and losses) and detecting negative cycles (for example, in cycle-cancelling methods for network flow).
 
@@ -204,7 +210,9 @@ Output:
 
 ### Floyd–Warshall Algorithm
 
-The **Floyd–Warshall algorithm** finds the shortest distances **between every pair of vertices**. It is a **dynamic programming** algorithm. It works with **negative edge weights**, but **not with negative cycles**.
+The **Floyd–Warshall algorithm** is a **dynamic programming** algorithm that finds the shortest distances **between every pair of vertices** in a weighted graph.
+
+It works with **negative edge weights**, but **not with negative cycles**.
 
 **Idea:** number the vertices 1 to n. D^(k)[i][j] is the shortest distance from i to j using only vertices **1 … k as intermediate vertices**. For each k, the path from i to j either does not use k, or goes from i to k and then from k to j:
 
@@ -363,10 +371,6 @@ Floyd–Warshall is simple and suits **dense** graphs; for sparse graphs, runnin
 - [Dijkstra's Algorithm](https://www.programiz.com/dsa/dijkstra-algorithm) — accessed 2026-11-01
 - [Bellman Ford's Algorithm](https://www.programiz.com/dsa/bellman-ford-algorithm) — accessed 2026-11-01
 - [Floyd-Warshall Algorithm](https://www.programiz.com/dsa/floyd-warshall-algorithm) — accessed 2026-11-01
-
-**IT Job QnS**
-
-- [Design and Analysis of Algorithm](https://it.jobqns.com/design-and-analysis-of-algorithm/) — accessed 2026-11-01
 
 **Additional sources**
 

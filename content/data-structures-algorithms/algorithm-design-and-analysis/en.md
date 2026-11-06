@@ -5,7 +5,11 @@ updated: 2026-11-02
 
 ## Analyzing and Designing Algorithms {#analyzing-and-designing-algorithms}
 
-An **algorithm** is a finite sequence of well-defined steps that solves a problem (see [Algorithms and Flowcharts](/topics/programming/algorithms-and-flowcharts) for its definition and properties). Working with algorithms has two parts:
+An **algorithm** is a finite sequence of well-defined steps that solves a problem.
+
+Its definition and properties are explained in [Algorithms and Flowcharts](/topics/programming/algorithms-and-flowcharts).
+
+Working with algorithms has two parts:
 
 1. **Designing** an algorithm: finding a correct method to solve the problem, usually by applying a known **design technique**.
 2. **Analysing** an algorithm: estimating the **resources** it needs — mainly **time** (running time) and **space** (memory) — as a function of the **input size n**, so that different algorithms can be compared.
@@ -71,7 +75,9 @@ So, **total correctness = partial correctness + termination**.
 
 ### Loop Invariants
 
-A **loop invariant** is a condition (a statement about the program variables) that is **true immediately before and after every iteration** of a loop. To prove a loop correct with an invariant, show three things:
+A **loop invariant** is a condition (a statement about the program variables) that is **true immediately before and after every iteration** of a loop.
+
+To prove a loop correct with an invariant, show three things:
 
 1. **Initialization:** the invariant is true **before the first iteration**.
 2. **Maintenance:** if it is true before an iteration, it remains true **after** that iteration.
@@ -219,14 +225,14 @@ where **a** = number of sub-problems, **n/b** = size of each sub-problem, and **
 | a = b^k and p = −1 | T(n) = Θ(n^(log_b a) · log log n) |
 | a = b^k and p < −1 | T(n) = Θ(n^(log_b a)) |
 | a < b^k and p ≥ 0 | T(n) = Θ(n^k · (log n)^p) |
-| a < b^k and p < 0 | T(n) = Θ(n^k) |
+| a < b^k and p < 0 | T(n) = O(n^k) (an upper bound only; the tight bound is Θ(n^k · (log n)^p)) |
 
 | Recurrence | a, b^k, p | Result |
 | --- | --- | --- |
 | T(n) = 4T(n/2) + n² | 4 = 2², p = 0 | Θ(n² log n) |
 | T(n) = 2T(n/2) + n / log n | 2 = 2¹, p = −1 | Θ(n log log n) |
 | T(n) = 16T(n/4) + n² / (log n)² | 16 = 4², p = −2 | Θ(n²) |
-| T(n) = 2T(n/2) + n³ / log n | 2 < 2³, p = −1 | Θ(n³) |
+| T(n) = 2T(n/2) + n³ / log n | 2 < 2³, p = −1 | O(n³); tight bound Θ(n³ / log n) (master theorem case 3) |
 
 **Decreasing recurrences** T(n) = a·T(n − b) + f(n) with f(n) = O(n^k) (a ≥ 1, b ≥ 1) have these **upper bounds**:
 

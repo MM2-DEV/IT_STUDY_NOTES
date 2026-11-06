@@ -85,7 +85,21 @@ function startsWithDefinitionLabel(node: Block): boolean {
 
 /** Rules 5 and 6. */
 function startsWithBoldTerm(node: Block): boolean {
-  const paragraph = firstParagraph(node);
+  let paragraph = firstParagraph(node);
+  // "A **stack** is a …" / "An **algorithm** is a …": an article before the bold term. The bold
+  // text is then a term, never a label such as "**Algorithm:**", so OTHER_LABEL does not apply.
+  const first = paragraph?.children[0];
+  let articleBefore = false;
+  if (
+    paragraph &&
+    node.type === "paragraph" &&
+    first?.type === "text" &&
+    /^(?:a|an|the)\s+$/i.test(first.value) &&
+    paragraph.children[1]?.type === "strong"
+  ) {
+    paragraph = { ...paragraph, children: paragraph.children.slice(1) };
+    articleBefore = true;
+  }
   const lead = paragraph?.children[0];
   if (!paragraph || lead?.type !== "strong") return false;
   const label = plainText(lead).trim();
@@ -109,7 +123,7 @@ function startsWithBoldTerm(node: Block): boolean {
     return DEFINING_PHRASE.test(body);
   }
   // "**Searching** is the process …"
-  if (OTHER_LABEL.test(label)) return false;
+  if (!articleBefore && OTHER_LABEL.test(label)) return false;
   return STRICT_DEFINING_VERB.test(afterSubject(rest)) && !NOT_A_DEFINITION.test(afterSubject(rest));
 }
 

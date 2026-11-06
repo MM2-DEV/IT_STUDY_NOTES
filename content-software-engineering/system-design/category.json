@@ -1,0 +1,107 @@
+{
+  "title": "System Design",
+  "order": 17,
+  "topics": [
+    {
+      "slug": "system-design-fundamentals",
+      "title": "System Design Fundamentals",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "scalability-vertical-and-horizontal-scaling",
+          "title": "Scalability: Vertical and Horizontal Scaling",
+          "exams": []
+        },
+        {
+          "id": "availability-reliability-and-fault-tolerance",
+          "title": "Availability, Reliability and Fault Tolerance",
+          "exams": []
+        },
+        {
+          "id": "latency-and-throughput",
+          "title": "Latency and Throughput",
+          "exams": []
+        },
+        {
+          "id": "load-balancing",
+          "title": "Load Balancing",
+          "exams": []
+        },
+        {
+          "id": "caching-and-cdns-in-system-design",
+          "title": "Caching and CDNs in System Design",
+          "exams": []
+        },
+        {
+          "id": "database-replication",
+          "title": "Database Replication",
+          "exams": []
+        },
+        {
+          "id": "sharding-and-partitioning",
+          "title": "Sharding and Partitioning",
+          "exams": []
+        },
+        {
+          "id": "cap-theorem-and-consistency-models",
+          "title": "CAP Theorem and Consistency Models",
+          "exams": []
+        },
+        {
+          "id": "queues-and-asynchronous-processing",
+          "title": "Queues and Asynchronous Processing",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "system-design-interviews",
+      "title": "System Design Interview Practice",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "how-to-approach-a-system-design-interview",
+          "title": "How to Approach a System Design Interview",
+          "exams": []
+        },
+        {
+          "id": "back-of-the-envelope-estimation",
+          "title": "Back-of-the-Envelope Estimation",
+          "exams": []
+        },
+        {
+          "id": "design-a-url-shortener",
+          "title": "Design a URL Shortener",
+          "exams": []
+        },
+        {
+          "id": "design-a-rate-limiter",
+          "title": "Design a Rate Limiter",
+          "exams": []
+        },
+        {
+          "id": "design-a-chat-system",
+          "title": "Design a Chat System",
+          "exams": []
+        },
+        {
+          "id": "design-a-news-feed",
+          "title": "Design a News Feed",
+          "exams": []
+        },
+        {
+          "id": "design-a-notification-system",
+          "title": "Design a Notification System",
+          "exams": []
+        },
+        {
+          "id": "design-a-file-storage-service",
+          "title": "Design a File Storage Service",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

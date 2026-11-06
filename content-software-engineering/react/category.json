@@ -1,0 +1,304 @@
+{
+  "title": "React and Next.js",
+  "order": 7,
+  "topics": [
+    {
+      "slug": "react-fundamentals",
+      "title": "React Fundamentals",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "why-component-based-ui-development",
+          "title": "Why Component-Based UI Development",
+          "exams": []
+        },
+        {
+          "id": "react-project-setup",
+          "title": "React Project Setup",
+          "exams": []
+        },
+        {
+          "id": "jsx",
+          "title": "JSX",
+          "exams": []
+        },
+        {
+          "id": "function-components-and-props",
+          "title": "Function Components and Props",
+          "exams": []
+        },
+        {
+          "id": "state",
+          "title": "State",
+          "exams": []
+        },
+        {
+          "id": "event-handling",
+          "title": "Event Handling",
+          "exams": []
+        },
+        {
+          "id": "conditional-rendering",
+          "title": "Conditional Rendering",
+          "exams": []
+        },
+        {
+          "id": "rendering-lists-and-keys",
+          "title": "Rendering Lists and Keys",
+          "exams": []
+        },
+        {
+          "id": "component-composition-and-lifting-state-up",
+          "title": "Component Composition and Lifting State Up",
+          "exams": []
+        },
+        {
+          "id": "thinking-in-components",
+          "title": "Thinking in Components",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "react-hooks",
+      "title": "React Hooks",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "usestate",
+          "title": "useState",
+          "exams": []
+        },
+        {
+          "id": "useeffect-cleanup-and-dependency-arrays",
+          "title": "useEffect, Cleanup and Dependency Arrays",
+          "exams": []
+        },
+        {
+          "id": "useref",
+          "title": "useRef",
+          "exams": []
+        },
+        {
+          "id": "usememo-and-usecallback",
+          "title": "useMemo and useCallback",
+          "exams": []
+        },
+        {
+          "id": "usecontext",
+          "title": "useContext",
+          "exams": []
+        },
+        {
+          "id": "custom-hooks",
+          "title": "Custom Hooks",
+          "exams": []
+        },
+        {
+          "id": "rules-of-hooks",
+          "title": "Rules of Hooks",
+          "exams": []
+        },
+        {
+          "id": "avoiding-unnecessary-effects",
+          "title": "Avoiding Unnecessary Effects",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "state-management-and-data-fetching",
+      "title": "State Management and Data Fetching",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "state-management-concepts",
+          "title": "State Management Concepts",
+          "exams": []
+        },
+        {
+          "id": "context-api",
+          "title": "Context API",
+          "exams": []
+        },
+        {
+          "id": "redux-toolkit",
+          "title": "Redux Toolkit",
+          "exams": []
+        },
+        {
+          "id": "server-state-vs-client-state",
+          "title": "Server State vs Client State",
+          "exams": []
+        },
+        {
+          "id": "data-fetching-and-caching",
+          "title": "Data Fetching and Caching",
+          "exams": []
+        },
+        {
+          "id": "tanstack-query-and-rtk-query",
+          "title": "TanStack Query and RTK Query",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "routing-forms-and-architecture",
+      "title": "Routing, Forms and Application Architecture",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "component-design-and-folder-structure",
+          "title": "Component Design and Folder Structure",
+          "exams": []
+        },
+        {
+          "id": "routing-with-react-router",
+          "title": "Routing with React Router",
+          "exams": []
+        },
+        {
+          "id": "protected-routes-and-authentication-flows",
+          "title": "Protected Routes and Authentication Flows",
+          "exams": []
+        },
+        {
+          "id": "forms-with-react-hook-form",
+          "title": "Forms with React Hook Form",
+          "exams": []
+        },
+        {
+          "id": "schema-validation-with-zod",
+          "title": "Schema Validation with Zod",
+          "exams": []
+        },
+        {
+          "id": "tables-pagination-sorting-and-filtering",
+          "title": "Tables, Pagination, Sorting and Filtering",
+          "exams": []
+        },
+        {
+          "id": "file-upload-ui",
+          "title": "File Upload UI",
+          "exams": []
+        },
+        {
+          "id": "error-boundaries",
+          "title": "Error Boundaries",
+          "exams": []
+        },
+        {
+          "id": "lazy-loading-and-code-splitting",
+          "title": "Lazy Loading and Code Splitting",
+          "exams": []
+        },
+        {
+          "id": "environment-variables-in-frontend-apps",
+          "title": "Environment Variables in Frontend Apps",
+          "exams": []
+        },
+        {
+          "id": "component-libraries-design-systems-and-storybook",
+          "title": "Component Libraries, Design Systems and Storybook",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "nextjs-and-rendering",
+      "title": "Next.js and Rendering Strategies",
+      "order": 5,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "rendering-strategies-csr-ssr-ssg-and-isr",
+          "title": "Rendering Strategies: CSR, SSR, SSG and ISR",
+          "exams": []
+        },
+        {
+          "id": "hydration",
+          "title": "Hydration",
+          "exams": []
+        },
+        {
+          "id": "next-js-fundamentals",
+          "title": "Next.js Fundamentals",
+          "exams": []
+        },
+        {
+          "id": "app-router-pages-and-layouts",
+          "title": "App Router, Pages and Layouts",
+          "exams": []
+        },
+        {
+          "id": "server-and-client-components",
+          "title": "Server and Client Components",
+          "exams": []
+        },
+        {
+          "id": "data-fetching-and-route-handlers",
+          "title": "Data Fetching and Route Handlers",
+          "exams": []
+        },
+        {
+          "id": "caching-and-revalidation",
+          "title": "Caching and Revalidation",
+          "exams": []
+        },
+        {
+          "id": "metadata-and-seo",
+          "title": "Metadata and SEO",
+          "exams": []
+        },
+        {
+          "id": "middleware",
+          "title": "Middleware",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "frontend-quality",
+      "title": "Frontend Quality",
+      "order": 6,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "accessibility-and-keyboard-navigation",
+          "title": "Accessibility and Keyboard Navigation",
+          "exams": []
+        },
+        {
+          "id": "responsive-ui-implementation",
+          "title": "Responsive UI Implementation",
+          "exams": []
+        },
+        {
+          "id": "loading-and-error-states",
+          "title": "Loading and Error States",
+          "exams": []
+        },
+        {
+          "id": "internationalization-i18n",
+          "title": "Internationalization (i18n)",
+          "exams": []
+        },
+        {
+          "id": "frontend-security-basics",
+          "title": "Frontend Security Basics",
+          "exams": []
+        },
+        {
+          "id": "cross-browser-testing",
+          "title": "Cross-Browser Testing",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

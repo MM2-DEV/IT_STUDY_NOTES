@@ -1,0 +1,168 @@
+{
+  "title": "Testing and Debugging",
+  "order": 18,
+  "topics": [
+    {
+      "slug": "testing-fundamentals",
+      "title": "Testing Fundamentals",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "why-testing-matters",
+          "title": "Why Testing Matters",
+          "exams": []
+        },
+        {
+          "id": "test-pyramid",
+          "title": "Test Pyramid",
+          "exams": []
+        },
+        {
+          "id": "unit-integration-and-end-to-end-tests",
+          "title": "Unit, Integration and End-to-End Tests",
+          "exams": []
+        },
+        {
+          "id": "regression-and-smoke-testing",
+          "title": "Regression and Smoke Testing",
+          "exams": []
+        },
+        {
+          "id": "manual-vs-automated-testing",
+          "title": "Manual vs Automated Testing",
+          "exams": []
+        },
+        {
+          "id": "test-cases-and-test-plans",
+          "title": "Test Cases and Test Plans",
+          "exams": []
+        },
+        {
+          "id": "arrange-act-assert",
+          "title": "Arrange-Act-Assert",
+          "exams": []
+        },
+        {
+          "id": "mocks-stubs-and-fakes",
+          "title": "Mocks, Stubs and Fakes",
+          "exams": []
+        },
+        {
+          "id": "code-coverage-and-its-limits",
+          "title": "Code Coverage and Its Limits",
+          "exams": []
+        },
+        {
+          "id": "test-driven-development",
+          "title": "Test-Driven Development",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "frontend-testing",
+      "title": "Frontend Testing",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "unit-testing-with-vitest-or-jest",
+          "title": "Unit Testing with Vitest or Jest",
+          "exams": []
+        },
+        {
+          "id": "component-testing-with-testing-library",
+          "title": "Component Testing with Testing Library",
+          "exams": []
+        },
+        {
+          "id": "browser-testing-with-playwright",
+          "title": "Browser Testing with Playwright",
+          "exams": []
+        },
+        {
+          "id": "mocking-api-calls",
+          "title": "Mocking API Calls",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "backend-testing",
+      "title": "Backend Testing",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "testing-python-with-pytest",
+          "title": "Testing Python with pytest",
+          "exams": []
+        },
+        {
+          "id": "testing-django-and-drf-apis",
+          "title": "Testing Django and DRF APIs",
+          "exams": []
+        },
+        {
+          "id": "testing-fastapi-applications",
+          "title": "Testing FastAPI Applications",
+          "exams": []
+        },
+        {
+          "id": "testing-nestjs-applications-with-jest",
+          "title": "Testing NestJS Applications with Jest",
+          "exams": []
+        },
+        {
+          "id": "testing-go-code-with-the-testing-package",
+          "title": "Testing Go Code with the testing Package",
+          "exams": []
+        },
+        {
+          "id": "test-databases-and-fixtures",
+          "title": "Test Databases and Fixtures",
+          "exams": []
+        },
+        {
+          "id": "running-tests-in-ci",
+          "title": "Running Tests in CI",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "debugging",
+      "title": "Debugging",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "a-systematic-debugging-process",
+          "title": "A Systematic Debugging Process",
+          "exams": []
+        },
+        {
+          "id": "using-debuggers",
+          "title": "Using Debuggers",
+          "exams": []
+        },
+        {
+          "id": "reading-stack-traces-and-logs",
+          "title": "Reading Stack Traces and Logs",
+          "exams": []
+        },
+        {
+          "id": "debugging-unfamiliar-codebases",
+          "title": "Debugging Unfamiliar Codebases",
+          "exams": []
+        },
+        {
+          "id": "root-cause-analysis",
+          "title": "Root-Cause Analysis",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,8 @@
       "order": 1,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -16,7 +17,8 @@
           "title": "Types of Attack",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -24,7 +26,8 @@
           "title": "Encryption Techniques",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -42,7 +45,8 @@
       "title": "Web Security",
       "order": 2,
       "exams": [
-        "College"
+        "College",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -70,7 +74,271 @@
           "id": "authentication-and-access-control",
           "title": "Authentication and Access Control",
           "exams": [
-            "College"
+            "College",
+            "Bank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "security-fundamentals",
+      "title": "Security Fundamentals",
+      "order": 3,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "cia-triad",
+          "title": "CIA Triad",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "vulnerability-threat-and-risk",
+          "title": "Vulnerability, Threat and Risk",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "attack-surface-and-attack-vectors",
+          "title": "Attack Surface and Attack Vectors",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "penetration-testing-vs-vulnerability-assessment",
+          "title": "Penetration Testing vs Vulnerability Assessment",
+          "exams": [
+            "Bank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "cryptographic-techniques",
+      "title": "Cryptographic Techniques",
+      "order": 4,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "symmetric-and-asymmetric-encryption",
+          "title": "Symmetric and Asymmetric Encryption",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "hashing-techniques",
+          "title": "Hashing Techniques",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "hashing-vs-encryption-vs-encoding",
+          "title": "Hashing vs Encryption vs Encoding",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "message-authentication-code-mac-and-hmac",
+          "title": "Message Authentication Code (MAC) and HMAC",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "digital-certificates-and-certificate-authority-ca",
+          "title": "Digital Certificates and Certificate Authority (CA)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "blockchain",
+          "title": "Blockchain",
+          "exams": [
+            "Bank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "network-security-technologies",
+      "title": "Network Security Technologies",
+      "order": 5,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "firewall-and-web-application-firewall-waf",
+          "title": "Firewall and Web Application Firewall (WAF)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "intrusion-detection-and-prevention-systems-ids-and-ips",
+          "title": "Intrusion Detection and Prevention Systems (IDS and IPS)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "dmz-demilitarized-zone",
+          "title": "DMZ (Demilitarized Zone)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "vpn-and-its-types-ipsec-and-ssl-tls-vpn-tunnelling",
+          "title": "VPN and Its Types (IPsec and SSL/TLS VPN Tunnelling)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "tls-ssl-and-https",
+          "title": "TLS/SSL and HTTPS",
+          "exams": [
+            "Bank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "authentication-and-access-control-models",
+      "title": "Authentication and Access Control Models",
+      "order": 6,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "two-factor-and-multi-factor-authentication",
+          "title": "Two-Factor and Multi-Factor Authentication",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "access-control-models-dac-mac-rbac",
+          "title": "Access Control Models (DAC, MAC, RBAC)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "privileged-access-management-pam",
+          "title": "Privileged Access Management (PAM)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "zero-trust-security",
+          "title": "Zero Trust Security",
+          "exams": [
+            "Bank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "security-operations",
+      "title": "Security Operations and Threat Intelligence",
+      "order": 7,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "security-operations-center-soc",
+          "title": "Security Operations Center (SOC)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "siem-and-soar",
+          "title": "SIEM and SOAR",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "indicators-of-compromise-ioc",
+          "title": "Indicators of Compromise (IoC)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "advanced-persistent-threats-apt",
+          "title": "Advanced Persistent Threats (APT)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "mitre-attandck-framework",
+          "title": "MITRE ATT&CK Framework",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "data-loss-prevention-dlp",
+          "title": "Data Loss Prevention (DLP)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "different-hacking-techniques",
+          "title": "Different Hacking Techniques",
+          "exams": [
+            "Bank"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "secure-development-and-business-continuity",
+      "title": "Secure Development and Business Continuity",
+      "order": 8,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "secure-software-development-life-cycle-ssdlc",
+          "title": "Secure Software Development Life Cycle (SSDLC)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "business-continuity-planning-bcp",
+          "title": "Business Continuity Planning (BCP)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "disaster-recovery-planning-drp",
+          "title": "Disaster Recovery Planning (DRP)",
+          "exams": [
+            "Bank"
           ]
         }
       ]

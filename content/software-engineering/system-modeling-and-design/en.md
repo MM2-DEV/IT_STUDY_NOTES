@@ -7,7 +7,9 @@ updated: 2026-11-04
 
 ### Definition of System Model
 
-A system model is an abstract, usually graphical, representation of a system that shows one view (perspective) of it, leaving out the other details. System modelling is the process of building such models, today mostly with the **UML (Unified Modeling Language)** notation, to understand the system to be developed and to explain it to customers and developers.
+A system model is an abstract, usually graphical, representation of a system that shows one view (perspective) of it, leaving out the other details.
+
+System modelling is the process of building such models, today mostly with the **UML (Unified Modeling Language)** notation, to understand the system to be developed and to explain it to customers and developers.
 
 System models are used:
 
@@ -37,7 +39,9 @@ The context, behavioural and object models are explained below; the use-case and
 
 ### 1. Context Model
 
-A context model is a model that shows the **system and its environment**: the other systems, people and organizations with which the system interacts, and the **boundary** between what is inside the system and what is outside it. It is drawn at an early stage of requirements engineering, together with the stakeholders, to decide which functions the new system will provide and which are provided by the systems around it.
+A context model is a model that shows the **system and its environment**: the other systems, people and organizations with which the system interacts, and the **boundary** between what is inside the system and what is outside it.
+
+It is drawn at an early stage of requirements engineering, together with the stakeholders, to decide which functions the new system will provide and which are provided by the systems around it.
 
 The system is drawn as one box in the centre, and the external systems and actors are drawn around it and connected to it.
 
@@ -88,7 +92,9 @@ The elements of a state diagram are:
 
 ### 3. Object Model
 
-An object model is a structural model that describes a system in terms of **object classes** and the **relationships** between them. It is drawn as a **UML class diagram**, and it is the basis of object-oriented design.
+An object model is a structural model that describes a system in terms of **object classes** and the **relationships** between them.
+
+It is drawn as a **UML class diagram**, and it is the basis of object-oriented design.
 
 1. **Object** — an entity with an **identity**, a **state** (its attribute values) and **behaviour** (its operations); for example, one particular bank account.
 2. **Class** — a description (template) of a set of objects with the same attributes and operations; it is drawn as a box with three compartments: the **name**, the **attributes** and the **operations**.
@@ -117,7 +123,9 @@ The behaviour of objects (how they cooperate by calling each other's operations)
 
 ### Definition of UML
 
-The Unified Modeling Language (UML) is a standard, general-purpose **visual modelling language** for specifying, visualizing, constructing and documenting the artifacts of a software system. It is a notation, **not a programming language**, and it does not prescribe a development process.
+The Unified Modeling Language (UML) is a standard, general-purpose **visual modelling language** for specifying, visualizing, constructing and documenting the artifacts of a software system.
+
+It is a notation, **not a programming language**, and it does not prescribe a development process.
 
 UML was created by unifying the methods of **Grady Booch**, **James Rumbaugh** (OMT) and **Ivar Jacobson** (OOSE). It was adopted as a standard by the **Object Management Group (OMG)** in 1997 and published as an ISO standard (ISO/IEC 19501) in 2005. The current version, **UML 2.5**, defines **14 diagram types**.
 
@@ -239,7 +247,9 @@ A state machine diagram shows the **states** of one object and the **transitions
 
 ### Definition of User Interface
 
-A user interface (UI) is the part of a software system through which users interact with it: the front end through which they give commands and data to the system and receive its results. User interface design is the process of designing this interface so that the system is easy to learn and use, efficient and attractive.
+A user interface (UI) is the part of a software system through which users interact with it: the front end through which they give commands and data to the system and receive its results.
+
+User interface design is the process of designing this interface so that the system is easy to learn and use, efficient and attractive.
 
 The attributes of a good user interface are:
 
@@ -258,7 +268,9 @@ User interfaces are of two main types:
 
 #### 1. Command Line Interface (CLI)
 
-A command line interface is a text-based interface in which the user types **commands** at a **prompt**, and the system replies with text. Examples are the UNIX shell and the Windows command prompt.
+A command line interface is a text-based interface in which the user types **commands** at a **prompt**, and the system replies with text.
+
+Examples are the UNIX shell and the Windows command prompt.
 
 The elements of a CLI are:
 
@@ -354,7 +366,9 @@ Some GUI implementation tools are FLUID, App Inventor (Android), LucidChart, Wav
 
 ### Definition of Object-Oriented Design
 
-Object-oriented design (OOD) is the process of designing a software system as a set of **interacting objects**, each with its own state and operations. It converts the technology-independent **analysis model** (produced by object-oriented analysis) into a design model of **classes and objects** that can be implemented with a particular technology.
+Object-oriented design (OOD) is the process of designing a software system as a set of **interacting objects**, each with its own state and operations.
+
+It converts the technology-independent **analysis model** (produced by object-oriented analysis) into a design model of **classes and objects** that can be implemented with a particular technology.
 
 Object-oriented development has three stages:
 
@@ -431,7 +445,9 @@ The **Model–View–Controller (MVC)** pattern divides an interactive applicati
 
 ### Definition of Real-Time System
 
-A real-time system is a software system whose correct functioning depends both on the **results it produces** and on the **time at which they are produced**. It must respond to events from its environment within fixed **time limits (deadlines)**; a correct result that is produced too late is a failure.
+A real-time system is a software system whose correct functioning depends both on the **results it produces** and on the **time at which they are produced**.
+
+It must respond to events from its environment within fixed **time limits (deadlines)**; a correct result that is produced too late is a failure.
 
 Examples are flight control systems, air-traffic control, car airbag controllers, industrial process control, medical devices, telephone switches and online reservation and trading systems.
 
@@ -517,7 +533,9 @@ Hardware and software are designed together: the designer decides which function
 
 ### Real-Time Operating System (RTOS)
 
-A real-time operating system is an operating system that manages the processes and resources of a real-time system and guarantees that tasks are completed within their deadlines, with **predictable (deterministic)** response times. Examples are QNX, VxWorks and FreeRTOS.
+A real-time operating system is an operating system that manages the processes and resources of a real-time system and guarantees that tasks are completed within their deadlines, with **predictable (deterministic)** response times.
+
+Examples are QNX, VxWorks and FreeRTOS.
 
 The components of a real-time operating system are:
 
@@ -556,7 +574,9 @@ Two common classes of real-time systems are:
 
 ### Definition of Software Reuse
 
-Software reuse is the process of building new software from **existing software assets** — components, designs, code, documents and knowledge — instead of developing everything from scratch. Reuse-based software engineering aims to reduce cost and development time and to increase quality.
+Software reuse is the process of building new software from **existing software assets** — components, designs, code, documents and knowledge — instead of developing everything from scratch.
+
+Reuse-based software engineering aims to reduce cost and development time and to increase quality.
 
 ### Levels of Software Reuse
 
@@ -612,7 +632,9 @@ The main approaches to designing systems with reuse are:
 9. **Program generators** — a generator system embeds knowledge of a type of application and generates programs from a model or specification.
 10. **Aspect-oriented software development** — shared components are woven into an application at different places when the program is compiled.
 
-**COTS (commercial off-the-shelf) system:** a COTS system is a ready-made software product, sold to many customers, that can be adapted to the needs of a particular customer through configuration, without changing its source code. Using COTS products reduces development time and cost, but the buyer depends on the vendor and must adapt the requirements to the product's features.
+**COTS (commercial off-the-shelf) system:** a COTS system is a ready-made software product, sold to many customers, that can be adapted to the needs of a particular customer through configuration, without changing its source code.
+
+Using COTS products reduces development time and cost, but the buyer depends on the vendor and must adapt the requirements to the product's features.
 
 **Application framework:** an application framework is an integrated set of reusable classes, with their interactions, that provides a skeleton for a family of applications; developers add application-specific classes to it, and the framework calls them (inversion of control). Examples are web frameworks based on the Model–View–Controller pattern.
 
@@ -650,10 +672,6 @@ The main approaches to designing systems with reuse are:
 - [Object Oriented Design](https://www.tpointtech.com/software-engineering-object-oriented-design) — accessed 2026-11-04
 - [Real-Time Operating System](https://www.tpointtech.com/real-time-operating-system) — accessed 2026-11-04 (it lists MTS as an example of a real-time OS; MTS is a time-sharing system, so it is not used here)
 - TpointTech has no separate page on software reuse; it mentions reuse only as a benefit of modularity (checked 2026-11-04).
-
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-04 (UML: seven structural and seven behavioural diagrams; activity, use case, sequence and class diagrams; design patterns; MVC; user interface design as a design phase). The page has nothing on context models, real-time software design or software reuse.
 
 **Programiz**
 

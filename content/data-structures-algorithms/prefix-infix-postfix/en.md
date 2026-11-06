@@ -9,20 +9,20 @@ An arithmetic expression is made of **operands** (constants or variables such as
 
 ### 1. Infix Notation
 
-The operator is written **between** its two operands: `a + b`.
+**Infix notation** is the notation in which the operator is written **between** its two operands: `a + b`.
 
 1. This is the ordinary notation used by people in mathematics.
 2. It is easy for humans to read, but **difficult for a computer to evaluate directly**, because the computer must apply **precedence** and **associativity** rules and handle **parentheses**.
 
 ### 2. Prefix Notation (Polish Notation)
 
-The operator is written **before** its operands: `+ a b`.
+**Prefix notation (Polish notation)** is the notation in which the operator is written **before** its operands: `+ a b`.
 
 The notation was introduced by the Polish logician **Jan Łukasiewicz in 1924**, so it is called **Polish notation**.
 
 ### 3. Postfix Notation (Reverse Polish Notation, RPN)
 
-The operator is written **after** its operands: `a b +`.
+**Postfix notation (reverse Polish notation)** is the notation in which the operator is written **after** its operands: `a b +`.
 
 Because it is the reverse of Polish notation, postfix is called **Reverse Polish Notation (RPN)**.
 
@@ -379,10 +379,6 @@ Output:
 - [Conversion of Prefix to Postfix Expression](https://www.tpointtech.com/conversion-of-prefix-to-postfix-expression) — accessed 2026-11-02
 - [Conversion of Postfix to Prefix Expression](https://www.tpointtech.com/conversion-of-postfix-to-prefix-expression) — accessed 2026-11-02
 - [Convert Infix to Postfix Notation](https://www.tpointtech.com/convert-infix-to-postfix-notation) — accessed 2026-11-01
-
-**IT Job QnS**
-
-- [Data Structure](https://it.jobqns.com/data-structure/) — accessed 2026-11-01
 
 **Additional sources**
 

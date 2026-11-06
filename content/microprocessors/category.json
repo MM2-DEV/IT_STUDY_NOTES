@@ -52,7 +52,8 @@
       "exams": [
         "School-2",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -61,7 +62,8 @@
           "exams": [
             "School-2",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -87,6 +89,13 @@
             "PSC-IT",
             "AP"
           ]
+        },
+        {
+          "id": "8086-vs-8088",
+          "title": "8086 vs 8088",
+          "exams": [
+            "Bank"
+          ]
         }
       ]
     },
@@ -97,7 +106,8 @@
       "exams": [
         "School-2",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -105,7 +115,8 @@
           "title": "Addressing Modes",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {

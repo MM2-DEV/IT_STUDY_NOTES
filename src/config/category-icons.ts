@@ -1,5 +1,26 @@
 import {
+  Atom,
   Binary,
+  Blocks,
+  Bot,
+  Braces,
+  Briefcase,
+  Cloud,
+  Code,
+  FileType,
+  FlaskConical,
+  Gauge,
+  GitBranch,
+  Globe,
+  Hexagon,
+  Layers,
+  Paintbrush,
+  Plug,
+  Server,
+  SquareTerminal,
+  Users,
+  Waypoints,
+  Zap,
   BookOpen,
   BrainCircuit,
   CodeXml,
@@ -21,7 +42,11 @@ import {
   Wrench,
 } from "lucide-react";
 
-/** Icon for each category folder in content/. Categories not listed here use BookOpen. */
+/**
+ * Icon for each category folder in content/ (Topics) and content-software-engineering/
+ * (Software Engineering); the folder names of the two sections do not overlap.
+ * Categories not listed here use BookOpen.
+ */
 const categoryIcons: Record<string, LucideIcon> = {
   "computer-fundamentals": Laptop,
   "number-systems": Binary,
@@ -41,6 +66,33 @@ const categoryIcons: Record<string, LucideIcon> = {
   "artificial-intelligence": BrainCircuit,
   "discrete-mathematics": Sigma,
   "power-sector": UtilityPole,
+
+  // Software Engineering section
+  "web-fundamentals": Globe,
+  html: FileCode,
+  css: Paintbrush,
+  javascript: Braces,
+  "developer-tools-and-git": GitBranch,
+  typescript: FileType,
+  react: Atom,
+  "backend-fundamentals": Server,
+  python: Code,
+  django: Layers,
+  fastapi: Zap,
+  nodejs: Hexagon,
+  golang: Code,
+  "api-design": Plug,
+  databases: Database,
+  "software-design": Blocks,
+  "system-design": Waypoints,
+  testing: FlaskConical,
+  security: ShieldCheck,
+  performance: Gauge,
+  "linux-and-servers": SquareTerminal,
+  "devops-and-cloud": Cloud,
+  "ai-assisted-development": Bot,
+  "professional-practices": Users,
+  "projects-and-interviews": Briefcase,
 };
 
 export function categoryIcon(slug: string): LucideIcon {

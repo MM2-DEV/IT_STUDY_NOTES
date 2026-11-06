@@ -94,21 +94,24 @@
       "title": "Finite Automata",
       "order": 8,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "deterministic-finite-automata-dfa",
           "title": "Deterministic Finite Automata (DFA)",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
           "id": "nondeterministic-finite-automata-nfa",
           "title": "Nondeterministic Finite Automata (NFA)",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
@@ -132,7 +135,8 @@
       "title": "Regular Expressions and Regular Languages",
       "order": 9,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -146,7 +150,8 @@
           "id": "equivalence-of-regular-expressions-and-finite-automata",
           "title": "Equivalence of Regular Expressions and Finite Automata",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
@@ -163,14 +168,16 @@
       "title": "Context-Free Grammars and Pushdown Automata",
       "order": 10,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "context-free-grammars-derivations-and-parse-trees",
           "title": "Context-Free Grammars, Derivations and Parse Trees",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
@@ -201,14 +208,16 @@
       "title": "Turing Machines and Computability",
       "order": 11,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "turing-machines",
           "title": "Turing Machines",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
@@ -232,14 +241,16 @@
       "title": "Computational Complexity",
       "order": 12,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "classes-p-and-np",
           "title": "Classes P and NP",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {

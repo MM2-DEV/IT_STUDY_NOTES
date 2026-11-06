@@ -249,10 +249,6 @@ There are six main types of DBMS by data model:
 - [Difference between File System and DBMS](https://www.tpointtech.com/dbms-vs-files-system) and [Advantages of DBMS over File System](https://www.tpointtech.com/advantages-of-dbms-over-file-system) — accessed 2026-11-06. The latter calls a file management system "also a database management system" and gives MySQL and Oracle as query languages; both statements are wrong (the query language is SQL).
 - [Components of DBMS](https://www.tpointtech.com/components-of-dbms), [Database Applications](https://www.tpointtech.com/database-applications), [Types of Databases](https://www.tpointtech.com/types-of-databases) and [Personnel Involved in DBMS](https://www.tpointtech.com/personnel-involved-in-database-management-system) — accessed 2026-11-06. The types page says that Codd "invented the database in 1970"; he proposed the relational model in 1970.
 
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (definition of database and DBMS, problems of file-based systems, advantages and disadvantages of DBMS, types of DBMS)
-
 **Programiz**
 
 - [Introduction to Databases](https://www.programiz.com/sql/database-introduction) — accessed 2026-11-06 (relational and non-relational databases with examples). It describes all non-relational databases as key-value stores; MongoDB, which it lists, is a document store.

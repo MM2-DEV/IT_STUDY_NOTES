@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Definition
 
-**Divide and conquer** is an algorithm design technique that solves a problem by **breaking it into smaller sub-problems of the same type**, solving the sub-problems **recursively**, and **combining** their solutions into the solution of the original problem. It works best when the sub-problems are **independent** (do not overlap); when they overlap, dynamic programming is used instead.
+**Divide and conquer** is an algorithm design technique that solves a problem by **breaking it into smaller sub-problems of the same type**, solving the sub-problems **recursively**, and **combining** their solutions into the solution of the original problem.
+
+It works best when the sub-problems are **independent** (do not overlap); when they overlap, dynamic programming is used instead.
 
 ### The Three Steps
 

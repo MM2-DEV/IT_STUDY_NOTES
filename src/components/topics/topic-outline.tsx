@@ -40,7 +40,9 @@ export function TopicOutline({ subtopics }: { subtopics: Subtopic[] }) {
                   ))}
                 </ul>
               )}
-              <ExamBadges exams={subtopic.exams} className="mt-2 ml-8 flex flex-wrap gap-1.5" />
+              {subtopic.exams.length > 0 && (
+                <ExamBadges exams={subtopic.exams} className="mt-2 ml-8 flex flex-wrap gap-1.5" />
+              )}
             </section>
           ))}
         </div>

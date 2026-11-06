@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Structured Program Design {#structured-program-design}
 
-**Definition:** structured programming (structured program design) is a method of designing programs in which the program is built from **a small set of standard control structures**, each with **one entry and one exit**, and organised in **blocks**, without unrestricted jumps (**goto**). The result is a program whose flow can be followed from top to bottom, which makes it easy to read, test and change.
+**Definition:** structured programming (structured program design) is a method of designing programs in which the program is built from **a small set of standard control structures**, each with **one entry and one exit**, and organised in **blocks**, without unrestricted jumps (**goto**).
+
+The result is a program whose flow can be followed from top to bottom, which makes it easy to read, test and change.
 
 ### The Three Basic Control Structures
 
@@ -78,9 +80,13 @@ The opposite approach, **bottom-up design**, first builds and tests the small, l
 
 ## Modular Program Design {#modular-program-design}
 
-**Definition:** modular programming (modular program design) is a technique in which a large program is **divided into smaller, separate, self-contained parts called modules**, each of which performs **one specific task**. The modules are written, tested and debugged separately and are then combined to form the complete program.
+**Definition:** modular programming (modular program design) is a technique in which a large program is **divided into smaller, separate, self-contained parts called modules**, each of which performs **one specific task**.
 
-**Module:** a module is an independent unit of a program that has a **name**, a **specific task**, **inputs** and **outputs**, and that can be called (used) by other parts of the program. In C, a module is usually a **function** (or a separate source file); in object-oriented languages, a **class** with its data and methods is a module.
+The modules are written, tested and debugged separately and are then combined to form the complete program.
+
+**Module:** a module is an independent unit of a program that has a **name**, a **specific task**, **inputs** and **outputs**, and that can be called (used) by other parts of the program.
+
+In C, a module is usually a **function** (or a separate source file); in object-oriented languages, a **class** with its data and methods is a module.
 
 ### Structure of a Modular Program
 
@@ -145,7 +151,9 @@ With the input 70 80 90 60 75, the program prints `Average = 75.00`.
 
 The quality of a modular design is judged by two measures. A good design has **high cohesion and low coupling**.
 
-**Cohesion** is the **strength of the relationship between the elements inside one module**: how closely they work together for a single purpose. **High cohesion is desirable.** Types of cohesion, from the **best (highest)** to the **worst (lowest)**:
+**Cohesion** is the **strength of the relationship between the elements inside one module**: how closely they work together for a single purpose.
+
+**High cohesion is desirable.** Types of cohesion, from the **best (highest)** to the **worst (lowest)**:
 
 1. **Functional cohesion:** all elements contribute to **one single task** (the ideal).
 2. **Sequential cohesion:** the output of one element is the input of the next.
@@ -155,7 +163,9 @@ The quality of a modular design is judged by two measures. A good design has **h
 6. **Logical cohesion:** the elements do **similar kinds** of tasks but different functions (for example, all input routines).
 7. **Coincidental cohesion:** the elements have **no meaningful relationship** (the worst).
 
-**Coupling** is the **degree of dependence between different modules**. **Low coupling is desirable**, so that a change in one module does not affect the others. Types of coupling, from the **best (lowest)** to the **worst (highest)**:
+**Coupling** is the **degree of dependence between different modules**.
+
+**Low coupling is desirable**, so that a change in one module does not affect the others. Types of coupling, from the **best (lowest)** to the **worst (highest)**:
 
 1. **Data coupling:** modules share only the **data they need**, passed as parameters (the best).
 2. **Stamp coupling:** a **whole data structure** is passed, although only part of it is used.

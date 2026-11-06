@@ -1,0 +1,135 @@
+{
+  "title": "Go",
+  "order": 13,
+  "topics": [
+    {
+      "slug": "go-foundations",
+      "title": "Go Foundations",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "go-syntax-packages-and-modules",
+          "title": "Go Syntax, Packages and Modules",
+          "exams": []
+        },
+        {
+          "id": "variables-types-and-constants",
+          "title": "Variables, Types and Constants",
+          "exams": []
+        },
+        {
+          "id": "control-flow",
+          "title": "Control Flow",
+          "exams": []
+        },
+        {
+          "id": "functions-and-multiple-return-values",
+          "title": "Functions and Multiple Return Values",
+          "exams": []
+        },
+        {
+          "id": "arrays-slices-and-maps",
+          "title": "Arrays, Slices and Maps",
+          "exams": []
+        },
+        {
+          "id": "structs-and-methods",
+          "title": "Structs and Methods",
+          "exams": []
+        },
+        {
+          "id": "pointers",
+          "title": "Pointers",
+          "exams": []
+        },
+        {
+          "id": "interfaces",
+          "title": "Interfaces",
+          "exams": []
+        },
+        {
+          "id": "error-handling",
+          "title": "Error Handling",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "concurrency-in-go",
+      "title": "Concurrency in Go",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "goroutines",
+          "title": "Goroutines",
+          "exams": []
+        },
+        {
+          "id": "channels",
+          "title": "Channels",
+          "exams": []
+        },
+        {
+          "id": "select",
+          "title": "select",
+          "exams": []
+        },
+        {
+          "id": "sync-package-waitgroup-and-mutex",
+          "title": "sync Package: WaitGroup and Mutex",
+          "exams": []
+        },
+        {
+          "id": "context-package",
+          "title": "context Package",
+          "exams": []
+        },
+        {
+          "id": "common-concurrency-patterns",
+          "title": "Common Concurrency Patterns",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "web-services-in-go",
+      "title": "Web Services in Go",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "http-servers-with-net-http",
+          "title": "HTTP Servers with net/http",
+          "exams": []
+        },
+        {
+          "id": "routing-and-middleware",
+          "title": "Routing and Middleware",
+          "exams": []
+        },
+        {
+          "id": "json-encoding-and-decoding",
+          "title": "JSON Encoding and Decoding",
+          "exams": []
+        },
+        {
+          "id": "databases-with-database-sql",
+          "title": "Databases with database/sql",
+          "exams": []
+        },
+        {
+          "id": "configuration-and-graceful-shutdown",
+          "title": "Configuration and Graceful Shutdown",
+          "exams": []
+        },
+        {
+          "id": "testing-go-code",
+          "title": "Testing Go Code",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

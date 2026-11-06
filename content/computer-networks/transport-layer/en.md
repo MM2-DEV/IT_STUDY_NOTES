@@ -393,10 +393,6 @@ If the window when a loss occurs is **W** bytes, cwnd varies between W/2 and W, 
 
 - [Transport Layer](https://www.tpointtech.com/computer-network-transport-layer), [Transport Layer Protocols](https://www.tpointtech.com/computer-network-transport-layer-protocols), [TCP](https://www.tpointtech.com/tcp), [UDP Protocol](https://www.tpointtech.com/udp-protocol), [TCP vs UDP](https://www.tpointtech.com/tcp-vs-udp), [TCP Connection Termination](https://www.tpointtech.com/tcp-connection-termination), [TCP Retransmission](https://www.tpointtech.com/tcp-retransmission) and [Protocols in Noiseless and Noisy Channel](https://www.tpointtech.com/protocols-in-noiseless-and-noisy-channel) — accessed 2026-11-06 (services of the transport layer, TCP and UDP features and headers, connection termination, retransmission and three duplicate ACKs, the simplest and stop-and-wait protocols)
 
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (item 64 and item 70, TCP vs UDP with examples; item 65, the functions that make TCP reliable; item 66, why DNS uses UDP; item 69, the three-way handshake; item 95, flow control vs congestion control). Item 64 gives Netflix and YouTube as examples of UDP; stored video streaming such as Netflix normally uses HTTP over **TCP** (YouTube also uses QUIC, which runs over UDP), while UDP is typical of live, real-time traffic such as voice calls and games.
-
 **Programiz**
 
 - Programiz has no page on the transport layer (checked 2026-11-06).

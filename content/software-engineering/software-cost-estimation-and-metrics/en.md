@@ -7,7 +7,9 @@ updated: 2026-11-04
 
 ### Definition of COCOMO
 
-COCOMO (**COnstructive COst MOdel**) is an empirical (regression-based) software cost estimation model that estimates the **effort** (in person-months), the **development time** (in months) and the **staff** needed for a software project from its estimated **size in thousands of lines of code (KLOC)**. It was developed by **Barry W. Boehm** and published in 1981 in his book *Software Engineering Economics*, based on data from 63 projects.
+COCOMO (**COnstructive COst MOdel**) is an empirical (regression-based) software cost estimation model that estimates the **effort** (in person-months), the **development time** (in months) and the **staff** needed for a software project from its estimated **size in thousands of lines of code (KLOC)**.
+
+It was developed by **Barry W. Boehm** and published in 1981 in his book *Software Engineering Economics*, based on data from 63 projects.
 
 ### Types of Software Projects in COCOMO
 
@@ -140,7 +142,9 @@ Detailed COCOMO divides the software into **modules** and the development into *
 
 ### Definition of Halstead's Software Science
 
-Halstead's software science (Maurice H. Halstead, 1977) is a set of metrics that measure the size, complexity and effort of a program from the **number of operators and operands** in its source code. A program is treated as a sequence of **tokens**, each of which is either an **operator** (an action: `+`, `=`, `if`, `while`, `()`, `;`, function calls, keywords) or an **operand** (a value acted on: variables and constants).
+Halstead's software science (Maurice H. Halstead, 1977) is a set of metrics that measure the size, complexity and effort of a program from the **number of operators and operands** in its source code.
+
+A program is treated as a sequence of **tokens**, each of which is either an **operator** (an action: `+`, `=`, `if`, `while`, `()`, `;`, function calls, keywords) or an **operand** (a value acted on: variables and constants).
 
 ### Basic Counts
 
@@ -232,7 +236,9 @@ A control flow graph (flow graph) is a directed graph that represents the flow o
 
 ### Cyclomatic Complexity
 
-Cyclomatic complexity, developed by **Thomas J. McCabe** in 1976, is a graph-based software metric that measures the **logical complexity** of a program as the **number of linearly independent paths** through its control flow graph. It is based on graph theory (the cyclomatic number of a graph). It gives the **number of test cases** needed to execute every independent path at least once (**basis path testing**), and so the minimum number of tests for full branch coverage.
+Cyclomatic complexity, developed by **Thomas J. McCabe** in 1976, is a graph-based software metric that measures the **logical complexity** of a program as the **number of linearly independent paths** through its control flow graph.
+
+It is based on graph theory (the cyclomatic number of a graph). It gives the **number of test cases** needed to execute every independent path at least once (**basis path testing**); it is also an upper bound on the number of tests needed for full branch coverage.
 
 #### Formulas for Cyclomatic Complexity
 
@@ -326,10 +332,6 @@ So there are **3 independent paths**, and at least 3 test cases are needed:
 - [COCOMO Model](https://www.tpointtech.com/cocomo-model) — accessed 2026-11-04 (project types, constants, cost drivers, examples; it labels the development time in its examples as "PM" — development time is in months, effort is in person-months)
 - [Halstead's Software Metrics](https://www.tpointtech.com/software-engineering-halsteads-software-metrics) — accessed 2026-11-04 (formulas and the same sorting example; its effort of 10,974 should be 26.6 × 417.23 ≈ 11,098, and it uses the estimated level 0.038 in place of the level it defines)
 - [Cyclomatic Complexity](https://www.tpointtech.com/software-engineering-cyclomatic-complexity) — accessed 2026-11-04 (V(G) = E − N + 2P, properties)
-
-**IT Job QnS**
-
-- IT Job QnS has no page on COCOMO, Halstead's metrics or cyclomatic complexity (checked 2026-11-04).
 
 **Programiz**
 

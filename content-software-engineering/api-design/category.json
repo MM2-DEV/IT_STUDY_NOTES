@@ -1,0 +1,160 @@
+{
+  "title": "API Design and Integration",
+  "order": 14,
+  "topics": [
+    {
+      "slug": "rest-api-design",
+      "title": "REST API Design",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "what-an-api-is",
+          "title": "What an API Is",
+          "exams": []
+        },
+        {
+          "id": "rest-constraints-and-resource-design",
+          "title": "REST Constraints and Resource Design",
+          "exams": []
+        },
+        {
+          "id": "restful-url-conventions",
+          "title": "RESTful URL Conventions",
+          "exams": []
+        },
+        {
+          "id": "methods-and-status-codes-in-api-design",
+          "title": "Methods and Status Codes in API Design",
+          "exams": []
+        },
+        {
+          "id": "request-and-response-formats",
+          "title": "Request and Response Formats",
+          "exams": []
+        },
+        {
+          "id": "pagination-strategies",
+          "title": "Pagination Strategies",
+          "exams": []
+        },
+        {
+          "id": "filtering-sorting-and-searching",
+          "title": "Filtering, Sorting and Searching",
+          "exams": []
+        },
+        {
+          "id": "validation-error-formats",
+          "title": "Validation Error Formats",
+          "exams": []
+        },
+        {
+          "id": "idempotency",
+          "title": "Idempotency",
+          "exams": []
+        },
+        {
+          "id": "api-versioning",
+          "title": "API Versioning",
+          "exams": []
+        },
+        {
+          "id": "openapi-specification-and-api-documentation",
+          "title": "OpenAPI Specification and API Documentation",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "api-authentication-and-authorization",
+      "title": "API Authentication and Authorization",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "authentication-vs-authorization",
+          "title": "Authentication vs Authorization",
+          "exams": []
+        },
+        {
+          "id": "session-based-vs-token-based-authentication",
+          "title": "Session-Based vs Token-Based Authentication",
+          "exams": []
+        },
+        {
+          "id": "jwt-structure-and-lifecycle",
+          "title": "JWT Structure and Lifecycle",
+          "exams": []
+        },
+        {
+          "id": "access-and-refresh-token-flow",
+          "title": "Access and Refresh Token Flow",
+          "exams": []
+        },
+        {
+          "id": "oauth-2-0-and-openid-connect",
+          "title": "OAuth 2.0 and OpenID Connect",
+          "exams": []
+        },
+        {
+          "id": "api-keys",
+          "title": "API Keys",
+          "exams": []
+        },
+        {
+          "id": "role-based-and-permission-based-access-control",
+          "title": "Role-Based and Permission-Based Access Control",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "api-integration-and-real-time",
+      "title": "API Integration and Real-Time Communication",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "consuming-third-party-apis",
+          "title": "Consuming Third-Party APIs",
+          "exams": []
+        },
+        {
+          "id": "timeouts-retries-and-error-handling",
+          "title": "Timeouts, Retries and Error Handling",
+          "exams": []
+        },
+        {
+          "id": "rate-limiting",
+          "title": "Rate Limiting",
+          "exams": []
+        },
+        {
+          "id": "webhooks",
+          "title": "Webhooks",
+          "exams": []
+        },
+        {
+          "id": "websockets-and-server-sent-events",
+          "title": "WebSockets and Server-Sent Events",
+          "exams": []
+        },
+        {
+          "id": "graphql-overview",
+          "title": "GraphQL Overview",
+          "exams": []
+        },
+        {
+          "id": "grpc-overview",
+          "title": "gRPC Overview",
+          "exams": []
+        },
+        {
+          "id": "postman-and-api-clients",
+          "title": "Postman and API Clients",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

@@ -83,7 +83,9 @@ Greedy cover = **{1, 2, 3}, {4, 5}** — 2 sets, which is also optimal here (no 
 
 ### Definition
 
-A **parallel algorithm** is an algorithm that **divides a problem into sub-problems that are solved simultaneously** on **several processors**, and then combines their results to obtain the final output. Its aim is to **reduce the running time**. (A **sequential algorithm**, by contrast, executes **one step at a time** on a single processor.)
+A **parallel algorithm** is an algorithm that **divides a problem into sub-problems that are solved simultaneously** on **several processors**, and then combines their results to obtain the final output.
+
+Its aim is to **reduce the running time**. (A **sequential algorithm**, by contrast, executes **one step at a time** on a single processor.)
 
 ### Flynn's Classification of Computers
 
@@ -98,7 +100,9 @@ Computers are classified by the number of **instruction streams** and **data str
 
 ### The PRAM Model
 
-The **Parallel Random Access Machine (PRAM)** is the standard theoretical model for designing parallel algorithms. It has **p processors**, each with private memory, connected to a **shared global memory**; in each step, every processor can read from the shared memory, compute, and write back. It ignores communication costs, so algorithms can be designed without the details of a real machine.
+The **Parallel Random Access Machine (PRAM)** is the standard theoretical model for designing parallel algorithms.
+
+It has **p processors**, each with private memory, connected to a **shared global memory**; in each step, every processor can read from the shared memory, compute, and write back. It ignores communication costs, so algorithms can be designed without the details of a real machine.
 
 PRAM models differ in whether several processors may access the **same memory location at the same time**:
 

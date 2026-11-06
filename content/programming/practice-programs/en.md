@@ -199,7 +199,7 @@ A prime number is a natural number greater than 1 that has exactly two divisors:
 2. Otherwise, divide n by every number i from 2 while i × i ≤ n (that is, up to √n).
 3. If any i divides n exactly (`n % i == 0`), n is not prime; otherwise it is prime.
 
-Checking only up to √n is enough, because if n = p × q, one of the two factors is at most √n. **Example:** for 91, the loop checks 2 to 9 (since 10 × 10 > 91) and finds 91 % 7 == 0 (91 = 7 × 13), so 91 is not prime.
+Checking only up to √n is enough, because if n = p × q, one of the two factors is at most √n. **Example:** for 91, the loop may check divisors up to 9 (since 10 × 10 > 91); it finds 91 % 7 == 0 (91 = 7 × 13) and stops, so 91 is not prime.
 
 ```c tab
 #include <stdio.h>
@@ -1163,10 +1163,6 @@ The number is zero
 
 - [Learn C By Examples](https://www.tutorialspoint.com/learn_c_by_examples/learn_c_by_examples_quick_guide.htm) — accessed 2026-11-04 (leap year, prime number, Fibonacci series, LCM)
 - [Leap Year Program in C](https://www.tutorialspoint.com/learn_c_by_examples/leap_year_program_in_c.htm) — accessed 2026-11-04
-
-**IT Job QnS**
-
-- [Programming Question](https://it.jobqns.com/programming-question/) — accessed 2026-11-04 (prime numbers from 1 to n; factorial with recursion)
 
 **Testing**
 

@@ -54,7 +54,7 @@ Skew is reduced by **balanced range-partitioning vectors** (built from a sorted 
 
 ### Interquery Parallelism
 
-In interquery parallelism, **different queries or transactions execute in parallel with one another** on different processors.
+**Interquery parallelism** is the form of parallelism in which **different queries or transactions execute in parallel with one another** on different processors.
 
 1. It **increases throughput** — more transactions are processed per second — and supports **transaction scaleup**.
 2. It does **not reduce the response time** of an individual query (each query still runs on one processor).
@@ -62,7 +62,7 @@ In interquery parallelism, **different queries or transactions execute in parall
 
 ### Intraquery Parallelism
 
-In intraquery parallelism, **a single query is executed in parallel on multiple processors and disks**.
+**Intraquery parallelism** is the form of parallelism in which **a single query is executed in parallel on multiple processors and disks**.
 
 1. It **speeds up long-running queries** (reduces response time), which is important for decision-support queries on large data.
 2. It is achieved in two complementary ways:
@@ -99,7 +99,9 @@ Other operations are parallelized similarly: **selection** is done on each parti
 
 ### Interoperation Parallelism
 
-Interoperation parallelism executes the **different operations of a query expression at the same time**. There are two forms:
+**Interoperation parallelism** is the form of parallelism that executes the **different operations of a query expression at the same time**.
+
+There are two forms:
 
 1. **Pipelined parallelism** — the output tuples of one operation are **consumed by the next operation as soon as they are produced**, with the two operations running on **different processors**. For r₁ ⋈ r₂ ⋈ r₃ ⋈ r₄, processor P₁ computes temp₁ = r₁ ⋈ r₂ and passes its tuples to P₂, which computes temp₁ ⋈ r₃, and so on. It avoids writing intermediate results to disk, but gives only a limited speedup, because pipelines are short, some operations (such as sort and aggregation) are **blocking**, and the steps take unequal times.
 2. **Independent parallelism** — operations that **do not depend on each other** are executed **in parallel**. For r₁ ⋈ r₂ ⋈ r₃ ⋈ r₄, temp₁ = r₁ ⋈ r₂ and temp₂ = r₃ ⋈ r₄ can be computed at the same time on different processors, and then temp₁ ⋈ temp₂ is computed (possibly pipelined). It also gives limited parallelism, but is useful when the degree of parallelism is low.
@@ -127,10 +129,6 @@ Interoperation parallelism executes the **different operations of a query expres
 **TpointTech**
 
 - [Types of Database Parallelism](https://www.tpointtech.com/data-warehouse-types-of-database-parallelism) — accessed 2026-11-06 (horizontal and vertical parallelism, intraquery and interquery parallelism: intraquery speeds up long-running queries; interquery increases throughput but does not make individual transactions faster)
-
-**IT Job QnS**
-
-- IT Job QnS has no page on parallel databases (checked 2026-11-06).
 
 **Programiz**
 

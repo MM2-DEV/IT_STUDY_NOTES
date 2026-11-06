@@ -75,14 +75,16 @@ HAVING sale_date BETWEEN '2025-01-01' AND '2025-12-31';
 -- Faster: filters rows first, then groups
 SELECT customer_id, SUM(amount) FROM Sales
 WHERE sale_date BETWEEN '2025-01-01' AND '2025-12-31'
-GROUP BY customer_id;
+GROUP BY customer_id, sale_date;
 ```
 
 ## Security and Authorization {#security-and-authorization}
 
 ### Database Security
 
-Database security is the **protection of the database against unauthorized access, modification, destruction or disclosure**, whether intentional or accidental. Its three goals (the **CIA triad**) are:
+Database security is the **protection of the database against unauthorized access, modification, destruction or disclosure**, whether intentional or accidental.
+
+Its three goals (the **CIA triad**) are:
 
 1. **Confidentiality (secrecy)** — information is not disclosed to unauthorized users.
 2. **Integrity** — data is modified only by authorized users, in authorized ways.
@@ -117,7 +119,9 @@ Database security is the **protection of the database against unauthorized acces
 
 #### Privileges
 
-Privileges are rights to perform actions on database objects: **SELECT** (read), **INSERT**, **UPDATE** (optionally on specific columns), **DELETE**, **REFERENCES** (create foreign keys), **ALL PRIVILEGES**, and system privileges such as creating tables. The creator of an object is its **owner** and holds all privileges on it.
+Privileges are rights to perform actions on database objects: **SELECT** (read), **INSERT**, **UPDATE** (optionally on specific columns), **DELETE**, **REFERENCES** (create foreign keys), **ALL PRIVILEGES**, and system privileges such as creating tables.
+
+The creator of an object is its **owner** and holds all privileges on it.
 
 #### GRANT and REVOKE
 
@@ -176,7 +180,9 @@ A **statistical database** allows only **summary (aggregate) queries** such as C
 
 ### Data Warehouse
 
-A data warehouse is a **subject-oriented, integrated, time-variant and non-volatile collection of data** gathered from several sources, organized to support **analysis and decision making**. Data is loaded through **ETL** (extract, transform, load).
+A data warehouse is a **subject-oriented, integrated, time-variant and non-volatile collection of data** gathered from several sources, organized to support **analysis and decision making**.
+
+Data is loaded through **ETL** (extract, transform, load).
 
 | Basis | Operational database (OLTP) | Data warehouse (OLAP) |
 | --- | --- | --- |
@@ -205,7 +211,9 @@ Multidimensional queries analyse data viewed as a **data cube**:
 
 ### OLAP
 
-OLAP (online analytical processing) is a technology that allows users to **analyse multidimensional data interactively and quickly** from different points of view. OLAP servers are of three types:
+OLAP (online analytical processing) is a technology that allows users to **analyse multidimensional data interactively and quickly** from different points of view.
+
+OLAP servers are of three types:
 
 1. **ROLAP (relational OLAP)** — stores data in a **relational DBMS** and adds aggregation logic; scales to large data.
 2. **MOLAP (multidimensional OLAP)** — stores data in **multidimensional arrays (cubes)**; very fast for pre-computed summaries, but wastes space for sparse data.
@@ -270,10 +278,6 @@ With **GROUP BY CUBE (dept, year)**, the result also contains the totals for eac
 **TpointTech**
 
 - [Database Security](https://www.tpointtech.com/database-security) — accessed 2026-11-06 (threats and best practices)
-
-**IT Job QnS**
-
-- IT Job QnS has no page on database design, tuning or security (checked 2026-11-06).
 
 **Programiz**
 

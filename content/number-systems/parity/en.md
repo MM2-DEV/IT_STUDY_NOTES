@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Parity Bit {#parity-bit}
 
-**Definition:** A **parity bit** (also called a **check bit**) is an **extra bit (0 or 1)** added to a group of binary data bits so that the **total number of 1s** becomes either even or odd. It is one of the simplest methods of **error detection** in digital systems and data communication.
+**Definition:** A **parity bit** (also called a **check bit**) is an **extra bit (0 or 1)** added to a group of binary data bits so that the **total number of 1s** becomes either even or odd.
+
+It is one of the simplest methods of **error detection** in digital systems and data communication.
 
 ### Types of Parity
 
@@ -51,7 +53,9 @@ There are two types of parity:
 
 ## Parity Generator {#parity-generator}
 
-**Definition:** A **parity generator** is a **combinational logic circuit** that generates the parity bit for the given binary data at the **transmitter** (sending end). The circuit that checks the parity at the **receiver** is called a **parity checker**.
+**Definition:** A **parity generator** is a **combinational logic circuit** that generates the parity bit for the given binary data at the **transmitter** (sending end).
+
+The circuit that checks the parity at the **receiver** is called a **parity checker**.
 
 Parity generators are built with **XOR (Exclusive-OR) gates**, because the XOR of a group of bits is 1 when the number of 1s is odd, and 0 when it is even.
 

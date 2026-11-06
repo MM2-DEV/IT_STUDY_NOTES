@@ -79,7 +79,9 @@ Each packet has a **header** (source and destination addresses, sequence number 
 
 ### Store-and-Forward Transmission
 
-**Store-and-forward transmission** is a method in which a switch (router) must **receive the whole packet before it starts sending it on the next link**. Packets wait in **queues (buffers)** at busy links; if a buffer is full, a packet is dropped (**packet loss**).
+**Store-and-forward transmission** is a method in which a switch (router) must **receive the whole packet before it starts sending it on the next link**.
+
+Packets wait in **queues (buffers)** at busy links; if a buffer is full, a packet is dropped (**packet loss**).
 
 > **Delay of one packet over N links = N × L / R** (store-and-forward, ignoring other delays)
 
@@ -193,10 +195,6 @@ It combines features of circuit switching (setup, data transfer and teardown pha
 **TpointTech**
 
 - [Differentiate between Circuit Switching, Message Switching, and Packet Switching](https://www.tpointtech.com/differentiate-between-circuit-switching-message-switching-and-packet-switching), [Circuit Switching in Computer Network](https://www.tpointtech.com/circuit-switching-in-computer-network) and [Switching Techniques](https://www.tpointtech.com/computer-network-switching-techniques) — accessed 2026-11-06 (circuit, message and packet switching; store-and-forward; constant delay of circuit switching). The *Switching Techniques* page mainly describes how a LAN switch forwards frames by MAC address (store-and-forward, cut-through, fragment-free modes), which is a different meaning of "switching" from the switching techniques of this topic.
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (item 53, packet switching and the 33 ms end-to-end delay example; item 58, why packet switching is preferred over circuit switching, how it works step by step, and its applications)
 
 **Programiz**
 

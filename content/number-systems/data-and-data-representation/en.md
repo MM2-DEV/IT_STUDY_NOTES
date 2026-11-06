@@ -7,7 +7,9 @@ updated: 2026-11-01
 
 ### Data
 
-**Definition:** Data is a representation of **facts, concepts or instructions** in a formal way, so that people or machines can communicate, interpret or process it. Data are **raw, unorganized facts** that must be processed before they become meaningful.
+**Definition:** Data is a representation of **facts, concepts or instructions** in a formal way, so that people or machines can communicate, interpret or process it.
+
+Data are **raw, unorganized facts** that must be processed before they become meaningful.
 
 Data is represented with:
 
@@ -19,7 +21,9 @@ Data is represented with:
 
 ### Information
 
-**Definition:** Information is **organized or classified data** that is **meaningful** to the receiver. It is the **processed data** on which decisions and actions are based.
+**Definition:** Information is **organized or classified data** that is **meaningful** to the receiver.
+
+It is the **processed data** on which decisions and actions are based.
 
 **Examples:** a merit list or result sheet prepared from students' marks; a report card; a sales report.
 
@@ -42,7 +46,9 @@ Data is represented with:
 
 ### Data Processing
 
-**Definition:** Data processing is the process of **converting raw data into meaningful information**. People or machines **restructure or re-order** the data to make it more useful for a particular purpose.
+**Definition:** Data processing is the process of **converting raw data into meaningful information**.
+
+People or machines **restructure or re-order** the data to make it more useful for a particular purpose.
 
 ### Data Processing Cycle
 
@@ -63,7 +69,9 @@ The data and results are also **stored** for future use, so the computer's data 
 
 ## Data Representation {#data-representation}
 
-**Data representation** is the way in which data (numbers, text, images, sound and video) is stored and processed inside a computer. A computer is a digital machine, so it represents **all data in binary form**, as patterns of **0s and 1s** (bits).
+**Data representation** is the way in which data (numbers, text, images, sound and video) is stored and processed inside a computer.
+
+A computer is a digital machine, so it represents **all data in binary form**, as patterns of **0s and 1s** (bits).
 
 **Units of data:**
 
@@ -94,7 +102,9 @@ Numbers are not stored as characters; they are converted directly into binary bi
 | 1's complement | 0000 0101 | 1111 1010 |
 | 2's complement | 0000 0101 | 1111 1011 |
 
-**2's complement** is the method used in most computers today, because it has only one zero and subtraction can be done by addition (see [Subtraction Using 2's Complement](/topics/number-systems/binary-arithmetic#subtraction-using-2-s-complement)). With *n* bits it represents −2ⁿ⁻¹ to +(2ⁿ⁻¹ − 1); for 8 bits, −128 to +127.
+**2's complement** is the method used in most computers today, because it has only one zero and subtraction can be done by addition (see [Subtraction Using 2's Complement](/topics/number-systems/binary-arithmetic#subtraction-using-2-s-complement)).
+
+With *n* bits it represents −2ⁿ⁻¹ to +(2ⁿ⁻¹ − 1); for 8 bits, −128 to +127.
 
 #### Real Numbers (Floating Point)
 

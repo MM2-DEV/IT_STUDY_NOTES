@@ -7,9 +7,13 @@ updated: 2026-11-04
 
 ### Definition of System
 
-A system is an organized group of **interrelated and interdependent components** that work together, according to a plan, to achieve a **common objective**. A business information system, for example, is made of people, procedures, data, software and hardware that work together to support the business.
+A system is an organized group of **interrelated and interdependent components** that work together, according to a plan, to achieve a **common objective**.
 
-**System analysis** is the process of studying an existing system (or a problem) to understand how it works, identify its problems and determine the requirements of a new system. **System design** is the process of planning the new system — its architecture, components, data, interfaces and procedures — to meet those requirements.
+A business information system, for example, is made of people, procedures, data, software and hardware that work together to support the business.
+
+**System analysis** is the process of studying an existing system (or a problem) to understand how it works, identify its problems and determine the requirements of a new system.
+
+**System design** is the process of planning the new system — its architecture, components, data, interfaces and procedures — to meet those requirements.
 
 ### Constraints of a System
 
@@ -95,7 +99,9 @@ Information systems are of seven main types, by the level of the organization th
 
 ### Definition of System Analyst
 
-A system analyst is a person who studies an organization's systems and problems, determines the requirements of a new or improved information system, and designs it, acting as the **link (bridge) between the users and management on one side and the programmers on the other**. The system analyst is the key person in system development and an agent of change in the organization.
+A system analyst is a person who studies an organization's systems and problems, determines the requirements of a new or improved information system, and designs it, acting as the **link (bridge) between the users and management on one side and the programmers on the other**.
+
+The system analyst is the key person in system development and an agent of change in the organization.
 
 ### Roles of the System Analyst
 
@@ -128,7 +134,9 @@ The skills of a system analyst are of four kinds:
 
 ## System Development Phases in System Analysis and Design {#system-development-phases-in-system-analysis-and-design}
 
-The system development life cycle (SDLC) is the process of developing an information system through a sequence of phases, from the study of the problem to the operation and maintenance of the new system. In system analysis and design it has five main phases:
+The **system development life cycle (SDLC)** is the process of developing an information system through a sequence of phases, from the study of the problem to the operation and maintenance of the new system.
+
+In system analysis and design it has five main phases:
 
 1. **Feasibility study (preliminary investigation and planning)**
    1. The problem and the scope of the existing system are defined.
@@ -159,7 +167,9 @@ The system development life cycle (SDLC) is the process of developing an informa
 
 ### Definition of Feasibility Study
 
-A feasibility study is a **preliminary investigation** that evaluates whether a proposed system is **worth developing and can be developed** with the available technology, budget, time and people. Its aim is to define the scope of the problem and to recommend whether to continue — not to solve the problem. Its output is a **feasibility report (system proposal)** that management uses to decide.
+A feasibility study is a **preliminary investigation** that evaluates whether a proposed system is **worth developing and can be developed** with the available technology, budget, time and people.
+
+Its aim is to define the scope of the problem and to recommend whether to continue — not to solve the problem. Its output is a **feasibility report (system proposal)** that management uses to decide.
 
 ### Types of Feasibility
 
@@ -204,7 +214,9 @@ The outcome is a decision to **go** (continue), **no-go** (abandon the project) 
 
 ### Definition of Fact-Finding
 
-Fact-finding (requirements gathering) is the process of collecting information about the existing system, its problems and the requirements of the new system, from users, managers and documents. It is used mainly in the feasibility study and the system analysis phase.
+Fact-finding (requirements gathering) is the process of collecting information about the existing system, its problems and the requirements of the new system, from users, managers and documents.
+
+It is used mainly in the feasibility study and the system analysis phase.
 
 ### Types of Fact-Finding Techniques
 
@@ -262,7 +274,9 @@ Other techniques include **prototyping** (users try a working model) and backgro
 
 ### Definition of DFD
 
-A data flow diagram (DFD) is a **graphical representation of the flow of data through a system**: it shows where the data comes from, how it is processed, where it is stored and where it goes. It shows **what** the system does with data, not **how** (it shows no control logic or timing). DFDs were developed for structured analysis by Larry Constantine, Ed Yourdon and Tom DeMarco.
+A data flow diagram (DFD) is a **graphical representation of the flow of data through a system**: it shows where the data comes from, how it is processed, where it is stored and where it goes.
+
+It shows **what** the system does with data, not **how** (it shows no control logic or timing). DFDs were developed for structured analysis by Larry Constantine, Ed Yourdon and Tom DeMarco.
 
 ### Components (Symbols) of a DFD
 
@@ -314,7 +328,9 @@ A level 1 DFD example (order processing) is shown in [System Modeling and Design
 
 ### Definition of Data Dictionary
 
-A data dictionary is a **structured repository of information about the data** of a system ("data about data", **metadata**): it lists and defines **every data element, data flow, data store and process** that appears in the DFDs, with its name, aliases, type, length, range of values, composition and description. It gives the whole project a **common, standard vocabulary** for its data.
+A data dictionary is a **structured repository of information about the data** of a system ("data about data", **metadata**): it lists and defines **every data element, data flow, data store and process** that appears in the DFDs, with its name, aliases, type, length, range of values, composition and description.
+
+It gives the whole project a **common, standard vocabulary** for its data.
 
 ### Contents of a Data Dictionary
 
@@ -361,7 +377,9 @@ Decision tables and decision trees are tools of structured analysis for specifyi
 
 ### Decision Table
 
-A decision table is a **table (matrix)** that shows all the combinations of **conditions** and the **actions** to be taken for each combination. It has four parts:
+A decision table is a **table (matrix)** that shows all the combinations of **conditions** and the **actions** to be taken for each combination.
+
+It has four parts:
 
 1. **Condition stub** (upper left) — the list of conditions.
 2. **Condition entries** (upper right) — the values of the conditions in each rule: Y (true), N (false) or – (does not matter).
@@ -386,7 +404,9 @@ Each column of entries is a **rule**. With **n** conditions that can each be tru
 
 ### Decision Tree
 
-A decision tree is a **graphical, tree-shaped** representation of decision logic: it starts with a condition at the root, each branch represents an outcome (value) of a condition, and the leaves represent the **actions**. It shows the order in which the conditions are tested.
+A decision tree is a **graphical, tree-shaped** representation of decision logic: it starts with a condition at the root, each branch represents an outcome (value) of a condition, and the leaves represent the **actions**.
+
+It shows the order in which the conditions are tested.
 
 ![Decision tree for the discount policy: advance payment gives a discount; otherwise purchase amount and regular customer are tested](/diagrams/software-engineering/decision-tree.svg)
 
@@ -461,10 +481,6 @@ Conversion is the process of changing from the old system to the new system. The
 - [Feasibility Study in Software Engineering](https://www.tpointtech.com/feasibility-study-in-software-engineering) — accessed 2026-11-04 (types of feasibility, go / no-go / revised-scope outcomes)
 - [Data Flow Diagram (DFD)](https://www.tpointtech.com/software-engineering-data-flow-diagrams) — accessed 2026-11-04 (DFD rules, Yourdon–DeMarco and Gane–Sarson symbols, levels, logical and physical DFDs; it uses the non-standard terms "movements" and "shops" for data flows and data stores)
 - [Behavioural Model in Software Engineering](https://www.tpointtech.com/behavioural-model-in-software-engineering) — accessed 2026-11-04 (DFD rules: allowed and forbidden flows)
-
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-04 (technical, operational and economic feasibility); the site has no other page on system analysis and design (checked 2026-11-04)
 
 **Programiz**
 

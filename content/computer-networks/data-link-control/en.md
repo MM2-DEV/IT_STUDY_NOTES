@@ -257,7 +257,9 @@ The generator is written as a **polynomial**: each bit is the coefficient of a p
 
 ### Modulo-2 Division
 
-Modulo-2 division is long division in which **subtraction is replaced by XOR** (0 ⊕ 0 = 0, 0 ⊕ 1 = 1, 1 ⊕ 0 = 1, 1 ⊕ 1 = 0); there are no borrows or carries. At each step, if the leftmost bit of the current part is 1, the generator is XORed with it; if it is 0, all 0s are used instead.
+Modulo-2 division is long division in which **subtraction is replaced by XOR** (0 ⊕ 0 = 0, 0 ⊕ 1 = 1, 1 ⊕ 0 = 1, 1 ⊕ 1 = 0); there are no borrows or carries.
+
+At each step, if the leftmost bit of the current part is 1, the generator is XORed with it; if it is 0, all 0s are used instead.
 
 ### Steps of CRC
 
@@ -417,10 +419,6 @@ The receiver removes the 0 that follows five consecutive 1s. If the sixth bit is
 
 - [Data Link Controls](https://www.tpointtech.com/data-link-controls) — accessed 2026-11-06 (line discipline: ENQ/ACK and poll/select; flow control; error control). It heads the ENQ/ACK section "END/ACK".
 - [Sliding Window Protocol](https://www.tpointtech.com/sliding-window-protocol), [CRC in Computer Network](https://www.tpointtech.com/crc-in-computer-network), [Error Detection](https://www.tpointtech.com/computer-network-error-detection) and [Error Correction](https://www.tpointtech.com/computer-network-error-correction) — accessed 2026-11-06 (modulo-n sequence numbers, ACK numbering, piggybacking; CRC steps and the 11100 ÷ 1001 example; Hamming code). The parity bits of its Hamming example (data 1010) do not satisfy its own parity checks; its sliding window page gives the window as 2ⁿ − 1 for all sliding window protocols, which holds for Go-Back-N but not for Selective Repeat (2ⁿ⁻¹). TpointTech has no page on HDLC.
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (item 40, stop-and-wait ARQ and the types of ARQ; item 51, flow control at the data link and transport layers; item 88, checksum; item 94, stop-and-wait efficiency on a satellite link; item 95, flow control vs congestion control). In item 94 it rounds the required window to "63 frames" in one step and "63 or 64" in another; since N ≥ 63.5, the minimum window is 64.
 
 **Programiz**
 

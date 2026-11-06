@@ -17,7 +17,9 @@ A browser downloads the three files from a web server, builds the page from the 
 
 #### Definition of HTML
 
-HTML (HyperText Markup Language) is the standard **markup language** used to create and structure web pages. It describes the content of a page with **elements**, marked by **tags**, which tell the browser how to display the content. HTML is not a programming language: it has no logic, variables or loops.
+HTML (HyperText Markup Language) is the standard **markup language** used to create and structure web pages.
+
+It describes the content of a page with **elements**, marked by **tags**, which tell the browser how to display the content. HTML is not a programming language: it has no logic, variables or loops.
 
 1. **HyperText** — text that contains links (hyperlinks) to other pages.
 2. **Markup language** — a language that marks up (annotates) text with tags to give it structure.
@@ -154,13 +156,15 @@ Common `<input>` types are `text`, `password`, `email`, `number`, `date`, `radio
 | --- | --- | --- |
 | Starts on a new line | Yes | No; it stays in the line of text |
 | Width | Takes the full available width | Takes only as much width as its content |
-| Can contain | Block and inline elements | Only text and other inline elements |
-| Width and height | Can be set | Usually cannot be set |
+| Can contain | Usually block and inline elements (`<p>` can contain only inline content) | Only text and other inline elements |
+| Width and height | Can be set | Cannot be set (except replaced elements such as `<img>` and `<input>`) |
 | Examples | `<div>`, `<p>`, `<h1>`–`<h6>`, `<ul>`, `<ol>`, `<table>`, `<form>` | `<span>`, `<a>`, `<img>`, `<b>`, `<i>`, `<strong>`, `<input>` |
 
 #### HTML5
 
-HTML5 is the latest version of HTML. Its main new features are:
+HTML5 is the latest version of HTML.
+
+Its main new features are:
 
 1. **Semantic elements** that describe the meaning of the content: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<figure>`.
 2. **Audio and video** without plug-ins: `<audio>` and `<video>`.
@@ -173,7 +177,9 @@ HTML5 is the latest version of HTML. Its main new features are:
 
 #### Definition of CSS
 
-CSS (Cascading Style Sheets) is a **style sheet language** used to describe the **presentation** of an HTML document: its colours, fonts, spacing, layout and appearance on different devices. It separates the content (HTML) from the design (CSS), so one style sheet can control the look of many pages.
+CSS (Cascading Style Sheets) is a **style sheet language** used to describe the **presentation** of an HTML document: its colours, fonts, spacing, layout and appearance on different devices.
+
+It separates the content (HTML) from the design (CSS), so one style sheet can control the look of many pages.
 
 "Cascading" means that when several style rules apply to the same element, the browser chooses one according to their **importance, specificity and order**: the more specific rule wins, and of two equally specific rules, the later one wins.
 
@@ -272,7 +278,9 @@ With `box-sizing: border-box`, the `width` and `height` include the padding and 
 
 #### Definition of JavaScript
 
-JavaScript is a lightweight, **interpreted** (just-in-time compiled), **dynamically typed** programming language that makes web pages **interactive**. It runs mainly in the web browser (client side), and also on servers with **Node.js** (2009).
+JavaScript is a lightweight, **interpreted** (just-in-time compiled), **dynamically typed** programming language that makes web pages **interactive**.
+
+It runs mainly in the web browser (client side), and also on servers with **Node.js** (2009).
 
 JavaScript was created by **Brendan Eich** at **Netscape** in **1995** (in about ten days); it was first called **Mocha**, then **LiveScript**, and then JavaScript. It was standardized by Ecma International as **ECMAScript** (ECMA-262) in 1997; **ES6 (ECMAScript 2015)** was a major revision. Despite the name, JavaScript is **not related to Java**.
 
@@ -373,7 +381,9 @@ console.log(square(4));         // 16
 
 #### DOM and Events
 
-The **DOM (Document Object Model)** is a tree-shaped representation of the HTML page that the browser creates; JavaScript uses it to **read and change** the content, structure and style of the page. An **event** is an action such as a click or a key press, and an **event handler (listener)** is a function that runs when the event occurs.
+The **DOM (Document Object Model)** is a tree-shaped representation of the HTML page that the browser creates; JavaScript uses it to **read and change** the content, structure and style of the page.
+
+An **event** is an action such as a click or a key press, and an **event handler (listener)** is a function that runs when the event occurs.
 
 ```html
 <p id="msg">Hello</p>
@@ -442,10 +452,6 @@ When the button is clicked, the text of the paragraph changes to "Button clicked
 - [JavaScript Variables and Constants](https://www.programiz.com/javascript/variables-constants) — accessed 2026-11-04
 - [JavaScript Data Types](https://www.programiz.com/javascript/data-types) — accessed 2026-11-04
 - [JavaScript Comparison and Logical Operators](https://www.programiz.com/javascript/comparison-logical) — accessed 2026-11-04 (`==` and `===`)
-
-**IT Job QnS**
-
-- [Combined Bank Officer (IT) 2026 MCQ](https://it.jobqns.com/combined-bank-officer-it-2026-mcq/) — accessed 2026-11-04 (CSS stands for Cascading Style Sheets; HTML is a markup language, not a programming language)
 
 **Additional sources**
 

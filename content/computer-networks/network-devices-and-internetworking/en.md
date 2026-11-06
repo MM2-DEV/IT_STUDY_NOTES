@@ -35,13 +35,17 @@ Types of hubs:
 
 #### Modem
 
-A modem (modulator–demodulator) is a **device that converts digital data from a computer into analog signals for transmission (modulation) and converts received analog signals back into digital data (demodulation)**. It connects a computer or LAN to an ISP over telephone lines (DSL modem), cable TV lines (cable modem) or fibre (ONT).
+A modem (modulator–demodulator) is a **device that converts digital data from a computer into analog signals for transmission (modulation) and converts received analog signals back into digital data (demodulation)**.
+
+It connects a computer or LAN to an ISP over telephone lines (DSL modem), cable TV lines (cable modem) or fibre (ONT).
 
 ### Data Link Layer Devices
 
 #### Network Interface Card (NIC)
 
-A network interface card (NIC) is a **hardware component that connects a computer to a network**. It has a unique 48-bit **MAC (physical) address** and works at the **physical and data link layers**. It can be wired (Ethernet) or wireless (Wi-Fi), internal (expansion slot or built into the motherboard) or external (USB).
+A network interface card (NIC) is a **hardware component that connects a computer to a network**.
+
+It has a unique 48-bit **MAC (physical) address** and works at the **physical and data link layers**. It can be wired (Ethernet) or wireless (Wi-Fi), internal (expansion slot or built into the motherboard) or external (USB).
 
 #### Bridge
 
@@ -74,7 +78,9 @@ It keeps a **routing table**, built manually or by **routing protocols** (RIP, O
 
 #### Brouter
 
-A brouter (bridging router) is a **device that works as both a bridge and a router**: it **routes** packets of routable protocols (such as IP) and **bridges** frames of non-routable protocols. It works at the data link and network layers and is rarely used today.
+A brouter (bridging router) is a **device that works as both a bridge and a router**: it **routes** packets of routable protocols (such as IP) and **bridges** frames of non-routable protocols.
+
+It works at the data link and network layers and is rarely used today.
 
 ### Upper Layer Device
 
@@ -171,10 +177,6 @@ The network formed is called an **internetwork (internet)**; the global Internet
 **TpointTech**
 
 - [Collision Domain and Broadcast Domain](https://www.tpointtech.com/collision-domain-and-broadcast-domain), [Router vs Bridge](https://www.tpointtech.com/router-vs-bridge) and [Switch vs Router](https://www.tpointtech.com/switch-vs-router) — accessed 2026-11-06 (which devices separate collision and broadcast domains; bridge vs router table)
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (hub types, NIC, repeater, switch, router, modem, gateway)
 
 **Programiz**
 

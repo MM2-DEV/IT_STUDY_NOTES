@@ -7,7 +7,9 @@ updated: 2026-11-01
 
 ### Definition and History
 
-**Boolean algebra** is the branch of algebra in which the variables can have **only two values: 1 (true) and 0 (false)**, and the basic operations are **OR (logical addition)**, **AND (logical multiplication)** and **NOT (complement)**. It is the mathematical basis of logic gates and digital circuits.
+**Boolean algebra** is the branch of algebra in which the variables can have **only two values: 1 (true) and 0 (false)**, and the basic operations are **OR (logical addition)**, **AND (logical multiplication)** and **NOT (complement)**.
+
+It is the mathematical basis of logic gates and digital circuits.
 
 1. It is named after the English mathematician **George Boole** (1815–1864).
 2. In **1847** Boole published *The Mathematical Analysis of Logic*, and in **1854** *An Investigation of the Laws of Thought*, in which he developed this algebra of logic.
@@ -192,6 +194,8 @@ The last two columns are the same in every row, so A + A′ · B = A + B.
 | A · A | A² | A |
 
 ## De Morgan's Theorem {#de-morgan-s-theorem}
+
+**De Morgan's theorems** are the two theorems of Boolean algebra which state that the complement of a sum equals the product of the complements, and the complement of a product equals the sum of the complements.
 
 The English mathematician **Augustus De Morgan** (1806–1871), who was born in Madurai, India, gave two theorems that relate the complement of a sum to a product of complements, and the complement of a product to a sum of complements. They are very important for simplifying expressions and for designing circuits with NAND and NOR gates.
 

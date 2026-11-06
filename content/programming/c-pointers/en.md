@@ -5,7 +5,9 @@ updated: 2026-11-04
 
 ### Pointer
 
-**Definition:** a pointer is a **variable that stores the memory address of another variable**. Through a pointer, a program can read and change the variable it points to. A pointer is a **derived data type**.
+**Definition:** a pointer is a **variable that stores the memory address of another variable**.
+
+Through a pointer, a program can read and change the variable it points to. A pointer is a **derived data type**.
 
 Every variable is stored at some memory location, which has an **address**. For example:
 
@@ -130,9 +132,13 @@ Output:
 
 ### Differences Between Array and Pointer
 
-**Array:** an array is a collection of a **fixed number of elements of the same data type**, stored in **contiguous memory locations** and accessed by an index. Its memory is allocated when it is defined, and its size cannot change.
+**Array:** an array is a collection of a **fixed number of elements of the same data type**, stored in **contiguous memory locations** and accessed by an index.
 
-**Pointer:** a pointer is a **variable that stores the memory address** of another variable. It holds one address at a time, and it can be changed to point to another location.
+Its memory is allocated when it is defined, and its size cannot change.
+
+**Pointer:** a pointer is a **variable that stores the memory address** of another variable.
+
+It holds one address at a time, and it can be changed to point to another location.
 
 Although an array name is converted to the address of its first element in most expressions (so `a[i]` and `p[i]` work the same way), an array is **not** a pointer:
 
@@ -384,10 +390,6 @@ Output: `Sum = 150`
 **Programiz**
 
 - [Relationship Between Arrays and Pointers](https://www.programiz.com/c-programming/c-pointers-arrays) — accessed 2026-11-04 (`x[i]` is equivalent to `*(x + i)`; arrays and pointers are not the same)
-
-**IT Job QnS**
-
-- IT Job QnS has no page comparing arrays and pointers (checked 2026-11-04).
 
 **Additional sources**
 

@@ -30,7 +30,7 @@ An OODBMS is a **DBMS that stores data as objects**, supporting the object-orien
 
 Objects of a programming language such as **Java, C++ or Smalltalk** can be stored and retrieved **without converting them into tables**. It combines **object-oriented features** (objects, OID, classes, inheritance, encapsulation, complex objects) with **database features** (persistence, secondary storage, concurrency control, recovery and ad hoc querying).
 
-**Standard:** the **ODMG (Object Data Management Group)** standard (version 3.0, 2001) defined an object model, the **ODL (Object Definition Language)** for defining schemas, and the **OQL (Object Query Language)**, an SQL-like query language for objects.
+**Standard:** the **ODMG (Object Data Management Group)** standard (version 3.0, 2000) defined an object model, the **ODL (Object Definition Language)** for defining schemas, and the **OQL (Object Query Language)**, an SQL-like query language for objects.
 
 **Examples of OODBMS:** Versant, ObjectStore, Objectivity/DB, GemStone, db4o, ObjectDB, ZODB (Python).
 
@@ -86,7 +86,9 @@ Its query language is **object-relational SQL** (SQL:1999 and later). **Examples
 
 ### Object Persistence
 
-Objects created by a program normally **disappear when the program ends** (transient objects). An object is **persistent** if it **continues to exist after the program that created it terminates**, because it has been saved on secondary storage; it can be loaded again later by the same or another program.
+A **persistent object** is an object that **continues to exist after the program that created it terminates**, because it has been saved on secondary storage.
+
+Objects created by a program normally **disappear when the program ends** (transient objects). A persistent object can be loaded again later by the same or another program.
 
 #### Approaches to Making Objects Persistent
 
@@ -143,10 +145,6 @@ In JPA/Hibernate these are the inheritance strategies **SINGLE_TABLE**, **TABLE_
 - [Definition and Overview of ODBMS](https://www.tpointtech.com/definition-and-overview-of-odbms) — accessed 2026-11-06 (requirements of an OODBMS, ODMG 3.0, example applications)
 - [Difference between OODBMS and ORDBMS](https://www.tpointtech.com/what-is-the-difference-between-oodbms-and-ordbms) — accessed 2026-11-06 (ORDBMS features and examples)
 - [Hibernate Tutorial](https://www.tpointtech.com/hibernate-tutorial) — accessed 2026-11-06 (ORM, JPA, the SINGLE_TABLE, TABLE_PER_CLASS and JOINED inheritance strategies)
-
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (object-oriented DBMS among the types of DBMS; the object data model)
 
 **Programiz**
 

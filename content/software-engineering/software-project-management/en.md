@@ -45,7 +45,9 @@ The W5HH principle (Barry Boehm) is a set of seven questions that outline the ke
 
 ### Project Manager
 
-A project manager is the person responsible for the planning, execution, monitoring, control and closure of a project. The responsibilities are of two kinds:
+A project manager is the person responsible for the planning, execution, monitoring, control and closure of a project.
+
+The responsibilities are of two kinds:
 
 **Managing people:**
 
@@ -109,7 +111,9 @@ An activity network shows the tasks of a project and the order in which they dep
 
 #### Gantt Chart
 
-A Gantt chart is a **bar chart** of the project schedule: each task is a horizontal bar on a time axis, starting at its start date and as long as its duration. It shows at a glance which tasks run when and in parallel, and it is used to track progress.
+A Gantt chart is a **bar chart** of the project schedule: each task is a horizontal bar on a time axis, starting at its start date and as long as its duration.
+
+It shows at a glance which tasks run when and in parallel, and it is used to track progress.
 
 ![Gantt chart: A from day 0 to 3, B from 3 to 5 with 2 days of slack, C from 3 to 7, D from 7 to 9](/diagrams/software-engineering/gantt-chart.svg)
 
@@ -117,7 +121,9 @@ A Gantt chart is a **bar chart** of the project schedule: each task is a horizon
 
 ### Definition of Software Metrics
 
-Software measurement is the process of assigning numbers to the attributes of software products, processes and projects. A software metric is a quantitative measure of an attribute of software or of its development, used for planning, estimating, controlling and improving.
+Software measurement is the process of assigning numbers to the attributes of software products, processes and projects.
+
+A software metric is a quantitative measure of an attribute of software or of its development, used for planning, estimating, controlling and improving.
 
 Measures are of two kinds:
 
@@ -237,7 +243,9 @@ The function point count is then used like LOC for derived metrics: productivity
 
 ### Definition of Software Project Estimation
 
-Software project estimation is the process of predicting the **size, effort, time (duration) and cost** of a software project before (and during) its development. The estimates are the basis of the project plan, the schedule and the budget.
+Software project estimation is the process of predicting the **size, effort, time (duration) and cost** of a software project before (and during) its development.
+
+The estimates are the basis of the project plan, the schedule and the budget.
 
 The four quantities are estimated in this order:
 
@@ -303,7 +311,9 @@ Because the effort varies as **1 ÷ td⁴**, compressing the schedule increases 
 
 ### Definition of Risk
 
-A risk is an **uncertain event or condition that, if it occurs, has a negative effect** on a project — on its schedule, cost, quality or success. A risk has two characteristics:
+A risk is an **uncertain event or condition that, if it occurs, has a negative effect** on a project — on its schedule, cost, quality or success.
+
+A risk has two characteristics:
 
 1. **Uncertainty** — the risk may or may not happen (there are no 100% probable risks).
 2. **Loss** — if the risk happens, it causes unwanted consequences or losses.
@@ -409,10 +419,6 @@ The drawbacks of RMMM are that it adds cost and time to the project, it can beco
 - [Size-Oriented Metrics](https://www.tpointtech.com/software-engineering-size-oriented-metrics) — accessed 2026-11-04 (LOC-based metrics and their disadvantages)
 - [Functional Point (FP) Analysis](https://www.tpointtech.com/software-engineering-functional-point-fp-analysis) — accessed 2026-11-04 (Albrecht, IFPUG, CAF range 0.65–1.35. Its weight table is misaligned — it gives external inputs the weights 7/10/15, which belong to internal logical files, and so on — and its worked example uses weights that match neither its own table nor the IFPUG table; the IFPUG weights given by GeeksforGeeks are used here)
 - [Risk Management Activities](https://www.tpointtech.com/software-engineering-risk-management-activities) — accessed 2026-11-04 (risk identification by source, probability bands, priority = probability × severity, avoid/transfer/reduce, risk leverage)
-
-**IT Job QnS**
-
-- IT Job QnS has no page on software project management, metrics, estimation or risk management (checked 2026-11-04).
 
 **Programiz**
 

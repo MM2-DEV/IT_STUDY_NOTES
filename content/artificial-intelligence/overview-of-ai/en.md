@@ -176,10 +176,6 @@ There are four types of AI based on functionality:
 
 - [Artificial Intelligence](https://www.tpointtech.com/artificial-intelligence-ai), [History of Artificial Intelligence](https://www.tpointtech.com/history-of-artificial-intelligence), [Types of Artificial Intelligence](https://www.tpointtech.com/types-of-artificial-intelligence), [Turing Test in AI](https://www.tpointtech.com/turing-test-in-ai), [Approaches of AI](https://www.tpointtech.com/approaches-of-artificial-intelligence), [Applications of AI](https://www.tpointtech.com/applications-of-artificial-intelligence) and [Advantages and Disadvantages of AI](https://www.tpointtech.com/advantages-and-disadvantages-of-artificial-intelligence) — accessed 2026-11-06 (milestones from McCulloch–Pitts 1943 to AlphaGo 2016, the two AI winters, the Turing test and the Loebner Prize, symbolic and statistical approaches). Issues: it calls Alan Turing an "Irishman" (he was English), and says that using an expert system "such as XCON was very cheap" — the high cost of building and maintaining expert systems was a cause of the second AI winter.
 
-**IT Job QnS**
-
-- [ML, AI and Big Data](https://it.jobqns.com/ml-ai-big-data/) — accessed 2026-11-06 (questions on machine learning, NLP, generative AI and explainable AI; it has no item on the overview of AI itself).
-
 **Programiz**
 
 - Programiz has no page on artificial intelligence (checked 2026-11-06).

@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## BCD (Binary Coded Decimal) {#bcd-binary-coded-decimal}
 
-**Definition:** In **BCD (Binary Coded Decimal)**, each **decimal digit** (0 to 9) is represented separately by its own **4-bit binary code**. The most common form is the **8421 BCD** code.
+**Definition:** In **BCD (Binary Coded Decimal)**, each **decimal digit** (0 to 9) is represented separately by its own **4-bit binary code**.
+
+The most common form is the **8421 BCD** code.
 
 BCD is a **weighted code**: the four bit positions have the weights **8, 4, 2 and 1** (from left to right).
 
@@ -91,7 +93,9 @@ A **7421** code also exists. With the weights 7, 4, 2 and 1, some digits can be 
 
 ## Excess-3 Code {#excess-3-code}
 
-**Definition:** **Excess-3 (XS-3)** is a binary code for decimal digits in which each digit is represented by its **8421 BCD code plus 3 (0011)**. It is called *excess-3* because every code is 3 more than the BCD code.
+**Definition:** **Excess-3 (XS-3)** is a binary code for decimal digits in which each digit is represented by its **8421 BCD code plus 3 (0011)**.
+
+It is called *excess-3* because every code is 3 more than the BCD code.
 
 **Excess-3 table:**
 
@@ -156,7 +160,9 @@ To convert Excess-3 back to decimal, **subtract 0011** from each 4-bit group and
 
 **Full form:** **E**xtended **B**inary **C**oded **D**ecimal **I**nterchange **C**ode. (Some books write "Information Code"; the correct word is **Interchange**.)
 
-**Definition:** EBCDIC is an **8-bit** character code used to represent letters, digits, special symbols and control characters. It was devised by **IBM** in **1963–1964** and introduced with the **IBM System/360** mainframe computers.
+**Definition:** EBCDIC is an **8-bit** character code used to represent letters, digits, special symbols and control characters.
+
+It was devised by **IBM** in **1963–1964** and introduced with the **IBM System/360** mainframe computers.
 
 **Features:**
 
@@ -188,7 +194,9 @@ For example, the digit **5** is 1111 0101 (F5): zone 1111 followed by the BCD co
 
 **Full form:** **A**merican **S**tandard **C**ode for **I**nformation **I**nterchange.
 
-**Definition:** ASCII is a **7-bit** character code used to represent letters, digits, punctuation marks, symbols and control characters in computers and communication equipment. The first edition of the standard was published in **1963** by the **American Standards Association (ASA)**, now the American National Standards Institute (ANSI). **Bob Bemer**, a member of the committee that defined it, is sometimes called the *father of ASCII*.
+**Definition:** ASCII is a **7-bit** character code used to represent letters, digits, punctuation marks, symbols and control characters in computers and communication equipment.
+
+The first edition of the standard was published in **1963** by the **American Standards Association (ASA)**, now the American National Standards Institute (ANSI). **Bob Bemer**, a member of the committee that defined it, is sometimes called the *father of ASCII*.
 
 **Features:**
 

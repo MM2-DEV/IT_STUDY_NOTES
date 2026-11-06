@@ -10,7 +10,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -40,7 +41,8 @@
           "exams": [
             "School-2",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -71,7 +73,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -80,7 +83,8 @@
           "exams": [
             "School-2",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -90,14 +94,16 @@
             "School-2",
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
           "id": "er-diagram-symbols-and-constructs",
           "title": "ER Diagram Symbols and Constructs",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         }
       ]
@@ -110,7 +116,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -120,7 +127,8 @@
             "School-2",
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -128,7 +136,8 @@
           "title": "Integrity Constraints",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -148,7 +157,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -158,7 +168,8 @@
             "School-2",
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -166,7 +177,8 @@
           "title": "Functional Dependencies",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -174,7 +186,8 @@
           "title": "2NF, 3NF and BCNF",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]
@@ -186,7 +199,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -195,7 +209,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -203,7 +218,8 @@
           "title": "Assertions and Triggers",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -223,7 +239,8 @@
       "exams": [
         "School-2",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -240,7 +257,8 @@
           "title": "Classification and Representation",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]
@@ -253,7 +271,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -303,7 +322,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -323,7 +343,8 @@
         "School-2",
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -331,7 +352,8 @@
           "title": "Concept and Overview of Query Processing",
           "exams": [
             "School-2",
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -421,7 +443,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -430,7 +453,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -444,14 +468,16 @@
           "id": "concurrent-executions",
           "title": "Concurrent Executions",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "serializability",
           "title": "Serializability",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         }
       ]
@@ -463,7 +489,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -472,7 +499,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -497,14 +525,16 @@
       "title": "Recovery System",
       "order": 12,
       "exams": [
-        "College"
+        "College",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "failure-classification",
           "title": "Failure Classification",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -518,14 +548,16 @@
           "id": "recovery-and-atomicity",
           "title": "Recovery and Atomicity",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "log-based-recovery",
           "title": "Log-Based Recovery",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -533,6 +565,13 @@
           "title": "Recovery with Concurrent Transactions",
           "exams": [
             "College"
+          ]
+        },
+        {
+          "id": "backup-and-restore",
+          "title": "Backup and Restore",
+          "exams": [
+            "Bank"
           ]
         }
       ]

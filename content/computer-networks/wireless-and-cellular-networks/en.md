@@ -201,9 +201,9 @@ As a mobile user moves from one cell to another, the call is passed to the new c
 
 An analog cellular system is a **first-generation (1G) mobile system in which voice is carried as an analog signal, frequency-modulated onto a separate radio channel for each call**.
 
-The main example is **AMPS** (Advanced Mobile Phone System), developed by Bell Labs and Motorola and introduced in the United States in **1983**. AMPS used the **800–850 MHz** band, with **30 kHz** channels and **FDMA** (frequency-division multiple access): each call has its own pair of frequencies. Other analog systems were NMT (Nordic countries) and TACS (United Kingdom).
+The main example is **AMPS** (Advanced Mobile Phone System), developed by Bell Labs and Motorola and introduced in the United States in **1983**. AMPS used the **800 MHz** band (824–849 MHz from mobile to base station, 869–894 MHz from base station to mobile), with **30 kHz** channels and **FDMA** (frequency-division multiple access): each call has its own pair of frequencies. Other analog systems were NMT (Nordic countries) and TACS (United Kingdom).
 
-**Limitations:** poor voice quality affected by noise, **no security** (calls could be overheard with a scanner), low capacity, voice only (no data), large handsets with short battery life, and no international roaming.
+**Limitations:** poor voice quality affected by noise, **no security** (calls could be overheard with a scanner), low capacity, voice only (no data), large handsets with short battery life, and only limited roaming (for example, NMT across the Nordic countries; no worldwide roaming).
 
 ### Digital Cellular System
 
@@ -245,10 +245,6 @@ Examples are **GSM** (TDMA + FDMA; 900 and 1800 MHz; each 200 kHz carrier has 8 
 **TpointTech**
 
 - [Advantages and Disadvantages of WLAN](https://www.tpointtech.com/advantages-and-disadvantages-of-wlan), [CSMA/CA vs CSMA/CD](https://www.tpointtech.com/csma-ca-vs-csma-cd), [Collision Avoidance in Wireless Networks](https://www.tpointtech.com/collision-avoidance-in-wireless-networks), [802.11ac vs 802.11ax](https://www.tpointtech.com/difference-between-802-11ac-and-802-11ax), [Wireless Security: WEP, WPA, WPA2 and WPA3](https://www.tpointtech.com/wireless-security-wep-wpa-wpa2-and-wpa3-differences), [Bluetooth](https://www.tpointtech.com/bluetooth-in-computer-networks), [Cellular Network](https://www.tpointtech.com/cellular-network) and [CDMA vs GSM](https://www.tpointtech.com/cdma-vs-gsm) — accessed 2026-11-06 (CSMA/CA with RTS/CTS; Wi-Fi 5 using only 5 GHz with MU-MIMO; Wi-Fi 6; wireless security protocols; piconet and scatternet; cells, base stations and handover). It gives the maximum rate of 802.11ac as "3.5 Gbps"; the standard allows up to about 6.9 Gbps (3.5 Gbps is a common figure for early products).
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (Wi-Fi as IEEE 802.11 and Bluetooth as IEEE 802.15.1; the access point; item 37, the purpose of the IEEE 802.11 committee; item 41, LTE network elements)
 
 **Programiz**
 

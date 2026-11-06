@@ -345,6 +345,161 @@
   padding: 0.25em 1em;
 }
 
+/* Subtopic cards (src/lib/rehype-section-cards.ts): every `##` section of the notes is a card,
+   so the start and end of each subtopic are easy to see. */
+.notes .subtopic-card {
+  margin-block: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  background-color: var(--card);
+  padding: 0.25rem 1.25rem 1rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+}
+
+@media (min-width: 640px) {
+  .notes .subtopic-card {
+    padding: 0.5rem 1.75rem 1.25rem;
+  }
+}
+
+.notes .subtopic-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-block: 1em 1.25em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.7rem;
+}
+
+.notes .subtopic-card-header h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.notes .subtopic-number {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
+  padding-inline: 0.4rem;
+  color: var(--primary-foreground);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Exam tags beside the subtopic title, shown as badges. */
+.notes .subtopic-exams {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.375rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.notes .subtopic-exams li {
+  margin: 0;
+  padding: 0;
+}
+
+.notes .subtopic-exams li::marker {
+  content: none;
+}
+
+.notes .exam-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 1.4rem;
+  border: 1px solid color-mix(in oklab, var(--primary) 35%, transparent);
+  border-radius: 9999px;
+  background-color: color-mix(in oklab, var(--primary) 10%, transparent);
+  padding-inline: 0.6rem;
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* The first and last elements of a card should not add extra space inside it. */
+.notes .subtopic-card > :last-child {
+  margin-bottom: 0;
+}
+
+/* References: a collapsible card, closed initially (a <details> element; no JavaScript). */
+.notes .references-card {
+  margin-block: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  background-color: var(--card);
+}
+
+.notes .references-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  border-radius: 0.9rem;
+  padding: 0.85rem 1.25rem;
+  list-style: none;
+}
+
+.notes .references-summary::-webkit-details-marker {
+  display: none;
+}
+
+.notes .references-summary::before {
+  content: "";
+  flex-shrink: 0;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-right: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+  transform: rotate(-45deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .notes .references-summary::before {
+    transition: transform 150ms ease;
+  }
+}
+
+.notes .references-card[open] > .references-summary::before {
+  transform: rotate(45deg);
+}
+
+.notes .references-summary:hover {
+  background-color: var(--accent);
+}
+
+.notes .references-summary:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.notes .references-summary h2 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 1.25em;
+}
+
+.notes .references-body {
+  border-top: 1px solid var(--border);
+  padding: 0.25rem 1.25rem 1rem;
+}
+
 /* Code blocks in notes: a light tinted background with a border. */
 .notes pre {
   border: 1px solid var(--code-border);
@@ -413,4 +568,23 @@
 .notes .code-tab-input:nth-of-type(3):checked ~ .code-tab-panel:nth-of-type(3),
 .notes .code-tab-input:nth-of-type(4):checked ~ .code-tab-panel:nth-of-type(4) {
   display: block;
+}
+
+/* Home page Explore tree (src/components/explore/explore-flow.tsx, React Flow). */
+.explore-flow .react-flow {
+  --xy-background-color: transparent;
+  --xy-edge-stroke: color-mix(in oklab, var(--muted-foreground) 55%, transparent);
+  --xy-edge-stroke-width: 1.5;
+  background: transparent;
+}
+.explore-flow .react-flow__node {
+  cursor: default;
+}
+.explore-flow .react-flow__edge-path {
+  stroke-dasharray: 6 5;
+}
+@media (prefers-reduced-motion: reduce) {
+  .explore-flow .react-flow__edge.animated path {
+    animation: none;
+  }
 }

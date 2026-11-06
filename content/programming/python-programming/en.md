@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Introduction and Features of Python {#introduction-and-features-of-python}
 
-**Python** is a **high-level, interpreted, general-purpose programming language** known for its **simple, readable syntax**. It supports procedural, object-oriented and functional programming.
+**Python** is a **high-level, interpreted, general-purpose programming language** known for its **simple, readable syntax**.
+
+It supports procedural, object-oriented and functional programming.
 
 **History:**
 
@@ -42,7 +44,9 @@ Output: `Hello, World!`. A Python program is saved in a `.py` file and run with 
 
 ### Variables
 
-A **variable** is a **name that refers to a value** stored in memory. It is created when a value is **assigned** to it with `=`; no type declaration is needed, and the same variable can later refer to a value of another type.
+A **variable** is a **name that refers to a value** stored in memory.
+
+It is created when a value is **assigned** to it with `=`; no type declaration is needed, and the same variable can later refer to a value of another type.
 
 ```python
 x = 10            # int
@@ -358,7 +362,9 @@ print(squares, evens)
 
 ### Tuple
 
-A **tuple** is an **ordered, immutable** collection in **round brackets**. Once created, its items cannot be changed, added or removed. Tuples are faster than lists and can be used as dictionary keys.
+A **tuple** is an **ordered, immutable** collection in **round brackets**.
+
+Once created, its items cannot be changed, added or removed. Tuples are faster than lists and can be used as dictionary keys.
 
 ```python
 t = (3, 7, 7, 1)
@@ -371,7 +377,9 @@ print(type(single), x, y)    # <class 'tuple'> 4 9
 
 ### Set
 
-A **set** is an **unordered** collection of **unique** items (no duplicates) in **curly braces**. It has no indexes. Sets support the mathematical set operations. (An empty set is written `set()`, because `{}` is an empty dictionary.)
+A **set** is an **unordered** collection of **unique** items (no duplicates) in **curly braces**.
+
+It has no indexes. Sets support the mathematical set operations. (An empty set is written `set()`, because `{}` is an empty dictionary.)
 
 ```python
 a = {1, 2, 3, 4}
@@ -388,7 +396,9 @@ print(sorted(a), 3 in a)       # [2, 3, 4, 9] True
 
 ### Dictionary
 
-A **dictionary** (`dict`) is a collection of **key: value pairs** in curly braces. **Keys must be unique and immutable** (numbers, strings, tuples); values can be anything. Values are accessed by **key**, not by position. (Dictionaries keep the order in which items were inserted.)
+A **dictionary** (`dict`) is a collection of **key: value pairs** in curly braces.
+
+**Keys must be unique and immutable** (numbers, strings, tuples); values can be anything. Values are accessed by **key**, not by position. (Dictionaries keep the order in which items were inserted.)
 
 ```python
 student = {"roll": 7, "name": "Rahim", "marks": 78}
@@ -438,7 +448,9 @@ print(freq)                          # {'apple': 3, 'banana': 1, 'cherry': 1}
 
 ### Modules
 
-A **module** is a **Python file (`.py`)** that contains definitions (functions, classes, variables) and statements. The module name is the file name without `.py`. Modules let a large program be divided into files and let code be **reused**.
+A **module** is a **Python file (`.py`)** that contains definitions (functions, classes, variables) and statements.
+
+The module name is the file name without `.py`. Modules let a large program be divided into files and let code be **reused**.
 
 **Ways to import:**
 
@@ -475,7 +487,9 @@ and use it from another file in the same folder: `import mymath` and then `mymat
 
 ### Packages
 
-A **package** is a **folder (directory) of modules** with a hierarchical (dotted) name. A folder becomes a regular package when it contains a file named **`__init__.py`** (which may be empty).
+A **package** is a **folder (directory) of modules** with a hierarchical (dotted) name.
+
+A folder becomes a regular package when it contains a file named **`__init__.py`** (which may be empty).
 
 ```text
  shapes/
@@ -536,6 +550,8 @@ print(len(lines))                  # 4
 **File methods:** `read()` (whole file as a string), `read(n)` (n characters), `readline()` (one line), `readlines()` (list of lines), `write(s)`, `writelines(list)`, `close()`, `seek(pos)` and `tell()` (move to and report the position). The `os` module can check and delete files: `os.path.exists("notes.txt")`, `os.remove("notes.txt")`.
 
 ## Exception Handling {#exception-handling}
+
+An **exception** is an error that occurs **during the execution** of a program and interrupts its normal flow.
 
 **Errors in Python:**
 

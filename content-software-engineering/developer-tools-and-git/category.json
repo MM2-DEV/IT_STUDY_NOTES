@@ -1,0 +1,176 @@
+{
+  "title": "Developer Tools and Git",
+  "order": 5,
+  "topics": [
+    {
+      "slug": "browser-developer-tools",
+      "title": "Browser Developer Tools",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "inspecting-elements-and-styles",
+          "title": "Inspecting Elements and Styles",
+          "exams": []
+        },
+        {
+          "id": "console",
+          "title": "Console",
+          "exams": []
+        },
+        {
+          "id": "debugging-javascript-with-breakpoints",
+          "title": "Debugging JavaScript with Breakpoints",
+          "exams": []
+        },
+        {
+          "id": "network-tab-and-request-inspection",
+          "title": "Network Tab and Request Inspection",
+          "exams": []
+        },
+        {
+          "id": "performance-and-lighthouse",
+          "title": "Performance and Lighthouse",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "package-managers",
+      "title": "Package Managers",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "npm-pnpm-and-yarn",
+          "title": "npm, pnpm and yarn",
+          "exams": []
+        },
+        {
+          "id": "package-json-and-scripts",
+          "title": "package.json and Scripts",
+          "exams": []
+        },
+        {
+          "id": "dependencies-and-devdependencies",
+          "title": "Dependencies and devDependencies",
+          "exams": []
+        },
+        {
+          "id": "semantic-version-ranges",
+          "title": "Semantic Version Ranges",
+          "exams": []
+        },
+        {
+          "id": "lock-files",
+          "title": "Lock Files",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "git-fundamentals",
+      "title": "Git Fundamentals",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "repository-working-tree-staging-area-and-commits",
+          "title": "Repository, Working Tree, Staging Area and Commits",
+          "exams": []
+        },
+        {
+          "id": "init-clone-status-add-commit-and-log",
+          "title": "init, clone, status, add, commit and log",
+          "exams": []
+        },
+        {
+          "id": "gitignore",
+          "title": ".gitignore",
+          "exams": []
+        },
+        {
+          "id": "remotes-push-fetch-and-pull",
+          "title": "Remotes: push, fetch and pull",
+          "exams": []
+        },
+        {
+          "id": "undoing-changes-restore-revert-and-reset",
+          "title": "Undoing Changes: restore, revert and reset",
+          "exams": []
+        },
+        {
+          "id": "writing-good-commit-messages",
+          "title": "Writing Good Commit Messages",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "branching-merging-and-rebasing",
+      "title": "Branching, Merging and Rebasing",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "branches",
+          "title": "Branches",
+          "exams": []
+        },
+        {
+          "id": "merging-and-merge-conflicts",
+          "title": "Merging and Merge Conflicts",
+          "exams": []
+        },
+        {
+          "id": "rebasing",
+          "title": "Rebasing",
+          "exams": []
+        },
+        {
+          "id": "stash-and-cherry-pick",
+          "title": "stash and cherry-pick",
+          "exams": []
+        },
+        {
+          "id": "git-workflows-feature-branches-and-trunk-based-development",
+          "title": "Git Workflows: Feature Branches and Trunk-Based Development",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "collaboration-on-github",
+      "title": "Collaboration on GitHub",
+      "order": 5,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "github-repository-management",
+          "title": "GitHub Repository Management",
+          "exams": []
+        },
+        {
+          "id": "pull-requests",
+          "title": "Pull Requests",
+          "exams": []
+        },
+        {
+          "id": "code-reviews-on-pull-requests",
+          "title": "Code Reviews on Pull Requests",
+          "exams": []
+        },
+        {
+          "id": "issues-and-project-boards",
+          "title": "Issues and Project Boards",
+          "exams": []
+        },
+        {
+          "id": "readme-and-project-documentation",
+          "title": "README and Project Documentation",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

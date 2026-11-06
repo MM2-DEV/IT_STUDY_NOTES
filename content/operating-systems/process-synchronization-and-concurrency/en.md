@@ -44,7 +44,9 @@ The final value is **4** instead of 5 (the producer's update was lost). If P3 an
 
 ### Critical Section
 
-> **A critical section is the part of a program in which a process accesses shared resources, such as shared variables, files or devices. No two processes may execute their critical sections at the same time.**
+> **A critical section is the part of a program in which a process accesses shared resources, such as shared variables, files or devices.**
+
+No two processes may execute their critical sections at the same time.
 
 ### Structure of a Process
 
@@ -121,7 +123,9 @@ turn = j;             /* give the turn to the other process */
 
 #### 3. Peterson's Algorithm
 
-Peterson's algorithm is a software solution for **two processes**. It combines the turn variable with an "interested" flag for each process.
+**Peterson's algorithm** is a software solution to the critical-section problem for **two processes**.
+
+It combines the turn variable with an "interested" flag for each process.
 
 - `flag[i] = true` means process Pi wants to enter.
 - `turn` says which process must wait if both want to enter.
@@ -478,10 +482,6 @@ do {
 - [Turn Variable or Strict Alternation Approach](https://www.tpointtech.com/os-turn-variable-or-strict-alternation-approach) — accessed 2026-11-03
 - [N-Process Peterson Algorithm](https://www.tpointtech.com/n-process-peterson-algorithm) — accessed 2026-11-03 (its code puts the critical section inside the busy-wait loop; the correct form, used in these notes, matches TutorialsPoint and GeeksforGeeks)
 - [Sleep and Wake in Process Synchronization](https://www.tpointtech.com/os-sleep-and-wake) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (race condition, the three critical-section requirements, atomic operations, the producer–consumer problem and the deadlock conditions)
 
 **Programiz**
 

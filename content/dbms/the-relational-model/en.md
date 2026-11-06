@@ -102,7 +102,9 @@ In 1985 Codd published rules that a DBMS must satisfy to be called fully relatio
 
 ### Relational Algebra
 
-Relational algebra is a **procedural query language** consisting of a set of operations that take one or two relations as input and produce a new relation as output. It is the theoretical basis of SQL.
+Relational algebra is a **procedural query language** consisting of a set of operations that take one or two relations as input and produce a new relation as output.
+
+It is the theoretical basis of SQL.
 
 #### Fundamental Operations
 
@@ -133,7 +135,9 @@ Let BANGLA = {Rahim, Karim, Sumi} and ENGLISH = {Sumi, Nila, Rahim} be the names
 4. If ENROL(Student, Course) = {(Rahim, C1), (Rahim, C2), (Karim, C1), (Sumi, C1), (Sumi, C2)} and COURSE = {C1, C2}, then ENROL ÷ COURSE = {Rahim, Sumi} — the students who take **all** the courses.
 5. If R has 3 tuples and S has 2 tuples, R × S has 3 × 2 = **6** tuples.
 
-**Relational calculus** is the non-procedural counterpart: the query states **what** to retrieve, not how. It has two forms, **tuple relational calculus**, for example { t | STUDENT(t) ∧ t.Dept = 'CSE' }, and **domain relational calculus**; both have the same expressive power as relational algebra (for safe expressions).
+**Relational calculus** is a non-procedural query language in which a query states **what** to retrieve, not how to retrieve it.
+
+It has two forms, **tuple relational calculus**, for example { t | STUDENT(t) ∧ t.Dept = 'CSE' }, and **domain relational calculus**; both have the same expressive power as relational algebra (for safe expressions).
 
 ## Integrity Constraints {#integrity-constraints}
 
@@ -277,10 +281,6 @@ Resulting tables:
 - [Relational Algebra](https://www.tpointtech.com/dbms-relational-algebra) — accessed 2026-11-06. It says that "all operations are binary"; selection, projection and rename are unary.
 - [Convert ER into Table](https://www.tpointtech.com/dbms-reduction-of-er-diagram-into-table) — accessed 2026-11-06 (entity, key, multivalued, composite and derived attributes)
 - [Recursive Relationship in ER Diagrams](https://www.tpointtech.com/recursive-relationship-in-er-diagrams) — accessed 2026-11-06 (self-referencing foreign key)
-
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (relational model with tables, schema and instance, integrity constraints, the seven types of keys with examples)
 
 **Programiz**
 

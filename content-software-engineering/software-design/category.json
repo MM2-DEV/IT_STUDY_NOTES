@@ -1,0 +1,163 @@
+{
+  "title": "Software Design and Architecture",
+  "order": 16,
+  "topics": [
+    {
+      "slug": "paradigms-and-oop",
+      "title": "Programming Paradigms and OOP in Practice",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "procedural-object-oriented-and-functional-programming",
+          "title": "Procedural, Object-Oriented and Functional Programming",
+          "exams": []
+        },
+        {
+          "id": "encapsulation-inheritance-abstraction-and-polymorphism",
+          "title": "Encapsulation, Inheritance, Abstraction and Polymorphism",
+          "exams": []
+        },
+        {
+          "id": "composition-over-inheritance",
+          "title": "Composition over Inheritance",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "clean-code-and-principles",
+      "title": "Clean Code and Design Principles",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "solid-principles",
+          "title": "SOLID Principles",
+          "exams": []
+        },
+        {
+          "id": "dry-kiss-and-yagni",
+          "title": "DRY, KISS and YAGNI",
+          "exams": []
+        },
+        {
+          "id": "separation-of-concerns",
+          "title": "Separation of Concerns",
+          "exams": []
+        },
+        {
+          "id": "cohesion-and-coupling",
+          "title": "Cohesion and Coupling",
+          "exams": []
+        },
+        {
+          "id": "clean-code-and-naming",
+          "title": "Clean Code and Naming",
+          "exams": []
+        },
+        {
+          "id": "code-smells-and-refactoring",
+          "title": "Code Smells and Refactoring",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "design-patterns",
+      "title": "Design Patterns",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "factory",
+          "title": "Factory",
+          "exams": []
+        },
+        {
+          "id": "singleton",
+          "title": "Singleton",
+          "exams": []
+        },
+        {
+          "id": "strategy",
+          "title": "Strategy",
+          "exams": []
+        },
+        {
+          "id": "adapter",
+          "title": "Adapter",
+          "exams": []
+        },
+        {
+          "id": "observer",
+          "title": "Observer",
+          "exams": []
+        },
+        {
+          "id": "decorator",
+          "title": "Decorator",
+          "exams": []
+        },
+        {
+          "id": "repository",
+          "title": "Repository",
+          "exams": []
+        },
+        {
+          "id": "dependency-injection",
+          "title": "Dependency Injection",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "application-architecture",
+      "title": "Application Architecture",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "layered-architecture",
+          "title": "Layered Architecture",
+          "exams": []
+        },
+        {
+          "id": "mvc-and-related-patterns",
+          "title": "MVC and Related Patterns",
+          "exams": []
+        },
+        {
+          "id": "modular-monolith",
+          "title": "Modular Monolith",
+          "exams": []
+        },
+        {
+          "id": "microservices",
+          "title": "Microservices",
+          "exams": []
+        },
+        {
+          "id": "monolith-vs-microservices",
+          "title": "Monolith vs Microservices",
+          "exams": []
+        },
+        {
+          "id": "domain-driven-design-overview",
+          "title": "Domain-Driven Design Overview",
+          "exams": []
+        },
+        {
+          "id": "event-driven-architecture",
+          "title": "Event-Driven Architecture",
+          "exams": []
+        },
+        {
+          "id": "message-queues-and-brokers",
+          "title": "Message Queues and Brokers",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

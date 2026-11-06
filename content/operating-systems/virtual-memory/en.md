@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### Definition
 
-> **Virtual memory is a memory-management technique that lets a process run even when it is not completely in main memory. It gives each process the illusion of a very large, contiguous memory (its virtual address space) by keeping only the parts in use in RAM and the rest on secondary storage (disk).**
+> **Virtual memory is a memory-management technique that lets a process run even when it is not completely in main memory.**
+
+It gives each process the illusion of a very large, contiguous memory (its virtual address space) by keeping only the parts in use in RAM and the rest on secondary storage (disk).
 
 Part of the disk (the **swap space** or **backing store**) is used as an extension of main memory. The mapping between virtual and physical addresses is kept in the page table.
 
@@ -115,6 +117,8 @@ where:
 1. Equal allocation: 100 ÷ 2 = **50** frames each — P1 needs only 20, so 30 are wasted.
 2. Proportional allocation: a₁ = 20 ÷ 140 × 100 ≈ 14.3 → **14** frames; a₂ = 120 ÷ 140 × 100 ≈ 85.7 → **86** frames.
 
+The third type of frame allocation:
+
 3. **Priority allocation:** high-priority processes get more frames (frames are allocated by priority, or by a combination of size and priority).
 
 ### Types of Page Replacement Scope: Global vs Local
@@ -158,7 +162,9 @@ As the degree of multiprogramming increases, CPU utilization rises up to a maxim
 
 ### Locality Model and Working-Set Model
 
-A **locality** is a set of pages that are actively used together (for example, a function with its local variables and the data it uses). A program moves from one locality to another as it runs.
+A **locality** is a set of pages that are actively used together (for example, a function with its local variables and the data it uses).
+
+A program moves from one locality to another as it runs.
 
 The **working set** of a process is the set of pages referenced in the most recent **Δ** page references (Δ is the **working-set window**):
 
@@ -327,10 +333,6 @@ Neither LFU nor MFU is common; they are expensive and do not approximate OPT wel
 - [OS Numerical on LRU, FIFO and Optimal](https://www.tpointtech.com/os-numerical-on-lru-fifo-and-optimal) — accessed 2026-11-03 (its results — Optimal 5, FIFO 6, LRU 6 — agree with a simulation)
 - [Belady's Anomaly in Operating System](https://www.tpointtech.com/os-beladys-anamoly) — accessed 2026-11-03
 - [Allocation of Frames in OS](https://www.tpointtech.com/allocation-of-frames-in-os) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (demand paging, page faults, Belady's anomaly, working set, thrashing, LRU and NRU, and the FIFO problem 1, 3, 0, 3, 5, 6, 3 with 3 frames — 6 faults)
 
 **Programiz**
 

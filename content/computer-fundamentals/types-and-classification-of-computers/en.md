@@ -13,7 +13,9 @@ According to the way they represent and process data, computers are of three typ
 
 ### Analog Computer
 
-**Definition:** An analog computer is a computer that processes **continuous (analog) data**. It represents numbers by continuously varying **physical quantities**, such as electrical voltage or current, mechanical movement (the rotation of gears or shafts), pressure or temperature, and solves a problem by building a physical model of it.
+**Definition:** An analog computer is a computer that processes **continuous (analog) data**.
+
+It represents numbers by continuously varying **physical quantities**, such as electrical voltage or current, mechanical movement (the rotation of gears or shafts), pressure or temperature, and solves a problem by building a physical model of it.
 
 **Characteristics:**
 
@@ -43,7 +45,9 @@ According to the way they represent and process data, computers are of three typ
 
 ### Digital Computer
 
-**Definition:** A digital computer is a computer that processes **discrete data**. It represents all data and instructions using the **binary number system**, which has only two digits: **0 and 1** (in the circuit, *off* and *on*).
+**Definition:** A digital computer is a computer that processes **discrete data**.
+
+It represents all data and instructions using the **binary number system**, which has only two digits: **0 and 1** (in the circuit, *off* and *on*).
 
 **Characteristics:**
 
@@ -75,7 +79,9 @@ According to the way they represent and process data, computers are of three typ
 
 ### Hybrid Computer
 
-**Definition:** A hybrid computer is a computer that combines the features of both **analog and digital computers**. It can process both continuous (analog) data and discrete (digital) data.
+**Definition:** A hybrid computer is a computer that combines the features of both **analog and digital computers**.
+
+It can process both continuous (analog) data and discrete (digital) data.
 
 **How it works:**
 
@@ -137,7 +143,9 @@ Minicomputers are mid-sized computers between mainframes and microcomputers. The
 
 ### Microcomputer
 
-**Definition:** A microcomputer is a small, low-cost computer whose central processing unit (CPU) is a **single microprocessor chip**. It is designed to be used by **one person at a time**, so it is also called a **personal computer (PC)**.
+**Definition:** A microcomputer is a small, low-cost computer whose central processing unit (CPU) is a **single microprocessor chip**.
+
+It is designed to be used by **one person at a time**, so it is also called a **personal computer (PC)**.
 
 **Characteristics:**
 
@@ -196,7 +204,9 @@ Minicomputers are mid-sized computers between mainframes and microcomputers. The
 
 ### Supercomputer
 
-**Definition:** A supercomputer is the **most powerful, fastest and most expensive** type of computer. It is used for extremely complex calculations that ordinary computers cannot perform in a reasonable time.
+**Definition:** A supercomputer is the **most powerful, fastest and most expensive** type of computer.
+
+It is used for extremely complex calculations that ordinary computers cannot perform in a reasonable time.
 
 **Characteristics:**
 
@@ -243,10 +253,6 @@ Minicomputers are mid-sized computers between mainframes and microcomputers. The
 | Examples | Desktop, laptop, smartphone | IBM Z series | CDC 6600, Fugaku |
 
 ## References {#references}
-
-**IT Job QnS**
-
-- [NTRCA IT Job Solution](https://it.jobqns.com/ntrca-it-job-solution/) (16th NTRCA written question on the classification of digital computers by size and capacity) — accessed 2026-11-01
 
 **TutorialsPoint**
 

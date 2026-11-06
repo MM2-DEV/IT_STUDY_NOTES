@@ -68,7 +68,9 @@ All data passes through the central device, which forwards it to the destination
 
 #### Switched Topology
 
-A switched topology is a **star topology in which the central device is a switch**. The switch forwards each frame **only to the port of the destination device** (using its MAC address), instead of broadcasting it to all ports as a hub does. So devices can communicate at the same time without collisions (each port is a separate collision domain), and performance and security are better than with a hub. Most modern Ethernet LANs use switched (star) topology.
+A switched topology is a **star topology in which the central device is a switch**.
+
+The switch forwards each frame **only to the port of the destination device** (using its MAC address), instead of broadcasting it to all ports as a hub does. So devices can communicate at the same time without collisions (each port is a separate collision domain), and performance and security are better than with a hub. Most modern Ethernet LANs use switched (star) topology.
 
 ### 3. Ring Topology
 
@@ -145,7 +147,9 @@ Example: several star networks joined by a bus backbone, as in many universities
 
 ### 7. Point-to-Point Topology
 
-Point-to-point topology is the **simplest topology, in which two devices are connected by a dedicated link**. The whole capacity of the link is used by the two devices. Example: a leased line between two branch offices, or a computer connected directly to a printer. It is fast and secure but cannot connect more devices.
+Point-to-point topology is the **simplest topology, in which two devices are connected by a dedicated link**.
+
+The whole capacity of the link is used by the two devices. Example: a leased line between two branch offices, or a computer connected directly to a printer. It is fast and secure but cannot connect more devices.
 
 ### Comparison of Topologies
 
@@ -173,10 +177,6 @@ Point-to-point topology is the **simplest topology, in which two devices are con
 **TpointTech**
 
 - [Computer Network Topologies](https://www.tpointtech.com/computer-network-topologies) — accessed 2026-11-06 (mesh examples 5 devices → 10 links, 10 → 45; token passing in ring). Its ring section lists "faulty devices can be removed without bringing the network down" as an advantage, which contradicts the single-ring behaviour described by TutorialsPoint (one failure breaks the ring); it holds only for dual rings or rings with bypass.
-
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (network topologies)
 
 **Programiz**
 

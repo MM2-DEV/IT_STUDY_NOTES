@@ -54,7 +54,9 @@ One business sells products, raw materials or services to another business, whic
 
 ### B2C (Business-to-Consumer)
 
-B2C is the e-commerce model in which a **business sells products or services directly to individual consumers (end users)** through its website or app. It is the most familiar form of e-commerce (online retail).
+B2C is the e-commerce model in which a **business sells products or services directly to individual consumers (end users)** through its website or app.
+
+It is the most familiar form of e-commerce (online retail).
 
 **How it works (steps of the consumer):**
 
@@ -183,10 +185,6 @@ Its goal is to give citizens access to services **at any time and from anywhere*
 **TpointTech**
 
 - [Characteristics of Electronic Commerce](https://www.tpointtech.com/characteristics-of-electronic-commerce) — accessed 2026-11-04 (B2C, B2B, C2C, C2B and B2G with examples). The page `advantages-and-disadvantages-of-e-commerce` listed by search returns 404.
-
-**IT Job QnS**
-
-- IT Job QnS has no page on e-commerce business models (checked 2026-11-04).
 
 **Programiz**
 

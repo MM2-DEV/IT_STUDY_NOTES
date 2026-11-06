@@ -7,7 +7,7 @@ updated: 2026-11-01
 
 ### Spanning Tree
 
-A **spanning tree** of a **connected, undirected graph** G is a **subgraph** that:
+**A spanning tree** is a **subgraph** of a **connected, undirected graph** G that:
 
 1. includes **all the vertices** of G,
 2. is a **tree** — connected and with **no cycles**,
@@ -44,7 +44,9 @@ A **minimum spanning tree** of a **connected, weighted, undirected graph** is a 
 
 ### Idea
 
-**Kruskal's algorithm** builds the MST by adding edges in **increasing order of weight**, skipping any edge that would form a **cycle**. At the start every vertex is a separate tree (a forest); the chosen edges join the trees together until a single tree remains.
+**Kruskal's algorithm** is a greedy algorithm that builds the MST by adding edges in **increasing order of weight**, skipping any edge that would form a **cycle**.
+
+At the start every vertex is a separate tree (a forest); the chosen edges join the trees together until a single tree remains.
 
 ### Algorithm
 
@@ -139,7 +141,9 @@ Kruskal's algorithm works well for **sparse** graphs and needs only an **edge li
 
 ### Idea
 
-**Prim's algorithm** grows the MST **from a starting vertex**, one vertex at a time. At each step it adds the **cheapest edge that connects a vertex in the tree to a vertex outside the tree**. Because the tree always stays connected and an edge to a vertex already in the tree is never chosen, no cycle can form.
+**Prim's algorithm** is a greedy algorithm that grows the MST **from a starting vertex**, one vertex at a time, by always adding the **cheapest edge that connects a vertex in the tree to a vertex outside the tree**.
+
+At each step it adds the **cheapest edge that connects a vertex in the tree to a vertex outside the tree**. Because the tree always stays connected and an edge to a vertex already in the tree is never chosen, no cycle can form.
 
 ### Algorithm
 
@@ -225,7 +229,7 @@ Total weight = 15
 1. With an **adjacency matrix** and a simple search for the minimum key: **O(V²)** — good for **dense** graphs.
 2. With an **adjacency list** and a **binary heap**: **O((V + E) log V)** = O(E log V).
 3. With an adjacency list and a **Fibonacci heap**: **O(E + V log V)**.
-3. Space: O(V) (plus the graph).
+4. Space: O(V) (plus the graph).
 
 ### Differences Between Prim's and Kruskal's Algorithms
 
@@ -267,11 +271,6 @@ Total weight = 15
 - [Spanning Tree and Minimum Spanning Tree](https://www.programiz.com/dsa/spanning-tree-and-minimum-spanning-tree) — accessed 2026-11-01
 - [Kruskal's Algorithm](https://www.programiz.com/dsa/kruskal-algorithm) — accessed 2026-11-01
 - [Prim's Algorithm](https://www.programiz.com/dsa/prim-algorithm) — accessed 2026-11-01
-
-**IT Job QnS**
-
-- [Design and Analysis of Algorithm](https://it.jobqns.com/design-and-analysis-of-algorithm/) — accessed 2026-11-01
-- [Data Structure](https://it.jobqns.com/data-structure/) — accessed 2026-11-01
 
 **Additional sources**
 

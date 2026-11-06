@@ -1,0 +1,130 @@
+{
+  "title": "Performance and Observability",
+  "order": 20,
+  "topics": [
+    {
+      "slug": "frontend-performance",
+      "title": "Frontend Performance",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "measuring-before-optimizing",
+          "title": "Measuring Before Optimizing",
+          "exams": []
+        },
+        {
+          "id": "core-web-vitals",
+          "title": "Core Web Vitals",
+          "exams": []
+        },
+        {
+          "id": "critical-rendering-path",
+          "title": "Critical Rendering Path",
+          "exams": []
+        },
+        {
+          "id": "lazy-loading-and-code-splitting",
+          "title": "Lazy Loading and Code Splitting",
+          "exams": []
+        },
+        {
+          "id": "image-and-font-optimization",
+          "title": "Image and Font Optimization",
+          "exams": []
+        },
+        {
+          "id": "bundle-analysis",
+          "title": "Bundle Analysis",
+          "exams": []
+        },
+        {
+          "id": "compression-and-browser-caching",
+          "title": "Compression and Browser Caching",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "backend-performance-and-reliability",
+      "title": "Backend Performance and Reliability",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "database-query-profiling",
+          "title": "Database Query Profiling",
+          "exams": []
+        },
+        {
+          "id": "caching-at-application-and-database-layers",
+          "title": "Caching at Application and Database Layers",
+          "exams": []
+        },
+        {
+          "id": "background-processing",
+          "title": "Background Processing",
+          "exams": []
+        },
+        {
+          "id": "timeouts-retries-and-circuit-breakers",
+          "title": "Timeouts, Retries and Circuit Breakers",
+          "exams": []
+        },
+        {
+          "id": "health-checks",
+          "title": "Health Checks",
+          "exams": []
+        },
+        {
+          "id": "graceful-shutdown",
+          "title": "Graceful Shutdown",
+          "exams": []
+        },
+        {
+          "id": "load-and-stress-testing",
+          "title": "Load and Stress Testing",
+          "exams": []
+        },
+        {
+          "id": "cpu-and-memory-profiling",
+          "title": "CPU and Memory Profiling",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "observability",
+      "title": "Observability",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "structured-logging",
+          "title": "Structured Logging",
+          "exams": []
+        },
+        {
+          "id": "metrics",
+          "title": "Metrics",
+          "exams": []
+        },
+        {
+          "id": "distributed-tracing-and-opentelemetry",
+          "title": "Distributed Tracing and OpenTelemetry",
+          "exams": []
+        },
+        {
+          "id": "monitoring-and-alerting",
+          "title": "Monitoring and Alerting",
+          "exams": []
+        },
+        {
+          "id": "error-tracking",
+          "title": "Error Tracking",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

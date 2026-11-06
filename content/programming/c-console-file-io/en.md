@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Console I/O {#console-i-o}
 
-**Console I/O** means reading input from the **keyboard** and writing output to the **screen (monitor)**. C has no input/output statements of its own; all I/O is done with **library functions** declared in **`stdio.h`**.
+**Console I/O** means reading input from the **keyboard** and writing output to the **screen (monitor)**.
+
+C has no input/output statements of its own; all I/O is done with **library functions** declared in **`stdio.h`**.
 
 ### Standard Streams
 

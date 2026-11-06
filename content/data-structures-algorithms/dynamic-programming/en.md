@@ -7,7 +7,9 @@ updated: 2026-11-02
 
 ### Definition
 
-**Dynamic programming (DP)** is an algorithm design technique for **optimization problems** that **breaks a problem into smaller sub-problems**, **solves each sub-problem only once**, and **stores its result** in a table, so that the result can be **reused** instead of being computed again. The method was developed by **Richard Bellman** in the 1950s.
+**Dynamic programming (DP)** is an algorithm design technique for **optimization problems** that **breaks a problem into smaller sub-problems**, **solves each sub-problem only once**, and **stores its result** in a table, so that the result can be **reused** instead of being computed again.
+
+The method was developed by **Richard Bellman** in the 1950s.
 
 DP can be used when the problem has two properties:
 
@@ -80,13 +82,15 @@ Output: `102334155 102334155`
 
 ### Principle of Optimality
 
-**Bellman's principle of optimality** (Richard Bellman, *Dynamic Programming*, 1957): *an optimal policy has the property that whatever the initial state and initial decision are, the remaining decisions must constitute an optimal policy with regard to the state resulting from the first decision.*
+**Bellman's principle of optimality** is the principle that, in an optimal sequence of decisions, whatever the first decision is, the remaining decisions must also be optimal for the sub-problem that results from that first decision.
+
+Richard Bellman stated it in *Dynamic Programming* (1957): *an optimal policy has the property that whatever the initial state and initial decision are, the remaining decisions must constitute an optimal policy with regard to the state resulting from the first decision.*
 
 In simple words: **in an optimal sequence of decisions, whatever the first decision is, the remaining decisions must also be optimal** for the sub-problem that is left. Dynamic programming can be applied only to problems that obey this principle.
 
 ### Optimal Substructure
 
-A problem has **optimal substructure** if an **optimal solution contains optimal solutions to its sub-problems**.
+**Optimal substructure** is the property of a problem that an **optimal solution contains optimal solutions to its sub-problems**.
 
 **Example (shortest path):** if the shortest path from A to C passes through B, then its A-to-B part must be a shortest path from A to B (and its B-to-C part a shortest path from B to C). Otherwise, replacing that part with a shorter one would give a shorter A-to-C path, which is impossible.
 
@@ -99,6 +103,8 @@ A problem has **overlapping sub-problems** if a recursive algorithm **solves the
 ## Assembly-Line Scheduling {#assembly-line-scheduling}
 
 ### Problem
+
+**Assembly-line scheduling** is the problem of finding the fastest way to build a product in a factory with two assembly lines, by choosing at each station whether to stay on the same line or switch to the other.
 
 A factory has **two assembly lines**, each with **n stations**. Station j on line i takes time **a[i][j]**. A product (car chassis) must pass through stations 1, 2, …, n **in order**, on either line. Entering line i takes **e[i]**, leaving it takes **x[i]**, and **moving to the other line** after station j − 1 costs **t[i][j]** (staying on the same line costs nothing). Find the **minimum total time** to build one product.
 
@@ -167,6 +173,8 @@ Output: `Minimum time = 35`
 ## Matrix Chain Multiplication {#matrix-chain-multiplication}
 
 ### Problem
+
+**The matrix chain multiplication problem** is the problem of finding the order (parenthesisation) in which to multiply a chain of matrices A1 × A2 × … × An so that the total number of scalar multiplications is minimum.
 
 Multiplying a p × q matrix by a q × r matrix needs **p × q × r** scalar multiplications. Matrix multiplication is **associative**, so a chain A1 × A2 × … × An can be **parenthesised** in many ways, all giving the same result but with very different costs. Given the dimensions (Ai is p[i−1] × p[i]), find the **parenthesisation with the minimum number of scalar multiplications**. (The problem is to find the order, not to multiply the matrices.)
 
@@ -254,7 +262,9 @@ The last cell tries every split k:
 
 ### Problem
 
-A **subsequence** of a string is obtained by **deleting zero or more characters without changing the order** of the rest (the characters need not be adjacent). For example, "ACE" is a subsequence of "ABCDE". The **longest common subsequence** of two strings X and Y is a longest sequence that is a subsequence of **both**. Checking all 2^m subsequences of X takes exponential time.
+**A subsequence** is a sequence obtained from a string by **deleting zero or more characters without changing the order** of the rest (the characters need not be adjacent).
+
+For example, "ACE" is a subsequence of "ABCDE". The **longest common subsequence** of two strings X and Y is a longest sequence that is a subsequence of **both**. Checking all 2^m subsequences of X takes exponential time.
 
 ### Recurrence
 
@@ -324,6 +334,8 @@ Output: `LCS length = 4, LCS = BCBA`
 
 ### Problem
 
+**The Viterbi algorithm** is a dynamic-programming algorithm that finds the **most likely sequence of hidden states** of a hidden Markov model for a given sequence of observations.
+
 A **hidden Markov model (HMM)** describes a system that moves between **hidden states** that cannot be seen directly; at each time step the current state produces an **observation** that can be seen. The model has:
 
 1. **Initial probabilities** π(s): the probability of starting in state s.
@@ -368,6 +380,8 @@ The largest final value is **0.01512 (Fever on day 3)**. Following the back-poin
 ## Bitonic Euclidean Traveling-Salesperson Problem {#bitonic-euclidean-traveling-salesperson-problem}
 
 ### Problem
+
+**The bitonic Euclidean travelling-salesperson problem** is the problem of finding the shortest bitonic tour through n points in the plane: a closed tour that goes strictly from left to right to the rightmost point and then strictly from right to left back to the starting point.
 
 The **Euclidean travelling-salesperson problem** asks for the **shortest closed tour** that visits each of n given points in the plane exactly once. It is NP-hard, so no polynomial-time algorithm is known for it.
 

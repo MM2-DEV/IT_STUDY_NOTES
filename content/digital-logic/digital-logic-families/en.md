@@ -3,7 +3,9 @@ description: Digital logic families and their characteristics (fan-in, fan-out, 
 updated: 2026-11-01
 ---
 
-**Logic family:** a logic family is a **group of digital integrated circuits built with the same circuit technology**, so that they share the same **logic levels, supply voltage** and general characteristics (speed, power consumption, noise immunity) and can be connected to one another. Logic gates of the same family work together without extra interface circuits.
+**Logic family:** a logic family is a **group of digital integrated circuits built with the same circuit technology**, so that they share the same **logic levels, supply voltage** and general characteristics (speed, power consumption, noise immunity) and can be connected to one another.
+
+Logic gates of the same family work together without extra interface circuits.
 
 ### Classification of Logic Families
 
@@ -25,10 +27,10 @@ updated: 2026-11-01
 4. **Power dissipation:** the **power consumed** by a gate. *Static* power is used while the output stays at one level; *dynamic* power is used while the output is switching.
 5. **Noise margin (noise immunity):** the **largest unwanted (noise) voltage** that can be added to an input without changing the output to a wrong logic level:
 
-```text
- High-level noise margin  NMH = VOH(min) − VIH(min)
- Low-level noise margin   NML = VIL(max) − VOL(max)
-```
+   ```text
+   High-level noise margin  NMH = VOH(min) − VIH(min)
+   Low-level noise margin   NML = VIL(max) − VOL(max)
+   ```
 
    VOH and VOL are the guaranteed output levels of a driving gate; VIH and VIL are the input levels that the driven gate accepts as 1 and 0.
 
@@ -41,7 +43,9 @@ updated: 2026-11-01
 
 ### DTL (Diode-Transistor Logic)
 
-**Definition:** DTL is a bipolar logic family in which **diodes perform the logic (AND/OR) function** and a **transistor performs inversion and amplification**. The basic DTL gate is a **NAND gate**. DTL is the **direct ancestor of TTL**.
+**Definition:** DTL is a bipolar logic family in which **diodes perform the logic (AND/OR) function** and a **transistor performs inversion and amplification**.
+
+The basic DTL gate is a **NAND gate**. DTL is the **direct ancestor of TTL**.
 
 ![DTL NAND gate: two input diodes, resistors and an output transistor](/diagrams/digital-logic/dtl-nand.svg)
 
@@ -66,7 +70,9 @@ So the output is 0 only when all inputs are 1: Y = (AB)′, a **NAND** function.
 
 ### TTL (Transistor-Transistor Logic)
 
-**Definition:** TTL is a bipolar logic family in which **transistors perform both the logic function and the amplification**. The basic TTL gate is a **NAND gate** whose input stage is a **multiple-emitter transistor** (one emitter for each input), followed by amplifying stages. TTL replaced DTL; Texas Instruments' **5400/7400 series** of the mid-1960s made TTL the industry standard.
+**Definition:** TTL is a bipolar logic family in which **transistors perform both the logic function and the amplification**.
+
+The basic TTL gate is a **NAND gate** whose input stage is a **multiple-emitter transistor** (one emitter for each input), followed by amplifying stages. TTL replaced DTL; Texas Instruments' **5400/7400 series** of the mid-1960s made TTL the industry standard.
 
 **Main features of standard TTL:**
 
@@ -131,7 +137,9 @@ The **74LS** series became the most common TTL type.
 
 ### CMOS (Complementary MOS)
 
-**Definition:** CMOS is a MOS logic family that uses **complementary pairs of p-channel (PMOS) and n-channel (NMOS) MOSFETs**. The **PMOS transistors form a pull-up network** (between VDD and the output) and the **NMOS transistors form a pull-down network** (between the output and ground). For every input combination, one network is ON and the other is OFF. CMOS was presented by Frank Wanlass and Chih-Tang Sah of Fairchild Semiconductor in **1963**; RCA's **CD4000 series** (1968) was an early CMOS logic family. CMOS is now the **most common technology** for digital ICs, including microprocessors and memories.
+**Definition:** CMOS is a MOS logic family that uses **complementary pairs of p-channel (PMOS) and n-channel (NMOS) MOSFETs**.
+
+The **PMOS transistors form a pull-up network** (between VDD and the output) and the **NMOS transistors form a pull-down network** (between the output and ground). For every input combination, one network is ON and the other is OFF. CMOS was presented by Frank Wanlass and Chih-Tang Sah of Fairchild Semiconductor in **1963**; RCA's **CD4000 series** (1968) was an early CMOS logic family. CMOS is now the **most common technology** for digital ICs, including microprocessors and memories.
 
 #### CMOS Inverter (NOT Gate)
 

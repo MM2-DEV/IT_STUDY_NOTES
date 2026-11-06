@@ -238,7 +238,9 @@ Using `goto` makes programs hard to read and maintain ("spaghetti code"), so it 
 
 ## Looping Statements {#looping-statements}
 
-**Definition:** a loop (iteration statement) **repeats a block of statements** as long as a condition is true. Every loop has:
+**Definition:** a loop (iteration statement) **repeats a block of statements** as long as a condition is true.
+
+Every loop has:
 
 1. **Initialization** of a loop control variable
 2. A **condition** (test) that decides whether to continue

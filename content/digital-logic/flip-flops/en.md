@@ -3,9 +3,13 @@ description: Latches and flip-flops, the SR flip-flop, clock triggering, the JK 
 updated: 2026-11-01
 ---
 
-**Sequential circuit:** a sequential circuit is a digital circuit whose output depends on **both the present inputs and the previous state** (what is stored in it). It contains **memory elements** and **feedback**. This is the opposite of a [combinational circuit](/topics/digital-logic/combinational-circuits), whose output depends only on the present inputs. The basic memory elements of sequential circuits are **latches** and **flip-flops**.
+**Sequential circuit:** a sequential circuit is a digital circuit whose output depends on **both the present inputs and the previous state** (what is stored in it).
 
-**Clock:** a clock is a signal that changes regularly between 0 and 1. In a **synchronous** sequential circuit, the flip-flops change state only at the moments set by the clock; in an **asynchronous** circuit, the state can change as soon as the inputs change.
+It contains **memory elements** and **feedback**. This is the opposite of a [combinational circuit](/topics/digital-logic/combinational-circuits), whose output depends only on the present inputs. The basic memory elements of sequential circuits are **latches** and **flip-flops**.
+
+**Clock:** a clock is a signal that changes regularly between 0 and 1.
+
+In a **synchronous** sequential circuit, the flip-flops change state only at the moments set by the clock; in an **asynchronous** circuit, the state can change as soon as the inputs change.
 
 **Triggering:** making a flip-flop respond to its inputs is called *triggering*. A flip-flop can be triggered in two ways:
 
@@ -22,7 +26,9 @@ Edge triggering is preferred in practice because the state can change only once 
 
 ## Basic Flip-Flops {#basic-flip-flops}
 
-**Definition:** a flip-flop is a **sequential circuit with two stable states** that can **store one bit** of binary information (0 or 1). It keeps its state until an input changes it. Because it has two stable states, it is also called a **bistable multivibrator**. A flip-flop is the **basic memory cell** of digital systems. The simple, unclocked form is called a **latch** (it "latches", or holds, its state; see the differences between a latch and a flip-flop below). The first electronic flip-flop circuit was invented by the British physicist **William Eccles** (with F. W. Jordan) in **1918**.
+**Definition:** a flip-flop is a **sequential circuit with two stable states** that can **store one bit** of binary information (0 or 1).
+
+It keeps its state until an input changes it. Because it has two stable states, it is also called a **bistable multivibrator**. A flip-flop is the **basic memory cell** of digital systems. The simple, unclocked form is called a **latch** (it "latches", or holds, its state; see the differences between a latch and a flip-flop below). The first electronic flip-flop circuit was invented by the British physicist **William Eccles** (with F. W. Jordan) in **1918**.
 
 **The smallest memory unit:** the memory of a digital system is built from flip-flops; a group of flip-flops working together, each holding one bit, forms a register.
 
@@ -44,7 +50,9 @@ Edge triggering is preferred in practice because the state can change only once 
 
 ### SR Latch
 
-A **latch** is the simplest memory element. It has **no clock**: its output changes as soon as its inputs change, so it is an asynchronous circuit. The basic **SR latch** is made of **two cross-coupled NOR gates** or **two cross-coupled NAND gates**: the output of each gate is fed back to an input of the other gate.
+A **latch** is the simplest memory element: a bistable circuit with **no clock**, whose output changes as soon as its inputs change.
+
+So it is an asynchronous circuit. The basic **SR latch** is made of **two cross-coupled NOR gates** or **two cross-coupled NAND gates**: the output of each gate is fed back to an input of the other gate.
 
 **SR latch with NOR gates** (active-high inputs):
 
@@ -70,7 +78,9 @@ A **latch** is the simplest memory element. It has **no clock**: its output chan
 
 ### Clocked SR Flip-Flop
 
-**Definition:** the SR flip-flop is an SR latch with **two extra NAND gates** at the inputs, controlled by the **clock (CLK)**. The S and R inputs can reach the latch only when CLK = 1; when CLK = 0, the outputs of the input gates are 1 and the latch keeps its state.
+**Definition:** the SR flip-flop is an SR latch with **two extra NAND gates** at the inputs, controlled by the **clock (CLK)**.
+
+The S and R inputs can reach the latch only when CLK = 1; when CLK = 0, the outputs of the input gates are 1 and the latch keeps its state.
 
 ![Clocked SR flip-flop made of four NAND gates](/diagrams/digital-logic/sr-flip-flop-clocked.svg)
 
@@ -143,7 +153,9 @@ A **characteristic table** gives the next state for given inputs. An **excitatio
 
 ## J-K Flip-Flop {#j-k-flip-flop}
 
-**Definition:** the JK flip-flop is an **improved SR flip-flop** in which the **invalid state is removed**. Its inputs J and K work like S and R, but when **J = K = 1** the output **toggles** (changes to its complement) instead of becoming invalid. (The names J and K are conventional letters; they do not stand for words.)
+**Definition:** the JK flip-flop is an **improved SR flip-flop** in which the **invalid state is removed**.
+
+Its inputs J and K work like S and R, but when **J = K = 1** the output **toggles** (changes to its complement) instead of becoming invalid. (The names J and K are conventional letters; they do not stand for words.)
 
 **Construction:** the outputs are fed back to the inputs: the J input is ANDed with **Q′**, and the K input is ANDed with **Q**. So S = JQ′ and R = KQ. Because S and R can never both be 1 at the same time, the forbidden state never occurs.
 
@@ -190,7 +202,9 @@ A **characteristic table** gives the next state for given inputs. An **excitatio
 
 ### Race-Around Condition
 
-**Definition:** in a **level-triggered** JK flip-flop with **J = K = 1**, the output toggles. If the clock stays at 1 for longer than the time the flip-flop takes to change (its **propagation delay**), the new output is fed back to the inputs and the flip-flop **toggles again and again** while the clock is high. At the end of the clock pulse the final state is uncertain. This repeated toggling during one clock pulse is called the **race-around condition**.
+**Definition:** the race-around condition is the **repeated toggling** of the output of a **level-triggered** JK flip-flop with **J = K = 1** during a single clock pulse, which leaves its final state uncertain.
+
+With J = K = 1, the output toggles. If the clock stays at 1 for longer than the time the flip-flop takes to change (its **propagation delay**), the new output is fed back to the inputs and the flip-flop **toggles again and again** while the clock is high. At the end of the clock pulse the final state is uncertain. This repeated toggling during one clock pulse is called the **race-around condition**.
 
 **Ways to avoid it:**
 
@@ -229,7 +243,9 @@ Since the master and the slave are never enabled at the same time, the output ca
 
 ### D Flip-Flop
 
-**Definition:** the D flip-flop (Data or **Delay** flip-flop) has **one data input D** and a clock. At the active clock edge, **the output Q takes the value of D**, and it keeps that value until the next active clock edge. Because the input appears at the output one clock period later, it is also called a **delay flip-flop**.
+**Definition:** the D flip-flop (Data or **Delay** flip-flop) is a flip-flop with **one data input D** whose output **Q takes the value of D at the active clock edge**.
+
+It keeps that value until the next active clock edge. Because the input appears at the output one clock period later, it is also called a **delay flip-flop**.
 
 **Construction:** an SR flip-flop with **S = D** and **R = D′** (through a NOT gate). Since S and R are always complements, the forbidden state S = R = 1 can never occur. (A JK flip-flop with J = D and K = D′ also works as a D flip-flop.)
 
@@ -268,7 +284,9 @@ Since the master and the slave are never enabled at the same time, the output ca
 
 ### T Flip-Flop
 
-**Definition:** the T (Toggle) flip-flop has **one input T** and a clock. When **T = 0**, the output **does not change**; when **T = 1**, the output **toggles** (changes to its complement) at every active clock edge.
+**Definition:** the T (Toggle) flip-flop is a flip-flop with **one input T** that **toggles** its output at every active clock edge when T = 1 and keeps it unchanged when T = 0.
+
+When **T = 0**, the output **does not change**; when **T = 1**, the output **toggles** (changes to its complement) at every active clock edge.
 
 **Construction:** a JK flip-flop with **J and K joined together** as the input T. Then T = 0 gives J = K = 0 (no change), and T = 1 gives J = K = 1 (toggle).
 

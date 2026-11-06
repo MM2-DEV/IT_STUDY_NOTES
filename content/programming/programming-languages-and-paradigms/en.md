@@ -20,7 +20,9 @@ So, by level, a language is a **machine language**, an **assembly language** or 
 
 #### 1. Low-Level Language
 
-A low-level language is a language that gives **little or no abstraction from the hardware**: its instructions correspond closely to the processor's own instructions, and they work directly with registers and memory addresses. Programs written in it are **machine-dependent**.
+A low-level language is a language that gives **little or no abstraction from the hardware**: its instructions correspond closely to the processor's own instructions, and they work directly with registers and memory addresses.
+
+Programs written in it are **machine-dependent**.
 
 **Characteristics of low-level languages:**
 
@@ -32,13 +34,19 @@ A low-level language is a language that gives **little or no abstraction from th
 
 Low-level languages are of two types:
 
-**(a) Machine language:** machine language is the language of **binary codes (0s and 1s)** that the processor **understands and executes directly**. It is the only language a computer understands without translation, so no translator is needed. Machine code differs from one processor family to another (for example, Intel x86 and ARM). (See [Machine Language Programming](#machine-language-programming).)
+**(a) Machine language:** machine language is the language of **binary codes (0s and 1s)** that the processor **understands and executes directly**.
 
-**(b) Assembly language:** assembly language is a low-level language that uses **mnemonics** (short, easy-to-remember codes such as `MOV`, `ADD`, `SUB`) instead of binary codes. Each assembly instruction normally corresponds to one machine instruction. A program called an **assembler** translates it into machine language. Every processor family has its own assembly language (for example, 8086 and ARM assembly). (See [Assembly Language Programming](#assembly-language-programming).)
+It is the only language a computer understands without translation, so no translator is needed. Machine code differs from one processor family to another (for example, Intel x86 and ARM). (See [Machine Language Programming](#machine-language-programming).)
+
+**(b) Assembly language:** assembly language is a low-level language that uses **mnemonics** (short, easy-to-remember codes such as `MOV`, `ADD`, `SUB`) instead of binary codes.
+
+Each assembly instruction normally corresponds to one machine instruction. A program called an **assembler** translates it into machine language. Every processor family has its own assembly language (for example, 8086 and ARM assembly). (See [Assembly Language Programming](#assembly-language-programming).)
 
 #### 2. High-Level Language
 
-A high-level language is a language that uses **English-like words and mathematical notation** and hides the details of the hardware, so that the programmer can concentrate on solving the problem. A **compiler** or **interpreter** translates it into machine language.
+A high-level language is a language that uses **English-like words and mathematical notation** and hides the details of the hardware, so that the programmer can concentrate on solving the problem.
+
+A **compiler** or **interpreter** translates it into machine language.
 
 **Characteristics of high-level languages:**
 
@@ -135,7 +143,9 @@ A program written in any language other than machine language must be **translat
 
 ## Programming Paradigms {#programming-paradigms}
 
-**Definition:** a programming paradigm is a **style or approach** of programming: a way of organising a program and of thinking about how a problem is solved. Many languages support more than one paradigm.
+**Definition:** a programming paradigm is a **style or approach** of programming: a way of organising a program and of thinking about how a problem is solved.
+
+Many languages support more than one paradigm.
 
 ```text
                      Programming paradigms
@@ -148,23 +158,33 @@ A program written in any language other than machine language must be **translat
 
 ### 1. Imperative Paradigm
 
-**Definition:** imperative programming is a paradigm in which the program is a **sequence of commands** that **change the program's state** (the values of variables) step by step, mainly through **assignment statements**. It tells the computer **how** to solve the problem. It follows the structure of the von Neumann computer. Examples: C, FORTRAN, BASIC.
+**Definition:** imperative programming is a paradigm in which the program is a **sequence of commands** that **change the program's state** (the values of variables) step by step, mainly through **assignment statements**.
+
+It tells the computer **how** to solve the problem. It follows the structure of the von Neumann computer. Examples: C, FORTRAN, BASIC.
 
 ### 2. Procedural Paradigm
 
-**Definition:** procedural programming is a kind of imperative programming in which the program is divided into **procedures (functions or subroutines)**, each doing one task; procedures are called when needed, which allows **code reuse**. Examples: C, Pascal, FORTRAN.
+**Definition:** procedural programming is a kind of imperative programming in which the program is divided into **procedures (functions or subroutines)**, each doing one task; procedures are called when needed, which allows **code reuse**.
+
+Examples: C, Pascal, FORTRAN.
 
 ### 3. Object-Oriented Paradigm (OOP)
 
-**Definition:** object-oriented programming is a paradigm in which the program is organised as a collection of **objects**, each combining **data (attributes)** and the **functions (methods)** that work on it. Objects are created from **classes** and interact by calling each other's methods. Its main features are **encapsulation, inheritance and polymorphism** (see [Object-Oriented Programming Concepts](/topics/programming/oop-concepts)). Simula was the first object-oriented language. Examples: C++, Java, Python, C#, Smalltalk.
+**Definition:** object-oriented programming is a paradigm in which the program is organised as a collection of **objects**, each combining **data (attributes)** and the **functions (methods)** that work on it.
+
+Objects are created from **classes** and interact by calling each other's methods. Its main features are **encapsulation, inheritance and polymorphism** (see [Object-Oriented Programming Concepts](/topics/programming/oop-concepts)). Simula was the first object-oriented language. Examples: C++, Java, Python, C#, Smalltalk.
 
 ### 4. Parallel Processing Paradigm
 
-**Definition:** parallel processing is a paradigm in which the instructions of a program are **divided among several processors** so that parts of the program run at the same time and the program finishes sooner (a divide-and-conquer approach). C and C++ support it through libraries.
+**Definition:** parallel processing is a paradigm in which the instructions of a program are **divided among several processors** so that parts of the program run at the same time and the program finishes sooner (a divide-and-conquer approach).
+
+C and C++ support it through libraries.
 
 ### 5. Declarative Paradigm
 
-**Definition:** declarative programming is a paradigm in which the program describes **what** result is wanted, **not how** to compute it step by step; the language system decides the steps. It includes:
+**Definition:** declarative programming is a paradigm in which the program describes **what** result is wanted, **not how** to compute it step by step; the language system decides the steps.
+
+It includes:
 
 1. **Logic programming:** the program consists of **facts and rules**, and the system answers questions by **logical inference** from them. Example: **PROLOG**.
 2. **Functional programming:** computation is done by **evaluating mathematical functions**; it avoids changing variables (state), and functions can be passed to and returned from other functions. Examples: Haskell, Lisp, Erlang, Scala.
@@ -204,7 +224,9 @@ A program written in any language other than machine language must be **translat
 
 ### Differences Between Structured and Object-Oriented Programming
 
-**Structured programming** is a form of procedural programming in which a program is divided into **functions (modules)** and is built only from the three standard control structures — **sequence, selection and iteration** — without unrestricted `goto` jumps; the `main()` function calls the other functions as needed (see [Structured Program Design](/topics/programming/program-design-techniques#structured-program-design)). Examples: C, Pascal, ALGOL, Modula-2.
+**Structured programming** is a form of procedural programming in which a program is divided into **functions (modules)** and is built only from the three standard control structures — **sequence, selection and iteration** — without unrestricted `goto` jumps; the `main()` function calls the other functions as needed (see [Structured Program Design](/topics/programming/program-design-techniques#structured-program-design)).
+
+Examples: C, Pascal, ALGOL, Modula-2.
 
 **Object-oriented programming** organises a program as a collection of **objects**, which combine data and the functions (methods) that work on it, and is based on **encapsulation, abstraction, inheritance and polymorphism**. Examples: C++, Java, Python, C#.
 
@@ -230,7 +252,9 @@ A program written in any language other than machine language must be **translat
 
 ## Machine Language Programming {#machine-language-programming}
 
-**Definition:** machine language programming is writing programs **directly in the binary codes** of the processor. Each instruction is a pattern of bits that the processor executes **without any translation**.
+**Definition:** machine language programming is writing programs **directly in the binary codes** of the processor.
+
+Each instruction is a pattern of bits that the processor executes **without any translation**.
 
 **Format of a machine instruction:** an instruction has two parts:
 
@@ -266,7 +290,9 @@ Machine code is usually written in **hexadecimal** (or octal) instead of long bi
 
 ## Assembly Language Programming {#assembly-language-programming}
 
-**Definition:** assembly language programming is writing programs with **mnemonics** (symbolic codes) for the processor's instructions, together with symbolic names (**labels**) for memory addresses. Each assembly instruction normally corresponds to **one machine instruction**. An **assembler** translates the program into machine code.
+**Definition:** assembly language programming is writing programs with **mnemonics** (symbolic codes) for the processor's instructions, together with symbolic names (**labels**) for memory addresses.
+
+Each assembly instruction normally corresponds to **one machine instruction**. An **assembler** translates the program into machine code.
 
 **Parts of an assembly language statement:**
 
@@ -346,10 +372,6 @@ The instruction set and complete assembly programs for the 8085/8086 microproces
 **Programiz**
 
 - [C++ Programming guide](https://www.programiz.com/cpp-programming/guide) — accessed 2026-11-04 (C++ as a middle-level language); Programiz has no page on the classification of languages by level
-
-**IT Job QnS**
-
-- [Programming Question](https://it.jobqns.com/programming-question/) — accessed 2026-11-04 (high-level languages: C, C++, Java, Python; low-level languages: assembly language and machine code)
 
 **Additional sources**
 

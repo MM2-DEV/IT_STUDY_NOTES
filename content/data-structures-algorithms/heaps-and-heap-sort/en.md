@@ -122,7 +122,9 @@ Call heapify on every **non-leaf node**, from the **last non-leaf node (index ‚å
 
 ### Concept
 
-**Heap sort** is a **comparison-based** sorting algorithm that uses a **binary heap**. To sort in **ascending** order it uses a **max heap**:
+**Heap sort** is a **comparison-based** sorting algorithm that uses a **binary heap**.
+
+To sort in **ascending** order it uses a **max heap**:
 
 1. **Build a max heap** from the array; the largest element is now at the root (index 0).
 2. **Swap** the root with the **last element** of the heap; the largest element is now in its final place at the end.

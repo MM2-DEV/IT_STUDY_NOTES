@@ -456,10 +456,6 @@ Because the whole Internet cannot change at once, three methods are used:
 - [Network Layer](https://www.tpointtech.com/network-layer), [Network Layer Protocols](https://www.tpointtech.com/network-layer-protocols), [Router](https://www.tpointtech.com/router) and [Virtual Circuits vs Datagram Networks](https://www.tpointtech.com/virtual-circuits-vs-datagram-networks) — accessed 2026-11-06 (forwarding and routing, datagram and virtual-circuit networks, router functions)
 - [IP Address](https://www.tpointtech.com/ip-address), [IPv4 Header](https://www.tpointtech.com/ipv4-header-in-computer-networks), [Subnetting in Computer Networks](https://www.tpointtech.com/subnetting-in-computer-networks), [Subnet Mask](https://www.tpointtech.com/subnet-mask), [Classful vs Classless Addressing](https://www.tpointtech.com/classful-vs-classless-addressing), [Private IP Address](https://www.tpointtech.com/private-ip-address), [Address Resolution Protocol](https://www.tpointtech.com/address-resolution-protocol), [ICMP Protocol](https://www.tpointtech.com/icmp-protocol) and [IPv4 vs IPv6](https://www.tpointtech.com/ipv4-vs-ipv6) — accessed 2026-11-06 (dotted-decimal notation, private ranges, subnet masks, ICMP messages, IPv4 and IPv6 comparison)
 
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (items 12–31 and 44, subnetting and VLSM problems, including 172.16.16.137/22, 105.38.89.230/20, 10.100.0.0/22 and 245.248.128.0/20; items 54–55, DHCP; items 60, 61 and 92, NAT and PAT; items 71–78, IP addresses, IP vs MAC, classful and classless addressing, IPv6 and a host that can ping 8.8.8.8 but cannot resolve names; item 96, longest prefix matching). Issues: item 14 uses 192.198.10.0/22, which is not a valid /22 network address (the block is 192.198.8.0/22); item 24 asks for subnets totalling 4000 + 2000 + 6000 + 8000 hosts inside 172.16.0.0/20, which has only 4096 addresses; and item 96 lists the route 192.168.20.32/25, which has host bits set (a /25 starts at .0 or .128), so it is treated above as 192.168.20.0/25.
-
 **Programiz**
 
 - Programiz has no page on the network layer or IP (checked 2026-11-06).

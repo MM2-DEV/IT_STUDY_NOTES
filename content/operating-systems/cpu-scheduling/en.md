@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### Definition
 
-> **Process scheduling is the activity of the operating system that decides which process gets the CPU, and when. It removes the running process from the CPU and selects another process according to a particular strategy.**
+> **Process scheduling is the activity of the operating system that decides which process gets the CPU, and when.**
+
+It removes the running process from the CPU and selects another process according to a particular strategy.
 
 Scheduling is essential in a **multiprogramming** system: several processes are kept in memory, and when one has to wait (for example, for I/O), the CPU is given to another, so the CPU is never idle. In a uniprogramming system such as MS-DOS, the CPU simply sits idle while the single program waits.
 
@@ -68,7 +70,9 @@ Depending on whether the operating system can take the CPU away from a running p
 
 #### 1. Non-preemptive Scheduling
 
-> **In non-preemptive scheduling, once the CPU has been given to a process, the process keeps the CPU until it terminates or moves to the waiting state (for example, for I/O). The OS cannot take the CPU away from it.**
+> **In non-preemptive scheduling, once the CPU has been given to a process, the process keeps the CPU until it terminates or moves to the waiting state (for example, for I/O).**
+
+The OS cannot take the CPU away from it.
 
 Scheduling decisions are made only when a process **terminates** or **switches from running to waiting** (cases 1 and 4 above).
 
@@ -343,7 +347,9 @@ Average TAT = 54 ÷ 4 = **13.5 ms**; average WT = 32 ÷ 4 = **8 ms**.
 
 #### 3. Round Robin (RR)
 
-Round Robin is designed for **time-sharing** systems. Each process gets a small fixed unit of CPU time called the **time quantum** (time slice). The ready queue is a **circular FIFO queue**.
+**Round Robin (RR)** is a preemptive CPU-scheduling algorithm, designed for **time-sharing** systems, in which the ready processes are given the CPU in turn, each for a small fixed time.
+
+Each process gets a small fixed unit of CPU time called the **time quantum** (time slice). The ready queue is a **circular FIFO queue**.
 
 1. The scheduler takes the first process from the ready queue and runs it for at most one quantum.
 2. If the process finishes (or blocks) before the quantum ends, it releases the CPU voluntarily.
@@ -474,10 +480,6 @@ An MLFQ scheduler is defined by these parameters:
 - [CPU Scheduling in Operating System](https://www.tpointtech.com/cpu-scheduling-in-operating-system) — accessed 2026-11-03
 - [CPU Scheduling Algorithms in Operating Systems](https://www.tpointtech.com/cpu-scheduling-algorithms-in-operating-systems) — accessed 2026-11-03 (several of its tables have errors: its FCFS table puts completion times in the TAT and WT columns, its SJF tables use arrival times that differ from its input table, and its priority example gives P4 a TAT of 11 instead of 12)
 - [Difference between Scheduler and Dispatcher](https://www.tpointtech.com/scheduler-vs-dispatcher) — accessed 2026-11-03
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (scheduler types, scheduling criteria, FCFS, SJF, SRTF, Priority, aging and Round Robin questions)
 
 **Programiz**
 

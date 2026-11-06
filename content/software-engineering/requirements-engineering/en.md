@@ -7,7 +7,9 @@ updated: 2026-11-03
 
 ### Definition of Requirements Engineering
 
-Requirements engineering (RE) is the systematic process of discovering, analyzing, documenting, validating and managing the requirements of a software system. Its aim is to produce a complete and correct Software Requirements Specification (SRS) that describes what the stakeholders need from the system.
+Requirements engineering (RE) is the systematic process of discovering, analyzing, documenting, validating and managing the requirements of a software system.
+
+Its aim is to produce a complete and correct Software Requirements Specification (SRS) that describes what the stakeholders need from the system.
 
 A requirement is a description of a service that the system must provide or a constraint under which it must operate. Requirements engineering is the basis of every later phase of the project: errors in the requirements are much cheaper to correct during requirements engineering than after the system has been designed or built.
 
@@ -27,7 +29,9 @@ The process is iterative: problems found in a later step often send the team bac
 
 #### 1. Feasibility Study
 
-A feasibility study is a short study that decides whether the proposed system is worth building and can be built within the available technology, budget and time. Its output is a feasibility report that recommends whether the project should continue.
+A feasibility study is a short study that decides whether the proposed system is worth building and can be built within the available technology, budget and time.
+
+Its output is a feasibility report that recommends whether the project should continue.
 
 A feasibility study examines five types of feasibility:
 
@@ -66,11 +70,15 @@ Requirements are often modelled during analysis with data flow diagrams, entity-
 
 #### 3. Requirements Specification
 
-Requirements specification is the step in which the analyzed requirements are written in a standard, precise form, the Software Requirements Specification (SRS). The analyst converts requirements written in the customer's natural language into a technical document that the development team can use, including interface, performance, security and other constraints. It is explained in [Requirement Specification](#requirement-specification).
+Requirements specification is the step in which the analyzed requirements are written in a standard, precise form, the Software Requirements Specification (SRS).
+
+The analyst converts requirements written in the customer's natural language into a technical document that the development team can use, including interface, performance, security and other constraints. It is explained in [Requirement Specification](#requirement-specification).
 
 #### 4. Requirements Validation
 
-Requirements validation is the step in which the documented requirements are checked to ensure that they define the system the customer really wants. The requirements are checked for:
+Requirements validation is the step in which the documented requirements are checked to ensure that they define the system the customer really wants.
+
+The requirements are checked for:
 
 1. **Validity** — whether they meet the real needs of the users.
 2. **Consistency** — whether any requirements conflict with each other.
@@ -89,7 +97,9 @@ Verification checks that the requirements are documented correctly (complete, co
 
 #### 5. Requirements Management
 
-Requirements management is the process of tracking, prioritizing and controlling changes to the requirements throughout the life of the project. Requirements change because the business environment, users' understanding and technology change. Its main activities are:
+Requirements management is the process of tracking, prioritizing and controlling changes to the requirements throughout the life of the project.
+
+Requirements change because the business environment, users' understanding and technology change. Its main activities are:
 
 1. Change control — evaluating and approving or rejecting requested changes.
 2. Impact analysis — finding the effect of a change on the design, code, tests, cost and schedule.
@@ -116,7 +126,9 @@ Requirements management is the process of tracking, prioritizing and controlling
 
 ### Definition of SRS
 
-A Software Requirements Specification (SRS) is a formal document that completely describes what the software system must do and the constraints under which it must operate. It is produced at the end of the requirements phase, after the requirements have been gathered and analyzed.
+A Software Requirements Specification (SRS) is a formal document that completely describes what the software system must do and the constraints under which it must operate.
+
+It is produced at the end of the requirements phase, after the requirements have been gathered and analyzed.
 
 The SRS describes **what** the system must do, not **how** it is to be built. It may be written by the client to state their expectations, or by the developer; in either case, it acts as an agreement (contract) between the customer and the developer. IEEE Std 830 is the well-known standard for writing an SRS.
 
@@ -196,7 +208,9 @@ Other desirable characteristics are:
 
 ### Specification Styles
 
-A specification is a precise statement of the required properties of a system, written so that it can be checked. Specifications are classified in two ways (Ghezzi, Jazayeri and Mandrioli):
+A **specification** is a precise statement of the required properties of a system, written so that it can be checked.
+
+Specifications are classified in two ways (Ghezzi, Jazayeri and Mandrioli):
 
 1. **Formal or informal** — a formal specification is written in a language with precise syntax and semantics (usually mathematical); an informal specification is written in natural language; a semi-formal specification uses a precise syntax (such as a diagram notation) with partly informal meaning.
 2. **Operational or descriptive** — according to how the required behaviour is described.
@@ -299,10 +313,6 @@ These four equations fully describe the last-in, first-out behaviour of a stack,
 
 - [Requirement Engineering](https://www.tpointtech.com/software-engineering-requirement-engineering) — accessed 2026-11-03 (RE process, functional, non-functional and domain requirements)
 - [Software Requirement Specifications](https://www.tpointtech.com/software-requirement-specifications) — accessed 2026-11-03 (characteristics of a good SRS)
-
-**IT Job QnS**
-
-- [Software Engineering](https://it.jobqns.com/software-engineering/) — accessed 2026-11-03 (requirement analysis, SRS, technical, operational and economic feasibility)
 
 **Programiz**
 

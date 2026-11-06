@@ -279,10 +279,6 @@ For example, a transaction may keep waiting for an exclusive lock while other tr
 - [Timestamp Ordering Protocol](https://www.tpointtech.com/dbms-timestamp-ordering-protocol), [Validation-Based Protocol](https://www.tpointtech.com/dbms-validation-based-protocol), [Thomas Write Rule](https://www.tpointtech.com/dbms-thomas-write-rule) and [Multiple Granularity](https://www.tpointtech.com/dbms-multiple-granularity) — accessed 2026-11-06 (read, validation and write phases)
 - [Deadlock in DBMS](https://www.tpointtech.com/deadlock-in-dbms) — accessed 2026-11-06. It lists the wait-for graph under deadlock avoidance, while its own text (and the other sites) use it for detection.
 
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (deadlock, Coffman conditions, deadlock avoidance and detection, wait-die and wound-wait)
-
 **Programiz**
 
 - Programiz has no page on concurrency control (checked 2026-11-06).

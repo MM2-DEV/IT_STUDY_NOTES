@@ -211,10 +211,6 @@ The secondary ring is a backup: if a link fails, the two rings are joined to for
 
 - [Ethernet Frame Format](https://www.tpointtech.com/ethernet-frame-format), [Collision Detection in CSMA/CD](https://www.tpointtech.com/collision-detection-in-csma-cd), [Back-off Algorithm for CSMA/CD](https://www.tpointtech.com/back-off-algorithm-for-csma-cd), [Fast Ethernet](https://www.tpointtech.com/fast-ethernet), [Token Ring in Computer Networks](https://www.tpointtech.com/token-ring-in-computer-networks) and [Difference between Token Ring and Ethernet](https://www.tpointtech.com/difference-between-token-ring-and-ethernet-token-ring) — accessed 2026-11-06 (backoff time K × slot time with K from 0 to 2ⁿ − 1; 100BASE-TX and 100BASE-FX; token passing). The backoff page defines the slot time both as "2t" (the round-trip time) and as the time for a signal to go from one end to the other; it is the round-trip time (512 bit times, 51.2 µs at 10 Mbps).
 
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (Ethernet IEEE 802.3, Wi-Fi 802.11 and Bluetooth 802.15.1; the three types of multiple access protocol with examples; item 42, connecting two hosts directly through their Ethernet interfaces).
-
 **Programiz**
 
 - Programiz has no page on Ethernet or LAN standards (checked 2026-11-06).

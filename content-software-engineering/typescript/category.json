@@ -1,0 +1,135 @@
+{
+  "title": "TypeScript",
+  "order": 6,
+  "topics": [
+    {
+      "slug": "typescript-basics",
+      "title": "TypeScript Basics",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "why-typescript",
+          "title": "Why TypeScript",
+          "exams": []
+        },
+        {
+          "id": "type-annotations-and-type-inference",
+          "title": "Type Annotations and Type Inference",
+          "exams": []
+        },
+        {
+          "id": "primitive-array-and-tuple-types",
+          "title": "Primitive, Array and Tuple Types",
+          "exams": []
+        },
+        {
+          "id": "object-types",
+          "title": "Object Types",
+          "exams": []
+        },
+        {
+          "id": "type-aliases-and-interfaces",
+          "title": "Type Aliases and Interfaces",
+          "exams": []
+        },
+        {
+          "id": "function-types",
+          "title": "Function Types",
+          "exams": []
+        },
+        {
+          "id": "optional-and-readonly-properties",
+          "title": "Optional and Readonly Properties",
+          "exams": []
+        },
+        {
+          "id": "any-unknown-never-and-void",
+          "title": "any, unknown, never and void",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "advanced-types",
+      "title": "Advanced Types",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "union-and-intersection-types",
+          "title": "Union and Intersection Types",
+          "exams": []
+        },
+        {
+          "id": "literal-types",
+          "title": "Literal Types",
+          "exams": []
+        },
+        {
+          "id": "enums-and-alternatives-to-enums",
+          "title": "Enums and Alternatives to Enums",
+          "exams": []
+        },
+        {
+          "id": "type-narrowing-and-type-guards",
+          "title": "Type Narrowing and Type Guards",
+          "exams": []
+        },
+        {
+          "id": "generics",
+          "title": "Generics",
+          "exams": []
+        },
+        {
+          "id": "utility-types",
+          "title": "Utility Types",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "typescript-in-projects",
+      "title": "TypeScript in Projects",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "tsconfig-json-and-strict-mode",
+          "title": "tsconfig.json and Strict Mode",
+          "exams": []
+        },
+        {
+          "id": "typing-asynchronous-functions",
+          "title": "Typing Asynchronous Functions",
+          "exams": []
+        },
+        {
+          "id": "typing-and-validating-api-responses",
+          "title": "Typing and Validating API Responses",
+          "exams": []
+        },
+        {
+          "id": "declaration-files",
+          "title": "Declaration Files",
+          "exams": []
+        },
+        {
+          "id": "typescript-with-react",
+          "title": "TypeScript with React",
+          "exams": []
+        },
+        {
+          "id": "typescript-with-node-js",
+          "title": "TypeScript with Node.js",
+          "exams": []
+        },
+        {
+          "id": "migrating-a-javascript-project-to-typescript",
+          "title": "Migrating a JavaScript Project to TypeScript",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

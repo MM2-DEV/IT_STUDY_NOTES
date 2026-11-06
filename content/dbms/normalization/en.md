@@ -84,7 +84,9 @@ Formally, X → Y holds in a relation R if, whenever two tuples have the same va
 
 ### Armstrong's Axioms
 
-Armstrong's axioms (W. W. Armstrong, 1974) are inference rules used to derive all the functional dependencies implied by a given set of FDs. They are **sound** (they derive only correct FDs) and **complete** (they derive all of them).
+Armstrong's axioms (W. W. Armstrong, 1974) are inference rules used to derive all the functional dependencies implied by a given set of FDs.
+
+They are **sound** (they derive only correct FDs) and **complete** (they derive all of them).
 
 **Primary rules:**
 
@@ -302,8 +304,8 @@ This decomposition is **lossless** (the common attribute Teacher is the key of T
 | 2NF | 1NF + no partial dependency of a non-prime attribute on a candidate key |
 | 3NF | 2NF + no transitive dependency of a non-prime attribute on a candidate key |
 | BCNF | Every determinant of a non-trivial FD is a super key |
-| 4NF | BCNF + no non-trivial multivalued dependency |
-| 5NF | 4NF + no non-trivial join dependency |
+| 4NF | BCNF + every non-trivial multivalued dependency X →→ Y has X as a super key |
+| 5NF | 4NF + every join dependency is implied by the candidate keys |
 
 ## References {#references}
 
@@ -325,10 +327,6 @@ This decomposition is **lossless** (the common attribute Teacher is the key of T
 - [Normalization](https://www.tpointtech.com/dbms-normalization) — accessed 2026-11-06 (anomalies, table of normal forms). It says that normal forms ensure anomalies "are introduced"; they ensure that anomalies are removed.
 - [Functional Dependency](https://www.tpointtech.com/dbms-functional-dependency) — accessed 2026-11-06. It states the reflexivity axiom backwards ("if S → T, then T is a subset of S"); the rule is "if T ⊆ S, then S → T".
 - [First Normal Form](https://www.tpointtech.com/dbms-first-normal-form), [Second Normal Form](https://www.tpointtech.com/dbms-second-normal-form), [Third Normal Form](https://www.tpointtech.com/dbms-third-normal-form) and [BCNF](https://www.tpointtech.com/dbms-boyce-codd-normal-form) — accessed 2026-11-06. The 2NF page says deleting student 2523 keeps teacher 201's data, though teacher 201 appears only in that row; the 3NF page swaps the labels of its deletion and update anomaly examples.
-
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (normalization, anomalies, functional dependency types, 1NF, 2NF, 3NF and BCNF with examples). Its multivalued-dependency example contains two rows with Employee_Id 4 and different names, which breaks the dependency it illustrates; and in its BCNF example P_Leader → P_ID makes {E_Code, P_Leader} a second candidate key, so P_Leader is prime, not non-prime as stated.
 
 **Programiz**
 

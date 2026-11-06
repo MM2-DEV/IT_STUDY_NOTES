@@ -114,7 +114,7 @@ Zero capacity is sometimes called a message system with **no buffering**; the ot
 
 ## Direct Communication {#direct-communication}
 
-In **direct communication**, each process that wants to communicate must **explicitly name** the recipient or the sender.
+**Direct communication** is a message-passing scheme in which each process that wants to communicate must **explicitly name** the recipient or the sender.
 
 ### Types of Addressing in Direct Communication
 
@@ -150,7 +150,9 @@ Only the sender names the recipient; the receiver accepts a message from any pro
 
 ## Indirect Communication {#indirect-communication}
 
-In **indirect communication**, messages are sent to and received from **mailboxes** (also called **ports**). A mailbox is an object into which messages can be placed by processes and from which messages can be removed. Each mailbox has a **unique identification**.
+**Indirect communication** is a message-passing scheme in which messages are sent to and received from **mailboxes** (also called **ports**).
+
+A mailbox is an object into which messages can be placed by processes and from which messages can be removed. Each mailbox has a **unique identification**.
 
 1. `send(A, message)` — send a message to mailbox A.
 2. `receive(A, message)` — receive a message from mailbox A.
@@ -206,10 +208,6 @@ Suppose P1, P2 and P3 share mailbox A; P1 sends a message to A, and both P2 and 
 **TpointTech**
 
 - [What is Inter Process Communication](https://www.tpointtech.com/what-is-inter-process-communication) — accessed 2026-11-03 (it calls a FIFO full-duplex; a FIFO, like a pipe, carries data in one direction — two FIFOs are used for two-way communication)
-
-**IT Job QnS**
-
-- [Operating System](https://it.jobqns.com/operating-system/) — accessed 2026-11-03 (the meaning of IPC)
 
 **Programiz**
 

@@ -408,10 +408,6 @@ DNS query and reply messages have the **same format**: a header (with an identif
 - [HTTP](https://www.tpointtech.com/computer-network-http), [HTTP Status Codes](https://www.tpointtech.com/http-status-codes) and [HTTP vs HTTPS](https://www.tpointtech.com/http-vs-https) — accessed 2026-11-06 (cookies, HTTP versions, status-code classes, ports 80 and 443). It also calls HTTP "connectionless" (see above).
 - [FTP](https://www.tpointtech.com/computer-network-ftp), [SMTP](https://www.tpointtech.com/simple-mail-transfer-protocol), [POP Protocol](https://www.tpointtech.com/pop-protocol), [IMAP Protocol](https://www.tpointtech.com/imap-protocol), [IMAP vs POP3](https://www.tpointtech.com/imap-vs-pop3), [MIME Protocol](https://www.tpointtech.com/mime-protocol) and [DNS](https://www.tpointtech.com/computer-network-dns) — accessed 2026-11-06 (user agent and mail transfer agent, SMTP on port 25, MIME headers, generic and country domains, inverse domain, resolution steps)
 
-**IT Job QnS**
-
-- [Computer Network](https://it.jobqns.com/computer-network/) — accessed 2026-11-06 (item 49, true or false statements on HTTP requests, persistent connections and empty response bodies; item 56, how DNS works; item 66, why DNS uses UDP and the resolution of a name; item 67 and item 80, HTTP vs HTTPS; item 76, a host that can reach an IP address but not names (a DNS problem); item 93, SMTP over TCP for sending e-mail).
-
 **Programiz**
 
 - Programiz has no page on the application layer (checked 2026-11-06).

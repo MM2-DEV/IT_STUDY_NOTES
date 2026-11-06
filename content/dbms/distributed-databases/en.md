@@ -87,7 +87,9 @@ Data fragmentation is **dividing a relation r into fragments r₁, r₂, …, r�
 
 ### Data Transparency
 
-Data transparency means that **users need not know how and where the data is stored**:
+**Data transparency** is the property of a distributed database that **users need not know how and where the data is stored**.
+
+It has three forms:
 
 1. **Fragmentation transparency** — users are not required to know how a relation has been fragmented; they query the whole relation.
 2. **Replication transparency** — users see each data object as **logically unique**; they need not know how many copies exist or where.
@@ -122,7 +124,9 @@ Because a site cannot tell whether another site has failed or the link to it has
 
 ### Commit Protocol
 
-A commit protocol ensures the **atomicity of a global transaction**: a transaction T executed at several sites must either **commit at all sites or abort at all sites**. The most widely used is the **two-phase commit protocol (2PC)**; the **three-phase commit protocol (3PC)** avoids some of its blocking problems.
+A **commit protocol** is a protocol that ensures the **atomicity of a global transaction**: a transaction executed at several sites must either **commit at all sites or abort at all sites**.
+
+The most widely used is the **two-phase commit protocol (2PC)**; the **three-phase commit protocol (3PC)** avoids some of its blocking problems.
 
 ### Two-Phase Commit Protocol (2PC)
 
@@ -191,10 +195,6 @@ Because the pre-commit decision is known to K sites, if the coordinator fails, t
 **TpointTech**
 
 - [Distributed Database Architecture](https://www.tpointtech.com/distributed-database-architecture-in-dbms) and [Commit Protocol in DBMS](https://www.tpointtech.com/commit-protocol-in-dbms) — accessed 2026-11-06 (2PC log records, failure handling, blocking, 3PC with K sites)
-
-**IT Job QnS**
-
-- IT Job QnS has no page on distributed databases (checked 2026-11-06).
 
 **Programiz**
 

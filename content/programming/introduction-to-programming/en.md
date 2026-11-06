@@ -5,11 +5,15 @@ updated: 2026-11-01
 
 ## Introduction to Computer Programming {#introduction-to-computer-programming}
 
-**Computer program:** a computer program is a **sequence of instructions**, written in a **programming language**, that tells a computer to perform a specific task. A program may be only two lines long or millions of lines long.
+**Computer program:** a computer program is a **sequence of instructions**, written in a **programming language**, that tells a computer to perform a specific task.
+
+A program may be only two lines long or millions of lines long.
 
 **Programming:** **writing** computer programs is called **programming** (or **coding**). A person who writes programs is a **programmer**.
 
-**Programming language:** a programming language is a formal language, with its own rules of **syntax** (form) and **semantics** (meaning), used to write instructions that a computer can carry out. Examples:
+**Programming language:** a programming language is a formal language, with its own rules of **syntax** (form) and **semantics** (meaning), used to write instructions that a computer can carry out.
+
+Examples:
 
 1. C
 2. C++
@@ -124,15 +128,21 @@ Before a program is coded, the method of solving the problem is planned with one
 
 ### 1. Algorithm
 
-An **algorithm** is a **finite sequence of clear, step-by-step instructions** for solving a problem, usually written in plain English. (See [Algorithm Specification and Development](#algorithm-specification-and-development) and [Algorithms and Flowcharts](/topics/programming/algorithms-and-flowcharts#algorithm).)
+An **algorithm** is a **finite sequence of clear, step-by-step instructions** for solving a problem, usually written in plain English.
+
+(See [Algorithm Specification and Development](#algorithm-specification-and-development) and [Algorithms and Flowcharts](/topics/programming/algorithms-and-flowcharts#algorithm).)
 
 ### 2. Flowchart
 
-A **flowchart** is a **diagram** of the steps of a solution, drawn with **standard symbols** (oval for start/stop, parallelogram for input/output, rectangle for processing, diamond for decision) joined by **arrows** that show the order of steps. (See [Flowchart](/topics/programming/algorithms-and-flowcharts#flowchart).)
+A **flowchart** is a **diagram** of the steps of a solution, drawn with **standard symbols** (oval for start/stop, parallelogram for input/output, rectangle for processing, diamond for decision) joined by **arrows** that show the order of steps.
+
+(See [Flowchart](/topics/programming/algorithms-and-flowcharts#flowchart).)
 
 ### 3. Pseudocode
 
-**Pseudocode** ("false code") is an **informal, English-like description of a program** written with the structure of a programming language (IF … THEN … ELSE, WHILE …, and so on) but without its strict syntax. Each line can later be translated directly into code.
+**Pseudocode** ("false code") is an **informal, English-like description of a program** written with the structure of a programming language (IF … THEN … ELSE, WHILE …, and so on) but without its strict syntax.
+
+Each line can later be translated directly into code.
 
 **Example:** finding the larger of two numbers.
 
@@ -176,7 +186,9 @@ A **decision table** lists **conditions** and the **actions** to be taken for ea
 
 ## Algorithm Specification and Development {#algorithm-specification-and-development}
 
-**Algorithm:** a **finite set of well-defined instructions**, carried out in a fixed order, that solves a problem or performs a computation. An algorithm is **language-independent**: the same algorithm can be coded in any programming language.
+An **algorithm** is a **finite set of well-defined instructions**, carried out in a fixed order, that solves a problem or performs a computation.
+
+An algorithm is **language-independent**: the same algorithm can be coded in any programming language.
 
 ### Characteristics (Properties) of an Algorithm
 
@@ -245,7 +257,9 @@ Analysis can be done in two ways:
 
 ## Programming Style {#programming-style}
 
-**Programming style** is the set of rules and habits a programmer follows to make a program **easy to read, understand, test and change**. A program is read many more times than it is written, so good style saves time and prevents errors.
+**Programming style** is the set of rules and habits a programmer follows to make a program **easy to read, understand, test and change**.
+
+A program is read many more times than it is written, so good style saves time and prevents errors.
 
 ### Characteristics of a Good Program
 

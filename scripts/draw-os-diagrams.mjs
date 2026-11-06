@@ -180,7 +180,7 @@ files["process-tree.svg"] = (() => {
   let s = E.map(([a, b]) => line(...P[a], ...P[b])).join("");
   for (const [k, [x, y]] of Object.entries(P)) s += box(x - 60, y - 20, 120, 40, k, { size: 13, fill: k === "P" ? COLORS[0] : FILL });
   s += text(500, 290, "both created by", { size: 12, color: NOTE, anchor: "start" }) + text(500, 306, "P calling fork() twice", { size: 12, color: NOTE, anchor: "start" });
-  return svgDoc(660, 420, s + caption(660, 408, "Process tree: init → shell → P; P's two fork() calls create C1, C2 and C3"), "Process tree");
+  return svgDoc(660, 420, s + caption(660, 408, "Process tree: P's two fork() calls create C1 and C2; C1 runs the second fork() and creates C3"), "Process tree");
 })();
 
 files["pipe.svg"] = (() => {

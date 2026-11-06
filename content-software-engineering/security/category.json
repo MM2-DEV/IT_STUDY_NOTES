@@ -1,0 +1,153 @@
+{
+  "title": "Application Security",
+  "order": 19,
+  "topics": [
+    {
+      "slug": "security-fundamentals",
+      "title": "Security Fundamentals for Developers",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "threat-modeling",
+          "title": "Threat Modeling",
+          "exams": []
+        },
+        {
+          "id": "owasp-top-10",
+          "title": "OWASP Top 10",
+          "exams": []
+        },
+        {
+          "id": "least-privilege-and-access-control",
+          "title": "Least Privilege and Access Control",
+          "exams": []
+        },
+        {
+          "id": "secrets-management",
+          "title": "Secrets Management",
+          "exams": []
+        },
+        {
+          "id": "dependency-vulnerability-scanning",
+          "title": "Dependency Vulnerability Scanning",
+          "exams": []
+        },
+        {
+          "id": "logging-without-exposing-sensitive-data",
+          "title": "Logging Without Exposing Sensitive Data",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "authentication-security",
+      "title": "Authentication Security",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "password-hashing-and-salting",
+          "title": "Password Hashing and Salting",
+          "exams": []
+        },
+        {
+          "id": "session-security",
+          "title": "Session Security",
+          "exams": []
+        },
+        {
+          "id": "secure-cookie-attributes",
+          "title": "Secure Cookie Attributes",
+          "exams": []
+        },
+        {
+          "id": "multi-factor-authentication",
+          "title": "Multi-Factor Authentication",
+          "exams": []
+        },
+        {
+          "id": "account-recovery-and-brute-force-protection",
+          "title": "Account Recovery and Brute-Force Protection",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "web-vulnerabilities",
+      "title": "Common Web Vulnerabilities",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "cross-site-scripting-xss",
+          "title": "Cross-Site Scripting (XSS)",
+          "exams": []
+        },
+        {
+          "id": "cross-site-request-forgery-csrf",
+          "title": "Cross-Site Request Forgery (CSRF)",
+          "exams": []
+        },
+        {
+          "id": "sql-injection",
+          "title": "SQL Injection",
+          "exams": []
+        },
+        {
+          "id": "command-injection",
+          "title": "Command Injection",
+          "exams": []
+        },
+        {
+          "id": "server-side-request-forgery-ssrf",
+          "title": "Server-Side Request Forgery (SSRF)",
+          "exams": []
+        },
+        {
+          "id": "broken-access-control-and-idor",
+          "title": "Broken Access Control and IDOR",
+          "exams": []
+        },
+        {
+          "id": "file-upload-security",
+          "title": "File Upload Security",
+          "exams": []
+        },
+        {
+          "id": "input-validation-and-output-encoding",
+          "title": "Input Validation and Output Encoding",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "browser-and-transport-security",
+      "title": "Browser and Transport Security",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "https-and-tls-basics",
+          "title": "HTTPS and TLS Basics",
+          "exams": []
+        },
+        {
+          "id": "same-origin-policy-and-cors",
+          "title": "Same-Origin Policy and CORS",
+          "exams": []
+        },
+        {
+          "id": "content-security-policy",
+          "title": "Content Security Policy",
+          "exams": []
+        },
+        {
+          "id": "security-headers",
+          "title": "Security Headers",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,9 @@ updated: 2026-11-01
 
 ## Arrays {#arrays}
 
-**Definition:** an array is a **fixed-size collection of elements of the same data type**, stored in **contiguous (consecutive) memory locations** and referred to by **one common name**. Each element is accessed by its **index (subscript)**.
+**Definition:** an array is a **fixed-size collection of elements of the same data type**, stored in **contiguous (consecutive) memory locations** and referred to by **one common name**.
+
+Each element is accessed by its **index (subscript)**.
 
 **Why arrays are needed:** to store the marks of 100 students, declaring 100 separate variables is impractical; one array `int marks[100];` stores them all, and a loop can process them.
 
@@ -249,7 +251,9 @@ Output: `2 4 6 8`
 
 ## Strings {#strings}
 
-**Definition:** in C, a string is a **one-dimensional array of characters terminated by the null character `'\0'`**. C has no separate string type; the `'\0'` marks where the string ends.
+**Definition:** in C, a string is a **one-dimensional array of characters terminated by the null character `'\0'`**.
+
+C has no separate string type; the `'\0'` marks where the string ends.
 
 ### Declaration and Initialization
 

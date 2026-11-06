@@ -1,0 +1,269 @@
+{
+  "title": "Containers, CI/CD and Cloud Deployment",
+  "order": 22,
+  "topics": [
+    {
+      "slug": "docker",
+      "title": "Docker",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "why-containers",
+          "title": "Why Containers",
+          "exams": []
+        },
+        {
+          "id": "images-and-containers",
+          "title": "Images and Containers",
+          "exams": []
+        },
+        {
+          "id": "dockerfile",
+          "title": "Dockerfile",
+          "exams": []
+        },
+        {
+          "id": "building-and-running-containers",
+          "title": "Building and Running Containers",
+          "exams": []
+        },
+        {
+          "id": "ports-volumes-and-environment-variables",
+          "title": "Ports, Volumes and Environment Variables",
+          "exams": []
+        },
+        {
+          "id": "docker-networks",
+          "title": "Docker Networks",
+          "exams": []
+        },
+        {
+          "id": "docker-compose",
+          "title": "Docker Compose",
+          "exams": []
+        },
+        {
+          "id": "multi-stage-builds",
+          "title": "Multi-Stage Builds",
+          "exams": []
+        },
+        {
+          "id": "persisting-database-data",
+          "title": "Persisting Database Data",
+          "exams": []
+        },
+        {
+          "id": "container-logs-and-troubleshooting",
+          "title": "Container Logs and Troubleshooting",
+          "exams": []
+        },
+        {
+          "id": "container-security-basics",
+          "title": "Container Security Basics",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "kubernetes-fundamentals",
+      "title": "Kubernetes Fundamentals",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "why-kubernetes",
+          "title": "Why Kubernetes",
+          "exams": []
+        },
+        {
+          "id": "pods-deployments-and-replicasets",
+          "title": "Pods, Deployments and ReplicaSets",
+          "exams": []
+        },
+        {
+          "id": "services-and-ingress",
+          "title": "Services and Ingress",
+          "exams": []
+        },
+        {
+          "id": "configmaps-and-secrets",
+          "title": "ConfigMaps and Secrets",
+          "exams": []
+        },
+        {
+          "id": "scaling-and-rolling-updates",
+          "title": "Scaling and Rolling Updates",
+          "exams": []
+        },
+        {
+          "id": "kubectl-basics",
+          "title": "kubectl Basics",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "ci-cd",
+      "title": "CI/CD",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "continuous-integration-vs-continuous-delivery-and-deployment",
+          "title": "Continuous Integration vs Continuous Delivery and Deployment",
+          "exams": []
+        },
+        {
+          "id": "ci-cd-pipeline-stages",
+          "title": "CI/CD Pipeline Stages",
+          "exams": []
+        },
+        {
+          "id": "github-actions",
+          "title": "GitHub Actions",
+          "exams": []
+        },
+        {
+          "id": "automated-linting-and-tests",
+          "title": "Automated Linting and Tests",
+          "exams": []
+        },
+        {
+          "id": "build-artifacts-and-container-registries",
+          "title": "Build Artifacts and Container Registries",
+          "exams": []
+        },
+        {
+          "id": "environments-secrets-and-deployment-approvals",
+          "title": "Environments, Secrets and Deployment Approvals",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "deployment",
+      "title": "Deployment",
+      "order": 4,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "development-staging-and-production-environments",
+          "title": "Development, Staging and Production Environments",
+          "exams": []
+        },
+        {
+          "id": "build-time-vs-runtime-configuration",
+          "title": "Build-Time vs Runtime Configuration",
+          "exams": []
+        },
+        {
+          "id": "database-migrations-during-deployment",
+          "title": "Database Migrations During Deployment",
+          "exams": []
+        },
+        {
+          "id": "static-and-media-file-hosting",
+          "title": "Static and Media File Hosting",
+          "exams": []
+        },
+        {
+          "id": "deployment-strategies-rolling-blue-green-and-canary",
+          "title": "Deployment Strategies: Rolling, Blue-Green and Canary",
+          "exams": []
+        },
+        {
+          "id": "rollback-strategy",
+          "title": "Rollback Strategy",
+          "exams": []
+        },
+        {
+          "id": "backups-and-disaster-recovery",
+          "title": "Backups and Disaster Recovery",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "cloud-fundamentals",
+      "title": "Cloud Fundamentals for Developers",
+      "order": 5,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "iaas-paas-saas-and-serverless",
+          "title": "IaaS, PaaS, SaaS and Serverless",
+          "exams": []
+        },
+        {
+          "id": "virtual-machines",
+          "title": "Virtual Machines",
+          "exams": []
+        },
+        {
+          "id": "object-storage",
+          "title": "Object Storage",
+          "exams": []
+        },
+        {
+          "id": "managed-databases",
+          "title": "Managed Databases",
+          "exams": []
+        },
+        {
+          "id": "load-balancers-and-cdns-in-the-cloud",
+          "title": "Load Balancers and CDNs in the Cloud",
+          "exams": []
+        },
+        {
+          "id": "iam-and-access-permissions",
+          "title": "IAM and Access Permissions",
+          "exams": []
+        },
+        {
+          "id": "aws-azure-and-google-cloud-equivalents",
+          "title": "AWS, Azure and Google Cloud Equivalents",
+          "exams": []
+        },
+        {
+          "id": "infrastructure-as-code-with-terraform",
+          "title": "Infrastructure as Code with Terraform",
+          "exams": []
+        },
+        {
+          "id": "cost-awareness-and-resource-monitoring",
+          "title": "Cost Awareness and Resource Monitoring",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "hosting-and-end-to-end-deployment",
+      "title": "Hosting and End-to-End Deployment",
+      "order": 6,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "frontend-hosting-platforms",
+          "title": "Frontend Hosting Platforms",
+          "exams": []
+        },
+        {
+          "id": "backend-hosting-platforms",
+          "title": "Backend Hosting Platforms",
+          "exams": []
+        },
+        {
+          "id": "deploying-a-full-stack-application-step-by-step",
+          "title": "Deploying a Full-Stack Application Step by Step",
+          "exams": []
+        },
+        {
+          "id": "post-deployment-checklist",
+          "title": "Post-Deployment Checklist",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

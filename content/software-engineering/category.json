@@ -86,7 +86,8 @@
       "title": "Software Development Life Cycle",
       "order": 3,
       "exams": [
-        "College"
+        "College",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -103,42 +104,48 @@
       "title": "Software Development Models",
       "order": 4,
       "exams": [
-        "College"
+        "College",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "waterfall-model",
           "title": "Waterfall Model",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "agile-model",
           "title": "Agile Model",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "spiral-model",
           "title": "Spiral Model",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "rdd",
           "title": "RDD",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "v-model",
           "title": "V Model",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         }
       ]
@@ -174,7 +181,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -189,7 +197,8 @@
           "id": "requirement-specification",
           "title": "Requirement Specification",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -208,7 +217,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -223,7 +233,8 @@
           "id": "basics-of-modeling-diagrams",
           "title": "Basics of Modeling Diagrams",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -255,6 +266,13 @@
           "exams": [
             "PSC-IT",
             "AP"
+          ]
+        },
+        {
+          "id": "design-patterns-and-architectural-patterns",
+          "title": "Design Patterns and Architectural Patterns",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -293,7 +311,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -302,7 +321,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -311,7 +331,8 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -329,7 +350,8 @@
       "order": 10,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": []
     },
@@ -340,7 +362,8 @@
       "exams": [
         "College",
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -349,21 +372,24 @@
           "exams": [
             "College",
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
           "id": "project-metrics",
           "title": "Project Metrics",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "estimation",
           "title": "Estimation",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -381,7 +407,8 @@
       "order": 12,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -389,7 +416,8 @@
           "title": "COCOMO Model",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -397,7 +425,8 @@
           "title": "Halstead Formula",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         },
         {
@@ -405,7 +434,8 @@
           "title": "Graph-Based Complexity Measures",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
           ]
         }
       ]
@@ -416,7 +446,8 @@
       "order": 13,
       "exams": [
         "PSC-IT",
-        "AP"
+        "AP",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -432,7 +463,29 @@
           "title": "Quality Assurance",
           "exams": [
             "PSC-IT",
-            "AP"
+            "AP",
+            "Bank"
+          ]
+        },
+        {
+          "id": "software-quality-control-sqc",
+          "title": "Software Quality Control (SQC)",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "software-quality-metrics",
+          "title": "Software Quality Metrics",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "software-auditing",
+          "title": "Software Auditing",
+          "exams": [
+            "Bank"
           ]
         }
       ]
@@ -442,7 +495,8 @@
       "title": "System Analysis and Design",
       "order": 14,
       "exams": [
-        "Others"
+        "Others",
+        "Bank"
       ],
       "subtopics": [
         {
@@ -470,14 +524,16 @@
           "id": "system-development-phases-in-system-analysis-and-design",
           "title": "System Development Phases in System Analysis and Design",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
           "id": "feasibility-study-technical-economic-operational",
           "title": "Feasibility Study: Technical, Economic, Operational",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
@@ -491,7 +547,8 @@
           "id": "data-flow-diagram-dfd",
           "title": "Data Flow Diagram (DFD)",
           "exams": [
-            "Others"
+            "Others",
+            "Bank"
           ]
         },
         {
@@ -531,21 +588,24 @@
       "title": "Server-Side Programming",
       "order": 16,
       "exams": [
-        "College"
+        "College",
+        "Bank"
       ],
       "subtopics": [
         {
           "id": "http-server",
           "title": "HTTP Server",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
           "id": "application-server",
           "title": "Application Server",
           "exams": [
-            "College"
+            "College",
+            "Bank"
           ]
         },
         {
@@ -753,6 +813,44 @@
         "Others"
       ],
       "subtopics": []
+    },
+    {
+      "slug": "version-control-and-devops",
+      "title": "Version Control and DevOps",
+      "order": 25,
+      "exams": [
+        "Bank"
+      ],
+      "subtopics": [
+        {
+          "id": "version-control-and-git-commands",
+          "title": "Version Control and Git Commands",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "branching-and-merging",
+          "title": "Branching and Merging",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "devops-and-its-significance",
+          "title": "DevOps and Its Significance",
+          "exams": [
+            "Bank"
+          ]
+        },
+        {
+          "id": "devsecops",
+          "title": "DevSecOps",
+          "exams": [
+            "Bank"
+          ]
+        }
+      ]
     }
   ]
 }

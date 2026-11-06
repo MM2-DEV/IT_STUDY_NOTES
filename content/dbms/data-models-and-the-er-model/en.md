@@ -126,7 +126,9 @@ A relationship can also have attributes (descriptive attributes), such as the Gr
 
 ### Degree of a Relationship
 
-The degree of a relationship is the **number of entity types that participate in it**:
+The **degree of a relationship** is the **number of entity types that participate in it**.
+
+By degree, relationships are classified as follows:
 
 1. **Unary (recursive) relationship — degree 1** — an entity type is related to itself; for example, an EMPLOYEE *supervises* other EMPLOYEEs.
 2. **Binary relationship — degree 2** — between two entity types; for example, STUDENT *enrols in* COURSE. It is the most common.
@@ -135,7 +137,9 @@ The degree of a relationship is the **number of entity types that participate in
 
 ### Cardinality Ratio (Mapping Cardinality)
 
-The cardinality ratio is the **maximum number of entities of one entity set that can be associated with one entity of the other entity set** through a relationship. For a binary relationship there are four types:
+The cardinality ratio is the **maximum number of entities of one entity set that can be associated with one entity of the other entity set** through a relationship.
+
+For a binary relationship there are four types:
 
 1. **One-to-one (1:1)** — one entity of A is related to at most one entity of B, and vice versa; for example, a PERSON *holds* one PASSPORT.
 2. **One-to-many (1:N)** — one entity of A can be related to many entities of B, but each entity of B to only one of A; for example, one DEPARTMENT *has* many EMPLOYEEs.
@@ -258,10 +262,6 @@ The **Enhanced ER (EER)** model adds the following constructs to the basic ER mo
 - [Data Models](https://www.tpointtech.com/data-models) and [Data Model Schema and Instance](https://www.tpointtech.com/dbms-data-model-schema-and-instance) — accessed 2026-11-06 (relational, ER, object-based and semi-structured models; schema, instance, subschema)
 - [ER Model Concept](https://www.tpointtech.com/dbms-er-model-concept) — accessed 2026-11-06 (strong vs weak entity, attributes, cardinality, degree, min–max notation). This page calls a degree-4 relationship "quadratic" and says that a ternary relationship has degree 4 (a quaternary relationship has degree 4; ternary is 3), calls a minimum of 0 "optimal" (optional), says that attributes "must be unique" (only key attributes must be), and draws a strong entity's link as a "single arrow line" (it is a plain single line).
 - [Notation of ER Diagram](https://www.tpointtech.com/dbms-notation-of-er-diagram) — accessed 2026-11-06
-
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (data model types, ER diagram purposes, ten ER symbols, entity types, attribute types, degree and cardinality with examples)
 
 **Programiz**
 

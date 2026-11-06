@@ -80,7 +80,9 @@ Data servers are used on LANs with fast connections and powerful clients:
 
 A parallel database system is a database system that **uses many processors and disks working in parallel** to improve throughput and response time.
 
-**Throughput** is the number of tasks completed per unit time, and **response time** is the time to complete a single task. It is used for very large databases (terabytes) and very high transaction rates.
+**Throughput** is the number of tasks completed per unit time, and **response time** is the time to complete a single task.
+
+It is used for very large databases (terabytes) and very high transaction rates.
 
 1. **Coarse-grain parallel machine** — a small number of powerful processors.
 2. **Massively parallel (fine-grain) machine** — thousands of smaller processors.
@@ -207,10 +209,6 @@ WANs are further classified as **continuous-connection** (always connected, such
 - [Centralized and Client-Server Architecture for DBMS](https://www.tpointtech.com/centralized-and-client-server-architecture-for-dbms) — accessed 2026-11-06
 - [Types of Database Parallelism](https://www.tpointtech.com/data-warehouse-types-of-database-parallelism) — accessed 2026-11-06 (speedup, scaleup, shared architectures)
 - [Distributed Database Architecture](https://www.tpointtech.com/distributed-database-architecture-in-dbms) — accessed 2026-11-06
-
-**IT Job QnS**
-
-- [Database Management System](https://it.jobqns.com/database-management-system/) — accessed 2026-11-06 (one-, two- and three-tier architectures; ODBC and JDBC in the two-tier architecture)
 
 **Programiz**
 

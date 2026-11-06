@@ -1,0 +1,120 @@
+{
+  "title": "HTML",
+  "order": 2,
+  "topics": [
+    {
+      "slug": "html-documents-and-elements",
+      "title": "HTML Documents and Elements",
+      "order": 1,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "html-document-structure",
+          "title": "HTML Document Structure",
+          "exams": []
+        },
+        {
+          "id": "elements-tags-and-attributes",
+          "title": "Elements, Tags and Attributes",
+          "exams": []
+        },
+        {
+          "id": "headings-paragraphs-links-and-images",
+          "title": "Headings, Paragraphs, Links and Images",
+          "exams": []
+        },
+        {
+          "id": "lists-ordered-unordered-and-description-lists",
+          "title": "Lists: Ordered, Unordered and Description Lists",
+          "exams": []
+        },
+        {
+          "id": "tables",
+          "title": "Tables",
+          "exams": []
+        },
+        {
+          "id": "div-and-span",
+          "title": "div and span",
+          "exams": []
+        },
+        {
+          "id": "audio-video-and-iframe",
+          "title": "Audio, Video and iframe",
+          "exams": []
+        },
+        {
+          "id": "html-entities",
+          "title": "HTML Entities",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "html-forms",
+      "title": "HTML Forms",
+      "order": 2,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "forms-and-form-controls",
+          "title": "Forms and Form Controls",
+          "exams": []
+        },
+        {
+          "id": "labels-and-grouping",
+          "title": "Labels and Grouping",
+          "exams": []
+        },
+        {
+          "id": "input-types",
+          "title": "Input Types",
+          "exams": []
+        },
+        {
+          "id": "validation-attributes",
+          "title": "Validation Attributes",
+          "exams": []
+        },
+        {
+          "id": "form-submission-get-vs-post",
+          "title": "Form Submission: GET vs POST",
+          "exams": []
+        }
+      ]
+    },
+    {
+      "slug": "semantic-and-accessible-html",
+      "title": "Semantic and Accessible HTML",
+      "order": 3,
+      "exams": [],
+      "subtopics": [
+        {
+          "id": "semantic-html",
+          "title": "Semantic HTML",
+          "exams": []
+        },
+        {
+          "id": "accessibility-fundamentals-and-aria",
+          "title": "Accessibility Fundamentals and ARIA",
+          "exams": []
+        },
+        {
+          "id": "meta-tags-and-page-metadata",
+          "title": "Meta Tags and Page Metadata",
+          "exams": []
+        },
+        {
+          "id": "favicon-and-document-title",
+          "title": "Favicon and Document Title",
+          "exams": []
+        },
+        {
+          "id": "seo-friendly-html-structure",
+          "title": "SEO-Friendly HTML Structure",
+          "exams": []
+        }
+      ]
+    }
+  ]
+}

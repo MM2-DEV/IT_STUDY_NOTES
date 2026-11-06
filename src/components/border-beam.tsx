@@ -39,3 +39,21 @@ export function BorderBeam({
     />
   );
 }
+
+/**
+ * The home page card border: two beams on opposite sides of the card (the second in the
+ * --beam-2 colours). `offset` (seconds) staggers cards so their beams do not move in step.
+ */
+export function BorderBeams({ offset = 0, duration = 24 }: { offset?: number; duration?: number }) {
+  return (
+    <>
+      <BorderBeam duration={duration} delay={offset} />
+      <BorderBeam
+        duration={duration}
+        delay={offset + duration / 2}
+        colorFrom="var(--beam-2-from)"
+        colorTo="var(--beam-2-to)"
+      />
+    </>
+  );
+}
