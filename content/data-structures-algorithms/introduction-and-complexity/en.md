@@ -9,7 +9,7 @@ updated: 2026-11-02
 
 It defines both the **arrangement of the data** and the **operations** that can be performed on it.
 
-**Data structure and algorithm:** an **algorithm** is a finite sequence of steps for solving a problem (see [Algorithms and Flowcharts](/topics/programming/algorithms-and-flowcharts#algorithm)).
+**Algorithm:** an **algorithm** is a finite sequence of steps for solving a problem (see [Algorithms and Flowcharts](/topics/programming/algorithms-and-flowcharts#algorithm)).
 
 Algorithms work on data, and the choice of data structure decides how efficient the algorithm can be; hence the well-known phrase *"Algorithms + Data Structures = Programs"* (the title of Niklaus Wirth's 1976 book).
 
