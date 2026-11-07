@@ -1,6 +1,6 @@
 ---
-description: Dynamic programming - overlapping sub-problems, memoization and tabulation, the principle of optimality and optimal substructure, and the assembly-line scheduling, matrix chain multiplication, longest common subsequence, Viterbi and bitonic Euclidean travelling-salesperson problems, with worked examples and C programs.
-updated: 2026-11-02
+description: Dynamic programming - overlapping sub-problems, memoization and tabulation, the principle of optimality and optimal substructure, and the assembly-line scheduling, matrix chain multiplication, longest common subsequence, Viterbi and bitonic Euclidean travelling-salesperson problems, and the 0/1 knapsack problem, with worked examples and C programs.
+updated: 2026-11-07
 ---
 
 ## Introduction to Dynamic Programming {#introduction-to-dynamic-programming}
@@ -406,6 +406,179 @@ Seven points sorted by x: (0, 6), (1, 0), (2, 3), (5, 4), (6, 1), (7, 5), (8, 2)
 
 **Complexity:** O(n²) table entries; each entry with i < j − 1 takes O(1), and the n − 1 entries with i = j − 1 take O(n) each, so the total time is **O(n²)** (plus O(n log n) for sorting the points), with O(n²) space.
 
+## 0/1 Knapsack Problem {#0-1-knapsack-problem}
+
+### Definition
+
+**The 0/1 knapsack problem** is the problem of choosing a subset of n items, each with a weight and a value (profit), to put into a knapsack of capacity W so that the total weight does not exceed W and the total value is as large as possible, where each item is either taken whole or not taken at all.
+
+The name "0/1" comes from the decision for each item i: **xᵢ = 1** (take the whole item) or **xᵢ = 0** (leave it). Items cannot be broken into fractions. Formally:
+
+> **Maximise Σ pᵢ·xᵢ subject to Σ wᵢ·xᵢ ≤ W, with xᵢ ∈ {0, 1}**
+
+where:
+
+1. **n** = number of items,
+2. **wᵢ** = weight of item i,
+3. **pᵢ** = value (profit) of item i,
+4. **W** = capacity of the knapsack,
+5. **xᵢ** = 1 if item i is taken, 0 if it is not.
+
+The problem has **optimal substructure** and **overlapping subproblems**, so it is solved with **dynamic programming**.
+
+### Why the Greedy Method Fails
+
+Taking items in order of the highest value-to-weight ratio is optimal for the [fractional knapsack problem](/topics/data-structures-algorithms/greedy-algorithms#fractional-knapsack-problem), but not for the 0/1 problem, because a whole item may block a better combination.
+
+**Example:** W = 4; item A (weight 3, value 1.8, ratio 0.6), item B (weight 2, value 1, ratio 0.5), item C (weight 2, value 1, ratio 0.5).
+
+1. **Greedy by ratio:** take A first (ratio 0.6); the remaining capacity is 1, so neither B nor C fits. Total value = **1.8**.
+2. **Optimal:** take B and C (total weight 4). Total value = **2**.
+
+If items could be broken, greedy would take A and half of B, for a value of 1.8 + 0.5 = 2.3; this is why greedy works only for the fractional problem. (Another example is given in [Greedy vs Dynamic Programming](/topics/data-structures-algorithms/greedy-algorithms).)
+
+### Dynamic Programming Recurrence
+
+Let **K[i][c]** be the maximum value that can be obtained using only the first i items with a knapsack of capacity c.
+
+> **K[0][c] = 0 and K[i][0] = 0**
+>
+> **K[i][c] = K[i − 1][c], if wᵢ > c**
+>
+> **K[i][c] = max( K[i − 1][c], pᵢ + K[i − 1][c − wᵢ] ), if wᵢ ≤ c**
+
+where:
+
+1. **i** = number of items considered (0 to n),
+2. **c** = current capacity (0 to W),
+3. **K[i − 1][c]** = best value **without** item i (item i is skipped),
+4. **pᵢ + K[i − 1][c − wᵢ]** = value **with** item i: its value plus the best value of the remaining capacity c − wᵢ using the earlier items.
+
+The answer is **K[n][W]**.
+
+### Bottom-Up (Tabulation) Method
+
+1. Make a table with (n + 1) rows (items 0 to n) and (W + 1) columns (capacities 0 to W).
+2. Fill row 0 and column 0 with 0.
+3. For i = 1 to n, and for c = 1 to W, fill K[i][c] with the recurrence.
+4. K[n][W] is the maximum value.
+5. **Trace back the items:** start at i = n, c = W. If K[i][c] = K[i − 1][c], item i was **not** taken; go to row i − 1. Otherwise item i **was** taken; record it and set c = c − wᵢ. Repeat until i = 0.
+
+### Worked Example
+
+Capacity **W = 8** and four items:
+
+| Item | Weight (wᵢ) | Profit (pᵢ) |
+| --- | --- | --- |
+| 1 | 3 | 2 |
+| 2 | 4 | 3 |
+| 3 | 5 | 4 |
+| 4 | 6 | 1 |
+
+**DP table K[i][c]:**
+
+| i \ c | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 1 (w 3, p 2) | 0 | 0 | 0 | 2 | 2 | 2 | 2 | 2 | 2 |
+| 2 (w 4, p 3) | 0 | 0 | 0 | 2 | 3 | 3 | 3 | 5 | 5 |
+| 3 (w 5, p 4) | 0 | 0 | 0 | 2 | 3 | 4 | 4 | 5 | 6 |
+| 4 (w 6, p 1) | 0 | 0 | 0 | 2 | 3 | 4 | 4 | 5 | 6 |
+
+**Some cells worked out:**
+
+1. K[1][3]: w₁ = 3 ≤ 3 → max(K[0][3], 2 + K[0][0]) = max(0, 2) = **2**.
+2. K[2][4]: w₂ = 4 ≤ 4 → max(K[1][4], 3 + K[1][0]) = max(2, 3) = **3**.
+3. K[2][7]: max(K[1][7], 3 + K[1][3]) = max(2, 3 + 2) = **5** (items 1 and 2).
+4. K[3][8]: max(K[2][8], 4 + K[2][3]) = max(5, 4 + 2) = **6**.
+5. K[4][8]: max(K[3][8], 1 + K[3][2]) = max(6, 1 + 0) = **6**.
+
+**Maximum profit = K[4][8] = 6.**
+
+**Tracing back the items:**
+
+1. K[4][8] = 6 = K[3][8] → item 4 is not taken.
+2. K[3][8] = 6 ≠ K[2][8] = 5 → **item 3 is taken**; c = 8 − 5 = 3.
+3. K[2][3] = 2 = K[1][3] → item 2 is not taken.
+4. K[1][3] = 2 ≠ K[0][3] = 0 → **item 1 is taken**; c = 3 − 3 = 0.
+
+So the knapsack holds **items 1 and 3** (weight 3 + 5 = 8, profit 2 + 4 = 6). Checking all 2⁴ = 16 subsets gives the same answer.
+
+### Program
+
+```c tab
+#include <stdio.h>
+
+int max(int a, int b) { return a > b ? a : b; }
+
+int main(void) {
+    int n = 4, W = 8;
+    int w[] = {0, 3, 4, 5, 6};   /* weights of items 1..n (index 0 unused) */
+    int p[] = {0, 2, 3, 4, 1};   /* profits of items 1..n */
+    int K[5][9];                 /* K[i][c]: best profit with items 1..i and capacity c */
+
+    for (int i = 0; i <= n; i++) {
+        for (int c = 0; c <= W; c++) {
+            if (i == 0 || c == 0)
+                K[i][c] = 0;
+            else if (w[i] > c)
+                K[i][c] = K[i - 1][c];                              /* item i does not fit */
+            else
+                K[i][c] = max(K[i - 1][c], p[i] + K[i - 1][c - w[i]]); /* skip it or take it */
+        }
+    }
+
+    printf("DP table:\n");
+    for (int i = 0; i <= n; i++) {
+        for (int c = 0; c <= W; c++) printf("%3d", K[i][c]);
+        printf("\n");
+    }
+    printf("Maximum profit = %d\n", K[n][W]);
+
+    printf("Items taken:");
+    for (int i = n, c = W; i > 0; i--) {
+        if (K[i][c] != K[i - 1][c]) {      /* the value changed, so item i was taken */
+            printf(" %d", i);
+            c -= w[i];
+        }
+    }
+    printf("\n");
+    return 0;
+}
+```
+
+```text tab=Output
+DP table:
+  0  0  0  0  0  0  0  0  0
+  0  0  0  2  2  2  2  2  2
+  0  0  0  2  3  3  3  5  5
+  0  0  0  2  3  4  4  5  6
+  0  0  0  2  3  4  4  5  6
+Maximum profit = 6
+Items taken: 3 1
+```
+
+### Complexity
+
+1. **Brute force (try every subset) or plain recursion:** O(2ⁿ) time, because each item is either taken or not.
+2. **Dynamic programming (memoization or tabulation):** **O(n·W) time and O(n·W) space** — the table has (n + 1)(W + 1) cells, each filled in O(1).
+3. **Space-optimised version:** one array dp[0 … W]; for each item, update dp[c] = max(dp[c], pᵢ + dp[c − wᵢ]) for c from **W down to wᵢ**. Time is still O(n·W), but space is **O(W)**. The capacity loop must run **downwards**, so that each item is used at most once (the values of the previous row are not overwritten before they are used). For the example above, the array after the four items is [0, 0, 0, 2, 3, 4, 4, 5, 6]. This version gives the maximum value but not the chosen items, which need the full table.
+
+O(n·W) is a **pseudo-polynomial** time: it is polynomial in the numeric value of W, not in the size of the input (W needs only about log₂W bits to write). The 0/1 knapsack problem is NP-complete; problems that have such an algorithm are called **weakly NP-complete**.
+
+### Differences Between 0/1 Knapsack and Fractional Knapsack
+
+| Basis | 0/1 knapsack | Fractional knapsack |
+| --- | --- | --- |
+| Item division | An item is taken whole or not at all | Items can be broken; any fraction can be taken |
+| Value of xᵢ | 0 or 1 | Any value from 0 to 1 |
+| Method | Dynamic programming (also backtracking, branch and bound) | Greedy method (sort by value/weight ratio) |
+| Is greedy optimal? | No | Yes |
+| Properties | Optimal substructure and overlapping subproblems | Optimal substructure and the greedy-choice property |
+| Time complexity | O(n·W) (pseudo-polynomial) | O(n log n) (for sorting) |
+| Filling the knapsack | Some capacity may be left unused | The knapsack can be filled exactly (if the items weigh at least W in total) |
+| Typical items | Indivisible objects (laptop, phone, book) | Divisible goods (rice, sugar, gold dust) |
+
 ## References {#references}
 
 **GeeksforGeeks**
@@ -415,21 +588,29 @@ Seven points sorted by x: (0, 6), (1, 0), (2, 3), (5, 4), (6, 1), (7, 5), (8, 2)
 - [Assembly Line Scheduling](https://www.geeksforgeeks.org/dsa/assembly-line-scheduling-dp-34/) — accessed 2026-11-01
 - [Matrix Chain Multiplication](https://www.geeksforgeeks.org/dsa/matrix-chain-multiplication-dp-8/) — accessed 2026-11-01
 - [Longest Common Subsequence](https://www.geeksforgeeks.org/dsa/longest-common-subsequence-dp-4/) — accessed 2026-11-01
+- [0/1 Knapsack Problem](https://www.geeksforgeeks.org/dsa/0-1-knapsack-problem-dp-10/) — accessed 2026-11-07
+- [Why doesn't Greedy Algorithm work for 0/1 Knapsack problem?](https://www.geeksforgeeks.org/dsa/gfact-why-doesnt-greedy-algorithm-work-for-0-1-knapsack-problem/) — accessed 2026-11-07
+- [Pseudo-polynomial Algorithms](https://www.geeksforgeeks.org/dsa/pseudo-polynomial-in-algorithms/) — accessed 2026-11-07
+- [Difference between 0/1 Knapsack problem and Fractional Knapsack problem](https://www.geeksforgeeks.org/dsa/difference-between-0-1-knapsack-problem-and-fractional-knapsack-problem/) — accessed 2026-11-07
 
 **TutorialsPoint**
 
 - [Dynamic Programming](https://www.tutorialspoint.com/data_structures_algorithms/dynamic_programming.htm) — accessed 2026-11-02
+- [0-1 Knapsack Problem](https://www.tutorialspoint.com/data_structures_algorithms/01_knapsack_problem.htm) — accessed 2026-11-07
 
 **TpointTech**
 
 - [Matrix Chain Multiplication Example](https://www.tpointtech.com/matrix-chain-multiplication-example) — accessed 2026-11-02
 - [Longest Common Sequence](https://www.tpointtech.com/longest-common-sequence) — accessed 2026-11-02
 - [Optimal Substructure Property](https://www.tpointtech.com/optimal-substructure-property) — accessed 2026-11-02
+- [0/1 Knapsack Problem](https://www.tpointtech.com/0-1-knapsack-problem) — accessed 2026-11-07 (the worked example; its table was recomputed with a program)
+- [Fractional vs 0/1 knapsack problem](https://www.tpointtech.com/fractional-vs-0-1-knapsack-problem) — accessed 2026-11-07
 
 **Programiz**
 
 - [Dynamic Programming](https://www.programiz.com/dsa/dynamic-programming) — accessed 2026-11-02
 - [Longest Common Subsequence](https://www.programiz.com/dsa/longest-common-subsequence) — accessed 2026-11-02
+- [Greedy Algorithm](https://www.programiz.com/dsa/greedy-algorithm) — accessed 2026-11-07 (Programiz has no page on the 0/1 knapsack problem)
 
 **Additional sources**
 
@@ -439,3 +620,10 @@ Seven points sorted by x: (0, 6), (1, 0), (2, 3), (5, 4), (6, 1), (7, 5), (8, 2)
 - [Viterbi algorithm](https://en.wikipedia.org/wiki/Viterbi_algorithm) — Wikipedia (the reference websites do not cover the Viterbi algorithm; recurrence, example and applications) — accessed 2026-11-01
 - [Bitonic tour](https://en.wikipedia.org/wiki/Bitonic_tour) — Wikipedia (the reference websites do not cover bitonic tours) — accessed 2026-11-01
 - [Bitonic TSP sample solution](https://www.cs.huji.ac.il/course/2004/algo/Solutions/bitonic.pdf) — course sample solutions (recurrence for shortest bitonic paths) — accessed 2026-11-01
+
+Issues found on the reference websites (0/1 knapsack) and how they were resolved:
+
+1. TutorialsPoint prints the recurrence as c[i, w] = max{c[i − 1, w − w[i]] + P[i]}, which leaves out the "skip the item" term and the condition wᵢ ≤ w; the complete recurrence from GeeksforGeeks and TpointTech is used.
+2. TutorialsPoint's trace-back step writes c[i − 1, w − W]; it should be c[i − 1, w − wᵢ].
+3. TutorialsPoint's greedy example works only for "smallest weight first"; greedy by value/weight ratio gives the optimum on its data, so GeeksforGeeks' counterexample (which defeats ratio-greedy) is used instead.
+4. TpointTech's fractional-vs-0/1 page calls items 1, 4 and 5 the best selection although they weigh 17 kg, more than the 15 kg capacity; that example was not used.

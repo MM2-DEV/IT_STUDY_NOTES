@@ -1,6 +1,6 @@
 ---
-description: Memory management - memory organization and management (address binding, logical and physical addresses, MMU, loading, linking and swapping), memory management techniques, storage allocation (fixed and variable partitions, first, best, worst and next fit, fragmentation and compaction), paging with the TLB, segmentation, and address mapping, with worked examples.
-updated: 2026-11-03
+description: Memory management - memory organization and management (address binding, logical and physical addresses, MMU, loading, linking and swapping), memory management techniques, storage allocation (fixed and variable partitions, first, best, worst and next fit, fragmentation and compaction), paging with the TLB, segmentation, address mapping, and swapping and fragmentation in detail, with worked examples.
+updated: 2026-11-07
 ---
 
 ## Memory Organization and Management {#memory-organization-and-management}
@@ -104,6 +104,8 @@ Each process is given a **relocation (base) register** (smallest physical addres
 2. Swap in: another 2 s.
 3. Total swap time ≈ **4 s** (4000 ms), plus disk latency and other overhead.
 
+Swapping is explained in full, with more examples, in [Swapping](#swapping).
+
 ## Memory Management Techniques {#memory-management-techniques}
 
 The memory management techniques are classified as follows:
@@ -193,6 +195,8 @@ Fragmentation (wasted memory that cannot be used) is of two types:
 | Cause | Fixed-size blocks larger than the request | Variable-size allocation and release |
 | Occurs in | Fixed partitioning, paging | Variable partitioning, segmentation |
 | Solution | Smaller blocks (best-fit partition) | Compaction, paging, segmentation |
+
+Both types are explained in full, with worked examples, in [Fragmentation](#fragmentation).
 
 **50-percent rule:** statistical analysis of first fit shows that, for N allocated blocks, about **0.5 N** blocks are lost to external fragmentation — that is, about **one-third** of memory may be unusable.
 
@@ -448,6 +452,134 @@ The page number is first looked up in the **TLB**; on a hit the frame number is 
 | Segmentation | ⟨segment s, offset d⟩ | Segment table (base, limit) | Base + d (if d < limit) |
 | Segmented paging | ⟨s, p, d⟩ | Segment table + page tables | Frame × page size + d |
 
+## Swapping {#swapping}
+
+### Definition
+
+**Swapping** is a memory-management technique in which a process is temporarily moved out of main memory to a backing store and later brought back into main memory to continue its execution.
+
+1. **Swap out (roll out):** the process is moved from main memory to the backing store.
+2. **Swap in (roll in):** the process is brought back from the backing store into main memory.
+
+The **backing store** is a fast disk, large enough to hold copies of the memory images of all users, with direct access to them. The area of the disk that holds swapped-out processes is called the **swap space** (a swap partition or a swap file). Swapping is done by the **medium-term scheduler**.
+
+Swapping lets the total memory of all processes exceed the physical memory, which increases the **degree of multiprogramming**. In priority scheduling, a lower-priority process can be swapped out so that a higher-priority process can be loaded and run; this variant is called **roll out, roll in**.
+
+### Steps of Swapping
+
+1. The operating system selects a process to swap out (for example, a blocked or low-priority process).
+2. Its memory image is copied to the swap space.
+3. Its state (program counter, registers) is saved, and it is suspended.
+4. When it is needed again, it is loaded back from the swap space and its state is restored.
+5. It continues from where it stopped.
+
+**Points to note:**
+
+1. If addresses are bound at compile time or load time, a swapped-in process must return to the **same memory location**; with execution-time binding it can be placed anywhere.
+2. A process that is waiting for I/O into its memory must not be swapped out (or the I/O must go into operating-system buffers).
+3. Modern systems do not swap whole processes in normal operation; they swap only when free memory is very low, and mainly move individual pages (see [Paging](#paging)). Mobile systems such as iOS and Android do not support swapping.
+
+### Swap Time
+
+The main part of swap time is the **transfer time**, which is proportional to the amount of memory swapped:
+
+> **Transfer time = Process size ÷ Transfer rate**
+>
+> **Total swap time = 2 × (Transfer time + Latency)**
+
+where the factor 2 counts the swap out and the swap in, and **latency** is the average time the disk needs before the transfer starts.
+
+**Example 1:** a 100 MB process and a transfer rate of 50 MB/s.
+
+1. Transfer time = 100 MB ÷ 50 MB/s = **2 s** (2,000 ms).
+2. Swap out + swap in = 2,000 ms + 2,000 ms = **4,000 ms (4 s)**.
+
+**Example 2:** a 10 MB process, a transfer rate of 40 MB/s and an average latency of 8 ms.
+
+1. Transfer time = 10 MB ÷ 40 MB/s = 0.25 s = **250 ms**.
+2. One way: 250 ms + 8 ms = **258 ms**.
+3. Swap out + swap in = 2 × 258 ms = **516 ms**.
+
+**Note:** use the transfer rate in **bytes** per second (MB/s). A rate in bits per second (Mbps) must first be divided by 8: at 1 Mbps, a 2,048 KB process (16,384 kilobits) needs 16 s each way, not 2 s.
+
+### Advantages of Swapping
+
+1. More processes can be kept running than fit in main memory, so the degree of multiprogramming increases.
+2. The CPU and main memory are used better.
+3. It supports priority scheduling (roll out, roll in).
+4. Larger programs can be run.
+5. The waiting time of processes can be reduced.
+
+### Disadvantages of Swapping
+
+1. Disk transfer is slow, so swapping makes context switches very long and lowers performance.
+2. Too much swapping leads to **thrashing**: the system spends more time swapping than executing.
+3. Swap space is needed on the disk.
+4. Processes with pending I/O cannot be swapped out.
+5. If power fails during heavy swapping, the data of swapped processes can be lost.
+
+## Fragmentation {#fragmentation}
+
+### Definition
+
+**Fragmentation** is the condition in which free memory is broken into small pieces, by the repeated loading and removal of processes, so that it cannot be used effectively.
+
+There are two types of fragmentation:
+
+1. Internal fragmentation
+2. External fragmentation
+
+### 1. Internal Fragmentation
+
+**Internal fragmentation** is the unused memory inside an allocated block or partition: the memory given to a process is larger than the memory it requested, and the difference is wasted.
+
+> **Internal fragmentation = Allocated memory − Requested memory**
+
+**Causes:**
+
+1. Memory is allocated in **fixed-size** partitions, blocks or pages.
+2. Allocations are rounded up to a boundary (for example, to a multiple of 4 or 8 bytes).
+
+**Example 1 (paging):** the page size is 2,048 bytes and a process needs 72,766 bytes. 72,766 = 35 × 2,048 + 1,086, so the process needs 35 full pages and 1,086 bytes in a 36th page. It gets **36 frames**, and the last frame wastes 2,048 − 1,086 = **962 bytes**. In the worst case, a process wastes one frame minus one byte (2,047 bytes); on average, it wastes **half a page**.
+
+**Example 2 (fixed partitions, best fit):** partitions of 100, 500, 200, 300 and 600 KB; processes of 212, 417, 112 and 426 KB, one process per partition. Best fit gives 212 → 300 KB, 417 → 500 KB, 112 → 200 KB and 426 → 600 KB, so the internal fragmentation is 88 + 83 + 88 + 174 = **433 KB**.
+
+**Remedies:**
+
+1. Allocate the **smallest block that is large enough** (best fit).
+2. Use **variable (dynamic) partitioning** instead of fixed partitioning.
+3. Use a **smaller page or block size** — at the cost of larger page tables.
+
+### 2. External Fragmentation
+
+**External fragmentation** is the condition in which the total free memory is enough for a request, but it is not contiguous: it is split into small holes between allocated blocks.
+
+**Causes:**
+
+1. **Variable-size (dynamic) partitioning** and segmentation.
+2. Processes ending at different times and leaving holes between other processes.
+3. Placement algorithms such as first fit and best fit, which leave small holes. By the **50-percent rule**, for N allocated blocks about 0.5 N blocks are lost, so about one-third of memory may be unusable with first fit.
+
+**Example:** free holes of 20 KB, 15 KB and 20 KB lie between allocated blocks — **55 KB** free in total. A 50 KB process cannot be loaded, because the largest hole is only 20 KB. After **compaction**, the holes merge into one 55 KB block, the process fits, and 5 KB remain free.
+
+**Remedies:**
+
+1. **Compaction:** move the allocated blocks together so that the free memory forms one large block. It is possible only with dynamic (execution-time) relocation, and it is expensive.
+2. **Non-contiguous allocation:** **paging** removes external fragmentation completely (but has internal fragmentation in the last page); **segmentation** lets the segments of a process be placed in different places, but the variable-size segments can still cause external fragmentation.
+
+### Differences Between Internal and External Fragmentation
+
+| Basis | Internal fragmentation | External fragmentation |
+| --- | --- | --- |
+| Where the waste is | Inside an allocated block or partition | Outside allocated blocks — in the holes between them |
+| Definition | Allocated memory minus requested memory | Enough total free memory, but not contiguous |
+| Cause | Fixed-size blocks larger than the request | Variable-size allocation and release |
+| Partitioning | Fixed (static) partitioning | Variable (dynamic) partitioning |
+| Occurs in | Paging, fixed partitioning | Segmentation, dynamic partitioning |
+| Related allocation methods | Fixed-size allocation | First fit, best fit, worst fit |
+| Solution | Best fit, dynamic partitioning, smaller blocks | Compaction, paging, segmentation |
+| Can other processes use the waste? | No — it belongs to the process | In principle yes, but the holes are too small |
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -456,6 +588,9 @@ The page number is first looked up in the **TLB**; on a hit the frame number is 
 - [Contiguous Memory Allocation](https://www.tutorialspoint.com/operating_system/os_contiguous_memory_allocation.htm) — accessed 2026-11-03
 - [Paging](https://www.tutorialspoint.com/operating_system/operating_system_paging.htm) — accessed 2026-11-03 (its EAT formula, H × T + M × (T + memory time), leaves out the memory access on a TLB hit, giving 20 ns for its own data; the correct formula used by GeeksforGeeks and TpointTech gives 120 ns)
 - [Segmentation](https://www.tutorialspoint.com/operating_system/os_segmentation.htm) — accessed 2026-11-03 (its worked example uses an offset equal to the segment size, which is out of range, and a base that differs from its own table)
+- [Operating System – Memory Management](https://www.tutorialspoint.com/operating_system/os_memory_management.htm) — accessed 2026-11-07 (swapping, fragmentation)
+- [Operating System – Fragmentation](https://www.tutorialspoint.com/operating_system/os_fragmentation.htm) — accessed 2026-11-07
+- [Difference Between Internal and External Fragmentation](https://www.tutorialspoint.com/difference-between-internal-fragmentation-and-external-fragmentation) — accessed 2026-11-07
 
 **GeeksforGeeks**
 
@@ -464,6 +599,9 @@ The page number is first looked up in the **TLB**; on a hit the frame number is 
 - [Paging in Operating System](https://www.geeksforgeeks.org/operating-systems/paging-in-operating-system/) — accessed 2026-11-03
 - [Segmentation in Operating System](https://www.geeksforgeeks.org/operating-systems/segmentation-in-operating-system/) — accessed 2026-11-03
 - [Paged Segmentation and Segmented Paging](https://www.geeksforgeeks.org/operating-systems/paged-segmentation-and-segmented-paging/) — accessed 2026-11-03
+- [Swapping in Operating System](https://www.geeksforgeeks.org/operating-systems/swapping-in-operating-system/) — accessed 2026-11-07
+- [Fragmentation in Operating System](https://www.geeksforgeeks.org/operating-systems/what-is-fragmentation-in-operating-system/) — accessed 2026-11-07
+- [Difference between Internal and External fragmentation](https://www.geeksforgeeks.org/operating-systems/difference-between-internal-and-external-fragmentation/) — accessed 2026-11-07
 
 **TpointTech**
 
@@ -472,6 +610,8 @@ The page number is first looked up in the **TLB**; on a hit the frame number is 
 - [Paging in Operating System](https://www.tpointtech.com/os-paging-with-example) — accessed 2026-11-03
 - [Translation Look Aside Buffer in OS](https://www.tpointtech.com/os-translation-look-aside-buffer) — accessed 2026-11-03
 - [Difference between Paging and Segmentation](https://www.tpointtech.com/difference-between-paging-and-segmentation) — accessed 2026-11-03 (one row of its table says segmentation has no external fragmentation, which contradicts the row above it; segmentation does suffer external fragmentation)
+- [Swapping in Operating System](https://www.tpointtech.com/swapping-in-operating-system) — accessed 2026-11-07
+- [Internal vs. External Fragmentation](https://www.tpointtech.com/internal-vs-external-fragmentation) — accessed 2026-11-07
 
 **Programiz**
 
@@ -479,6 +619,16 @@ The page number is first looked up in the **TLB**; on a hit the frame number is 
 
 **Additional sources**
 
+- Abraham Silberschatz, Peter B. Galvin and Greg Gagne, *Operating System Concepts*, 9th ed., [Chapter 8 slides: Main Memory](https://www.os-book.com/OS9/slide-dir/PDF-dir/ch8.pdf) — swapping (backing store, swap time, pending I/O, swapping on mobile systems), internal and external fragmentation and the 962-byte paging example — accessed 2026-11-07
 - Abraham Silberschatz, Peter B. Galvin and Greg Gagne, *Operating System Concepts*, "Main Memory" — address binding, the 50-percent rule, and the placement-algorithm, internal-fragmentation and segment-table examples
 
 All calculations in these notes were checked with a script.
+
+Issues found on the reference websites (swapping and fragmentation) and how they were resolved:
+
+1. TutorialsPoint calls swapping "a technique for memory compaction", and TpointTech says another name for swapping is paging; swapping, compaction and paging are different techniques (Silberschatz), so these statements were not used.
+2. TpointTech divides a 2,048 KB process by a rate of "1 Mbps" and gets 2 s; in bits per second the time is 16 s each way. The notes give rates in MB/s and explain the unit.
+3. GeeksforGeeks says the CPU scheduler swaps processes; swapping is done by the medium-term scheduler (Silberschatz, TutorialsPoint, TpointTech).
+4. TutorialsPoint's difference article and TpointTech's table say internal fragmentation occurs when a process is larger than its memory; it is the reverse — the allocated memory is larger than the process needs (Silberschatz, GeeksforGeeks).
+5. TutorialsPoint lists a "5 KB request gets 8 KB" example under external fragmentation; that waste (3 KB) is internal fragmentation.
+6. TpointTech calls compaction "compression"; the standard term is compaction.

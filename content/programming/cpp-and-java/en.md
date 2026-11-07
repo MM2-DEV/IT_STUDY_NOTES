@@ -1,6 +1,6 @@
 ---
-description: Introductory programming in C++ and Java (history, program structure, input and output, classes, and the differences between C, C++ and Java), function and class templates, multithreading with thread life cycle, and exception handling in C++ and Java.
-updated: 2026-11-01
+description: Introductory programming in C++ and Java (history, program structure, input and output, classes, and the differences between C, C++ and Java), function and class templates, multithreading with thread life cycle, and exception handling in C++ and Java; Java platform independence (JDK, JRE and JVM) and garbage collection in Java.
+updated: 2026-11-07
 ---
 
 ## Introductory Programming with C++/Java {#introductory-programming-with-cplusplus-java}
@@ -460,6 +460,190 @@ finally always runs
 | Class | `java.lang.Error` | `java.lang.Exception` |
 | Examples | `OutOfMemoryError`, `StackOverflowError` | Checked: `IOException`, `SQLException`; unchecked: `ArithmeticException`, `NullPointerException`, `ArrayIndexOutOfBoundsException` |
 
+## Java Platform Independence: JDK, JRE and JVM {#java-platform-independence-jdk-jre-and-jvm}
+
+### Platform Independence
+
+**Platform independence** is the ability of a program to run on different operating systems and hardware without any change or recompilation.
+
+Java follows the principle **"Write Once, Run Anywhere" (WORA)**: a Java program is compiled once into **bytecode**, and the same bytecode runs on every platform that has a Java Virtual Machine (JVM).
+
+![Hello.java is compiled by javac into Hello.class (bytecode), which the JVMs for Windows, Linux and macOS each turn into machine code for their own CPU](/diagrams/programming/java-platform-independence.svg)
+
+How Java achieves platform independence:
+
+1. The programmer writes the source code in a `.java` file (for example, `Hello.java`).
+2. The Java compiler **`javac`** (part of the JDK) compiles it into **bytecode** stored in a `.class` file (`Hello.class`). Bytecode is an intermediate, platform-neutral code; it is not the machine code of any CPU.
+3. The same `.class` file is copied to any operating system and hardware.
+4. The **JVM** built for that platform loads the class, verifies the bytecode and executes it: the **interpreter** executes it instruction by instruction, and the **JIT (just-in-time) compiler** converts frequently executed bytecode into the native machine code of that CPU.
+
+**Important:** the **bytecode (the Java program) is platform-independent, but the JVM is platform-dependent**. There is a separate JVM (and JDK) for Windows, Linux and macOS; each one understands the same bytecode. A C or C++ program, by contrast, is compiled directly into the machine code of one operating system and processor, so it must be recompiled for each platform.
+
+### JVM (Java Virtual Machine)
+
+**JVM (Java Virtual Machine)** is an abstract machine that provides the runtime environment in which Java bytecode is executed.
+
+It is called "virtual" because it does not exist physically; it is a **specification**, and different vendors provide implementations of it (for example, Oracle HotSpot and IBM J9). The JVM:
+
+1. Loads the bytecode.
+2. Verifies the bytecode.
+3. Executes the bytecode.
+4. Provides the runtime environment: memory management (garbage collection), threads and exception handling.
+
+#### Components of the JVM Architecture
+
+1. **Class loader subsystem:** loads `.class` files into memory in three steps:
+   1. **Loading:** finds the binary form of a class and creates its `Class` object.
+   2. **Linking:** **verification** (the **bytecode verifier** checks that the bytecode is valid and safe), **preparation** (memory is allocated for static variables, with default values) and **resolution** (symbolic references are replaced by direct references).
+   3. **Initialization:** static variables get their actual values and static blocks run.
+
+   There are three built-in class loaders: the **Bootstrap** class loader (core Java classes), the **Extension** class loader (called the **Platform** class loader since Java 9) and the **Application (System)** class loader (classes on the classpath). A class loader first asks its parent to load a class (delegation).
+2. **Runtime data areas** (memory areas):
+   1. **Method area:** shared by all threads; stores class-level data: the runtime constant pool, field and method data, and the code of methods.
+   2. **Heap:** shared by all threads; stores all objects and arrays; managed by the garbage collector.
+   3. **Java stack:** one per thread; holds a frame for each method call (local variables and operand stack). A `StackOverflowError` occurs when it is full.
+   4. **PC (program counter) register:** one per thread; holds the address of the instruction being executed.
+   5. **Native method stack:** one per thread; used by native (C/C++) methods.
+3. **Execution engine:** executes the bytecode. It has:
+   1. The **interpreter**, which reads and executes bytecode one instruction at a time (starts quickly but runs more slowly).
+   2. The **JIT compiler**, which compiles frequently executed ("hot") bytecode into native machine code to make it faster.
+   3. The **garbage collector**, which removes unreferenced objects from the heap (see [Garbage Collection in Java](#garbage-collection-in-java)).
+4. **Java Native Interface (JNI):** the interface between Java code and native libraries written in C or C++.
+5. **Native method libraries:** the C/C++ libraries needed by the execution engine.
+
+### JRE (Java Runtime Environment)
+
+**JRE (Java Runtime Environment)** is a software package that provides the environment needed to **run** Java programs: the JVM, the Java class libraries and other supporting files.
+
+> **JRE = JVM + class libraries + supporting files**
+
+The JRE does not contain development tools such as the compiler or the debugger, so it can run Java programs but cannot be used to develop them. It is used by end users who only need to run Java applications.
+
+### JDK (Java Development Kit)
+
+**JDK (Java Development Kit)** is a software development kit used to **develop** Java applications; it contains the JRE together with development tools.
+
+> **JDK = JRE + development tools**
+
+The main JDK tools are:
+
+1. **`javac`:** the compiler; converts `.java` source files into `.class` bytecode files.
+2. **`java`:** the launcher; starts the JVM and runs a class.
+3. **`jdb`:** the debugger.
+4. **`jar`:** the archiver; packages classes into a `.jar` file.
+5. **`javadoc`:** the documentation generator.
+
+![Nested boxes: the JVM and the class libraries inside the JRE, and the JRE and the development tools inside the JDK](/diagrams/programming/jdk-jre-jvm.svg)
+
+The three are nested: **JDK ⊃ JRE ⊃ JVM**. A developer needs the JDK; a user who only runs Java programs needs a JRE.
+
+Since **Java 11**, Oracle no longer offers a separate JRE download: the JDK is installed instead, or a smaller custom runtime is built with the `jlink` tool (introduced in Java 9). The JRE (JVM + libraries) still exists as part of the JDK.
+
+### Differences Between JDK, JRE and JVM
+
+| Basis | JDK | JRE | JVM |
+| --- | --- | --- | --- |
+| Full form | Java Development Kit | Java Runtime Environment | Java Virtual Machine |
+| Definition | Software development kit for developing Java applications | Package that provides the environment to run Java programs | Abstract machine that executes bytecode |
+| Main purpose | Develop (write, compile, debug, package) and run programs | Run programs | Execute bytecode by converting it into machine code |
+| Contains | JRE + development tools | JVM + class libraries + supporting files | Class loader, runtime data areas, execution engine |
+| Compiler and debugger | Included | Not included | Not included |
+| Used by | Developers | End users who only run Java programs | Used inside the JRE to run every program |
+| Platform-dependent? | Yes | Yes | Yes (the bytecode it runs is platform-independent) |
+
+## Garbage Collection in Java {#garbage-collection-in-java}
+
+### Definition
+
+**Garbage collection (GC)** in Java is the automatic memory management performed by the JVM: it finds objects on the heap that are no longer reachable by the program and reclaims their memory.
+
+In C, memory is released with `free()` and in C++ with `delete`; in Java the programmer never releases memory explicitly. The part of the JVM that does this work is the **garbage collector**.
+
+An object is **garbage (eligible for garbage collection)** when no live reference can reach it.
+
+### How Garbage Collection Works
+
+The garbage collector decides which objects are alive by **reachability**: starting from the **GC roots** (local variables in the stacks of active threads, static variables and similar references), it follows every reference. Objects that cannot be reached are garbage. (Simple **reference counting** is not used, because it cannot free objects that refer to each other in a cycle.)
+
+The basic **mark and sweep** algorithm works in these steps:
+
+1. **Mark:** every object reachable from the GC roots is marked as live.
+2. **Sweep:** the heap is scanned, and the memory of every unmarked (dead) object is freed.
+3. **Compact:** the live objects are moved together, so that the free memory forms one block and fragmentation is removed.
+
+While the collector works, the application threads may be paused; this is called a **stop-the-world** pause.
+
+### Generational Heap
+
+The heap is divided into generations, because most objects die young:
+
+1. **Young generation:** new objects are created in **Eden**. It also has two **survivor spaces (S0 and S1)**. At each collection, the live objects of Eden and one survivor space are copied into the other (empty) survivor space, and the roles of the two survivor spaces are swapped.
+2. **Old (tenured) generation:** objects that survive several young-generation collections are **promoted (tenured)** here. Moving objects from survivor space to survivor space until promotion is called **aging**.
+
+There are two kinds of collection:
+
+1. **Minor GC:** collects only the young generation, when Eden is full. It is frequent and fast, because few young objects are still alive.
+2. **Major (full) GC:** collects the old generation (a full GC collects the whole heap) when it fills up. It takes much longer than a minor GC.
+
+Class metadata was kept in the **Permanent Generation (PermGen)** up to Java 7; since **Java 8** it is kept in **Metaspace**, which uses native memory outside the heap. PermGen is not the same as the tenured (old) generation.
+
+### Ways to Make an Object Eligible for Garbage Collection
+
+1. **Nullifying the reference:**
+
+   ```java
+   Employee e = new Employee();
+   e = null;            // the Employee object is now unreachable
+   ```
+
+2. **Reassigning the reference:**
+
+   ```java
+   Employee e1 = new Employee();
+   Employee e2 = new Employee();
+   e1 = e2;             // the object first referred to by e1 is now unreachable
+   ```
+
+3. **Object created inside a method:** when the method returns, its local reference disappears, so the object becomes unreachable (unless the method returns it and the caller keeps it).
+4. **Anonymous object:** `new Employee();` creates an object without storing any reference to it, so it is eligible at once.
+5. **Island of isolation:** a group of objects that refer to one another but are not referenced by any live object. The whole group is eligible for garbage collection.
+
+### Requesting Garbage Collection
+
+`System.gc()` and `Runtime.getRuntime().gc()` **request** the JVM to run the garbage collector. They are only requests: the JVM decides whether and when to run it, so collection is not guaranteed.
+
+### The finalize() Method
+
+`protected void finalize() throws Throwable` is a method of the `Object` class that the garbage collector may call on an object before reclaiming it, so that the object can release resources. It is not guaranteed to run promptly or at all, so programs must not rely on it.
+
+`finalize()` was **deprecated in Java 9**, and finalization was **deprecated for removal in Java 18** (JEP 421). Resources such as files and connections should be released with **try-with-resources** or the `java.lang.ref.Cleaner` class instead.
+
+### Types of Garbage Collectors
+
+| Collector | JVM option | How it works | Version notes |
+| --- | --- | --- | --- |
+| Serial GC | `-XX:+UseSerialGC` | One thread does all the GC work and stops all application threads; for small heaps and single-processor machines | — |
+| Parallel GC (throughput collector) | `-XX:+UseParallelGC` | Like Serial GC but uses several GC threads; aims at maximum throughput; still stops the application | Default up to Java 8 on server-class machines |
+| CMS (Concurrent Mark Sweep) | `-XX:+UseConcMarkSweepGC` | Does most of its marking at the same time as the application, giving shorter pauses but using more CPU | Deprecated in Java 9; removed in Java 14 |
+| G1 (Garbage-First) | `-XX:+UseG1GC` | Divides the heap into many equal-sized regions and collects the regions with the most garbage first; aims at predictable pause times on large heaps | **Default since Java 9** |
+| ZGC (Z Garbage Collector) | `-XX:+UseZGC` | Does almost all its work concurrently; pauses of a few milliseconds even on very large heaps | Experimental in Java 11; production-ready in Java 15 |
+| Shenandoah | `-XX:+UseShenandoahGC` | Low pause times by doing compaction concurrently with the application | Experimental in Java 12; production-ready in Java 15 |
+
+### Advantages of Garbage Collection
+
+1. Memory is managed automatically; the programmer does not have to free it.
+2. Memory of unreachable objects is reclaimed and reused, which makes Java programs memory-efficient.
+3. It prevents errors of manual memory management such as **dangling pointers** and **double free**.
+4. It **reduces** memory leaks and lets programmers concentrate on program logic.
+
+### Disadvantages of Garbage Collection
+
+1. **Stop-the-world pauses** can affect the response time of the application.
+2. The collector uses CPU time and memory of its own.
+3. The programmer cannot control when it runs; `System.gc()` is only a request.
+4. It cannot free objects that are still referenced but no longer needed (for example, objects kept in a static collection), so memory leaks and `OutOfMemoryError` are still possible.
+5. It frees memory only; external resources such as files, sockets and database connections must be closed by the program.
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -468,6 +652,10 @@ finally always runs
 - [C++ Exceptions Handling](https://www.tutorialspoint.com/cplusplus/cpp_exceptions_handling.htm) — accessed 2026-11-01
 - [Java – Multithreading](https://www.tutorialspoint.com/java/java_multithreading.htm) — accessed 2026-11-01
 - [Java – Exceptions](https://www.tutorialspoint.com/java/java_exceptions.htm) — accessed 2026-11-01
+- [Difference Between JDK, JRE, and JVM](https://www.tutorialspoint.com/java/java-jdk-jre-jvm.htm) — accessed 2026-11-07
+- [JVM (Java Virtual Machine) Architecture](https://www.tutorialspoint.com/java/java_jvm.htm) — accessed 2026-11-07
+- [Java – Garbage Collection](https://www.tutorialspoint.com/java/java_garbage_collection.htm) — accessed 2026-11-07
+- [Island of Isolation in Java](https://www.tutorialspoint.com/island-of-isolation-in-java) — accessed 2026-11-07
 
 **GeeksforGeeks**
 
@@ -475,9 +663,42 @@ finally always runs
 - [Errors V/s Exceptions In Java](https://www.geeksforgeeks.org/java/errors-v-s-exceptions-in-java/) — accessed 2026-11-01
 - [throw and throws in Java](https://www.geeksforgeeks.org/java/throw-throws-java/) — accessed 2026-11-01
 - [C++ vs Java](https://www.geeksforgeeks.org/cpp/cpp-vs-java/) — accessed 2026-11-01
+- [Differences Between JDK, JRE and JVM](https://www.geeksforgeeks.org/java/differences-jdk-jre-jvm/) — accessed 2026-11-07
+- [How JVM Works – JVM Architecture](https://www.geeksforgeeks.org/java/how-jvm-works-jvm-architecture/) — accessed 2026-11-07
+- [Garbage Collection in Java](https://www.geeksforgeeks.org/java/garbage-collection-in-java/) — accessed 2026-11-07
+- [JVM Garbage Collectors](https://www.geeksforgeeks.org/java/types-of-jvm-garbage-collectors-in-java-with-implementation-details/) — accessed 2026-11-07
+- [How to make object eligible for garbage collection in Java?](https://www.geeksforgeeks.org/java/how-to-make-object-eligible-for-garbage-collection/) — accessed 2026-11-07
 
-**Additional sources**
+**TpointTech**
 
+- [Difference between JDK, JRE and JVM](https://www.tpointtech.com/difference-between-jdk-jre-and-jvm) — accessed 2026-11-07
+- [JVM (Java Virtual Machine) Architecture](https://www.tpointtech.com/jvm-java-virtual-machine) — accessed 2026-11-07
+- [Why is Java Platform Independent?](https://www.tpointtech.com/why-is-java-platform-independent) — accessed 2026-11-07
+- [Garbage Collection in Java](https://www.tpointtech.com/Garbage-Collection) — accessed 2026-11-07
+- [Types of Garbage Collector in Java](https://www.tpointtech.com/types-of-garbage-collector-in-java) — accessed 2026-11-07
+- [How Garbage Collection Works in Java](https://www.tpointtech.com/how-garbage-collection-works-in-java) — accessed 2026-11-07
+
+**Programiz**
+
+- [Java JDK, JRE and JVM](https://www.programiz.com/java-programming/jvm-jre-jdk) — accessed 2026-11-07
+- Programiz has no page on garbage collection in Java (checked 2026-11-07).
+
+**Additional sources** (version facts that the reference websites do not give or give inconsistently)
+
+- [Oracle JDK Migration Guide, Release 11](https://docs.oracle.com/en/java/javase/11/migrate/index.html) — Oracle, accessed 2026-11-07 (no separate JRE from JDK 11)
+- [HotSpot Virtual Machine Garbage Collection Tuning Guide (Java SE 17): Garbage Collector Implementation](https://docs.oracle.com/en/java/javase/17/gctuning/garbage-collector-implementation.html) and [Available Collectors](https://docs.oracle.com/en/java/javase/17/gctuning/available-collectors.html) — Oracle, accessed 2026-11-07
+- [Java SE 21 API: Class Object](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html) — Oracle, accessed 2026-11-07 (`finalize()` deprecated since 9, for removal)
+- OpenJDK JEPs, accessed 2026-11-07: [JEP 248](https://openjdk.org/jeps/248) (G1 default, JDK 9), [JEP 291](https://openjdk.org/jeps/291) (CMS deprecated, JDK 9), [JEP 363](https://openjdk.org/jeps/363) (CMS removed, JDK 14), [JEP 377](https://openjdk.org/jeps/377) (ZGC production, JDK 15), [JEP 379](https://openjdk.org/jeps/379) (Shenandoah production, JDK 15), [JEP 421](https://openjdk.org/jeps/421) (finalization deprecated for removal, JDK 18)
 - [C++](https://en.wikipedia.org/wiki/C%2B%2B) — Wikipedia, accessed 2026-11-01
 - [Java (programming language)](https://en.wikipedia.org/wiki/Java_(programming_language)) — Wikipedia, accessed 2026-11-01
 - [std::thread](https://en.cppreference.com/w/cpp/thread/thread) — cppreference.com, accessed 2026-11-01
+
+Issues found on the reference websites and how they were resolved:
+
+1. TutorialsPoint's JDK/JRE/JVM table calls the JVM platform-independent, which contradicts its own definition and the other websites; the JVM is platform-dependent, and the bytecode it runs is platform-independent.
+2. TpointTech defines the JRE as "a set of software tools that are used for developing Java applications", which contradicts its own table; the JRE is used to run, not to develop, Java programs.
+3. TutorialsPoint treats the permanent generation and the tenured generation as the same; the tenured generation is the old generation of the heap, while PermGen (replaced by Metaspace in Java 8) held class metadata.
+4. TpointTech says Parallel GC is the JVM's default collector; G1 has been the default since Java 9 (JEP 248).
+5. TpointTech says the garbage collector frees only objects created with `new` and that `finalize()` handles others; this was not used, because `finalize()` does not destroy objects.
+6. GeeksforGeeks and TutorialsPoint give ZGC as "Java 11" and Shenandoah as "Java 12" without saying that they were experimental there; the OpenJDK JEPs show that both became production-ready in Java 15.
+7. GeeksforGeeks and TpointTech say garbage collection "prevents" memory leaks; it reduces them, because objects that are still referenced are never collected.

@@ -148,7 +148,7 @@ A formula with no free variables is called a **sentence** (a closed formula); on
 | All birds fly. | `∀x Bird(x) → Fly(x)` |
 | Every man respects his parent. | `∀x ∀y (Man(x) ∧ Parent(y, x)) → Respects(x, y)` |
 | Some boys play cricket. | `∃x Boy(x) ∧ Play(x, Cricket)` |
-| Not all students like both Mathematics and Science. | `¬∀x Student(x) → (Like(x, Mathematics) ∧ Like(x, Science))` |
+| Not all students like both Mathematics and Science. | `¬∀x [Student(x) → (Like(x, Mathematics) ∧ Like(x, Science))]` |
 | Only one student failed in Mathematics. | `∃x Student(x) ∧ Failed(x, Mathematics) ∧ ∀y ((Student(y) ∧ ¬(x = y)) → ¬Failed(y, Mathematics))` |
 | No student likes Physics. | `∀x Student(x) → ¬Like(x, Physics)` |
 | Every customer who makes a purchase receives an invoice. | `∀x (Customer(x) ∧ Purchases(x)) → ReceivesInvoice(x)` |

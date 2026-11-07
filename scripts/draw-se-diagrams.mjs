@@ -705,6 +705,63 @@ files["public-key-encryption.svg"] = (() => {
   return svgDoc(950, 285, s + caption(950, 274, "Asymmetric (public-key) encryption: encrypt with the receiver's public key, decrypt with its private key"), "Public-key encryption");
 })();
 
+// ---------- Git: three areas ----------
+files["git-three-areas.svg"] = (() => {
+  const W = 180, GAP = 90, X = (i) => 30 + i * (W + GAP);
+  const cols = [["Working directory", "files you edit", COLORS[2]], ["Staging area (index)", "changes for the next commit", COLORS[0]], ["Local repository (.git)", "committed snapshots", COLORS[1]], ["Remote repository", "shared copy (e.g. GitHub)", COLORS[3]]];
+  let s = "";
+  cols.forEach(([t, sub, fill], i) => {
+    s += box(X(i), 40, W, 64, t, { fill, size: 13 });
+    s += text(X(i) + W / 2, 118, sub, { size: 12, color: NOTE });
+  });
+  const mid = (i) => X(i) + W + GAP / 2;
+  s += arrow(X(0) + W, 62, X(1), 62) + text(mid(0), 50, "git add", { size: 12, weight: "bold" });
+  s += arrow(X(1) + W, 62, X(2), 62) + text(mid(1), 50, "git commit", { size: 12, weight: "bold" });
+  s += arrow(X(2) + W, 62, X(3), 62) + text(mid(2), 50, "git push", { size: 12, weight: "bold" });
+  s += arrow(X(3), 88, X(2) + W, 88) + text(mid(2), 100, "git fetch", { size: 12, weight: "bold" });
+  s += polyArrow([[X(2) + W / 2, 130], [X(2) + W / 2, 150], [X(0) + W / 2 + 15, 150], [X(0) + W / 2 + 15, 130]], { dash: "5 4" });
+  s += text((X(0) + X(2) + W) / 2, 162, "git checkout / git switch: bring a commit or branch into the working directory", { size: 12, color: NOTE });
+  s += polyArrow([[X(3) + W / 2, 130], [X(3) + W / 2, 185], [X(0) + W / 2 - 15, 185], [X(0) + W / 2 - 15, 130]], {});
+  s += text((X(0) + X(3) + W) / 2, 197, "git pull = git fetch + merge (or rebase) into the current branch", { size: 12, color: ACCENT, weight: "bold" });
+  const w = X(3) + W + 30;
+  return svgDoc(w, 245, s + caption(w, 230, "Git moves changes from the working directory to the staging area, the local repository and the remote"), "Git areas and commands");
+})();
+
+// ---------- Git Flow ----------
+files["git-flow.svg"] = (() => {
+  const rows = [["main", 50, COLORS[0]], ["hotfix", 100, COLORS[6]], ["release", 150, COLORS[4]], ["develop", 200, COLORS[1]], ["feature", 250, COLORS[3]]];
+  let s = "";
+  rows.forEach(([n, y]) => (s += text(20, y, n, { anchor: "start", size: 13, weight: "bold" }) + line(100, y, 860, y, { color: "#c9d6d5", width: 1.5, dash: "4 4" })));
+  const dot = (x, y, fill) => `<circle cx="${x}" cy="${y}" r="9" fill="${fill}" stroke="${INK}" stroke-width="2"/>`;
+  const conn = (x1, y1, x2, y2) => arrow(x1, y1, x2, y2, { color: NOTE });
+  // main
+  [130, 520, 760].forEach((x) => (s += dot(x, 50, COLORS[0])));
+  s += text(520, 28, "v1.0", { size: 11, weight: "bold", color: ACCENT }) + text(760, 28, "v1.0.1", { size: 11, weight: "bold", color: ACCENT });
+  // develop
+  [160, 300, 420, 560, 800].forEach((x) => (s += dot(x, 200, COLORS[1])));
+  s += conn(139, 55, 152, 193);
+  // feature
+  [200, 250].forEach((x) => (s += dot(x, 250, COLORS[3])));
+  s += conn(166, 207, 193, 244) + conn(258, 244, 293, 207);
+  // release
+  [450, 490].forEach((x) => (s += dot(x, 150, COLORS[4])));
+  s += conn(427, 194, 444, 157) + conn(497, 144, 513, 57) + conn(497, 156, 553, 194);
+  // hotfix
+  s += dot(690, 100, COLORS[6]);
+  s += conn(528, 55, 682, 96) + conn(698, 96, 752, 56) + conn(698, 106, 792, 194);
+  return svgDoc(880, 300, s + caption(880, 288, "Git Flow: features → develop → release → main; hotfixes go from main back into main and develop"), "Git Flow branching model");
+})();
+
+// ---------- DevOps lifecycle ----------
+files["devops-lifecycle.svg"] = (() => {
+  const cy = 150, r = 95, lx = 230, rx2 = 470;
+  let s = `<path d="M${lx},${cy - r} C${lx - 140},${cy - r} ${lx - 140},${cy + r} ${lx},${cy + r} C${lx + 120},${cy + r} ${rx2 - 120},${cy - r} ${rx2},${cy - r} C${rx2 + 140},${cy - r} ${rx2 + 140},${cy + r} ${rx2},${cy + r} C${rx2 - 120},${cy + r} ${lx + 120},${cy - r} ${lx},${cy - r} Z" fill="none" stroke="${ACCENT}" stroke-width="22" stroke-opacity="0.22"/>`;
+  s += text(lx - 40, cy, "Dev", { size: 20, weight: "bold", color: ACCENT }) + text(rx2 + 40, cy, "Ops", { size: 20, weight: "bold", color: ACCENT });
+  const pts = [["Plan", lx - 70, cy - 85], ["Code", lx + 55, cy - 85], ["Build", lx + 55, cy + 85], ["Test", lx - 70, cy + 85], ["Release", rx2 - 55, cy - 85], ["Deploy", rx2 + 70, cy - 85], ["Operate", rx2 + 70, cy + 85], ["Monitor", rx2 - 55, cy + 85]];
+  pts.forEach(([t, x, y], i) => (s += box(x - 42, y - 15, 84, 30, t, { fill: i < 4 ? COLORS[0] : COLORS[1], size: 13 })));
+  return svgDoc(700, 290, s + caption(700, 278, "The DevOps lifecycle: a continuous loop of Plan, Code, Build, Test, Release, Deploy, Operate and Monitor"), "DevOps lifecycle");
+})();
+
 mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(files)) writeFileSync(path.join(OUT, name), svg);
 console.log(`Wrote ${Object.keys(files).length} diagrams to ${path.relative(process.cwd(), OUT)}`);

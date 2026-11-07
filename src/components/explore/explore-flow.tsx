@@ -28,6 +28,12 @@ import { type ExploreBranch, type ExploreLeaf, exploreTree } from "@/config/site
 
 export type CategoryInfo = Record<string, { title: string; topics: number }>;
 
+/**
+ * React Flow sets `pointer-events: none` on nodes that are not draggable, selectable or
+ * clickable, which would make the links inside the cards dead. A node's own style wins.
+ */
+const CLICKABLE = { pointerEvents: "all" } as const;
+
 /* ---------- Layout (left to right) ---------- */
 
 const ROOT = { width: 230, height: 138 };
@@ -63,6 +69,7 @@ function buildGraph(categories: CategoryInfo) {
         position: { x: COLUMN.leaf, y },
         data: { kind: "leaf", leaf, categories, offset: (leafCount++ + 2) * BEAM_STAGGER },
         ...LEAF,
+        style: CLICKABLE,
       });
       edges.push({ id: `${branch.id}->${id}`, source: branch.id, target: id, animated: true });
       y += LEAF.height + LEAF_GAP;
@@ -75,6 +82,7 @@ function buildGraph(categories: CategoryInfo) {
       position: { x: COLUMN.branch, y: center - BRANCH.height / 2 },
       data: { kind: "branch", branch, offset: (branchIndex + 1) * BEAM_STAGGER * 2 },
       ...BRANCH,
+      style: CLICKABLE,
     });
     edges.push({ id: `root->${branch.id}`, source: "root", target: branch.id, animated: true });
     y += GROUP_GAP - LEAF_GAP;
@@ -87,6 +95,7 @@ function buildGraph(categories: CategoryInfo) {
     position: { x: COLUMN.root, y: rootCenter - ROOT.height / 2 },
     data: { kind: "root" },
     ...ROOT,
+    style: CLICKABLE,
   });
 
   const height = y - (GROUP_GAP - LEAF_GAP);
@@ -117,7 +126,7 @@ function NodeCard({
       className={cn(
         "relative flex h-full flex-col overflow-hidden rounded-2xl border bg-card shadow-sm transition-shadow",
         emphasis ? "border-primary/40 shadow-md" : "border-border",
-        muted && "bg-muted/50"
+        muted && "bg-(--card-muted)"
       )}
     >
       <div

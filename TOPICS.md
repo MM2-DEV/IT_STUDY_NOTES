@@ -191,8 +191,7 @@ Some subjects appear in more than one place because different syllabi cover them
 **Slug:** `logic-gates` · **Status:** English done
 
 - Basic Gates: AND, OR, NOT — `School` `School-2` `PSC-IT` `AP`
-- NOR Gate — `School`
-- Universal Gates — `School-2`
+- Universal Gates — `School` `School-2`
 - Special Gates: XOR, XNOR
 
 ### 3.2 Boolean Algebra — `School-2` `PSC-IT` `AP`
@@ -392,7 +391,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 4.15 C++ and Java — `PSC-IT` `AP` `Bank`
 
-**Slug:** `cpp-and-java` · **Status:** In progress
+**Slug:** `cpp-and-java` · **Status:** English done
 
 - Introductory Programming with C++/Java — `PSC-IT` `AP` `Bank`
 - Template Functions and Classes — `PSC-IT` `AP`
@@ -483,7 +482,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.5 Stacks and Queues — `School-2` `College` `PSC-IT` `AP` `Bank`
 
-**Slug:** `stacks-and-queues` · **Status:** In progress
+**Slug:** `stacks-and-queues` · **Status:** English done
 
 - Structure and Operations of Stacks and Queues — `School-2` `College` `PSC-IT` `AP` `Bank`
 - Implementation Strategies — `College`
@@ -622,7 +621,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 5.22 Dynamic Programming — `College` `PSC-IT` `AP` `Bank`
 
-**Slug:** `dynamic-programming` · **Status:** In progress
+**Slug:** `dynamic-programming` · **Status:** English done
 
 - Introduction to Dynamic Programming — `College` `PSC-IT` `AP` `Bank`
 - Principle of Optimality and Optimal Substructure — `College`
@@ -679,7 +678,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.2 Process Management — `School-2` `College` `PSC-IT` `AP` `Bank`
 
-**Slug:** `process-management` · **Status:** In progress
+**Slug:** `process-management` · **Status:** English done
 
 - Concept of a Process — `School-2` `College` `Bank`
 - Operations on Processes — `College`
@@ -695,7 +694,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.3 Interrupts and OS Organization — `College` `Bank`
 
-**Slug:** `interrupts-and-os-organization` · **Status:** In progress
+**Slug:** `interrupts-and-os-organization` · **Status:** English done
 
 - Interrupt Processing — `College` `Bank`
 - Operating System Organization — `College`
@@ -706,7 +705,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.4 CPU Scheduling — `College` `PSC-IT` `AP` `Bank`
 
-**Slug:** `cpu-scheduling` · **Status:** In progress
+**Slug:** `cpu-scheduling` · **Status:** English done
 
 - Job and Processor Scheduling — `College` `PSC-IT` `AP` `Bank`
 - Scheduling Algorithms — `College` `PSC-IT` `AP` `Bank`
@@ -727,7 +726,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.6 Semaphores and Synchronization Mechanisms — `College` `PSC-IT` `AP` `Bank`
 
-**Slug:** `semaphores-and-synchronization-mechanisms` · **Status:** In progress
+**Slug:** `semaphores-and-synchronization-mechanisms` · **Status:** English done
 
 - Definition of Semaphores — `College` `PSC-IT` `AP`
 - Semaphore Initialization — `College`
@@ -763,7 +762,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.9 Memory Management — `School-2` `College` `PSC-IT` `AP` `Bank`
 
-**Slug:** `memory-management` · **Status:** In progress
+**Slug:** `memory-management` · **Status:** English done
 
 - Memory Organization and Management — `College` `Bank`
 - Memory Management Techniques — `School-2` `PSC-IT` `AP`
@@ -776,7 +775,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.10 Virtual Memory — `College` `PSC-IT` `AP` `Bank`
 
-**Slug:** `virtual-memory` · **Status:** In progress
+**Slug:** `virtual-memory` · **Status:** English done
 
 - Virtual Memory Concepts — `College` `Bank`
 - Virtual Storage Management — `College` `Bank`
@@ -791,7 +790,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 6.12 File System — `School-2` `College` `PSC-IT` `AP` `Bank`
 
-**Slug:** `file-system` · **Status:** In progress
+**Slug:** `file-system` · **Status:** English done
 
 - File Management — `School-2` `PSC-IT` `AP`
 - File System Structure — `PSC-IT` `AP`
@@ -886,7 +885,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.7 System Modeling and Design — `College` `PSC-IT` `AP` `Bank`
 
-**Slug:** `system-modeling-and-design` · **Status:** In progress
+**Slug:** `system-modeling-and-design` · **Status:** English done
 
 - System Models: Context, Behavioral and Object Models — `PSC-IT` `AP`
 - Basics of Modeling Diagrams — `College` `Bank`
@@ -934,7 +933,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.13 Reliability and Quality Assurance — `PSC-IT` `AP` `Bank`
 
-**Slug:** `reliability-and-quality-assurance` · **Status:** In progress
+**Slug:** `reliability-and-quality-assurance` · **Status:** English done
 
 - Software Reliability and Availability — `PSC-IT` `AP`
 - Quality Assurance — `PSC-IT` `AP` `Bank`
@@ -1026,7 +1025,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 7.25 Version Control and DevOps — `Bank`
 
-**Slug:** `version-control-and-devops` · **Status:** Not started
+**Slug:** `version-control-and-devops` · **Status:** English done
 
 - Version Control and Git Commands
 - Branching and Merging
@@ -1138,7 +1137,7 @@ Some subjects appear in more than one place because different syllabi cover them
 
 ### 8.12 Recovery System — `College` `Bank`
 
-**Slug:** `recovery-system` · **Status:** In progress
+**Slug:** `recovery-system` · **Status:** English done
 
 - Failure Classification — `College` `Bank`
 - Storage Structure — `College`

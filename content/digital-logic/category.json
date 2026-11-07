@@ -24,16 +24,10 @@
           ]
         },
         {
-          "id": "nor-gate",
-          "title": "NOR Gate",
-          "exams": [
-            "School"
-          ]
-        },
-        {
           "id": "universal-gates",
           "title": "Universal Gates",
           "exams": [
+            "School",
             "School-2"
           ]
         },

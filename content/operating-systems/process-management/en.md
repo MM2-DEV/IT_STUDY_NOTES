@@ -1,6 +1,6 @@
 ---
-description: Process management - the concept of a process, operations on processes, process states, concurrent processes, the process control block (PCB), process context, UNIX process control, signals, process hierarchies, and fork and pipe.
-updated: 2026-11-03
+description: Process management - the concept of a process, operations on processes, process states, concurrent processes, the process control block (PCB), process context, UNIX process control, signals, process hierarchies, fork and pipe, and threads (thread components, user-level and kernel-level threads, multithreading models, process vs thread).
+updated: 2026-11-07
 ---
 
 ## Concept of a Process {#concept-of-a-process}
@@ -578,6 +578,105 @@ Output:
 Child read: Hello, child
 ```
 
+## Threads: Process vs Thread {#threads-process-vs-thread}
+
+### Definition
+
+**A thread** is the smallest unit of execution (the basic unit of CPU utilization) within a process: a single sequential flow of control.
+
+A thread is also called a **lightweight process (LWP)**. A traditional process has a single thread of control; a **multithreaded** process has several threads that run concurrently and share the resources of the process. For example, a word processor can use one thread to read keystrokes, another to check spelling and another to save the file in the background.
+
+**Multithreading** is the ability of a process to have several threads that execute concurrently and share the process's resources.
+
+### Components of a Thread
+
+Each thread has its own:
+
+1. **Thread ID.**
+2. **Program counter (PC):** the address of the next instruction of the thread.
+3. **Register set:** the values of the CPU registers of the thread.
+4. **Stack:** the local variables and the return addresses of the thread's function calls.
+5. **Thread state** (running, ready, blocked and so on).
+
+These are kept in a **Thread Control Block (TCB)**, which also points to the PCB of the process that owns the thread.
+
+All threads of a process **share**:
+
+1. The **code section**.
+2. The **data section** (global variables) and the heap.
+3. **Open files**, signals and other operating-system resources.
+
+![A single-threaded process and a multithreaded process with three threads: code, data and files are shared; each thread has its own registers, stack and program counter](/diagrams/operating-systems/single-vs-multithreaded-process.svg)
+
+### Benefits of Multithreading
+
+1. **Responsiveness:** one thread can keep working (for example, the user interface) while another is blocked or doing a long operation.
+2. **Resource sharing:** threads share the memory and resources of their process automatically, so they need no special arrangement to communicate.
+3. **Economy:** creating a thread and switching between threads cost much less time and memory than creating and switching processes.
+4. **Scalability:** the threads of one process can run in parallel on different processors or cores.
+
+### Types of Threads
+
+There are two types of threads:
+
+1. User-level threads
+2. Kernel-level threads
+
+#### 1. User-Level Threads
+
+**A user-level thread (ULT)** is a thread that is created and managed by a thread library in user space, without the kernel knowing about it.
+
+The kernel sees the process as single-threaded. Thread switching needs no change to kernel mode, so it is fast, and user-level threads can run on any operating system. However, if one thread makes a blocking system call, the whole process is blocked, and the threads of one process cannot run in parallel on several processors.
+
+#### 2. Kernel-Level Threads
+
+**A kernel-level thread (KLT)** is a thread that is created, scheduled and managed directly by the operating-system kernel.
+
+The kernel keeps information about every thread. If one thread blocks, the kernel can run another thread of the same process, and threads can run in parallel on several processors. However, creating and switching kernel threads is slower, because every operation needs the kernel. Almost all modern operating systems — Windows, Linux, Solaris and macOS — support kernel threads.
+
+#### Differences Between User-Level and Kernel-Level Threads
+
+| Basis | User-level thread | Kernel-level thread |
+| --- | --- | --- |
+| Managed by | A thread library in user space | The operating-system kernel |
+| Kernel awareness | The kernel does not know about the threads | The kernel knows about each thread |
+| Creation and management | Fast and simple | Slower and more complex |
+| Context switch | Fast; no switch to kernel mode | Slower; needs a switch to kernel mode |
+| Blocking system call | Blocks the whole process | Blocks only the calling thread |
+| Multiprocessor use | Threads of a process cannot run in parallel | Threads can run in parallel on different processors |
+| Portability | Run on any operating system | Specific to the operating system |
+
+### Multithreading Models
+
+**A multithreading model** is the relationship (mapping) between user threads and kernel threads.
+
+There are four multithreading models:
+
+1. **Many-to-one:** many user threads are mapped to **one** kernel thread. Thread management is done in user space, so it is efficient, but a blocking call by one thread blocks the whole process, and only one thread can be in the kernel at a time, so there is no parallelism. Example: Solaris Green Threads. Few systems use this model today.
+2. **One-to-one:** each user thread is mapped to **its own** kernel thread. It gives more concurrency: when one thread blocks, another can run, and threads run in parallel on multiprocessors. Its drawback is that creating a user thread means creating a kernel thread, so the number of threads is often limited. Examples: Windows and Linux.
+3. **Many-to-many:** many user threads are multiplexed onto a **smaller or equal number** of kernel threads. The programmer can create as many user threads as needed, the kernel threads run in parallel, and a blocking call does not block the whole process. Example: Solaris before version 9.
+4. **Two-level model:** like many-to-many, but a user thread can also be **bound** to one kernel thread. Examples: IRIX, HP-UX and Tru64 UNIX.
+
+![The many-to-one, one-to-one and many-to-many models, mapping user threads to kernel threads](/diagrams/operating-systems/multithreading-models.svg)
+
+### Differences Between a Process and a Thread
+
+| Basis | Process | Thread |
+| --- | --- | --- |
+| Definition | A program in execution | A unit of execution within a process |
+| Weight | Heavyweight | Lightweight |
+| Memory | Has its own separate address space | Shares the address space (code, data, files) of its process |
+| Private items | Its own PCB, address space and resources | Its own TCB, program counter, registers and stack |
+| Creation and termination time | More | Less |
+| Context switching | Slower | Faster |
+| Communication | Needs inter-process communication (pipes, message queues, shared memory) through system calls | Directly through shared memory; faster |
+| Resource use | More | Less |
+| Independence | Processes are independent of each other | Threads of a process are interdependent; one thread can read and write another's data |
+| Effect of a crash | A crash in one process does not affect other processes | A crash in one thread can stop the whole process |
+| Synchronization | Needed only when processes share resources | Needed for shared data (to avoid race conditions) |
+| Creation (UNIX) | `fork()` system call | A thread library call such as `pthread_create()` |
+| Relationship | A process can contain several threads | A thread belongs to exactly one process |
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -588,6 +687,8 @@ Child read: Hello, child
 - [Operations on Processes](https://www.tutorialspoint.com/operating_system/os_operations_on_processes.htm) — accessed 2026-11-03
 - [fork() System Call in Linux](https://www.tutorialspoint.com/unix_system_calls/fork.htm) — accessed 2026-11-03
 - [pipe() System Call in Linux](https://www.tutorialspoint.com/unix_system_calls/pipe.htm) — accessed 2026-11-03
+- [Operating System – Multi-Threading](https://www.tutorialspoint.com/operating_system/os_multi_threading.htm) — accessed 2026-11-07
+- [Difference between Process and Thread](https://www.tutorialspoint.com/article/difference-between-process-and-thread) — accessed 2026-11-07
 
 **GeeksforGeeks**
 
@@ -601,6 +702,10 @@ Child read: Hello, child
 - [Signals in C language](https://www.geeksforgeeks.org/signals-c-language/) — accessed 2026-11-03
 - [fork() in C](https://www.geeksforgeeks.org/c/fork-system-call/) — accessed 2026-11-03
 - [pipe() System call](https://www.geeksforgeeks.org/c/pipe-system-call/) — accessed 2026-11-03 (it says a read on an empty pipe with no writer returns −1; it returns 0, end of file — see Additional sources)
+- [Thread in Operating System](https://www.geeksforgeeks.org/operating-systems/thread-in-operating-system/) — accessed 2026-11-07
+- [Process vs Thread](https://www.geeksforgeeks.org/operating-systems/difference-between-process-and-thread/) — accessed 2026-11-07
+- [User Level vs Kernel Level Threads](https://www.geeksforgeeks.org/operating-systems/difference-between-user-level-thread-and-kernel-level-thread/) — accessed 2026-11-07
+- [Multithreading in OS – Different Models](https://www.geeksforgeeks.org/operating-systems/multithreading-in-operating-system/) — accessed 2026-11-07
 
 **TpointTech**
 
@@ -611,6 +716,10 @@ Child read: Hello, child
 - [Concurrency in Operating System](https://www.tpointtech.com/concurrency-in-operating-system) — accessed 2026-11-03
 - [Linux Signals](https://www.tpointtech.com/linux-signals) — accessed 2026-11-03 (it says SIGQUIT is sent by Ctrl+D; it is sent by Ctrl+\\, and Ctrl+D means end of input)
 - [C Program to Demonstrate fork() and pipe()](https://www.tpointtech.com/c-program-to-demonstrate-fork-and-pipe) — accessed 2026-11-03
+- [Threads in Operating System (OS)](https://www.tpointtech.com/threads-in-operating-system) — accessed 2026-11-07
+- [Process vs Thread: What's the Difference?](https://www.tpointtech.com/process-vs-thread) — accessed 2026-11-07
+- [Difference between User level and Kernel level threads](https://www.tpointtech.com/user-level-vs-kernel-level-threads-in-operating-system) — accessed 2026-11-07
+- [Multithreading Models in Operating System](https://www.tpointtech.com/multithreading-models-in-operating-system) — accessed 2026-11-07
 
 **Programiz**
 
@@ -622,4 +731,14 @@ Child read: Hello, child
 - Andrew S. Tanenbaum, *Modern Operating Systems*, "Process Hierarchies" — UNIX process groups and the absence of a process hierarchy in Windows
 - [signal(7) — Linux manual page](https://man7.org/linux/man-pages/man7/signal.7.html) — signal numbers and default actions; SIGKILL and SIGSTOP cannot be caught — accessed 2026-11-03
 - [pipe(7) — Linux manual page](https://man7.org/linux/man-pages/man7/pipe.7.html) — `read()` returns 0 (end of file) when all write ends are closed — accessed 2026-11-03
+- Abraham Silberschatz, Peter B. Galvin and Greg Gagne, *Operating System Concepts*, 9th ed., [Chapter 4 slides: Threads](https://www.os-book.com/OS9/slide-dir/PDF-dir/ch4.pdf) — benefits of multithreading, multithreading models including the two-level model, and examples — accessed 2026-11-07
 - All C programs were compiled with GCC and run on Linux; the outputs shown are the real outputs.
+
+Issues found on the reference websites (threads) and how they were resolved:
+
+1. TutorialsPoint's process-vs-thread table says a blocked process prevents other processes from running; other processes continue (GeeksforGeeks, TpointTech).
+2. GeeksforGeeks' user-level vs kernel-level table says kernel threads each have their own address space; all threads of a process share its address space, so that row was not used.
+3. GeeksforGeeks and TpointTech list Pthreads and Java threads as user-level threads and also as kernel-level threads; these are thread libraries (APIs) that can be implemented either way, so the examples follow Silberschatz (kernel threads are supported by Windows, Linux and Solaris).
+4. TpointTech's multithreading-models page says many-to-one blocks "the whole system" and that many-to-many can schedule only one process at a time; a blocking call blocks the whole process, and many-to-many gives parallelism (Silberschatz, TutorialsPoint, GeeksforGeeks).
+5. TutorialsPoint's "What is a multithreading model in OS?" page describes process/thread configurations rather than user-to-kernel thread mappings, so it was not used.
+6. The two-level model is not described on any of the reference websites; it is taken from Silberschatz, Galvin and Gagne.

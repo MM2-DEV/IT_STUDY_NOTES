@@ -7,7 +7,7 @@ import type { Subtopic } from "@/lib/topics";
 export function TopicOutline({ subtopics }: { subtopics: Subtopic[] }) {
   return (
     <>
-      <div className="mt-6 flex gap-3 rounded-xl border border-dashed border-primary/30 bg-accent/50 p-4 text-sm">
+      <div className="mt-6 flex gap-3 rounded-xl border border-dashed border-primary/30 bg-(--card-tint) p-4 text-sm">
         <NotebookPen className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
         <p>
           Notes for this topic have not been written yet.

@@ -268,7 +268,7 @@ export async function LibraryTopicPage({
               divided into subtopics, each subtopic card shows its own exam tags instead
               (src/lib/rehype-section-cards.ts); otherwise the topic's tags are shown here. */}
           {(showTopicExams || notes) && (
-            <div className="mt-4 rounded-xl border border-dashed border-primary/40 bg-primary/5 p-4 sm:p-5">
+            <div className="mt-4 rounded-xl border border-dashed border-primary/40 bg-(--card-tint) p-4 sm:p-5">
               {showTopicExams && (
                 <ExamBadges exams={topic.exams} className="mb-3 flex flex-wrap gap-1.5" />
               )}
@@ -293,7 +293,7 @@ export async function LibraryTopicPage({
           {previous ? (
             <Link
               href={topicHref(previous)}
-              className="group rounded-xl p-3 ring-1 ring-foreground/10 outline-none hover:bg-accent/60 focus-visible:ring-3 focus-visible:ring-ring/50"
+              className="group rounded-xl bg-card p-3 ring-1 ring-foreground/10 outline-none hover:bg-(--card-tint) focus-visible:ring-3 focus-visible:ring-ring/50"
             >
               <span className="flex items-center gap-1 text-xs text-muted-foreground">
                 <ArrowLeft className="size-3.5" aria-hidden="true" /> Previous
@@ -306,7 +306,7 @@ export async function LibraryTopicPage({
           {next && (
             <Link
               href={topicHref(next)}
-              className="group rounded-xl p-3 text-right ring-1 ring-foreground/10 outline-none hover:bg-accent/60 focus-visible:ring-3 focus-visible:ring-ring/50"
+              className="group rounded-xl bg-card p-3 text-right ring-1 ring-foreground/10 outline-none hover:bg-(--card-tint) focus-visible:ring-3 focus-visible:ring-ring/50"
             >
               <span className="flex items-center justify-end gap-1 text-xs text-muted-foreground">
                 Next <ArrowRight className="size-3.5" aria-hidden="true" />

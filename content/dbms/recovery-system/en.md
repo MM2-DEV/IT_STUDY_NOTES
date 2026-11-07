@@ -1,6 +1,6 @@
 ---
-description: Recovery system - failure classification, volatile, non-volatile and stable storage, data access with buffers, recovery and atomicity, shadow paging, log-based recovery with deferred and immediate modification, write-ahead logging, undo and redo with worked examples, checkpoints, and recovery with concurrent transactions.
-updated: 2026-11-06
+description: Recovery system - failure classification, volatile, non-volatile and stable storage, data access with buffers, recovery and atomicity, shadow paging, log-based recovery with deferred and immediate modification, write-ahead logging, undo and redo with worked examples, checkpoints, recovery with concurrent transactions, and backup and restore.
+updated: 2026-11-07
 ---
 
 ## Failure Classification {#failure-classification}
@@ -191,28 +191,128 @@ Many books state the procedure with two lists, built by reading the log **backwa
 
 Final values: A = 60, B = 70, C = 90.
 
+## Backup and Restore {#backup-and-restore}
+
+### Definitions
+
+**Backup** is the process of making and storing extra copies of data in a separate place, so that the data can be recovered if the original is lost, damaged or deleted.
+
+**Restore** (recovery) is the process of copying data back from a backup to return a database or system to a correct earlier state after a loss or failure.
+
+Backups protect against disk failures (see [Failure Classification](#failure-classification)), accidental deletion, software errors, malware and disasters. A backup is useful only if it can be restored, so restores must be tested regularly.
+
+### Types of Backup
+
+1. **Full backup:** copies **all** the selected data every time. It is the simplest to restore (only one backup set is needed), but it takes the longest time and the most storage.
+2. **Incremental backup:** copies only the data that has changed **since the last backup of any type** (full or incremental). It is the fastest to take and uses the least storage, but it is the slowest to restore: the last full backup and **every** incremental backup after it are needed, in order, and if one of them is lost the chain is broken.
+3. **Differential backup:** copies all the data that has changed **since the last full backup**, so it grows every day until the next full backup. A restore needs only the last full backup and the **latest** differential backup.
+4. **Mirror backup:** an exact copy of the source, kept up to date, with only the latest version. Deletions and corruption in the source are also copied to the mirror (disk mirroring is RAID 1).
+5. **Transaction log backup:** copies the transaction log written since the last log backup; it makes **point-in-time recovery** possible.
+
+Backups are also classified as:
+
+1. **Physical backup:** raw copies of the database files and directories. It is faster and more compact, but can be restored only on similar hardware and software.
+2. **Logical backup:** the database structure and contents saved as statements (`CREATE TABLE`, `INSERT`) or text, for example with `mysqldump`. It is slower and larger, but portable to other machines and versions.
+3. **Hot (online) backup:** taken while the database is running and users keep working; there is no downtime, but logs or locks are needed to keep the copy consistent.
+4. **Cold (offline) backup:** taken after the database is shut down; the copy is consistent and simple, but the database is unavailable during the backup.
+5. **Warm backup:** taken while the server is running but locked against changes.
+
+### Differences Between Full, Incremental and Differential Backup
+
+| Basis | Full backup | Incremental backup | Differential backup |
+| --- | --- | --- | --- |
+| Data copied | Everything | Changes since the **last backup of any type** | Changes since the **last full backup** |
+| Backup time | Longest | Shortest | Medium (grows each day) |
+| Storage needed | Most | Least | Medium (grows each day) |
+| Restore time | Fastest | Slowest | Medium |
+| Needed for a restore | The last full backup only | The last full backup + **all** incrementals since it, in order | The last full backup + the **latest** differential |
+| Risk | — | Losing any one incremental breaks the chain | Only two backup sets are needed |
+
+### Worked Example
+
+A 100 GB database has a full backup every Sunday night and another backup every night from Monday to Saturday; 5 GB of different data changes each day. The disk fails on **Thursday afternoon**, before Thursday night's backup.
+
+![Incremental and differential backups from Sunday to Wednesday, with the backups needed for the restore on Thursday outlined](/diagrams/dbms/backup-incremental-differential.svg)
+
+**With incremental backups:** Monday, Tuesday and Wednesday each copy 5 GB.
+
+1. Restore the **Sunday full** backup (100 GB).
+2. Apply the **Monday**, **Tuesday** and **Wednesday** incrementals, in that order (3 × 5 GB).
+3. Backup sets needed: **4**; data read: 100 + 3 × 5 = **115 GB**.
+
+**With differential backups:** Monday copies 5 GB, Tuesday 10 GB and Wednesday 15 GB (all changes since Sunday).
+
+1. Restore the **Sunday full** backup (100 GB).
+2. Apply only the **Wednesday differential** (15 GB).
+3. Backup sets needed: **2**; data read: 100 + 15 = **115 GB**.
+
+Over the six nights from Monday to Saturday, the incrementals take 6 × 5 = **30 GB**, but the differentials take 5 + 10 + 15 + 20 + 25 + 30 = **105 GB** — the price of a simpler restore. In both cases, the work done after Wednesday night's backup is lost unless the transaction log is available (see below).
+
+### Backup Strategy
+
+1. **The 3-2-1 rule:** keep at least **3 copies** of important data (the original and two backups), on at least **2 different types of storage**, with at least **1 copy off-site** (in another place or in the cloud).
+2. Use a regular schedule — for example, a weekly full backup with daily incremental or differential backups — and take backups at off-peak hours.
+3. Encrypt backups and control access to them.
+4. Test restores regularly.
+
+Two objectives decide the backup strategy:
+
+1. **Recovery Point Objective (RPO):** the maximum amount of data loss that is acceptable, measured in time. It decides how often backups must be taken. For example, with backups only once a night, up to about 24 hours of work can be lost; an RPO of 4 hours needs a backup (or log backup) at least every 4 hours — 24 ÷ 4 = **6 times a day**.
+2. **Recovery Time Objective (RTO):** the maximum acceptable downtime — the time within which the system must be restored after a failure (for example, 30 minutes for online banking).
+
+| Basis | RPO | RTO |
+| --- | --- | --- |
+| Measures | Acceptable **data loss** (how far back) | Acceptable **downtime** (how long to recover) |
+| Decides | How often backups or replication run | How fast the recovery must be |
+| A lower value needs | More frequent backups or replication | Faster restore methods and more redundant infrastructure |
+
+### Point-in-Time Recovery Using Logs
+
+**Point-in-time recovery (PITR)** is the restoration of a database to its state at a chosen moment, for example just before an accidental `DROP TABLE` at 14:59.
+
+1. Restore the last **full** backup (and the latest differential or the incrementals).
+2. **Roll forward:** replay the transaction log (redo log, or binary log in MySQL) written after that backup, up to the chosen time — see [Log-Based Recovery](#log-based-recovery).
+3. Stop just before the faulty transaction.
+4. Open the database for use.
+
+In SQL Server's SQL, for example, `BACKUP DATABASE db TO DISK = 'db.bak';` takes a full backup, adding `WITH DIFFERENTIAL` takes a differential backup, `BACKUP LOG db TO DISK = 'db.trn';` backs up the transaction log, and `RESTORE DATABASE db FROM DISK = 'db.bak';` restores it.
+
 ## References {#references}
 
 **TutorialsPoint**
 
 - [Data Recovery](https://www.tutorialspoint.com/dbms/dbms_data_recovery.htm) — accessed 2026-11-06 (failure classification, storage structure, log-based recovery, checkpoints, recovery with concurrent transactions). It says that shadow paging makes changes "on a volatile memory"; the shadow and current page tables are kept on disk. It also says logs before a checkpoint can be discarded; only records no longer needed by active transactions can be discarded.
+- [Data Warehousing – Backup](https://www.tutorialspoint.com/dwh/dwh_backup.htm) — accessed 2026-11-07 (complete and partial, hot and cold backups)
 
 **GeeksforGeeks**
 
 - [Database Recovery Techniques](https://www.geeksforgeeks.org/dbms/database-recovery-techniques-in-dbms/) — accessed 2026-11-06 (log-based recovery, shadow paging, checkpoints, backups). GeeksforGeeks' `recovery-techniques-in-dbms` and `types-of-failures-in-dbms` pages return 404.
 - [Log-Based Recovery](https://www.geeksforgeeks.org/dbms/log-based-recovery-in-dbms/) — accessed 2026-11-06 (log records, deferred and immediate modification, undo and redo). Its mixed example log (T2 writes Balance 300 → 400 after T1 wrote 600, then T1 aborts) is inconsistent and undoing T1 would erase T2's committed value; it is not used. It also says that transactions with an abort record are redone, which is a simplification.
 - [Checkpoints](https://www.geeksforgeeks.org/dbms/checkpoints-in-dbms/) and [Shadow Paging](https://www.geeksforgeeks.org/dbms/shadow-paging-dbms/) — accessed 2026-11-06. The shadow-paging page lists both "increased concurrency" and "limited concurrency".
+- [Various types of Backup](https://www.geeksforgeeks.org/dbms/various-types-of-backup/) — accessed 2026-11-07
+- [Backup and Restore](https://www.geeksforgeeks.org/computer-science-fundamentals/backup-and-restore/) — accessed 2026-11-07
+- [RTO vs RPO in System Design](https://www.geeksforgeeks.org/system-design/recovery-time-objective-rto-vs-recovery-point-objective-rpo-in-system-design/) — accessed 2026-11-07
+- [Data Backup and Disaster Recovery](https://www.geeksforgeeks.org/cloud-computing/what-is-data-backup-and-disaster-recovery/) — accessed 2026-11-07 (the 3-2-1 rule)
 
 **TpointTech**
 
 - [Failure Classification](https://www.tpointtech.com/dbms-failure-classification) — accessed 2026-11-06. It labels the second cause of transaction failure "syntax error" but describes a system error (the DBMS aborting a transaction because of deadlock or unavailable resources).
 - [Log-Based Recovery](https://www.tpointtech.com/dbms-log-based-recovery) — accessed 2026-11-06 (write-ahead logging; the A, B, C example used above)
 - [Recovery with Concurrent Transaction](https://www.tpointtech.com/dbms-recovery-concurrent-transaction) and [Checkpoint](https://www.tpointtech.com/dbms-checkpoint) — accessed 2026-11-06. Its example log has a checkpoint without the list of active transactions, so T2's uncommitted write before the checkpoint would not be found by scanning only from the checkpoint; the checkpoint must record the active list, as in the example above.
+- [Types of Backup](https://www.tpointtech.com/types-of-backup) — accessed 2026-11-07
 
 **Programiz**
 
 - Programiz has no page on recovery (checked 2026-11-06).
+- [SQL BACKUP DATABASE Statement](https://www.programiz.com/sql/backup-database) — accessed 2026-11-07
 
-**Additional source**
+**Additional sources**
 
 - A. Silberschatz, H. F. Korth and S. Sudarshan, *Database System Concepts*, chapter "Recovery System" — stable storage implementation, data access (input, output, read, write, work area), the <checkpoint L> record and the redo-then-undo recovery algorithm (not covered fully on the reference websites)
+- MySQL 8.4 Reference Manual: [Backup and Recovery Types](https://dev.mysql.com/doc/refman/8.4/en/backup-types.html) and [Point-in-Time (Incremental) Recovery](https://dev.mysql.com/doc/refman/8.4/en/point-in-time-recovery.html) — physical and logical, hot, warm and cold backups; point-in-time recovery — accessed 2026-11-07
+
+Issues found on the reference websites (backup and restore) and how they were resolved:
+
+1. GeeksforGeeks' "Backup and Restore" page says incremental backups usually need less restore time, but later calls their restore the slowest; incremental restores are the slowest, because every incremental must be applied (GeeksforGeeks "Various types of Backup", TpointTech).
+2. TpointTech says a weekly full backup with daily incrementals "may need six sets of media" for a restore; the number depends on the schedule (with one full and six daily incrementals, up to seven sets), so the rule — the last full plus every incremental since it — is given instead.
+3. GeeksforGeeks' hot and cold backup page makes doubtful claims (for example, that a cold backup allows recovery only to a specific point); the hot, warm and cold definitions follow the MySQL Reference Manual.

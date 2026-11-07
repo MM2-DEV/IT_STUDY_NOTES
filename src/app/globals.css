@@ -93,8 +93,9 @@
   /* Sticky header height: h-14 (3.5rem) + 1px brand line. Used to offset sticky elements. */
   --header-height: calc(3.5rem + 1px);
   /* Topics sidebar: a lilac tint like the hero glow, fading down to a lighter tint. */
-  --sidebar: #ede3f0;
-  --sidebar-to: #f4f0f6;
+  /* Sidebar: a lilac → aqua gradient, mixed from two palette colours. */
+  --sidebar: color-mix(in oklab, var(--brand-lilac) 40%, #ffffff);
+  --sidebar-to: color-mix(in oklab, var(--brand-aqua) 26%, #ffffff);
   --sidebar-foreground: #17292d;
   --sidebar-primary: var(--brand-deep-teal);
   --sidebar-primary-foreground: #ffffff;
@@ -104,9 +105,11 @@
   --sidebar-ring: var(--brand-teal);
   /* Header and footer: palette gradient (deep teal → teal → slate) with light text.
      The middle stop is a deeper teal so white text keeps at least 4.5:1 contrast. */
+  /* Header and footer: deep teal → deep purple (the palette purple #83749e, darkened so white
+     text keeps at least 4.5:1 contrast; checked: 8.1, 8.5 and 8.3 for the three stops). */
   --chrome-from: var(--brand-deep-teal);
-  --chrome-via: #06787d;
-  --chrome-to: var(--brand-slate);
+  --chrome-via: color-mix(in srgb, var(--brand-deep-teal) 50%, #54467a);
+  --chrome-to: #54467a;
   --chrome-fg: #ffffff;
   --chrome-muted: #e8f5f4;
   --chrome-accent: var(--brand-yellow);
@@ -154,8 +157,8 @@
   --chart-3: var(--brand-lilac);
   --chart-4: var(--brand-sky);
   --chart-5: var(--brand-yellow);
-  --sidebar: #1f2632;
-  --sidebar-to: #131f25;
+  --sidebar: color-mix(in oklab, var(--brand-purple) 24%, #0d1b1e);
+  --sidebar-to: color-mix(in oklab, var(--brand-teal) 26%, #0d1b1e);
   --sidebar-foreground: #e3efee;
   --sidebar-primary: var(--brand-aqua);
   --sidebar-primary-foreground: #08302f;
@@ -165,8 +168,8 @@
   --sidebar-ring: var(--brand-teal);
   /* Header and footer: dark teal gradient with light text. */
   --chrome-from: #0a2a2c;
-  --chrome-via: #0b3b3e;
-  --chrome-to: #123a44;
+  --chrome-via: color-mix(in srgb, #0a2a2c 50%, #2a2140);
+  --chrome-to: #2a2140;
   --chrome-fg: #e3efee;
   --chrome-muted: #b5d0d0;
   --chrome-accent: var(--brand-aqua);
@@ -568,6 +571,13 @@
 .notes .code-tab-input:nth-of-type(3):checked ~ .code-tab-panel:nth-of-type(3),
 .notes .code-tab-input:nth-of-type(4):checked ~ .code-tab-panel:nth-of-type(4) {
   display: block;
+}
+
+/* Opaque tints for cards that sit on the dotted page background: mixing the tint into the card
+   colour (instead of a translucent background) keeps the dots from showing through. */
+:root {
+  --card-tint: color-mix(in oklab, var(--primary) 6%, var(--card));
+  --card-muted: color-mix(in oklab, var(--muted) 75%, var(--card));
 }
 
 /* Home page Explore tree (src/components/explore/explore-flow.tsx, React Flow). */

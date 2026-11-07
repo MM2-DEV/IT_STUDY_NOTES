@@ -1,6 +1,6 @@
 ---
-description: Stacks (LIFO) and queues (FIFO) - structure and operations with overflow and underflow, array and linked-list implementations, circular queue, deque, priority queue, queue using two stacks, and the applications of stacks, with C programs.
-updated: 2026-11-02
+description: Stacks (LIFO) and queues (FIFO) - structure and operations with overflow and underflow, array and linked-list implementations, circular queue, deque, priority queue (types, operations, implementations, comparisons and a heap program), queue using two stacks, and the applications of stacks, with C programs.
+updated: 2026-11-07
 ---
 
 ## Structure and Operations of Stacks and Queues {#structure-and-operations-of-stacks-and-queues}
@@ -292,6 +292,8 @@ A priority queue can be implemented with an array, a linked list, a binary searc
 3. Dijkstra's shortest-path algorithm.
 4. Data compression with Huffman coding.
 
+Priority queues are explained in full, with a program and comparison tables, in [Priority Queue](#priority-queue).
+
 ### 7. Queue Using Two Stacks
 
 A queue can be built from two stacks S1 and S2:
@@ -435,6 +437,158 @@ Output: `KCATS`
 
 **Disadvantages:** **only the top element** can be accessed directly (middle elements cannot be reached without popping); an array stack can **overflow**.
 
+## Priority Queue {#priority-queue}
+
+### Definition
+
+**A priority queue** is a special type of queue in which every element has a priority, and elements are removed in order of priority instead of order of arrival: the element with the highest priority is removed first.
+
+A priority queue is an **abstract data type (ADT)**: it defines the operations (insert, delete the highest-priority element, peek) but not how they are done. The priority is usually the value of the element itself; either the largest or the smallest value can be treated as the highest priority.
+
+### Characteristics
+
+1. Every element has a priority associated with it.
+2. An element with higher priority is removed before an element with lower priority.
+3. Elements with the same priority are removed in the order in which they were inserted (FIFO).
+4. Elements may be inserted in any order; only deletion follows priority.
+
+### Types of Priority Queues
+
+There are two types of priority queues:
+
+1. **Ascending (min) priority queue:** the **smallest** element has the highest priority and is removed first. Example: insert 7, 5, 3 → removed in the order **3, 5, 7**.
+2. **Descending (max) priority queue:** the **largest** element has the highest priority and is removed first. Example: insert 7, 3, 5 → removed in the order **7, 5, 3**.
+
+### Operations
+
+1. **Insert (enqueue):** adds an element according to its priority.
+2. **Delete (dequeue, extract-max or extract-min):** removes and returns the element with the highest priority.
+3. **Peek (top):** returns the element with the highest priority without removing it.
+4. **isEmpty, isFull and size:** check the state of the queue.
+
+With a **binary max heap** (see [Heaps and Heap Sort](/topics/data-structures-algorithms/heaps-and-heap-sort#binary-heaps)):
+
+1. **Insert:** put the new element at the end of the heap (the next free position of the complete binary tree), then move it **up** while it is larger than its parent (heapify up) — O(log n).
+2. **Delete:** remove the root (the largest element), move the last element into the root, then move it **down** while it is smaller than a child, swapping with the larger child (heapify down) — O(log n).
+3. **Peek:** return the root — O(1).
+
+### Implementations
+
+A priority queue can be implemented with:
+
+1. **Unsorted array:** insert at the end in O(1); peek and delete must search the whole array, O(n).
+2. **Sorted array:** insert must shift elements to keep the order, O(n); peek is O(1); delete is O(1) if the highest-priority element is kept at the end of the array (O(n) if it is kept at the front, because the other elements must be shifted).
+3. **Sorted linked list:** insert must walk to the right position, O(n); the highest-priority element is at the head, so peek and delete are O(1). Each node holds the data, its **priority number** and a link to the next node.
+4. **Binary heap:** insert and delete O(log n), peek O(1); the most common and most efficient implementation.
+5. **Binary search tree:** insert and delete O(log n) and peek O(1) (if a pointer to the highest-priority node is kept) — but only for a **balanced** BST (AVL or red-black tree); an unbalanced BST can degrade to O(n).
+
+| Implementation | Insert | Peek | Delete (highest priority) |
+| --- | --- | --- | --- |
+| Unsorted array | O(1) | O(n) | O(n) |
+| Sorted array | O(n) | O(1) | O(1) (highest at the end) |
+| Sorted linked list | O(n) | O(1) | O(1) |
+| Binary heap | O(log n) | O(1) | O(log n) |
+| Balanced BST | O(log n) | O(1) (with a pointer) | O(log n) |
+
+A binary heap is preferred over a BST because it is stored in a simple array (no pointers, less memory, cache-friendly), its height is always O(log n) because it is a complete binary tree, and it can be built from n elements in O(n) time.
+
+### Program: Priority Queue Using a Max Heap
+
+```c tab
+#include <stdio.h>
+
+#define MAX 100
+
+int heap[MAX];  /* max heap: the largest value (highest priority) is at heap[0] */
+int size = 0;
+
+void swap(int *a, int *b) { int t = *a; *a = *b; *b = t; }
+
+/* Insert: add at the end, then move it up while it is larger than its parent. */
+void insert(int value) {
+    int i = size++;
+    heap[i] = value;
+    while (i > 0 && heap[(i - 1) / 2] < heap[i]) {
+        swap(&heap[(i - 1) / 2], &heap[i]);
+        i = (i - 1) / 2;
+    }
+}
+
+/* Peek: the highest-priority element is the root. */
+int peek(void) { return heap[0]; }
+
+/* Delete: remove the root, put the last element there, then move it down. */
+int extractMax(void) {
+    int max = heap[0];
+    heap[0] = heap[--size];
+    int i = 0;
+    while (1) {
+        int left = 2 * i + 1, right = 2 * i + 2, largest = i;
+        if (left < size && heap[left] > heap[largest]) largest = left;
+        if (right < size && heap[right] > heap[largest]) largest = right;
+        if (largest == i) break;
+        swap(&heap[i], &heap[largest]);
+        i = largest;
+    }
+    return max;
+}
+
+int main(void) {
+    int values[] = {30, 10, 50, 20, 40};
+    for (int k = 0; k < 5; k++) insert(values[k]);
+
+    printf("Heap array: ");
+    for (int k = 0; k < size; k++) printf("%d ", heap[k]);
+    printf("\nPeek: %d\n", peek());
+
+    printf("Deleted in priority order: ");
+    while (size > 0) printf("%d ", extractMax());
+    printf("\n");
+    return 0;
+}
+```
+
+```text tab=Output
+Heap array: 50 40 30 10 20 
+Peek: 50
+Deleted in priority order: 50 40 30 20 10 
+```
+
+**Trace of the insertions:** 30 → [30]; 10 → [30, 10]; 50 is larger than its parent 30, so they swap → [50, 10, 30]; 20 is larger than its parent 10 → [50, 20, 30, 10]; 40 is larger than its parent 20 but smaller than 50 → [50, 40, 30, 10, 20].
+
+### Applications of Priority Queues
+
+1. CPU and process scheduling in operating systems.
+2. Interrupt handling and load balancing in operating systems.
+3. Dijkstra's shortest-path algorithm.
+4. Prim's minimum spanning tree algorithm.
+5. Huffman coding (data compression).
+6. A* search in artificial intelligence.
+7. Heap sort.
+8. Event-driven simulation.
+9. Finding the k-th smallest or largest element, and merging k sorted lists.
+
+### Differences Between a Queue and a Priority Queue
+
+| Basis | Queue | Priority queue |
+| --- | --- | --- |
+| Order of removal | FIFO: the element inserted first is removed first | The element with the highest priority is removed first |
+| Priority | Elements have no priority | Every element has a priority |
+| Insertion order in removal | Always kept | Kept only among elements of equal priority |
+| Usual implementation | Circular array or linked list | Binary heap (also array, linked list or BST) |
+| Insert and delete time | O(1) | O(log n) with a heap |
+| Used when | Order of arrival matters (printer queue, BFS) | Importance matters (scheduling, Dijkstra's algorithm) |
+
+### Differences Between a Priority Queue and a Heap
+
+| Basis | Priority queue | Heap |
+| --- | --- | --- |
+| Type | Abstract data type: defines **what** operations are available | Concrete data structure: defines **how** the data is stored |
+| Purpose | Retrieve elements by priority | Keep elements in a complete binary tree with the heap property (parent ≥ children in a max heap, ≤ in a min heap) |
+| Implementation | Heap, BST, array or linked list | Usually a binary heap stored in an array |
+| Operations | Insert, delete highest priority, peek | Heapify, insert, extract, build heap |
+| Relationship | Usually implemented with a heap | Mainly used to implement priority queues |
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -442,6 +596,7 @@ Output: `KCATS`
 - [Stack Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm) — accessed 2026-11-01
 - [Queue Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm) — accessed 2026-11-01
 - [Circular Queue Data Structure](https://www.tutorialspoint.com/data_structures_algorithms/circular_queue_data_structure.htm) — accessed 2026-11-02
+- [Data Structure – Priority Queue](https://www.tutorialspoint.com/data_structures_algorithms/priority_queue.htm) — accessed 2026-11-07
 
 **GeeksforGeeks**
 
@@ -450,6 +605,13 @@ Output: `KCATS`
 - [Implementation of Circular Queue Using Array](https://www.geeksforgeeks.org/dsa/introduction-to-circular-queue/) — accessed 2026-11-01
 - [Different Types of Queues and its Applications](https://www.geeksforgeeks.org/dsa/different-types-of-queues-and-its-applications/) — accessed 2026-11-01
 - [Applications of Stack](https://www.geeksforgeeks.org/dsa/applications-advantages-and-disadvantages-of-stack/) — accessed 2026-11-01
+- [Introduction to Priority Queue](https://www.geeksforgeeks.org/dsa/priority-queue-set-1-introduction/) — accessed 2026-11-07
+- [How to implement Priority Queue – using Heap or Array?](https://www.geeksforgeeks.org/dsa/how-to-implement-priority-queue-using-heap-or-array/) — accessed 2026-11-07
+- [Priority Queue Using Array](https://www.geeksforgeeks.org/dsa/priority-queue-using-array/) — accessed 2026-11-07
+- [Applications of Priority Queue](https://www.geeksforgeeks.org/dsa/applications-priority-queue/) — accessed 2026-11-07
+- [Why is Binary Heap Preferred over BST for Priority Queue?](https://www.geeksforgeeks.org/dsa/why-is-binary-heap-preferred-over-bst-for-priority-queue/) — accessed 2026-11-07
+- [Difference between PriorityQueue and Queue Implementation in Java](https://www.geeksforgeeks.org/java/difference-between-priorityqueue-and-queue-implementation-in-java/) — accessed 2026-11-07
+- [Heap Data Structure Interview Questions](https://www.geeksforgeeks.org/dsa/commonly-asked-data-structure-interview-questions-on-heap-data-structure/) — accessed 2026-11-07 (priority queue vs heap)
 
 **TpointTech**
 
@@ -457,6 +619,8 @@ Output: `KCATS`
 - [Types of Queues](https://www.tpointtech.com/types-of-queue-in-data-structure) — accessed 2026-11-02
 - [Application of Queue in Data Structure](https://www.tpointtech.com/application-of-queue-in-data-structure) — accessed 2026-11-02
 - [Types of Queues in Data Structure](https://tpointtech.com/ds-types-of-queues) — accessed 2026-11-01
+- [Priority Queue in Data Structure](https://www.tpointtech.com/priority-queue) — accessed 2026-11-07
+- [Why is Binary Heap Preferred over BST for Priority Queue](https://www.tpointtech.com/why-is-binary-heap-preferred-over-bst-for-priority-queue) — accessed 2026-11-07
 
 **Programiz**
 
@@ -465,3 +629,11 @@ Output: `KCATS`
 - [Circular Queue Data Structure](https://www.programiz.com/dsa/circular-queue) — accessed 2026-11-01
 - [Deque Data Structure](https://www.programiz.com/dsa/deque) — accessed 2026-11-01
 - [Priority Queue](https://www.programiz.com/dsa/priority-queue) — accessed 2026-11-01
+- [Types of Queues](https://www.programiz.com/dsa/types-of-queue) — accessed 2026-11-07
+
+Issues found on the reference websites (priority queue) and how they were resolved:
+
+1. TpointTech's priority-queue page says equal priorities are served in FIFO order, but its linked-list example serves 15 before 12 at the same priority; FIFO order for equal priorities is used here, as stated by Programiz and TpointTech's "Types of Queues" page.
+2. TpointTech and Programiz give O(log n) for a BST-based priority queue without saying that the tree must be balanced; GeeksforGeeks and TpointTech's heap-vs-BST page show that an unbalanced BST can take O(n), so the table says "balanced BST".
+3. GeeksforGeeks' "using Heap or Array" page calls its array sorted while its code uses an unsorted array; the unsorted-array costs were taken from GeeksforGeeks' "Priority Queue Using Array" page.
+4. TpointTech's heap-vs-BST page contradicts itself on which uses less memory; a heap needs no pointers (GeeksforGeeks), so it uses less memory.

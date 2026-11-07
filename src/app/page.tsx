@@ -16,8 +16,7 @@ export default async function Home() {
 
   return (
     <main className="relative isolate flex-1 overflow-x-clip">
-      {/* One dotted background behind the whole page, between the header and the footer. */}
-      <div aria-hidden="true" className="bg-dots pointer-events-none absolute inset-0 -z-20" />
+      {/* The dotted background comes from the root layout (src/app/layout.tsx). */}
       <HeroSection />
 
       <section
@@ -25,7 +24,7 @@ export default async function Home() {
         className="relative isolate mx-auto w-full max-w-7xl px-4 pt-6 pb-16 sm:px-6 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-6 motion-safe:duration-1000"
       >
         <header className="mx-auto max-w-2xl text-center">
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-semibold tracking-wider text-primary uppercase backdrop-blur-sm">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-(--card-tint) px-3 py-1 text-xs font-semibold tracking-wider text-primary uppercase">
             <Compass className="size-3.5" aria-hidden="true" />
             Explore
           </span>

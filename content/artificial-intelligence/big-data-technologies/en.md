@@ -46,7 +46,7 @@ HDFS has a **master–slave** architecture with one NameNode and many DataNodes.
    1. Manages the file system **namespace** and stores the **metadata**: file names, permissions, and the list of blocks of each file with their locations.
    2. Regulates clients' access to files.
    3. Executes file system operations such as opening, closing and renaming files and directories.
-   4. Keeps the metadata in memory for fast access. Because there is a single NameNode, it can be a **single point of failure**.
+   4. Keeps the metadata in memory for fast access. In Hadoop 1, the single NameNode was a **single point of failure**; Hadoop 2 and later support an active/standby NameNode pair (HDFS High Availability) to remove it.
 2. **DataNodes (slaves):** usually one per node of the cluster.
    1. Store the actual data blocks.
    2. Perform read and write operations as requested by clients.
@@ -319,7 +319,7 @@ There are four main types of NoSQL databases:
 
 1. **Key–value store:** stores data as pairs of a unique key and a value; the value is fetched only by its key. It is the simplest and fastest type. Uses: caching, session storage, shopping carts, leaderboards. Examples: Redis, Memcached, Amazon DynamoDB.
 2. **Document store:** stores data as documents (JSON, BSON or XML), grouped in collections; each document can have its own structure, including nested fields and arrays, and can be queried by its fields. Uses: content management, product catalogues, user profiles. Examples: MongoDB, CouchDB, Firebase Firestore.
-3. **Column-family (column-oriented, wide-column) store:** stores data in rows identified by a row key, with columns grouped into column families; each row can have different columns, and data is stored and read by column. Uses: big data analytics, time-series and IoT data. Examples: Apache Cassandra, HBase, Google Bigtable.
+3. **Column-family (wide-column) store:** stores data in rows identified by a row key, with columns grouped into column families; each row can have different columns, and rows are stored sorted by row key. (It is not the same as a columnar storage format such as Parquet, which stores each column separately.) Uses: big data analytics, time-series and IoT data. Examples: Apache Cassandra, HBase, Google Bigtable.
 4. **Graph database:** stores data as **nodes** (entities) and **edges** (relationships) with properties, and answers queries by traversing relationships instead of using joins. Uses: social networks, recommendation systems, fraud detection. Examples: Neo4j, Amazon Neptune.
 
 ### Advantages and Disadvantages of NoSQL

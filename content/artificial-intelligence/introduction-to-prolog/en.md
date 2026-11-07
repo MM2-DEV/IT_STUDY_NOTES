@@ -155,10 +155,12 @@ Prolog uses unification to match a query with facts and rule heads. Two terms un
 
 ```text
 ?- point(1, 2) = point(X, Y).
-X = 1, Y = 2.
+X = 1,
+Y = 2.
 
 ?- [H|T] = [10, 20, 30].
-H = 10, T = [20,30].
+H = 10,
+T = [20, 30].
 
 ?- f(a, Z) = f(Z, b).
 false.
@@ -311,9 +313,12 @@ X = b ;
 X = c.
 
 ?- append(A, B, [1, 2]).
-A = [], B = [1,2] ;
-A = [1], B = [2] ;
-A = [1,2], B = [].
+A = [],
+B = [1, 2] ;
+A = [1],
+B = [2] ;
+A = [1, 2],
+B = [].
 ```
 
 Built-in list predicates include **`member/2`**, **`append/3`**, **`length/2`**, **`reverse/2`** and **`nth0/3`**. The last query shows that a Prolog relation can be used "backwards": `append` finds every way to split `[1, 2]`.

@@ -1,6 +1,6 @@
 ---
-description: Semaphores and synchronization mechanisms - the definition, initialization, wait and signal operations of semaphores, using semaphores for mutual exclusion and process synchronization, implementation of semaphores, critical regions, conditional critical regions, monitors, and Ada tasks.
-updated: 2026-11-03
+description: Semaphores and synchronization mechanisms - the definition, initialization, wait and signal operations of semaphores, using semaphores for mutual exclusion and process synchronization, implementation of semaphores, critical regions, conditional critical regions, monitors, Ada tasks, and the readers–writers and dining philosophers problems.
+updated: 2026-11-07
 ---
 
 ## Definition of Semaphores {#definition-of-semaphores}
@@ -211,6 +211,8 @@ If P2 reaches `wait(synch)` first, it blocks (synch = 0) until P1 executes S1 an
 3. **Dining philosophers problem:** five philosophers share five chopsticks; each chopstick is a semaphore initialized to 1. The simple solution can deadlock if all philosophers pick up their left chopstick at the same time, so extra rules are needed (for example, allow at most four philosophers at the table, or let one philosopher pick up the right chopstick first).
 
 #### Readers–Writers Solution
+
+Both problems are explained in full in [Readers–Writers and Dining Philosophers Problems](#readers-writers-and-dining-philosophers-problems).
 
 ```c
 semaphore rw_mutex = 1, mutex = 1;
@@ -491,6 +493,115 @@ The guard `when Count < N` stops producers when the buffer is full, and `when Co
 
 Ada 95 added **protected objects**, which work like monitors: they encapsulate data and give mutual exclusion without explicit locks. Their **entries** have **barriers** (Boolean conditions) that must be true before the entry body runs.
 
+## Readers–Writers and Dining Philosophers Problems {#readers-writers-and-dining-philosophers-problems}
+
+The readers–writers and dining philosophers problems are two **classical synchronization problems**, used to test synchronization methods such as semaphores and monitors.
+
+### Readers–Writers Problem
+
+**The readers–writers problem** is the problem of letting many processes share a data set (a file or a database), so that any number of readers can read it at the same time, but a writer gets exclusive access.
+
+1. **Readers** only read the data; they do not change it.
+2. **Writers** can both read and write the data.
+
+| Situation | Allowed? |
+| --- | --- |
+| Reader with reader | Yes — any number of readers can read together |
+| Reader with writer | No |
+| Writer with reader | No |
+| Writer with writer | No |
+
+The problem was introduced by Courtois, Heymans and Parnas in 1971.
+
+#### Variants of the Readers–Writers Problem
+
+1. **First readers–writers problem (readers' preference):** no reader is kept waiting unless a writer has already obtained permission to use the shared data. Readers never wait for other readers, but **writers may starve** if readers keep arriving.
+2. **Second readers–writers problem (writers' preference):** once a writer is ready, it writes as soon as possible; new readers must wait. Here **readers may starve**.
+3. **Third (fair) solution:** neither readers nor writers starve; processes are served in order of arrival.
+
+#### Semaphore Solution (First Readers–Writers Problem)
+
+Shared variables:
+
+1. `semaphore rw_mutex = 1;` — gives a writer exclusive access; also used by the first and last reader. (Some books call it `wrt`.)
+2. `semaphore mutex = 1;` — protects the variable `read_count`.
+3. `int read_count = 0;` — the number of processes currently reading.
+
+```c
+/* Writer */
+wait(rw_mutex);
+    /* writing is performed */
+signal(rw_mutex);
+
+/* Reader */
+wait(mutex);
+read_count++;
+if (read_count == 1)
+    wait(rw_mutex);      /* the first reader locks out the writers */
+signal(mutex);
+    /* reading is performed */
+wait(mutex);
+read_count--;
+if (read_count == 0)
+    signal(rw_mutex);    /* the last reader lets the writers in */
+signal(mutex);
+```
+
+**How it works:**
+
+1. A writer waits on `rw_mutex`, so it writes only when no reader or writer is using the data.
+2. The **first** reader waits on `rw_mutex`, which locks out the writers; later readers only increase `read_count` and read at the same time.
+3. The **last** reader to leave signals `rw_mutex`, so a waiting writer can enter.
+4. `mutex` makes the updates of `read_count` atomic, so two readers cannot change it at the same time.
+5. Because readers keep `rw_mutex` while any reader is reading, a steady stream of readers can make a writer **starve**.
+
+### Dining Philosophers Problem
+
+**The dining philosophers problem** is a classical synchronization problem in which five philosophers sitting at a round table, who alternately think and eat, must share five chopsticks, each placed between two neighbours, so that every philosopher can eat without deadlock or starvation.
+
+It was formulated by **Edsger Dijkstra in 1965**. The rules are:
+
+1. Five philosophers sit around a round table with a bowl of rice; there are **five chopsticks**, one between each pair of neighbours.
+2. A philosopher either **thinks** or **eats**.
+3. To eat, a philosopher needs **both** the left and the right chopstick and picks them up **one at a time**.
+4. After eating, the philosopher puts both chopsticks down and starts thinking again.
+
+The problem represents the allocation of several resources among several processes without deadlock and starvation. With five chopsticks, at most ⌊5 ÷ 2⌋ = **2** philosophers can eat at the same time.
+
+![Five philosophers P0 to P4 around a table, with chopsticks C0 to C4 between them](/diagrams/operating-systems/dining-philosophers.svg)
+
+#### Semaphore Solution and Its Deadlock
+
+Each chopstick is a semaphore initialized to 1:
+
+```c
+semaphore chopstick[5] = {1, 1, 1, 1, 1};
+
+/* Philosopher i */
+do {
+    wait(chopstick[i]);              /* pick up the left chopstick  */
+    wait(chopstick[(i + 1) % 5]);    /* pick up the right chopstick */
+        /* eat */
+    signal(chopstick[i]);
+    signal(chopstick[(i + 1) % 5]);
+        /* think */
+} while (true);
+```
+
+This guarantees that two neighbours never eat at the same time, but it can **deadlock**: if all five philosophers become hungry at the same time and each picks up the left chopstick, every chopstick semaphore becomes 0, and each philosopher waits for ever for the right chopstick (a circular wait).
+
+#### Solutions to the Deadlock
+
+1. **Allow at most four philosophers at the table at the same time.** A counting semaphore `room = 4` is used: a philosopher calls `wait(room)` before picking up chopsticks and `signal(room)` after eating. With four philosophers and five chopsticks, at least one philosopher can always get both chopsticks.
+2. **Pick up both chopsticks only if both are available.** Picking up the chopsticks is done inside a critical section, or each philosopher's state (THINKING, HUNGRY or EATING) is checked: a hungry philosopher may eat only if neither neighbour is eating.
+3. **Asymmetric solution:** an odd-numbered philosopher picks up the left chopstick first and then the right; an even-numbered philosopher picks up the right first and then the left. This breaks the circular wait.
+4. **Monitor solution:** a monitor keeps `state[5]` (THINKING, HUNGRY, EATING) and a condition variable `self[5]`. `pickup(i)` sets the state to HUNGRY and lets philosopher i eat only if neither neighbour is eating (otherwise `self[i].wait()`); `putdown(i)` sets the state to THINKING and tests both neighbours, waking one that can now eat. This solution is deadlock-free, but a philosopher can still **starve**.
+
+### Starvation in These Problems
+
+1. In the first readers–writers problem, writers may starve; in the second, readers may starve.
+2. A deadlock-free solution to the dining philosophers problem can still let a philosopher starve (for example, if the two neighbours keep eating in turn); freedom from deadlock does not guarantee freedom from starvation.
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -500,6 +611,7 @@ Ada 95 added **protected objects**, which work like monitors: they encapsulate d
 - [Mutex](https://www.tutorialspoint.com/operating_system/mutex_in_os.htm) — accessed 2026-11-03
 - [Monitors](https://www.tutorialspoint.com/operating_system/os_monitors_in_process_synchronization.htm) — accessed 2026-11-03
 - TutorialsPoint has no page on critical regions, conditional critical regions or Ada tasks (checked 2026-11-03).
+- [Operating System – Classical Synchronization Problems](https://www.tutorialspoint.com/operating_system/os_classical_synchroization_problems.htm) — accessed 2026-11-07 (readers–writers)
 
 **GeeksforGeeks**
 
@@ -508,6 +620,9 @@ Ada 95 added **protected objects**, which work like monitors: they encapsulate d
 - [Monitor vs Semaphore](https://www.geeksforgeeks.org/operating-systems/monitor-vs-semaphore/) — accessed 2026-11-03
 - [Critical Regions in Operating System](https://www.geeksforgeeks.org/operating-systems/critical-regions-in-operating-system/) — accessed 2026-11-03 (it describes a critical region only in general terms, without the `region` construct)
 - [Producer Consumer Solution using Semaphores](https://www.geeksforgeeks.org/operating-systems/producer-consumer-problem-using-semaphores-set-1/) — accessed 2026-11-03
+- [Readers-Writers Problem](https://www.geeksforgeeks.org/operating-systems/readers-writers-problem-set-1-introduction-and-readers-preference-solution/) — accessed 2026-11-07
+- [Dining Philosophers Problem](https://www.geeksforgeeks.org/operating-systems/dining-philosophers-problem/) — accessed 2026-11-07
+- [Dining Philosopher Solution using Semaphores](https://www.geeksforgeeks.org/operating-systems/dining-philosopher-problem-using-semaphores/) — accessed 2026-11-07
 
 **TpointTech**
 
@@ -516,6 +631,8 @@ Ada 95 added **protected objects**, which work like monitors: they encapsulate d
 - [Difference between Semaphore and Monitor](https://www.tpointtech.com/semaphore-vs-monitor) — accessed 2026-11-03
 - [Sleep and Wake in Process Synchronization](https://www.tpointtech.com/os-sleep-and-wake) — accessed 2026-11-03
 - TpointTech has no page on critical regions, conditional critical regions or Ada tasks (checked 2026-11-03).
+- [Readers Writers Problem](https://www.tpointtech.com/os-readers-writers-problem) — accessed 2026-11-07
+- [The Dining Philosophers Problem](https://www.tpointtech.com/os-dining-philosophers-problem) — accessed 2026-11-07
 
 **Programiz**
 
@@ -523,6 +640,8 @@ Ada 95 added **protected objects**, which work like monitors: they encapsulate d
 
 **Additional sources** (used because the reference websites do not cover critical regions, conditional critical regions and Ada tasks)
 
+- Abraham Silberschatz, Peter B. Galvin and Greg Gagne, *Operating System Concepts*, 9th ed., [Chapter 5 slides: Process Synchronization](https://www.os-book.com/OS9/slide-dir/PDF-dir/ch5.pdf) — readers–writers variants, the dining philosophers semaphore and monitor solutions — accessed 2026-11-07
+- [Readers–writers problem](https://en.wikipedia.org/wiki/Readers%E2%80%93writers_problem) — Wikipedia (variant names and the Courtois, Heymans and Parnas 1971 paper) — accessed 2026-11-07
 - [CS322 Concurrency lecture notes — critical regions, conditional critical regions and monitors](https://www.cs.gordon.edu/courses/cs322/lectures/concurrency7.html) — Gordon College — accessed 2026-11-03
 - Per Brinch Hansen, "Structured Multiprogramming", *Communications of the ACM* 15(7), 1972 — the `region v do S` construct
 - [Ada Programming/Tasking](https://en.wikibooks.org/wiki/Ada_Programming/Tasking) — Wikibooks — accessed 2026-11-03
@@ -530,3 +649,11 @@ Ada 95 added **protected objects**, which work like monitors: they encapsulate d
 - [Semaphore (programming)](https://en.wikipedia.org/wiki/Semaphore_(programming)) — Wikipedia (Dijkstra and the names P and V) — accessed 2026-11-03
 - [Monitor (synchronization)](https://en.wikipedia.org/wiki/Monitor_(synchronization)) — Wikipedia (origin of monitors; Hoare-style and Mesa-style signalling) — accessed 2026-11-03
 - Abraham Silberschatz, Peter B. Galvin and Greg Gagne, *Operating System Concepts* — semaphore implementation with a waiting queue, the readers–writers and dining-philosophers problems, and monitor condition variables
+
+Issues found on the reference websites (readers–writers and dining philosophers) and how they were resolved:
+
+1. TutorialsPoint's two dining-philosophers pages give each philosopher a separate fork and spoon (three of each for six philosophers), so neighbours never share a semaphore; this does not model the problem, so the solution follows Silberschatz, GeeksforGeeks and TpointTech.
+2. TpointTech says the deadlock is avoided by allowing "at least four" philosophers at the table; it must be "at most four" (Silberschatz, GeeksforGeeks). Its pseudocode also has the typo (1+1)%5 for (i+1)%5.
+3. GeeksforGeeks calls the asymmetric pick-up order the "Chandy/Misra solution"; the Chandy–Misra algorithm is a different solution, so the name was not used.
+4. GeeksforGeeks' readers–writers page does not give initial values; mutex = 1, rw_mutex (wrt) = 1 and read_count = 0 are taken from Silberschatz, TutorialsPoint and TpointTech.
+5. TpointTech spells the authors of the readers–writers problem in two different ways; the names Courtois, Heymans and Parnas (1971) are taken from Wikipedia.

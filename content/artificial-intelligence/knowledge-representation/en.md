@@ -78,7 +78,7 @@ It is more than storing data in a database: it enables a machine to **reason** w
 
 A good KR system must have four properties:
 
-1. **Representational accuracy** — it can represent all kinds of knowledge needed in the domain.
+1. **Representational adequacy** (also called representational accuracy) — it can represent all kinds of knowledge needed in the domain.
 2. **Inferential adequacy** — it can manipulate the representations to produce new knowledge.
 3. **Inferential efficiency** — it can direct inference in the most productive directions by storing suitable guides.
 4. **Acquisitional efficiency** — it can acquire new knowledge easily, preferably automatically.

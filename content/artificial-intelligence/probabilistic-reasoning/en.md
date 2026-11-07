@@ -116,7 +116,7 @@ Server X handles 60% of incoming requests and server Y handles 40%. The probabil
 3. Bayes' theorem: `P(X | L) = P(L | X)P(X) / P(L) = 0.012 / 0.028 = 3/7 ≈ 0.4286`.
 4. Similarly, `P(Y | L) = 0.016 / 0.028 = 4/7 ≈ 0.5714`.
 
-So a delayed request is more likely to have come from Y, although Y handles fewer requests. (This question was asked in an Assistant Programmer examination.)
+So a delayed request is more likely to have come from Y, although Y handles fewer requests.
 
 #### Worked Example 2: Meningitis
 

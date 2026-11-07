@@ -76,7 +76,7 @@ export default async function PaperPage({ params }: PageProps<"/previous-questio
           {previous ? (
             <Link
               href={`/previous-questions/${previous.group.slug}/${previous.paper.slug}`}
-              className="rounded-xl p-3 ring-1 ring-foreground/10 outline-none hover:bg-accent/60 focus-visible:ring-3 focus-visible:ring-ring/50"
+              className="rounded-xl bg-card p-3 ring-1 ring-foreground/10 outline-none hover:bg-(--card-tint) focus-visible:ring-3 focus-visible:ring-ring/50"
             >
               <span className="flex items-center gap-1 text-xs text-muted-foreground">
                 <ArrowLeft className="size-3.5" aria-hidden="true" /> Previous
@@ -89,7 +89,7 @@ export default async function PaperPage({ params }: PageProps<"/previous-questio
           {next && (
             <Link
               href={`/previous-questions/${next.group.slug}/${next.paper.slug}`}
-              className="rounded-xl p-3 text-right ring-1 ring-foreground/10 outline-none hover:bg-accent/60 focus-visible:ring-3 focus-visible:ring-ring/50"
+              className="rounded-xl bg-card p-3 text-right ring-1 ring-foreground/10 outline-none hover:bg-(--card-tint) focus-visible:ring-3 focus-visible:ring-ring/50"
             >
               <span className="flex items-center justify-end gap-1 text-xs text-muted-foreground">
                 Next <ArrowRight className="size-3.5" aria-hidden="true" />

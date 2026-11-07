@@ -657,6 +657,29 @@ files["olap-cube.svg"] = (() => {
   return svgDoc(790, 300, s + caption(790, 290, "A data cube with three dimensions; the shaded face is the slice Time = Q1"), "OLAP data cube");
 })();
 
+// ---------- Backup: incremental vs differential ----------
+files["backup-incremental-differential.svg"] = (() => {
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu"];
+  const x0 = 140, w = 110;
+  let s = "";
+  days.forEach((d, i) => (s += text(x0 + i * w + 45, 30, d, { size: 13, weight: "bold" })));
+  const row = (y, title, sizes, restore) => {
+    let r = text(20, y + 20, title, { anchor: "start", size: 13, weight: "bold" });
+    sizes.forEach((sz, i) => {
+      if (sz === null) return;
+      const label = i === 0 ? "Full 100 GB" : `${sz} GB`;
+      const fill = i === 0 ? COLORS[1] : COLORS[0];
+      r += box(x0 + i * w, y, 90, 40, label, { fill, size: 12, stroke: restore.includes(i) ? RED : INK });
+    });
+    return r;
+  };
+  s += row(50, "Incremental", [100, 5, 5, 5, null], [0, 1, 2, 3]);
+  s += row(130, "Differential", [100, 5, 10, 15, null], [0, 3]);
+  s += box(x0 + 4 * w, 50, 90, 120, "Failure\nThursday", { fill: "#fde8e6", size: 12, stroke: RED });
+  s += text(350, 205, "Red outline = backups needed to restore after the failure on Thursday", { size: 12, color: RED });
+  return svgDoc(700, 250, s + caption(700, 236, "Incremental: full + every incremental; differential: full + the latest differential"), "Incremental and differential backups");
+})();
+
 mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(files)) writeFileSync(path.join(OUT, name), svg);
 console.log(`Wrote ${Object.keys(files).length} diagrams to ${path.relative(process.cwd(), OUT)}`);

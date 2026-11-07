@@ -19,7 +19,7 @@ function QuestionItem({
 }) {
   const tags = question.tags;
   return (
-    <li className={cn("rounded-xl p-4 ring-1 ring-foreground/10", question.or && "ml-6 sm:ml-10")}>
+    <li className={cn("rounded-xl bg-card p-4 ring-1 ring-foreground/10", question.or && "ml-6 sm:ml-10")}>
       {question.or && (
         <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">Or</p>
       )}

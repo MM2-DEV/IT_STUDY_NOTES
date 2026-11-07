@@ -45,7 +45,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <TopicsPreferences />
         <ThemeProvider>
           <SiteHeader />
-          {children}
+          {/* Every page has a dotted background between the header and the footer. The
+              sidebars have their own solid background, so the dots do not show behind them. */}
+          <div className="relative isolate flex flex-1 flex-col">
+            <div aria-hidden="true" className="bg-dots pointer-events-none absolute inset-0 -z-10" />
+            {children}
+          </div>
           <SiteFooter />
         </ThemeProvider>
       </body>

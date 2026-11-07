@@ -1,6 +1,6 @@
 ---
-description: Virtual memory - virtual memory concepts, demand paging and page faults with effective access time, virtual storage management (fetch, placement and replacement policies, frame allocation, thrashing, working set and page-fault frequency), and page replacement strategies (FIFO, Optimal, LRU, LRU approximations, LFU, MFU) with Belady's anomaly and worked examples.
-updated: 2026-11-03
+description: Virtual memory - virtual memory concepts, demand paging and page faults with effective access time, virtual storage management (fetch, placement and replacement policies, frame allocation, thrashing, working set and page-fault frequency), and page replacement strategies (FIFO, Optimal, LRU, LRU approximations, LFU, MFU) with Belady's anomaly, and page fault handling in detail, with worked examples.
+updated: 2026-11-07
 ---
 
 ## Virtual Memory Concepts {#virtual-memory-concepts}
@@ -63,6 +63,8 @@ Virtual memory is implemented by:
 6. The **instruction that caused the fault is restarted**; the process continues as if the page had always been in memory.
 
 ![The six steps in handling a page fault](/diagrams/operating-systems/page-fault-steps.svg)
+
+Page faults are explained in full, with the worst-case sequence and more examples, in [Page Fault Handling](#page-fault-handling).
 
 ### Performance of Demand Paging (Effective Access Time)
 
@@ -311,6 +313,81 @@ Neither LFU nor MFU is common; they are expensive and do not approximate OPT wel
 | LFU | Least frequently used page | — | Yes | Costly counters |
 | MFU | Most frequently used page | — | Yes | Rarely used |
 
+## Page Fault Handling {#page-fault-handling}
+
+### Definition
+
+**A page fault** is a trap raised when a process accesses a page that is not currently in main memory, that is, a page whose page-table entry is marked invalid.
+
+Each page-table entry has a **valid–invalid bit**: **v** means the page is in memory; **i** means the page is not in memory **or** is not a legal page of the process. When a process starts under demand paging, all its entries are marked i. The hardware needed for demand paging is a page table with the valid–invalid bit, a secondary memory (swap device) and the ability to **restart an instruction** after a page fault.
+
+### Types of Page Faults
+
+1. **Minor (soft) page fault:** the page is already in main memory (for example, shared with another process or still in a cache) but is not mapped in this process's page table; it is resolved without reading the disk.
+2. **Major (hard) page fault:** the page must be read from the disk; this is slow.
+3. **Invalid page fault (illegal reference):** the address is not part of the process (unallocated, protected or out of bounds); the operating system terminates the process (a segmentation fault or access violation).
+
+### Steps in Handling a Page Fault
+
+1. The process references a page whose entry is invalid, so the hardware **traps** to the operating system. The program counter and registers are saved.
+2. The operating system checks an internal table (kept with the PCB): if the reference was **illegal**, the process is terminated; if it was **valid** but the page is not in memory, handling continues.
+3. The operating system finds the page on the disk (in the swap area or the executable file).
+4. It finds a **free frame**. If there is none, a **page-replacement algorithm** selects a victim frame; if the victim page has been modified (its **dirty bit** is set), it is first written back to the disk.
+5. It schedules a **disk read** to bring the page into the frame. While the read is in progress, the CPU is given to another process.
+6. When the read completes, the page table (and the TLB) is updated: the frame number is stored and the bit is set to **valid**.
+7. The saved state is restored, and the **instruction that caused the page fault is restarted**. The process continues as if the page had always been in memory.
+
+The basic six steps are also shown in [Virtual Memory Concepts](#virtual-memory-concepts).
+
+#### Worst-Case Sequence of a Page Fault
+
+In the worst case, a page fault causes this sequence of events:
+
+1. Trap to the operating system.
+2. Save the user registers and the process state.
+3. Determine that the interrupt was a page fault.
+4. Check that the page reference was legal, and find the location of the page on the disk.
+5. Issue a read from the disk to a free frame: wait in the queue for the device, wait for the seek and rotational latency, then transfer the page.
+6. While waiting, give the CPU to some other process.
+7. Receive an interrupt from the disk when the I/O is complete.
+8. Save the registers and process state of the other process.
+9. Determine that the interrupt was from the disk.
+10. Correct the page table and other tables to show that the page is now in memory.
+11. Wait for the CPU to be given to this process again.
+12. Restore the user registers, process state and new page table, and resume the interrupted instruction.
+
+The **page-fault service time** has three main parts: servicing the page-fault interrupt, reading in the page (by far the longest part) and restarting the process.
+
+### Effective Access Time with Page Faults
+
+> **EAT = (1 − p) × ma + p × page-fault service time**
+
+where:
+
+1. **p** = page-fault rate (0 ≤ p ≤ 1; p = 0 means no page faults, p = 1 means every reference causes a page fault),
+2. **ma** = memory-access time,
+3. **page-fault service time** = page-fault overhead + time to swap the page in (+ time to swap a page out, if a modified victim must be written back).
+
+**Example 1:** ma = 100 ns, page-fault service time = 10 ms = 10,000,000 ns, p = 0.0005.
+
+1. EAT = (1 − 0.0005) × 100 + 0.0005 × 10,000,000
+2. = 99.95 + 5,000
+3. = **5,099.95 ns ≈ 5.1 µs** — about 51 times slower than memory.
+
+**Example 2 (allowed page-fault rate):** ma = 200 ns and page-fault service time = 20 ms = 20,000,000 ns. For less than 10% slowdown, EAT must be below 220 ns:
+
+1. 220 > (1 − p) × 200 + p × 20,000,000 = 200 + p × 19,999,800.
+2. 20 > p × 19,999,800.
+3. p < 20 ÷ 19,999,800 ≈ **1.0 × 10⁻⁶** — at most about **one page fault per million memory accesses**.
+
+**Example 3 (dirty pages):** ma = 100 ns. Servicing a page fault takes 8 ms if a free frame is available or the victim page is unmodified, and 20 ms if the victim page is modified; the victim is modified 70% of the time. What page-fault rate keeps EAT at no more than 200 ns?
+
+1. Average service time = 0.3 × 8 ms + 0.7 × 20 ms = 2.4 + 14 = **16.4 ms** = 16,400,000 ns.
+2. 200 ≥ (1 − p) × 100 + p × 16,400,000 = 100 + p × 16,399,900.
+3. p ≤ 100 ÷ 16,399,900 ≈ **6.1 × 10⁻⁶** — about **one page fault in 164,000 accesses**.
+
+A process that page-faults so often that it spends more time paging than executing is **thrashing** (see [Virtual Storage Management](#virtual-storage-management)). Page faults are reduced by giving each process enough frames (the working-set model, page-fault-frequency control), by prepaging and by a good page-replacement algorithm.
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -319,6 +396,7 @@ Neither LFU nor MFU is common; they are expensive and do not approximate OPT wel
 - [Demand Paging](https://www.tutorialspoint.com/operating_system/operating_system_demand_paging.htm) — accessed 2026-11-03
 - [Page Replacement Algorithms](https://www.tutorialspoint.com/operating_system/os_page_replacement_algorithms.htm) — accessed 2026-11-03 (in its LRU example 1, 2, 3, 1, 4, 5 it evicts page 1 at the last step; LRU evicts page 3, the least recently used — the fault count, 5, is unaffected)
 - [Thrashing](https://www.tutorialspoint.com/operating_system/operating_systems_thrashing.htm) — accessed 2026-11-03
+- [Operating System – Demand Paging](https://www.tutorialspoint.com/operating_system/operating_system_demand_paging.htm) — accessed 2026-11-07
 
 **GeeksforGeeks**
 
@@ -326,6 +404,7 @@ Neither LFU nor MFU is common; they are expensive and do not approximate OPT wel
 - [Belady's Anomaly in Page Replacement Algorithms](https://www.geeksforgeeks.org/operating-systems/beladys-anomaly-in-page-replacement-algorithms/) — accessed 2026-11-03
 - [Demand Paging in Operating System](https://www.geeksforgeeks.org/operating-systems/what-is-demand-paging-in-operating-system/) — accessed 2026-11-03
 - [Techniques to handle Thrashing](https://www.geeksforgeeks.org/techniques-to-handle-thrashing/) — accessed 2026-11-03
+- [Page Fault Handling](https://www.geeksforgeeks.org/operating-systems/page-fault-handling-in-operating-system/) — accessed 2026-11-07
 
 **TpointTech**
 
@@ -333,6 +412,7 @@ Neither LFU nor MFU is common; they are expensive and do not approximate OPT wel
 - [OS Numerical on LRU, FIFO and Optimal](https://www.tpointtech.com/os-numerical-on-lru-fifo-and-optimal) — accessed 2026-11-03 (its results — Optimal 5, FIFO 6, LRU 6 — agree with a simulation)
 - [Belady's Anomaly in Operating System](https://www.tpointtech.com/os-beladys-anamoly) — accessed 2026-11-03
 - [Allocation of Frames in OS](https://www.tpointtech.com/allocation-of-frames-in-os) — accessed 2026-11-03
+- [Demand Paging in Operating System](https://www.tpointtech.com/os-demand-paging) — accessed 2026-11-07
 
 **Programiz**
 
@@ -340,6 +420,14 @@ Neither LFU nor MFU is common; they are expensive and do not approximate OPT wel
 
 **Additional sources**
 
+- Abraham Silberschatz, Peter B. Galvin and Greg Gagne, *Operating System Concepts*, 9th ed., [Chapter 9 slides: Virtual Memory](https://www.os-book.com/OS9/slide-dir/PDF-dir/ch9.pdf) — the worst-case sequence of a page fault and the three parts of the service time — accessed 2026-11-07
 - Abraham Silberschatz, Peter B. Galvin and Greg Gagne, *Operating System Concepts*, "Virtual Memory" — the effective-access-time example, the 20-reference string, the LRU-approximation algorithms and the counting-based algorithms
 
 All page-fault counts and calculations in these notes were checked with a simulation script.
+
+Issues found on the reference websites (page fault handling) and how they were resolved:
+
+1. TpointTech states that for less than 10% slowdown with a 200 ns memory access and a 20 ms page-fault service time the page-fault rate must be below 0.00001; the correct bound is about 1.0 × 10⁻⁶ (at p = 0.00001 the access time is about 400 ns, twice as slow).
+2. TpointTech says the MMU swaps pages in and out; the MMU only detects the page fault, and the operating system (the pager) moves the pages.
+3. TutorialsPoint's demand-paging page says the operating system "writes" a page from the disk into a frame; it reads it.
+4. The minor, major and invalid page-fault classification is GeeksforGeeks'; standard texts describe an illegal reference as one that terminates the process.

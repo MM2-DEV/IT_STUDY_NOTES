@@ -657,6 +657,66 @@ files["linux-fhs.svg"] = (() => {
   return svgDoc(1000, 280, s + caption(1000, 268, "Part of the Linux file system hierarchy (FHS), starting at the root /"), "Linux file system hierarchy");
 })();
 
+// ---------- Threads: single-threaded vs multithreaded process ----------
+files["single-vs-multithreaded-process.svg"] = (() => {
+  const proc = (x, n, title) => {
+    const w = n === 1 ? 220 : 360;
+    let s = rect(x, 30, w, 250, { fill: "#ffffff", rx: 10 }) + text(x + w / 2, 50, title, { weight: "bold" });
+    // shared part
+    ["code", "data", "files"].forEach((t, i) => (s += box(x + 20 + i * ((w - 40) / 3), 66, (w - 40) / 3 - 8, 34, t, { fill: COLORS[1], size: 13 })));
+    const tw = (w - 40) / n;
+    for (let k = 0; k < n; k++) {
+      const tx = x + 20 + k * tw;
+      s += box(tx, 112, tw - 8, 30, "registers", { fill: COLORS[0], size: 12, weight: "normal" });
+      s += box(tx, 146, tw - 8, 30, "stack", { fill: COLORS[0], size: 12, weight: "normal" });
+      s += box(tx, 180, tw - 8, 30, "PC", { fill: COLORS[0], size: 12, weight: "normal" });
+      const cx = tx + (tw - 8) / 2;
+      s += `<path d="M${cx},218 q8,10 0,20 q-8,10 0,20" fill="none" stroke="${ACCENT}" stroke-width="2.5"/>`;
+      s += text(cx, 272, n === 1 ? "thread" : `thread ${k + 1}`, { size: 12, color: ACCENT, weight: "bold" });
+    }
+    return s;
+  };
+  let s = proc(20, 1, "Single-threaded process") + proc(270, 3, "Multithreaded process");
+  s += text(320, 300, "", {});
+  return svgDoc(650, 320, s + caption(650, 305, "Threads share code, data and files; each thread has its own registers, stack and program counter"), "Single-threaded and multithreaded processes");
+})();
+
+// ---------- Multithreading models ----------
+files["multithreading-models.svg"] = (() => {
+  const model = (x0, title, users, kernels, links) => {
+    let s = text(x0 + 110, 28, title, { weight: "bold" });
+    const ux = (i) => x0 + 20 + i * (180 / Math.max(users - 1, 1));
+    const kx = (i) => (kernels === 1 ? x0 + 110 : x0 + 20 + i * (180 / Math.max(kernels - 1, 1)));
+    for (let i = 0; i < users; i++) s += circle(ux(i), 70, "U", { fill: COLORS[0], r: 16, size: 12 });
+    for (let i = 0; i < kernels; i++) s += circle(kx(i), 190, "K", { fill: COLORS[1], r: 16, size: 12 });
+    links.forEach(([u, k]) => (s += line(ux(u), 86, kx(k), 174, { width: 1.8 })));
+    return s;
+  };
+  let s = text(10, 70, "user", { anchor: "start", size: 12, color: NOTE }) + text(10, 190, "kernel", { anchor: "start", size: 12, color: NOTE });
+  s += model(60, "Many-to-one", 4, 1, [[0, 0], [1, 0], [2, 0], [3, 0]]);
+  s += model(310, "One-to-one", 4, 4, [[0, 0], [1, 1], [2, 2], [3, 3]]);
+  s += model(560, "Many-to-many", 4, 3, [[0, 0], [1, 0], [1, 1], [2, 1], [2, 2], [3, 2]]);
+  return svgDoc(820, 245, s + caption(820, 232, "Mapping of user threads (U) to kernel threads (K)"), "Multithreading models");
+})();
+
+// ---------- Dining philosophers ----------
+files["dining-philosophers.svg"] = (() => {
+  const cx = 290, cy = 175, R = 120;
+  let s = `<circle cx="${cx}" cy="${cy}" r="${R - 30}" fill="#f4f0f6" stroke="${INK}" stroke-width="2"/>` + text(cx, cy, "rice", { size: 13, color: NOTE });
+  for (let i = 0; i < 5; i++) {
+    const a = -Math.PI / 2 + (i * 2 * Math.PI) / 5;
+    const px = cx + (R + 28) * Math.cos(a), py = cy + (R + 28) * Math.sin(a);
+    s += circle(px, py, `P${i}`, { fill: COLORS[0], r: 22, size: 13 });
+    const b = a + Math.PI / 5; // chopstick between Pi and P(i+1)
+    const x1 = cx + (R - 46) * Math.cos(b), y1 = cy + (R - 46) * Math.sin(b);
+    const x2 = cx + (R - 6) * Math.cos(b), y2 = cy + (R - 6) * Math.sin(b);
+    s += line(x1, y1, x2, y2, { color: "#8a5a2b", width: 5 });
+    const lx = cx + (R + 2) * Math.cos(b), ly = cy + (R + 2) * Math.sin(b);
+    s += text(lx + 14 * Math.cos(b), ly + 14 * Math.sin(b), `C${(i + 1) % 5}`, { size: 12, weight: "bold", color: ACCENT });
+  }
+  return svgDoc(580, 370, s + caption(580, 352, "Five philosophers (P0–P4) and five chopsticks; Pi needs Ci and C(i+1) mod 5"), "Dining philosophers problem");
+})();
+
 mkdirSync(OUT, { recursive: true });
 for (const [name, svg] of Object.entries(files)) writeFileSync(path.join(OUT, name), svg);
 console.log(`Wrote ${Object.keys(files).length} diagrams to ${path.relative(process.cwd(), OUT)}`);

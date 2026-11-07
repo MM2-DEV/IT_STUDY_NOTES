@@ -1,6 +1,6 @@
 ---
-description: Logic gates, the basic AND, OR and NOT gates, the NOR gate, the universal NAND and NOR gates, and the special XOR and XNOR gates, with truth tables, switch circuits and gate realizations.
-updated: 2026-11-01
+description: Logic gates, the basic AND, OR and NOT gates, the universal NAND and NOR gates, and the special XOR and XNOR gates, with truth tables, switch circuits and gate realizations.
+updated: 2026-11-07
 ---
 
 **Logic gate:** a logic gate is an **electronic circuit** that performs a **Boolean (logical) operation**.
@@ -158,56 +158,6 @@ It has **only one input** and **one output**, and the output is the **opposite o
 | Output is 0 when | Any input is 0 | All inputs are 0 | Input is 1 |
 | Switch circuit | Switches in series | Switches in parallel | Switch in parallel with the bulb |
 
-## NOR Gate {#nor-gate}
-
-**Definition:** the NOR (NOT-OR) gate is an **OR gate followed by a NOT gate**: the output of the OR gate is inverted.
-
-Its output is the **opposite of the OR gate**. The output is **1 only when all the inputs are 0**; if **any input is 1**, the output is 0.
-
-**Boolean expression:** X = (A + B)′, written as A + B with a bar over the whole expression (read "A NOR B").
-
-**Construction:** OR gate + NOT gate = NOR gate.
-
-![OR gate followed by a NOT gate gives a NOR gate](/diagrams/digital-logic/nor-from-or-not.svg)
-
-**Symbol:** the OR symbol with a bubble at the output.
-
-![NOR gate symbol](/diagrams/digital-logic/nor-gate.svg)
-
-**Truth table (2 inputs):**
-
-| A | B | A + B | X = (A + B)′ |
-| --- | --- | --- | --- |
-| 0 | 0 | 0 | 1 |
-| 0 | 1 | 1 | 0 |
-| 1 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 0 |
-
-**Truth table (3 inputs), X = (A + B + C)′:**
-
-| A | B | C | A + B + C | X |
-| --- | --- | --- | --- | --- |
-| 0 | 0 | 0 | 0 | 1 |
-| 0 | 0 | 1 | 1 | 0 |
-| 0 | 1 | 0 | 1 | 0 |
-| 0 | 1 | 1 | 1 | 0 |
-| 1 | 0 | 0 | 1 | 0 |
-| 1 | 0 | 1 | 1 | 0 |
-| 1 | 1 | 0 | 1 | 0 |
-| 1 | 1 | 1 | 1 | 0 |
-
-**Switch circuit:** two switches are connected **in parallel with each other, and together in parallel with the bulb**. The bulb lights only when **both** switches are OFF (A = 0, B = 0). If either switch is ON, the current bypasses the bulb and it goes off.
-
-![Switch circuit of the NOR gate](/diagrams/digital-logic/nor-switch-circuit.svg)
-
-**Characteristics:**
-
-1. It is a **compound gate** (OR + NOT).
-2. Its output is 1 only when all inputs are 0.
-3. It is a **universal gate**: AND, OR and NOT gates can all be built using only NOR gates (see [Universal Gates](#universal-gates)).
-
-**Example of use:** in an automatic washing machine, three sensors check the water level, the weight of the clothes and the door. Each sensor gives 0 when everything is normal. The three sensor outputs go to a NOR gate: when all are 0 the output is 1 and the machine runs; if any sensor gives 1 (an error), the output becomes 0 and the machine stops.
-
 ## Universal Gates {#universal-gates}
 
 **Definition:** a **universal gate** is a gate with which **all the basic gates (AND, OR and NOT)**, and therefore any logic circuit, can be built.
@@ -259,6 +209,56 @@ Its output is the **opposite of the AND gate**. The output is **0 only when all 
 ![Switch circuit of the NAND gate](/diagrams/digital-logic/nand-switch-circuit.svg)
 
 **Example of use:** in a warehouse, three exhaust fans each give 1 while they are working. Their outputs go to a NAND gate: while all three work, the output is 0; if any fan stops (gives 0), the output becomes 1 and an alarm rings.
+
+### NOR Gate
+
+**Definition:** the NOR (NOT-OR) gate is an **OR gate followed by a NOT gate**: the output of the OR gate is inverted.
+
+Its output is the **opposite of the OR gate**. The output is **1 only when all the inputs are 0**; if **any input is 1**, the output is 0.
+
+**Boolean expression:** X = (A + B)′, written as A + B with a bar over the whole expression (read "A NOR B").
+
+**Construction:** OR gate + NOT gate = NOR gate.
+
+![OR gate followed by a NOT gate gives a NOR gate](/diagrams/digital-logic/nor-from-or-not.svg)
+
+**Symbol:** the OR symbol with a bubble at the output.
+
+![NOR gate symbol](/diagrams/digital-logic/nor-gate.svg)
+
+**Truth table (2 inputs):**
+
+| A | B | A + B | X = (A + B)′ |
+| --- | --- | --- | --- |
+| 0 | 0 | 0 | 1 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 0 |
+
+**Truth table (3 inputs), X = (A + B + C)′:**
+
+| A | B | C | A + B + C | X |
+| --- | --- | --- | --- | --- |
+| 0 | 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 1 | 1 | 0 |
+| 1 | 1 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 0 |
+
+**Switch circuit:** two switches are connected **in parallel with each other, and together in parallel with the bulb**. The bulb lights only when **both** switches are OFF (A = 0, B = 0). If either switch is ON, the current bypasses the bulb and it goes off.
+
+![Switch circuit of the NOR gate](/diagrams/digital-logic/nor-switch-circuit.svg)
+
+**Characteristics:**
+
+1. It is a **compound gate** (OR + NOT).
+2. Its output is 1 only when all inputs are 0.
+3. It is a **universal gate**: AND, OR and NOT gates can all be built using only NOR gates (see [Realization of the Basic Gates Using NOR Gates](#realization-of-the-basic-gates-using-nor-gates) below).
+
+**Example of use:** in an automatic washing machine, three sensors check the water level, the weight of the clothes and the door. Each sensor gives 0 when everything is normal. The three sensor outputs go to a NOR gate: when all are 0 the output is 1 and the machine runs; if any sensor gives 1 (an error), the output becomes 0 and the machine stops.
 
 ### Realization of the Basic Gates Using NAND Gates
 

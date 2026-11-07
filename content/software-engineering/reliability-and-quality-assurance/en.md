@@ -1,6 +1,6 @@
 ---
-description: Software reliability and availability (reliability metrics MTTF, MTTR, MTBF, ROCOF, POFOD and availability, reliability growth models) and software quality assurance (SQA activities and techniques, QA vs QC, ISO 9000, the SEI CMM and CMMI, and Six Sigma).
-updated: 2026-11-04
+description: Software reliability and availability (reliability metrics MTTF, MTTR, MTBF, ROCOF, POFOD and availability, reliability growth models) and software quality assurance (SQA activities and techniques, QA vs QC, ISO 9000, the SEI CMM and CMMI, and Six Sigma), and software quality control, software quality metrics and software auditing.
+updated: 2026-11-07
 ---
 
 ## Software Reliability and Availability {#software-reliability-and-availability}
@@ -247,6 +247,190 @@ Six Sigma uses two methods:
 1. **DMAIC** — for improving an existing process: **D**efine, **M**easure, **A**nalyze, **I**mprove, **C**ontrol.
 2. **DMADV** — for designing a new process or product: **D**efine, **M**easure, **A**nalyze, **D**esign, **V**erify.
 
+## Software Quality Control (SQC) {#software-quality-control-sqc}
+
+### Definition
+
+**Software quality control (SQC)** is the set of product-focused activities that check software work products against the requirements and quality standards, find their defects and make sure the defects are corrected.
+
+SQC compares the quality of what has been produced with the requirements and standards, and takes **corrective action** when the product does not conform. It is therefore **reactive (corrective)**, while software quality assurance (SQA) is **proactive (preventive)**. QC is a part (subset) of QA, and testing is a part of QC.
+
+### Activities of SQC
+
+1. **Inspections:** a formal examination of a requirements document, design or code by people other than the author, to find defects and violations of standards (planning, overview, preparation, inspection meeting, rework and follow-up).
+2. **Reviews:** technical reviews, code reviews and walkthroughs of work products (see [Verification, Validation and Testing](/topics/software-engineering/verification-validation-and-testing)).
+3. **Testing:** executing test cases on the product — unit, integration, system and acceptance testing.
+4. **Checking the functionality** against the specified requirements.
+5. **Recording and tracking defects**, getting them corrected and checking the corrections.
+6. **Measuring quality** with metrics (such as defect density) and taking corrective action when the targets are not met.
+
+### Differences Between SQA, SQC and Testing
+
+The differences between quality assurance and quality control are given in [Quality Assurance](#quality-assurance). Testing fits in as follows:
+
+| Basis | Quality assurance (SQA) | Quality control (SQC) | Testing |
+| --- | --- | --- | --- |
+| Focus | The process used to build the product | The product | The product |
+| Aim | Prevent defects | Find and correct defects | Find defects by executing the software |
+| Nature | Preventive, proactive | Corrective, reactive | Detective |
+| Activities | Defining processes and standards, audits, training | Inspections, reviews, testing, defect tracking | Running test cases |
+| Executes the software? | Generally no | Sometimes (testing) | Yes |
+| Relationship | The widest | A subset of QA | A subset of QC |
+| Example | Defining coding and testing standards | Inspecting the design; testing the login module | Executing the test cases of the payment module |
+
+## Software Quality Metrics {#software-quality-metrics}
+
+### Definition
+
+**A software metric** is a quantitative measure of a characteristic of a software product, process or project that can be measured or counted.
+
+**Software quality metrics** are the subset of software metrics that measure the quality of the product, the process and the project. Size and complexity metrics such as LOC, function points, Halstead's metrics and cyclomatic complexity are explained in [Software Cost Estimation and Metrics](/topics/software-engineering/software-cost-estimation-and-metrics).
+
+### Types of Software Metrics
+
+There are three types of software metrics:
+
+1. **Product metrics:** describe the product — size, complexity, design features, performance and quality level (for example, LOC, function points, defect density, MTTF).
+2. **Process metrics:** describe the development and maintenance process and are used to improve it (for example, defect removal efficiency, defect injection rate, the time taken to fix defects).
+3. **Project metrics:** describe the project and its execution (for example, number of developers, staffing pattern, cost, schedule and productivity).
+
+Software **quality** metrics are commonly grouped into three classes:
+
+1. **Product quality metrics:** mean time to failure (MTTF), defect density, customer problems and customer satisfaction.
+2. **In-process quality metrics:** defect density during testing, the defect arrival pattern during testing, the phase-based defect removal pattern and defect removal efficiency.
+3. **Maintenance quality metrics:** the fix backlog and backlog management index, fix response time, percent delinquent fixes and fix quality.
+
+### Product Quality Metrics
+
+**1. Mean time to failure (MTTF):** the average time between failures; used mainly for safety-critical systems. Its formula and a worked example are in [Software Reliability and Availability](#software-reliability-and-availability).
+
+**2. Defect density:**
+
+> **Defect density = Number of defects ÷ Size of the software (in KLOC or function points)**
+
+**Example:** five modules have 5, 10, 20, 15 and 5 defects, and sizes of 500, 1,000, 1,500, 1,500 and 1,000 LOC.
+
+1. Total defects = 5 + 10 + 20 + 15 + 5 = **55**.
+2. Total size = 500 + 1,000 + 1,500 + 1,500 + 1,000 = 5,500 LOC = **5.5 KLOC**.
+3. Defect density = 55 ÷ 5.5 = **10 defects per KLOC**.
+
+Measured by function points: 18 defects in a 240 FP system → 18 ÷ 240 = **0.075 defects per FP**.
+
+**3. Customer problems metric (PUM — problems per user-month):**
+
+> **PUM = Total problems reported by customers in a period ÷ Total license-months of the software in that period**
+
+where **license-months = number of installed licenses × number of months in the period**, and the problems include both true defects and non-defect problems (such as usability problems).
+
+**Example:** 200 licenses are used for 6 months, so license-months = 200 × 6 = **1,200**. Customers report 60 problems, so PUM = 60 ÷ 1,200 = **0.05 problems per user-month**.
+
+**4. Customer satisfaction:** measured by customer surveys on a five-point scale — very satisfied, satisfied, neutral, dissatisfied and very dissatisfied. The results are reported as percent completely satisfied, percent satisfied (satisfied + very satisfied), percent dissatisfied (dissatisfied + very dissatisfied) and percent **non-satisfied** (neutral + dissatisfied + very dissatisfied); the last is used most often.
+
+**Example:** 500 responses: 150 very satisfied, 250 satisfied, 50 neutral, 30 dissatisfied and 20 very dissatisfied.
+
+1. Completely satisfied = 150 ÷ 500 = **30%**.
+2. Satisfied = (150 + 250) ÷ 500 = **80%**.
+3. Dissatisfied = (30 + 20) ÷ 500 = **10%**.
+4. Non-satisfied = (50 + 30 + 20) ÷ 500 = **20%**.
+
+### In-Process Quality Metrics
+
+**Defect removal efficiency (DRE):** the share of the defects present that are removed by a phase or by the whole development process.
+
+> **DRE = Defects removed (before release or in a phase) ÷ (Defects removed + Defects found later) × 100%**
+
+**Example 1 (whole process):** 90 defects are found before release and 10 more are found by users after release, so DRE = 90 ÷ (90 + 10) × 100% = **90%**.
+
+**Example 2 (one phase):** a design review removes 40 defects, and 10 more design defects are found later, so the design review's DRE = 40 ÷ (40 + 10) × 100% = **80%**.
+
+### Maintenance Quality Metrics
+
+**1. Backlog management index (BMI):**
+
+> **BMI = Number of problems closed during the month ÷ Number of problem arrivals during the month × 100%**
+
+If BMI is more than 100%, the backlog of problems is shrinking; if it is less than 100%, it is growing.
+
+**Example:** 45 problems are closed and 50 arrive in a month → BMI = 45 ÷ 50 × 100% = **90%** (the backlog grows). If 60 are closed and 50 arrive → BMI = **120%** (the backlog shrinks).
+
+**2. Fix response time:** the mean time from when a problem is opened to when it is closed. **Example:** fixes taking 2, 5, 3, 6 and 4 days → (2 + 5 + 3 + 6 + 4) ÷ 5 = 20 ÷ 5 = **4 days**.
+
+**3. Percent delinquent fixes:**
+
+> **Percent delinquent fixes = Number of fixes that took longer than the response-time target ÷ Number of fixes delivered × 100%**
+
+**Example:** 8 of 40 fixes were late → 8 ÷ 40 × 100% = **20%**.
+
+**4. Fix quality (percent defective fixes):** a fix is defective if it does not solve the problem or introduces a new defect. **Example:** 3 of 60 fixes were defective → 3 ÷ 60 × 100% = **5%**.
+
+## Software Auditing {#software-auditing}
+
+### Definition
+
+**A software audit** is an independent examination of a software product or process, usually by a party outside the development team, to assess its compliance with specifications, standards, regulations, contracts or other criteria.
+
+IEEE Std 1028 defines it as "an independent examination of a software product, software process, or set of software processes performed by a third party to assess compliance with specifications, standards, contractual agreements, or other criteria". An audit concentrates on **compliance**, not on the technical content of the work.
+
+### Purpose of a Software Audit
+
+1. To give an independent evaluation of whether products and processes conform to regulations, standards, guidelines, plans and procedures.
+2. To check the testing process and suggest improvements.
+3. To find gaps between the documented requirements and what was built.
+4. To confirm that development follows the agreed guidelines and checklists, and to identify risks.
+5. To report significant deviations from the process.
+6. To avoid legal penalties for breaking regulations or licences.
+
+### Types of Software Audits
+
+By who carries out the audit:
+
+1. **Internal (first-party) audit:** the organisation audits itself, usually through its SQA team.
+2. **External audit by a customer (second-party audit):** a customer evaluates the supplier's quality system, or the organisation audits its own subcontractors and suppliers.
+3. **External audit by a certification body (third-party audit):** an independent body, such as an ISO 9001 registrar, audits the organisation for certification.
+
+By purpose:
+
+1. **Compliance audit:** checks that the processes follow the required standards and rules.
+2. **Process improvement audit:** examines the existing processes, finds problems and recommends improvements.
+3. **Root cause analysis:** uses testing and analysis to find the root cause of specific problems.
+
+### Steps of a Software Audit
+
+1. **Define the objectives** and scope of the audit.
+2. **Analyse the methodology** (for example, the testing method) and check that it follows the agreed plans and guidelines.
+3. **Review the work products and records** — test plans, test cases, execution reports, defect reports, coverage and the traceability matrix.
+4. **Interview** stakeholders and team members to understand the progress of the work.
+5. **Report** the findings (deviations and recommendations) to management.
+6. **Follow up** to check that the corrective actions have been carried out.
+
+### IEEE 1028
+
+**IEEE Std 1028, "Standard for Software Reviews and Audits"** (latest version 2008), defines five types of systematic reviews and their procedures:
+
+1. Management reviews
+2. Technical reviews
+3. Inspections
+4. Walk-throughs
+5. Audits
+
+The roles in an IEEE 1028 audit are:
+
+1. **Initiator:** decides that an audit is needed and its purpose, scope and criteria, and receives the report.
+2. **Lead auditor:** plans and leads the audit; must be free from bias.
+3. **Recorder:** records anomalies, decisions and action items.
+4. **Auditors:** examine the products and processes, record observations and recommend corrective actions.
+5. **Audited organisation:** provides information and carries out the corrective actions.
+
+### Differences Between a Software Audit and a Software Review
+
+| Basis | Software audit | Software review |
+| --- | --- | --- |
+| Performed by | An independent (often external) party | Peers or team members; the author takes part |
+| Purpose | Check compliance with standards, regulations, contracts and plans | Find defects and improve the technical quality of a work product |
+| Focus | Conformance of the process and product | The technical content of documents and code |
+| Formality | Formal, with an audit plan and a report | Informal to formal (walkthrough, technical review, inspection) |
+| Timing | Periodically, at milestones or for certification | Throughout development, as early as possible |
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -255,6 +439,10 @@ Six Sigma uses two methods:
 - [Standards and Certificates](https://www.tutorialspoint.com/software_quality_management/software_quality_management_standards_and_certificates.htm) — accessed 2026-11-04 (ISO 9001, certification by periodic audits, CMM by the SEI, IEEE SQA standards)
 - [System Design – Reliability](https://www.tutorialspoint.com/system_analysis_and_design/system_design_reliability.htm) — accessed 2026-11-04 (MTBF, MTTR, availability)
 - [Software Quality Metrics](https://www.tutorialspoint.com/software_quality_management/software_quality_management_metrics.htm) — accessed 2026-11-04 (MTTF for safety-critical systems)
+- [Software Testing – QA, QC & Testing](https://www.tutorialspoint.com/software_testing/software_testing_qa_qc_testing.htm) — accessed 2026-11-07
+- [Software Quality Management – Quick Guide](https://www.tutorialspoint.com/software_quality_management/software_quality_management_quick_guide.htm) — accessed 2026-11-07 (quality control; quality metrics; internal and external audits)
+- [Software Testing – Audit](https://www.tutorialspoint.com/software_testing_dictionary/audit.htm) — accessed 2026-11-07
+- [What is the Role of Audits in Quality Management?](https://www.tutorialspoint.com/article/what-is-the-role-of-audits-in-quality-management) — accessed 2026-11-07
 
 **GeeksforGeeks**
 
@@ -263,6 +451,11 @@ Six Sigma uses two methods:
 - [Capability Maturity Model (CMM)](https://www.geeksforgeeks.org/software-engineering/software-engineering-capability-maturity-model-cmm/) — accessed 2026-11-04 (levels, key process areas, CMM vs CMMI)
 - [Difference between ISO 9000 and SEI-CMM](https://www.geeksforgeeks.org/difference-between-iso9000-and-sei-cmm/) — accessed 2026-11-04
 - [Six Sigma in Software Engineering](https://www.geeksforgeeks.org/six-sigma-in-software-engineering/) — accessed 2026-11-04
+- [Quality Assurance (QA) vs Quality Control (QC)](https://www.geeksforgeeks.org/differences-between-quality-assurance-and-quality-control/) — accessed 2026-11-07
+- [Software Measurement and Metrics](https://www.geeksforgeeks.org/software-engineering/software-measurement-and-metrics/) — accessed 2026-11-07
+- [Software Testing – Defect Density](https://www.geeksforgeeks.org/software-testing/software-testing-defect-density/) — accessed 2026-11-07 (the defect-density example)
+- [Functional Testing Interview Questions](https://www.geeksforgeeks.org/software-testing/functional-testing-interview-questions/) — accessed 2026-11-07 (defect removal efficiency)
+- [Software Review](https://www.geeksforgeeks.org/software-engineering/software-engineering-software-review/) — accessed 2026-11-07 (software audit review)
 
 **TpointTech**
 
@@ -270,6 +463,8 @@ Six Sigma uses two methods:
 - [Software Reliability Models](https://www.tpointtech.com/software-engineering-software-reliability-models) — accessed 2026-11-04 (prediction and estimation models; Jelinski–Moranda, basic execution time, Goel–Okumoto and Musa–Okumoto models)
 - [ISO 9000 Certification](https://www.tpointtech.com/software-engineering-iso-9000-certification) — accessed 2026-11-04 (ISO 9001, 9002 and 9003, certification steps; it expands ISO as "International Standards Organization" — the official name is the International Organization for Standardization — and presents ISO 9002 and 9003 as current, although they were merged into ISO 9001 in 2000)
 - [Software Quality Assurance](https://www.tpointtech.com/software-quality-assurance) — accessed 2026-11-04
+- [Quality Assurance vs Quality Control](https://www.tpointtech.com/difference-between-quality-assurance-and-quality-control) — accessed 2026-11-07
+- [Software Metrics in Software Engineering](https://www.tpointtech.com/software-engineering-software-metrics) — accessed 2026-11-07
 
 **Programiz**
 
@@ -277,6 +472,17 @@ Six Sigma uses two methods:
 
 **Additional sources** (for the formulas of the basic execution time model and the key process areas of each CMM level)
 
+- [IEEE 1028-2008 — IEEE Standard for Software Reviews and Audits](https://standards.ieee.org/ieee/1028/4402/) — IEEE SA (the five review types) — accessed 2026-11-07
+- [Software audit review](https://en.wikipedia.org/wiki/Software_audit_review) — Wikipedia (the IEEE 1028 definition of an audit and the audit roles) — accessed 2026-11-07
+- S. H. Kan, *Metrics and Models in Software Quality Engineering*, 2nd ed., Addison-Wesley, 2002 — the classes of quality metrics, PUM, BMI and percent delinquent fixes
 - John D. Musa, Anthony Iannino and Kazuhira Okumoto, *Software Reliability: Measurement, Prediction, Application*, McGraw-Hill, 1987 — the basic execution time model
 - Mark C. Paulk et al., *The Capability Maturity Model: Guidelines for Improving the Software Process*, SEI / Addison-Wesley, 1995 — the five maturity levels and their key process areas
 - Ian Sommerville, *Software Engineering* — reliability metrics and their uses
+
+Issues found on the reference websites (SQC, quality metrics and auditing) and how they were resolved:
+
+1. TutorialsPoint prints the customer-problems metric as "total problems + total license-months"; a rate per user-month is the problems divided by the license-months, as in S. H. Kan, Metrics and Models in Software Quality Engineering, which TutorialsPoint's material follows.
+2. TutorialsPoint's QA/QC/Testing table calls testing "preventive"; testing executes the software to find (detect) defects, as GeeksforGeeks and TpointTech state.
+3. GeeksforGeeks' defect-density page gives two contradictory "acceptable" benchmarks (1 defect per 1,000 LOC, and 0.1–0.5 defects per LOC), so no benchmark is given here.
+4. None of the reference websites names first-, second- and third-party audits; TutorialsPoint lists internal audits, audits of suppliers, and external audits by customers and by certification bodies, which are the audits known by those names (ISO 19011 terminology).
+5. TutorialsPoint's audit page lists review roles (manager, moderator, author, scribe); the audit roles are taken from IEEE Std 1028 (through Wikipedia).

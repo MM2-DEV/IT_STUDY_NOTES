@@ -59,7 +59,7 @@ export function ExploreTreeList({ categories }: { categories: CategoryInfo }) {
                     <div
                       className={cn(
                         "relative rounded-xl border bg-card px-4 py-3",
-                        leaf.available ? "border-border" : "bg-muted/50"
+                        leaf.available ? "border-border" : "bg-(--card-muted)"
                       )}
                     >
                       <span className="flex items-center gap-2 font-heading text-sm font-semibold">

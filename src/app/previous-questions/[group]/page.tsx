@@ -37,7 +37,7 @@ export default async function QuestionGroupPage({ params }: PageProps<"/previous
             <li key={paper.slug}>
               <Link
                 href={`/previous-questions/${group.slug}/${paper.slug}`}
-                className="flex flex-col gap-1 rounded-xl p-4 ring-1 ring-foreground/10 outline-none hover:bg-accent/60 focus-visible:ring-3 focus-visible:ring-ring/50 sm:flex-row sm:items-center sm:justify-between"
+                className="flex flex-col gap-1 rounded-xl bg-card p-4 ring-1 ring-foreground/10 outline-none hover:bg-(--card-tint) focus-visible:ring-3 focus-visible:ring-ring/50 sm:flex-row sm:items-center sm:justify-between"
               >
                 <span>
                   <span className="font-medium">{paper.title}</span>

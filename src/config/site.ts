@@ -112,6 +112,7 @@ export const exploreTree: {
       title: "Govt IT",
       description: "Bangladesh government and bank IT job examinations.",
       icon: Landmark,
+      href: "/topics",
       leaves: [
         {
           ...section("/topics"),

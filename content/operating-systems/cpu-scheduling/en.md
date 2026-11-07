@@ -1,6 +1,6 @@
 ---
-description: CPU scheduling - job and processor scheduling (scheduling queues, long-, medium- and short-term schedulers, preemptive and non-preemptive scheduling, scheduling criteria and formulas) and the scheduling algorithms FCFS, SJF, SRTF, Priority, Round Robin, HRRN, multilevel queue and multilevel feedback queue, with worked examples.
-updated: 2026-11-03
+description: CPU scheduling - job and processor scheduling (scheduling queues, long-, medium- and short-term schedulers, preemptive and non-preemptive scheduling, scheduling criteria and formulas) and the scheduling algorithms FCFS, SJF, SRTF, Priority, Round Robin, HRRN, multilevel queue and multilevel feedback queue, with worked examples, and starvation and aging (causes, algorithms that starve, aging examples, starvation vs deadlock).
+updated: 2026-11-07
 ---
 
 ## Job and Processor Scheduling {#job-and-processor-scheduling}
@@ -340,7 +340,7 @@ Average TAT = 54 ÷ 4 = **13.5 ms**; average WT = 32 ÷ 4 = **8 ms**.
 **Starvation and aging (both forms of priority scheduling)**
 
 - **Starvation (indefinite blocking):** a low-priority process may **wait forever** because higher-priority processes keep arriving.
-- **Aging:** the solution to starvation — the priority of a process that waits for a long time is **gradually increased** (for example, by 1 every few minutes), so it eventually gets the CPU.
+- **Aging:** the solution to starvation — the priority of a process that waits for a long time is **gradually increased** (for example, by 1 every few minutes), so it eventually gets the CPU (see [Starvation and Aging](#starvation-and-aging)).
 
 - **Advantages of priority scheduling:** important processes run first; priorities can be set by importance, urgency, memory needs, time limits and so on.
 - **Disadvantages of priority scheduling:** starvation of low-priority processes; deciding the priorities is difficult.
@@ -456,6 +456,77 @@ An MLFQ scheduler is defined by these parameters:
 | Multilevel Queue | Usually | Queue priority | Yes | Fixed queues |
 | Multilevel Feedback Queue | Yes | Queue priority; processes move | No (with aging) | Most flexible and complex |
 
+## Starvation and Aging {#starvation-and-aging}
+
+### Starvation
+
+**Starvation** (indefinite blocking) is the condition in which a ready process waits indefinitely for the CPU, or for a resource, because other processes — usually of higher priority — are always chosen before it.
+
+The starving process is ready to run, but it never gets its turn. For example, if new high-priority processes keep arriving, a low-priority process may never be scheduled.
+
+#### Causes of Starvation
+
+1. **Priority scheduling** with a continuous stream of higher-priority processes.
+2. **Shortest Job First (SJF) and Shortest Remaining Time First (SRTF)** when short jobs keep arriving, so long jobs keep waiting.
+3. **Random selection** of processes, in which one process may be passed over again and again.
+4. **Scarce resources** or biased resource allocation.
+5. Choosing the **same process as the victim** again and again when deadlocks are recovered from by preemption or rollback.
+
+#### Scheduling Algorithms and Starvation
+
+| Algorithm | Can it cause starvation? |
+| --- | --- |
+| Priority scheduling (preemptive and non-preemptive) | Yes — low-priority processes |
+| Shortest Job First (SJF) | Yes — long processes |
+| Shortest Remaining Time First (SRTF) | Yes — long processes |
+| Multilevel queue (fixed priority between queues) | Yes — processes in the lower queues |
+| First-Come, First-Served (FCFS) | No — every process eventually runs |
+| Round Robin (RR) | No — every process gets a time quantum in turn |
+| Highest Response Ratio Next (HRRN) | No — the response ratio of a waiting process keeps rising |
+
+### Aging
+
+**Aging** is a technique that gradually increases the priority of a process the longer it waits, so that every process eventually gets the CPU.
+
+Aging is the standard solution to starvation in priority-based scheduling. The priority of a waiting process is raised by a fixed step after every fixed interval of waiting time (or in proportion to its waiting time). In a multilevel feedback queue, aging is done by moving a process that has waited too long to a higher-priority queue.
+
+**Example 1:** priorities range from **127 (lowest)** to **0 (highest)**, and the priority of a waiting process is increased by 1 every 15 minutes. A process that starts with priority 127 reaches priority 0 after at most:
+
+> **127 × 15 minutes = 1,905 minutes = 31.75 hours**
+
+So even the lowest-priority process gets the highest priority, and runs, in no more than about 32 hours.
+
+**Example 2:** a smaller number means a higher priority. New processes keep arriving with priority **5**. A waiting process P starts with priority **15**, and aging lowers its priority number by 1 for every 10 ms it waits:
+
+| Waiting time (ms) | 0 | 10 | 20 | … | 90 | 100 | 110 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Priority of P | 15 | 14 | 13 | … | 6 | 5 | 4 |
+
+At 100 ms, P has the same priority as the new processes; at **110 ms** its priority (4) is higher than every new process, so it is scheduled. Without aging, P would wait for ever.
+
+**Advantages of aging:**
+
+1. Low-priority processes eventually complete; starvation is prevented.
+2. Scheduling becomes fairer.
+
+**Disadvantages of aging:**
+
+1. The operating system has extra work to update the priorities.
+2. The rate of aging must be chosen carefully: too slow, and processes still wait a long time; too fast, and the original priorities lose their meaning.
+
+### Differences Between Starvation and Deadlock
+
+| Basis | Deadlock | Starvation |
+| --- | --- | --- |
+| Definition | Two or more processes wait for ever, each for a resource held by another | A process waits indefinitely because other processes keep getting the CPU or the resource |
+| State of the processes | All the processes involved are blocked; none can proceed | Other processes keep running; only the starving process waits |
+| Resources | The blocked processes hold resources that the others need | The resources are continuously used by higher-priority processes |
+| Conditions | Mutual exclusion, hold and wait, no preemption and circular wait must all hold together | No fixed conditions; caused by unfair scheduling or resource allocation |
+| Waiting | Permanent unless the system takes action | Indefinite; it can end if the load falls |
+| Solution | Prevention, avoidance (Banker's algorithm), detection and recovery | Aging |
+| Severity | More severe: the processes involved stop completely | Less severe: the system keeps working, but some processes are delayed |
+| Relationship | Every deadlock means that the deadlocked processes starve | Starvation does not mean deadlock |
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -467,6 +538,9 @@ An MLFQ scheduler is defined by these parameters:
 - [Starvation and Aging](https://www.tutorialspoint.com/operating_system/os_starvation_and_aging.htm) — accessed 2026-11-03
 - [Turn Around Time & Waiting Time](https://www.tutorialspoint.com/operating_system/os_tat_wat.htm) — accessed 2026-11-03
 - [Predicting Burst Time in SJF Scheduling](https://www.tutorialspoint.com/operating_system/os_predicting_burst_time_in_sjf_scheduling.htm) — accessed 2026-11-03
+- [Operating System – Starvation and Aging](https://www.tutorialspoint.com/operating_system/os_starvation_and_aging.htm) — accessed 2026-11-07
+- [Which scheduling algorithms lead to starvation?](https://www.tutorialspoint.com/article/what-are-the-types-of-process-scheduling-algorithms-and-which-algorithms-lead-to-starvation) — accessed 2026-11-07
+- [Difference Between Deadlock and Starvation in OS](https://www.tutorialspoint.com/difference-between-deadlock-and-starvation-in-os) — accessed 2026-11-07
 
 **GeeksforGeeks**
 
@@ -474,15 +548,26 @@ An MLFQ scheduler is defined by these parameters:
 - [Advantages and Disadvantages of various CPU scheduling algorithms](https://www.geeksforgeeks.org/operating-systems/advantages-and-disadvantages-of-various-cpu-scheduling-algorithms/) — accessed 2026-11-03
 - [Multilevel Queue (MLQ) CPU Scheduling](https://www.geeksforgeeks.org/operating-systems/multilevel-queue-mlq-cpu-scheduling/) — accessed 2026-11-03
 - [Multilevel Feedback Queue Scheduling (MLFQ)](https://www.geeksforgeeks.org/operating-systems/multilevel-feedback-queue-scheduling-mlfq-cpu-scheduling/) — accessed 2026-11-03
+- [Starvation and Aging in Operating Systems](https://www.geeksforgeeks.org/operating-systems/starvation-and-aging-in-operating-systems/) — accessed 2026-11-07
+- [Deadlock vs Starvation in OS](https://www.geeksforgeeks.org/operating-systems/difference-between-deadlock-and-starvation-in-os/) — accessed 2026-11-07
 
 **TpointTech**
 
 - [CPU Scheduling in Operating System](https://www.tpointtech.com/cpu-scheduling-in-operating-system) — accessed 2026-11-03
 - [CPU Scheduling Algorithms in Operating Systems](https://www.tpointtech.com/cpu-scheduling-algorithms-in-operating-systems) — accessed 2026-11-03 (several of its tables have errors: its FCFS table puts completion times in the TAT and WT columns, its SJF tables use arrival times that differ from its input table, and its priority example gives P4 a TAT of 11 instead of 12)
 - [Difference between Scheduler and Dispatcher](https://www.tpointtech.com/scheduler-vs-dispatcher) — accessed 2026-11-03
+- [Starvation and Aging in Operating Systems](https://www.tpointtech.com/starvation-and-aging-in-operating-systems) — accessed 2026-11-07
+- [Difference between Deadlock and Starvation](https://www.tpointtech.com/deadlock-vs-starvation) — accessed 2026-11-07
 
 **Programiz**
 
 - Programiz has no operating-system tutorial; no page was found for these subtopics (checked 2026-11-03).
 
 All Gantt charts and averages in these notes were computed with a scheduling simulator script and checked by hand.
+
+Issues found on the reference websites (starvation and aging) and how they were resolved:
+
+1. GeeksforGeeks and TpointTech give "circular wait" as another name for deadlock and "livelock" as another name for starvation; circular wait is one of the four conditions of deadlock, and livelock is a different condition, so that row was not used.
+2. TpointTech says starvation can be used to break a deadlock; this is wrong and was not used.
+3. TutorialsPoint's aging example states "+1 per time unit" but its priorities do not change that way; the 127-to-0 example (GeeksforGeeks, TpointTech) and a separately worked example are used instead.
+4. GeeksforGeeks says aging is combined with round-robin; round-robin has no priorities — aging applies to priority-based schedulers and multilevel feedback queues (Silberschatz).

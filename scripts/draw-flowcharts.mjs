@@ -1,4 +1,4 @@
-// Draws the flowchart diagrams used in the Programming notes as SVG files in
+// Draws the flowcharts and other diagrams used in the Programming notes as SVG files in
 // public/diagrams/programming/. Run: node scripts/draw-flowcharts.mjs
 import { mkdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -147,6 +147,46 @@ files["flowchart-factorial.svg"] = (() => {
   s += arrow([[x + 75, 300], [400, 300], [400, 540], [x + 70, 540]], "No", 0);
   s += io(x, 540, "Print fact", 130) + down(x, 562, 597) + terminal(x, 617, "Stop");
   return svgDoc(460, 680, s + caption(460, 665, "Loop: factorial of n (n! = 1 × 2 × … × n)"), "Flowchart: factorial");
+})();
+
+// ---------- Java: JDK ⊃ JRE ⊃ JVM ----------
+const box = (x, y, w, h, fill, rx = 10) =>
+  `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${fill}" stroke="${INK}" stroke-width="2"/>`;
+files["jdk-jre-jvm.svg"] = (() => {
+  let s = box(20, 20, 620, 300, "#f4f0f6");
+  s += text(40, 46, "JDK (Java Development Kit)", { anchor: "start", weight: "bold", size: 16 });
+  s += text(40, 70, "= JRE + development tools", { anchor: "start", color: NOTE });
+  s += box(40, 90, 380, 210, "#e2f3f3");
+  s += text(58, 114, "JRE (Java Runtime Environment)", { anchor: "start", weight: "bold", size: 15 });
+  s += text(58, 136, "= JVM + class libraries + supporting files", { anchor: "start", color: NOTE });
+  s += box(60, 156, 200, 124, "#ffffff");
+  s += text(160, 178, "JVM", { weight: "bold", size: 16, color: ACCENT });
+  s += lines(160, 230, ["class loader", "runtime data areas", "execution engine", "(interpreter + JIT + GC)"], { size: 12 });
+  s += box(272, 156, 132, 124, "#ffffff");
+  s += lines(338, 218, ["class libraries", "(java.lang,", "java.util, java.io …)"], { size: 12 });
+  s += box(440, 90, 180, 210, "#ffffff");
+  s += text(530, 112, "Development tools", { weight: "bold", size: 13 });
+  ["javac (compiler)", "java (launcher)", "jdb (debugger)", "jar (archiver)", "javadoc (docs)"].forEach((t, i) =>
+    (s += text(530, 146 + i * 30, t, { size: 13 }))
+  );
+  return svgDoc(660, 360, s + caption(660, 344, "The JDK contains the JRE, and the JRE contains the JVM"), "JDK, JRE and JVM");
+})();
+
+// ---------- Java: platform independence ----------
+files["java-platform-independence.svg"] = (() => {
+  let s = docShape(80, 150, ["Hello.java", "(source code)"], 130, 60);
+  s += arrow([[145, 150], [225, 150]]) + text(185, 136, "javac", { size: 13, weight: "bold", color: ACCENT });
+  s += docShape(300, 150, ["Hello.class", "(bytecode)"], 140, 60);
+  const oses = [["JVM for Windows", 50], ["JVM for Linux", 150], ["JVM for macOS", 250]];
+  oses.forEach(([name, y]) => {
+    s += arrow([[370, 150], [400, 150], [400, y], [440, y]]);
+    s += proc(520, y, name, 160, 44);
+    s += arrow([[600, y], [640, y]]);
+    s += proc(720, y, ["machine code", "of that CPU"], 150, 44);
+  });
+  s += text(300, 215, "same .class file", { size: 12, color: NOTE });
+  s += text(300, 232, "for every platform", { size: 12, color: NOTE });
+  return svgDoc(820, 320, s + caption(820, 305, "Write once, run anywhere: bytecode is platform-independent; each platform has its own JVM"), "Java platform independence");
 })();
 
 mkdirSync(OUT, { recursive: true });

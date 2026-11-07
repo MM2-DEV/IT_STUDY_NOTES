@@ -1,6 +1,6 @@
 ---
-description: System models (context, behavioural and object models), the basics of UML modelling diagrams, user interface design, object-oriented design techniques, real-time software design, and system design with reuse.
-updated: 2026-11-04
+description: System models (context, behavioural and object models), the basics of UML modelling diagrams, user interface design, object-oriented design techniques, real-time software design, system design with reuse, and design patterns and architectural patterns.
+updated: 2026-11-07
 ---
 
 ## System Models: Context, Behavioral and Object Models {#system-models-context-behavioral-and-object-models}
@@ -431,6 +431,8 @@ Design patterns are of three types:
 
 The **Model–View–Controller (MVC)** pattern divides an interactive application into the **model** (data and business logic), the **view** (presentation) and the **controller** (handles input and coordinates the model and view); it is explained in [Server-Side Programming](/topics/software-engineering/server-side-programming#mvc-web-framework).
 
+All 23 patterns, the commonly asked ones and the architectural patterns are explained in [Design Patterns and Architectural Patterns](#design-patterns-and-architectural-patterns).
+
 ### Object-Oriented Analysis vs Object-Oriented Design
 
 | Basis | Object-oriented analysis (OOA) | Object-oriented design (OOD) |
@@ -638,6 +640,124 @@ Using COTS products reduces development time and cost, but the buyer depends on 
 
 **Application framework:** an application framework is an integrated set of reusable classes, with their interactions, that provides a skeleton for a family of applications; developers add application-specific classes to it, and the framework calls them (inversion of control). Examples are web frameworks based on the Model–View–Controller pattern.
 
+## Design Patterns and Architectural Patterns {#design-patterns-and-architectural-patterns}
+
+### Design Patterns
+
+**A design pattern** is a general, reusable solution to a commonly occurring problem in software design: a tested template that is adapted to each situation, not finished code.
+
+A pattern describes the problem, the solution (the classes and objects and how they work together), when to use it and its consequences. Design patterns are the best practices of experienced object-oriented developers, found by trial and error over a long time. Unlike an algorithm, which is a fixed sequence of steps, a pattern is a higher-level design idea whose code differs from one program to another.
+
+The classic catalogue is the book *Design Patterns: Elements of Reusable Object-Oriented Software* (**1994**) by the **"Gang of Four" (GoF)** — Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides. It describes **23 patterns** and two principles:
+
+1. Program to an interface, not an implementation.
+2. Favour object composition over inheritance.
+
+#### Types of Design Patterns
+
+The 23 GoF design patterns are of three types:
+
+1. **Creational patterns (5):** deal with **object creation**; they create objects while hiding the creation logic, instead of creating objects directly with `new`.
+   1. Abstract Factory
+   2. Builder
+   3. Factory Method
+   4. Prototype
+   5. Singleton
+2. **Structural patterns (7):** deal with how classes and objects are **composed** into larger, flexible structures.
+   1. Adapter
+   2. Bridge
+   3. Composite
+   4. Decorator
+   5. Facade
+   6. Flyweight
+   7. Proxy
+3. **Behavioural patterns (11):** deal with **communication** between objects and the assignment of responsibilities.
+   1. Chain of Responsibility
+   2. Command
+   3. Interpreter
+   4. Iterator
+   5. Mediator
+   6. Memento
+   7. Observer
+   8. State
+   9. Strategy
+   10. Template Method
+   11. Visitor
+
+#### Commonly Used Design Patterns
+
+1. **Singleton (creational):** ensures that a class has **only one instance** and gives a global point of access to it. It uses a **private constructor**, a **static** variable holding the single instance and a static `getInstance()` method that creates the instance on first use. Uses: logging, configuration settings, a database connection pool. (In a multithreaded program, the creation must be synchronized.)
+2. **Factory Method (creational):** defines an interface for creating an object but lets **subclasses decide which class to instantiate**, so the client code does not depend on concrete classes.
+3. **Abstract Factory (creational):** creates **families of related objects** without naming their concrete classes — for example, a Windows factory and a Mac factory, each creating a matching button and menu. (Factory Method creates **one** product through inheritance; Abstract Factory creates a **set** of related products through an object.)
+4. **Builder (creational):** constructs a complex object **step by step**, separating the construction from the representation; useful when an object has many optional parts (for example, a computer with optional RAM, SSD and graphics card).
+5. **Prototype (creational):** creates new objects by **copying (cloning)** an existing object; useful when creating an object is expensive.
+6. **Adapter (structural):** converts the interface of a class into another interface that the client expects, so that **incompatible interfaces work together** — like a power-plug adapter.
+7. **Decorator (structural):** adds new behaviour to an object **at run time** by wrapping it in another object, without changing its class — for example, Java's `BufferedReader` wrapping a `Reader`.
+8. **Facade (structural):** provides **one simple interface to a complex subsystem** — for example, a `watchMovie()` method that switches on the projector, the sound system and the lights.
+9. **Proxy (structural):** provides a **placeholder (surrogate)** that controls access to another object — for lazy loading, access control, remote access or caching. (A proxy controls access; a decorator adds behaviour.)
+10. **Observer (behavioural):** defines a **one-to-many dependency**: when the subject's state changes, all its observers are notified and updated automatically — for example, displays updated when a stock price changes, or event listeners in a GUI (publish–subscribe).
+11. **Strategy (behavioural):** defines a **family of interchangeable algorithms**, each in its own class, and lets the algorithm be chosen at run time — for example, different payment methods or sorting algorithms.
+12. **Command (behavioural):** encapsulates a **request as an object**, so that requests can be queued, logged and **undone** — for example, undo/redo in an editor, or menu and button actions.
+13. **Iterator (behavioural):** gives a way to access the elements of a collection **one by one without exposing its internal structure** — for example, Java's `Iterator` with `hasNext()` and `next()`.
+
+**MVC (Model–View–Controller)** is a **compound pattern**: the GoF book describes it as a combination of **Observer** (views are notified when the model changes), **Composite** (nested views) and **Strategy** (the controller is a strategy for responding to input). MVC is explained in [Server-Side Programming](/topics/software-engineering/server-side-programming#mvc-web-framework).
+
+#### Advantages of Design Patterns
+
+1. They give proven, tested solutions to recurring problems.
+2. They make designs and code **reusable**.
+3. They give developers a **common vocabulary** ("this class is a Singleton").
+4. They make code more flexible, modular and maintainable, with loose coupling and high cohesion.
+5. They help less-experienced developers learn good design quickly.
+6. They are independent of the programming language.
+
+**Disadvantages:** using a pattern where it is not needed makes a simple design complex (over-engineering), and patterns take time to learn.
+
+### Architectural Patterns
+
+**An architectural pattern** is a general, reusable solution to a commonly occurring problem in software architecture: it defines the high-level structure of a whole system — its major components, their responsibilities and how they communicate.
+
+**Software architecture** is the blueprint of a system: its major components and the relationships between them. An architectural pattern implements an **architectural style** (many books use the two terms in the same sense).
+
+#### Common Architectural Patterns
+
+1. **Layered (n-tier) pattern:** the system is divided into horizontal **layers**, each with one responsibility; each layer serves the layer above it and uses the layer below. Typical layers are presentation, business logic, data access (persistence) and database; a **three-tier** system has presentation, application and data tiers. Used for enterprise and web applications (banking, e-commerce). *Advantages:* separation of concerns, easy maintenance, layers can be replaced. *Disadvantages:* every request passes through several layers, which adds overhead.
+2. **Client–server pattern:** **servers** provide resources or services, and **clients** send requests and receive responses. A **thin client** only presents data (the server does the processing); a **thick (fat) client** also does application processing. Used for the web, e-mail and online banking. *Advantages:* data and security are managed centrally. *Disadvantages:* the server is a single point of failure and can become a bottleneck.
+3. **Model–View–Controller (MVC):** the **model** holds the data and business logic, the **view** presents it, and the **controller** handles input and updates the model and view. Used for interactive and web applications. *Advantages:* separation of concerns, several views of the same data, parallel development. *Disadvantages:* more complex; a change to the model can affect many views.
+4. **Microservices pattern:** the application is built as a set of **small, independent services**, each for one business capability, deployed independently, usually with its own database, and communicating through APIs or messages. Used for large cloud applications (Netflix, Amazon). *Advantages:* independent deployment and scaling, a different technology for each service, fault isolation. *Disadvantages:* the complexity of a distributed system — monitoring, network latency and data consistency.
+5. **Event-driven pattern:** components **produce, detect and react to events** asynchronously, through an event channel (broker). Used for stock trading, IoT, fraud detection and real-time notifications. *Advantages:* loose coupling, scalability, real-time response. *Disadvantages:* hard to test and debug.
+6. **Pipe-and-filter pattern:** data flows through a chain of independent processing components (**filters**) connected by **pipes**. Used in compilers, UNIX shell pipelines (`ls | grep | sort`) and data processing (ETL). *Advantages:* filters are reusable and easy to add or replace. *Disadvantages:* unsuitable for interactive systems; data may need conversion between filters.
+7. **Broker pattern:** a **broker** coordinates communication between clients and servers in a distributed system; servers register their services, and the broker routes client requests to them. Examples: CORBA, message brokers such as RabbitMQ and Kafka. *Advantages:* location transparency. *Disadvantages:* the broker can be a single point of failure and adds overhead.
+8. **Peer-to-peer (P2P) pattern:** every node (**peer**) acts as both client and server; there is no central server. Used for BitTorrent and blockchain. *Advantages:* no single point of failure; scales as peers join. *Disadvantages:* security and consistency are difficult.
+9. **Master–slave (primary–secondary) pattern:** a **master** divides the work among identical **slaves** and combines their results. Used for database replication (the master handles writes and the replicas handle reads) and parallel computing. *Advantages:* parallelism and fault tolerance. *Disadvantages:* the master is a single point of failure.
+10. **Microkernel (plug-in) pattern:** a minimal **core system** provides the basic functions, and **plug-in modules** add features. Used in operating systems, IDEs (Eclipse) and browsers with extensions. *Advantages:* easy to extend. *Disadvantages:* the interface between the core and the plug-ins must be designed carefully.
+11. **Service-oriented architecture (SOA):** business functions are provided as **reusable, loosely coupled services** with standard published interfaces, communicating over a network with standard protocols (SOAP or REST). Used for enterprise integration. *Advantages:* reuse and interoperability across platforms. *Disadvantages:* complex service management and overhead.
+
+### Differences Between Architectural Patterns and Design Patterns
+
+| Basis | Architectural pattern | Design pattern |
+| --- | --- | --- |
+| Level | The whole system (highest level) | A part of the code — the classes and objects of one component |
+| Concerned with | The overall structure: subsystems, their responsibilities and communication | Creating, composing and connecting objects inside a component |
+| Impact | Affects the whole system; costly to change later | Local; easier to change |
+| Decided during | Architectural (high-level) design | Detailed design and coding |
+| Examples | Layered, client–server, MVC, microservices, event-driven, pipe-and-filter | Singleton, Factory Method, Adapter, Observer, Strategy |
+
+### Differences Between Monolithic and Microservices Architecture
+
+| Basis | Monolithic | Microservices |
+| --- | --- | --- |
+| Structure | One single unit: user interface, business logic and data access together | Many small, independent services, each for one business capability |
+| Deployment | The whole application is rebuilt and redeployed for any change | Each service is deployed independently |
+| Scaling | The whole application is scaled together | Each service is scaled independently |
+| Database | One shared database | Usually one database per service |
+| Coupling | Tightly coupled | Loosely coupled |
+| Technology | One technology stack | Each service can use a different stack |
+| Communication | Function calls inside one process | Over the network, through APIs or message queues |
+| Complexity | Simple to develop, test and deploy at first | Complex to operate (distributed system) |
+| Effect of a failure | Can bring down the whole application | Usually limited to one service |
+| Suited to | Small and simple applications | Large, complex and evolving applications |
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -649,6 +769,11 @@ Using COTS products reduces development time and cost, but the buyer depends on 
 - [OOAD – Object Oriented Design](https://www.tutorialspoint.com/object_oriented_analysis_design/ooad_object_oriented_design.htm) — accessed 2026-11-04 (system design, the seven steps of object design, optimization, documentation)
 - [UML – Basic Notations](https://www.tutorialspoint.com/uml/uml_basic_notations.htm) — accessed 2026-11-04 (structural, behavioural, grouping and annotational things; relationships)
 - [Real-Time Operating System (RTOS)](https://www.tutorialspoint.com/operating_system/os_real_time.htm) — accessed 2026-11-04 (hard, soft and firm real-time; priority-based preemptive scheduling)
+- [Design Patterns – Overview](https://www.tutorialspoint.com/design_pattern/design_pattern_overview.htm) — accessed 2026-11-07
+- [Design Patterns – MVC Pattern](https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm) — accessed 2026-11-07
+- [Software Architecture & Design – Introduction](https://www.tutorialspoint.com/software_architecture_design/introduction.htm) — accessed 2026-11-07
+- [Distributed Architecture](https://www.tutorialspoint.com/software_architecture_design/distributed_architecture.htm), [Interaction-Oriented Architecture](https://www.tutorialspoint.com/software_architecture_design/interaction_oriented_architecture.htm), [Data Flow Architecture](https://www.tutorialspoint.com/software_architecture_design/data_flow_architecture.htm) and [Hierarchical Architecture](https://www.tutorialspoint.com/software_architecture_design/hierarchical_architecture.htm) — accessed 2026-11-07
+- [Difference between monolithic and microservices architecture](https://www.tutorialspoint.com/article/difference-between-monolithic-and-microservices-architecture) — accessed 2026-11-07
 
 **GeeksforGeeks**
 
@@ -661,6 +786,13 @@ Using COTS products reduces development time and cost, but the buyer depends on 
 - [Characteristics of Real-time Systems](https://www.geeksforgeeks.org/characteristics-of-real-time-systems/) — accessed 2026-11-04
 - [Booch Methodology in OOAD](https://www.geeksforgeeks.org/system-design/booch-methodology-in-object-oriented-analysis-and-designooad/) — accessed 2026-11-04
 - GeeksforGeeks has no separate page on software reuse; it mentions reuse processes only in its list of SDLC activities (checked 2026-11-04).
+- [Gang of Four (GOF) Design Patterns](https://www.geeksforgeeks.org/system-design/gang-of-four-gof-design-patterns/) — accessed 2026-11-07
+- [Introduction to Design Patterns](https://www.geeksforgeeks.org/system-design/complete-guide-to-design-patterns-in-programming/) — accessed 2026-11-07
+- [Design Patterns Interview Questions](https://www.geeksforgeeks.org/system-design/top-design-patterns-interview-questions/) — accessed 2026-11-07
+- [Types of Software Architecture Patterns](https://www.geeksforgeeks.org/software-engineering/types-of-software-architecture-patterns/) — accessed 2026-11-07
+- [Software Architectural Patterns in System Design](https://www.geeksforgeeks.org/design-patterns-architecture/) — accessed 2026-11-07
+- [Difference Between Architectural Style, Architectural Patterns and Design Patterns](https://www.geeksforgeeks.org/system-design/difference-between-architectural-style-architectural-patterns-and-design-patterns/) — accessed 2026-11-07
+- [Monolithic Vs Microservices Architecture](https://www.geeksforgeeks.org/software-engineering/monolithic-vs-microservices-architecture/) — accessed 2026-11-07
 
 **TpointTech**
 
@@ -672,6 +804,10 @@ Using COTS products reduces development time and cost, but the buyer depends on 
 - [Object Oriented Design](https://www.tpointtech.com/software-engineering-object-oriented-design) — accessed 2026-11-04
 - [Real-Time Operating System](https://www.tpointtech.com/real-time-operating-system) — accessed 2026-11-04 (it lists MTS as an example of a real-time OS; MTS is a time-sharing system, so it is not used here)
 - TpointTech has no separate page on software reuse; it mentions reuse only as a benefit of modularity (checked 2026-11-04).
+- [Design Patterns in Software Engineering](https://www.tpointtech.com/design-patterns-in-software-engineering) — accessed 2026-11-07
+- [GoF Design Pattern Java](https://www.tpointtech.com/gof-design-pattern-java) — accessed 2026-11-07
+- [Architectural Styles in Software Engineering](https://www.tpointtech.com/architectural-styles-in-software-engineering) — accessed 2026-11-07
+- [System Design in Software Engineering](https://www.tpointtech.com/system-design) — accessed 2026-11-07
 
 **Programiz**
 
@@ -683,3 +819,10 @@ Using COTS products reduces development time and cost, but the buyer depends on 
 - Roger S. Pressman, *Software Engineering: A Practitioner's Approach* — Theo Mandel's golden rules of interface design
 - Object Management Group, [UML specification, version 2.5.1](https://www.omg.org/spec/UML/2.5.1/) — the fourteen UML diagram types
 - Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides, *Design Patterns: Elements of Reusable Object-Oriented Software*, Addison-Wesley, 1994
+
+Issues found on the reference websites (design and architectural patterns) and how they were resolved:
+
+1. TutorialsPoint's design-patterns overview lists Filter and Chain of Responsibility as structural patterns (24 patterns in all while saying 23); Filter is not a GoF pattern and Chain of Responsibility is behavioural. The GoF list (5 creational, 7 structural, 11 behavioural) follows GeeksforGeeks and TpointTech's GoF page.
+2. TpointTech's design-patterns page adds non-GoF patterns (Object Pool, Private Class Data, Null Object) and calls Chain of Responsibility "Chain of Duty"; the standard GoF names are used.
+3. GeeksforGeeks describes MVC as a combination of Observer, Strategy and Factory; the GoF book itself (section 1.2) describes MVC as Observer, Composite and Strategy, which is used here.
+4. Programiz has no pages on design or architectural patterns, and TutorialsPoint and TpointTech have no page comparing architectural and design patterns; that comparison follows GeeksforGeeks.

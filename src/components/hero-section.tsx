@@ -52,7 +52,7 @@ export async function HeroSection() {
       {/* Glows only: the home page's dotted background is drawn behind the whole page. */}
       <DotBackground dots={false} />
       <div className="mx-auto max-w-7xl px-4 pt-20 pb-12 text-center sm:px-6 sm:pt-24 sm:pb-14 motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-4 motion-safe:duration-700">
-        <span className="inline-flex items-center gap-1.5 rounded-full border border-border/70 bg-background/70 px-3 py-1 text-xs font-medium backdrop-blur-sm">
+        <span className="inline-flex items-center gap-1.5 rounded-full border border-border/70 bg-card px-3 py-1 text-xs font-medium">
           <Sparkles className="size-3.5 text-primary" aria-hidden="true" />
           <span className="shiny-text">{siteConfig.tagline}</span>
         </span>
@@ -83,7 +83,7 @@ export async function HeroSection() {
               size: "lg",
               variant: "outline",
               className:
-                "h-10 bg-background/80 px-5 text-primary ring-1 ring-primary/40 backdrop-blur-sm hover:bg-primary/5 hover:ring-primary/60",
+                "h-10 bg-card px-5 text-primary ring-1 ring-primary/40 hover:bg-(--card-tint) hover:ring-primary/60",
             })}
           >
             Software engineering
@@ -98,7 +98,7 @@ export async function HeroSection() {
           {stats.map((stat, index) => (
             <li
               key={stat.label}
-              className="relative rounded-xl border border-border/70 bg-background/70 px-3 py-3 backdrop-blur-sm sm:px-4"
+              className="relative rounded-xl border border-border/70 bg-card px-3 py-3 sm:px-4"
             >
               <p className="font-heading text-2xl font-semibold tabular-nums text-primary">
                 {number.format(stat.value)}

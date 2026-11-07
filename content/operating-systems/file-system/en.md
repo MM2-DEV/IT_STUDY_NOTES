@@ -1,6 +1,6 @@
 ---
-description: File system - file management (file concept, attributes, operations and types), file system structure, file organization and access methods, blocking and buffering, file descriptors, file and directory structures, the directory tree, blocks and fragments, inodes, the UNIX file structure, the file control block, space allocation and free-space management, and the tree-structured file system, with worked examples.
-updated: 2026-11-03
+description: File system - file management (file concept, attributes, operations and types), file system structure, file organization and access methods, blocking and buffering, file descriptors, file and directory structures, the directory tree, blocks and fragments, inodes, the UNIX file structure, the file control block, space allocation and free-space management, the tree-structured file system, and the FAT32, NTFS and ext4 file systems, with worked examples.
+updated: 2026-11-07
 ---
 
 ## File Management {#file-management}
@@ -108,6 +108,8 @@ Layering reduces duplication of code (the I/O control and basic file system can 
 | ext2, ext3, ext4 | Linux | Inode-based; ext3 and ext4 have journaling |
 | HFS+, APFS | macOS | APFS is optimized for SSDs |
 
+FAT32, NTFS and ext4 are compared in detail in [File Systems: FAT32, NTFS and ext4](#file-systems-fat32-ntfs-and-ext4).
+
 ## File Organization {#file-organization}
 
 **File organization** is the logical arrangement of the records of a file, which determines how the records can be accessed.
@@ -132,6 +134,8 @@ The main organizations are:
 | Model | Tape | Disk | Disk |
 | Speed for one record | Slow | Fast | Fast |
 | Example | Compiler reading source | Database, airline reservations | Large files with a key index |
+
+The access methods are explained in full, with examples, in [File Access Methods](#file-access-methods).
 
 ## Blocking and Buffering {#blocking-and-buffering}
 
@@ -578,6 +582,164 @@ It is the most common directory structure (MS-DOS, Windows, UNIX and Linux all u
 - **Advantages:** logical grouping of files; efficient searching (a short path to any file); same names in different directories; scalable; protection can be applied per directory; users can access other users' files through path names.
 - **Disadvantages:** a file or directory cannot be **shared** by appearing in two directories (this needs an acyclic-graph structure with links); long path names; deleting a non-empty directory needs care.
 
+## File Access Methods {#file-access-methods}
+
+### Definition
+
+**A file access method** is the way the records of a file are read and written: it determines the order in which records can be reached and how a particular record is located.
+
+There are three main file access methods:
+
+1. Sequential access
+2. Direct (random or relative) access
+3. Indexed (indexed sequential) access
+
+### 1. Sequential Access
+
+The records are processed **in order**, one after another. It is the simplest and most common method and is based on the **tape model** of a file.
+
+Operations:
+
+1. **read next:** reads the next record and moves the file pointer forward.
+2. **write next:** writes at the end of the file and moves the pointer to the new end.
+3. **reset (rewind):** moves the pointer back to the beginning.
+
+**Used by:** editors, compilers, log files, batch processing and streaming.
+
+**Advantages:** simple; no index or other extra storage is needed; efficient when the whole file is processed.
+
+**Disadvantages:** finding one record is slow, because all the earlier records must be passed; inserting or changing a record in the middle is difficult; unsuitable for interactive use.
+
+### 2. Direct (Random or Relative) Access
+
+The file is viewed as a numbered sequence of **fixed-length logical records (blocks)**, and any record can be read or written **directly, in any order**. It is based on the **disk model** of a file.
+
+Operations:
+
+1. **read n**, **write n:** read or write record (block) number n.
+2. **position to n**, then **read next** or **write next**.
+
+Here **n is a relative block number** — relative to the beginning of the file (0, 1, 2, …) — so the operating system can decide where the file is actually placed on the disk. Sequential access can be simulated on a direct-access file by keeping a current-position pointer cp: **read next** becomes "read cp; cp = cp + 1".
+
+**Used by:** databases and reservation systems, where a particular record is needed at once.
+
+**Finding a record:** with R records per block, numbering records from 1 and blocks from 0:
+
+> **Block number = ⌊(n − 1) ÷ R⌋** and **position in the block = (n − 1) mod R**
+
+> **Byte offset of record n = (n − 1) × record size**
+
+**Example:** 4 records per block. Record 42 is in block ⌊41 ÷ 4⌋ = **10**, at position 41 mod 4 = **1** (the second record of the block). With 100-byte records, record 25 starts at byte (25 − 1) × 100 = **2,400**.
+
+**Advantages:** any record is reached quickly, without reading the others.
+
+**Disadvantages:** more complex; the records must be of fixed length so that their positions can be calculated.
+
+### 3. Indexed (Indexed Sequential) Access
+
+An **index** — like the index of a book — holds keys and pointers to the blocks of the file. To find a record, the index is searched first, and the pointer is then used to read the record directly. For a large file, the index itself may be large, so an **index of the index** (a multi-level index) is used, with the top level kept in memory.
+
+**IBM's ISAM (Indexed Sequential Access Method)** keeps the file sorted on a key and uses a small master index that points to blocks of a secondary index, which point to the data blocks. It supports both sequential processing in key order and direct look-up by key.
+
+**Example:** a file of 120,000 records of 16 bytes each (1,920,000 bytes) is stored in 1,024-byte blocks, which hold 1,024 ÷ 16 = 64 records each, so the file needs 120,000 ÷ 64 = **1,875 blocks**. An in-memory index holding the first key of each block lets a record be found with **one** disk read: search the index, then read the block.
+
+**Advantages:** fast search in large files; both sequential and direct access are possible.
+
+**Disadvantages:** the index needs extra space; insertions and deletions must also update the index; more complex to implement.
+
+### Differences Between the File Access Methods
+
+| Basis | Sequential access | Direct access | Indexed sequential access |
+| --- | --- | --- | --- |
+| Order of access | In order only, from the beginning | Any order, by record or block number | Through the index (by key), or in key order |
+| Operations | read next, write next, reset | read n, write n, position to n | Search the index, then read the block |
+| Model | Tape | Disk | Disk |
+| Records | Any format | Fixed-length records | Sorted on a key; index + data |
+| Speed for one record | Slow | Fast | Fast (index search + one access) |
+| Extra storage | None | None (address calculation) | The index |
+| Typical use | Editors, compilers, logs, batch jobs | Databases, reservation systems | Large keyed files |
+
+## File Systems: FAT32, NTFS and ext4 {#file-systems-fat32-ntfs-and-ext4}
+
+### FAT32
+
+**FAT32 (File Allocation Table, 32-bit)** is a file system of the FAT family, introduced by Microsoft with Windows 95 OSR2 in 1996, that keeps track of the clusters of each file through a file allocation table.
+
+**Structure:** a FAT32 volume has a **boot sector** (reserved area), the **File Allocation Table** (two copies are kept for safety) and the **data area**. The disk is allocated in **clusters**. A directory entry holds the number of the file's first cluster, and each FAT entry either gives the number of the file's next cluster or marks the end of the file — a linked list of clusters kept in the table. Each FAT32 entry is 32 bits, of which 28 bits hold the cluster number.
+
+**Features:**
+
+1. Maximum file size: **4 GB** (4 GiB − 1 byte).
+2. Maximum volume size: **2 TB** (with 512-byte sectors); Windows' built-in format tool creates FAT32 volumes only up to **32 GB**.
+3. No journaling, no file permissions or owner, no encryption and no compression; only the read-only, hidden, system and archive attributes.
+4. Supported by almost every operating system and device (Windows, macOS, Linux, cameras, game consoles, TVs), so it is used on USB drives and memory cards.
+
+### NTFS
+
+**NTFS (New Technology File System)** is Microsoft's journaling file system, introduced with Windows NT 3.1 in 1993, and the default file system of modern Windows.
+
+**Structure:** an NTFS volume has a boot sector, the **Master File Table (MFT)**, system files and the file area. The MFT has at least one record for **every file**, including itself; all information about a file — name, size, time stamps, permissions and even the data of small files — is kept in its MFT record or in space described by it. Space next to the MFT (the **MFT zone**) is reserved so that the MFT stays contiguous. Files are stored in clusters, described as extents (runs).
+
+**Features:**
+
+1. **Journaling:** changes to the file-system metadata are recorded in a transaction log (`$LogFile`); after a crash, the log is used to restore consistency quickly.
+2. **Security:** each file has an owner and an access control list (ACL) of permissions.
+3. **Encryption** (EFS, and BitLocker for whole volumes), **compression** and **disk quotas**.
+4. Hard links and symbolic links; long file names (255 Unicode characters).
+5. Maximum file and volume size depend on the cluster size: **16 TB** with the default 4 KB clusters, **256 TB** with 64 KB clusters, and up to **8 PB** with 2 MB clusters on Windows 10 (version 1709) and Windows Server 2019 or later; the theoretical file-size limit is 16 EB (2⁶⁴ bytes).
+6. Native on Windows; macOS reads NTFS but does not write to it without extra software.
+
+### ext4
+
+**ext4 (fourth extended file system)** is the journaling file system of Linux, the successor of ext3 and the default on most Linux distributions; it became stable in Linux kernel 2.6.28 in 2008.
+
+**Structure:** the disk is divided into **block groups**; each holds (in some groups) a copy of the superblock, the group descriptors, a block bitmap, an inode bitmap, an inode table and data blocks. Every file is described by an **inode**. Instead of the indirect block pointers of ext2 and ext3, ext4 maps file data with **extents** — an extent is a run of contiguous blocks, up to 32,768 blocks (**128 MB** with 4 KB blocks). Large directories are indexed with an HTree.
+
+**Features:**
+
+1. **Journaling** in three modes: **journal** (data and metadata are journaled), **ordered** (the default: only metadata is journaled, and data is written before its metadata is committed) and **writeback** (metadata only, fastest).
+2. Maximum file size **16 TB** and maximum volume size **1 EB** (with 4 KB blocks).
+3. Delayed allocation and multiblock allocation (less fragmentation), persistent preallocation, journal checksums, nanosecond time stamps, fast file-system checks, online defragmentation and transparent encryption.
+4. UNIX permissions (owner, group, others) and POSIX ACLs; disk quotas.
+5. Backward compatible: an ext3 file system can be mounted as ext4.
+6. Native on Linux; Windows and macOS need extra software.
+
+### Maximum Sizes
+
+| Limit | FAT32 | NTFS | ext4 (4 KB blocks) |
+| --- | --- | --- | --- |
+| Maximum file size | 4 GB | 16 TB (4 KB clusters), up to 8 PB; theoretical 16 EB | 16 TB |
+| Maximum volume size | 2 TB (32 GB with Windows' format tool) | 256 TB (64 KB clusters); 8 PB on current Windows | 1 EB |
+| Maximum file name | 255 characters (long names) | 255 Unicode characters | 255 bytes |
+
+**How the limits arise (examples):**
+
+1. FAT32 file size: the size field in a directory entry is 32 bits, so the largest file is 2³² − 1 bytes = 4 GiB − 1 byte.
+2. FAT32 volume: 2³² sectors × 512 bytes = **2 TiB**.
+3. NTFS volume: about 2³² clusters × 64 KB = **256 TB**.
+4. ext4 file: 2³² blocks × 4 KB = **16 TiB**; ext4 volume: 2⁴⁸ blocks × 4 KB = **1 EiB**.
+
+### Differences Between FAT32, NTFS and ext4
+
+| Basis | FAT32 | NTFS | ext4 |
+| --- | --- | --- | --- |
+| Full form | File Allocation Table (32-bit) | New Technology File System | Fourth Extended File System |
+| Introduced | Microsoft, Windows 95 OSR2 (1996) | Microsoft, Windows NT 3.1 (1993) | Linux community; stable in Linux 2.6.28 (2008) |
+| Native operating system | All Windows versions; nearly universal | Windows NT family (default) | Linux (default on most distributions) |
+| Metadata structure | File Allocation Table + directory entries | Master File Table (MFT) | Inodes in block groups |
+| Allocation | Clusters linked through the FAT | Clusters, as extents (runs) | Blocks, as extents (up to 128 MB each) |
+| Maximum file size | 4 GB | 16 TB (4 KB clusters) and more | 16 TB |
+| Maximum volume size | 2 TB (32 GB with Windows' format tool) | 256 TB (64 KB clusters); 8 PB on current Windows | 1 EB |
+| Journaling | No | Yes (metadata transaction log) | Yes (journal, ordered and writeback modes) |
+| Permissions | None | ACLs and file owner | UNIX permissions and POSIX ACLs |
+| Encryption | No | Yes (EFS, BitLocker) | Yes (fscrypt) |
+| Compression | No | Yes | No |
+| Disk quotas | No | Yes | Yes |
+| Hard and symbolic links | No | Yes | Yes |
+| File names | Case-insensitive | Case-insensitive by default, case-preserving | Case-sensitive |
+| Recovery after a crash | A full disk check (chkdsk) is needed | The log is replayed; self-healing | The journal is replayed; fast check |
+| Typical use | USB drives, memory cards, media shared between systems | Windows system and data drives | Linux system and data partitions |
+
 ## References {#references}
 
 **TutorialsPoint**
@@ -588,6 +750,10 @@ It is the most common directory structure (MS-DOS, Windows, UNIX and Linux all u
 - [Indexed Allocation](https://www.tutorialspoint.com/operating_system/indexed_allocation_in_operating_system.htm) — accessed 2026-11-03
 - [Free Space Management](https://www.tutorialspoint.com/operating_system/os_free_space_management.htm) — accessed 2026-11-03
 - [Buffering](https://www.tutorialspoint.com/operating_system/os_buffering.htm) — accessed 2026-11-03 (its timing example — 180, about 110 and about 100 ms — agrees with the buffering formulas in these notes when M = 1 ms)
+- [File Access Method](https://www.tutorialspoint.com/file-access-method) — accessed 2026-11-07
+- [Operating System – File System](https://www.tutorialspoint.com/operating_system/os_file_system.htm) — accessed 2026-11-07
+- [Difference Between FAT32 and NTFS](https://www.tutorialspoint.com/computer_fundamentals/difference_between_fat32_and_ntfs.htm) — accessed 2026-11-07
+- [Difference between FAT32, exFAT, and NTFS File Systems](https://www.tutorialspoint.com/difference-between-fat32-exfat-and-ntfs-file-systems) — accessed 2026-11-07
 
 **GeeksforGeeks**
 
@@ -598,6 +764,10 @@ It is the most common directory structure (MS-DOS, Windows, UNIX and Linux all u
 - [I/O buffering and its Various Techniques](https://www.geeksforgeeks.org/operating-systems/i-o-buffering-and-its-various-techniques/) — accessed 2026-11-03
 - [Free Space Management in Operating System](https://www.geeksforgeeks.org/free-space-management-in-operating-system/) — accessed 2026-11-03 (its bitmap uses 0 = free and then says to search for the first 1 bit; with that convention the search must look for a 0 bit)
 - [Input-output system calls in C](https://www.geeksforgeeks.org/c/input-output-system-calls-c-create-open-close-read-write/) — accessed 2026-11-03
+- [File Access Methods in Operating System](https://www.geeksforgeeks.org/operating-systems/file-access-methods-in-operating-system/) — accessed 2026-11-07
+- [Difference Between FAT32 and NTFS](https://www.geeksforgeeks.org/operating-systems/difference-between-fat32-and-ntfs/) — accessed 2026-11-07
+- [Difference Between FAT32, exFAT, and NTFS File System](https://www.geeksforgeeks.org/blogs/difference-between-fat32-exfat-and-ntfs-file-system/) — accessed 2026-11-07
+- [Linux File System](https://www.geeksforgeeks.org/linux-unix/linux-file-system/) — accessed 2026-11-07 (ext2, ext3 and ext4)
 
 **TpointTech**
 
@@ -605,6 +775,9 @@ It is the most common directory structure (MS-DOS, Windows, UNIX and Linux all u
 - [File System Structure in Operating System](https://www.tpointtech.com/os-file-system-structure) — accessed 2026-11-03
 - [OS On Disk Data Structures](https://www.tpointtech.com/os-on-disk-data-structures) — accessed 2026-11-03
 - TpointTech has no page on blocks and fragments (checked 2026-11-03).
+- [File Access Methods](https://www.tpointtech.com/os-file-access-methods) — accessed 2026-11-07
+- [Difference between FAT32 and NTFS in Operating System](https://www.tpointtech.com/fat32-vs-ntfs-in-operating-system) — accessed 2026-11-07
+- [Linux File System](https://www.tpointtech.com/linux-file-system) — accessed 2026-11-07
 
 **Programiz**
 
@@ -612,8 +785,22 @@ It is the most common directory structure (MS-DOS, Windows, UNIX and Linux all u
 
 **Additional sources** (used where the reference websites do not cover the point)
 
+- Abraham Silberschatz, Peter B. Galvin and Greg Gagne, *Operating System Concepts*, 9th ed., [Chapter 11 slides: File-System Interface](https://www.os-book.com/OS9/slide-dir/PDF-dir/ch11.pdf) — access-method operations, relative block numbers, simulation of sequential access, indexed and ISAM files — accessed 2026-11-07
+- Microsoft Learn: [NTFS overview](https://learn.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview), [File System Functionality Comparison](https://learn.microsoft.com/en-us/windows/win32/fileio/filesystem-functionality-comparison), [Overview of FAT, HPFS, and NTFS File Systems](https://learn.microsoft.com/en-us/troubleshoot/windows-client/backup-and-storage/fat-hpfs-and-ntfs-file-systems), [Master File Table](https://learn.microsoft.com/en-us/windows/win32/fileio/master-file-table) and [WinPE: use a single USB key](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe--use-a-single-usb-key-for-winpe-and-a-wim-file---wim?view=windows-11) (32 GB FAT32 format limit) — accessed 2026-11-07
+- Linux kernel documentation: [ext4 Blocks](https://docs.kernel.org/filesystems/ext4/blocks.html), [ext4 Super Block](https://docs.kernel.org/filesystems/ext4/super.html) and [ext4 General Information](https://docs.kernel.org/admin-guide/ext4.html) (limits, journaling modes, quota options); [Ext4 Howto](https://archive.kernel.org/oldwiki/ext4.wiki.kernel.org/index.php/Ext4_Howto.html) (ext4 wiki) — accessed 2026-11-07
+- [Ext4](https://en.wikipedia.org/wiki/Ext4) and [File Allocation Table](https://en.wikipedia.org/wiki/File_Allocation_Table) — Wikipedia (dates and FAT32 limits) — accessed 2026-11-07
 - M. K. McKusick, W. N. Joy, S. J. Leffler and R. S. Fabry, ["A Fast File System for UNIX"](https://carlstrom.com/stanford/quals/mirror/www-db.stanford.edu/~daswani/quals/McKusick84%20-%20A%20Fast%20File%20System%20for%20UNIX.htm), *ACM Transactions on Computer Systems*, 1984 — blocks and fragments — accessed 2026-11-03
 - William Stallings, *Operating Systems: Internals and Design Principles*, "File Management" and "I/O Management" — the five file organizations, the three blocking methods, and the buffering time formulas
 - Abraham Silberschatz, Peter B. Galvin and Greg Gagne, *Operating System Concepts*, "File-System Interface" and "File-System Implementation" — the file attributes and operations, FCB contents, the bit-vector formula and the free-space methods
 
 All numerical examples in these notes were checked with a script.
+
+Issues found on the reference websites (file access methods and file systems) and how they were resolved:
+
+1. The reference websites give conflicting FAT32 volume limits (2 TB, 8 TB and 16 TB). Microsoft's documentation gives the 32 GB limit of Windows' format tool and 2³² sectors; with 512-byte sectors this is 2 TB, which is used here.
+2. GeeksforGeeks and TpointTech give 16 TB as the NTFS file limit and TpointTech 2 TB as the volume limit, while TutorialsPoint says NTFS has no limits; the limits depend on the cluster size, as Microsoft's NTFS overview shows, and are given here from it.
+3. TpointTech's table dates NTFS to 1973 and FAT32 to 1977 and says FAT32 was used in DOS; NTFS appeared with Windows NT 3.1 in 1993 and FAT32 with Windows 95 OSR2 in 1996 (Microsoft).
+4. GeeksforGeeks gives 2006 for ext4 (the start of its development) and "16 GB to several TB" as its limits; ext4 became stable in Linux 2.6.28 (2008) and supports 16 TB files and 1 EB volumes (Linux kernel documentation).
+5. GeeksforGeeks' FAT32-vs-NTFS table gives a FAT32 file-name limit of "83" (8.3 names); with long file names FAT32 allows 255 characters (Microsoft).
+6. TutorialsPoint says modern Windows cannot use FAT32 drives, and TpointTech says NTFS requires Active Directory; both are wrong and were not used.
+7. TutorialsPoint's "File Access Method" article separates random access (through an index) from direct access; Silberschatz, GeeksforGeeks and TpointTech treat direct, random and relative access as the same method, which is followed here.

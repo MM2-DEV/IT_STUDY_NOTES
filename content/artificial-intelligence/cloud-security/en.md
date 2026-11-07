@@ -28,7 +28,7 @@ The boundary depends on the service model: in IaaS the customer secures the oper
 ### Cloud Security Issues (Threats and Risks)
 
 1. **Data breach:** confidential data is viewed, accessed or stolen by an unauthorized party, for example through weak authentication or wrongly configured cloud storage.
-2. **Data loss (data leakage):** data is deleted, corrupted or made unreadable by attacks, mistakes, faulty hardware or software, or inadequate backups.
+2. **Data loss:** data is deleted, corrupted or made unreadable by attacks, mistakes, faulty hardware or software, or inadequate backups.
 3. **Account hijacking:** an attacker steals a user's or organization's cloud account credentials (for example, by phishing) and uses the account for unauthorized activities. It is one of the most serious threats.
 4. **Insecure interfaces and APIs:** cloud services are managed through APIs; weak or exposed APIs let attackers access or damage data.
 5. **Misconfiguration:** wrongly configured storage, permissions or security settings (such as public storage buckets) expose data.

@@ -132,7 +132,7 @@ The stems below are the real outputs of the Porter stemmer (NLTK 3.10):
 | studies, studying | studi | study |
 | running | run | run |
 | better (adjective) | better | good |
-| mice | — | mouse |
+| mice | mice | mouse |
 
 | Point | Stemming | Lemmatization |
 | --- | --- | --- |
